@@ -1,0 +1,95 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead
+			title="主流 AI API 中转服务对比 2026"
+			description="主流 AI API 中转服务对比页，按模型覆盖、协议兼容、价格透明度、稳定性和风险边界持续更新。"
+			canonical="https://blog.yotradeapi.com/compare/"
+			keywords={['AI API 中转 对比', 'OpenAI API 中转 推荐 2026', 'Claude API 国内']}
+		/>
+		<style>
+			main {
+				width: 980px;
+			}
+			table {
+				border-collapse: collapse;
+				margin-top: 2rem;
+			}
+			th,
+			td {
+				border-bottom: 1px solid rgb(var(--gray-light));
+				padding: 0.75rem;
+				text-align: left;
+				vertical-align: top;
+			}
+			th {
+				color: rgb(var(--black));
+			}
+			.note {
+				color: rgb(var(--gray));
+				font-size: 0.95rem;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>主流 AI API 中转服务对比 2026</h1>
+			<p>
+				这个页面作为长期更新的对比 hub。所有数据发布前按公开页面复核，避免引用过期价格或模型名。
+			</p>
+			<table>
+				<thead>
+					<tr>
+						<th>服务</th>
+						<th>适合场景</th>
+						<th>待核验维度</th>
+						<th>备注</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>YoTradeApi</td>
+						<td>Cursor、Claude Code、Cline、Aider、Codex CLI 小流量验证</td>
+						<td>模型名、流式输出、用量日志、首 token 延迟</td>
+						<td><a href="https://yotradeapi.com/register">创建独立 API Key</a></td>
+					</tr>
+					<tr>
+						<td>QuickRouter</td>
+						<td>多模型聚合对比</td>
+						<td>价格页、模型列表、base_url 兼容性</td>
+						<td>发布前重新抓取公开页面</td>
+					</tr>
+					<tr>
+						<td>AIHubProxy</td>
+						<td>中文开发者 API 中转</td>
+						<td>模型覆盖、文档、用量透明度</td>
+						<td>发布前重新抓取公开页面</td>
+					</tr>
+					<tr>
+						<td>PatewayAI</td>
+						<td>Claude Code / Codex 场景</td>
+						<td>模型名、稳定性、价格说明</td>
+						<td>发布前重新抓取公开页面</td>
+					</tr>
+					<tr>
+						<td>LLMHub</td>
+						<td>按模型价格比较</td>
+						<td>价格页、上下文、计费单位</td>
+						<td>发布前重新抓取公开页面</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="note">
+				比较原则：只写可验证事实，不写具体收益承诺，只使用“兼容 OpenAI SDK 协议”等中性描述。
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

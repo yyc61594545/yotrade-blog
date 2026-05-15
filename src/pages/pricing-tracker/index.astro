@@ -1,0 +1,71 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead
+			title="AI API 中转价格追踪"
+			description="AI API 中转价格追踪页，每周记录公开价格页、模型列表和活动变动，发布前人工复核。"
+			canonical="https://blog.yotradeapi.com/pricing-tracker/"
+			keywords={['AI API 中转 价格', 'Claude API 价格', 'OpenAI API 中转 价格']}
+		/>
+		<style>
+			main {
+				width: 980px;
+			}
+			table {
+				border-collapse: collapse;
+				margin-top: 2rem;
+			}
+			th,
+			td {
+				border-bottom: 1px solid rgb(var(--gray-light));
+				padding: 0.75rem;
+				text-align: left;
+				vertical-align: top;
+			}
+			.status {
+				color: rgb(var(--gray));
+				font-size: 0.95rem;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>AI API 中转价格追踪</h1>
+			<p>
+				这里记录各家公开价格页的周度变动。自动脚本只保存公开页面 diff，不抓登录后内容；发布前必须人工复核。
+			</p>
+			<table>
+				<thead>
+					<tr>
+						<th>服务</th>
+						<th>价格来源</th>
+						<th>更新节奏</th>
+						<th>当前状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>YoTradeApi</td>
+						<td>主站与后台公开说明</td>
+						<td>每周</td>
+						<td class="status">待填入人工复核后的价格摘要</td>
+					</tr>
+					<tr>
+						<td>QuickRouter / AIHubProxy / PatewayAI / LLMHub</td>
+						<td>公开首页、价格页、文档页</td>
+						<td>每周</td>
+						<td class="status">由 growth repo 生成 diff 后人工编辑</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		<Footer />
+	</body>
+</html>

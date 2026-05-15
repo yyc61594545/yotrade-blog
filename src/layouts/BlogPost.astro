@@ -8,12 +8,60 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const {
+	title,
+	description,
+	pubDate,
+	updatedDate,
+	heroImage,
+	canonical,
+	keywords = [],
+	tags = [],
+} = Astro.props;
+const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+const imageURL = heroImage ? new URL(heroImage.src, Astro.site).toString() : undefined;
+const articleSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Article',
+	headline: title,
+	description,
+	datePublished: pubDate instanceof Date ? pubDate.toISOString() : new Date(pubDate).toISOString(),
+	dateModified: updatedDate
+		? updatedDate instanceof Date
+			? updatedDate.toISOString()
+			: new Date(updatedDate).toISOString()
+		: pubDate instanceof Date
+			? pubDate.toISOString()
+			: new Date(pubDate).toISOString(),
+	mainEntityOfPage: canonicalURL,
+	url: canonicalURL,
+	image: imageURL ? [imageURL] : undefined,
+	keywords,
+	articleSection: tags,
+	author: {
+		'@type': 'Organization',
+		name: 'YoTradeApi',
+		url: 'https://yotradeapi.com',
+	},
+	publisher: {
+		'@type': 'Organization',
+		name: 'YoTradeApi',
+		url: 'https://yotradeapi.com',
+	},
+};
 ---
 
-<html lang="en">
+<html lang="zh-CN">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead
+			title={title}
+			description={description}
+			image={heroImage}
+			canonical={canonicalURL}
+			keywords={keywords}
+			type="article"
+		/>
+		<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -69,7 +117,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							{
 								updatedDate && (
 									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
+										更新于 <FormattedDate date={updatedDate} />
 									</div>
 								)
 							}
