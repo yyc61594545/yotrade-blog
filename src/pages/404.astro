@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 6);
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead
+			title="404 - 页面未找到 | YoTradeApi Blog"
+			description="抱歉，你访问的页面不存在。看看其它热门内容或返回首页。"
+			canonical="https://blog.yotradeapi.com/404/"
+			keywords={['404', 'page not found']}
+		/>
+		<style>
+			main { width: 720px; }
+			.center { text-align: center; padding: 2rem 0; }
+			.center h1 { font-size: 4rem; margin: 0; }
+			.center p { color: rgb(var(--gray)); }
+			.actions { display: flex; gap: 0.75rem; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap; }
+			.actions a {
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 6px;
+				padding: 0.55rem 0.9rem;
+				text-decoration: none;
+				color: rgb(var(--gray-dark));
+			}
+			.actions a:hover { color: var(--accent); border-color: var(--accent); }
+			ul { list-style: none; padding: 0; margin: 2rem 0 0; }
+			li { border-bottom: 1px solid rgb(var(--gray-light)); padding: 0.75rem 0; }
+			li a { color: rgb(var(--black)); text-decoration: none; font-weight: 500; }
+			li a:hover { color: var(--accent); }
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="center">
+				<h1>404</h1>
+				<p>你访问的页面不存在或已移动。</p>
+				<div class="actions">
+					<a href="/">回首页</a>
+					<a href="/blog/">浏览文章</a>
+					<a href="/categories/">看分类</a>
+				</div>
+			</div>
+			<h2>最新文章</h2>
+			<ul>
+				{posts.map((p) => (
+					<li><a href={`/blog/${p.id}/`}>{p.data.title}</a></li>
+				))}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

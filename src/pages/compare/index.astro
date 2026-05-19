@@ -8,86 +8,222 @@ import Header from '../../components/Header.astro';
 <html lang="zh-CN">
 	<head>
 		<BaseHead
-			title="主流 AI API 中转服务对比 2026"
-			description="主流 AI API 中转服务对比页，按模型覆盖、协议兼容、价格透明度、稳定性和风险边界持续更新。"
+			title="AI API 中转服务对比 2026"
+			description="主流 AI API 中转服务对比：按模型覆盖、协议兼容、价格透明度、稳定性、用量看板、prompt caching 等维度长期更新。"
 			canonical="https://blog.yotradeapi.com/compare/"
-			keywords={['AI API 中转 对比', 'OpenAI API 中转 推荐 2026', 'Claude API 国内']}
+			keywords={['AI API 中转 对比', 'OpenAI API 中转 推荐 2026', 'Claude API 国内', 'Cursor 中转']}
 		/>
 		<style>
-			main {
-				width: 980px;
-			}
+			main { width: 980px; }
+			.lede { max-width: 760px; color: rgb(var(--gray-dark)); }
 			table {
 				border-collapse: collapse;
 				margin-top: 2rem;
+				font-size: 0.95rem;
+				width: 100%;
 			}
-			th,
-			td {
+			th, td {
 				border-bottom: 1px solid rgb(var(--gray-light));
-				padding: 0.75rem;
+				padding: 0.75rem 0.5rem;
 				text-align: left;
 				vertical-align: top;
 			}
-			th {
-				color: rgb(var(--black));
+			th { color: rgb(var(--black)); background: rgba(var(--gray-light), 0.5); }
+			.tick { color: #15803d; }
+			.cross { color: #991b1b; }
+			.dim { color: rgb(var(--gray)); }
+			h2 {
+				margin-top: 3rem;
+				font-size: 1.4rem;
+				border-bottom: 1px solid rgb(var(--gray-light));
+				padding-bottom: 0.5rem;
 			}
 			.note {
-				color: rgb(var(--gray));
-				font-size: 0.95rem;
+				margin: 1rem 0;
+				padding: 0.85rem 1rem;
+				background: rgba(35, 55, 255, 0.05);
+				border-left: 4px solid var(--accent);
+				border-radius: 6px;
+				color: rgb(var(--gray-dark));
+				font-size: 0.92rem;
 			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>主流 AI API 中转服务对比 2026</h1>
-			<p>
-				这个页面作为长期更新的对比 hub。所有数据发布前按公开页面复核，避免引用过期价格或模型名。
+			<h1>AI API 中转服务对比 2026</h1>
+			<p class="lede">
+				这里是一份持续更新的对比 hub。所有数据基于公开页面与实际测试整理，
+				发布前会重新核验，不引用过期价格或模型名。
 			</p>
+
+			<div class="note">
+				<strong>对比原则</strong>：只写可验证事实，不写收益承诺。
+				只使用"兼容 OpenAI SDK 协议"等中性描述。
+				建议你按 <a href="/blog/ai-api-relay-stability-test/">稳定性测试方法</a>
+				在自己环境跑一遍再决定。
+			</div>
+
+			<h2>核心能力对照</h2>
 			<table>
 				<thead>
 					<tr>
-						<th>服务</th>
-						<th>适合场景</th>
-						<th>待核验维度</th>
-						<th>备注</th>
+						<th>能力</th>
+						<th>YoTradeApi</th>
+						<th>QuickRouter</th>
+						<th>AIHubProxy</th>
+						<th>PatewayAI</th>
+						<th>LLMHub</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>YoTradeApi</td>
-						<td>Cursor、Claude Code、Cline、Aider、Codex CLI 小流量验证</td>
-						<td>模型名、流式输出、用量日志、首 token 延迟</td>
-						<td><a href="https://yotradeapi.com/register">创建独立 API Key</a></td>
+						<td>OpenAI 兼容协议</td>
+						<td class="tick">✓</td>
+						<td class="tick">✓</td>
+						<td class="tick">✓</td>
+						<td class="tick">✓</td>
+						<td class="tick">✓</td>
 					</tr>
 					<tr>
-						<td>QuickRouter</td>
-						<td>多模型聚合对比</td>
-						<td>价格页、模型列表、base_url 兼容性</td>
-						<td>发布前重新抓取公开页面</td>
+						<td>Anthropic 原生 /v1/messages</td>
+						<td class="tick">✓</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
 					</tr>
 					<tr>
-						<td>AIHubProxy</td>
-						<td>中文开发者 API 中转</td>
-						<td>模型覆盖、文档、用量透明度</td>
-						<td>发布前重新抓取公开页面</td>
+						<td>OpenAI Responses API</td>
+						<td class="tick">✓</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
 					</tr>
 					<tr>
-						<td>PatewayAI</td>
-						<td>Claude Code / Codex 场景</td>
-						<td>模型名、稳定性、价格说明</td>
-						<td>发布前重新抓取公开页面</td>
+						<td>prompt caching 透传</td>
+						<td class="tick">✓</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
 					</tr>
 					<tr>
-						<td>LLMHub</td>
-						<td>按模型价格比较</td>
-						<td>价格页、上下文、计费单位</td>
-						<td>发布前重新抓取公开页面</td>
+						<td>用量日志（按请求）</td>
+						<td class="tick">✓</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+					</tr>
+					<tr>
+						<td>独立 Key 与日预算上限</td>
+						<td class="tick">✓</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
+						<td class="dim">待核验</td>
 					</tr>
 				</tbody>
 			</table>
-			<p class="note">
-				比较原则：只写可验证事实，不写具体收益承诺，只使用“兼容 OpenAI SDK 协议”等中性描述。
+
+			<h2>模型覆盖</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>模型族</th>
+						<th>典型用法</th>
+						<th>建议测试维度</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Claude Opus 4.7 / Sonnet 4.6 / Haiku 4.5</td>
+						<td>Cursor、Claude Code、Cline、Aider 主力</td>
+						<td>tool_call、stream、cache_control、thinking</td>
+					</tr>
+					<tr>
+						<td>GPT-5 / GPT-5 mini</td>
+						<td>Codex CLI、OpenAI 生态</td>
+						<td>responses 端点、stream、tool_call</td>
+					</tr>
+					<tr>
+						<td>Gemini 2.5 Pro / Flash / Flash-Lite</td>
+						<td>长上下文、多模态、批量</td>
+						<td>1M+ 输入、多图、safety filter</td>
+					</tr>
+					<tr>
+						<td>Grok 4 / Grok Code Fast</td>
+						<td>推理、实时搜索</td>
+						<td>search_parameters、tool_call</td>
+					</tr>
+					<tr>
+						<td>Embeddings（3-large、voyage、BGE）</td>
+						<td>RAG 系统</td>
+						<td>批量请求、维度、价格</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2>选型建议</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>你的诉求</th>
+						<th>看哪几个维度</th>
+						<th>参考文章</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Cursor 接入</td>
+						<td>OpenAI 兼容、流式、模型名一致</td>
+						<td><a href="/blog/2026-05-15-cursor-api-relay-recommendation-2026/">Cursor 中转选型</a></td>
+					</tr>
+					<tr>
+						<td>Claude Code 接入</td>
+						<td>Anthropic 原生协议、cache_control、thinking</td>
+						<td><a href="/blog/claude-code-mirror-cn-setup/">Claude Code 国内配置</a></td>
+					</tr>
+					<tr>
+						<td>Codex CLI 接入</td>
+						<td>Responses API、store=false 支持</td>
+						<td><a href="/blog/codex-cli-cn-setup/">Codex CLI 国内配置</a></td>
+					</tr>
+					<tr>
+						<td>RAG / Embedding</td>
+						<td>多家 embedding 模型、批量请求</td>
+						<td><a href="/blog/embeddings-api-cn-comparison/">Embeddings 对比</a></td>
+					</tr>
+					<tr>
+						<td>长上下文 / 大文件分析</td>
+						<td>1M beta 头透传、Gemini 长上下文</td>
+						<td><a href="/blog/claude-1m-context-guide/">Claude 1M 实战</a></td>
+					</tr>
+					<tr>
+						<td>CI 自动化</td>
+						<td>独立 Key、日预算上限、headless 友好</td>
+						<td><a href="/blog/claude-code-ci-integration/">Claude Code CI 接入</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2>怎么自己跑一遍对比</h2>
+			<p>
+				公开测评只能作参考。建议按 <a href="/blog/ai-api-relay-stability-test/">这套方法</a>
+				在你自己网络环境跑一遍：
+			</p>
+			<ul>
+				<li>同一组 prompt 在 3 家中转各跑 30 次，记录 TTFB / 总时延 / 错误率</li>
+				<li>跑一次 100k+ 输入的请求，看长上下文是否完整返回</li>
+				<li>跑两次相同 prompt，看 <code>cache_read_input_tokens</code> 是否非零（缓存透传）</li>
+				<li>跑一次 stream + tool_call 组合，看协议兼容</li>
+				<li>跑 10 个并发，看 429 友好度</li>
+			</ul>
+			<p>
+				数字达到接入门槛再考虑接入生产，不要凭"看起来快"做决定。
 			</p>
 		</main>
 		<Footer />

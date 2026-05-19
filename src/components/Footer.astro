@@ -3,13 +3,46 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} YoTradeApi. 内容仅供技术评估，发布前请自行核验第三方价格与模型列表。
+	<div class="links">
+		<a href="/">首页</a>
+		<a href="/blog/">文章</a>
+		<a href="/categories/">分类</a>
+		<a href="/tags/">标签</a>
+		<a href="/tools/">工具</a>
+		<a href="/compare/">对比</a>
+		<a href="/pricing-tracker/">价格</a>
+		<a href="/about/">关于</a>
+		<a href="/rss.xml">RSS</a>
+		<a href="https://yotradeapi.com/register" rel="nofollow">注册 API Key</a>
+	</div>
+	<div class="copyright">
+		&copy; {today.getFullYear()} YoTradeApi Blog ·
+		面向中文开发者的 AI API 中转与工具配置实测 ·
+		内容仅供技术评估，发布前请自行核验第三方信息
+	</div>
 </footer>
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
+		padding: 2em 1em 5em;
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
 		text-align: center;
+		font-size: 0.92rem;
+	}
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem 1rem;
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+	.links a {
+		color: rgb(var(--gray-dark));
+		text-decoration: none;
+	}
+	.links a:hover { color: var(--accent); }
+	.copyright {
+		max-width: 720px;
+		margin: 0 auto;
 	}
 </style>

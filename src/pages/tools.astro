@@ -1,0 +1,151 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
+const tools = [
+	{
+		name: 'Cursor',
+		desc: '独立 AI 编辑器，Composer + Background Agent 强',
+		link: '/blog/2026-05-15-cursor-api-relay-recommendation-2026/',
+		category: '编辑器',
+	},
+	{
+		name: 'Claude Code',
+		desc: 'Anthropic 官方 CLI 编程代理，Subagent + Hook 完整',
+		link: '/blog/claude-code-mirror-cn-setup/',
+		category: 'CLI',
+	},
+	{
+		name: 'Cline',
+		desc: 'VSCode 编程代理，Plan/Act 双模式',
+		link: '/blog/cline-cn-api-setup/',
+		category: 'VSCode 插件',
+	},
+	{
+		name: 'Roo Code',
+		desc: 'Cline 增强版，Boomerang 子任务',
+		link: '/blog/roo-code-cn-setup/',
+		category: 'VSCode 插件',
+	},
+	{
+		name: 'Aider',
+		desc: '命令行结对编程，自动 git commit',
+		link: '/blog/aider-cn-config-guide/',
+		category: 'CLI',
+	},
+	{
+		name: 'Codex CLI',
+		desc: 'OpenAI 官方 CLI，沙箱严格',
+		link: '/blog/codex-cli-cn-setup/',
+		category: 'CLI',
+	},
+	{
+		name: 'Continue.dev',
+		desc: '开源、yaml 配置驱动',
+		link: '/blog/continue-dev-cn-setup/',
+		category: 'IDE 插件',
+	},
+	{
+		name: 'Cherry Studio',
+		desc: '桌面 LLM 客户端，多模型 + RAG',
+		link: '/blog/cherry-studio-cn-config/',
+		category: '桌面客户端',
+	},
+	{
+		name: 'Windsurf',
+		desc: 'Codeium 出品的 AI 编辑器，Cascade 模式',
+		link: '/blog/windsurf-cn-setup/',
+		category: '编辑器',
+	},
+	{
+		name: 'Open WebUI',
+		desc: '自托管 LLM 聊天界面，多用户',
+		link: '/blog/open-webui-cn-setup/',
+		category: '自托管',
+	},
+];
+
+const byCategory = new Map<string, typeof tools>();
+for (const t of tools) {
+	if (!byCategory.has(t.category)) byCategory.set(t.category, []);
+	byCategory.get(t.category)!.push(t);
+}
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead
+			title="AI 编程工具中文配置索引"
+			description="覆盖 Cursor、Claude Code、Cline、Aider、Cherry Studio、Codex CLI、Continue.dev 等 10+ AI 编程工具的国内配置教程。"
+			canonical="https://blog.yotradeapi.com/tools/"
+			keywords={[
+				'AI 编程 工具',
+				'Cursor 国内',
+				'Claude Code 国内',
+				'Cline 配置',
+				'Aider 配置',
+				'Continue.dev',
+			]}
+		/>
+		<style>
+			main { width: 980px; }
+			.intro { max-width: 760px; }
+			.cat { margin: 2rem 0; }
+			.cat h2 {
+				font-size: 1.3rem;
+				border-bottom: 1px solid rgb(var(--gray-light));
+				padding-bottom: 0.5rem;
+				margin: 0 0 1.25rem;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 1rem;
+			}
+			li {
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 8px;
+				padding: 1rem 1.15rem;
+			}
+			li a.title {
+				color: rgb(var(--black));
+				text-decoration: none;
+				font-weight: 600;
+				font-size: 1.05rem;
+				display: block;
+				margin-bottom: 0.35rem;
+			}
+			li a.title:hover { color: var(--accent); }
+			li p { margin: 0; font-size: 0.92rem; color: rgb(var(--gray-dark)); }
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>AI 编程工具中文配置索引</h1>
+			<p class="intro">
+				这里汇总了覆盖国内开发者最常用的 AI 编程工具配置教程。所有工具都可以通过 OpenAI 兼容或
+				Anthropic 原生协议接入中转，用同一把 API Key 跨工具切换。
+			</p>
+			{[...byCategory.entries()].map(([cat, items]) => (
+				<section class="cat">
+					<h2>{cat}</h2>
+					<ul>
+						{items.map((t) => (
+							<li>
+								<a class="title" href={t.link}>{t.name}</a>
+								<p>{t.desc}</p>
+							</li>
+						))}
+					</ul>
+				</section>
+			))}
+		</main>
+		<Footer />
+	</body>
+</html>
