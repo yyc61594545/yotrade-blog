@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & { currentSlug?: string };
 
 const {
 	title,
@@ -17,9 +17,38 @@ const {
 	canonical,
 	keywords = [],
 	tags = [],
+	category,
+	currentSlug,
 } = Astro.props;
+
 const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
 const imageURL = heroImage ? new URL(heroImage.src, Astro.site).toString() : undefined;
+
+const tagSlug = (t: string) => t.toLowerCase().replace(/[\s/]+/g, '-');
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const related = allPosts
+	.filter((p) => p.id !== currentSlug)
+	.map((p) => {
+		const overlap = p.data.tags.filter((t) => tags.includes(t)).length;
+		const sameCat = (p.data.category ?? '') === (category ?? '') ? 1 : 0;
+		return { post: p, score: overlap * 2 + sameCat };
+	})
+	.filter((x) => x.score > 0)
+	.sort((a, b) => b.score - a.score || b.post.data.pubDate.valueOf() - a.post.data.pubDate.valueOf())
+	.slice(0, 4)
+	.map((x) => x.post);
+
+const breadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: '首页', item: 'https://blog.yotradeapi.com/' },
+		{ '@type': 'ListItem', position: 2, name: '文章', item: 'https://blog.yotradeapi.com/blog/' },
+		{ '@type': 'ListItem', position: 3, name: title, item: canonicalURL },
+	],
+};
+
 const articleSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'Article',
@@ -62,6 +91,7 @@ const articleSchema = {
 			type="article"
 		/>
 		<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -84,21 +114,106 @@ const articleSchema = {
 				padding: 1em;
 				color: rgb(var(--gray-dark));
 			}
+			.breadcrumbs {
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: 1.25em auto 0;
+				padding: 0 1em;
+				color: rgb(var(--gray));
+				font-size: 0.9em;
+			}
+			.breadcrumbs a { color: rgb(var(--gray-dark)); text-decoration: none; }
+			.breadcrumbs a:hover { color: var(--accent); }
 			.title {
 				margin-bottom: 1em;
 				padding: 1em 0;
 				text-align: center;
 				line-height: 1;
 			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
+			.title h1 { margin: 0 0 0.5em 0; }
+			.date { margin-bottom: 0.5em; color: rgb(var(--gray)); }
+			.last-updated-on { font-style: italic; }
+			.post-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.4rem;
+				justify-content: center;
+				margin-top: 1em;
 			}
-			.date {
-				margin-bottom: 0.5em;
+			.post-tags a {
+				display: inline-block;
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 999px;
+				padding: 0.15rem 0.6rem;
+				font-size: 0.85rem;
+				color: rgb(var(--gray-dark));
+				text-decoration: none;
+			}
+			.post-tags a:hover { border-color: var(--accent); color: var(--accent); }
+			.cta-box {
+				margin: 3em auto 2em;
+				padding: 1.5em 1.75em;
+				border: 1px solid rgb(var(--gray-light));
+				border-left: 4px solid var(--accent);
+				border-radius: 8px;
+				background: rgba(35, 55, 255, 0.03);
+				width: 720px;
+				max-width: calc(100% - 2em);
+				box-sizing: border-box;
+			}
+			.cta-box h3 { margin: 0 0 0.5em; font-size: 1.2em; }
+			.cta-box p { margin: 0.25em 0; font-size: 0.95em; }
+			.cta-box .actions {
+				display: flex;
+				gap: 0.75em;
+				flex-wrap: wrap;
+				margin-top: 0.85em;
+			}
+			.cta-box .actions a {
+				display: inline-block;
+				padding: 0.45em 0.95em;
+				border-radius: 6px;
+				text-decoration: none;
+				font-size: 0.95em;
+				font-weight: 500;
+			}
+			.cta-box .primary { background: var(--accent); color: #fff; }
+			.cta-box .secondary {
+				background: #fff;
+				color: var(--accent);
+				border: 1px solid rgb(var(--gray-light));
+			}
+			.related {
+				margin: 2.5em auto;
+				width: 720px;
+				max-width: calc(100% - 2em);
+			}
+			.related h3 { margin: 0 0 0.75em; font-size: 1.25em; }
+			.related ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+				gap: 1em;
+			}
+			.related li {
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 8px;
+				padding: 0.85em 1em;
+			}
+			.related li a {
+				color: rgb(var(--black));
+				text-decoration: none;
+				font-weight: 500;
+				display: block;
+				margin-bottom: 0.25em;
+			}
+			.related li a:hover { color: var(--accent); }
+			.related li .desc {
 				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
+				font-size: 0.88em;
+				margin: 0;
 			}
 		</style>
 	</head>
@@ -110,24 +225,65 @@ const articleSchema = {
 				<div class="hero-image">
 					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
 				</div>
+				<nav class="breadcrumbs" aria-label="面包屑">
+					<a href="/">首页</a> ›
+					<a href="/blog/">文章</a>
+					{category && (
+						<>
+							{' '}›{' '}
+							<a href={`/categories/${tagSlug(category)}/`}>{category}</a>
+						</>
+					)}
+				</nav>
 				<div class="prose">
 					<div class="title">
 						<div class="date">
 							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										更新于 <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
+							{updatedDate && (
+								<div class="last-updated-on">
+									更新于 <FormattedDate date={updatedDate} />
+								</div>
+							)}
 						</div>
 						<h1>{title}</h1>
 						<hr />
+						{tags.length > 0 && (
+							<div class="post-tags">
+								{tags.map((t) => (
+									<a href={`/tags/${tagSlug(t)}/`}>{t}</a>
+								))}
+							</div>
+						)}
 					</div>
 					<slot />
 				</div>
 			</article>
+
+			<aside class="cta-box">
+				<h3>试用 YoTradeApi 中转</h3>
+				<p>
+					同一 API Key 调用 Claude、GPT、Gemini、Grok 全家桶，兼容 OpenAI SDK 协议与 Anthropic Messages 协议。
+					后台可查每条请求的状态码、耗时与 token 用量。
+				</p>
+				<div class="actions">
+					<a class="primary" href="https://yotradeapi.com/register">创建独立 API Key</a>
+					<a class="secondary" href="/compare/">查看与其他服务对比</a>
+				</div>
+			</aside>
+
+			{related.length > 0 && (
+				<section class="related">
+					<h3>相关阅读</h3>
+					<ul>
+						{related.map((p) => (
+							<li>
+								<a href={`/blog/${p.id}/`}>{p.data.title}</a>
+								<p class="desc">{p.data.description}</p>
+							</li>
+						))}
+					</ul>
+				</section>
+			)}
 		</main>
 		<Footer />
 	</body>

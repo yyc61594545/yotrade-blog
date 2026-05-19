@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
@@ -7,86 +6,213 @@ import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
 import { SITE_DESCRIPTION } from '../../consts';
 
-const posts = (await getCollection('blog')).sort(
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+
+const yearGroups = new Map<number, typeof posts>();
+for (const post of posts) {
+	const y = post.data.pubDate.getFullYear();
+	if (!yearGroups.has(y)) yearGroups.set(y, []);
+	yearGroups.get(y)!.push(post);
+}
+const years = [...yearGroups.keys()].sort((a, b) => b - a);
+
+const searchIndex = posts.map((p) => ({
+	id: p.id,
+	title: p.data.title,
+	description: p.data.description,
+	tags: p.data.tags,
+	category: p.data.category ?? '',
+}));
 ---
 
 <!doctype html>
 <html lang="zh-CN">
 	<head>
 		<BaseHead
-			title="文章 - YoTradeApi Blog"
+			title="全部文章 - YoTradeApi Blog"
 			description={SITE_DESCRIPTION}
 			canonical="https://blog.yotradeapi.com/blog/"
-			keywords={['AI API 中转', 'Cursor API 中转', 'Claude Code 国内']}
+			keywords={['AI API 中转', 'Cursor API 中转', 'Claude Code 国内', 'Cline 配置']}
 		/>
 		<style>
-			main {
-				width: 980px;
+			main { width: 980px; }
+			.search-box {
+				margin: 1.5rem 0;
+				display: flex;
+				gap: 0.5rem;
 			}
-			ul {
-				display: grid;
-				gap: 1.5rem;
-				grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-				list-style-type: none;
-				margin: 2rem 0 0;
-				padding: 0;
-			}
-			li {
+			.search-box input {
+				flex: 1;
+				padding: 0.65rem 0.85rem;
 				border: 1px solid rgb(var(--gray-light));
-				border-radius: 8px;
-				padding: 1rem;
+				border-radius: 6px;
+				font-size: 1rem;
 			}
-			li a {
-				text-decoration: none;
+			.search-box input:focus {
+				outline: none;
+				border-color: var(--accent);
 			}
-			li img {
-				margin-bottom: 0.75rem;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1.25;
-			}
-			.date {
-				margin: 0.25rem 0 0.75rem;
+			.stats {
 				color: rgb(var(--gray));
 				font-size: 0.9rem;
+				margin: 0.5rem 0 1.5rem;
 			}
-			.description {
+			.year-block { margin-bottom: 2.5rem; }
+			.year-block h2 {
+				font-size: 1.3rem;
+				color: rgb(var(--gray-dark));
+				border-bottom: 1px solid rgb(var(--gray-light));
+				padding-bottom: 0.4rem;
+				margin: 0 0 1rem;
+			}
+			ul.posts {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: grid;
+				gap: 1rem;
+			}
+			ul.posts li {
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 8px;
+				padding: 1rem 1.15rem;
+				background: #fff;
+			}
+			ul.posts li.hidden { display: none; }
+			ul.posts li a {
+				color: rgb(var(--black));
+				text-decoration: none;
+				font-weight: 600;
+				font-size: 1.1rem;
+				display: block;
+				margin-bottom: 0.35rem;
+			}
+			ul.posts li a:hover { color: var(--accent); }
+			ul.posts li .desc {
+				margin: 0.2rem 0 0.5rem;
 				color: rgb(var(--gray-dark));
 				font-size: 0.95rem;
-				margin: 0;
+			}
+			ul.posts li .meta {
+				color: rgb(var(--gray));
+				font-size: 0.85rem;
+				display: flex;
+				gap: 0.75rem;
+				flex-wrap: wrap;
+			}
+			ul.posts li .tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.3rem;
+			}
+			ul.posts li .tag {
+				display: inline-block;
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 4px;
+				padding: 0.05rem 0.4rem;
+				font-size: 0.8rem;
+				color: rgb(var(--gray-dark));
+			}
+			.no-results {
+				display: none;
+				padding: 2rem;
+				text-align: center;
+				color: rgb(var(--gray));
 			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>文章</h1>
-			<p>API 中转、开发者工具配置、模型调用与价格追踪的实用记录。</p>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h2 class="title">{post.data.title}</h2>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-									<p class="description">{post.data.description}</p>
-								</a>
+			<h1>全部文章</h1>
+			<p>API 中转、开发者工具配置、模型评测、价格追踪、稳定性测试与故障排查的实用记录。</p>
+			<div class="search-box">
+				<input
+					type="search"
+					id="post-search"
+					placeholder="输入关键词搜索：Cursor / Claude / Cline / 错误码 ..."
+					autocomplete="off"
+				/>
+			</div>
+			<p class="stats">共 <span id="visible-count">{posts.length}</span> / {posts.length} 篇</p>
+
+			{years.map((year) => (
+				<div class="year-block" data-year={year}>
+					<h2>{year}</h2>
+					<ul class="posts">
+						{yearGroups.get(year)!.map((post) => (
+							<li
+								data-title={post.data.title}
+								data-desc={post.data.description}
+								data-tags={post.data.tags.join(' ')}
+								data-cat={post.data.category ?? ''}
+							>
+								<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+								<p class="desc">{post.data.description}</p>
+								<div class="meta">
+									<FormattedDate date={post.data.pubDate} />
+									<span class="tags">
+										{post.data.tags.map((t) => (<span class="tag">{t}</span>))}
+									</span>
+								</div>
 							</li>
-						))
-					}
-				</ul>
-			</section>
+						))}
+					</ul>
+				</div>
+			))}
+
+			<div class="no-results" id="no-results">没有匹配的文章，试试其它关键词。</div>
 		</main>
 		<Footer />
+
+		<script is:inline define:vars={{ searchIndex }}>
+			const input = document.getElementById('post-search');
+			const items = Array.from(document.querySelectorAll('ul.posts li'));
+			const countEl = document.getElementById('visible-count');
+			const noResults = document.getElementById('no-results');
+			const total = items.length;
+
+			function normalize(s) {
+				return (s || '').toString().toLowerCase();
+			}
+
+			function applyFilter(query) {
+				const q = normalize(query).trim();
+				let visible = 0;
+				items.forEach((li) => {
+					if (!q) {
+						li.classList.remove('hidden');
+						visible++;
+						return;
+					}
+					const hay = [
+						li.dataset.title,
+						li.dataset.desc,
+						li.dataset.tags,
+						li.dataset.cat,
+					].map(normalize).join(' ');
+					const match = q.split(/\s+/).every((part) => hay.includes(part));
+					li.classList.toggle('hidden', !match);
+					if (match) visible++;
+				});
+				countEl.textContent = visible;
+				noResults.style.display = visible === 0 ? 'block' : 'none';
+				document.querySelectorAll('.year-block').forEach((yb) => {
+					const hasVisible = yb.querySelectorAll('ul.posts li:not(.hidden)').length > 0;
+					yb.style.display = hasVisible ? '' : 'none';
+				});
+			}
+
+			input.addEventListener('input', (e) => applyFilter(e.target.value));
+
+			const params = new URLSearchParams(location.search);
+			const q0 = params.get('q');
+			if (q0) {
+				input.value = q0;
+				applyFilter(q0);
+			}
+		</script>
 	</body>
 </html>

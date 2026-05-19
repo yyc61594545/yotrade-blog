@@ -6,10 +6,27 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
-const posts = (await getCollection('blog')).sort(
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
-const latest = posts[0];
+const featured = posts.filter((p) => p.data.featured).slice(0, 4);
+const latest = posts.slice(0, 6);
+
+const categoryMap = new Map<string, number>();
+for (const p of posts) {
+	const c = p.data.category ?? '未分类';
+	categoryMap.set(c, (categoryMap.get(c) ?? 0) + 1);
+}
+const categories = [...categoryMap.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8);
+
+const orgSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Organization',
+	name: 'YoTradeApi',
+	url: 'https://yotradeapi.com',
+	logo: 'https://blog.yotradeapi.com/favicon.svg',
+	sameAs: ['https://blog.yotradeapi.com/'],
+};
 ---
 
 <!doctype html>
@@ -19,81 +36,231 @@ const latest = posts[0];
 			title={SITE_TITLE}
 			description={SITE_DESCRIPTION}
 			canonical="https://blog.yotradeapi.com/"
-			keywords={['AI API 中转', 'Cursor API', 'Claude Code', 'OpenAI SDK']}
+			keywords={[
+				'AI API 中转',
+				'Cursor API 中转',
+				'Claude Code 国内',
+				'OpenAI SDK base_url',
+				'Cline 配置',
+				'Aider 配置',
+				'Codex CLI',
+				'Cherry Studio',
+				'Claude Sonnet 4.6',
+				'Claude Opus 4.7',
+			]}
 		/>
+		<script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
 		<style>
-			main {
-				width: 980px;
+			main { width: 980px; }
+			.hero {
+				padding: 1rem 0 2rem;
+				border-bottom: 1px solid rgb(var(--gray-light));
+			}
+			.hero h1 {
+				font-size: 2.2rem;
+				margin: 0 0 0.5rem;
+				line-height: 1.2;
 			}
 			.lede {
 				max-width: 760px;
+				font-size: 1.1rem;
+				color: rgb(var(--gray-dark));
 			}
 			.actions {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 0.75rem;
-				margin: 1.5rem 0 2.5rem;
+				margin-top: 1.5rem;
 			}
 			.actions a {
 				border: 1px solid rgb(var(--gray-light));
 				border-radius: 6px;
-				padding: 0.55rem 0.8rem;
+				padding: 0.55rem 0.9rem;
 				text-decoration: none;
+				color: rgb(var(--gray-dark));
 			}
-			.latest {
-				border-top: 1px solid rgb(var(--gray-light));
-				padding-top: 2rem;
+			.actions a.primary {
+				background: var(--accent);
+				color: #fff;
+				border-color: var(--accent);
 			}
-			.meta {
+			.actions a:hover { color: var(--accent); }
+			.actions a.primary:hover { color: #fff; opacity: 0.92; }
+
+			section { margin: 2.5rem 0; }
+			section h2 {
+				font-size: 1.5rem;
+				border-bottom: 1px solid rgb(var(--gray-light));
+				padding-bottom: 0.5rem;
+				margin: 0 0 1.25rem;
+			}
+
+			.featured ul,
+			.latest ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 1rem;
+			}
+			.featured li,
+			.latest li {
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 8px;
+				padding: 1rem 1.15rem;
+				background: #fff;
+			}
+			.featured li a,
+			.latest li a {
+				color: rgb(var(--black));
+				text-decoration: none;
+				font-weight: 600;
+				display: block;
+				margin-bottom: 0.35rem;
+				font-size: 1.05rem;
+				line-height: 1.35;
+			}
+			.featured li a:hover,
+			.latest li a:hover { color: var(--accent); }
+			.featured li .desc,
+			.latest li .desc {
+				margin: 0.25rem 0 0.5rem;
+				color: rgb(var(--gray-dark));
+				font-size: 0.92rem;
+				line-height: 1.5;
+			}
+			.featured li .meta,
+			.latest li .meta {
 				color: rgb(var(--gray));
-				font-size: 0.9rem;
+				font-size: 0.85rem;
 			}
-			.tags {
+
+			.categories {
 				display: flex;
 				flex-wrap: wrap;
-				gap: 0.5rem;
+				gap: 0.6rem;
 				margin-top: 1rem;
 			}
-			.tags span {
+			.categories a {
+				display: inline-block;
 				border: 1px solid rgb(var(--gray-light));
 				border-radius: 999px;
+				padding: 0.35rem 0.85rem;
 				color: rgb(var(--gray-dark));
-				font-size: 0.85rem;
-				padding: 0.2rem 0.55rem;
+				text-decoration: none;
+				font-size: 0.95rem;
+			}
+			.categories a:hover { border-color: var(--accent); color: var(--accent); }
+			.categories .count { color: rgb(var(--gray)); font-size: 0.85rem; margin-left: 0.25rem; }
+
+			.intro-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 1rem;
+				margin-top: 1rem;
+			}
+			.intro-grid .card {
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 8px;
+				padding: 1rem 1.15rem;
+			}
+			.intro-grid h3 {
+				margin: 0 0 0.4rem;
+				font-size: 1.05rem;
+			}
+			.intro-grid h3 a {
+				color: rgb(var(--black));
+				text-decoration: none;
+			}
+			.intro-grid h3 a:hover { color: var(--accent); }
+			.intro-grid p {
+				margin: 0;
+				font-size: 0.92rem;
+				color: rgb(var(--gray-dark));
 			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>AI API 中转与开发者工具配置实测</h1>
-			<p class="lede">
-				围绕 Cursor、Claude Code、Cline、Cherry Studio、Codex CLI 等真实开发场景，记录可复现的
-				base_url 配置、模型对比、价格追踪与稳定性检查方法。
-			</p>
-			<div class="actions">
-				<a href="/blog/">看最新文章</a>
-				<a href="/compare/">查看服务对比</a>
-				<a href="/pricing-tracker/">价格追踪</a>
-			</div>
-			{
-				latest && (
-					<section class="latest">
-						<p class="meta">
-							最新更新：<FormattedDate date={latest.data.pubDate} />
-						</p>
-						<h2>
-							<a href={`/blog/${latest.id}/`}>{latest.data.title}</a>
-						</h2>
-						<p>{latest.data.description}</p>
-						<div class="tags">
-							{latest.data.tags.map((tag) => (
-								<span>{tag}</span>
-							))}
-						</div>
-					</section>
-				)
-			}
+			<section class="hero">
+				<h1>AI API 中转与开发者工具配置实测</h1>
+				<p class="lede">
+					围绕 Cursor、Claude Code、Cline、Aider、Cherry Studio、Codex CLI 等真实开发场景，
+					记录可复现的 base_url 配置、模型对比、价格追踪与稳定性检查方法。面向中文开发者。
+				</p>
+				<div class="actions">
+					<a class="primary" href="https://yotradeapi.com/register">创建 API Key</a>
+					<a href="/blog/">浏览全部文章</a>
+					<a href="/compare/">服务对比</a>
+					<a href="/pricing-tracker/">价格追踪</a>
+				</div>
+			</section>
+
+			<section>
+				<h2>新手起步</h2>
+				<div class="intro-grid">
+					<div class="card">
+						<h3><a href="/blog/2026-05-15-cursor-api-relay-recommendation-2026/">Cursor 怎么接</a></h3>
+						<p>3 步把 Cursor 的 OpenAI Compatible Provider 指向中转网关。</p>
+					</div>
+					<div class="card">
+						<h3><a href="/blog/claude-code-mirror-cn-setup/">Claude Code 怎么接</a></h3>
+						<p>5 行环境变量让 Claude Code CLI 在国内跑起来。</p>
+					</div>
+					<div class="card">
+						<h3><a href="/blog/openai-sdk-base-url-cn/">OpenAI SDK 怎么接</a></h3>
+						<p>Python、Node、Go、Rust 四种 SDK 改 base_url 即可。</p>
+					</div>
+					<div class="card">
+						<h3><a href="/blog/ai-api-relay-stability-test/">怎么测稳定性</a></h3>
+						<p>用可复现脚本量化 TTFB、断流率、错误率。</p>
+					</div>
+				</div>
+			</section>
+
+			{featured.length > 0 && (
+				<section class="featured">
+					<h2>精选阅读</h2>
+					<ul>
+						{featured.map((post) => (
+							<li>
+								<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+								<p class="desc">{post.data.description}</p>
+								<p class="meta"><FormattedDate date={post.data.pubDate} /></p>
+							</li>
+						))}
+					</ul>
+				</section>
+			)}
+
+			<section class="latest">
+				<h2>最新文章</h2>
+				<ul>
+					{latest.map((post) => (
+						<li>
+							<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+							<p class="desc">{post.data.description}</p>
+							<p class="meta"><FormattedDate date={post.data.pubDate} /></p>
+						</li>
+					))}
+				</ul>
+				<p style="margin-top:1rem">
+					<a href="/blog/">→ 查看全部文章</a>
+				</p>
+			</section>
+
+			<section>
+				<h2>按分类浏览</h2>
+				<div class="categories">
+					{categories.map(([cat, count]) => (
+						<a href={`/categories/${encodeURIComponent(cat.toLowerCase().replace(/[\s/]+/g, '-'))}/`}>
+							{cat}<span class="count">({count})</span>
+						</a>
+					))}
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>

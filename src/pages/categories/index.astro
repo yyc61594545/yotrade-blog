@@ -1,0 +1,69 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+
+const posts = await getCollection('blog', ({ data }) => !data.draft);
+const categoryMap = new Map<string, number>();
+for (const post of posts) {
+	const cat = post.data.category ?? '未分类';
+	categoryMap.set(cat, (categoryMap.get(cat) ?? 0) + 1);
+}
+const categories = [...categoryMap.entries()].sort((a, b) => b[1] - a[1]);
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead
+			title="分类 - YoTradeApi Blog"
+			description="按主题分类浏览文章：工具配置、模型评测、测试评测、故障排查、成本优化。"
+			canonical="https://blog.yotradeapi.com/categories/"
+			keywords={['AI API 中转', '工具配置', '模型评测', '故障排查']}
+		/>
+		<style>
+			main { width: 980px; }
+			ul {
+				list-style: none;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 1rem;
+				margin: 2rem 0;
+				padding: 0;
+			}
+			li {
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 8px;
+				padding: 1.25rem;
+			}
+			li a {
+				color: rgb(var(--black));
+				text-decoration: none;
+				display: block;
+				font-weight: 600;
+			}
+			li .count {
+				color: rgb(var(--gray));
+				font-size: 0.9rem;
+				margin-top: 0.25rem;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>分类</h1>
+			<p>{categories.length} 个分类，{posts.length} 篇文章。</p>
+			<ul>
+				{categories.map(([cat, count]) => (
+					<li>
+						<a href={`/categories/${encodeURIComponent(cat.toLowerCase().replace(/[\s/]+/g, '-'))}/`}>{cat}</a>
+						<div class="count">{count} 篇</div>
+					</li>
+				))}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

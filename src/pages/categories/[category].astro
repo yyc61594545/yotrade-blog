@@ -1,0 +1,69 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog', ({ data }) => !data.draft);
+	const categoryPosts = new Map<string, { slug: string; category: string; posts: typeof posts }>();
+	for (const post of posts) {
+		const cat = post.data.category ?? '未分类';
+		const slug = cat.toLowerCase().replace(/[\s/]+/g, '-');
+		if (!categoryPosts.has(slug)) {
+			categoryPosts.set(slug, { slug, category: cat, posts: [] });
+		}
+		categoryPosts.get(slug)!.posts.push(post);
+	}
+	return [...categoryPosts.values()].map(({ slug, category, posts }) => ({
+		params: { category: slug },
+		props: {
+			category,
+			posts: posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()),
+		},
+	}));
+}
+
+const { category, posts } = Astro.props;
+const canonical = `https://blog.yotradeapi.com/categories/${Astro.params.category}/`;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead
+			title={`${category} - YoTradeApi Blog`}
+			description={`分类「${category}」下的全部文章，共 ${posts.length} 篇。`}
+			canonical={canonical}
+			keywords={[category, 'AI API 中转', 'YoTradeApi']}
+		/>
+		<style>
+			main { width: 980px; }
+			ul { list-style: none; margin: 2rem 0; padding: 0; display: grid; gap: 1.25rem; }
+			li { border: 1px solid rgb(var(--gray-light)); border-radius: 8px; padding: 1rem 1.25rem; }
+			.meta { color: rgb(var(--gray)); font-size: 0.9rem; }
+			h2 { margin: 0.25rem 0 0.5rem; font-size: 1.4rem; }
+			h2 a { color: rgb(var(--black)); text-decoration: none; }
+			p { margin: 0; color: rgb(var(--gray-dark)); }
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<p class="meta"><a href="/categories/">← 所有分类</a></p>
+			<h1>分类：{category}</h1>
+			<p>共 {posts.length} 篇文章。</p>
+			<ul>
+				{posts.map((post) => (
+					<li>
+						<p class="meta"><FormattedDate date={post.data.pubDate} /></p>
+						<h2><a href={`/blog/${post.id}/`}>{post.data.title}</a></h2>
+						<p>{post.data.description}</p>
+					</li>
+				))}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
