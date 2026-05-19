@@ -75,6 +75,32 @@ scripts/
 
 push 到 `main` → GitHub Actions → Cloudflare Pages 自动部署。
 
+## 每日自动发文
+
+仓库自带一条 slash command `/daily-post`，跑一次会：
+
+1. 从 `scripts/topic-pool.md` 挑下一个未发布的选题（按分类轮换）
+2. 写完整文章并落地到 `src/content/blog/<slug>.md`
+3. 跑 `validate-blog.py` 校验
+4. `git commit && git push origin main`（触发 Cloudflare Pages 部署）
+
+### 触发方式
+
+在 [Claude Code on the web](https://code.claude.com/) 项目设置里加一个 **Schedule trigger**：
+
+- **Cron**：`0 1 * * *`（UTC 01:00 ≈ 北京时间 09:00；按需调整）
+- **Prompt / Command**：`/daily-post`
+- **Branch**：`main`
+
+触发后会自动开会话执行命令，跑完 push 完即结束。
+
+### 维护选题池
+
+- 候选选题写在 `scripts/topic-pool.md`，格式 `- slug | title | category`
+- 已发布的 slug 自动跳过，无需手动删
+- picker 会按"最近 7 篇分类最少出现"挑下一个，避免连续同类
+- `/daily-post` 在剩余 < 20 时会在结束语里提醒补池
+
 ## License
 
 内容仅供技术评估，发布前请自行核验第三方价格与模型列表。
