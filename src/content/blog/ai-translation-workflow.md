@@ -286,4 +286,4 @@ def translate_srt(srt_text, glossary):
 - [Python 异步并发调用 LLM API](/blog/python-async-llm-client/)
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 
-需要批量翻译稳定的中转 + 同 Key 调多家模型？[YoTradeApi](https://yotradeapi.com/register) 一把 Key 调 Claude / GPT / Gemini 全家，按场景切。
+需要批量翻译稳定的中转 + 同 Key 调多家模型？[YoTradeApi](https://yotradeapi.com) 一把 Key 调 Claude / GPT / Gemini 全家，按场景切。

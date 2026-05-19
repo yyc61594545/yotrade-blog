@@ -256,4 +256,4 @@ print(resp.choices[0].message.content)
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 
-需要一个 SSE 透传稳定的中转？[YoTradeApi](https://yotradeapi.com/register) 后台展示每条 stream 请求的 TTFB、chunk 数、是否完整结束，问题可追溯。
+需要一个 SSE 透传稳定的中转？[YoTradeApi](https://yotradeapi.com) 后台展示每条 stream 请求的 TTFB、chunk 数、是否完整结束，问题可追溯。

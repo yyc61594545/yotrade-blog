@@ -147,4 +147,4 @@ Cline 支持 MCP（Model Context Protocol）。如果你接入了 GitHub MCP、S
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 
-需要一个支持 Cline 全部模型的中转？在 [YoTradeApi 注册](https://yotradeapi.com/register) 创建独立 API Key，按上面的 base_url 直接接入。
+需要一个支持 Cline 全部模型的中转？在 [YoTradeApi 注册](https://yotradeapi.com) 创建独立 API Key，按上面的 base_url 直接接入。

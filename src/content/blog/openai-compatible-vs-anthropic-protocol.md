@@ -233,4 +233,4 @@ curl https://yotradeapi.com/v1/messages \
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [流式 SSE 故障排查](/blog/streaming-sse-troubleshooting/)
 
-[YoTradeApi](https://yotradeapi.com/register) 同时支持 OpenAI 兼容协议（`/v1/chat/completions`）与 Anthropic 原生协议（`/v1/messages`），一把 Key 跑两个协议。
+[YoTradeApi](https://yotradeapi.com) 同时支持 OpenAI 兼容协议（`/v1/chat/completions`）与 Anthropic 原生协议（`/v1/messages`），一把 Key 跑两个协议。

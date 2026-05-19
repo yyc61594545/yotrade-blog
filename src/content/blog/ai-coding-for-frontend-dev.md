@@ -211,4 +211,4 @@ AI 用 best practice 写 Playwright，比新手写得规范。
 - [LLM Vision API 国内对比](/blog/llm-vision-api-comparison/)
 - [用 AI 编程工具一周写一个 SaaS](/blog/saas-with-ai-coding-tools/)
 
-需要给前端工作流配一个稳定 base_url？在 [YoTradeApi 注册](https://yotradeapi.com/register) 创建独立 API Key 接入各个工具即可。
+需要给前端工作流配一个稳定 base_url？在 [YoTradeApi 注册](https://yotradeapi.com) 创建独立 API Key 接入各个工具即可。

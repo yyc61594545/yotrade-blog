@@ -214,4 +214,4 @@ codex exec "review the PR" --approval never
 - [Cursor vs Claude Code](/blog/cursor-vs-claude-code-comparison/)
 - [2026 AI 编程工具全景图](/blog/ai-coding-tools-2026-overview/)
 
-用一把 Key 同时接 Claude Code 与 Codex CLI？[YoTradeApi](https://yotradeapi.com/register) 同时支持 Anthropic Messages 与 OpenAI Responses 两个协议。
+用一把 Key 同时接 Claude Code 与 Codex CLI？[YoTradeApi](https://yotradeapi.com) 同时支持 Anthropic Messages 与 OpenAI Responses 两个协议。

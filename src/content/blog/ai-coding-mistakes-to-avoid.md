@@ -194,4 +194,4 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 - [LLM 评估实战](/blog/llm-evaluation-cn-guide/)
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 
-完整避坑工作流需要稳定中转 + 可设上限的 Key。[YoTradeApi](https://yotradeapi.com/register) 后台直接配独立 Key + 日预算上限。
+完整避坑工作流需要稳定中转 + 可设上限的 Key。[YoTradeApi](https://yotradeapi.com) 后台直接配独立 Key + 日预算上限。

@@ -289,4 +289,4 @@ Gemini 通过 OpenAI 兼容协议也支持，**但部分版本 bug 较多**。�
 - [LLM 结构化输出完全指南](/blog/structured-output-llm-guide/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 
-需要 Claude / GPT 并行 tool use 完整透传的中转？[YoTradeApi](https://yotradeapi.com/register) 完整支持并行 tool_use 协议。
+需要 Claude / GPT 并行 tool use 完整透传的中转？[YoTradeApi](https://yotradeapi.com) 完整支持并行 tool_use 协议。

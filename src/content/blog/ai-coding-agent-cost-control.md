@@ -215,4 +215,4 @@ while True:
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [Cursor Background Agent 国内配置与使用](/blog/cursor-background-agent-config/)
 
-需要带预算上限、用量看板、告警通知的中转？[YoTradeApi](https://yotradeapi.com/register) 后台直接配置，每天看一眼就够。
+需要带预算上限、用量看板、告警通知的中转？[YoTradeApi](https://yotradeapi.com) 后台直接配置，每天看一眼就够。

@@ -246,4 +246,4 @@ AI 在并发上的分析能力近年提升明显，能给出几种 trade-off 的
 - [Claude Code Subagent 实战](/blog/claude-code-subagent-practice/)
 - [Claude Code CI/CD 接入](/blog/claude-code-ci-integration/)
 
-后端长任务在 [YoTradeApi](https://yotradeapi.com/register) 用 Claude Opus 4.7 跑 architect，Sonnet 4.6 跑实施，一把 Key 通用。
+后端长任务在 [YoTradeApi](https://yotradeapi.com) 用 Claude Opus 4.7 跑 architect，Sonnet 4.6 跑实施，一把 Key 通用。

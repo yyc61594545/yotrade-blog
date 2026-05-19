@@ -264,4 +264,4 @@ async def chat(user_id, message):
 - [LLM 评估实战](/blog/llm-evaluation-cn-guide/)
 - [LLM 流式 UI 实战模式](/blog/llm-streaming-ui-patterns/)
 
-客服系统大量调用，配 [YoTradeApi](https://yotradeapi.com/register) 中转 + 独立业务 Key + 日预算上限，控成本 + 监控。
+客服系统大量调用，配 [YoTradeApi](https://yotradeapi.com) 中转 + 独立业务 Key + 日预算上限，控成本 + 监控。

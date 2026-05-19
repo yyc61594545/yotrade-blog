@@ -274,4 +274,4 @@ Claude 会跑 20–40 分钟，期间：
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 - [2026 AI 编程工具全景图](/blog/ai-coding-tools-2026-overview/)
 
-注册 [YoTradeApi](https://yotradeapi.com/register) 创建独立 API Key，按本教程第 3 节 5 行环境变量配置直接接入 Claude Code。
+注册 [YoTradeApi](https://yotradeapi.com) 创建独立 API Key，按本教程第 3 节 5 行环境变量配置直接接入 Claude Code。

@@ -310,4 +310,4 @@ env:
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-LiteLLM 上游配 [YoTradeApi](https://yotradeapi.com/register)，一把 Key 给整个 LiteLLM 用，团队 Key 在 LiteLLM 后台单独发。
+LiteLLM 上游配 [YoTradeApi](https://yotradeapi.com)，一把 Key 给整个 LiteLLM 用，团队 Key 在 LiteLLM 后台单独发。

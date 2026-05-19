@@ -269,4 +269,4 @@ PR 大就贵：
 - [.cursorrules 最佳实践](/blog/cursor-rules-best-practices/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 
-AI review 配 [YoTradeApi](https://yotradeapi.com/register) 中转 + 独立 CI key + 日预算上限，最大可控。
+AI review 配 [YoTradeApi](https://yotradeapi.com) 中转 + 独立 CI key + 日预算上限，最大可控。

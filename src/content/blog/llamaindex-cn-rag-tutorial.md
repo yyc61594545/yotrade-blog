@@ -263,4 +263,4 @@ query_engine = index.as_query_engine(filters=filters)
 - [Cherry Studio 国内 API 中转配置指南](/blog/cherry-studio-cn-config/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 
-LlamaIndex 同时需要 chat + embedding 接口？[YoTradeApi](https://yotradeapi.com/register) 一把 Key 接两个端点，按上面配置接入。
+LlamaIndex 同时需要 chat + embedding 接口？[YoTradeApi](https://yotradeapi.com) 一把 Key 接两个端点，按上面配置接入。

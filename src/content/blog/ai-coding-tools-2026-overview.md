@@ -200,4 +200,4 @@ E. 全 SaaS、不想配置
 - [Cherry Studio 国内 API 中转配置指南](/blog/cherry-studio-cn-config/)
 - [Codex CLI 国内配置](/blog/codex-cli-cn-setup/)
 
-12 个工具用 1 把 Key？[YoTradeApi](https://yotradeapi.com/register) 兼容 OpenAI / Anthropic 协议，一次创建 key 全工具通用。
+12 个工具用 1 把 Key？[YoTradeApi](https://yotradeapi.com) 兼容 OpenAI / Anthropic 协议，一次创建 key 全工具通用。

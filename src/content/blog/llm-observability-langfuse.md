@@ -275,4 +275,4 @@ Langfuse 自己只是观察平台，不影响 LLM 调用。中转处理实际 AP
 - [LangChain 中文实战](/blog/langchain-cn-tutorial/)
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 
-Langfuse + [YoTradeApi](https://yotradeapi.com/register) 组合：中转管 API 路由，Langfuse 管观察。两侧用量数据可交叉校对。
+Langfuse + [YoTradeApi](https://yotradeapi.com) 组合：中转管 API 路由，Langfuse 管观察。两侧用量数据可交叉校对。

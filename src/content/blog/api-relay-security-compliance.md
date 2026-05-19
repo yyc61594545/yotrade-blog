@@ -173,4 +173,4 @@ API Key 是你的**身份令牌 + 账单授权**。同一把 Key 给越多人/�
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-需要带独立 Key 管理、用量审计、预算上限的中转？[YoTradeApi](https://yotradeapi.com/register) 后台支持以上全部，按上述清单逐项检查再决定是否接入。
+需要带独立 Key 管理、用量审计、预算上限的中转？[YoTradeApi](https://yotradeapi.com) 后台支持以上全部，按上述清单逐项检查再决定是否接入。

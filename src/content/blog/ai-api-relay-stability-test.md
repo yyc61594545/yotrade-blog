@@ -267,4 +267,4 @@ jobs:
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 
-如果你需要一个稳定的基线来对比其它中转，[YoTradeApi](https://yotradeapi.com/register) 提供独立 API Key 与用量日志，方便直接接入上面这套脚本做基线测试。
+如果你需要一个稳定的基线来对比其它中转，[YoTradeApi](https://yotradeapi.com) 提供独立 API Key 与用量日志，方便直接接入上面这套脚本做基线测试。

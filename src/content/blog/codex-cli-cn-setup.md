@@ -210,4 +210,4 @@ Codex CLI 本身设计是 OpenAI 模型优先，但因为协议兼容，通过�
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 - [Cherry Studio 国内 API 中转配置指南](/blog/cherry-studio-cn-config/)
 
-需要同时支持 OpenAI Responses API 与 Anthropic Messages 的中转？[YoTradeApi](https://yotradeapi.com/register) 同 Key 跑两种协议，按上面 toml 配置直接接入。
+需要同时支持 OpenAI Responses API 与 Anthropic Messages 的中转？[YoTradeApi](https://yotradeapi.com) 同 Key 跑两种协议，按上面 toml 配置直接接入。

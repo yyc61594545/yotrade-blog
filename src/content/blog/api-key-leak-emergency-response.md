@@ -260,4 +260,4 @@ def check():
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 
-[YoTradeApi](https://yotradeapi.com/register) 支持一键吊销 + 用量明细 + 日预算上限，应急响应 1 分钟内可完成止血。
+[YoTradeApi](https://yotradeapi.com) 支持一键吊销 + 用量明细 + 日预算上限，应急响应 1 分钟内可完成止血。

@@ -332,4 +332,4 @@ python smoke_openai_compatible.py \
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
 - [Cline 国内 API 配置详解](/blog/cline-cn-api-setup/)
 
-需要一个独立 API Key 做小流量测试？在 [YoTradeApi 注册](https://yotradeapi.com/register) 创建 key，把上面的 `base_url` 直接接进现有 SDK 即可。
+需要一个独立 API Key 做小流量测试？在 [YoTradeApi 注册](https://yotradeapi.com) 创建 key，把上面的 `base_url` 直接接进现有 SDK 即可。

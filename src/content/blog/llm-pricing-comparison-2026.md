@@ -195,4 +195,4 @@ F. 高频聊天界面
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 
-价格持续变动，建议在 [YoTradeApi](https://yotradeapi.com/register) 后台查看实时价格表与你的实际消费。
+价格持续变动，建议在 [YoTradeApi](https://yotradeapi.com) 后台查看实时价格表与你的实际消费。

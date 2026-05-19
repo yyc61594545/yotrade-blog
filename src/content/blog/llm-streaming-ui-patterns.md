@@ -383,4 +383,4 @@ export async function POST(req: Request) {
 - [LLM API 限速处理](/blog/llm-rate-limit-handling/)
 - [前端开发者用 AI 编程的实战工作流](/blog/ai-coding-for-frontend-dev/)
 
-UI 接 [YoTradeApi](https://yotradeapi.com/register) 中转，按上面的模板服务端代理即可。
+UI 接 [YoTradeApi](https://yotradeapi.com) 中转，按上面的模板服务端代理即可。

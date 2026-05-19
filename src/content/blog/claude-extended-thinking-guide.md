@@ -232,4 +232,4 @@ Architect / Reviewer / Debugger 这些"重思考"的 subagent 单独开 thinking
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-需要支持 extended thinking 透传的中转？[YoTradeApi](https://yotradeapi.com/register) 完整透传 thinking 字段，按 Anthropic 原生协议调用即可。
+需要支持 extended thinking 透传的中转？[YoTradeApi](https://yotradeapi.com) 完整透传 thinking 字段，按 Anthropic 原生协议调用即可。

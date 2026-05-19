@@ -260,4 +260,4 @@ budget.record(resp.usage.total_tokens)
 - [LLM API 限速处理](/blog/llm-rate-limit-handling/)
 - [中文 RAG 工程实战](/blog/rag-cn-best-practices/)
 
-需要查询每条请求精确 token 数的中转？[YoTradeApi](https://yotradeapi.com/register) 后台展示每条请求的 input / output / cached / total tokens，方便复盘。
+需要查询每条请求精确 token 数的中转？[YoTradeApi](https://yotradeapi.com) 后台展示每条请求的 input / output / cached / total tokens，方便复盘。

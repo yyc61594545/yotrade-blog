@@ -193,4 +193,4 @@ resp = client.embeddings.create(
 - [Gemini API 国内调用指南](/blog/gemini-api-cn-guide/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-需要一把 Key 同时调 embedding + chat + rerank？[YoTradeApi](https://yotradeapi.com/register) 支持 OpenAI / Voyage 兼容端点，按上面 SDK 例子直接接入。
+需要一把 Key 同时调 embedding + chat + rerank？[YoTradeApi](https://yotradeapi.com) 支持 OpenAI / Voyage 兼容端点，按上面 SDK 例子直接接入。

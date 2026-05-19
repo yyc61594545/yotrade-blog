@@ -166,4 +166,4 @@ curl -sS -X POST "$ANTHROPIC_BASE_URL/v1/messages" \
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 
-如果想先用最小流量验证 Claude Code 在国内的可用性，可以在 [YoTradeApi 注册](https://yotradeapi.com/register) 创建独立 API Key，按上面的 5 行环境变量直接接入，跑通后再决定要不要扩量。
+如果想先用最小流量验证 Claude Code 在国内的可用性，可以在 [YoTradeApi 注册](https://yotradeapi.com) 创建独立 API Key，按上面的 5 行环境变量直接接入，跑通后再决定要不要扩量。

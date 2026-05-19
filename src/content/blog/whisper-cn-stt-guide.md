@@ -264,4 +264,4 @@ async function transcribe(file: File) {
 - [用 AI API 做高质量翻译的工程化流程](/blog/ai-translation-workflow/)
 - [LLM Vision API 国内对比](/blog/llm-vision-api-comparison/)
 
-需要 Whisper + Chat 一把 Key 通用的中转？[YoTradeApi](https://yotradeapi.com/register) 同时支持 `audio/transcriptions` 与 `chat/completions` 端点。
+需要 Whisper + Chat 一把 Key 通用的中转？[YoTradeApi](https://yotradeapi.com) 同时支持 `audio/transcriptions` 与 `chat/completions` 端点。

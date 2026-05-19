@@ -255,4 +255,4 @@ Cline 长任务最容易遇到中转抖断流：
 - [AI 编程的 12 个常见错误与避坑指南](/blog/ai-coding-mistakes-to-avoid/)
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 
-Auto-Approve + [YoTradeApi](https://yotradeapi.com/register) 中转 + 独立 Key + 日预算上限 = 风险可控的长任务自治。
+Auto-Approve + [YoTradeApi](https://yotradeapi.com) 中转 + 独立 Key + 日预算上限 = 风险可控的长任务自治。

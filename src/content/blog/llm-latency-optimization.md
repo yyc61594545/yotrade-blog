@@ -278,4 +278,4 @@ p50 / p95 / p99 跟踪起来，异常立刻发现。
 - [LLM 流式 UI 实战模式](/blog/llm-streaming-ui-patterns/)
 - [LLM API 限速处理](/blog/llm-rate-limit-handling/)
 
-延迟优化 + 稳定中转 = 用户能感受到的"快"。[YoTradeApi](https://yotradeapi.com/register) 支持多区域接入 + caching 透传，按上面方法配置即可。
+延迟优化 + 稳定中转 = 用户能感受到的"快"。[YoTradeApi](https://yotradeapi.com) 支持多区域接入 + caching 透传，按上面方法配置即可。

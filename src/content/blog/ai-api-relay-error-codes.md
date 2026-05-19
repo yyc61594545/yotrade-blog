@@ -308,4 +308,4 @@ for name, url, key in PROBES:
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
 
-需要带完整用量日志、错误码可查的中转？[YoTradeApi](https://yotradeapi.com/register) 在后台展示每条请求的状态码、耗时与原因，方便排查。
+需要带完整用量日志、错误码可查的中转？[YoTradeApi](https://yotradeapi.com) 在后台展示每条请求的状态码、耗时与原因，方便排查。

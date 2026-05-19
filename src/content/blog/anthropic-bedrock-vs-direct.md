@@ -211,4 +211,4 @@ model_list:
 - [API Key 泄露应急响应](/blog/api-key-leak-emergency-response/)
 - [OpenAI 兼容协议 vs Anthropic 原生协议](/blog/openai-compatible-vs-anthropic-protocol/)
 
-国内场景，[YoTradeApi](https://yotradeapi.com/register) 一把 Key + Anthropic 原生协议 = 国内可用的最简路径。
+国内场景，[YoTradeApi](https://yotradeapi.com) 一把 Key + Anthropic 原生协议 = 国内可用的最简路径。

@@ -172,4 +172,4 @@ Windsurf 默认让 Memory 和 Rules 内容稳定，**这部分高度复用，开
 - [Claude Code 镜像国内配置完整指南](/blog/claude-code-mirror-cn-setup/)
 - [2026 AI 编程工具全景图](/blog/ai-coding-tools-2026-overview/)
 
-需要 Windsurf Custom Model + Claude Code 共享 Key？[YoTradeApi](https://yotradeapi.com/register) 一把 Key 通调，按上面配置接入。
+需要 Windsurf Custom Model + Claude Code 共享 Key？[YoTradeApi](https://yotradeapi.com) 一把 Key 通调，按上面配置接入。

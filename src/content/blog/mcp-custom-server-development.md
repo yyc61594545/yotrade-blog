@@ -368,4 +368,4 @@ npm publish
 - [Claude 并行 Tool Use 实战](/blog/parallel-tool-use-claude/)
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 
-自建 MCP server 配 [YoTradeApi](https://yotradeapi.com/register) 中转，按上面 demo 跑通后接入 Cursor / Claude Code 即可。
+自建 MCP server 配 [YoTradeApi](https://yotradeapi.com) 中转，按上面 demo 跑通后接入 Cursor / Claude Code 即可。

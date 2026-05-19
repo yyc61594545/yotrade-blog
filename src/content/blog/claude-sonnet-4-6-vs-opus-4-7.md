@@ -200,4 +200,4 @@ aider --architect \
 - [GPT-5 与 Claude Opus 4.7 编程能力对比](/blog/gpt-5-vs-claude-opus-4-7-coding/)
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 
-如果要把 Sonnet 4.6 + Opus 4.7 + Haiku 4.5 用同一把 Key 接入开发工具，可以在 [YoTradeApi 注册](https://yotradeapi.com/register) 创建 API Key 后直接配置 base_url。
+如果要把 Sonnet 4.6 + Opus 4.7 + Haiku 4.5 用同一把 Key 接入开发工具，可以在 [YoTradeApi 注册](https://yotradeapi.com) 创建 API Key 后直接配置 base_url。

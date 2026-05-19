@@ -217,4 +217,4 @@ MCP 服务器跑挂了排查：
 - [Cherry Studio 国内 API 中转配置指南](/blog/cherry-studio-cn-config/)
 - [Claude Code Subagent 实战](/blog/claude-code-subagent-practice/)
 
-需要把 MCP 用得稳又便宜？配合 [YoTradeApi](https://yotradeapi.com/register) 的 prompt caching + 按 key 预算上限，MCP 的固定开销也可控。
+需要把 MCP 用得稳又便宜？配合 [YoTradeApi](https://yotradeapi.com) 的 prompt caching + 按 key 预算上限，MCP 的固定开销也可控。

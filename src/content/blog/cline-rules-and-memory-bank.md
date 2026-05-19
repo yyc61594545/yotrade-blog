@@ -355,4 +355,4 @@ Cline 的 Memory Bank 是它的核心差异化。**Cursor 用户也可以模仿�
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 - [Claude Code Subagent 实战](/blog/claude-code-subagent-practice/)
 
-把 Cline + Memory Bank 接入 [YoTradeApi](https://yotradeapi.com/register) 一把 Key，按上面 .clinerules 模板开始即可。
+把 Cline + Memory Bank 接入 [YoTradeApi](https://yotradeapi.com) 一把 Key，按上面 .clinerules 模板开始即可。

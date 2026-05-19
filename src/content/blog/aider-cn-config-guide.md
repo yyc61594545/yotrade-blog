@@ -222,4 +222,4 @@ aider --auto-test --test-cmd "npm test" --auto-lint --lint-cmd "npm run lint"
 - [Cline 国内 API 配置详解](/blog/cline-cn-api-setup/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 
-需要支持 Aider Architect 模式（双模型）的中转？[YoTradeApi](https://yotradeapi.com/register) 提供 Claude Sonnet 4.6 + Opus 4.7 + Haiku 4.5 同 Key 调用，配置 base_url 直接接入。
+需要支持 Aider Architect 模式（双模型）的中转？[YoTradeApi](https://yotradeapi.com) 提供 Claude Sonnet 4.6 + Opus 4.7 + Haiku 4.5 同 Key 调用，配置 base_url 直接接入。

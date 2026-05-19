@@ -187,4 +187,4 @@ resp = client.chat.completions.create(
 - [Gemini API 国内调用指南](/blog/gemini-api-cn-guide/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 
-需要一把 Key 同时调 Grok、Claude、GPT、Gemini？在 [YoTradeApi 注册](https://yotradeapi.com/register) 创建 API Key 即可。
+需要一把 Key 同时调 Grok、Claude、GPT、Gemini？在 [YoTradeApi 注册](https://yotradeapi.com) 创建 API Key 即可。

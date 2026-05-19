@@ -276,4 +276,4 @@ def translate_doc(zh_text):
 - [AI 生成单元测试的工程化方法](/blog/ai-test-generation-workflow/)
 - [Claude Code CI/CD 接入](/blog/claude-code-ci-integration/)
 
-文档生成大量调用，配 [YoTradeApi](https://yotradeapi.com/register) 中转 + caching + Haiku 4.5，每月成本可控。
+文档生成大量调用，配 [YoTradeApi](https://yotradeapi.com) 中转 + caching + Haiku 4.5，每月成本可控。

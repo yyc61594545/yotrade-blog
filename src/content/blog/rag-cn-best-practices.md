@@ -294,4 +294,4 @@ for case in test_set:
 - [Gemini API 国内调用指南](/blog/gemini-api-cn-guide/)
 - [Python 异步并发调用 LLM API 实战](/blog/python-async-llm-client/)
 
-构建 RAG 需要 embedding + chat + rerank 三种接口？[YoTradeApi](https://yotradeapi.com/register) 一把 Key 全覆盖，按上面流程接入。
+构建 RAG 需要 embedding + chat + rerank 三种接口？[YoTradeApi](https://yotradeapi.com) 一把 Key 全覆盖，按上面流程接入。

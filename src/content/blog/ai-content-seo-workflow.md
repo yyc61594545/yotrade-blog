@@ -291,4 +291,4 @@ CI 跑这个脚本，产出 PR 让你 review。
 - [LangChain 中文实战](/blog/langchain-cn-tutorial/)
 - [中文 RAG 工程实战](/blog/rag-cn-best-practices/)
 
-需要批量产出走中转 + 同 Key 调多模型？[YoTradeApi](https://yotradeapi.com/register) 一把 Key 用 Sonnet 写主体、Haiku 做 SEO 优化，省一半成本。
+需要批量产出走中转 + 同 Key 调多模型？[YoTradeApi](https://yotradeapi.com) 一把 Key 用 Sonnet 写主体、Haiku 做 SEO 优化，省一半成本。

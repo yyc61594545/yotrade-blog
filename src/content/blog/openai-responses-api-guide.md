@@ -229,4 +229,4 @@ curl -i https://yotradeapi.com/v1/responses \
 - [OpenAI 兼容协议 vs Anthropic 原生协议](/blog/openai-compatible-vs-anthropic-protocol/)
 - [GPT-5 与 Claude Opus 4.7 编程能力对比](/blog/gpt-5-vs-claude-opus-4-7-coding/)
 
-需要 Responses API 兼容的中转？[YoTradeApi](https://yotradeapi.com/register) 支持 `/v1/responses` 端点，Codex CLI 等工具可以直接接入。
+需要 Responses API 兼容的中转？[YoTradeApi](https://yotradeapi.com) 支持 `/v1/responses` 端点，Codex CLI 等工具可以直接接入。

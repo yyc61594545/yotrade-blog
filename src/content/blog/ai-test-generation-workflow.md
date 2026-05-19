@@ -270,4 +270,4 @@ pnpm test --coverage
 - [AI 编程的 12 个常见错误与避坑指南](/blog/ai-coding-mistakes-to-avoid/)
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 
-批量测试生成走 [YoTradeApi](https://yotradeapi.com/register) 中转，按上面流程一晚拉到 80% 覆盖。
+批量测试生成走 [YoTradeApi](https://yotradeapi.com) 中转，按上面流程一晚拉到 80% 覆盖。

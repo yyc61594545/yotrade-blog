@@ -207,4 +207,4 @@ print(resp.choices[0].message.content)
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [中文 RAG 工程实战](/blog/rag-cn-best-practices/)
 
-需要透传 anthropic-beta 头、支持 1M 上下文的中转？[YoTradeApi](https://yotradeapi.com/register) 完整透传 beta headers，按上面代码直接发请求即可。
+需要透传 anthropic-beta 头、支持 1M 上下文的中转？[YoTradeApi](https://yotradeapi.com) 完整透传 beta headers，按上面代码直接发请求即可。

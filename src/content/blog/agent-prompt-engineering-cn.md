@@ -251,4 +251,4 @@ Cline 的 Plan、Aider 的 Architect、Cursor 的 Plan Mode——让代理先规
 - [Cursor Background Agent 国内配置](/blog/cursor-background-agent-config/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-用 [YoTradeApi](https://yotradeapi.com/register) 创建独立 Key，可以在不同工具间共享同一份 system prompt 与项目知识，按用例切模型。
+用 [YoTradeApi](https://yotradeapi.com) 创建独立 Key，可以在不同工具间共享同一份 system prompt 与项目知识，按用例切模型。

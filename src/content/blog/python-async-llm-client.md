@@ -293,4 +293,4 @@ start_http_server(9090)
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 - [流式 SSE 故障排查](/blog/streaming-sse-troubleshooting/)
 
-需要带 RPM/TPM 监控、独立 Key 限频的中转？[YoTradeApi](https://yotradeapi.com/register) 后台可见每个 Key 的实时用量与限频状态。
+需要带 RPM/TPM 监控、独立 Key 限频的中转？[YoTradeApi](https://yotradeapi.com) 后台可见每个 Key 的实时用量与限频状态。

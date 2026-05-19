@@ -205,4 +205,4 @@ quickActions:
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 
-用一把 Key 同时配置 Continue.dev 的 chat / edit / autocomplete / embed？[YoTradeApi](https://yotradeapi.com/register) 创建 API Key 后按上面 yaml 模板填即可。
+用一把 Key 同时配置 Continue.dev 的 chat / edit / autocomplete / embed？[YoTradeApi](https://yotradeapi.com) 创建 API Key 后按上面 yaml 模板填即可。

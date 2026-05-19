@@ -126,7 +126,7 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 | GPT-5 | 广泛 | OpenAI + Responses | 注意是否支持 Responses API |
 | Gemini 2.5 Pro | 中等 | 通过 OpenAI 兼容路径 | safety filter 设置可能受限 |
 
-通过 [YoTradeApi](https://yotradeapi.com/register) 这类中转，三家模型可以一把 Key 通调。
+通过 [YoTradeApi](https://yotradeapi.com) 这类中转，三家模型可以一把 Key 通调。
 
 ## 十、按场景选型
 
@@ -164,4 +164,4 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 - [Grok API 国内调用指南](/blog/grok-api-cn-guide/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-一把 Key 同时调 Claude/GPT/Gemini？[YoTradeApi](https://yotradeapi.com/register) 兼容 OpenAI 与 Anthropic 协议，按场景自由切换。
+一把 Key 同时调 Claude/GPT/Gemini？[YoTradeApi](https://yotradeapi.com) 兼容 OpenAI 与 Anthropic 协议，按场景自由切换。

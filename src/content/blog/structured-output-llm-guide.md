@@ -289,4 +289,4 @@ curl https://yotradeapi.com/v1/chat/completions \
 - [Python 异步并发调用 LLM API](/blog/python-async-llm-client/)
 - [LangChain 中文实战](/blog/langchain-cn-tutorial/)
 
-需要支持 response_format 与 tool_use 完整透传的中转？[YoTradeApi](https://yotradeapi.com/register) 同时支持两种结构化机制。
+需要支持 response_format 与 tool_use 完整透传的中转？[YoTradeApi](https://yotradeapi.com) 同时支持两种结构化机制。

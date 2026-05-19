@@ -123,4 +123,4 @@ python smoke_openai_compatible.py \
 - [OpenAI SDK base_url 国内配置](/blog/openai-sdk-base-url-cn/)
 - [AI API 中转稳定性测试](/blog/ai-api-relay-stability-test/)
 
-如果你要先用一把真实代码任务做小流量测试，可以在 [YoTradeApi 注册](https://yotradeapi.com/register) 后创建独立 API Key，再把 Cursor、Cline 或 Aider 的 base_url 指向 `https://yotradeapi.com/v1`。建议从低风险脚本开始，不要一上来接生产任务。
+如果你要先用一把真实代码任务做小流量测试，可以在 [YoTradeApi 注册](https://yotradeapi.com) 后创建独立 API Key，再把 Cursor、Cline 或 Aider 的 base_url 指向 `https://yotradeapi.com/v1`。建议从低风险脚本开始，不要一上来接生产任务。

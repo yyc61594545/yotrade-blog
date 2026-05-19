@@ -311,4 +311,4 @@ result = await Runner.run(triage, "我想退订单 #12345 的款")
 - [LLM 结构化输出完全指南](/blog/structured-output-llm-guide/)
 - [AI Agent 评估方法](/blog/llm-agent-evaluation-methods/)
 
-需要 Responses API + tool_call + handoff 完整透传的中转？[YoTradeApi](https://yotradeapi.com/register) 完整支持 Agents SDK 所有特性。
+需要 Responses API + tool_call + handoff 完整透传的中转？[YoTradeApi](https://yotradeapi.com) 完整支持 Agents SDK 所有特性。

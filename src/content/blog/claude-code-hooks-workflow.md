@@ -231,4 +231,4 @@ curl -s -X POST "$DINGTALK_WEBHOOK" \
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-需要给 Claude Code Hooks 配一个稳定的 base_url？[YoTradeApi](https://yotradeapi.com/register) 后台支持独立 Key，方便给每个 hook 用例分配独立 token。
+需要给 Claude Code Hooks 配一个稳定的 base_url？[YoTradeApi](https://yotradeapi.com) 后台支持独立 Key，方便给每个 hook 用例分配独立 token。

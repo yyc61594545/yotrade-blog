@@ -221,4 +221,4 @@ Open WebUI 的优势是 **多用户 + 远程访问**。家庭一台服务器跑�
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [中文 RAG 工程实战](/blog/rag-cn-best-practices/)
 
-需要一把 Key 支持 chat + embedding + 多模型的中转给 Open WebUI 用？[YoTradeApi](https://yotradeapi.com/register) 创建独立 Key 后按上面 docker 命令直接接入。
+需要一把 Key 支持 chat + embedding + 多模型的中转给 Open WebUI 用？[YoTradeApi](https://yotradeapi.com) 创建独立 Key 后按上面 docker 命令直接接入。

@@ -258,4 +258,4 @@ curl https://yotradeapi.com/v1/messages \
 - [自定义 MCP Server 开发实战](/blog/mcp-custom-server-development/)
 - [Claude Code Hooks 工作流](/blog/claude-code-hooks-workflow/)
 
-Skills + Subagent + MCP 三件套配 [YoTradeApi](https://yotradeapi.com/register) 中转，能搭出强大的私有 Agent 系统。
+Skills + Subagent + MCP 三件套配 [YoTradeApi](https://yotradeapi.com) 中转，能搭出强大的私有 Agent 系统。

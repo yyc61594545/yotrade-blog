@@ -225,4 +225,4 @@ ORM 用户必备的高频重构。
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 - [AI 生成单元测试的工程化方法](/blog/ai-test-generation-workflow/)
 
-大重构推荐 Architect + Editor 双模型，[YoTradeApi](https://yotradeapi.com/register) 一把 Key 同时支持 Opus 4.7 + Sonnet 4.6。
+大重构推荐 Architect + Editor 双模型，[YoTradeApi](https://yotradeapi.com) 一把 Key 同时支持 Opus 4.7 + Sonnet 4.6。

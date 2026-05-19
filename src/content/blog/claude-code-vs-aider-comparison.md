@@ -248,4 +248,4 @@ CI 自动化 → Claude Code（headless 友好）
 - [Cursor vs Claude Code](/blog/cursor-vs-claude-code-comparison/)
 - [2026 AI 编程工具全景图](/blog/ai-coding-tools-2026-overview/)
 
-两者都用 [YoTradeApi](https://yotradeapi.com/register) 中转 + 一把 Key，跨工具切换。
+两者都用 [YoTradeApi](https://yotradeapi.com) 中转 + 一把 Key，跨工具切换。

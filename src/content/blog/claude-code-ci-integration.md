@@ -277,4 +277,4 @@ claude --headless --task "扫描 src/ 下潜在的 SQL 注入、XSS、Path Trave
 - [Claude Code Hooks 工作流](/blog/claude-code-hooks-workflow/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 
-需要 CI 友好的中转（独立 Key + 预算上限 + 日志可追溯）？[YoTradeApi](https://yotradeapi.com/register) 后台直接配置。
+需要 CI 友好的中转（独立 Key + 预算上限 + 日志可追溯）？[YoTradeApi](https://yotradeapi.com) 后台直接配置。

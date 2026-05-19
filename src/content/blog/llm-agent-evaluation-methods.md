@@ -284,4 +284,4 @@ def consistency_check(agent, scenario):
 - [Claude 并行 Tool Use 实战](/blog/parallel-tool-use-claude/)
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
 
-Agent 评估高频跑需要稳定中转 + 用量日志。[YoTradeApi](https://yotradeapi.com/register) 后台展示每条请求的 token、耗时、状态，方便回归对比。
+Agent 评估高频跑需要稳定中转 + 用量日志。[YoTradeApi](https://yotradeapi.com) 后台展示每条请求的 token、耗时、状态，方便回归对比。

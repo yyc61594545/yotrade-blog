@@ -259,4 +259,4 @@ docs = retriever.invoke("关键词查询")
 - [Embeddings API 国内对比](/blog/embeddings-api-cn-comparison/)
 - [LiteLLM 自部署 LLM 网关](/blog/litellm-cn-gateway-self-host/)
 
-LangChain `base_url` 指向 [YoTradeApi](https://yotradeapi.com/register) 即可在国内稳定调用 Claude / GPT / Gemini 全家。
+LangChain `base_url` 指向 [YoTradeApi](https://yotradeapi.com) 即可在国内稳定调用 Claude / GPT / Gemini 全家。

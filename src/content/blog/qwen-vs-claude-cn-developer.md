@@ -172,4 +172,4 @@ L3 长任务 agent → Claude Opus 4.7
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 - [2026 LLM 价格对比与选型决策](/blog/llm-pricing-comparison-2026/)
 
-[YoTradeApi](https://yotradeapi.com/register) 同时支持 Qwen / DeepSeek / Claude / GPT 全家，一把 Key 跨模型对比。
+[YoTradeApi](https://yotradeapi.com) 同时支持 Qwen / DeepSeek / Claude / GPT 全家，一把 Key 跨模型对比。

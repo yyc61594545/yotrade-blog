@@ -248,4 +248,4 @@ except OpenAIError as e:
 - [LLM Vision API 国内对比](/blog/llm-vision-api-comparison/)
 - [Python 异步并发调用 LLM API](/blog/python-async-llm-client/)
 
-需要支持 GPT Image / Imagen / Flux 多家的中转？[YoTradeApi](https://yotradeapi.com/register) 一把 Key 通调，按上面 SDK 代码接入。
+需要支持 GPT Image / Imagen / Flux 多家的中转？[YoTradeApi](https://yotradeapi.com) 一把 Key 通调，按上面 SDK 代码接入。

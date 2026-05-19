@@ -329,4 +329,4 @@ AI 知道"为什么"才不会**反向重构**（推翻已有决策）。
 - [AI 编程的 12 个常见错误与避坑指南](/blog/ai-coding-mistakes-to-avoid/)
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 
-把 .cursorrules 配好 + 接 [YoTradeApi](https://yotradeapi.com/register) 中转，Cursor 体验会立刻和"一开始"完全不同。
+把 .cursorrules 配好 + 接 [YoTradeApi](https://yotradeapi.com) 中转，Cursor 体验会立刻和"一开始"完全不同。
