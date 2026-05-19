@@ -7,18 +7,47 @@ import Layout from '../layouts/BlogPost.astro';
 	title="关于 YoTradeApi Blog"
 	description="YoTradeApi Blog 记录 AI API 中转、开发者工具配置、模型调用与订阅风险边界。"
 	pubDate={new Date('2026-05-15')}
-	updatedDate={new Date('2026-05-15')}
+	updatedDate={new Date('2026-05-19')}
 	canonical="https://blog.yotradeapi.com/about/"
 	keywords={['YoTradeApi', 'AI API 中转', '开发者工具']}
 	tags={['About', 'YoTradeApi']}
 	heroImage={AboutHeroImage}
 >
 	<p>
-		这里是 YoTradeApi 的 SEO 内容站，面向中文开发者与 AI 高频用户，重点记录 Cursor、Claude Code、
-		Cline、Cherry Studio、Codex CLI 等工具的 API 配置方法、模型可用性、价格变动与稳定性测试。
+		这里是 YoTradeApi 的 SEO 内容站，面向中文开发者与 AI 高频用户，重点记录
+		Cursor、Claude Code、Cline、Aider、Cherry Studio、Codex CLI、Continue.dev、Windsurf 等工具
+		的 API 配置方法、模型对比（Claude/GPT/Gemini/Grok/DeepSeek/Qwen）、价格追踪、
+		稳定性测试与故障排查。
 	</p>
+
+	<h2>这个站点写什么</h2>
+	<ul>
+		<li><a href="/categories/工具配置/">工具配置</a>：10+ AI 编程工具的国内接入完整教程</li>
+		<li><a href="/categories/模型评测/">模型评测</a>：Claude / GPT / Gemini / Grok / 国产模型实测对比</li>
+		<li><a href="/categories/工程实战/">工程实战</a>：RAG、Agent、流式、可观测、token 计算、性能优化</li>
+		<li><a href="/categories/成本优化/">成本优化</a>：prompt caching、模型分级、预算管理</li>
+		<li><a href="/categories/故障排查/">故障排查</a>：错误码、限速、流式断流、长上下文</li>
+		<li><a href="/categories/安全合规/">安全合规</a>：API Key 管理、数据边界、应急响应</li>
+		<li><a href="/categories/实战案例/">实战案例</a>：用 AI 写 SaaS、重构遗留项目等真实记录</li>
+	</ul>
+
+	<h2>编辑原则</h2>
+	<ul>
+		<li>只写可验证事实，不写收益承诺</li>
+		<li>第三方服务的价格、模型列表、活动信息发布前重新核验</li>
+		<li>使用"兼容 OpenAI SDK 协议"等中性描述</li>
+		<li>关键数据有具体测试方法可复现</li>
+		<li>错误案例真踩过、配置真用过</li>
+	</ul>
+
+	<h2>主站</h2>
 	<p>
-		主站 yotradeapi.com 的索引策略保持不变；搜索内容集中发布在 blog.yotradeapi.com。所有第三方服务
-		的价格、模型列表和活动信息都需要在发布前重新核验。
+		<a href="https://yotradeapi.com">yotradeapi.com</a>：AI API 中转主站。
+		本博客是其 SEO 内容站，索引策略独立。
+	</p>
+
+	<h2>反馈</h2>
+	<p>
+		内容有错或想看的话题没覆盖？欢迎在主站后台留言。我们持续迭代。
 	</p>
 </Layout>
