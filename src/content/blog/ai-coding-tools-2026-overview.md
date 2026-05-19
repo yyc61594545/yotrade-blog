@@ -14,7 +14,7 @@ tags:
 - 工具对比
 - AI 编程
 - 选型
-- 2026
+- '2026'
 - 全景
 category: 工具对比
 featured: true

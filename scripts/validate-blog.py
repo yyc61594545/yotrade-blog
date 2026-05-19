@@ -77,6 +77,19 @@ def check_file(path: Path) -> None:
     if "draft: true" in text[: m.end() if (m := re.match(r"^---\n.*?\n---", text, re.DOTALL)) else 0]:
         warnings.append(f"{path.name}: draft (won't be published)")
 
+    fm_block = re.match(r"^---\n(.*?)\n---", text, re.DOTALL)
+    if fm_block:
+        for key in ("tags", "keywords"):
+            block = re.search(rf"^{key}:\n((?:- .*\n)+)", fm_block.group(1), re.MULTILINE)
+            if not block:
+                continue
+            for item in re.findall(r"^- (.*)$", block.group(1), re.MULTILINE):
+                if re.fullmatch(r"-?\d+(\.\d+)?", item.strip()):
+                    errors.append(
+                        f"{path.name}: `{key}` contains numeric value `{item}` "
+                        f"(YAML parses as number — quote it as '{item}')"
+                    )
+
     body = text[text.find("---", 3) + 3 :] if text.startswith("---") else text
     if len(body.strip()) < 800:
         warnings.append(f"{path.name}: body short ({len(body)} chars)")

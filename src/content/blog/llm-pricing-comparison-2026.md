@@ -14,7 +14,7 @@ tags:
 - 价格对比
 - 成本
 - 选型
-- 2026
+- '2026'
 category: 模型评测
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
