@@ -19,8 +19,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-5.jpg
 ---
 
-# Claude Haiku 4.5 实测评测：性价比之王还是鸡肋
-
 Anthropic 的小模型一直是 Claude 家族里"被低估的英雄"。Haiku 4.5 价格只有 Sonnet 4.6 的 1/3，但能力比上一代 Haiku 3.5 提升明显。本文给一份不同场景的实测。
 
 ## 一、定位

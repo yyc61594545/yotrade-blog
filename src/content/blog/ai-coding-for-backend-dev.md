@@ -20,8 +20,6 @@ category: 实战案例
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# 后端开发者用 AI 编程的实战工作流
-
 后端开发的"重复但容易出错"的部分（CRUD、迁移、错误处理、测试）特别适合 AI 协作。本文给后端工程师按真实任务分类的实战工作流。
 
 ## 一、API 设计

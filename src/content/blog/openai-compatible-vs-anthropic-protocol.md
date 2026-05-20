@@ -20,8 +20,6 @@ category: 入门
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# OpenAI 兼容协议 vs Anthropic 原生协议
-
 走中转时第一个要决定的事是用什么协议。OpenAI 兼容协议覆盖广、生态成熟；Anthropic 原生协议保留 Claude 全部能力。本文讲清楚两者差异、转换损耗、什么时候用哪个。
 
 ## 一、两种协议的端点

@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# Cline Rules 与 Memory Bank 完整使用指南
-
 Cline 的核心特性之一是 Rules 与 Memory Bank——把项目知识沉淀下来，让 AI 跨会话保持一致行为。配置好的工程组能让 Cline 用起来质量翻倍。本文给完整配置指南。
 
 ## 一、Cline 配置的 4 个层次

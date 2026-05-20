@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-5.jpg
 ---
 
-# Cline 国内 API 配置详解（VSCode 编程代理）
-
 Cline（前身 Claude Dev）在 VSCode 里跑编程代理，特点是「能编辑文件、能跑命令、Plan/Act 双模式」。在国内用它的第一道坎不是学怎么用，是先让它能连上模型。本文给一份不绕弯子的接入流程。
 
 ## 一、Cline 在 VSCode 里能选哪些 Provider

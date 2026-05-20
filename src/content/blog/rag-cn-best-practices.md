@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# 中文 RAG 工程实战：从分块到 Rerank 完整流程
-
 中文 RAG 看起来简单——"嵌入 + 检索 + 拼 prompt"——但工程化做好的不多。常见问题：检索召回低、回答漂移、token 浪费、中文专有名词处理不好。本文给一份完整的中文 RAG 工程实战。
 
 ## 一、流程总览

@@ -20,8 +20,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# Embeddings API 国内对比：text-embedding-3-large/voyage/BGE
-
 做 RAG 的人都知道：检索质量 = 70% embedding + 20% chunking + 10% rerank。embedding 选错了，后面再怎么调都救不回来。本文用中文真实场景实测四个主流方案。
 
 ## 一、测评设置

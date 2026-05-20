@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# LLM 可观测性实战：Langfuse 自部署完整指南
-
 LLM 应用上线后最难的不是写代码，是**回答"这个用户为什么看到了这个回答"**。Langfuse 把这件事工程化了。本文给国内自部署 + 实战接入。
 
 ## 一、Langfuse 是什么

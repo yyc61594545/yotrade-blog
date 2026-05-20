@@ -20,8 +20,6 @@ featured: true
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# AI 编程入门到精通的学习路线图（2026）
-
 "从 0 到能用 AI 提效"这条路，新手最容易陷进两个坑：要么停留在 "ChatGPT 网页版复制粘贴"，要么一上来就追"Background Agent 自动跑通宵"。本文给一份分 6 阶段的可执行路线。
 
 ## Stage 1：会问问题（1-2 周）

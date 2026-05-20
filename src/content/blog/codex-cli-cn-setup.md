@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# Codex CLI 国内配置与使用指南
-
 Codex CLI 是 OpenAI 官方推出的命令行 AI 编程代理，功能上和 Claude Code 类似：在终端里调用 LLM 完成长任务、改文件、跑测试。在国内用 Codex CLI 的核心问题不是用法，是接入——它默认假设你能直连 OpenAI API。下面给完整的中转接入步骤。
 
 ## 一、安装

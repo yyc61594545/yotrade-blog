@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# Python 异步并发调用 LLM API 实战
-
 把 LLM 当后端服务用的人都遇到过这个问题：1000 条数据要跑分类/摘要/翻译，串行跑 4 小时，并发跑容易被 429 ban。本文给一份生产可用的异步并发模式，覆盖连接池、限流、重试、监控。
 
 ## 一、基础：异步调用 OpenAI SDK

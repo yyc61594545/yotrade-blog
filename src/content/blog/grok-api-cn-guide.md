@@ -19,8 +19,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# Grok API 国内调用指南与场景实测
-
 Grok 4 是 xAI 2025 末发布的旗舰，主打"实时搜索 + 数学/物理推理"。在国内用 Grok 通过中转最简单：xAI 官方提供 OpenAI 兼容 API，国内中转只要做正确转发就能用。
 
 ## 一、最小调用

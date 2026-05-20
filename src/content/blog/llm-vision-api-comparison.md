@@ -20,8 +20,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# LLM Vision API 国内调用对比：Claude / GPT-5 / Gemini
-
 LLM 视觉能力在 2026 年已经成熟：OCR、UI 理解、图表分析、多图对比、视频。国内通过中转调用三家旗舰，本文给完整对比与代码示例。
 
 ## 一、统一调用方式（OpenAI 兼容）

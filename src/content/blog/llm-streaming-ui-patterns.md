@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# LLM 流式 UI 实战模式：React / Vue / SvelteKit
-
 ChatGPT 风格的流式输出 UI 看起来简单，写好其实坑很多：abort、错误恢复、Markdown 渐进渲染、思考状态、tool call 可视化。本文给三大框架的实战模式。
 
 ## 一、整体架构

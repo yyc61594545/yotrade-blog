@@ -20,8 +20,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# Qwen vs Claude：国产闭源旗舰怎么选
-
 Qwen 系列是阿里巴巴主打的 LLM 旗舰，近两年迭代速度快，最新 Qwen 3 系列在中文 / 编程 / Agent 三个方向都很强。本文用实战场景对比 Qwen 与 Claude，给一份按预算与场景的选型建议。
 
 ## 一、Qwen 3 家族

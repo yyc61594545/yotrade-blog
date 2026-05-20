@@ -20,8 +20,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# Gemini API 国内调用指南（含 2.5 Pro / Flash）
-
 Gemini 2.5 系列的杀手锏是**超长上下文**——2M tokens 的输入窗口，远超 Claude 与 GPT。但在国内直连 Google AI Studio 一直是大坎，需要走中转。本文按"为什么要用 Gemini → 怎么接 → 怎么用好"三段展开。
 
 ## 一、Gemini 2.5 现在能干什么

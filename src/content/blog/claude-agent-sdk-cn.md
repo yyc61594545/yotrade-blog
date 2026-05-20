@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# Claude Agent SDK 国内接入与实战
-
 Anthropic 把 Claude Code 内部的 agent 能力开放成了 Claude Agent SDK——任何应用都能调用 Claude 跑代码、改文件、运行 shell。本文给国内通过中转的接入与实战。
 
 ## 一、Claude Agent SDK 是什么

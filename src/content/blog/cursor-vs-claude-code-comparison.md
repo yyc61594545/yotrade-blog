@@ -19,8 +19,6 @@ category: 工具对比
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# Cursor vs Claude Code：到底该用哪个
-
 国内开发者问得最多的两个工具：Cursor 和 Claude Code。两者都强，但定位完全不同。本文从 8 个维度展开对比，最后给一份按工作流的选择决策。
 
 ## 一、形态：编辑器 vs CLI

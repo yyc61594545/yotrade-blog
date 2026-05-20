@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-5.jpg
 ---
 
-# Cursor Background Agent 国内配置与使用
-
 Cursor 2025 推出的 Background Agent 把"AI 写代码"从本地编辑器搬到了云端：你在 IDE 派单，Background Agent 在云端虚拟机里跑长任务，结果回流到 PR 或本地。这套架构国内能用的前提是模型 API 能接通。本文给完整流程。
 
 ## 一、Background Agent 是什么

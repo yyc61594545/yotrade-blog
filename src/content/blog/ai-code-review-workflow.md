@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# AI 代码评审实战：让 AI 当 PR Reviewer
-
 让 AI 在每个 PR 上自动评审，是 AI 编程工具最容易出收益的应用之一。但写不好评审 prompt，AI 会变成"PR 噪音机器"。本文给完整落地方案。
 
 ## 一、为什么 AI 评审有用

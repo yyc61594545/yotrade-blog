@@ -21,8 +21,6 @@ featured: true
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# Claude vs GPT vs Gemini：国内开发者怎么选（2026 实测）
-
 国内开发者用 AI 模型，三大旗舰是绕不开的话题：Claude Opus 4.7、GPT-5、Gemini 2.5 Pro。本文从 8 个维度做横向实测对比，给一份按场景的选型建议。
 
 ## 一、定位差异

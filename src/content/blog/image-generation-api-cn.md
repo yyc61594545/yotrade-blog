@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# AI 图像生成 API 国内调用对比（GPT Image/DALL-E/Imagen/Flux）
-
 文本生图 API 这两年百花齐放。本文按场景对比国内可调用的主流模型，给完整代码。
 
 ## 一、主流模型

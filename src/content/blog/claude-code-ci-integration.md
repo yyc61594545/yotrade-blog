@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# Claude Code 接入 CI/CD：自动 PR 评审与 bug 修复
-
 Claude Code 不只是给开发者交互用的——它的 headless 模式在 CI 里可以变身自动评审员、自动修复员。本文给三套实战配置：自动 PR 评审、CI 失败自修、代码质量定期审计。
 
 ## 一、基础：CI 里跑 Claude Code

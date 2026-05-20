@@ -19,8 +19,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-5.jpg
 ---
 
-# 2026 向量数据库对比：Chroma/Qdrant/Milvus/pgvector
-
 向量数据库这两年百花齐放。但 RAG 项目里，**绝大多数选错了**——要么用了太重的（Milvus 跑几千文档），要么用了太轻的（Chroma 跑几千万）。本文按场景给清晰选型。
 
 ## 一、6 个主流选项

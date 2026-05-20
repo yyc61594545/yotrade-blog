@@ -20,8 +20,6 @@ category: 实战案例
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# 用 AI 编程工具一周写一个 SaaS 的实战记录
-
 不少人问"AI 编程到底能做到什么程度"。本文记录我用 7 天时间用 AI 编程工具组合写一个完整 SaaS 的真实过程：技术栈、工具切换、踩坑、修复，最终上线。
 
 ## 一、项目概况

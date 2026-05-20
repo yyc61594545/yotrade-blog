@@ -20,8 +20,6 @@ category: 实战案例
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# 用 Aider 重构 5 年遗留 Python 项目的完整记录
-
 接手一个 5 年没大改的 Python 项目：18000 行、Python 3.6 时代的语法、几乎没有 type hint、测试覆盖 20%。本文记录用 Aider 把它升级到现代化的全过程。
 
 ## 一、项目初始状态

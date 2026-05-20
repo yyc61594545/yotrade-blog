@@ -20,8 +20,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# 走 Anthropic Direct vs Bedrock vs 中转：怎么选
-
 调用 Claude 模型有三条主路径：Anthropic 官方、AWS Bedrock、第三方中转。每条都有用武之地。本文从 6 个维度对比。
 
 ## 一、三条路径概览

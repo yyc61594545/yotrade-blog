@@ -20,8 +20,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-5.jpg
 ---
 
-# Claude Extended Thinking 完整使用指南
-
 Claude Opus 4.7 / Sonnet 4.6 的 extended thinking（深度思考）是模型 reasoning 的"额外档位"——允许模型先用 token 思考再产出最终答案。开起来效果显著但更贵。本文讲清楚何时该开、参数怎么设、成本怎么控。
 
 ## 一、什么是 extended thinking

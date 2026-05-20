@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-5.jpg
 ---
 
-# Open WebUI 自托管聊天界面国内接入教程
-
 Open WebUI（前身 Ollama WebUI）是开源的 LLM 聊天界面，特点是「自托管、多用户、RAG 内置、UI 类似 ChatGPT」。对家庭 / 小团队提供"一个内部 ChatGPT"非常合适。本文给国内部署完整流程。
 
 ## 一、最小 Docker 部署

@@ -20,8 +20,6 @@ category: 入门
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# 自部署 Ollama vs 走 API 中转：怎么选
-
 "用 Ollama 跑本地模型，省钱又隐私安全"——这话只对一半。本文用 7 个维度对比，帮你做决策。
 
 ## 一、Ollama 是什么

@@ -17,8 +17,6 @@ tags:
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# Cursor API 中转怎么选：2026 实用清单
-
 国内开发者选 Cursor API 中转，不建议只看“能不能连上”。真正会影响日常效率的是四件事：模型是否完整、流式输出是否稳定、用量是否透明、SDK 配置是否足够接近原生调用习惯。本文只使用“兼容 OpenAI SDK 协议”这类中性描述。
 
 > 截图占位符 1：Cursor Provider / OpenAI Compatible 配置页，标注 base_url、api key、model 三个输入框。

@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-5.jpg
 ---
 
-# LlamaIndex 中文 RAG 完整教程
-
 LlamaIndex 与 LangChain 同期出现，**专注做 RAG**。论 chain 能力不如 LangChain 全，但论"文档加载 → index → 查询"这条链路它做得最深。本文给中文 RAG 实战教程。
 
 ## 一、安装

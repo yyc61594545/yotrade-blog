@@ -19,8 +19,6 @@ category: 入门
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# Cursor 新手完整教程：从零开始的中文指南
-
 第一次接触 Cursor，第一感觉是"和 VSCode 长得一样啊"。但用过之后就会发现完全不同——AI 是一等公民。本教程从安装开始，给一份能让你上手的中文实战指南。
 
 ## 一、安装

@@ -20,8 +20,6 @@ category: 工具对比
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# Claude Code vs Aider：两种 CLI 编程风格的对比
-
 Claude Code 和 Aider 都是 CLI 形态的 AI 编程工具，但**理念差异巨大**：Claude Code 是"在终端里跑 agent"，Aider 是"用 AI 加 git 历史"。本文对比 8 个维度。
 
 ## 一、第一印象

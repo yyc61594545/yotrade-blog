@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# Cline Auto-Approve 设置最佳实践
-
 Cline 的 Auto-Approve 是"提效杠杆 + 风险来源"双刃。配错了要么烦死要么出事。本文给一份按场景的安全推荐。
 
 ## 一、Auto-Approve 选项一览

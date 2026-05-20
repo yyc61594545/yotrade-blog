@@ -19,8 +19,6 @@ category: 安全合规
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# AI API Key 泄露应急响应手册
-
 API Key 泄露是迟早会遇到的事——commit 进 git、screenshot 误发、第三方工具漏出。本文按"5 分钟止血 / 30 分钟追溯 / 1 天复盘"三个时间窗给完整应急清单。
 
 ## 一、确认泄露场景

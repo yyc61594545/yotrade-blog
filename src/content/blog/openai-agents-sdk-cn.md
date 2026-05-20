@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# OpenAI Agents SDK 国内接入与实战
-
 OpenAI 在 2025 年发布了官方 Agents SDK，把"多 agent 协作 + handoff + guardrail + tracing" 这些功能标准化。本文给国内通过中转接入的完整流程。
 
 ## 一、Agents SDK 是什么

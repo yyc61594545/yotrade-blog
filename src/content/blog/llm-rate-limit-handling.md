@@ -19,8 +19,6 @@ category: 故障排查
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# LLM API 限速（Rate Limit）处理完整指南
-
 429 是 LLM 应用上线后最早遇到的问题。本文讲清楚三家旗舰的限速机制、客户端处理策略、什么时候需要换中转。
 
 ## 一、三家限速维度

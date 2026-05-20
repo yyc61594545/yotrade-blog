@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# Claude Computer Use 实战：让 AI 操作你的电脑
-
 Anthropic 在 2024 年发布了 Computer Use——让 Claude 控制鼠标、键盘、看截图、操作浏览器。这是 LLM 走向"真正 agent"的关键一步。本文给国内接入与使用的实战指南，附完整边界提醒。
 
 ## 一、Computer Use 是什么

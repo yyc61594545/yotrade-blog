@@ -20,8 +20,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# GPT-5 与 Claude Opus 4.7 编程能力对比实测
-
 GPT-5 和 Claude Opus 4.7 是 2026 年最常被拿来对比的两个旗舰。市面上跑分一大堆，但真正放到开发者每天的工作流里，差异其实远比跑分细。本文用 6 个典型场景实测对比。
 
 ## 一、测试方法

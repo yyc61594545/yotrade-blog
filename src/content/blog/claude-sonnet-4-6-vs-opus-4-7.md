@@ -21,8 +21,6 @@ featured: true
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# Claude Sonnet 4.6 与 Opus 4.7 怎么选（2026 模型选择实测）
-
 Anthropic 这一代两个旗舰：Sonnet 4.6 和 Opus 4.7。官方文档说前者"快、性价比高"，后者"最强推理"。但具体到中文开发者每天的工作流，到底什么时候用哪一个，文档里写得很模糊。本文按真实任务类型拆开来看，给一份可操作的选型决策树。
 
 ## 一、定价与上下文窗口（2026 现状）

@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# 用 AI 做数据分析的实战工作流
-
 数据分析师 / 工程师用 AI 提效有明显空间：SQL 写得快、图表配得准、文字解读不愁。本文给端到端工作流。
 
 ## 一、AI 在数据分析的核心场景

@@ -20,8 +20,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# DeepSeek V3 vs Claude Sonnet 4.6：国产开源 vs 旗舰
-
 DeepSeek 是国产开源模型的代表，价格极低、能力对比海外旗舰也有竞争力。本文用 6 个场景实测 DeepSeek V3 与 Claude Sonnet 4.6 的差异，给一份按场景的选型建议。
 
 ## 一、定位差异

@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# Anthropic Skills 实战：把能力封装成可复用包
-
 Anthropic Skills 是 Agent SDK 引入的新概念：把"做某件事的能力"打包成可复用的 markdown + 文件目录。本文给完整定义、使用、与 Subagent/MCP 的差异。
 
 ## 一、Skills 是什么

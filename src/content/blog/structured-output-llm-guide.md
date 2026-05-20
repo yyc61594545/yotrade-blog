@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# LLM 结构化输出完全指南（JSON Schema / Function Call）
-
 把 LLM 当后端接口用的人都遇到过：模型有时输出多了一句"以下是 JSON：" 之类的废话，JSON 解析失败。本文讲清楚三家旗舰的"结构化输出"机制怎么用。
 
 ## 一、三种主要机制

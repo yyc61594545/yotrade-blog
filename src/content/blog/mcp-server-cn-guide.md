@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# MCP 服务器实战：Claude Code/Cursor/Cherry Studio 接入
-
 MCP（Model Context Protocol）是 Anthropic 推出的开放协议，让 LLM 客户端能用同一套接口接入任何工具与数据源。2025 年 MCP 生态爆发，几乎所有主流 LLM 客户端都支持。本文给一份不绕弯子的接入指南。
 
 ## 一、MCP 是什么

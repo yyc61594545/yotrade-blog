@@ -19,8 +19,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# Claude Code Subagent 实战：定义、用法与最佳实践
-
 Claude Code 的 Subagent 是它最强的特性之一：让主对话不直接执行子任务，而是 dispatch 给一个独立上下文的"小代理"。用对了能省 token + 提高准确率，用错了反而拖慢。本文给一份实战指南。
 
 ## 一、什么是 Subagent

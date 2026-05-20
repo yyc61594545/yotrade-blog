@@ -20,8 +20,6 @@ category: 工具对比
 heroImage: ../../assets/blog-placeholder-5.jpg
 ---
 
-# Claude Code vs Codex CLI 全面对比
-
 CLI 形态的 AI 编程代理目前两大代表：Anthropic 的 Claude Code、OpenAI 的 Codex CLI。两者形态相似但理念差很多。本文按 8 个维度对比。
 
 ## 一、设计哲学

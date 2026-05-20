@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# OpenAI Responses API 完整使用指南
-
 OpenAI 在 2024 年末推出了 Responses API，作为 Chat Completions 的下一代。GPT-5 时代它已经成为推荐接口。本文讲清楚它和老接口的差异、什么时候用、中转下要注意什么。
 
 ## 一、Responses API vs Chat Completions

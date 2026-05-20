@@ -19,8 +19,6 @@ category: 入门
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# 什么是 AI API 中转？为什么国内开发者需要它
-
 如果你第一次接触"API 中转"这个词，可能会困惑：跟 VPN 是不是一回事？是合法的吗？为什么大家都在用？本文从最基础的概念开始，给一份不绕弯子的解释。
 
 ## 一、API 是什么

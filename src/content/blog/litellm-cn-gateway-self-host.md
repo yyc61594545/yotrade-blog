@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# LiteLLM 自部署 LLM 网关完整指南
-
 如果你在公司里要给团队提供"统一的 LLM 入口"，又不想直接把第三方中转 Key 发给所有人，**LiteLLM Proxy** 是最佳的中间层。本文给完整部署指南。
 
 ## 一、LiteLLM Proxy 是什么

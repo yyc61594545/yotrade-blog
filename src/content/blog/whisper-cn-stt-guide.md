@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# Whisper API 国内调用指南：中文语音转文字
-
 Whisper 是当前最主流的开源语音识别模型，OpenAI 提供托管 API。本文给国内通过中转的调用、批量处理、长音频拆分、与国产替代方案对比。
 
 ## 一、Whisper API 接入

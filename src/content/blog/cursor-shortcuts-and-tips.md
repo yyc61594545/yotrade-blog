@@ -19,8 +19,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# Cursor 高效快捷键与 30 个实用技巧
-
 用了 Cursor 两年，整理这份清单。前 10 个是必背的，后 20 个是隐藏技能。把它们都熟练了，你的产出速度会有质的提升。
 
 ## 一、必背 10 个快捷键

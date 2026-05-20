@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# 自定义 MCP Server 开发实战（Python + TypeScript）
-
 接入官方 MCP server 是消费侧；自己写一个 MCP server 是生产侧。本文用 Python 和 TypeScript 各写一个完整 MCP server，覆盖工具、状态、调试、发布、安全。
 
 ## 一、MCP 协议速览

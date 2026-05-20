@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-5.jpg
 ---
 
-# Claude 并行 Tool Use 实战：一次调用多个工具
-
 普通 tool use 是"一回合一个工具"。Claude（与 GPT-5）支持**一回合多个工具并行调用**，能让 agent 任务速度翻倍。本文给原理 + 实战代码。
 
 ## 一、串行 vs 并行 tool use

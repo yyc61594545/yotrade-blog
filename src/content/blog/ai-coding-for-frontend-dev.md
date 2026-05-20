@@ -20,8 +20,6 @@ category: 实战案例
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# 前端开发者用 AI 编程的实战工作流
-
 前端是最适合 AI 协作的方向之一：组件结构稳定、样式语义清晰、TypeScript 类型可验证。本文给前端工程师一份具体到任务的实战工作流。
 
 ## 一、为什么前端特别适合 AI

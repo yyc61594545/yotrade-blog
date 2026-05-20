@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# Cherry Studio 国内 API 中转配置指南
-
 Cherry Studio 是国内开发者最常用的 LLM 桌面客户端之一，特点是「多模型并存、本地知识库、内置 MCP、界面友好」。它最大的优点是不需要写代码就能切换 Claude、GPT、Gemini、Grok 等模型；缺点是默认配置假设你能直连官方，国内用户必须自己接中转。
 
 ## 一、安装

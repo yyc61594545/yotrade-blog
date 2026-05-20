@@ -21,8 +21,6 @@ featured: true
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# prompt caching 在国内中转下省成本指南
-
 prompt caching 是过去一年最被低估的省钱技术。Anthropic 把它推到了一个量级——长 system prompt 二次命中只收 1/10 的钱。本文讲清楚原理、Cursor / Claude Code / Cline / Aider 各自的开启方法、以及中转下需要注意的事。
 
 ## 一、为什么 prompt caching 这么重要

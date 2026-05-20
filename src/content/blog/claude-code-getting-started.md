@@ -19,8 +19,6 @@ category: 入门
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# Claude Code 新手完整教程：从安装到第一个长任务
-
 Claude Code 是 Anthropic 官方的命令行 AI 编程代理。它把"在终端里和 AI 协作"做到了极致。本教程从安装到完成第一个长任务，一步步带你上手。
 
 ## 一、Claude Code 是什么

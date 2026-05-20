@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# Roo Code 国内配置与 Boomerang 模式实战
-
 Roo Code（前身 Roo Cline）是 Cline 的活跃 fork，加了一些 Cline 没有的特性：Boomerang 子任务、多 API Profile 切换、Mode 系统、内置 MCP 安装器。在国内用 Roo Code 的接入流程跟 Cline 类似，但有几个细节值得单独写。
 
 ## 一、安装

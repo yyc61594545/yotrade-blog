@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# LLM Token 计算完整指南：tiktoken / Anthropic / 中文
-
 写 LLM 应用早晚要算 token：估算成本、控制上下文、走 caching 边界。但每家 tokenizer 不同，中文又特别诡异。本文给完整解析与实战代码。
 
 ## 一、什么是 token

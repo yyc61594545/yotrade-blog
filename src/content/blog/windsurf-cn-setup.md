@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# Windsurf 国内配置与 Cascade 模式使用
-
 Windsurf 是 Codeium 推出的 AI 编辑器，定位上是 Cursor 的直接竞品。在国内用 Windsurf 的接入难度比 Cursor 略高，但优势是 Cascade Agent 自治能力较强。本文给完整接入流程。
 
 ## 一、Windsurf 与 Cursor 的核心差异

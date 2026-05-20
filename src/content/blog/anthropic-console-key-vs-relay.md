@@ -20,8 +20,6 @@ category: 入门
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# Anthropic Console API Key 直连 vs 中转：怎么选
-
 国内开发者要用 Claude，第一道选择题：在 Anthropic Console 自己注册个 API Key，还是走第三方中转？本文给一份完整对比，帮你做决定。
 
 ## 一、Anthropic Console 注册门槛

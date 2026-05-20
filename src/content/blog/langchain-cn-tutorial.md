@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# LangChain 中文实战：用中转接入构建 Agent
-
 LangChain 是 LLM 应用最流行的开发框架。优势是抽象成熟、生态完整；劣势是 API 改动频繁、文档复杂。本文聚焦"用国内中转通过 LangChain 构建 Agent"的最小可用路径。
 
 ## 一、安装

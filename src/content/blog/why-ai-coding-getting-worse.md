@@ -19,8 +19,6 @@ category: 最佳实践
 heroImage: ../../assets/blog-placeholder-5.jpg
 ---
 
-# 为什么你的 AI 编程效果"越用越差"
-
 很多人都有这种感受：刚开始用 Cursor / Claude Code 神奇得很，几个月后越用越觉得"AI 变笨了"。其实模型没变，**变的是你的项目和工作流**。本文拆 6 个真正原因。
 
 ## 一、上下文膨胀

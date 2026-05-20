@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-4.jpg
 ---
 
-# Claude Code Hooks 工作流：8 种钩子的实战用法
-
 Claude Code 的 hook 系统让你在 LLM 行为的关键节点插入自己的逻辑：阻止危险命令、自动跑测试、注入项目知识、控制压缩……本文按 hook 类型实战展开。
 
 ## 一、Hook 系统总览

@@ -19,8 +19,6 @@ category: 模型评测
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# Claude 1M 上下文实战：何时开启与最佳实践
-
 Anthropic 在 2025 年把 Claude 的上下文窗口从 200k 扩到 1M（部分场景）。这是一个大新闻但用法上有几个细节常被忽略。本文讲清楚怎么开、什么场景值得开、与 Gemini 2.5 Pro 的对比。
 
 ## 一、200k vs 1M：两套机制

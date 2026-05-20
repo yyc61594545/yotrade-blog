@@ -20,8 +20,6 @@ featured: true
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# Claude Code 镜像国内配置完整指南
-
 Claude Code 在国内长期处于"能装但调不通"的状态。官方注册门槛、信用卡、网络环路三件事任意一件不顺利，整个 CLI 都会卡在第一步。本文不绕弯子，直接给一份可以复制粘贴的镜像配置流程，覆盖 macOS、Linux、Windows 与 WSL 四种常见环境，并把容易踩坑的细节列出来。
 
 ## 一、Claude Code 的网络模型

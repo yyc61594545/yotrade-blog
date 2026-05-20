@@ -20,8 +20,6 @@ category: 故障排查
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# AI API 流式输出（SSE）故障排查与最佳实践
-
 `stream=true` 是 AI 应用的标配体验：用户能立刻看到第一行字、长回答不卡。但国内走中转时，**流式比非流式难调一个数量级**。本文把常见问题与调试方法一次说清。
 
 ## 一、SSE 在 AI API 里长什么样

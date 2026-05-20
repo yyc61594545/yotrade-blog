@@ -19,8 +19,6 @@ category: 最佳实践
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# AI Agent Prompt Engineering 中文实战指南
-
 写好 prompt 是 AI 代理产出质量的天花板。同一个模型、同一个任务，prompt 不同结果可以差 3 倍。本文聚焦"编程代理"的 prompt engineering 实战。
 
 ## 一、Prompt 的三层结构

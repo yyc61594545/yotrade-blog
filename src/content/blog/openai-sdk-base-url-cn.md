@@ -21,8 +21,6 @@ featured: true
 heroImage: ../../assets/blog-placeholder-3.jpg
 ---
 
-# OpenAI SDK base_url 国内配置实战
-
 "`base_url` 改一下就能用" 这句话在国内每天都被复述，但真正实施的时候，每个 SDK 写法都不一样，错误处理也不一样。本文按 Python、Node、Go、Rust 四种栈展开，把流式、函数调用、Vision、超时和重试都写出来。
 
 ## 一、为什么 `base_url` 这一个字段就够了

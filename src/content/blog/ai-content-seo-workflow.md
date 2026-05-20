@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# 用 AI 写 SEO 内容的工程化工作流
-
 很多人用 AI 写 SEO 内容的体验是"写出来一看就是 AI 写的"。这不是模型问题，是工作流问题。本文给一份能产出"看起来像人写的、能排名的"SEO 内容的工程化工作流。
 
 ## 一、为什么直接让 AI 写不行

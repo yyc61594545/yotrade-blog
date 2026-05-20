@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# Continue.dev 国内 API 配置完整教程
-
 Continue.dev 是 VSCode/JetBrains 上少数完全开源、支持自定义模型的 AI 编程助手。它的核心价值是「`config.yaml` 全配置」——所有行为都在一个文件里，团队协作可以直接 commit 进 repo。本文给国内使用的完整接入流程。
 
 ## 一、安装

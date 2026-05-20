@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# Aider 中文配置与最佳实践
-
 Aider 走的是命令行结对编程路线：每次对话直接产出 git commit。它不需要 VSCode 插件、不依赖订阅，对国内开发者非常友好——前提是把 base_url 接对。
 
 ## 一、安装与基础配置

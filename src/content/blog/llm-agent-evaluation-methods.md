@@ -20,8 +20,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# AI Agent 评估方法：怎么知道你的 Agent 真的有效
-
 写一个 Agent 容易，证明它真的有用很难。 Agent 涉及多步推理、工具调用、状态保持，传统 LLM 评估方法不够用。本文给一份 Agent 评估的完整方法论。
 
 ## 一、Agent 与普通 LLM 评估的差异

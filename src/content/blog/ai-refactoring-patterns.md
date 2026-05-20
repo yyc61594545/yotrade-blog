@@ -19,8 +19,6 @@ category: 工程实战
 heroImage: ../../assets/blog-placeholder-2.jpg
 ---
 
-# AI 重构的 10 种实战模式
-
 重构是 AI 编程收益最高的场景之一——模式化强、容易验证、风险可控。本文给 10 种高频模式 + 对应 prompt 模板。
 
 ## 模式 1：抽取函数

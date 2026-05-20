@@ -21,8 +21,6 @@ featured: true
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# AI 编程代理成本控制实战
-
 AI 编程代理一不留神账单就能从几十美金变成几百。问题不在工具贵，而在**没人在用之前算清楚 token 消耗**。本文给一份可执行的成本控制方法论。
 
 ## 一、先理解钱花在哪

@@ -20,8 +20,6 @@ category: 工具配置
 heroImage: ../../assets/blog-placeholder-1.jpg
 ---
 
-# .cursorrules 最佳实践：让 Cursor 真正懂你的项目
-
 Cursor 输出质量的天花板是 `.cursorrules`。配好它，每次对话不用重复解释项目背景。配不好，Cursor 输出永远像"刚来实习生的代码"。本文给完整最佳实践。
 
 ## 一、两种 Rules 形态
