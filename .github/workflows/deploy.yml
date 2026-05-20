@@ -27,4 +27,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=yotrade-blog --branch=main
+          command: pages deploy dist --project-name=yotrade-blog --branch=main --commit-hash=${{ github.sha }} --commit-message="GHA deploy ${{ github.sha }}"
