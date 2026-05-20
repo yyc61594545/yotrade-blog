@@ -79,27 +79,28 @@ push 到 `main` → GitHub Actions → Cloudflare Pages 自动部署。
 
 仓库自带一条 slash command `/daily-post`，跑一次会：
 
-1. 从 `scripts/topic-pool.md` 挑下一个未发布的选题（按分类轮换）
-2. 写完整文章并落地到 `src/content/blog/<slug>.md`
-3. 跑 `validate-blog.py` 校验
-4. `git commit && git push origin main`（触发 Cloudflare Pages 部署）
+1. 默认产出 **3 篇**（可通过 `/daily-post N` 调整为 N 篇，1 ≤ N ≤ 10）
+2. 每篇独立 `pick → write → validate → commit`
+3. N 篇全部完成后统一推送 + 自动开 PR + squash-merge 到 main
+4. 触发 Cloudflare Pages 部署
 
 ### 触发方式
 
 在 [Claude Code on the web](https://code.claude.com/) 项目设置里加一个 **Schedule trigger**：
 
 - **Cron**：`0 1 * * *`（UTC 01:00 ≈ 北京时间 09:00；按需调整）
-- **Prompt / Command**：`/daily-post`
+- **Prompt / Command**：`/daily-post`（=3 篇）或 `/daily-post 5` 等
 - **Branch**：`main`
 
-触发后会自动开会话执行命令，跑完 push 完即结束。
+触发后会自动开会话执行命令，跑完 PR 合并即结束。
 
 ### 维护选题池
 
 - 候选选题写在 `scripts/topic-pool.md`，格式 `- slug | title | category`
-- 已发布的 slug 自动跳过，无需手动删
+- 已发布的 slug 自动跳过（包括本次循环里刚 commit 的），无需手动删
 - picker 会按"最近 7 篇分类最少出现"挑下一个，避免连续同类
-- `/daily-post` 在剩余 < 20 时会在结束语里提醒补池
+- 80 候选 ÷ 每天 3 篇 ≈ 26 天，**建议每月补一次池子**
+- `/daily-post` 在剩余 < 30 时会在结束语里提醒补池
 
 ## License
 
