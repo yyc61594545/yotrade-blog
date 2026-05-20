@@ -92,13 +92,36 @@ heroImage: ../../assets/blog-placeholder-<1-5 随机>.jpg
 - 通过：继续下一步
 - 失败：根据报错修正（最常见：title/description 超长、tag 是数字、canonical 缺 `/`、内链 slug 不存在）→ 再跑一次 → 必须通过才能进下一步
 
-## 4. 提交并推送
+## 4. 提交并合并到 main
+
+**关键**：定时任务可能跑在隔离分支（`claude/...`）上，直接 push main 会被路由到隔离分支而不会触发部署。因此**必须经由 PR 合并**，确保 main 上线。
+
+按以下顺序执行：
 
 ```bash
 git add src/content/blog/<slug>.md
 git commit -m "content: <category> | <title>"
-git push origin main
+
+CURRENT_BRANCH=$(git branch --show-current)
+git push origin "$CURRENT_BRANCH"
 ```
+
+- **如果 `CURRENT_BRANCH == main`**：到此结束，部署已触发
+- **如果 `CURRENT_BRANCH != main`**：用 GitHub MCP 创建 PR 并立即合并：
+  1. `mcp__github__create_pull_request`
+     - `owner`: `yyc61594545`
+     - `repo`: `yotrade-blog`
+     - `head`: `<CURRENT_BRANCH>`
+     - `base`: `main`
+     - `title`: `content: <category> | <title>`
+     - `body`: `自动化每日发文。slug: <slug>`
+  2. `mcp__github__merge_pull_request`
+     - `owner`: `yyc61594545`
+     - `repo`: `yotrade-blog`
+     - `pullNumber`: <上一步返回的 PR number>
+     - `mergeMethod`: `SQUASH`
+
+合并后 main 触发 Cloudflare Pages 部署。
 
 提交信息固定格式 `content: <category> | <title>`，方便后续 git log 检索。
 
