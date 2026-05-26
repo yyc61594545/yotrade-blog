@@ -116,7 +116,7 @@
 - cn-claude-code-via-bedrock | 国内用户通过 AWS Bedrock 使用 Claude Code | 国内场景
 - cn-gemini-api-direct-vs-relay | Gemini API 国内直连 vs 中转选型 | 国内场景
 - cn-grok-api-cn-access | Grok API 国内访问方案 | 国内场景
-- cn-openai-tier-upgrade-guide | OpenAI Tier 升级国内开发者指引 | 国内场景
+- cn-openai-tier-upgrade-guide | OpenAI 用量 Tier 机制与额度提升原理 | 国内场景
 - cn-deepseek-coder-deep-review | DeepSeek Coder 开发者深度体验 | 国内场景
 - cn-zhipu-glm-developer-review | 智谱 GLM 系列开发者视角评测 | 国内场景
 - cn-moonshot-kimi-developer-review | Moonshot Kimi 开发者评测 | 国内场景
@@ -130,8 +130,7 @@
 - cn-yi-large-developer-review | 零一万物 Yi-Large API 评测 | 国内场景
 - cn-llm-cn-vs-overseas-cost | 国产大模型 vs 海外大模型的成本对比 | 国内场景
 - cn-claude-on-poe-via-cn | 国内通过 Poe 使用 Claude 的可行性 | 国内场景
-- cn-cursor-business-account | Cursor 商业账号国内开通流程 | 国内场景
-- cn-claude-pro-subscription-via-relay | Claude Pro 订阅国内方案对比 | 国内场景
+- cn-cursor-business-account | Cursor 团队版国内协作与账号管理 | 国内场景
 
 ## 模型评测（横评、能力实测、Benchmark）
 
