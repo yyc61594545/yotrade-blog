@@ -82,3 +82,13 @@ const structuredData = {
 <meta property="twitter:image" content={socialImage} />
 
 <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+<!-- Cloudflare Web Analytics -->
+{import.meta.env.PROD && (
+	<script
+		defer
+		src="https://static.cloudflareinsights.com/beacon.min.js"
+		data-cf-beacon='{"token": "d0705b17be294fc6b8bfaccb373a090b"}'
+	/>
+)}
+<!-- End Cloudflare Web Analytics -->
