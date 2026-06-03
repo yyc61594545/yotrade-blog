@@ -237,3 +237,51 @@
 - ai-pair-with-architect | AI 与架构师配对工作的实战 | 实战经验
 - aider-on-legacy-php | Aider 重构遗留 PHP 项目实战 | 实战经验
 - claude-code-on-ml-pipeline | Claude Code 在 ML 流水线的实战 | 实战经验
+
+## 小白入门（B 类：充值/订阅代充/国内可用性/价格对比/新手教程）
+
+> 这一类专门服务"不会翻墙、想用 ChatGPT/Claude/Cursor"的小白用户。
+> 关键词全部命中百度搜索量大的长尾词（含「2026」「国内」「教程」「最新」等高权重词）。
+> 文末 CTA 直接对应 YoTradeApi 订阅代充 + API 中转两条产品线。
+
+### 充值 / 付款（10）
+
+- cn-chatgpt-plus-payment-2026 | ChatGPT Plus 2026 最新充值方法（国内可用） | 小白入门
+- cn-chatgpt-pro-200-dollar-payment | ChatGPT Pro $200 月卡国内开通教程 | 小白入门
+- cn-claude-max-5x-20x-pricing | Claude Max 5x 与 20x 区别和国内代充 | 小白入门
+- cn-claude-pro-plus-difference | Claude Pro 和 Plus 有什么区别 | 小白入门
+- cn-gemini-advanced-cn-subscribe | Gemini Advanced 国内怎么订阅 | 小白入门
+- cn-openai-api-recharge-with-rmb | OpenAI API 用人民币充值最简方法 | 小白入门
+- cn-virtual-card-for-chatgpt-2026 | 2026 给 ChatGPT 充值的虚拟卡推荐 | 小白入门
+- cn-chatgpt-recurring-failed-fix | ChatGPT 自动续费失败怎么办 | 小白入门
+- cn-claude-api-credit-add-guide | Claude API 充值小额度教程 | 小白入门
+- cn-perplexity-pro-cn-subscribe | Perplexity Pro 国内订阅完整指南 | 小白入门
+
+### 能不能用 / 国内可用性（8）
+
+- cn-chatgpt-cn-available-2026 | 2026 ChatGPT 国内能用吗（最新实测） | 小白入门
+- cn-claude-cn-direct-access-2026 | Claude 国内直接访问最新方法 | 小白入门
+- cn-cursor-cn-available-2026 | 2026 Cursor 国内能用吗 | 小白入门
+- cn-gemini-cn-access-guide-2026 | Gemini 国内访问 2026 完整指南 | 小白入门
+- cn-grok-cn-access-guide | Grok 国内访问与订阅指南 | 小白入门
+- cn-claude-code-cn-using-2026 | Claude Code 国内能用吗（小白版） | 小白入门
+- cn-openai-api-cn-relay-recommend | OpenAI API 国内中转推荐 | 小白入门
+- cn-ai-tools-blocked-status-2026 | 2026 哪些 AI 工具被墙了 | 小白入门
+
+### 价格 / 性价比（5）
+
+- cn-chatgpt-monthly-cost-2026 | ChatGPT 一个月多少钱（含国内代充） | 小白入门
+- cn-claude-vs-chatgpt-price-2026 | Claude 和 ChatGPT 价格对比（2026） | 小白入门
+- cn-cursor-price-cn-2026 | Cursor 国内多少钱（含中转省钱方案） | 小白入门
+- cn-ai-tool-budget-150-rmb | 月预算 ¥150 用什么 AI 工具最值 | 小白入门
+- cn-claude-max-vs-pro-roi | Claude Max 和 Pro 哪个更值 | 小白入门
+
+### 入门教程（7）
+
+- cn-chatgpt-register-without-foreign-phone | 没有海外手机号怎么注册 ChatGPT | 小白入门
+- cn-chatgpt-first-time-cn-guide | ChatGPT 国内第一次使用完整教程 | 小白入门
+- cn-claude-zero-to-chat-tutorial | 从零开始用 Claude 聊天的 5 分钟教程 | 小白入门
+- cn-cursor-install-cn-guide | Cursor 国内安装与第一个项目教程 | 小白入门
+- cn-ai-writing-resume-cn-guide | 用 AI 写简历完整教程（中文） | 小白入门
+- cn-ai-learn-english-cn-method | 用 ChatGPT/Claude 学英语的 7 个方法 | 小白入门
+- cn-ai-excel-formula-cn-guide | 用 AI 写 Excel 公式速通教程 | 小白入门
