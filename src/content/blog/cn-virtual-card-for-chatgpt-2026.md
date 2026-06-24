@@ -4,7 +4,7 @@ description: 整理 2026 年国内开发者给 ChatGPT 充值时常用的虚拟�
 keywords:
   - 虚拟信用卡充值 ChatGPT
   - 国内 ChatGPT 付费方案
-  - '2026' 虚拟卡推荐
+  - 2026 虚拟卡推荐
   - ChatGPT Plus 充值教程
   - 海外虚拟卡开卡指南
 pubDate: '2026-06-14'
