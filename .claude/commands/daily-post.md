@@ -146,13 +146,62 @@ git push origin "$CURRENT_BRANCH"
 
 合并后 main 触发 Cloudflare Pages 部署。
 
-## 3. 选题池余量提醒
+## 3. 通知 IndexNow 实时索引
+
+PR 合并到 main 后，立刻把本次新增的 N 篇文章 URL 推送给 IndexNow API。这能让 Bing / Yandex / Seznam / Naver 5 个搜索引擎在几分钟内索引新文章（比等爬虫快 10 倍）。
+
+把本次循环里 commit 的所有 slug 填到 SLUGS 数组里（**不要包含已发布的 slug**），跑：
+
+```bash
+python3 <<'PYEOF'
+import urllib.request as r, json
+
+KEY = '0618cefdb7e64035a4b169a872de5a78'
+
+# 填入本次循环产出的所有 slug（不带前缀，不带 .md）
+SLUGS = [
+    # "<slug-1>",
+    # "<slug-2>",
+    # "<slug-3>",
+    # "<slug-4>",
+    # "<slug-5>",
+]
+
+if not SLUGS:
+    print('⚠️ SLUGS 空，跳过 IndexNow 通知')
+else:
+    urls = [f'https://blog.yotradeapi.com/blog/{s}/' for s in SLUGS]
+    payload = {
+        'host': 'blog.yotradeapi.com',
+        'key': KEY,
+        'keyLocation': f'https://blog.yotradeapi.com/{KEY}.txt',
+        'urlList': urls,
+    }
+    data = json.dumps(payload).encode()
+    req = r.Request('https://api.indexnow.org/indexnow', data=data,
+                     headers={'Content-Type': 'application/json; charset=utf-8'},
+                     method='POST')
+    try:
+        resp = r.urlopen(req, timeout=15)
+        print(f'✅ IndexNow notified: HTTP {resp.status} for {len(urls)} URLs')
+    except Exception as e:
+        print(f'⚠️ IndexNow notify failed: {type(e).__name__} {e}')
+        # 不阻塞 routine，下次 IndexNow 自动重试或 Bing 自己从 sitemap 抓
+PYEOF
+```
+
+**关键约束**：
+- 必须在 PR 合并到 main 之后跑（保证 main 上 URL 已生效）
+- IndexNow 失败不阻塞 routine 完成（nice-to-have，不是 must-have）
+- 如果本次 0 篇发布（池子空），跳过本步
+
+## 4. 选题池余量提醒
 
 最后一次 picker 输出的 `remaining < 30` 时，在结束语里加一行：
 
 > ⚠️ 选题池仅剩 N 个（按每日 3 篇计算约够 N/3 天），建议补充 `scripts/topic-pool.md`
 
-## 4. 结束语
+## 5. 结束语
 
 回复用户**一段话内**说清楚：
 
