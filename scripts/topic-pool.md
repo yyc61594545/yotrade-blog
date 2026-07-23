@@ -285,3 +285,105 @@
 - cn-ai-writing-resume-cn-guide | 用 AI 写简历完整教程（中文） | 小白入门
 - cn-ai-learn-english-cn-method | 用 ChatGPT/Claude 学英语的 7 个方法 | 小白入门
 - cn-ai-excel-formula-cn-guide | 用 AI 写 Excel 公式速通教程 | 小白入门
+
+## Codex 接管补充选题（2026-07）
+
+### API 与协议
+
+- openai-responses-api-streaming-guide | OpenAI Responses API 流式事件处理指南 | 技术深度
+- openai-responses-api-tool-loop | Responses API 多轮工具调用循环实战 | 技术深度
+- openai-background-mode-jobs | OpenAI Background Mode 异步任务设计 | 技术深度
+- openai-webhook-signature-verification | OpenAI Webhook 签名校验与重放防护 | 技术深度
+- openai-built-in-tools-selection | OpenAI 内置工具的选型与组合 | 技术深度
+- openai-reasoning-effort-guide | reasoning_effort 参数的任务分级方法 | 技术深度
+- openai-service-tier-latency | OpenAI service_tier 延迟与成本取舍 | 技术深度
+- openai-prompt-object-versioning | OpenAI Prompt Object 版本管理实战 | 技术深度
+- anthropic-message-stream-recovery | Anthropic Messages 流式中断恢复 | 技术深度
+- anthropic-tool-choice-guide | Anthropic tool_choice 参数完全指南 | 技术深度
+- anthropic-computer-use-safety | Computer Use 工具的安全边界设计 | 技术深度
+- anthropic-citations-rag-pattern | Anthropic Citations 与 RAG 组合实战 | 技术深度
+- gemini-live-api-session-design | Gemini Live API 会话状态设计 | 技术深度
+- gemini-function-calling-guide | Gemini Function Calling 工程实践 | 技术深度
+- gemini-context-caching-guide | Gemini Context Caching 成本优化 | 技术深度
+- llm-api-idempotency-design | LLM API 写操作幂等性设计 | 技术深度
+- llm-streaming-sse-parser | 跨厂商 SSE 流式解析器实现 | 技术深度
+- llm-api-error-taxonomy | 多模型 API 错误码分类与统一处理 | 技术深度
+- llm-tool-schema-portability | OpenAI、Anthropic、Gemini 工具 Schema 兼容层 | 技术深度
+- llm-api-request-signing-proxy | AI API 网关请求签名与防重放 | 技术深度
+
+### Agent 与生产工程
+
+- agent-state-machine-design | AI Agent 状态机设计与落地 | 应用工程
+- agent-event-sourcing | 用 Event Sourcing 记录 Agent 执行轨迹 | 应用工程
+- agent-saga-compensation | Agent 多步写操作的 Saga 补偿机制 | 应用工程
+- agent-tool-timeout-budget | Agent 工具调用的超时预算设计 | 应用工程
+- agent-loop-termination | 防止 Agent 无限循环的终止策略 | 应用工程
+- agent-human-approval-queue | Agent 人工审批队列的实现 | 应用工程
+- agent-secret-isolation | Agent 工具密钥隔离与最小权限 | 应用工程
+- agent-sandbox-design | AI 编程 Agent 沙箱设计 | 应用工程
+- agent-replay-debugging | Agent 任务回放与确定性调试 | 应用工程
+- agent-eval-trajectory-scoring | Agent 轨迹级评测方法 | 应用工程
+- agent-memory-retention-policy | Agent 记忆保留与清理策略 | 应用工程
+- agent-context-budget-allocation | Agent 上下文预算分配算法 | 应用工程
+- agent-parallel-tool-execution | Agent 并行工具调用的并发控制 | 应用工程
+- agent-multi-tenant-isolation | 多租户 Agent 的数据隔离 | 应用工程
+- agent-rate-limit-coordination | 多 Agent 共享限流配额的协调 | 应用工程
+- agent-output-provenance | Agent 输出来源追踪与引用设计 | 应用工程
+- agent-policy-engine | 给 AI Agent 接入策略引擎 | 应用工程
+- agent-dead-letter-queue | Agent 失败任务死信队列设计 | 应用工程
+- agent-canary-release | Agent Prompt 与工具的金丝雀发布 | 应用工程
+- agent-production-runbook | AI Agent 生产故障 Runbook | 应用工程
+
+### RAG、检索与数据
+
+- rag-chunking-evaluation | RAG Chunking 策略的量化评测 | 应用工程
+- rag-hybrid-search-tuning | Hybrid Search 权重调优实战 | 应用工程
+- rag-reranker-selection | RAG Reranker 选型与评测 | 应用工程
+- rag-metadata-filter-design | RAG Metadata Filter 设计 | 应用工程
+- rag-document-versioning | RAG 文档版本与索引一致性 | 应用工程
+- rag-citation-verification | RAG 引用真实性自动校验 | 应用工程
+- rag-access-control | 企业 RAG 的文档权限继承 | 应用工程
+- rag-freshness-monitoring | RAG 知识新鲜度监控 | 应用工程
+- rag-query-rewrite-eval | Query Rewrite 对 RAG 召回的影响 | 应用工程
+- rag-negative-feedback-loop | 用负反馈改进 RAG 检索 | 应用工程
+- embedding-dimension-tradeoff | Embedding 维度、速度与成本取舍 | 技术深度
+- vector-database-migration | 向量数据库迁移与双写方案 | 应用工程
+- semantic-cache-invalidation | 语义缓存失效策略 | 应用工程
+- knowledge-graph-rag-boundary | Knowledge Graph 与 RAG 的使用边界 | 应用工程
+- multimodal-rag-pipeline | 多模态 RAG 流水线设计 | 应用工程
+
+### 可观测性、安全与成本
+
+- llm-tracing-open-telemetry | 用 OpenTelemetry 追踪 LLM 调用 | 应用工程
+- llm-token-cost-ledger | LLM Token 成本账本设计 | 成本优化
+- llm-budget-alerting | AI API 预算告警与自动熔断 | 成本优化
+- llm-cache-hit-observability | Prompt Cache 命中率监控 | 成本优化
+- llm-model-routing-eval | 多模型路由器的离线评测 | 应用工程
+- llm-latency-slo | LLM 应用延迟 SLO 设计 | 应用工程
+- llm-stream-interruption-metrics | 流式输出中断率监控 | 应用工程
+- llm-pii-redaction-gateway | AI API 网关的 PII 脱敏 | 应用工程
+- llm-prompt-injection-runtime-defense | Prompt Injection 运行时防护 | 应用工程
+- llm-tool-output-sanitization | Agent 工具输出净化与隔离 | 应用工程
+- llm-audit-log-design | LLM 应用审计日志设计 | 应用工程
+- llm-data-retention-policy | LLM 请求数据保留策略 | 应用工程
+- llm-provider-outage-drill | 多模型供应商故障演练 | 实战经验
+- llm-cost-anomaly-detection | LLM 成本异常检测 | 成本优化
+- llm-billing-reconciliation | AI API 账单对账自动化 | 成本优化
+
+### Codex 与开发者工作流
+
+- codex-cli-project-instructions | Codex 项目级 AGENTS.md 编写指南 | 实战经验
+- codex-code-review-workflow | 用 Codex 建立可重复的代码审查流程 | 实战经验
+- codex-background-automation | Codex 后台自动化任务设计 | 实战经验
+- codex-multi-agent-boundaries | Codex 多 Agent 任务拆分边界 | 实战经验
+- codex-github-pr-automation | Codex 自动创建与验证 GitHub PR | 实战经验
+- codex-worktree-isolation | Codex Worktree 隔离开发实战 | 实战经验
+- codex-long-task-handoff | Codex 长任务状态交接方法 | 实战经验
+- codex-vs-claude-code-migration | 从 Claude Code 迁移到 Codex 的实践清单 | 实战经验
+- ai-coding-agent-permission-models | AI 编程代理权限模式对比 | 行业观察
+- ai-coding-agent-ci-integration | AI 编程 Agent 接入 CI 的边界 | 实战经验
+- ai-generated-code-provenance | AI 生成代码的来源与审计 | 行业观察
+- ai-coding-agent-benchmark-design | AI 编程 Agent 内部基准设计 | 模型评测
+- ai-code-review-false-positive | AI Code Review 误报治理 | 实战经验
+- ai-coding-agent-security-review | AI 编程 Agent 安全评审清单 | 实战经验
+- ai-coding-agent-team-governance | 团队使用 AI 编程 Agent 的治理规则 | 实战经验
