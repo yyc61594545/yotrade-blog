@@ -1,4 +1,30 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git rev-list:*)",
+      "Bash(git ls-remote:*)",
+      "Bash(python3 scripts/pick-next-topic.py:*)",
+      "Bash(python3 scripts/validate-blog.py:*)",
+      "Bash(npm run build:*)",
+      "Bash(ls:*)"
+    ],
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(git push origin main:*)",
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  },
   "hooks": {
     "SessionStart": [
       {
