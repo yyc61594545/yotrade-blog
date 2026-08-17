@@ -1,5 +1,5 @@
 ---
-description: 自动产出今日 N 篇博客（默认 3）：循环 N 次选题→写稿→校验→提交，最后开 PR 合并到 main
+description: 自动产出今日 N 篇博客（默认 3）：循环 N 次选题→写稿→校验→提交，最后推一条当天分支（合并/部署由 Actions 接管）
 ---
 
 # /daily-post — 每日 N 篇
@@ -120,95 +120,41 @@ git commit -m "content: <category> | <title>"
 
 i++，回到 1.1。
 
-## 2. 推送并合并到 main
+## 2. 推送当天分支（本地职责到此为止）
 
-N 篇全部 commit 完成后：
-
-```bash
-CURRENT_BRANCH=$(git branch --show-current)
-git push origin "$CURRENT_BRANCH"
-```
-
-- **如果 `CURRENT_BRANCH == main`**：到此结束，部署已触发
-- **如果 `CURRENT_BRANCH != main`**：用 GitHub MCP 一次性合并所有 commit：
-  1. `mcp__github__create_pull_request`
-     - `owner`: `yyc61594545`
-     - `repo`: `yotrade-blog`
-     - `head`: `<CURRENT_BRANCH>`
-     - `base`: `main`
-     - `title`: `daily: <实际产出篇数> 篇文章（<YYYY-MM-DD>）`
-     - `body`: 列出每篇的 `- <category> | <title>`
-  2. `mcp__github__merge_pull_request`
-     - `owner`: `yyc61594545`
-     - `repo`: `yotrade-blog`
-     - `pullNumber`: <上一步返回的 PR number>
-     - `mergeMethod`: `SQUASH`
-
-合并后 main 触发 Cloudflare Pages 部署。
-
-## 3. 通知 IndexNow 实时索引
-
-PR 合并到 main 后，立刻把本次新增的 N 篇文章 URL 推送给 IndexNow API。这能让 Bing / Yandex / Seznam / Naver 5 个搜索引擎在几分钟内索引新文章（比等爬虫快 10 倍）。
-
-把本次循环里 commit 的所有 slug 填到 SLUGS 数组里（**不要包含已发布的 slug**），跑：
+N 篇全部 commit 完成后，把它们推到一条当天的分支上。
 
 ```bash
-python3 <<'PYEOF'
-import urllib.request as r, json
-
-KEY = '0618cefdb7e64035a4b169a872de5a78'
-
-# 填入本次循环产出的所有 slug（不带前缀，不带 .md）
-SLUGS = [
-    # "<slug-1>",
-    # "<slug-2>",
-    # "<slug-3>",
-    # "<slug-4>",
-    # "<slug-5>",
-]
-
-if not SLUGS:
-    print('⚠️ SLUGS 空，跳过 IndexNow 通知')
-else:
-    urls = [f'https://blog.yotradeapi.com/blog/{s}/' for s in SLUGS]
-    payload = {
-        'host': 'blog.yotradeapi.com',
-        'key': KEY,
-        'keyLocation': f'https://blog.yotradeapi.com/{KEY}.txt',
-        'urlList': urls,
-    }
-    data = json.dumps(payload).encode()
-    req = r.Request('https://api.indexnow.org/indexnow', data=data,
-                     headers={'Content-Type': 'application/json; charset=utf-8'},
-                     method='POST')
-    try:
-        resp = r.urlopen(req, timeout=15)
-        print(f'✅ IndexNow notified: HTTP {resp.status} for {len(urls)} URLs')
-    except Exception as e:
-        print(f'⚠️ IndexNow notify failed: {type(e).__name__} {e}')
-        # 不阻塞 routine，下次 IndexNow 自动重试或 Bing 自己从 sitemap 抓
-PYEOF
+DATE=$(date +%F)
+BRANCH=$(git branch --show-current)
+if [ "$BRANCH" = "main" ]; then
+  BRANCH="claude/daily-$DATE"      # Codex 执行时用 codex/daily-$DATE
+  git checkout -b "$BRANCH"
+  git branch -f main origin/main   # 让本地 main 回到干净状态
+fi
+git push -u origin "$BRANCH"
 ```
 
-**关键约束**：
-- 必须在 PR 合并到 main 之后跑（保证 main 上 URL 已生效）
-- IndexNow 失败不阻塞 routine 完成（nice-to-have，不是 must-have）
-- 如果本次 0 篇发布（池子空），跳过本步
+**push 成功 = 本次任务完成。不要开 PR、不要合并、不要部署、不要通知 IndexNow。**
 
-## 4. 选题池余量提醒
+这些全部由 `.github/workflows/daily-autopublish.yml` 在 GitHub 上做：它会重跑 `validate-blog.py` + `npm run build`，通过后 squash 合并到 main、部署 Cloudflare Pages、通知 IndexNow。把这些放在 Actions 上是刻意的——本地的 `gh` 依赖代理环境变量，历史上天天挂，而 `git push` 走 git 自己的 `http.proxy` 配置，是唯一稳定的一环。
+
+**如果 push 失败**：间隔 30s 重试最多 3 次。仍失败就停下，在结束语里写明分支名和原始报错——**不要绕过**（不要直接提交到 main，不要改 remote）。
+
+## 3. 选题池余量提醒
 
 最后一次 picker 输出的 `remaining < 30` 时，在结束语里加一行：
 
 > ⚠️ 选题池仅剩 N 个（按每日 3 篇计算约够 N/3 天），建议补充 `scripts/topic-pool.md`
 
-## 5. 结束语
+## 4. 结束语
 
 回复用户**一段话内**说清楚：
 
-1. 今天实际发布的文章数（如果池子中途空了，按实际数）
-2. 每篇的标题 + URL `https://blog.yotradeapi.com/blog/<slug>/`
+1. 今天实际写完并推送的文章数（如果池子中途空了，按实际数）
+2. 每篇的标题 + 目标 URL `https://blog.yotradeapi.com/blog/<slug>/`（注明"待 Actions 发布"）
 3. 选题池剩余数量
-4. PR URL（如果走了 PR）或 commit SHA
+4. 推送的分支名 + 最后一个 commit SHA
 
 **不要**：
 - 在结尾贴整段文章正文
