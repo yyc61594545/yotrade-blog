@@ -1,0 +1,153 @@
+name: Daily auto-publish
+
+# 兜底通道：本地 Codex 日更只要把 codex/daily-* 分支推上来，
+# 剩下的门禁、合并、部署、IndexNow 全部由 Actions 完成。
+# 本地 gh / DNS / keychain 挂掉不再阻塞上线。
+
+on:
+  push:
+    branches:
+      - 'codex/daily-*'
+      - 'claude/daily-*'
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: '要发布的分支名，例如 codex/daily-2026-08-17'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-autopublish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve branch
+        id: br
+        run: echo "name=${{ github.event.inputs.branch || github.ref_name }}" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.br.outputs.name }}
+          fetch-depth: 0
+
+      # 本地 run 可能已经自己合并了，这里先判重，避免重复上线
+      - name: Skip if already merged
+        id: dedup
+        run: |
+          git fetch origin main
+          if git merge-base --is-ancestor HEAD origin/main; then
+            echo "分支内容已在 main 上，跳过本次自动发布"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # 只允许日更内容自动合并，碰到代码/配置一律拒绝，交回人工
+      - name: Guard changed paths
+        if: steps.dedup.outputs.skip == 'false'
+        run: |
+          BAD=$(git diff --name-only origin/main...HEAD \
+                | grep -vE '^(src/content/blog/|src/assets/|scripts/topic-pool\.md$)' || true)
+          if [ -n "$BAD" ]; then
+            echo "::error::分支改动超出日更内容范围，拒绝自动合并："
+            echo "$BAD"
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.dedup.outputs.skip == 'false'
+        with:
+          node-version: 22.12
+          cache: npm
+
+      - name: Install
+        if: steps.dedup.outputs.skip == 'false'
+        run: npm ci
+
+      - name: Gate — validate blog
+        if: steps.dedup.outputs.skip == 'false'
+        run: python3 scripts/validate-blog.py
+
+      - name: Gate — build
+        if: steps.dedup.outputs.skip == 'false'
+        run: npm run build
+
+      - name: Collect new slugs
+        id: slugs
+        if: steps.dedup.outputs.skip == 'false'
+        run: |
+          SLUGS=$(git diff --name-only --diff-filter=A origin/main...HEAD -- src/content/blog/ \
+                  | sed 's|^src/content/blog/||; s|\.md$||' | paste -sd, -)
+          COUNT=$(echo "$SLUGS" | tr ',' '\n' | grep -c . || true)
+          echo "list=$SLUGS" >> "$GITHUB_OUTPUT"
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "本次新增 $COUNT 篇：$SLUGS"
+
+      - name: Squash merge into main
+        id: merge
+        if: steps.dedup.outputs.skip == 'false'
+        run: |
+          BRANCH="${{ steps.br.outputs.name }}"
+          DATE="${BRANCH##*daily-}"
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B main origin/main
+          git merge --squash "$BRANCH"
+          if git diff --cached --quiet; then
+            echo "没有实际改动，跳过合并"
+            echo "merged=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit \
+            -m "daily: ${{ steps.slugs.outputs.count }} 篇文章（${DATE}）" \
+            -m "自动合并自 ${BRANCH}（validate + build 门禁已通过）。"
+          git push origin main
+          git push origin --delete "$BRANCH" || true
+          echo "merged=true" >> "$GITHUB_OUTPUT"
+
+      # GITHUB_TOKEN 推的 main 不会触发 deploy.yml，所以这里自己部署
+      - name: Deploy to Cloudflare Pages
+        if: steps.merge.outputs.merged == 'true'
+        run: |
+          npm run build
+          npx wrangler pages deploy dist --project-name=yotrade-blog --branch=main \
+            --commit-hash="$(git rev-parse HEAD)" \
+            --commit-message="GHA auto-publish $(git rev-parse --short HEAD)"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      # 非阻塞：失败了 Bing 也会自己从 sitemap 抓
+      - name: Notify IndexNow
+        if: steps.merge.outputs.merged == 'true'
+        continue-on-error: true
+        env:
+          SLUGS: ${{ steps.slugs.outputs.list }}
+        run: |
+          python3 <<'PYEOF'
+          import os, json, urllib.request as r
+
+          KEY = '0618cefdb7e64035a4b169a872de5a78'
+          slugs = [s for s in os.environ['SLUGS'].split(',') if s]
+          if not slugs:
+              print('SLUGS 空，跳过')
+              raise SystemExit(0)
+
+          payload = {
+              'host': 'blog.yotradeapi.com',
+              'key': KEY,
+              'keyLocation': f'https://blog.yotradeapi.com/{KEY}.txt',
+              'urlList': [f'https://blog.yotradeapi.com/blog/{s}/' for s in slugs],
+          }
+          req = r.Request('https://api.indexnow.org/indexnow',
+                          data=json.dumps(payload).encode(),
+                          headers={'Content-Type': 'application/json; charset=utf-8'},
+                          method='POST')
+          resp = r.urlopen(req, timeout=15)
+          print(f'IndexNow notified: HTTP {resp.status} for {len(slugs)} URLs')
+          PYEOF
