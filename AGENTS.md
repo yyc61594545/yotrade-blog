@@ -18,6 +18,15 @@ When asked to run the daily blog update, follow
 5. Merge only when both gates pass. After merging, wait for the
    `Deploy to Cloudflare Pages` GitHub Actions run and verify it succeeds.
 6. Notify IndexNow only after the merge. IndexNow failure is non-blocking.
+   Getting the branch pushed is the one step that must succeed. If `gh` or
+   the GitHub API is unreachable after the push (DNS timeout, invalid keyring
+   token, `error connecting to api.github.com`), stop there and report the
+   branch name — do not treat it as a failed run. The
+   `.github/workflows/daily-autopublish.yml` fallback picks up any pushed
+   `codex/daily-*` branch, re-runs both gates, squash-merges to `main`,
+   deploys, and notifies IndexNow. It skips branches already merged, and
+   refuses to merge anything touching paths outside `src/content/blog/`,
+   `src/assets/`, and `scripts/topic-pool.md`.
 7. Preserve unrelated local changes and untracked files.
 8. If an existing PR or published slug shows that today's run already
    completed, verify it instead of publishing duplicates.
