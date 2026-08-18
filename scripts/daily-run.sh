@@ -12,7 +12,7 @@
 set -uo pipefail
 
 REPO="/Users/ethan/Program/yotrade-blog"
-POSTS=5
+POSTS="${POSTS:-5}"                # 可用环境变量覆盖，便于实测
 AGENT_TIMEOUT=3600          # 单个 agent 最多跑 1 小时
 NOTIFY="/Users/ethan/wuyun-shenghuo/happy-hellman-f65c59/scripts/notify-telegram.py"
 
@@ -50,6 +50,8 @@ if ! git fetch origin --prune --quiet; then
 fi
 
 # ---------- 幂等：今天是否已经发过 / 已经在排队 ----------
+# FORCE=1 跳过幂等检查（只在人工实测时用）
+if [ "${FORCE:-0}" != "1" ]; then
 if git ls-remote --heads origin | grep -q "daily-$DATE\$"; then
   log "origin 上已有 daily-$DATE 分支，Actions 在处理，跳过"
   exit 0
@@ -58,6 +60,9 @@ published=$(git grep -c "pubDate: '$DATE'" origin/main -- src/content/blog/ 2>/d
 if [ "${published:-0}" -ge "$POSTS" ]; then
   log "main 上今天已有 $published 篇，跳过"
   exit 0
+fi
+else
+  log "FORCE=1，跳过幂等检查"
 fi
 
 git checkout --quiet main && git pull --quiet --ff-only || {
