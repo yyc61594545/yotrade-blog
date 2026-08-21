@@ -26,6 +26,8 @@ const imageURL = heroImage ? new URL(heroImage.src, Astro.site).toString() : und
 
 const tagSlug = (t: string) => t.toLowerCase().replace(/[\s/]+/g, '-');
 
+const ctaHref = `https://yotradeapi.com/register?utm_source=blog&utm_medium=cta&utm_content=${currentSlug ?? 'unknown'}`;
+
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const related = allPosts
 	.filter((p) => p.id !== currentSlug)
@@ -255,6 +257,17 @@ const articleSchema = {
 							</div>
 						)}
 					</div>
+
+					<aside class="cta-box cta-box--top">
+						<h3>试用 YoTradeApi 中转</h3>
+						<p>
+							同一 API Key 调用 Claude、GPT、Gemini、Grok 全家桶，支付宝/微信直接付款，免去海外手机号和信用卡的麻烦。
+						</p>
+						<div class="actions">
+							<a class="primary" href={ctaHref}>免费创建 API Key</a>
+						</div>
+					</aside>
+
 					<slot />
 				</div>
 			</article>
@@ -266,7 +279,7 @@ const articleSchema = {
 					后台可查每条请求的状态码、耗时与 token 用量。
 				</p>
 				<div class="actions">
-					<a class="primary" href="https://yotradeapi.com">创建独立 API Key</a>
+					<a class="primary" href={ctaHref}>创建独立 API Key</a>
 					<a class="secondary" href="/compare/">查看与其他服务对比</a>
 				</div>
 			</aside>
