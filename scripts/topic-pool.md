@@ -387,3 +387,107 @@
 - ai-code-review-false-positive | AI Code Review 误报治理 | 实战经验
 - ai-coding-agent-security-review | AI 编程 Agent 安全评审清单 | 实战经验
 - ai-coding-agent-team-governance | 团队使用 AI 编程 Agent 的治理规则 | 实战经验
+
+## 2026-08 补充选题
+
+### 技术深度
+- llm-tokenizer-cost-difference | 各家 tokenizer 差异对中文成本的影响 | 技术深度
+- llm-logprobs-confidence | 用 logprobs 做置信度判断 | 技术深度
+- llm-batch-api-queue-design | 批处理 API 的排队与结果回收 | 技术深度
+- llm-context-eviction-strategy | 超长会话的上下文淘汰策略 | 技术深度
+- llm-tool-schema-versioning | 工具 Schema 版本演进与兼容 | 技术深度
+- llm-sse-reconnect-protocol | SSE 断线重连与消息去重 | 技术深度
+- llm-sampling-parameters-deep | 采样参数对输出分布的实际影响 | 技术深度
+- llm-multimodal-image-token-cost | 图片输入的 token 计费机制 | 技术深度
+- llm-stop-sequence-pitfalls | stop sequence 的边界与坑 | 技术深度
+- llm-strict-schema-boundary | 严格模式结构化输出的能力边界 | 技术深度
+
+### 模型评测
+- llm-long-context-recall-bench | 长上下文召回能力横评 | 模型评测
+- llm-chinese-instruction-bench | 中文指令遵循能力对比 | 模型评测
+- llm-tool-call-reliability-bench | 工具调用可靠性实测 | 模型评测
+- llm-p99-latency-comparison | 主流模型 P99 延迟对比 | 模型评测
+- coding-agent-refactor-bench | 编程 Agent 重构任务横评 | 模型评测
+- llm-json-stability-bench | 结构化输出稳定性横评 | 模型评测
+- llm-cn-en-translation-bench | 中英互译质量实测 | 模型评测
+- llm-summarization-fidelity-bench | 长文摘要忠实度实测 | 模型评测
+- llm-math-reasoning-cn-bench | 中文数理推理能力对比 | 模型评测
+- small-model-task-fitness | 小模型能接住哪些任务 | 模型评测
+
+### 工程实战
+- llm-gateway-routing-implementation | 自建 LLM 网关的路由实现 | 工程实战
+- multi-provider-failover-practice | 多厂商故障切换落地 | 工程实战
+- client-side-rate-limiter | 客户端令牌桶限速实现 | 工程实战
+- llm-eval-in-ci-pipeline | 把模型评测接进 CI 流水线 | 工程实战
+- agent-long-term-memory-store | Agent 长期记忆存储选型 | 工程实战
+- llm-response-cache-layer | 响应缓存层设计与命中率 | 工程实战
+- prompt-version-control-practice | Prompt 版本管理落地 | 工程实战
+- llm-queue-backpressure | 请求队列与背压设计 | 工程实战
+- agent-task-scheduler-design | Agent 任务调度器设计 | 工程实战
+- llm-cold-start-warmup | 冷启动与预热策略 | 工程实战
+
+### 成本优化
+- prompt-caching-savings-guide | Prompt Caching 实战省钱指南 | 成本优化
+- model-tiering-cost-strategy | 模型分级的成本策略 | 成本优化
+- context-compression-savings | 上下文压缩的成本收益 | 成本优化
+- batch-vs-realtime-cost | 批处理与实时调用的成本差 | 成本优化
+- budget-guardrail-design | 预算护栏与超支阻断 | 成本优化
+- embedding-cost-optimization | Embedding 成本优化路径 | 成本优化
+- agent-loop-cost-runaway | Agent 循环的成本失控与控制 | 成本优化
+- output-length-cost-control | 输出长度控制的省钱效果 | 成本优化
+- cost-per-feature-accounting | 按功能核算 AI 成本 | 成本优化
+- free-tier-limits-reality | 免费额度的真实边界 | 成本优化
+
+### 小白入门
+- what-is-token-for-beginners | Token 到底是什么 | 小白入门
+- first-api-call-walkthrough | 第一次调用 AI API 完整走一遍 | 小白入门
+- api-key-safety-for-beginners | 新手怎么安全保管 API Key | 小白入门
+- temperature-top-p-for-beginners | temperature 和 top_p 怎么调 | 小白入门
+- system-prompt-for-beginners | System Prompt 入门写法 | 小白入门
+- streaming-or-not-for-beginners | 流式和非流式怎么选 | 小白入门
+- common-error-codes-for-beginners | 常见错误码看不懂怎么办 | 小白入门
+- pick-first-model-for-beginners | 新手第一个模型怎么选 | 小白入门
+- context-window-for-beginners | 上下文窗口是什么意思 | 小白入门
+- why-ai-gives-wrong-answer | AI 为什么会答错 | 小白入门
+
+### 国内场景
+- cn-latency-optimization-practice | 国内访问延迟优化实测 | 国内场景
+- cn-payment-methods-comparison | 国内开发者付款方式对比 | 国内场景
+- cn-data-boundary-compliance | 国内业务的数据出境边界 | 国内场景
+- cn-team-ai-tool-rollout | 国内团队引入 AI 工具的路径 | 国内场景
+- cn-invoice-reimbursement | AI API 支出的发票与报销 | 国内场景
+- cn-domestic-model-integration | 国产模型接入实战 | 国内场景
+- cn-mobile-app-llm-notes | 国内 App 接入 LLM 的注意事项 | 国内场景
+- cn-enterprise-procurement | 国内企业采购 AI 服务的流程 | 国内场景
+- cn-relay-service-selection | 中转服务选型要看哪些指标 | 国内场景
+- cn-network-troubleshooting | 国内网络问题排查手册 | 国内场景
+
+### 工具配置
+- cursor-team-config-guide | Cursor 团队配置指南 | 工具配置
+- claude-code-hooks-config | Claude Code Hooks 配置实战 | 工具配置
+- cline-vscode-config-guide | Cline 在 VS Code 的配置 | 工具配置
+- aider-workflow-config | Aider 工作流配置 | 工具配置
+- open-webui-selfhost-config | Open WebUI 自托管配置 | 工具配置
+- continue-dev-custom-endpoint | Continue.dev 接自定义端点 | 工具配置
+- zed-ai-assistant-config | Zed AI 助手配置 | 工具配置
+- jetbrains-ai-plugin-config | JetBrains 系 AI 插件配置 | 工具配置
+
+### 行业观察
+- coding-agent-landscape-2026 | 2026 编程 Agent 格局观察 | 行业观察
+- llm-pricing-trend-observation | 模型定价趋势与其影响 | 行业观察
+- ai-app-layer-moat | AI 应用层的护城河之争 | 行业观察
+- open-weight-license-shift | 开源权重许可证的变化 | 行业观察
+- agent-interop-protocol-race | Agent 互操作协议之争 | 行业观察
+- inference-cost-curve-reality | 推理成本下降曲线的现实 | 行业观察
+- developer-skill-shift-ai | 开发者技能结构的迁移 | 行业观察
+- ai-tool-consolidation-trend | AI 开发工具的整合趋势 | 行业观察
+
+### 实战经验
+- llm-production-incident-postmortem | 一次 LLM 线上故障复盘 | 实战经验
+- rag-quality-debugging-path | RAG 效果差的排查路径 | 实战经验
+- prompt-regression-governance | Prompt 回归问题治理 | 实战经验
+- user-feedback-to-iteration | 用户反馈回流到迭代 | 实战经验
+- agent-over-permission-incident | Agent 权限过宽引发的事故 | 实战经验
+- legacy-migration-with-ai | 用 AI 迁移遗留代码的真实过程 | 实战经验
+- ai-doc-generation-practice | 用 AI 维护项目文档的实践 | 实战经验
+- small-team-ai-workflow | 小团队的 AI 协作流程 | 实战经验
