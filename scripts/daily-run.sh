@@ -11,6 +11,15 @@
 
 set -uo pipefail
 
+# launchd 能把 Mac 从深睡唤醒来跑这个任务，但没人持有电源断言的话
+# 系统约一分钟后就睡回去，长连接的 agent 会被打断
+# （实测 08-21~08-23 连续三天 Claude 都死在 "computer went to sleep mid-response"）。
+# 自我重入到 caffeinate 之下，全程压住 idle / system sleep。
+if [ -z "${CAFFEINATED:-}" ]; then
+  export CAFFEINATED=1
+  exec /usr/bin/caffeinate -i -s "$0" "$@"
+fi
+
 REPO="/Users/ethan/Program/yotrade-blog"
 POSTS="${POSTS:-5}"                # 可用环境变量覆盖，便于实测
 AGENT_TIMEOUT=3600          # 单个 agent 最多跑 1 小时
