@@ -80,4 +80,4 @@ OpenAI 的注册流程在填写邮箱、密码之后，会强制要求手机号�
 - [ChatGPT Plus 每月费用是多少（2026 版）](/blog/cn-chatgpt-monthly-cost-2026/)
 - [Claude vs ChatGPT 2026 价格对比](/blog/cn-claude-vs-chatgpt-price-2026/)
 
-如果你更关心怎么稳定调用 GPT / Claude 等模型的 API 而不是折腾账号本身，可以试试 [YoTradeApi](https://yotradeapi.com)，支持支付宝/微信直接付款，免去海外手机号和信用卡的麻烦。
+如果你已经打算长期重度使用，不想在接码、虚拟卡、被砍单这些环节反复踩坑，可以直接走[官方订阅代充](https://yotradeapi.com/#sub)：我们用美卡在美区官方直冲，5–10 分钟到账，被砍单全额退。只接 ChatGPT Pro / Claude Max 这类 ≥$100/月 的重度套餐，轻度使用建议自己按上面的方法折腾。

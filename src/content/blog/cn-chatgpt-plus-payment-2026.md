@@ -114,7 +114,7 @@ ChatGPT Plus 的月费是 $20，但很多开发者的实际月度 API 用量远�
 | 程序化调用、批量任务、自研工具 | API 中转（按量计费） |
 | 两类需求都有 | 订阅 + 中转各用一部分 |
 
-[YoTradeApi](https://yotradeapi.com) 提供 GPT-4o、Claude、Gemini 等模型的中转接入，国内直连，注册后即可生成 API Key 开始测试，无需解决任何支付问题。
+这条路适合开发者；如果你要的是网页版 ChatGPT 本身，它替代不了订阅。
 
 ## 七、常见报错与处理
 
@@ -152,4 +152,4 @@ ChatGPT Plus 的月费是 $20，但很多开发者的实际月度 API 用量远�
 - [LLM 定价横向对比 2026](/blog/llm-pricing-comparison-2026/)
 - [小白如何选择适合自己的 AI 编程工具](/blog/ai-coding-tools-2026-overview/)
 
-开发者场景下，[YoTradeApi](https://yotradeapi.com) 提供按量计费的 API 中转，可以完全替代 ChatGPT Plus 订阅，支持 GPT-4o、o3、Claude 等主流模型。
+如果你是每天靠它干活的重度用户，与其在支付环节反复试错，不如直接走[官方订阅代充](https://yotradeapi.com/#sub)：美卡直冲美区官方，5–10 分钟到账，被砍单全额退。我们只做 ChatGPT Pro ¥1,500/月、Claude Max 5x ¥750/月、Max 20x ¥1,500/月 这类 ≥$100/月 的重度套餐。

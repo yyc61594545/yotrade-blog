@@ -213,4 +213,4 @@ A：两者各有擅长，简单对比见 [Claude vs GPT vs Gemini 国内开发�
 - [API 中转 vs 自建 VPN：哪种方案更划算](/blog/ai-api-relay-vs-self-vpn/)
 - [国内 LLM 中转市场全景](/blog/cn-llm-relay-market-overview/)
 
-如果你需要稳定的 Claude API 中转服务用于开发，[YoTradeApi](https://yotradeapi.com) 提供高可用的 API 接入，支持人民币充值，一个 API Key 同时访问 Claude、GPT-4 等主流模型。
+如果你要的是完整的 Claude 网页版和 Claude Code 体验，而不是 API，那么方案一（官方订阅）才是正解，卡点只在付款。这一步可以交给我们：[Claude Max 官方订阅代充](https://yotradeapi.com/#sub)，美卡直冲美区官方，Max 5x ¥750/月、Max 20x ¥1,500/月、Claude Pro 年付 ¥1,500/年，5–10 分钟到账。

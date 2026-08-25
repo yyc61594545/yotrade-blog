@@ -26,7 +26,8 @@ const imageURL = heroImage ? new URL(heroImage.src, Astro.site).toString() : und
 
 const tagSlug = (t: string) => t.toLowerCase().replace(/[\s/]+/g, '-');
 
-const ctaHref = `https://yotradeapi.com/register?utm_source=blog&utm_medium=cta&utm_content=${currentSlug ?? 'unknown'}`;
+const ctaHref = `https://yotradeapi.com/?utm_source=blog&utm_medium=cta&utm_content=${currentSlug ?? 'unknown'}#sub`;
+const ctaWechatHref = `https://yotradeapi.com/?utm_source=blog&utm_medium=cta_wechat&utm_content=${currentSlug ?? 'unknown'}#contact`;
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const related = allPosts
@@ -165,6 +166,12 @@ const articleSchema = {
 			}
 			.cta-box h3 { margin: 0 0 0.5em; font-size: 1.2em; }
 			.cta-box p { margin: 0.25em 0; font-size: 0.95em; }
+			.cta-box .cta-plans {
+				margin-top: 0.75em;
+				font-size: 0.88em;
+				color: rgb(var(--gray));
+				line-height: 1.6;
+			}
 			.cta-box .actions {
 				display: flex;
 				gap: 0.75em;
@@ -259,12 +266,13 @@ const articleSchema = {
 					</div>
 
 					<aside class="cta-box cta-box--top">
-						<h3>试用 YoTradeApi 中转</h3>
+						<h3>不想折腾接码和虚拟卡？</h3>
 						<p>
-							同一 API Key 调用 Claude、GPT、Gemini、Grok 全家桶，支付宝/微信直接付款，免去海外手机号和信用卡的麻烦。
+							ChatGPT Pro / Claude Max 官方订阅代充。美卡直冲美区官方，5–10 分钟到账，被砍单全额退。
+							只接 ≥$100/月 的重度套餐。
 						</p>
 						<div class="actions">
-							<a class="primary" href={ctaHref}>免费创建 API Key</a>
+							<a class="primary" href={ctaHref}>查看套餐与价格 →</a>
 						</div>
 					</aside>
 
@@ -273,14 +281,17 @@ const articleSchema = {
 			</article>
 
 			<aside class="cta-box">
-				<h3>试用 YoTradeApi 中转</h3>
+				<h3>ChatGPT Pro / Claude Max 官方订阅代充</h3>
 				<p>
-					同一 API Key 调用 Claude、GPT、Gemini、Grok 全家桶，兼容 OpenAI SDK 协议与 Anthropic Messages 协议。
-					后台可查每条请求的状态码、耗时与 token 用量。
+					接码、虚拟卡、支付被拒、账号被砍——这些环节我们替你走完。美区官方直冲，
+					操作期间不查看你的任何使用记录，5–10 分钟回执。
+				</p>
+				<p class="cta-plans">
+					只服务重度用户：ChatGPT Pro ¥1,500/月 · Claude Max 5x ¥750/月 · Max 20x ¥1,500/月 · Claude Pro 年付 ¥1,500/年
 				</p>
 				<div class="actions">
-					<a class="primary" href={ctaHref}>创建独立 API Key</a>
-					<a class="secondary" href="/compare/">查看与其他服务对比</a>
+					<a class="primary" href={ctaHref}>查看套餐与下单 →</a>
+					<a class="secondary" href={ctaWechatHref}>微信咨询</a>
 				</div>
 			</aside>
 
