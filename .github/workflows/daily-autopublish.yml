@@ -111,16 +111,18 @@ jobs:
           echo "merged=true" >> "$GITHUB_OUTPUT"
 
       # GITHUB_TOKEN 推的 main 不会触发 deploy.yml，所以这里自己部署
-      - name: Deploy to Cloudflare Pages
+      # Cloudflare Pages 在真实多节点并发下有不明原因的间歇性 504（2026-08 排查未果），
+      # 已迁移为直接从 VPS (69.5.53.68) 用 nginx 提供静态文件，不再依赖 Pages。
+      - name: Deploy to VPS via rsync
         if: steps.merge.outputs.merged == 'true'
         run: |
           npm run build
-          npx wrangler pages deploy dist --project-name=yotrade-blog --branch=main \
-            --commit-hash="$(git rev-parse HEAD)" \
-            --commit-message="GHA auto-publish $(git rev-parse --short HEAD)"
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          echo "${{ secrets.VPS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          rsync -avz --delete -e "ssh -p 19789 -i ~/.ssh/deploy_key" \
+            dist/ root@69.5.53.68:/opt/ai-relay/blog-dist/
 
       # 非阻塞：失败了 Bing 也会自己从 sitemap 抓
       - name: Notify IndexNow
