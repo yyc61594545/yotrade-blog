@@ -27,3 +27,25 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      # Cache Rule "Edge-cache blog HTML" 用 override_origin 强制边缘缓存 24h，
+      # 新文章本身是全新 URL 会立即可见，但这些「发现入口」会停留在旧版本，
+      # 导致首页不列出新文章、sitemap/RSS 延迟被抓取。部署后精准清掉它们。
+      # 文章页不清 —— 它们内容不变，继续享受 24h 缓存。
+      - name: Purge discovery surfaces from Cloudflare cache
+        continue-on-error: true   # 清缓存失败不应阻断部署；失败会在此步显示为红叉
+        run: |
+          set -o pipefail
+          curl -sS -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"files":[
+              "https://blog.yotradeapi.com/",
+              "https://blog.yotradeapi.com/blog/",
+              "https://blog.yotradeapi.com/categories/",
+              "https://blog.yotradeapi.com/tags/",
+              "https://blog.yotradeapi.com/sitemap-index.xml",
+              "https://blog.yotradeapi.com/sitemap-0.xml",
+              "https://blog.yotradeapi.com/rss.xml"
+            ]}' | tee /dev/stderr | grep -q '"success":true'
