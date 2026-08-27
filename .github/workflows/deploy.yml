@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to VPS
 
 on:
   push:
@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      deployments: write
     steps:
       - uses: actions/checkout@v4
 
@@ -22,11 +21,16 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Deploy
-        run: npx wrangler pages deploy dist --project-name=yotrade-blog --branch=main --commit-hash="$GITHUB_SHA" --commit-message="GHA deploy $GITHUB_SHA"
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      # Cloudflare Pages 在真实多节点并发下有不明原因的间歇性 504（2026-08 排查未果），
+      # 已迁移为直接从 VPS (69.5.53.68) 用 nginx 提供静态文件，不再依赖 Pages。
+      - name: Deploy to VPS via rsync
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          echo "${{ secrets.VPS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          rsync -avz --delete -e "ssh -p 19789 -i ~/.ssh/deploy_key" \
+            dist/ root@69.5.53.68:/opt/ai-relay/blog-dist/
 
       # Cache Rule "Edge-cache blog HTML" 用 override_origin 强制边缘缓存 24h，
       # 新文章本身是全新 URL 会立即可见，但这些「发现入口」会停留在旧版本，
