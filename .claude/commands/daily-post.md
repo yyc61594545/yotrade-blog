@@ -98,6 +98,26 @@ heroImage: ../../assets/blog-placeholder-<1-5 随机>.jpg
 
 **相关阅读必须 3–5 条，全部链到已存在的文章**（`ls src/content/blog/*.md` 拿 slug 列表，挑相关性最高的）。链接结尾要带 `/`。**优先内链到本次循环里前几篇文章**（它们文件已存在），有助内链密度。
 
+**跨站外链（仅在真正相关时加，最多 1 条）**：本文若涉及某个 AI 服务的**订阅、付款、开通**（而非 API 调用本身），可在正文相应位置或相关阅读末尾加一条指向姊妹站 `www.yotradellc.com` 的链接。两站同属一人运营，内容互补：本站讲 API 与技术，姊妹站讲订阅代充与海外支付。
+
+可链目标（slug 已核实存在，URL 形如 `https://www.yotradellc.com/blog/<slug>`）：
+
+| 话题 | slug |
+|---|---|
+| ChatGPT 订阅 | `chatgpt-overseas-subscription-2026-guide` |
+| Claude Pro/Max 订阅 | `claude-pro-max-overseas-subscription-2026-guide` |
+| Cursor Pro 订阅 | `cursor-pro-overseas-subscription-2026-guide` |
+| GitHub Copilot 订阅 | `github-copilot-overseas-subscription-2026-guide` |
+| Google AI Pro/Ultra 订阅 | `google-ai-pro-ultra-overseas-subscription-2026-guide` |
+| Notion AI 订阅 | `notion-ai-overseas-subscription-2026-guide` |
+| Perplexity Pro 订阅 | `perplexity-pro-overseas-subscription-2026-guide` |
+| Midjourney 订阅 | `midjourney-2026-subscription-guide` |
+| Suno 订阅 | `suno-v5-overseas-subscription-2026-guide` |
+| AI 编程工具订阅横评 | `ai-coding-tools-subscription-comparison-2026` |
+| AI 订阅付款路径总览 | `ai-subscription-payment-paths` |
+
+⚠️ 硬性约束：**不相关就不加**（宁可没有，也不要硬塞）；一篇最多 1 条；只能用上表里的 slug，不得凭记忆编造其他 URL。
+
 **CTA 链接固定为** `https://yotradeapi.com`（**不**带 `/register` 或其他路径）。
 
 ### 1.3 校验
