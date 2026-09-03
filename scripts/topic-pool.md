@@ -521,3 +521,14 @@
 - cn-chatgpt-team-plan-cn-guide | ChatGPT Team 版国内开通与分摊实战 | 国内场景
 - cn-ai-payment-risk-control | AI 服务支付风控触发原因与规避 | 国内场景
 - cn-overseas-card-application-path | 国内申请可付 AI 服务的境外卡路径对比 | 国内场景
+
+## 2026-09 Bing 关键词实证缺口（高展示量未覆盖）
+
+> 依据：Bing Webmaster Tools → Keyword Research 实测推荐词（3 个月窗口）。
+> Bing 是本站真实流量主渠道（5.9K 点击 / 85.8K 展示，约为 Google 的 90 倍）。
+> 下列三条是核对全部 62 篇 cn-* 已发布文章后确认的**真实缺口**，
+> 其余高展示词（chatgpt充值 9.3K、grok订阅 612 等）已有文章正面命中，不重复立项。
+
+- cn-claude-mirror-sites-guide | Claude 镜像站国内可用性实测与风险提示（2026） | 国内场景
+- cn-chatgpt-plus-daichong-guide | ChatGPT Plus 代充完全指南：流程、价格与避坑 | 国内场景
+- cn-chatgpt-account-register-full | ChatGPT 账号注册完整教程 2026（含各种验证方式） | 小白入门
