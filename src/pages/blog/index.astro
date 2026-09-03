@@ -37,106 +37,168 @@ const searchIndex = posts.map((p) => ({
 			keywords={['AI API 中转', 'Cursor API 中转', 'Claude Code 国内', 'Cline 配置']}
 		/>
 		<style>
-			main { width: 980px; }
+			main {
+				width: 980px;
+			}
+			.page-head {
+				max-width: 720px;
+				margin-bottom: 2rem;
+			}
+			.page-head h1 {
+				margin-bottom: 0.5rem;
+			}
+			.page-head p {
+				color: var(--text-2);
+				margin: 0;
+			}
 			.search-box {
-				margin: 1.5rem 0;
-				display: flex;
-				gap: 0.5rem;
+				position: relative;
+				max-width: 560px;
+				margin: 1.75rem 0 0.5rem;
+			}
+			.search-box svg {
+				position: absolute;
+				left: 0.95rem;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 16px;
+				height: 16px;
+				color: var(--text-3);
+				pointer-events: none;
 			}
 			.search-box input {
-				flex: 1;
-				padding: 0.65rem 0.85rem;
-				border: 1px solid rgb(var(--gray-light));
-				border-radius: 6px;
-				font-size: 1rem;
+				width: 100%;
+				padding: 0.7rem 1rem 0.7rem 2.5rem;
+				border: 1px solid var(--separator);
+				border-radius: 980px;
+				background: var(--surface);
+				color: var(--text);
+				font-size: 0.95rem;
+				-webkit-appearance: none;
+				appearance: none;
+				transition: border-color 0.2s ease, box-shadow 0.2s ease;
+			}
+			.search-box input::placeholder {
+				color: var(--text-3);
 			}
 			.search-box input:focus {
 				outline: none;
 				border-color: var(--accent);
+				box-shadow: 0 0 0 4px var(--accent-soft);
 			}
 			.stats {
-				color: rgb(var(--gray));
-				font-size: 0.9rem;
-				margin: 0.5rem 0 1.5rem;
+				color: var(--text-3);
+				font-size: 0.85rem;
+				margin: 0.5rem 0 2rem;
 			}
-			.year-block { margin-bottom: 2.5rem; }
+			.year-block {
+				margin-bottom: 3rem;
+			}
 			.year-block h2 {
-				font-size: 1.3rem;
-				color: rgb(var(--gray-dark));
-				border-bottom: 1px solid rgb(var(--gray-light));
-				padding-bottom: 0.4rem;
+				font-size: 1.25rem;
+				color: var(--text-2);
+				font-weight: 600;
 				margin: 0 0 1rem;
+				padding-bottom: 0.5rem;
+				border-bottom: 1px solid var(--separator);
 			}
 			ul.posts {
 				list-style: none;
 				margin: 0;
 				padding: 0;
 				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 				gap: 1rem;
 			}
 			ul.posts li {
-				border: 1px solid rgb(var(--gray-light));
-				border-radius: 8px;
-				padding: 1rem 1.15rem;
-				background: #fff;
-			}
-			ul.posts li.hidden { display: none; }
-			ul.posts li a {
-				color: rgb(var(--black));
-				text-decoration: none;
-				font-weight: 600;
-				font-size: 1.1rem;
-				display: block;
-				margin-bottom: 0.35rem;
-			}
-			ul.posts li a:hover { color: var(--accent); }
-			ul.posts li .desc {
-				margin: 0.2rem 0 0.5rem;
-				color: rgb(var(--gray-dark));
-				font-size: 0.95rem;
-			}
-			ul.posts li .meta {
-				color: rgb(var(--gray));
-				font-size: 0.85rem;
 				display: flex;
-				gap: 0.75rem;
-				flex-wrap: wrap;
 			}
-			ul.posts li .tags {
+			ul.posts li.hidden {
+				display: none;
+			}
+			ul.posts .card {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				color: var(--text);
+				text-decoration: none;
+			}
+			ul.posts .card:hover {
+				color: var(--text);
+			}
+			ul.posts .kicker {
+				font-size: 0.75rem;
+				font-weight: 600;
+				color: var(--accent);
+				margin-bottom: 0.5rem;
+			}
+			ul.posts .t {
+				font-weight: 600;
+				font-size: 1.05rem;
+				line-height: 1.35;
+				margin-bottom: 0.45rem;
+			}
+			ul.posts .desc {
+				margin: 0 0 0.85rem;
+				color: var(--text-2);
+				font-size: 0.9rem;
+				line-height: 1.5;
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+			}
+			ul.posts .meta {
+				margin-top: auto;
+				display: flex;
+				align-items: center;
+				gap: 0.6rem;
+				flex-wrap: wrap;
+				font-size: 0.8rem;
+				color: var(--text-3);
+			}
+			ul.posts .tags {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 0.3rem;
 			}
-			ul.posts li .tag {
+			ul.posts .tag {
 				display: inline-block;
-				border: 1px solid rgb(var(--gray-light));
-				border-radius: 4px;
-				padding: 0.05rem 0.4rem;
-				font-size: 0.8rem;
-				color: rgb(var(--gray-dark));
+				padding: 0.05rem 0.5rem;
+				border-radius: 980px;
+				background: var(--surface-2);
+				font-size: 0.72rem;
+				color: var(--text-2);
 			}
 			.no-results {
 				display: none;
-				padding: 2rem;
+				padding: 3rem 1rem;
 				text-align: center;
-				color: rgb(var(--gray));
+				color: var(--text-3);
 			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>全部文章</h1>
-			<p>API 中转、开发者工具配置、模型评测、价格追踪、稳定性测试与故障排查的实用记录。</p>
-			<div class="search-box">
-				<input
-					type="search"
-					id="post-search"
-					placeholder="输入关键词搜索：Cursor / Claude / Cline / 错误码 ..."
-					autocomplete="off"
-				/>
+			<div class="page-head">
+				<h1>全部文章</h1>
+				<p>API 中转、开发者工具配置、模型评测、价格追踪、稳定性测试与故障排查的实用记录。</p>
+				<div class="search-box">
+					<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+						<circle cx="7" cy="7" r="5" />
+						<path d="m11 11 3.5 3.5" stroke-linecap="round" />
+					</svg>
+					<input
+						type="search"
+						id="post-search"
+						placeholder="搜索：Cursor / Claude / Cline / 错误码 ..."
+						autocomplete="off"
+						aria-label="搜索文章"
+					/>
+				</div>
+				<p class="stats">共 <span id="visible-count">{posts.length}</span> / {posts.length} 篇</p>
 			</div>
-			<p class="stats">共 <span id="visible-count">{posts.length}</span> / {posts.length} 篇</p>
 
 			{years.map((year) => (
 				<div class="year-block" data-year={year}>
@@ -149,14 +211,17 @@ const searchIndex = posts.map((p) => ({
 								data-tags={post.data.tags.join(' ')}
 								data-cat={post.data.category ?? ''}
 							>
-								<a href={`/blog/${post.id}/`}>{post.data.title}</a>
-								<p class="desc">{post.data.description}</p>
-								<div class="meta">
-									<FormattedDate date={post.data.pubDate} />
-									<span class="tags">
-										{post.data.tags.map((t) => (<span class="tag">{t}</span>))}
-									</span>
-								</div>
+								<a class="tile card" href={`/blog/${post.id}/`}>
+									{post.data.category && <span class="kicker">{post.data.category}</span>}
+									<span class="t">{post.data.title}</span>
+									<p class="desc">{post.data.description}</p>
+									<div class="meta">
+										<FormattedDate date={post.data.pubDate} />
+										<span class="tags">
+											{post.data.tags.slice(0, 3).map((t) => (<span class="tag">{t}</span>))}
+										</span>
+									</div>
+								</a>
 							</li>
 						))}
 					</ul>

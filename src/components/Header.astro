@@ -3,10 +3,10 @@ import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 ---
 
-<header>
-	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
+<header class="site-header">
+	<nav aria-label="站点导航">
+		<a class="brand" href="/">{SITE_TITLE}</a>
+		<div class="links">
 			<HeaderLink href="/">首页</HeaderLink>
 			<HeaderLink href="/blog">文章</HeaderLink>
 			<HeaderLink href="/categories">分类</HeaderLink>
@@ -19,44 +19,59 @@ import HeaderLink from './HeaderLink.astro';
 	</nav>
 </header>
 <style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 50;
+		background: var(--header-bg);
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		border-bottom: 1px solid var(--separator);
 	}
 	nav {
+		max-width: 980px;
+		height: 48px;
+		margin: 0 auto;
+		padding: 0 1.25rem;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		gap: 1.5rem;
 	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
+	.brand {
+		font-size: 0.95rem;
+		font-weight: 600;
+		letter-spacing: -0.01em;
+		color: var(--text);
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	.brand:hover {
+		color: var(--text);
 		text-decoration: none;
 	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
+	.links {
+		display: flex;
+		align-items: center;
+		gap: 1.35rem;
+		margin-left: auto;
+		overflow-x: auto;
+		scrollbar-width: none;
+		-webkit-overflow-scrolling: touch;
+	}
+	.links::-webkit-scrollbar {
+		display: none;
 	}
 	@media (max-width: 720px) {
 		nav {
-			align-items: flex-start;
-			flex-direction: column;
-			padding: 0.75em 0;
+			padding: 0 1rem;
+			gap: 1rem;
 		}
-		nav a {
-			padding: 0.4em 0.5em;
+		.links {
+			gap: 1rem;
+			/* 末尾留一点渐隐余量，提示可横向滑动 */
+			mask-image: linear-gradient(to right, #000 92%, transparent);
+			-webkit-mask-image: linear-gradient(to right, #000 92%, transparent);
+			padding-right: 1rem;
 		}
 	}
 </style>

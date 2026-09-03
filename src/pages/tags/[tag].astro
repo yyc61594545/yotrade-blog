@@ -51,8 +51,9 @@ const canonical = `https://blog.yotradeapi.com/tags/${Astro.params.tag}/`;
 				gap: 1.25rem;
 			}
 			li {
-				border: 1px solid rgb(var(--gray-light));
-				border-radius: 8px;
+				border: 1px solid var(--separator);
+				border-radius: var(--radius);
+				background: var(--surface);
 				padding: 1rem 1.25rem;
 			}
 			.meta {

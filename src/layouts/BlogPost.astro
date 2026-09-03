@@ -1,6 +1,6 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection, type CollectionEntry } from 'astro:content';
+import SocialCard from '../assets/social-card.png';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -13,7 +13,6 @@ const {
 	description,
 	pubDate,
 	updatedDate,
-	heroImage,
 	canonical,
 	keywords = [],
 	tags = [],
@@ -22,7 +21,14 @@ const {
 } = Astro.props;
 
 const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
-const imageURL = heroImage ? new URL(heroImage.src, Astro.site).toString() : undefined;
+// 文章页不再放占位图；社交预览与结构化数据统一用站点级品牌卡片
+const imageURL = new URL(SocialCard.src, Astro.site).toString();
+
+const toDate = (d: Date | string) => (d instanceof Date ? d : new Date(d));
+const published = toDate(pubDate);
+const modified = updatedDate ? toDate(updatedDate) : published;
+// 只有真的晚于发布日才显示"更新于"，避免每篇都出现两行同一天
+const showUpdated = modified.valueOf() > published.valueOf();
 
 const tagSlug = (t: string) => t.toLowerCase().replace(/[\s/]+/g, '-');
 
@@ -58,17 +64,11 @@ const articleSchema = {
 	inLanguage: 'zh-CN',
 	headline: title,
 	description,
-	datePublished: pubDate instanceof Date ? pubDate.toISOString() : new Date(pubDate).toISOString(),
-	dateModified: updatedDate
-		? updatedDate instanceof Date
-			? updatedDate.toISOString()
-			: new Date(updatedDate).toISOString()
-		: pubDate instanceof Date
-			? pubDate.toISOString()
-			: new Date(pubDate).toISOString(),
+	datePublished: published.toISOString(),
+	dateModified: modified.toISOString(),
 	mainEntityOfPage: canonicalURL,
 	url: canonicalURL,
-	image: imageURL ? [imageURL] : undefined,
+	image: [imageURL],
 	keywords,
 	articleSection: tags,
 	author: {
@@ -90,7 +90,6 @@ const articleSchema = {
 		<BaseHead
 			title={title}
 			description={description}
-			image={heroImage}
 			canonical={canonicalURL}
 			keywords={keywords}
 			type="article"
@@ -99,135 +98,161 @@ const articleSchema = {
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 		<style>
 			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
+				width: 680px;
 			}
 			.breadcrumbs {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: 1.25em auto 0;
-				padding: 0 1em;
-				color: rgb(var(--gray));
-				font-size: 0.9em;
+				font-size: 0.8rem;
+				color: var(--text-3);
+				margin-bottom: 2rem;
 			}
-			.breadcrumbs a { color: rgb(var(--gray-dark)); text-decoration: none; }
-			.breadcrumbs a:hover { color: var(--accent); }
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
+			.breadcrumbs a {
+				color: var(--text-2);
+				text-decoration: none;
 			}
-			.title h1 { margin: 0 0 0.5em 0; }
-			.date { margin-bottom: 0.5em; color: rgb(var(--gray)); }
-			.last-updated-on { font-style: italic; }
-			.byline { margin-top: 0.35em; }
-			.byline a { color: rgb(var(--gray-dark)); text-decoration: none; border-bottom: 1px solid rgb(var(--gray-light)); }
-			.byline a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+			.breadcrumbs a:hover {
+				color: var(--text);
+			}
+			.breadcrumbs .sep {
+				margin: 0 0.4em;
+			}
+			.post-header {
+				margin-bottom: 2.25rem;
+			}
+			.post-header h1 {
+				font-size: 2.6rem;
+				line-height: 1.12;
+				margin: 0 0 0.9rem;
+			}
+			.meta {
+				font-size: 0.9rem;
+				color: var(--text-2);
+				margin: 0;
+			}
+			.meta .updated::before,
+			.meta .byline::before {
+				content: '·';
+				margin: 0 0.5em;
+				color: var(--text-3);
+			}
+			.meta .byline a {
+				color: var(--text-2);
+				text-decoration: none;
+				border-bottom: 1px solid var(--separator);
+			}
+			.meta .byline a:hover {
+				color: var(--accent);
+				border-bottom-color: var(--accent);
+			}
 			.post-tags {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 0.4rem;
-				justify-content: center;
-				margin-top: 1em;
+				margin-top: 1.1rem;
 			}
 			.post-tags a {
 				display: inline-block;
-				border: 1px solid rgb(var(--gray-light));
-				border-radius: 999px;
-				padding: 0.15rem 0.6rem;
-				font-size: 0.85rem;
-				color: rgb(var(--gray-dark));
+				padding: 0.2rem 0.7rem;
+				border-radius: 980px;
+				background: var(--surface-2);
+				color: var(--text-2);
+				font-size: 0.78rem;
+				text-decoration: none;
+				transition: background 0.2s ease, color 0.2s ease;
+			}
+			.post-tags a:hover {
+				background: var(--accent-soft);
+				color: var(--accent);
 				text-decoration: none;
 			}
-			.post-tags a:hover { border-color: var(--accent); color: var(--accent); }
-			.cta-box {
-				margin: 3em auto 2em;
-				padding: 1.5em 1.75em;
-				border: 1px solid rgb(var(--gray-light));
-				border-left: 4px solid var(--accent);
-				border-radius: 8px;
-				background: rgba(35, 55, 255, 0.03);
-				width: 720px;
-				max-width: calc(100% - 2em);
-				box-sizing: border-box;
+			.prose {
+				color: var(--text);
 			}
-			.cta-box h3 { margin: 0 0 0.5em; font-size: 1.2em; }
-			.cta-box p { margin: 0.25em 0; font-size: 0.95em; }
-			.cta-box .cta-plans {
-				margin-top: 0.75em;
-				font-size: 0.88em;
-				color: rgb(var(--gray));
+			.prose :global(h2) {
+				font-size: 1.6rem;
+			}
+			.prose :global(img) {
+				display: block;
+				margin: 1.5em auto;
+			}
+			.prose :global(a) {
+				text-decoration: underline;
+				text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+				text-underline-offset: 0.15em;
+			}
+			.prose :global(a:hover) {
+				text-decoration-color: var(--accent);
+			}
+			.cta {
+				margin: 2.25rem 0;
+				background: var(--surface-2);
+				border: none;
+			}
+			.cta h3 {
+				margin: 0 0 0.5rem;
+				font-size: 1.1rem;
+			}
+			.cta p {
+				margin: 0.25rem 0;
+				font-size: 0.93rem;
+				color: var(--text-2);
+			}
+			.cta .cta-plans {
+				margin-top: 0.6rem;
+				font-size: 0.85rem;
+				color: var(--text-3);
 				line-height: 1.6;
 			}
-			.cta-box .actions {
+			.cta .actions {
 				display: flex;
-				gap: 0.75em;
 				flex-wrap: wrap;
-				margin-top: 0.85em;
+				gap: 0.6rem;
+				margin-top: 1rem;
 			}
-			.cta-box .actions a {
-				display: inline-block;
-				padding: 0.45em 0.95em;
-				border-radius: 6px;
-				text-decoration: none;
-				font-size: 0.95em;
-				font-weight: 500;
-			}
-			.cta-box .primary { background: var(--accent); color: #fff; }
-			.cta-box .secondary {
-				background: #fff;
-				color: var(--accent);
-				border: 1px solid rgb(var(--gray-light));
+			.cta--bottom {
+				margin-top: 3.5rem;
 			}
 			.related {
-				margin: 2.5em auto;
-				width: 720px;
-				max-width: calc(100% - 2em);
+				margin-top: 3rem;
 			}
-			.related h3 { margin: 0 0 0.75em; font-size: 1.25em; }
+			.related h3 {
+				font-size: 1.25rem;
+				margin: 0 0 1rem;
+			}
 			.related ul {
 				list-style: none;
 				margin: 0;
 				padding: 0;
 				display: grid;
 				grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-				gap: 1em;
-			}
-			.related li {
-				border: 1px solid rgb(var(--gray-light));
-				border-radius: 8px;
-				padding: 0.85em 1em;
+				gap: 0.85rem;
 			}
 			.related li a {
-				color: rgb(var(--black));
-				text-decoration: none;
-				font-weight: 500;
 				display: block;
-				margin-bottom: 0.25em;
+				height: 100%;
+				color: var(--text);
+				text-decoration: none;
 			}
-			.related li a:hover { color: var(--accent); }
+			.related li .t {
+				display: block;
+				font-weight: 600;
+				font-size: 0.98rem;
+				line-height: 1.35;
+				margin-bottom: 0.35rem;
+			}
 			.related li .desc {
-				color: rgb(var(--gray));
-				font-size: 0.88em;
 				margin: 0;
+				font-size: 0.85rem;
+				color: var(--text-2);
+				line-height: 1.5;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+			}
+			@media (max-width: 720px) {
+				.post-header h1 {
+					font-size: 1.9rem;
+				}
 			}
 		</style>
 	</head>
@@ -236,57 +261,54 @@ const articleSchema = {
 		<Header />
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<nav class="breadcrumbs" aria-label="面包屑">
-					<a href="/">首页</a> ›
-					<a href="/blog/">文章</a>
-					{category && (
-						<>
-							{' '}›{' '}
-							<a href={`/categories/${tagSlug(category)}/`}>{category}</a>
-						</>
-					)}
-				</nav>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{updatedDate && (
-								<div class="last-updated-on">
-									更新于 <FormattedDate date={updatedDate} />
-								</div>
-							)}
-							<div class="byline">作者 <a href="/author/" rel="author">YoTrade</a></div>
-						</div>
-						<h1>{title}</h1>
-						<hr />
-						{tags.length > 0 && (
-							<div class="post-tags">
-								{tags.map((t) => (
-									<a href={`/tags/${tagSlug(t)}/`}>{t}</a>
-								))}
-							</div>
+				<header class="post-header">
+					<nav class="breadcrumbs" aria-label="面包屑">
+						<a href="/">首页</a><span class="sep">›</span>
+						<a href="/blog/">文章</a>
+						{category && (
+							<>
+								<span class="sep">›</span>
+								<a href={`/categories/${tagSlug(category)}/`}>{category}</a>
+							</>
 						)}
-					</div>
-
-					<aside class="cta-box cta-box--top">
-						<h3>不想折腾接码和虚拟卡？</h3>
-						<p>
-							ChatGPT Pro / Claude Max 官方订阅代充。美卡直冲美区官方，5–10 分钟到账，被砍单全额退。
-							只接 ≥$100/月 的重度套餐。
-						</p>
-						<div class="actions">
-							<a class="primary" href={ctaHref}>查看套餐与价格 →</a>
+					</nav>
+					{category && (
+						<a class="eyebrow" href={`/categories/${tagSlug(category)}/`}>{category}</a>
+					)}
+					<h1>{title}</h1>
+					<p class="meta">
+						<FormattedDate date={published} />
+						{showUpdated && (
+							<span class="updated">更新于 <FormattedDate date={modified} /></span>
+						)}
+						<span class="byline">作者 <a href="/author/" rel="author">YoTrade</a></span>
+					</p>
+					{tags.length > 0 && (
+						<div class="post-tags">
+							{tags.map((t) => (
+								<a href={`/tags/${tagSlug(t)}/`}>{t}</a>
+							))}
 						</div>
-					</aside>
+					)}
+				</header>
 
+				<aside class="tile cta cta--top">
+					<h3>不想折腾接码和虚拟卡？</h3>
+					<p>
+						ChatGPT Pro / Claude Max 官方订阅代充。美卡直冲美区官方，5–10 分钟到账，被砍单全额退。
+						只接 ≥$100/月 的重度套餐。
+					</p>
+					<div class="actions">
+						<a class="btn btn-primary" href={ctaHref}>查看套餐与价格 →</a>
+					</div>
+				</aside>
+
+				<div class="prose">
 					<slot />
 				</div>
 			</article>
 
-			<aside class="cta-box">
+			<aside class="tile cta cta--bottom">
 				<h3>ChatGPT Pro / Claude Max 官方订阅代充</h3>
 				<p>
 					接码、虚拟卡、支付被拒、账号被砍——这些环节我们替你走完。美区官方直冲，
@@ -296,8 +318,8 @@ const articleSchema = {
 					只服务重度用户：ChatGPT Pro ¥1,500/月 · Claude Max 5x ¥750/月 · Max 20x ¥1,500/月 · Claude Pro 年付 ¥1,500/年
 				</p>
 				<div class="actions">
-					<a class="primary" href={ctaHref}>查看套餐与下单 →</a>
-					<a class="secondary" href={ctaWechatHref}>微信咨询</a>
+					<a class="btn btn-primary" href={ctaHref}>查看套餐与下单 →</a>
+					<a class="btn btn-secondary" href={ctaWechatHref}>微信咨询</a>
 				</div>
 			</aside>
 
@@ -306,9 +328,11 @@ const articleSchema = {
 					<h3>相关阅读</h3>
 					<ul>
 						{related.map((p) => (
-							<li>
-								<a href={`/blog/${p.id}/`}>{p.data.title}</a>
-								<p class="desc">{p.data.description}</p>
+							<li class="tile tile-link">
+								<a href={`/blog/${p.id}/`}>
+									<span class="t">{p.data.title}</span>
+									<p class="desc">{p.data.description}</p>
+								</a>
 							</li>
 						))}
 					</ul>

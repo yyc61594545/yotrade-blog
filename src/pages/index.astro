@@ -51,133 +51,157 @@ const orgSchema = {
 		/>
 		<script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
 		<style>
-			main { width: 980px; }
+			main {
+				width: 980px;
+				padding-top: 4.5rem;
+			}
 			.hero {
-				padding: 1rem 0 2rem;
-				border-bottom: 1px solid rgb(var(--gray-light));
+				max-width: 760px;
+				margin-bottom: 4rem;
 			}
 			.hero h1 {
-				font-size: 2.2rem;
-				margin: 0 0 0.5rem;
-				line-height: 1.2;
+				font-size: 3.25rem;
+				line-height: 1.08;
+				margin: 0 0 1rem;
 			}
 			.lede {
-				max-width: 760px;
-				font-size: 1.1rem;
-				color: rgb(var(--gray-dark));
+				font-size: 1.2rem;
+				line-height: 1.55;
+				color: var(--text-2);
+				margin: 0;
 			}
 			.actions {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 0.75rem;
-				margin-top: 1.5rem;
+				margin-top: 1.75rem;
 			}
-			.actions a {
-				border: 1px solid rgb(var(--gray-light));
-				border-radius: 6px;
-				padding: 0.55rem 0.9rem;
-				text-decoration: none;
-				color: rgb(var(--gray-dark));
-			}
-			.actions a.primary {
-				background: var(--accent);
-				color: #fff;
-				border-color: var(--accent);
-			}
-			.actions a:hover { color: var(--accent); }
-			.actions a.primary:hover { color: #fff; opacity: 0.92; }
 
-			section { margin: 2.5rem 0; }
-			section h2 {
-				font-size: 1.5rem;
-				border-bottom: 1px solid rgb(var(--gray-light));
-				padding-bottom: 0.5rem;
+			section {
+				margin: 0 0 3.5rem;
+			}
+			.section-head {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				gap: 1rem;
 				margin: 0 0 1.25rem;
 			}
+			.section-head h2 {
+				font-size: 1.6rem;
+				margin: 0;
+			}
+			.section-head a {
+				font-size: 0.9rem;
+				white-space: nowrap;
+			}
 
-			.featured ul,
-			.latest ul {
+			.grid {
 				list-style: none;
 				margin: 0;
 				padding: 0;
 				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 				gap: 1rem;
 			}
-			.featured li,
-			.latest li {
-				border: 1px solid rgb(var(--gray-light));
-				border-radius: 8px;
-				padding: 1rem 1.15rem;
-				background: #fff;
+			.grid li {
+				display: flex;
 			}
-			.featured li a,
-			.latest li a {
-				color: rgb(var(--black));
+			.card {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				color: var(--text);
 				text-decoration: none;
+			}
+			.card:hover {
+				color: var(--text);
+			}
+			.card .kicker {
+				font-size: 0.75rem;
 				font-weight: 600;
-				display: block;
-				margin-bottom: 0.35rem;
+				color: var(--accent);
+				margin-bottom: 0.5rem;
+			}
+			.card .t {
+				font-weight: 600;
 				font-size: 1.05rem;
 				line-height: 1.35;
+				margin-bottom: 0.45rem;
 			}
-			.featured li a:hover,
-			.latest li a:hover { color: var(--accent); }
-			.featured li .desc,
-			.latest li .desc {
-				margin: 0.25rem 0 0.5rem;
-				color: rgb(var(--gray-dark));
-				font-size: 0.92rem;
+			.card .desc {
+				margin: 0 0 0.75rem;
+				font-size: 0.9rem;
 				line-height: 1.5;
+				color: var(--text-2);
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
 			}
-			.featured li .meta,
-			.latest li .meta {
-				color: rgb(var(--gray));
-				font-size: 0.85rem;
+			.card .meta {
+				margin-top: auto;
+				font-size: 0.8rem;
+				color: var(--text-3);
+			}
+
+			/* 这两个区块固定 4 张卡片，桌面排成一行，避免 3+1 落单 */
+			@media (min-width: 900px) {
+				.start .grid,
+				.featured .grid {
+					grid-template-columns: repeat(4, 1fr);
+				}
+			}
+			.start .card .t {
+				font-size: 1.1rem;
+			}
+			.start .card .desc {
+				-webkit-line-clamp: 2;
 			}
 
 			.categories {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 0.6rem;
-				margin-top: 1rem;
 			}
 			.categories a {
-				display: inline-block;
-				border: 1px solid rgb(var(--gray-light));
-				border-radius: 999px;
-				padding: 0.35rem 0.85rem;
-				color: rgb(var(--gray-dark));
+				display: inline-flex;
+				align-items: baseline;
+				gap: 0.35rem;
+				padding: 0.45rem 0.95rem;
+				border-radius: 980px;
+				background: var(--surface-2);
+				color: var(--text);
 				text-decoration: none;
-				font-size: 0.95rem;
-			}
-			.categories a:hover { border-color: var(--accent); color: var(--accent); }
-			.categories .count { color: rgb(var(--gray)); font-size: 0.85rem; margin-left: 0.25rem; }
-
-			.intro-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-				gap: 1rem;
-				margin-top: 1rem;
-			}
-			.intro-grid .card {
-				border: 1px solid rgb(var(--gray-light));
-				border-radius: 8px;
-				padding: 1rem 1.15rem;
-			}
-			.intro-grid h3 {
-				margin: 0 0 0.4rem;
-				font-size: 1.05rem;
-			}
-			.intro-grid h3 a {
-				color: rgb(var(--black));
-				text-decoration: none;
-			}
-			.intro-grid h3 a:hover { color: var(--accent); }
-			.intro-grid p {
-				margin: 0;
 				font-size: 0.92rem;
-				color: rgb(var(--gray-dark));
+				transition: background 0.2s ease, color 0.2s ease;
+			}
+			.categories a:hover {
+				background: var(--accent-soft);
+				color: var(--accent);
+				text-decoration: none;
+			}
+			.categories .count {
+				font-size: 0.8rem;
+				color: var(--text-3);
+			}
+
+			@media (max-width: 720px) {
+				main {
+					padding-top: 2.5rem;
+				}
+				.hero {
+					margin-bottom: 2.75rem;
+				}
+				.hero h1 {
+					font-size: 2.1rem;
+				}
+				.lede {
+					font-size: 1.05rem;
+				}
+				section {
+					margin-bottom: 2.75rem;
+				}
 			}
 		</style>
 	</head>
@@ -191,72 +215,97 @@ const orgSchema = {
 					记录可复现的 base_url 配置、模型对比、价格追踪与稳定性检查方法。面向中文开发者。
 				</p>
 				<div class="actions">
-					<a class="primary" href="https://yotradeapi.com">创建 API Key</a>
-					<a href="/blog/">浏览全部文章</a>
-					<a href="/compare/">服务对比</a>
-					<a href="/pricing-tracker/">价格追踪</a>
+					<a class="btn btn-primary" href="https://yotradeapi.com">创建 API Key</a>
+					<a class="btn btn-secondary" href="/blog/">浏览全部文章</a>
+					<a class="btn btn-secondary" href="/compare/">服务对比</a>
+					<a class="btn btn-secondary" href="/pricing-tracker/">价格追踪</a>
 				</div>
 			</section>
 
-			<section>
-				<h2>新手起步</h2>
-				<div class="intro-grid">
-					<div class="card">
-						<h3><a href="/blog/2026-05-15-cursor-api-relay-recommendation-2026/">Cursor 怎么接</a></h3>
-						<p>3 步把 Cursor 的 OpenAI Compatible Provider 指向中转网关。</p>
-					</div>
-					<div class="card">
-						<h3><a href="/blog/claude-code-mirror-cn-setup/">Claude Code 怎么接</a></h3>
-						<p>5 行环境变量让 Claude Code CLI 在国内跑起来。</p>
-					</div>
-					<div class="card">
-						<h3><a href="/blog/openai-sdk-base-url-cn/">OpenAI SDK 怎么接</a></h3>
-						<p>Python、Node、Go、Rust 四种 SDK 改 base_url 即可。</p>
-					</div>
-					<div class="card">
-						<h3><a href="/blog/ai-api-relay-stability-test/">怎么测稳定性</a></h3>
-						<p>用可复现脚本量化 TTFB、断流率、错误率。</p>
-					</div>
+			<section class="start">
+				<div class="section-head">
+					<h2>新手起步</h2>
 				</div>
+				<ul class="grid">
+					<li>
+						<a class="tile card" href="/blog/2026-05-15-cursor-api-relay-recommendation-2026/">
+							<span class="kicker">Cursor</span>
+							<span class="t">Cursor 怎么接</span>
+							<p class="desc">3 步把 Cursor 的 OpenAI Compatible Provider 指向中转网关。</p>
+						</a>
+					</li>
+					<li>
+						<a class="tile card" href="/blog/claude-code-mirror-cn-setup/">
+							<span class="kicker">Claude Code</span>
+							<span class="t">Claude Code 怎么接</span>
+							<p class="desc">5 行环境变量让 Claude Code CLI 在国内跑起来。</p>
+						</a>
+					</li>
+					<li>
+						<a class="tile card" href="/blog/openai-sdk-base-url-cn/">
+							<span class="kicker">OpenAI SDK</span>
+							<span class="t">OpenAI SDK 怎么接</span>
+							<p class="desc">Python、Node、Go、Rust 四种 SDK 改 base_url 即可。</p>
+						</a>
+					</li>
+					<li>
+						<a class="tile card" href="/blog/ai-api-relay-stability-test/">
+							<span class="kicker">稳定性</span>
+							<span class="t">怎么测稳定性</span>
+							<p class="desc">用可复现脚本量化 TTFB、断流率、错误率。</p>
+						</a>
+					</li>
+				</ul>
 			</section>
 
 			{featured.length > 0 && (
 				<section class="featured">
-					<h2>精选阅读</h2>
-					<ul>
+					<div class="section-head">
+						<h2>精选阅读</h2>
+					</div>
+					<ul class="grid">
 						{featured.map((post) => (
 							<li>
-								<a href={`/blog/${post.id}/`}>{post.data.title}</a>
-								<p class="desc">{post.data.description}</p>
-								<p class="meta"><FormattedDate date={post.data.pubDate} /></p>
+								<a class="tile card" href={`/blog/${post.id}/`}>
+									{post.data.category && <span class="kicker">{post.data.category}</span>}
+									<span class="t">{post.data.title}</span>
+									<p class="desc">{post.data.description}</p>
+									<span class="meta"><FormattedDate date={post.data.pubDate} /></span>
+								</a>
 							</li>
 						))}
 					</ul>
 				</section>
 			)}
 
-			<section class="latest">
-				<h2>最新文章</h2>
-				<ul>
+			<section>
+				<div class="section-head">
+					<h2>最新文章</h2>
+					<a href="/blog/">查看全部 →</a>
+				</div>
+				<ul class="grid">
 					{latest.map((post) => (
 						<li>
-							<a href={`/blog/${post.id}/`}>{post.data.title}</a>
-							<p class="desc">{post.data.description}</p>
-							<p class="meta"><FormattedDate date={post.data.pubDate} /></p>
+							<a class="tile card" href={`/blog/${post.id}/`}>
+								{post.data.category && <span class="kicker">{post.data.category}</span>}
+								<span class="t">{post.data.title}</span>
+								<p class="desc">{post.data.description}</p>
+								<span class="meta"><FormattedDate date={post.data.pubDate} /></span>
+							</a>
 						</li>
 					))}
 				</ul>
-				<p style="margin-top:1rem">
-					<a href="/blog/">→ 查看全部文章</a>
-				</p>
 			</section>
 
 			<section>
-				<h2>按分类浏览</h2>
+				<div class="section-head">
+					<h2>按分类浏览</h2>
+					<a href="/categories/">全部分类 →</a>
+				</div>
 				<div class="categories">
 					{categories.map(([cat, count]) => (
 						<a href={`/categories/${encodeURIComponent(cat.toLowerCase().replace(/[\s/]+/g, '-'))}/`}>
-							{cat}<span class="count">({count})</span>
+							{cat}<span class="count">{count}</span>
 						</a>
 					))}
 				</div>
