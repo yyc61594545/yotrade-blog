@@ -57,7 +57,6 @@ tags:
   - <tag3>
   - <tag4>
 category: <picker 给的 category>
-heroImage: ../../assets/blog-placeholder-<1-5 随机>.jpg
 ---
 ```
 
