@@ -55,6 +55,7 @@ const breadcrumbSchema = {
 const articleSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'Article',
+	inLanguage: 'zh-CN',
 	headline: title,
 	description,
 	datePublished: pubDate instanceof Date ? pubDate.toISOString() : new Date(pubDate).toISOString(),
