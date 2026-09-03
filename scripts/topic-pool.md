@@ -491,3 +491,33 @@
 - legacy-migration-with-ai | 用 AI 迁移遗留代码的真实过程 | 实战经验
 - ai-doc-generation-practice | 用 AI 维护项目文档的实践 | 实战经验
 - small-team-ai-workflow | 小团队的 AI 协作流程 | 实战经验
+
+## 2026-09 卫星选题簇（围绕已验证爆款需求）
+
+> 依据：RUM 实测数据显示 `cn-chatgpt-register-without-foreign-phone` 单篇占 blog 全站 46% 流量
+> （203/439 PV/天），但"注册"这一环节此前仅此一篇覆盖，周边长尾全空白。
+> 本簇用一组文章接住同一批搜索意图，并全部内链回该主文章，形成主题集群。
+> 写作要求：每篇必须内链 `/blog/cn-chatgpt-register-without-foreign-phone/`，
+> 且至少内链本簇其他 1 篇。
+
+### 注册环节长尾（小白入门）
+- cn-sms-verification-platform-review | ChatGPT 注册接码平台横评 2026：哪家还能用 | 小白入门
+- cn-chatgpt-register-error-fix | ChatGPT 注册常见报错逐条排查 | 小白入门
+- cn-chatgpt-email-choice-guide | 注册 ChatGPT 用哪种邮箱不容易被封 | 小白入门
+- cn-chatgpt-account-banned-recovery | ChatGPT 账号被封的判断与申诉实操 | 小白入门
+- cn-chatgpt-login-region-error | ChatGPT 登录提示地区不支持怎么解决 | 小白入门
+- cn-chatgpt-2fa-security-setup | ChatGPT 账号安全设置与 2FA 全流程 | 小白入门
+- cn-chatgpt-shared-account-risk | ChatGPT 共享账号的真实风险与替代方案 | 小白入门
+- cn-claude-register-cn-guide | 国内注册 Claude 账号完整流程 2026 | 小白入门
+- cn-gemini-register-cn-guide | 国内注册 Google Gemini 完整流程 | 小白入门
+- cn-ai-account-multi-device-login | AI 账号多设备登录的限制与规避 | 小白入门
+
+### 支付环节长尾（国内场景）
+- cn-virtual-card-declined-fix | 虚拟卡支付 ChatGPT 被拒的排查清单 | 国内场景
+- cn-apple-id-region-ai-subscribe | 通过 Apple ID 切区订阅 AI 服务实操 | 国内场景
+- cn-alipay-wechat-ai-subscribe | 支付宝微信能付哪些 AI 服务：2026 现状 | 国内场景
+- cn-ai-subscription-refund-guide | AI 订阅退款申请全流程（OpenAI/Anthropic） | 国内场景
+- cn-ai-subscription-price-compare-2026 | 2026 主流 AI 订阅国内到手价横评 | 国内场景
+- cn-chatgpt-team-plan-cn-guide | ChatGPT Team 版国内开通与分摊实战 | 国内场景
+- cn-ai-payment-risk-control | AI 服务支付风控触发原因与规避 | 国内场景
+- cn-overseas-card-application-path | 国内申请可付 AI 服务的境外卡路径对比 | 国内场景
