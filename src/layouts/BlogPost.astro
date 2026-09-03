@@ -6,7 +6,11 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'blog'>['data'] & { currentSlug?: string };
+type Props = CollectionEntry<'blog'>['data'] & {
+	currentSlug?: string;
+	/** 'page' 用于作者页这类静态页：不显示作者署名和订阅 CTA */
+	variant?: 'post' | 'page';
+};
 
 const {
 	title,
@@ -18,7 +22,10 @@ const {
 	tags = [],
 	category,
 	currentSlug,
+	variant = 'post',
 } = Astro.props;
+
+const isPost = variant === 'post';
 
 const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
 // 文章页不再放占位图；社交预览与结构化数据统一用站点级品牌卡片
@@ -281,7 +288,9 @@ const articleSchema = {
 						{showUpdated && (
 							<span class="updated">更新于 <FormattedDate date={modified} /></span>
 						)}
-						<span class="byline">作者 <a href="/author/" rel="author">YoTrade</a></span>
+						{isPost && (
+							<span class="byline">作者 <a href="/author/" rel="author">YoTrade</a></span>
+						)}
 					</p>
 					{tags.length > 0 && (
 						<div class="post-tags">
@@ -292,36 +301,40 @@ const articleSchema = {
 					)}
 				</header>
 
-				<aside class="tile cta cta--top">
-					<h3>不想折腾接码和虚拟卡？</h3>
-					<p>
-						ChatGPT Pro / Claude Max 官方订阅代充。美卡直冲美区官方，5–10 分钟到账，被砍单全额退。
-						只接 ≥$100/月 的重度套餐。
-					</p>
-					<div class="actions">
-						<a class="btn btn-primary" href={ctaHref}>查看套餐与价格 →</a>
-					</div>
-				</aside>
+				{isPost && (
+					<aside class="tile cta cta--top">
+						<h3>不想折腾接码和虚拟卡？</h3>
+						<p>
+							ChatGPT Pro / Claude Max 官方订阅代充。美卡直冲美区官方，5–10 分钟到账，被砍单全额退。
+							只接 ≥$100/月 的重度套餐。
+						</p>
+						<div class="actions">
+							<a class="btn btn-primary" href={ctaHref}>查看套餐与价格 →</a>
+						</div>
+					</aside>
+				)}
 
 				<div class="prose">
 					<slot />
 				</div>
 			</article>
 
-			<aside class="tile cta cta--bottom">
-				<h3>ChatGPT Pro / Claude Max 官方订阅代充</h3>
-				<p>
-					接码、虚拟卡、支付被拒、账号被砍——这些环节我们替你走完。美区官方直冲，
-					操作期间不查看你的任何使用记录，5–10 分钟回执。
-				</p>
-				<p class="cta-plans">
-					只服务重度用户：ChatGPT Pro ¥1,500/月 · Claude Max 5x ¥750/月 · Max 20x ¥1,500/月 · Claude Pro 年付 ¥1,500/年
-				</p>
-				<div class="actions">
-					<a class="btn btn-primary" href={ctaHref}>查看套餐与下单 →</a>
-					<a class="btn btn-secondary" href={ctaWechatHref}>微信咨询</a>
-				</div>
-			</aside>
+			{isPost && (
+				<aside class="tile cta cta--bottom">
+					<h3>ChatGPT Pro / Claude Max 官方订阅代充</h3>
+					<p>
+						接码、虚拟卡、支付被拒、账号被砍——这些环节我们替你走完。美区官方直冲，
+						操作期间不查看你的任何使用记录，5–10 分钟回执。
+					</p>
+					<p class="cta-plans">
+						只服务重度用户：ChatGPT Pro ¥1,500/月 · Claude Max 5x ¥750/月 · Max 20x ¥1,500/月 · Claude Pro 年付 ¥1,500/年
+					</p>
+					<div class="actions">
+						<a class="btn btn-primary" href={ctaHref}>查看套餐与下单 →</a>
+						<a class="btn btn-secondary" href={ctaWechatHref}>微信咨询</a>
+					</div>
+				</aside>
+			)}
 
 			{related.length > 0 && (
 				<section class="related">
