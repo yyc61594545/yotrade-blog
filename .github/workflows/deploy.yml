@@ -29,8 +29,20 @@ jobs:
           echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           echo "${{ secrets.VPS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
-          rsync -avz --delete -e "ssh -p 19789 -i ~/.ssh/deploy_key" \
-            dist/ root@69.5.53.68:/opt/ai-relay/blog-dist/
+          # VPS 偶发不可达（2026-09-02 就因一次 Connection timed out 丢了当天部署，
+          # 连带把 IndexNow 一起跳过）。重试三次，间隔递增。
+          for attempt in 1 2 3; do
+            if rsync -avz --delete --timeout=60 \
+                 -e "ssh -p 19789 -i ~/.ssh/deploy_key -o ConnectTimeout=30" \
+                 dist/ root@69.5.53.68:/opt/ai-relay/blog-dist/; then
+              echo "rsync 成功（第 $attempt 次）"
+              exit 0
+            fi
+            echo "::warning::rsync 第 $attempt 次失败"
+            if [ "$attempt" -lt 3 ]; then sleep $((attempt * 30)); fi
+          done
+          echo "::error::rsync 三次均失败，本次内容已合并到 main 但未部署"
+          exit 1
 
       # Cache Rule "Edge-cache blog HTML" 用 override_origin 强制边缘缓存 24h，
       # 新文章本身是全新 URL 会立即可见，但这些「发现入口」会停留在旧版本，
