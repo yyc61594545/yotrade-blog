@@ -72,9 +72,10 @@ const articleSchema = {
 	keywords,
 	articleSection: tags,
 	author: {
-		'@type': 'Organization',
-		name: 'YoTradeApi',
-		url: 'https://yotradeapi.com',
+		'@type': 'Person',
+		name: 'YoTrade',
+		url: 'https://blog.yotradeapi.com/author/',
+		sameAs: ['https://x.com/yotradellc', 'https://yotradeapi.com', 'https://www.yotradellc.com'],
 	},
 	publisher: {
 		'@type': 'Organization',
@@ -137,6 +138,9 @@ const articleSchema = {
 			.title h1 { margin: 0 0 0.5em 0; }
 			.date { margin-bottom: 0.5em; color: rgb(var(--gray)); }
 			.last-updated-on { font-style: italic; }
+			.byline { margin-top: 0.35em; }
+			.byline a { color: rgb(var(--gray-dark)); text-decoration: none; border-bottom: 1px solid rgb(var(--gray-light)); }
+			.byline a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 			.post-tags {
 				display: flex;
 				flex-wrap: wrap;
@@ -254,6 +258,7 @@ const articleSchema = {
 									更新于 <FormattedDate date={updatedDate} />
 								</div>
 							)}
+							<div class="byline">作者 <a href="/author/" rel="author">YoTrade</a></div>
 						</div>
 						<h1>{title}</h1>
 						<hr />
