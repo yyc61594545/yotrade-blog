@@ -1,0 +1,65 @@
+---
+import Layout from '../../layouts/BlogPost.astro';
+
+const personSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Person',
+	name: 'YoTrade',
+	url: 'https://blog.yotradeapi.com/author/',
+	description:
+		'AI 订阅代充与开发者工具服务运营者，本站内容围绕自身业务涉及的 AI 工具接入、模型对比与跨境支付路径整理。',
+	sameAs: ['https://x.com/yotradellc', 'https://yotradeapi.com', 'https://www.yotradellc.com'],
+	worksFor: {
+		'@type': 'Organization',
+		name: 'YoTradeApi',
+		url: 'https://yotradeapi.com',
+	},
+};
+---
+
+<Layout
+	title="关于作者 YoTrade"
+	description="YoTrade 是 YoTradeApi 与 YoTrade LLC 的运营者，本站文章围绕 AI 工具接入、模型对比与跨境支付路径整理。"
+	pubDate={new Date('2026-09-03')}
+	updatedDate={new Date('2026-09-03')}
+	canonical="https://blog.yotradeapi.com/author/"
+	keywords={['YoTrade', 'YoTradeApi', '作者']}
+	tags={['About']}
+>
+	<script type="application/ld+json" set:html={JSON.stringify(personSchema)} is:inline />
+
+	<p>
+		YoTrade，本站作者与运营者，同时运营
+		<a href="https://yotradeapi.com">yotradeapi.com</a>（AI 订阅代充）与
+		<a href="https://www.yotradellc.com">yotradellc.com</a>（美国公司注册与海外订阅代付）。
+	</p>
+
+	<h2>为什么写这些内容</h2>
+	<p>
+		这两项业务每天要处理的，正是本站文章讨论的问题：各家 AI 服务在国内的可用状态、
+		账号注册与验证方式、跨境支付渠道的成功率与风控边界、以及开发者工具（Claude Code、Cursor、
+		Cline 等）的接入配置。业务遇到的真实情况会反过来决定这里写什么。
+	</p>
+
+	<h2>内容是怎么产出的</h2>
+	<p>
+		本站采用自动化流程按日更新，选题来自搜索需求数据与业务中实际遇到的问题，
+		由我作为运营者负责选题方向与内容红线。需要说明的是：<strong
+			>并非每篇文章的每个步骤都由本人逐一手动复现</strong
+		>——这一点如实写在这里，而不是含糊带过。
+	</p>
+	<p>本站对内容的约束是：</p>
+	<ul>
+		<li>只写可验证事实，不写收益承诺</li>
+		<li>第三方服务的价格、模型列表、活动信息发布前重新核验</li>
+		<li>涉及第三方服务条款的操作，说明风险而非鼓励规避</li>
+		<li>发现文章过时或有误，欢迎通过下方渠道指出，会更正并标注更新日期</li>
+	</ul>
+
+	<h2>联系方式</h2>
+	<ul>
+		<li>X（Twitter）：<a href="https://x.com/yotradellc" rel="me">@yotradellc</a></li>
+		<li>主站：<a href="https://yotradeapi.com">yotradeapi.com</a></li>
+		<li>姊妹站：<a href="https://www.yotradellc.com">yotradellc.com</a></li>
+	</ul>
+</Layout>
