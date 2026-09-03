@@ -9,6 +9,16 @@
 > 当池子剩余可用候选 < 30 时，`/daily-post` 会在结束语里提醒。
 > 按每天 3 篇计算：200 + 候选约够 2 个月。
 
+## 优先出稿（Bing 实证高展示量缺口）
+
+> picker 规则是"最近 7 篇没出现过的分类优先，否则取池内第一条"，
+> 所以池内位置直接决定出稿时间。这几条是有实测展示量支撑的核心业务词，
+> 放在最前面，避免被排到一个月之后。新的高价值选题也应加在这一节。
+
+- cn-claude-mirror-sites-guide | Claude 镜像站国内可用性实测与风险提示（2026） | 国内场景
+- cn-chatgpt-plus-daichong-guide | ChatGPT Plus 代充完全指南：流程、价格与避坑 | 国内场景
+- cn-chatgpt-account-register-full | ChatGPT 账号注册完整教程 2026（含各种验证方式） | 小白入门
+
 ## 技术深度（Anthropic / OpenAI / 各家 API 细节）
 
 - claude-tool-use-best-practices | Claude Tool Use 最佳实践与陷阱 | 技术深度
@@ -529,6 +539,3 @@
 > 下列三条是核对全部 62 篇 cn-* 已发布文章后确认的**真实缺口**，
 > 其余高展示词（chatgpt充值 9.3K、grok订阅 612 等）已有文章正面命中，不重复立项。
 
-- cn-claude-mirror-sites-guide | Claude 镜像站国内可用性实测与风险提示（2026） | 国内场景
-- cn-chatgpt-plus-daichong-guide | ChatGPT Plus 代充完全指南：流程、价格与避坑 | 国内场景
-- cn-chatgpt-account-register-full | ChatGPT 账号注册完整教程 2026（含各种验证方式） | 小白入门
