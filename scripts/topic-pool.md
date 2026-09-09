@@ -539,3 +539,26 @@
 > 下列三条是核对全部 62 篇 cn-* 已发布文章后确认的**真实缺口**，
 > 其余高展示词（chatgpt充值 9.3K、grok订阅 612 等）已有文章正面命中，不重复立项。
 
+
+## 2026-09 Codex 获取与账号簇（V2EX 实证缺口）
+
+> 依据：外链侦察器（~/Program/backlink-scout）2026-09-08 报告显示，V2EX openai /
+> programmer 节点被 Codex 话题占据，且提问全部集中在「额度、风控、账号」一侧。
+> 核对已发布的 27 篇 Codex 文章后确认：现有内容全是「怎么用好这个工具」（Worktree、
+> AGENTS.md、PR 自动化、多 Agent 边界等工程向），而用户真实在问的「怎么把号搞定、
+> 额度怎么算、为什么被降智」一篇都没有——与 ChatGPT 爆款同一规律：搜索需求集中在
+> 获取门槛，不在使用技巧。
+>
+> 实证来源帖：
+> - v2ex.com/t/1240315 如何让 codex 用上 ChatGPT 网页版的额度（14 回复）
+> - v2ex.com/t/1240459 如何避免 codex 风控，首字 20s 还降智（7 回复）
+> - v2ex.com/t/1240286 Astra 系列越思考越傻（3 回复）
+>
+> 写作要求：这簇属于「获取与账号」向，重点讲清楚机制与边界，不承诺规避风控的方法。
+
+- cn-codex-quota-explained | Codex 额度机制详解：Plus / Pro / 网页版额度能不能通用 | 国内场景
+- cn-codex-rate-limit-throttling | Codex 变慢与降智的常见原因排查（限流、风控、号池） | 国内场景
+- cn-codex-subscribe-cn-guide | 国内订阅 Codex 完整路径：支付方式与失败排查 | 国内场景
+- cn-codex-account-pool-risk | 号池共享 Codex 账号的真实风险与合规边界 | 国内场景
+- codex-thinking-level-tradeoff | Codex 思考等级与实际表现的权衡（medium 未必输 high） | 模型评测
+- codex-astra-model-selection | Codex 各代模型选型：什么任务该用哪一档 | 模型评测
