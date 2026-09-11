@@ -86,4 +86,4 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 - [ChatGPT 订阅扣款失败怎么解决](/blog/cn-chatgpt-recurring-failed-fix/)
 - [Claude vs ChatGPT 价格全面对比（2026）](/blog/cn-claude-vs-chatgpt-price-2026/)
 
-不想折腾海外信用卡和扣款风险，可以直接走[官方订阅代充](https://yotradeapi.com/#sub)：美卡直冲美区官方，5–10 分钟到账，被砍单全额退。只接 ChatGPT Pro / Claude Max 这类 ≥$100/月 的重度套餐。
+不想折腾海外信用卡和扣款风险，可以直接走[官方订阅代充](https://yotradeapi.com/#sub)：美卡直冲美区官方，5–10 分钟到账，被砍单全额退。只接 ChatGPT Pro / Claude Max / Claude Team 这类重度套餐，报价微信咨询。

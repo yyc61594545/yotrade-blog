@@ -121,6 +121,8 @@ category: <picker 给的 category>
 
 **CTA 链接固定为** `https://yotradeapi.com`（**不**带 `/register` 或其他路径）。
 
+**导流段不写价格（2026-09-11 起）**：落地页已改为「咨询报价」，正文和导流段一律**不写我方套餐的价格、汇率或「≥$100/月」之类门槛**，提到套餐时写「报价微信咨询」。可提的套餐：ChatGPT Pro、Claude Max 5x / 20x、Claude Pro 年付、Claude Team（按席位，我们建组织并管理）。第三方的官方价（如 Cursor 席位价、ChatGPT Plus 官方 $20）属于正文信息，照常写。
+
 ### 1.3 校验
 
 跑 `python3 scripts/validate-blog.py`。

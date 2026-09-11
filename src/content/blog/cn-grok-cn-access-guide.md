@@ -147,4 +147,4 @@ print(response.choices[0].message.content)
 - [国内访问 Gemini 完整指南](/blog/cn-gemini-cn-access-guide-2026/)
 - [AI 工具国内付款解决方案](/blog/cn-ai-tools-payment-guide/)
 
-如果你最终要长期用的是 ChatGPT 或 Claude 的官方订阅，付款这一步可以交给我们：[官方订阅代充](https://yotradeapi.com/#sub)，美卡直冲美区官方，5–10 分钟到账，被砍单全额退。只做 ChatGPT Pro / Claude Max 等 ≥$100/月 的重度套餐。
+如果你最终要长期用的是 ChatGPT 或 Claude 的官方订阅，付款这一步可以交给我们：[官方订阅代充](https://yotradeapi.com/#sub)，美卡直冲美区官方，5–10 分钟到账，被砍单全额退。只做 ChatGPT Pro / Claude Max / Claude Team 等重度套餐，报价微信咨询。

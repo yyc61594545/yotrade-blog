@@ -152,4 +152,4 @@ ChatGPT Plus 的月费是 $20，但很多开发者的实际月度 API 用量远�
 - [LLM 定价横向对比 2026](/blog/llm-pricing-comparison-2026/)
 - [小白如何选择适合自己的 AI 编程工具](/blog/ai-coding-tools-2026-overview/)
 
-如果你是每天靠它干活的重度用户，与其在支付环节反复试错，不如直接走[官方订阅代充](https://yotradeapi.com/#sub)：美卡直冲美区官方，5–10 分钟到账，被砍单全额退。我们只做 ChatGPT Pro ¥1,500/月、Claude Max 5x ¥750/月、Max 20x ¥1,500/月 这类 ≥$100/月 的重度套餐。
+如果你是每天靠它干活的重度用户，与其在支付环节反复试错，不如直接走[官方订阅代充](https://yotradeapi.com/#sub)：美卡直冲美区官方，5–10 分钟到账，被砍单全额退。我们只做 ChatGPT Pro、Claude Max 5x / 20x、Claude Team 这类重度套餐，报价微信咨询。
