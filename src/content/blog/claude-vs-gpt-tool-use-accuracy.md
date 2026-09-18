@@ -120,5 +120,3 @@ accuracy = correct / len(test_cases)
 - [Function Calling vs Tool Use 概念辨析](/blog/function-calling-vs-tool-use/)
 - [Claude 4.7 vs GPT-5.1 编程能力对比](/blog/claude-4-7-vs-gpt-5-1-coding/)
 - [SWE-bench 榜单怎么解读](/blog/swe-bench-leaderboard-interpretation/)
-
-想同时对比多个模型在自己业务场景下的工具调用准确率？[YoTradeApi](https://yotradeapi.com) 一个 Key 同时接入 Claude 与 GPT 全系模型，方便跑 A/B 对比测试。

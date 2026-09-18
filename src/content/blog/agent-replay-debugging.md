@@ -120,5 +120,3 @@ def diff_traces(trace_a, trace_b):
 - [用 Event Sourcing 记录 Agent 执行轨迹](/blog/agent-event-sourcing/)
 - [AI 流水线的错误追踪方案：从日志到根因定位](/blog/ai-pipeline-error-tracing/)
 - [LLM 对话轨迹存储与查询设计实践](/blog/llm-conversation-trace-design/)
-
-排查 Agent 生产问题时,如果调用链路经过中转服务，还要确认中转层是否保留了足够的请求/响应元数据供回放使用——[YoTradeApi](https://yotradeapi.com) 的请求日志包含完整的请求体和响应体，方便直接接入自建的回放系统。

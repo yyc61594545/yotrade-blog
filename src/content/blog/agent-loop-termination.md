@@ -130,5 +130,3 @@ finalizing --partial_saved--> partial
 - [AI Agent 状态机设计与落地](/blog/agent-state-machine-design/)
 - [AI Agent 错误恢复机制设计](/blog/ai-agent-error-recovery/)
 - [AI Agent 写操作回滚策略](/blog/ai-agent-rollback-strategy/)
-
-如果你的 Agent 需要通过统一入口调用多种模型，[YoTradeApi](https://yotradeapi.com) 可以减少协议适配工作；循环预算、进展检测和副作用保护仍应放在应用编排层强制执行。

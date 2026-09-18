@@ -219,5 +219,3 @@ export async function POST(req: Request) {
 - [用 AI 做后端开发的实战经验](/blog/ai-coding-for-backend-dev/)
 - [AI 编程工具的月度花费真实情况](/blog/ai-coding-monthly-cost-real/)
 - [AI Coding Agent 的成本控制策略](/blog/ai-coding-agent-cost-control/)
-
-如果你的 SaaS 需要调用 Claude、GPT 等 AI API，[YoTradeApi](https://yotradeapi.com) 提供稳定的国内可用中转接口，按量计费，无需海外信用卡，方便独立开发者快速集成。

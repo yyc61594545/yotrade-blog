@@ -70,5 +70,3 @@ category: 模型评测
 - [中文指令遵循能力评测指南](/blog/llm-chinese-instruction-bench/)
 - [Claude Tool Use 最佳实践与陷阱](/blog/claude-tool-use-best-practices/)
 - [LLM 中英文互译质量评测](/blog/llm-cn-en-translation-bench/)
-
-想稳定对比多个模型在中文数理场景下的实际表现,又不想为每家分别开账号充值,可以通过 [YoTradeApi](https://yotradeapi.com) 统一中转调用主流模型接口,方便做 A/B 测试。

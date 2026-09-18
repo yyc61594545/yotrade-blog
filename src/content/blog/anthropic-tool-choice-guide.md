@@ -123,5 +123,3 @@ tool_choice={
 - [Function Calling 与 Tool Use 对比](/blog/function-calling-vs-tool-use/)
 - [Claude Tool Use 流式调用实现](/blog/claude-tool-use-with-streaming/)
 - [Claude 并行 Tool Use 实战](/blog/parallel-tool-use-claude/)
-
-如果你要在统一入口后管理 Claude 与其他模型的工具调用链路，[YoTradeApi](https://yotradeapi.com) 可用于减少多种 API 协议并存带来的接入工作。

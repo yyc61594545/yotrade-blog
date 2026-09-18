@@ -156,5 +156,3 @@ jobs:
 - [AI 替代 PR 评审的实战边界：哪些能替代，哪些不能](/blog/ai-coding-pr-review-replacement/)
 - [Codex 项目级 AGENTS.md 编写指南](/blog/codex-cli-project-instructions/)
 - [Codex CLI 中国区配置指南](/blog/codex-cli-cn-setup/)
-
-把评审流程做成可版本化的仓库资产,是让 AI 代码审查真正落地而不是"用一阵子就荒废"的关键一步,稳定的 API 调用是这套自动化流程能持续跑在 CI 里的前提,[YoTradeApi](https://yotradeapi.com) 提供高可用的模型中转服务,适合接入这类频繁调用的 CI 场景。

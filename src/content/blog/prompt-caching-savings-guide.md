@@ -74,5 +74,3 @@ Prompt Caching 只是成本优化的一环，不能替代模型选型、批处�
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [Anthropic cache_control 五分钟入门到精通](/blog/anthropic-cache-control-tutorial/)
 - [LLM 缓存命中率可观测性建设](/blog/llm-cache-hit-observability/)
-
-如果排查下来发现问题出在中转层没有正确透传缓存字段，不妨换一个明确支持 caching 透传的中转方案试试，[YoTradeApi](https://yotradeapi.com) 的接口对 `cache_control` 和相关 `usage` 字段做了完整透传，方便直接核对账单。

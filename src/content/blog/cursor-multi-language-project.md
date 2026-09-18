@@ -270,5 +270,3 @@ Python `asyncio` 和 JavaScript `async/await` 表面相似，但细节不同。C
 - [Cursor Background Agent 实战案例](/blog/cursor-background-agent-cases/)
 - [Cursor vs Claude Code：两款 AI 编码工具深度对比](/blog/cursor-vs-claude-code-comparison/)
 - [AI 编码工具的团队落地：三个月实战复盘](/blog/cursor-team-rollout-3months/)
-
-多语言项目对 AI 编码工具的 API 调用量通常更大，[YoTradeApi](https://yotradeapi.com) 支持 GPT、Claude、Gemini 全系模型，单一接入点满足多语言项目的多模型需求。

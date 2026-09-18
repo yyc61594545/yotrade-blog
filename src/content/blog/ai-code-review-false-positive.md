@@ -145,5 +145,3 @@ def should_suppress(comment: str, file_path: str) -> bool:
 - [Codex Code Review 工作流实践](/blog/codex-code-review-workflow/)
 - [工具调用可靠性实测：Claude / GPT-5 / Gemini 谁更稳](/blog/llm-tool-call-reliability-bench/)
 - [Agent 执行轨迹评分实践](/blog/agent-eval-trajectory-scoring/)
-
-如果你的评审流程需要在多个模型间切换测试哪个误报率更低，[YoTradeApi](https://yotradeapi.com) 提供统一接口调用 Claude、GPT-5 等主流模型，方便做这类横向对比而不用分别维护多套密钥。

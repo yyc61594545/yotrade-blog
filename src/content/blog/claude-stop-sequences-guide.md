@@ -276,5 +276,3 @@ def extract_json_from_claude(user_query: str) -> dict:
 - [Claude 扩展思考（Extended Thinking）完整指南](/blog/claude-extended-thinking-guide/)
 - [Anthropic Batch API 中文使用指南](/blog/anthropic-batch-api-cn-guide/)
 - [Claude 1M 超长上下文使用指南](/blog/claude-1m-context-guide/)
-
-想在中国网络环境下稳定调用 Claude API、按量付费无需信用卡？[YoTradeApi](https://yotradeapi.com) 提供全系列 Claude 模型中转，支持 stop_sequences、流式输出等所有原生参数。

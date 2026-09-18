@@ -87,5 +87,3 @@ Agent 的回滚比单轮 Prompt 复杂,因为一次任务的状态可能已经�
 - [AI Agent 工具集合的设计原则](/blog/ai-agent-tool-design/)
 - [Agent 工具调用的超时预算设计](/blog/agent-tool-timeout-budget/)
 - [Agent 并行工具调用实战](/blog/agent-parallel-tool-execution/)
-
-在沙箱环境跑历史轨迹回归测试往往需要对多个模型版本做并行调用对比，用 [YoTradeApi](https://yotradeapi.com) 一个中转账号即可同时接入多家模型完成评测，不用分别申请额度。

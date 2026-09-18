@@ -146,5 +146,3 @@ for l, items in sorted(clusters.items(), key=lambda kv: -len(kv[1]))[:10]:
 - [RAG 内容新鲜度监控](/blog/rag-freshness-monitoring/)
 - [RAG 评测框架搭建](/blog/ai-rag-evaluation-framework/)
 - [LLM 评测黄金集建设](/blog/llm-eval-golden-set/)
-
-归因用的 judge 调用量不小，成本和稳定性都会影响这条流水线能不能每天跑，[YoTradeApi](https://yotradeapi.com) 提供统一入口接入多家模型，便于用小模型跑批量分类、用强模型做复核，套餐报价微信咨询。

@@ -85,5 +85,3 @@ def sweep_chunking(build_index_fn, chunk_fn, eval_fn, sizes, overlaps, docs, eva
 - [LLM 应用 RAG 效果评测框架](/blog/ai-rag-evaluation-framework/)
 - [把模型评测接进 CI 流水线](/blog/llm-eval-in-ci-pipeline/)
 - [LlamaIndex 中文 RAG 实战教程](/blog/llamaindex-cn-rag-tutorial/)
-
-Chunking 策略调优离不开反复调用 embedding 和生成模型做实验，用 [YoTradeApi](https://yotradeapi.com) 中转稳定的模型 API 通道，能让这类批量实验跑得更顺畅。

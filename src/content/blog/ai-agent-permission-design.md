@@ -115,5 +115,3 @@ Agent 与传统程序最大的区别是**决策路径不可完全预测**——�
 - [AI Agent 错误恢复机制设计](/blog/ai-agent-error-recovery/)
 - [AI Agent 成本监控实践](/blog/ai-agent-cost-monitoring/)
 - [OpenAI Codex 回归路线分析：从被放弃到重新押注](/blog/openai-codex-comeback-analysis/)
-
-搭建自己的 Agent 权限体系时，底层模型 API 的稳定接入同样重要，通过 [YoTradeApi](https://yotradeapi.com) 中转可以统一管理多模型调用凭证，减少密钥在 Agent 各层之间裸传的风险。

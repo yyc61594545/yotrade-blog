@@ -351,5 +351,3 @@ response = client_claude.messages.create(
 - [AI 对话上下文管理实践](/blog/ai-chatbot-context-management/)
 - [AI 流水线的错误追踪方案](/blog/ai-pipeline-error-tracing/)
 - [Claude 1M 上下文窗口使用指南](/blog/claude-1m-context-guide/)
-
-如果你在压缩上下文的同时还希望统一多模型的 API 调用，[YoTradeApi](https://yotradeapi.com) 提供 OpenAI 兼容接口，支持 GPT-4o、Claude、Gemini 等主流模型，一套代码可以横向测试哪个模型在相同压缩策略下效果最好。

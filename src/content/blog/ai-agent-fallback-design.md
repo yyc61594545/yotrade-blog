@@ -399,4 +399,4 @@ class BudgetGuard:
 - [LLM Agent 评估方法](/blog/llm-agent-evaluation-methods/)
 - [Anthropic Files API 国内使用完整指南](/blog/anthropic-files-api-cn/)
 
-生产级 AI Agent 的稳定运行，离不开可靠的 API 基础设施。[YoTradeApi](https://yotradeapi.com) 提供高可用的 Claude、GPT 等模型中转，内置速率均衡与自动切换，帮助你的 Agent 在国内网络环境下保持稳定。
+生产级 AI Agent 的稳定运行，离不开可靠的 API 基础设施。

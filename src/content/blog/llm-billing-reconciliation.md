@@ -104,5 +104,3 @@ charge_type = input | output | cache | batch | tool | credit | tax
 - [AI Agent 多租户成本归因](/blog/ai-agent-cost-attribution/)
 - [LLM 成本异常检测](/blog/llm-cost-anomaly-detection/)
 - [AI API 预算告警与自动熔断](/blog/llm-budget-alerting/)
-
-如果你需要先统一多模型调用入口，再沉淀用量事件并建设自己的对账流程，[YoTradeApi](https://yotradeapi.com) 可减少不同协议带来的接入差异，方便你在应用侧统一核算口径。

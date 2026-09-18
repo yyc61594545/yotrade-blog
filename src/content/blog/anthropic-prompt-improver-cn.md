@@ -103,5 +103,3 @@ Prompt Improver 解决的是"Prompt 结构写得不够规范"的问题，它不�
 - [LLM Context Engineering 实践](/blog/llm-context-engineering/)
 - [LLM 评估黄金测试集怎么建](/blog/llm-eval-golden-set/)
 - [结构化输出完整指南](/blog/structured-output-llm-guide/)
-
-用 Prompt Improver 生成的结构化 Prompt 做迭代测试，需要稳定低成本的 API 调用支撑，[YoTradeApi](https://yotradeapi.com) 按量计费，方便反复跑 A/B 对比不心疼调用成本。

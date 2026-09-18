@@ -161,5 +161,3 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 - [Gemini API 国内调用指南](/blog/gemini-api-cn-guide/)
 - [Grok API 国内调用指南](/blog/grok-api-cn-guide/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
-
-一把 Key 同时调 Claude/GPT/Gemini？[YoTradeApi](https://yotradeapi.com) 兼容 OpenAI 与 Anthropic 协议，按场景自由切换。

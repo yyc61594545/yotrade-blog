@@ -400,5 +400,3 @@ async def call_with_fallback(model: str, messages: list, **kwargs) -> str:
 - [AI API 预算上限设计](/blog/ai-api-budget-cap-design/)
 - [AI 编码工具月度成本实测](/blog/ai-coding-monthly-cost-real/)
 - [LLM 价格对比 2026](/blog/llm-pricing-comparison-2026/)
-
-想要一个现成的多模型路由方案？[YoTradeApi](https://yotradeapi.com) 提供统一入口访问 Claude、GPT-4、DeepSeek 等主流模型，支持按需切换，让你专注业务逻辑而非模型管理。

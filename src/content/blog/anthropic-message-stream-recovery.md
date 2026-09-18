@@ -125,5 +125,3 @@ elif event.type == "content_block_stop":
 - [AI API 流式输出（SSE）故障排查与最佳实践](/blog/streaming-sse-troubleshooting/)
 - [Claude Tool Use 与流式响应结合实践](/blog/claude-tool-use-with-streaming/)
 - [LLM 流式响应背压处理](/blog/llm-streaming-backpressure/)
-
-如果你的流式请求经常在国内网络环境下断连，先排除中转链路本身的问题——[YoTradeApi](https://yotradeapi.com) 针对流式连接做了链路优化，减少不必要的断流重试。

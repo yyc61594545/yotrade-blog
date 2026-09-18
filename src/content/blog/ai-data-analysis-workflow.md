@@ -247,5 +247,3 @@ resp = client.chat.completions.create(
 - [Python 异步并发调用 LLM API](/blog/python-async-llm-client/)
 - [OpenAI Responses API 完整指南](/blog/openai-responses-api-guide/)
 - [Claude vs GPT vs Gemini 国内开发者怎么选](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
-
-数据分析高频调用，用 [YoTradeApi](https://yotradeapi.com) 中转 + Sonnet 4.6 性价比最高，分析输出 + 报告生成同 Key 通用。

@@ -138,5 +138,3 @@ Background Mode 真正的价值，不在于让一个 API 看起来更“高级�
 - [Responses API 多轮工具调用循环实战](/blog/openai-responses-api-tool-loop/)
 - [OpenAI Structured Outputs vs tool_choice 选型指南](/blog/openai-structured-outputs-vs-tool/)
 - [LLM 异步任务队列设计：从原型到生产](/blog/llm-async-job-queue/)
-
-如果你要把 OpenAI 长任务、同步请求和其他模型接口统一接到同一套业务系统里，[YoTradeApi](https://yotradeapi.com) 可以作为统一入口，帮助你减少多家供应商在鉴权、路由和调用方式上的重复接入工作。

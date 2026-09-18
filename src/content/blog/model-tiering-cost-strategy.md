@@ -93,5 +93,3 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 - [LLM 成本优化 30 条 checklist](/blog/llm-cost-optimization-checklist/)
 - [AI API 预算上限设计](/blog/ai-api-budget-cap-design/)
 - [LLM 团队预算分配实践](/blog/llm-team-budget-allocation/)
-
-分级策略定好之后，剩下的执行细节——多提供商切换、故障转移、统一计费——可以交给基础设施层解决，[YoTradeApi](https://yotradeapi.com) 提供统一 API 入口对接 Claude、GPT 等主流模型，省去你自己维护多套 SDK 和账单对账的麻烦。

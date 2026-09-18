@@ -211,5 +211,3 @@ codex exec "review the PR" --approval never
 - [Claude Code Subagent 实战](/blog/claude-code-subagent-practice/)
 - [Cursor vs Claude Code](/blog/cursor-vs-claude-code-comparison/)
 - [2026 AI 编程工具全景图](/blog/ai-coding-tools-2026-overview/)
-
-用一把 Key 同时接 Claude Code 与 Codex CLI？[YoTradeApi](https://yotradeapi.com) 同时支持 Anthropic Messages 与 OpenAI Responses 两个协议。
