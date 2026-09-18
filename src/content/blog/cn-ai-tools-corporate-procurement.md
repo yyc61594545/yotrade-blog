@@ -152,4 +152,4 @@ AI API 按量计费的模式在国内财务体系里有点"另类"，建议从�
 - [AI API 中转安全与合规说明](/blog/api-relay-security-compliance/)
 - [国内 ChatGPT Plus 订阅付款指南](/blog/cn-chatgpt-plus-payment-2026/)
 
-企业采购 AI API 最头疼的往往是付款和合规问题，[YoTradeApi](https://yotradeapi.com) 提供人民币结算、正规发票，支持企业对公转账，帮助团队快速绕过境外付款障碍。
+如果团队要采购的是 Claude Team，我们的[官方订阅代充](https://yotradeapi.com)可以按席位开通，由我们建组织并管理，ChatGPT Pro 和 Claude Max 也在服务范围内，报价微信咨询。

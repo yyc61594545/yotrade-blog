@@ -151,4 +151,4 @@ OpenAI 在部分渠道提供礼品卡（Gift Card），可以通过礼品卡余�
 - [ChatGPT Pro 200 美元订阅国内支付方法](/blog/cn-chatgpt-pro-200-dollar-payment/)
 - [AI API 中转服务稳定性测试](/blog/ai-api-relay-stability-test/)
 
-如果你想彻底摆脱订阅管理的烦恼，[YoTradeApi](https://yotradeapi.com) 提供 GPT-4o 等主流模型的 API 接入，人民币充值按量计费，无需处理国际信用卡。
+如果你用的是 ChatGPT Pro、续费总是失败，也可以把付款交给我们的[官方订阅代充](https://yotradeapi.com)，只做 ChatGPT Pro、Claude Max 5x / 20x、Claude Pro 年付和 Claude Team 席位这类重度套餐，报价微信咨询。

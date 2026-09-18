@@ -227,5 +227,3 @@ BASE_URL = os.environ.get("SERVICE_URL", "http://localhost:8080")
 - [AI 编程调试真实故事](/blog/ai-coding-debugging-stories/)
 - [AI Agent 故障恢复设计](/blog/ai-agent-error-recovery/)
 - [LLM 错误重试策略设计](/blog/llm-error-retry-strategy/)
-
-想用稳定的 Claude 或 GPT-4o 做 AI 编程辅助，[YoTradeApi](https://yotradeapi.com) 提供国内直连、按量计费的 API 中转，延迟低、无封号风险，适合持续开发流程接入。

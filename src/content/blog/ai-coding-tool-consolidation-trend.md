@@ -145,4 +145,4 @@ Cursor 加了 Agent 模式，可以执行多步骤任务、运行命令；Claude
 - [AI 编程工具月度实际花费：真实账单拆解](/blog/ai-coding-monthly-cost-real/)
 - [AI 编程工具的经济学：自建 vs 订阅 vs 中转](/blog/ai-coding-tool-economics/)
 
-在多工具并用的场景下，统一管理 API 接入是个实际问题。[YoTradeApi](https://yotradeapi.com) 支持主流 LLM 模型统一接入，帮你简化多工具切换时的账单和密钥管理。
+在多工具并用的场景下，统一管理 API 接入是个实际问题。

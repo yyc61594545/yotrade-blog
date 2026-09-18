@@ -98,5 +98,3 @@ print(repr(literal_backslash), len(literal_backslash))
 - [LLM finish reason 处理](/blog/llm-finish-reason-handling/)
 - [LLM 输出校验](/blog/llm-output-validation/)
 - [LLM 流式 SSE 解析](/blog/llm-streaming-sse-parser/)
-
-需要为应用评估模型 API 接入时，可在 [YoTradeApi](https://yotradeapi.com) 了解服务，并针对所选端点验证停止参数、流式事件及错误处理行为。

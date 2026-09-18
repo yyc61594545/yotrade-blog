@@ -130,4 +130,4 @@ Cherry Studio 等桌面工具的配置方式详见[Cherry Studio 国内配置指
 - [Claude vs GPT vs Gemini 国内开发者选择](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
 - [Anthropic Console Key vs 中转服务对比](/blog/anthropic-console-key-vs-relay/)
 
-需要国内直连、支持人民币支付的 Claude API 访问，[YoTradeApi](https://yotradeapi.com) 提供与官方 API 格式一致的中转服务，开通即用。
+如果你最终想要的是 Claude 官网的完整功能，而且用量够得上 Claude Max 或 Claude Pro 年付，付款可以交给我们的[官方订阅代充](https://yotradeapi.com)，报价微信咨询。

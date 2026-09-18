@@ -196,5 +196,3 @@ Claude Code 等工具会自动附加当前文件甚至整个项目的上下文�
 - [Claude Code vs Cursor：成本与工作流对比](/blog/claude-code-vs-cursor-cost/)
 - [AI API 中转 vs 自建 VPN：成本与稳定性对比](/blog/ai-api-relay-vs-self-vpn/)
 - [Claude Message Batches 50% 折扣实战](/blog/claude-message-batches-savings/)
-
-把 AI 编程工具的费用管起来，[YoTradeApi](https://yotradeapi.com) 提供 Claude / GPT 全系列中转，按量计费、无月租，适合个人开发者和团队灵活使用。

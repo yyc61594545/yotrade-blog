@@ -173,5 +173,3 @@ Claude Opus 4 系列（尤其是开启 Extended Thinking 的版本）在数学�
 - [Claude Haiku 4.5 评测：小模型大用途](/blog/claude-haiku-4-5-evaluation/)
 - [2026 年 AI 编码工具全景综述](/blog/ai-coding-tools-2026-overview/)
 - [Prompt 版本管理实战：从混乱到可追溯的工程化之路](/blog/ai-prompt-versioning/)
-
-需要在中国网络环境下同时调用 Claude 和其他主流模型做横向对比测试？[YoTradeApi](https://yotradeapi.com) 提供统一接入，支持 Claude 全系列，按量付费，适合多模型评估场景。

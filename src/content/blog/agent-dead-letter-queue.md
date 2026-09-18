@@ -100,5 +100,3 @@ interface DeadLetterRecord {
 - [Agent 多步写操作的 Saga 补偿机制设计](/blog/agent-saga-compensation/)
 - [Agent 任务回放与确定性调试](/blog/agent-replay-debugging/)
 - [多 Agent 共享限流配额的协调](/blog/agent-rate-limit-coordination/)
-
-如果你的 Agent 任务需要稳定调用 LLM API 又不想在限流、超时这些基础问题上反复踩坑，[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转服务，把更多精力留给死信队列这类核心工程设计。

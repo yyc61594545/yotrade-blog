@@ -266,5 +266,3 @@ while True:
 - [Claude 并行 Tool Use 实战](/blog/parallel-tool-use-claude/)
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 - [API Key 泄露应急响应](/blog/api-key-leak-emergency-response/)
-
-需要透传 computer-use beta 头的中转？[YoTradeApi](https://yotradeapi.com) 完整透传 Anthropic beta headers，按上面 Docker 命令直接接入。

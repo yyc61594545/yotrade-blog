@@ -123,5 +123,3 @@ pick_reasoning_effort(steps=6, has_unique_answer=True, error_cost_high=True)
 - [LLM 数学推理能力横评：GSM8K、MATH、AIME 全解析](/blog/llm-math-reasoning-benchmark/)
 - [OpenAI Batch API 与流式调用怎么选](/blog/openai-batch-vs-streaming/)
 - [OpenAI Responses API 使用指南](/blog/openai-responses-api-guide/)
-
-把 `reasoning_effort` 用对档位只是成本优化的第一步,搭配稳定透传参数、按真实用量计费的中转服务,才能把推理模型的成本真正管起来,[YoTradeApi](https://yotradeapi.com) 支持主流推理模型的完整参数透传,方便按本文方法做精细化调优。

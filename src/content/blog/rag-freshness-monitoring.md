@@ -129,5 +129,3 @@ def staleness_priority(doc, hits_30d):
 - [RAG 引用真实性自动校验](/blog/rag-citation-verification/)
 - [RAG Metadata Filter 设计](/blog/rag-metadata-filter-design/)
 - [RAG Reranker 选型与评测](/blog/rag-reranker-selection/)
-
-给知识库接入模型时，把证据文档的时间元数据一并传进上下文是低成本高回报的一步，[YoTradeApi](https://yotradeapi.com) 提供主流模型的 API 接入，可以在自己的检索链路里灵活控制上下文组装方式。

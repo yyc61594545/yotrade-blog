@@ -96,4 +96,4 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 - [国内用 AI 工具付款指南](/blog/cn-ai-tools-payment-guide/)
 - [2026 LLM 价格对比与选型决策](/blog/llm-pricing-comparison-2026/)
 
-不确定自己适合订阅还是按量付费？[YoTradeApi](https://yotradeapi.com) 提供 Claude 全系列 API 中转，按实际用量计费，支付宝充值，忙月闲月都不多花钱。
+如果比较下来你选了 Max，或者打算按年付 Claude Pro，可以了解我们的[官方订阅代充](https://yotradeapi.com)，服务范围是 Claude Max 5x / 20x、Claude Pro 年付、Claude Team 席位和 ChatGPT Pro，报价微信咨询。

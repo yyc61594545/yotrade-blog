@@ -389,5 +389,3 @@ def extract_tool_calls(response, model_family: str) -> List[Dict]:
 - [Function Calling vs Tool Use 差异辨析](/blog/function-calling-vs-tool-use/)
 - [AI Agent 工具设计模式](/blog/ai-agent-tool-design/)
 - [AI Agent 容错与降级设计](/blog/ai-agent-fallback-design/)
-
-如果你在国内构建 LLM Agent 并需要稳定调用 Claude、GPT-5 或 Gemini，[YoTradeApi](https://yotradeapi.com) 提供多模型统一中转接口，一个 API Key 可以调用全部主流模型。

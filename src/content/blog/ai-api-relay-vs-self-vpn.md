@@ -191,5 +191,3 @@ client = anthropic.Anthropic(api_key=api_key, base_url=base_url)
 - [国内 LLM 中转市场概览](/blog/cn-llm-relay-market-overview/)
 - [Anthropic Batch API 国内使用指南](/blog/anthropic-batch-api-cn-guide/)
 - [API Key 泄露应急处理手册](/blog/api-key-leak-emergency-response/)
-
-两种方案各有所长，如果你希望用最低运维成本快速接入，[YoTradeApi](https://yotradeapi.com) 提供稳定的 OpenAI 兼容与 Anthropic 原生中转，开箱即用。

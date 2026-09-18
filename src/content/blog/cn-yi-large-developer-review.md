@@ -305,5 +305,3 @@ def call_with_retry(client, model: str, messages: list, max_retries: int = 3) ->
 - [Moonshot Kimi 开发者评测](/blog/cn-moonshot-kimi-developer-review/)
 - [百川大模型 API 开发者评测](/blog/cn-baichuan-developer-review/)
 - [国内 AI 中转市场全景概览](/blog/cn-llm-relay-market-overview/)
-
-如果你需要同时对接多个国内外大模型，[YoTradeApi](https://yotradeapi.com) 提供统一 OpenAI 兼容接口，一个 Key 访问 Yi、GLM、Claude、GPT-4o 等主流模型，账单人民币结算，适合国内开发团队使用。

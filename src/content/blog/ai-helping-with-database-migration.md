@@ -244,5 +244,3 @@ FOR EACH ROW EXECUTE FUNCTION sync_to_new_tables();
 - [AI 重构遗留单体应用](/blog/ai-refactor-legacy-monolith/)
 - [AI 重构设计模式总结](/blog/ai-refactoring-patterns/)
 - [Python 遗留项目用 Aider 重构实录](/blog/legacy-python-refactor-with-aider/)
-
-稳定调用 Claude 或 GPT-4o 来处理 SQL 生成和迁移脚本，[YoTradeApi](https://yotradeapi.com) 提供高可用 API 中转，无需海外信用卡，按量计费。

@@ -98,5 +98,3 @@ Agent 要完成真实任务，往往需要访问邮件、代码仓库、数据�
 - [AI 编程代理权限模式对比](/blog/ai-coding-agent-permission-models/)
 - [AI API Key 泄露应急响应手册](/blog/api-key-leak-emergency-response/)
 - [LLM Prompt Injection 攻击模式](/blog/llm-prompt-injection-attack-patterns/)
-
-如果你需要统一多模型 API 接入并减少应用中散落的模型凭证，[YoTradeApi](https://yotradeapi.com) 可作为集中调用入口，便于你在外层继续实施工具级授权、审计与轮换。

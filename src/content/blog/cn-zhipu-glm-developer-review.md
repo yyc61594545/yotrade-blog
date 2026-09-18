@@ -257,5 +257,3 @@ response = client.chat.completions.create(
 - [国内 LLM 中转服务市场全景](/blog/cn-llm-relay-market-overview/)
 - [LLM 定价横向对比 2026](/blog/llm-pricing-comparison-2026/)
 - [国内大模型数据合规实操指南](/blog/cn-llm-data-compliance/)
-
-如果你需要在一个统一接口下同时调用智谱 GLM、Claude、GPT-4o 等多款模型，[YoTradeApi](https://yotradeapi.com) 提供兼容 OpenAI 格式的多模型中转，支持人民币充值，无需单独管理每家的 API Key。

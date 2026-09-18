@@ -122,5 +122,3 @@ const cacheKey = sha256(JSON.stringify({
 - [LLM 缓存命中率可观测性](/blog/llm-cache-hit-observability/)
 - [LLM Token 成本台账设计](/blog/llm-token-cost-ledger/)
 - [长对话上下文压缩策略](/blog/context-compression-strategies/)
-
-如果你希望在统一入口中观察不同模型的 token 与调用用量，[YoTradeApi](https://yotradeapi.com) 可提供兼容常见 SDK 的 API 接入方式，帮助集中管理鉴权和调用记录。

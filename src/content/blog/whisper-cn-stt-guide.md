@@ -261,5 +261,3 @@ async function transcribe(file: File) {
 - [Python 异步并发调用 LLM API](/blog/python-async-llm-client/)
 - [用 AI API 做高质量翻译的工程化流程](/blog/ai-translation-workflow/)
 - [LLM Vision API 国内对比](/blog/llm-vision-api-comparison/)
-
-需要 Whisper + Chat 一把 Key 通用的中转？[YoTradeApi](https://yotradeapi.com) 同时支持 `audio/transcriptions` 与 `chat/completions` 端点。

@@ -77,5 +77,3 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 - [Claude Code CI 集成实战](/blog/claude-code-ci-integration/)
 - [API 中转安全合规要点](/blog/api-relay-security-compliance/)
 - [Claude Code 一个月真实使用体验](/blog/claude-code-1month-real-usage/)
-
-如果你的团队正在评估如何更稳定地接入 Claude Code、Codex CLI 等工具做 agentic 开发，[YoTradeApi](https://yotradeapi.com) 可以提供稳定的中转接入，减少工具链本身的不确定性。

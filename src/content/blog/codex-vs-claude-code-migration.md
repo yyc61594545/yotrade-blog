@@ -100,5 +100,3 @@ Claude Code 的 Skill（`.claude/skills/`）和 Command（`.claude/commands/`）
 - [Codex 项目级 AGENTS.md 编写指南](/blog/codex-cli-project-instructions/)
 - [Codex Worktree 隔离开发实战：多任务并行不冲突](/blog/codex-worktree-isolation/)
 - [Codex 后台自动化任务实践](/blog/codex-background-automation/)
-
-无论最终团队用 Claude Code、Codex 还是两者并存，底层模型调用都可以通过 [YoTradeApi](https://yotradeapi.com) 统一中转，迁移工具不必再折腾一遍 API 接入配置。

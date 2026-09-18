@@ -171,5 +171,3 @@ ORDER BY p95 DESC;
 - [LLM 可观测性与 Langfuse 实践](/blog/llm-observability-langfuse/)
 - [AI 辅助数据库 Schema 设计](/blog/ai-coding-database-schema-design/)
 - [LLM 上下文预热（Context Priming）技巧实战](/blog/llm-context-priming-techniques/)
-
-如果需要同时对接多个模型厂商并统一记录调用成本，通过 [YoTradeApi](https://yotradeapi.com) 一个接口调用主流模型，返回结构已做归一化，方便直接落库分析。

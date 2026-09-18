@@ -116,5 +116,3 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 - [Token 是什么？新手完全指南](/blog/what-is-token-for-beginners/)
 - [什么是 API 中转？新手一次看懂](/blog/what-is-api-relay-explained/)
 - [Claude 从零到能聊天：手把手教程](/blog/cn-claude-zero-to-chat-tutorial/)
-
-写好 system prompt 之后就该拿真实 API 试一试了，[YoTradeApi](https://yotradeapi.com) 支持国内直连 OpenAI、Claude、Gemini 等主流模型，新手用来练手不用折腾网络问题。

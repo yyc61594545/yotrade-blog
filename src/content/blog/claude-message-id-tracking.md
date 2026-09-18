@@ -279,5 +279,3 @@ with tracer.start_as_current_span("claude_api_call") as span:
 - [Claude Opus 4.7 百万 Token 上下文实战测试](/blog/claude-opus-4-7-1m-context-real-test/)
 - [Cline 在大型代码库的实战经验](/blog/cline-on-large-codebase/)
 - [Anthropic Batch API 国内使用指南](/blog/anthropic-batch-api-cn-guide/)
-
-在生产环境中稳定追踪 Claude API 调用，需要可靠的中转接入点，[YoTradeApi](https://yotradeapi.com) 提供详细的请求日志和用量统计，帮助你掌握每一次 API 调用的完整信息。

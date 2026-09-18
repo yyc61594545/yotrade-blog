@@ -131,5 +131,3 @@ python todo.py done 1
 - [2026 年 Cursor 在国内能用吗？完整解答](/blog/cn-cursor-cn-available-2026/)
 - [Cursor 国内订阅与支付完整指南](/blog/cn-cursor-price-cn-2026/)
 - [Cursor Rules 最佳实践](/blog/cursor-rules-best-practices/)
-
-如果安装后遇到模型响应慢或调用不稳定的问题，可以通过 [YoTradeApi](https://yotradeapi.com) 配置更稳定的 API 中转节点，改善国内使用体验。

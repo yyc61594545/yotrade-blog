@@ -227,5 +227,3 @@ Anthropic 官方文档说明 Batch 任务通常在 1 小时内完成（取决于
 - [Claude Message Batches 50% 折扣实战](/blog/claude-message-batches-savings/)
 - [LLM 成本优化完整清单](/blog/llm-cost-optimization-checklist/)
 - [多模型成本路由：按调用类型自动切换模型](/blog/multi-model-cost-routing/)
-
-如果你正在优化 LLM API 调用成本，[YoTradeApi](https://yotradeapi.com) 支持 Claude、GPT-4o 等主流模型的 API 中转，提供灵活的按量计费方案，适合同时运行实时调用和 Batch 任务的混合架构。

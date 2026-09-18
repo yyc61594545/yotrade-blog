@@ -181,5 +181,3 @@ client = Anthropic(
 - [Claude Prompt Caching ROI 分析：什么场景值得开启缓存](/blog/claude-prompt-caching-roi-analysis/)
 - [LLM 应用缓存层设计：从语义缓存到 Prompt 缓存的完整方案](/blog/llm-cache-layer-design/)
 - [OpenAI Batch API 节省 50% 成本实战](/blog/openai-batch-api-cn-guide/)
-
-想用 Claude API 但担心国内网络不稳定影响缓存命中率？[YoTradeApi](https://yotradeapi.com) 提供低延迟中转线路，按官方计费规则结算缓存折扣，支付宝充值即可接入。

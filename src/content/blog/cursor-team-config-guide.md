@@ -91,5 +91,3 @@ Business 版后台提供成员用量和部分操作的审计日志，管理员�
 - [.cursorrules 最佳实践：让 Cursor 真正懂你的项目](/blog/cursor-rules-best-practices/)
 - [Cursor 团队推广三个月复盘：落地痛点与真实收益](/blog/cursor-team-rollout-3months/)
 - [Claude Code 与 Cursor 成本对比](/blog/claude-code-vs-cursor-cost/)
-
-团队配置里绕不开的一项是模型访问和调用稳定性，如果团队在国内访问官方模型接口不稳定，可以通过 [YoTradeApi](https://yotradeapi.com) 中转配置 base_url，让团队所有成员的 Cursor 都能稳定连接到 Claude、GPT 等主流模型。

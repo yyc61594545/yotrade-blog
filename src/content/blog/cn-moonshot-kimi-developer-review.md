@@ -206,5 +206,3 @@ A: 最直接的方式是根据实际文档长度动态选择模型规格——�
 - [智谱 GLM 开发者评测](/blog/cn-zhipu-glm-developer-review/)
 - [通义千问 vs Claude：中文开发者选型指南](/blog/qwen-vs-claude-cn-developer/)
 - [什么是 API 中转服务，为什么开发者需要它](/blog/what-is-api-relay-explained/)
-
-如果你需要在一个项目里同时接入 Kimi、DeepSeek、Claude 等多个模型，[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容接口，一个 key 管理所有模型，省去多端维护的麻烦。

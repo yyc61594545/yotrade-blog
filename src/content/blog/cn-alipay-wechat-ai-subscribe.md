@@ -87,4 +87,4 @@ Android 端看到 AI App 不代表能用中国大陆钱包支付。应在最终 
 - [通过 Apple ID 切区订阅 AI 服务实操](/blog/cn-apple-id-region-ai-subscribe/)
 - [虚拟卡支付 ChatGPT 被拒的排查清单](/blog/cn-virtual-card-declined-fix/)
 
-如果你的目标是调用模型 API 而不是购买消费者订阅，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入方式；相关方案采用咨询报价，避免把订阅付款与 API 账单混为一谈。
+如果你想用支付宝或微信开通 ChatGPT Pro、Claude Max 这类重度套餐，可以了解我们的[官方订阅代充](https://yotradeapi.com)，只做 ChatGPT Pro、Claude Max 5x / 20x、Claude Pro 年付和 Claude Team 席位，报价微信咨询。

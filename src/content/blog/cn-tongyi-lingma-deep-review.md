@@ -193,5 +193,3 @@ for num in test_numbers:
 - [Cursor vs Claude Code：深度功能对比](/blog/cursor-vs-claude-code-comparison/)
 - [Cline 国内 API 配置指南](/blog/cline-cn-api-setup/)
 - [国内开发者使用 Claude 付费全指南](/blog/cn-developer-claude-billing/)
-
-如果你希望在通义灵码之外，也能流畅调用 Claude、GPT-4o 等顶尖模型，[YoTradeApi](https://yotradeapi.com) 提供稳定的国内直连 API 中转，无需代理即可使用主流 AI 接口。

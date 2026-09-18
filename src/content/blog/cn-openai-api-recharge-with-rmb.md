@@ -161,5 +161,3 @@ OpenAI 的新账户有"试用期限制"，即使充值了也会有初始使用�
 - [国内开发者使用 Claude 的付款方案](/blog/cn-developer-claude-billing/)
 - [OpenAI SDK base_url 配置：国内使用指南](/blog/openai-sdk-base-url-cn/)
 - [AI API 中转 vs 自建 VPN 代理：真实成本对比](/blog/ai-api-relay-vs-self-vpn/)
-
-用人民币充值、兼容 OpenAI 格式、支持 GPT 和 Claude 全系列模型，[YoTradeApi](https://yotradeapi.com) 是国内开发者接入主流 LLM 的便捷选择。

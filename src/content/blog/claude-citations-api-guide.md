@@ -340,5 +340,3 @@ Claude 会对引用文本做轻微规范化（如去除多余空格），字符�
 - [RAG 中文最佳实践：从检索到生成的完整链路](/blog/rag-cn-best-practices/)
 - [Claude PDF API 中文开发指南：文档理解与信息提取](/blog/claude-pdf-api-cn-guide/)
 - [结构化输出：让 LLM 稳定返回 JSON 的实用指南](/blog/structured-output-llm-guide/)
-
-如果你在国内访问 Anthropic API 存在网络或付款障碍，[YoTradeApi](https://yotradeapi.com) 提供稳定的 Claude API 中转服务，支持国内支付，Citations API 完全兼容。

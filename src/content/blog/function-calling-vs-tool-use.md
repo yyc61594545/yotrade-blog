@@ -335,5 +335,3 @@ def extract_tool_calls(response, provider: str) -> list[dict]:
 - [Claude 并行工具调用实战](/blog/parallel-tool-use-claude/)
 - [OpenAI 兼容协议 vs Anthropic 原生协议对比](/blog/openai-compatible-vs-anthropic-protocol/)
 - [结构化输出（Structured Output）使用指南](/blog/structured-output-llm-guide/)
-
-需要在国内稳定调用 Claude 和 GPT 全系模型，[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容接口，一个 key 覆盖多家模型，无需处理网络和计费问题。

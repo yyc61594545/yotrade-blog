@@ -121,5 +121,3 @@ Tier 限速不是 bug，而是 Anthropic 有意为之的资源保护机制。与
 - [走 Anthropic Direct vs Bedrock vs 中转：怎么选](/blog/anthropic-bedrock-vs-direct/)
 - [AI API 预算上限自动化设计：防止账单爆炸的工程实践](/blog/ai-api-budget-cap-design/)
 - [OpenAI Batch 与 Streaming 的选择决策](/blog/openai-batch-vs-streaming/)
-
-如果你不想为不同 Tier 的申请流程和多账户限额管理头疼，用 [YoTradeApi](https://yotradeapi.com) 中转可以直接拿到较高的可用限额，省去自己养账户升级 Tier 的时间成本。

@@ -172,5 +172,3 @@ Qwen 系列在中文任务上表现突出，通义千问团队的语料质量和
 - [AI 创业 2026 年全景观察](/blog/ai-startup-2026-landscape/)
 - [Claude vs OpenAI 策略对比](/blog/claude-vs-openai-strategy/)
 - [AI Agent 记忆系统设计](/blog/ai-agent-memory-design/)
-
-如果你在评估多个模型的性价比，[YoTradeApi](https://yotradeapi.com) 提供 Claude、GPT-4o、DeepSeek 等主流模型的统一 API 入口，一个 key 切换多家，便于横向对比。

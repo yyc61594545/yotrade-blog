@@ -340,5 +340,3 @@ def get_prompt_version(user_id: str, experiment_ratio: float = 0.1) -> str:
 - [AI Agent Prompt Engineering 中文实战指南](/blog/agent-prompt-engineering-cn/)
 - [Prompt Caching 成本优化指南](/blog/prompt-caching-cost-optimization/)
 - [LLM 上下文工程：如何管理长对话](/blog/llm-context-engineering/)
-
-把 Prompt 模板落地到生产还需要稳定的 API 支撑，[YoTradeApi](https://yotradeapi.com) 提供国内直连的 Claude / GPT / Gemini API 中转，支持 prompt caching 和流式输出，帮助你的 Prompt 工程体系稳定运行。

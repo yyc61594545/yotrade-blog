@@ -128,5 +128,3 @@ AI 通常会给出：
 - [国内开发者 AI 工具付款全攻略](/blog/cn-ai-tools-payment-guide/)
 - [AI 写简历国内实操指南](/blog/cn-ai-writing-resume-cn-guide/)
 - [Cursor 国内安装配置指南](/blog/cn-cursor-install-cn-guide/)
-
-学会用 AI 写公式只是第一步，如果你还需要更稳定地调用 ChatGPT、Claude 等模型能力开发自己的效率工具，可以了解 [YoTradeApi](https://yotradeapi.com)，一个面向开发者的 AI API 中转服务，能省去账号和网络配置的麻烦。

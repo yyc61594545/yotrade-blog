@@ -79,5 +79,3 @@ Token 是 AI 模型处理文字的最小单位，不等于字或字符；AI 按 
 - [LLM Token 成本账本管理](/blog/llm-token-cost-ledger/)
 - [Prompt Token 精简技巧](/blog/llm-prompt-token-trimming-recipes/)
 - [LLM 上下文窗口国内使用指南](/blog/llm-context-window-cn-guide/)
-
-如果你已经了解了 Token 的基本概念，想开始实际调用 AI 接口做点东西，[YoTradeApi](https://yotradeapi.com) 提供国内可直连的主流大模型 API 中转服务，新手也能几分钟完成第一次调用。

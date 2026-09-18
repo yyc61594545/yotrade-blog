@@ -87,4 +87,4 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 - [国内 Claude 直连访问现状 2026](/blog/cn-claude-cn-direct-access-2026/)
 - [Claude 从零到能对话完整教程](/blog/cn-claude-zero-to-chat-tutorial/)
 
-镜像站省下的钱，很可能在账号被回收或数据泄露时加倍还回去。如果你的目标是稳定调用 Claude 能力而不是网页聊天，[YoTradeApi](https://yotradeapi.com) 提供透明计费的正规 API 中转服务，按官方规则扣费、无账号共享风险，适合长期使用。
+镜像站省下的钱，很可能在账号被回收或数据泄露时加倍还回去。如果你用 Claude 的强度已经到了 Max 或 Pro 年付这一档，不如直接开自己的官方订阅，付款可以交给我们的[官方订阅代充](https://yotradeapi.com)，报价微信咨询。

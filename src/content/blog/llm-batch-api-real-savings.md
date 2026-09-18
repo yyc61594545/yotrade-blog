@@ -212,5 +212,3 @@ Batch API 的处理顺序不保证，如果任务有 SLA（如必须在 1 小时
 - [LLM 成本优化 30 条 checklist](/blog/llm-cost-optimization-checklist/)
 - [Prompt Caching 实战：成本优化的另一把钥匙](/blog/prompt-caching-cost-optimization/)
 - [LLM 定价横向对比 2026](/blog/llm-pricing-comparison-2026/)
-
-想直接开始用 Batch API 降本，[YoTradeApi](https://yotradeapi.com) 兼容 OpenAI 和 Anthropic 的完整批处理端点，国内直连无需代理，注册即可按量计费。

@@ -81,5 +81,3 @@ Windsurf 本身在过去一段时间里已经经历过行业内广为人知的�
 - [Cursor Rules 最佳实践](/blog/cursor-rules-best-practices/)
 - [Claude Code vs Cursor：成本与工作流对比](/blog/claude-code-vs-cursor-cost/)
 - [Cursor 商业模式分析](/blog/cursor-business-model-analysis/)
-
-工具格局变动期，把底层模型调用和上层工具解耦是更稳的做法，[YoTradeApi](https://yotradeapi.com) 提供统一的模型 API 接入，不受单一编程工具厂商动向影响。

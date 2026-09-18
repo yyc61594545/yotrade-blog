@@ -122,5 +122,3 @@ class RetryBudget:
 - [Retry-After 响应头处理指南](/blog/llm-429-retry-after-header/)
 - [异步任务队列架构：BullMQ 与 Celery 实践](/blog/llm-async-job-queue/)
 - [AI Agent 错误恢复设计](/blog/ai-agent-error-recovery/)
-
-重试队列设计得再精细，也绕不开底层模型调用的稳定性问题——减少不必要的重试，最直接的办法是从源头降低失败率，可以了解 [YoTradeApi](https://yotradeapi.com)，提供稳定的 AI API 中转服务，帮助降低限流和超时带来的重试压力。

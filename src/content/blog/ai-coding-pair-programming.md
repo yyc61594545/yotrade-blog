@@ -216,5 +216,3 @@ AI 生成的代码可能包含逻辑错误或过时的 API 用法。规则：所
 - [AI 编程常见错误与避坑指南](/blog/ai-coding-mistakes-to-avoid/)
 - [Claude Code 入门：安装、配置与第一个任务](/blog/claude-code-getting-started/)
 - [Cursor 入门：中文开发者完整配置指南](/blog/cursor-getting-started-cn/)
-
-想在 AI 结对编程中使用最新的 Claude、GPT-4o 等模型，[YoTradeApi](https://yotradeapi.com) 提供稳定的多模型 API 中转，无需翻墙、按量计费。

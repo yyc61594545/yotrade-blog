@@ -248,5 +248,3 @@ def tracked_llm_call(query, ...):
 - [AI API 预算上限设计方案](/blog/ai-api-budget-cap-design/)
 - [AI 编程每月实际花费](/blog/ai-coding-monthly-cost-real/)
 - [Prompt 版本管理最佳实践](/blog/ai-prompt-versioning/)
-
-如果你在寻找稳定、低成本的 LLM API 接入方案，[YoTradeApi](https://yotradeapi.com) 提供国内直连、按量计费的 Claude / GPT-4o / Gemini 中转服务，配合缓存层可以将综合成本压到更低。

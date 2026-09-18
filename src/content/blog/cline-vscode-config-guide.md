@@ -173,5 +173,3 @@ VSCode Profile（左下角图标 → Profiles）是处理"多个 AI 插件共存
 - [Cline Rules 与 Memory Bank 完整使用指南](/blog/cline-rules-and-memory-bank/)
 - [Cline Auto-Approve 设置最佳实践](/blog/cline-auto-approve-best-practices/)
 - [Cline 在大型代码库的实战经验与调优技巧](/blog/cline-on-large-codebase/)
-
-配置好 VSCode 侧之后，剩下就是接一个稳定的模型入口——[YoTradeApi](https://yotradeapi.com) 一个 Key 接入 Claude、GPT 等主流模型，直接填进上面的 Provider 设置里就能用。

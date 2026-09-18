@@ -183,5 +183,3 @@ Prompt 回归检测不是孤立的环节，它和以下实践形成完整闭环�
 - [AI 功能灰度发布策略](/blog/ai-feature-rollout-strategy/)
 - [Anthropic Prompt Improver 实战体验](/blog/anthropic-prompt-improver-cn/)
 - [LLM 结构化输出完全指南（JSON Schema / Function Call）](/blog/structured-output-llm-guide/)
-
-搭建回归测试套件需要频繁调用模型跑分，调用量会明显高于线上正常流量，[YoTradeApi](https://yotradeapi.com) 提供按量计费的 API 中转服务，方便把离线评估的调用成本和线上生产流量分开核算。

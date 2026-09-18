@@ -95,5 +95,3 @@ medium 失败后，不应无条件改成 high 重跑。先给失败归因：若�
 - [AI 编程 Agent 内部基准设计](/blog/ai-coding-agent-benchmark-design/)
 - [LLM 评测 Golden Set 构建方法](/blog/llm-eval-golden-set/)
 - [2026 编程 Agent 格局观察：四种形态怎么分化](/blog/coding-agent-landscape-2026/)
-
-如果你要在同一套任务基准中比较不同模型与配置，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入入口，便于复用评测脚本并集中记录调用结果。

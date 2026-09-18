@@ -337,5 +337,3 @@ gpt-4o:
 - [LLM logprobs 在生产场景的实用价值](/blog/llm-logprobs-applications/)
 - [LLM 可观测性：Langfuse 完整接入教程](/blog/llm-observability-langfuse/)
 - [LLM Agent 评测方法：如何衡量智能体的真实能力](/blog/llm-agent-evaluation-methods/)
-
-想快速搭建评测流水线，[YoTradeApi](https://yotradeapi.com) 支持多模型统一 API 接入，一套代码同时跑 GPT-4o、Claude 3.5 等模型对比评测，省去多平台配置的麻烦。

@@ -227,5 +227,3 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 - [什么是 API 中转](/blog/what-is-api-relay-explained/)
 - [Cursor 新手完整教程](/blog/cursor-getting-started-cn/)
 - [Claude Code 新手完整教程](/blog/claude-code-getting-started/)
-
-从 Stage 1 开始 → 注册 [YoTradeApi](https://yotradeapi.com) 拿独立 Key，按本路线图一步步走。

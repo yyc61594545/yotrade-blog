@@ -95,5 +95,3 @@ Citations API 解决的是"这段文字对应源文档的哪个片段"，前提�
 - [Anthropic Citations 与 RAG 组合实战](/blog/anthropic-citations-rag-pattern/)
 - [AI Agent 可观测性设计](/blog/ai-agent-observability-design/)
 - [Agent 任务回放与确定性调试](/blog/agent-replay-debugging/)
-
-如果你的 Agent 需要调用多家模型完成不同环节的推理和溯源标注，[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转，简化多模型协作时的接入成本。

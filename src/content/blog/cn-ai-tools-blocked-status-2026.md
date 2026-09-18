@@ -185,5 +185,3 @@ Claude Code 通过 API 连接 Anthropic 服务，国内需要代理或中转才�
 - [Claude 国内直接访问最新方法（2026）](/blog/cn-claude-cn-direct-access-2026/)
 - [Gemini 国内访问指南](/blog/cn-gemini-cn-access-guide-2026/)
 - [国内使用 Claude Code 指南（2026）](/blog/cn-claude-code-cn-using-2026/)
-
-境外 AI 工具国内访问是个持续变化的问题，[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转服务，支持 Claude、GPT-4o、Gemini 等主流模型，让开发者无需代理即可在国内调用这些 API，是目前最省心的解决方案之一。

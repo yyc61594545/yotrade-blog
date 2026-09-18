@@ -159,5 +159,3 @@ Trae 做日常编码（低延迟、省钱），Cursor 或 Claude Code 处理需�
 - [Windsurf 国内配置完整指南](/blog/windsurf-cn-setup/)
 - [国内 AI 编程工具全景](/blog/cn-ai-coding-tools-overview/)
 - [Cursor vs Claude Code：到底该用哪个（实战对比）](/blog/cursor-vs-claude-code-comparison/)
-
-想要同时兼顾模型能力与国内网络，[YoTradeApi](https://yotradeapi.com) 提供稳定的 Claude / GPT / Gemini API 中转，支持人民币付款，开箱即用。

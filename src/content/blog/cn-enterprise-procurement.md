@@ -81,4 +81,4 @@ AI 服务采购卡壳的常见原因不是流程本身复杂，而是没人说�
 - [AI API 中转安全与合规说明](/blog/api-relay-security-compliance/)
 - [国内 AI 工具付款指南](/blog/cn-ai-tools-payment-guide/)
 
-多供应商场景下想简化账单和用量管理，[YoTradeApi](https://yotradeapi.com) 支持企业对公转账和统一发票，能省掉逐家供应商单独对账的麻烦。
+如果采购清单里有 Claude Team，我们的[官方订阅代充](https://yotradeapi.com)可以按席位开通，由我们建组织并管理，报价微信咨询。

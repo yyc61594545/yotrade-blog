@@ -159,5 +159,3 @@ print(resp.choices[0].message.content)
 - [Gemini API 国内调用：中转 vs 直连对比](/blog/cn-gemini-api-direct-vs-relay/)
 - [Claude Pro / Plus 订阅国内开通指南](/blog/cn-claude-pro-plus-difference/)
 - [Grok API 国内访问全方案对比](/blog/cn-grok-api-cn-access/)
-
-国内付款订阅海外 AI 服务有门槛，如果只是想用 Gemini 的 API 能力，[YoTradeApi](https://yotradeapi.com) 支持 Gemini 全系列模型，按量付费无需海外信用卡。

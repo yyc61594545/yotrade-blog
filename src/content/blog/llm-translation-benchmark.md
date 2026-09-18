@@ -204,5 +204,3 @@ system_prompt = f"""
 - [DeepSeek V3 vs Claude Sonnet 实测对比](/blog/deepseek-v3-vs-claude-sonnet/)
 - [LLM 代码能力 Benchmark 解读](/blog/llm-coding-benchmark-cn/)
 - [大模型评测方法指南](/blog/llm-evaluation-cn-guide/)
-
-如果你需要在翻译场景中切换测试多个模型，[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转接口，一行代码切换 Claude、GPT-4o、DeepSeek，省去多平台 key 管理的麻烦，按量计费无起购门槛。

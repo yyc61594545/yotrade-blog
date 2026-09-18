@@ -114,5 +114,3 @@ Shadowing（跟读）是公认有效的口语训练法，但找到语速、口�
 - [ChatGPT 国内第一次使用完整教程（2026 最新）](/blog/cn-chatgpt-first-time-cn-guide/)
 - [用 AI 写简历完整教程（中文）](/blog/cn-ai-writing-resume-cn-guide/)
 - [月预算 ¥150 用什么 AI 工具最值：新手选型指南](/blog/cn-ai-tool-budget-150-rmb/)
-
-如果你已经决定把 AI 学英语作为长期习惯，稳定不掉线的访问方式比免费额度更重要，[YoTradeApi](https://yotradeapi.com) 提供人民币付费、无需海外手机号的 API 中转服务，接入 ChatGPT、Claude 都只需一个 Key。

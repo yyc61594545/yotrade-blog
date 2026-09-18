@@ -286,5 +286,3 @@ def log_conversation_state(user_id: str, messages_count: int,
 - [AI Agent 记忆与状态设计模式](/blog/ai-agent-memory-design/)
 - [Claude Message Batches 50% 折扣实战](/blog/claude-message-batches-savings/)
 - [Claude Agent SDK 中文入门指南](/blog/claude-agent-sdk-cn/)
-
-构建多轮对话应用时，[YoTradeApi](https://yotradeapi.com) 提供稳定的 Claude API 中转，支持完整的多轮 messages 格式与 prompt caching，助你低成本实现高质量对话体验。

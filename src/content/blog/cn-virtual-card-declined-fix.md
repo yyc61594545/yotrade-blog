@@ -113,4 +113,4 @@ OpenAI 的公开规则要求购买发生在其支持的国家或地区，卡片�
 - [2026 给 ChatGPT 充值的虚拟信用卡推荐与避坑指南](/blog/cn-virtual-card-for-chatgpt-2026/)
 - [ChatGPT Plus 2026 最新充值方法（国内亲测可用）](/blog/cn-chatgpt-plus-payment-2026/)
 
-如果你的真实需求是通过统一接口调用模型，而不是处理网页订阅付款，[YoTradeApi](https://yotradeapi.com) 可提供多模型 API 接入与集中管理，具体方案可通过微信咨询报价。
+如果你要开的是 ChatGPT Pro 这类重度套餐、不想再和虚拟卡的风控来回较劲，可以了解我们的[官方订阅代充](https://yotradeapi.com)，只做 ChatGPT Pro、Claude Max 5x / 20x、Claude Pro 年付和 Claude Team 席位，报价微信咨询。

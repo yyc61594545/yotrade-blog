@@ -311,5 +311,3 @@ client = OpenAI(
 - [LLM 价格横向对比 2026](/blog/llm-pricing-comparison-2026/)
 - [OpenAI SDK base_url 切换中文教程](/blog/openai-sdk-base-url-cn/)
 - [函数调用 vs Tool Use：核心差异解析](/blog/function-calling-vs-tool-use/)
-
-如果你正在生产中接入多家 LLM 的 JSON 模式，[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容中转，一个 Key 覆盖 Claude、GPT、Gemini、DeepSeek，省去多平台鉴权管理的烦恼。

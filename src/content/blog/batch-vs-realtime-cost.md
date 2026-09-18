@@ -84,5 +84,3 @@ Batch API 的返回时间通常是"尽力而为"，不是 SLA 承诺的固定时
 - [LLM Batch API 的 JSONL 格式详解](/blog/llm-jsonl-batch-format/)
 - [LLM 成本异常检测](/blog/llm-cost-anomaly-detection/)
 - [LLM 成本优化清单](/blog/llm-cost-optimization-checklist/)
-
-无论最终选实时调用还是批处理，先把 API 调用的基础成本降下来才是共同前提，通过 [YoTradeApi](https://yotradeapi.com) 中转访问主流模型 API，两种调用方式都能享受更优惠的价格和统一的账单管理。

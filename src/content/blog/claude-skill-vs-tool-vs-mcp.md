@@ -93,5 +93,3 @@ MCP 层：工具背后的实际连接由 MCP 协议标准化接入
 - [Anthropic Skills 实战：把能力封装成可复用包](/blog/anthropic-skills-cn-guide/)
 - [MCP 自定义服务器开发指南](/blog/mcp-custom-server-development/)
 - [Claude 并行工具调用实践](/blog/parallel-tool-use-claude/)
-
-搭建多层 Agent 架构时需要同时对比不同模型的 Tool Use 调用准确率？[YoTradeApi](https://yotradeapi.com) 一个 Key 接入全系模型，方便验证同一套 Skill/MCP 架构在不同模型上的表现差异。

@@ -195,5 +195,3 @@ Senior 反馈的主观感受：新人提问质量明显提升——问的都是"
 - [DeepSeek Coder 开发者深度体验](/blog/cn-deepseek-coder-deep-review/)
 - [AI 代码审查工作流实践](/blog/ai-code-review-workflow/)
 - [AI 编程常见错误避坑指南](/blog/ai-coding-mistakes-to-avoid/)
-
-如果你正在为团队搭建统一的 AI 辅助开发平台，[YoTradeApi](https://yotradeapi.com) 提供多模型统一接口和用量管理，适合团队规模化使用场景。

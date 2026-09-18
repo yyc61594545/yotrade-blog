@@ -154,5 +154,3 @@ Cursor 按席位收费。对一个 10 人团队，月费用约在 ¥1500–2500 
 - [Cursor Rules 在真实项目中的实践](/blog/cursor-rules-real-projects/)
 - [Cursor Rules 最佳实践](/blog/cursor-rules-best-practices/)
 - [为什么 AI 编程工具越用越差](/blog/why-ai-coding-getting-worse/)
-
-如果团队需要在 Cursor 中调用更多模型或控制 API 成本，[YoTradeApi](https://yotradeapi.com) 提供团队级 API 中转方案，支持统一计费和用量监控，适合多人共用的场景。

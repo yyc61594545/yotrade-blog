@@ -124,5 +124,3 @@ Prompt Injection 的攻击手法和模型的安全对齐能力是持续博弈的
 - [API 中转的安全合规问题](/blog/api-relay-security-compliance/)
 - [Agent Prompt Engineering 实践指南](/blog/agent-prompt-engineering-cn/)
 - [LLM System Prompt 与 User Prompt 的边界设计](/blog/llm-system-prompt-vs-user-prompt/)
-
-搭建 Agent 应用时，模型调用链路的稳定性同样重要，[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转服务，让你把精力集中在安全防御和业务逻辑上。

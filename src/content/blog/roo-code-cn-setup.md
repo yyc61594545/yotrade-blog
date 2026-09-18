@@ -186,5 +186,3 @@ modes:
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
-
-需要支持 Roo Code 多 Profile 的中转？[YoTradeApi](https://yotradeapi.com) 一把 Key 接所有模型，按上面模板配置即可。

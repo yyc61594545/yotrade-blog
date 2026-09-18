@@ -140,5 +140,3 @@ function compileToGemini(tool: IRTool) {
 - [Gemini Function Calling 工程实践](/blog/gemini-function-calling-guide/)
 - [LLM Function Calling 并行调用机制](/blog/llm-function-calling-parallel/)
 - [多模型成本智能路由方案：让 AI 调用自动选最优性价比](/blog/multi-model-cost-routing/)
-
-如果你的多模型 Agent 项目正被这类 API 差异反复拖慢开发进度，不妨用 [YoTradeApi](https://yotradeapi.com) 统一网关屏蔽底层调用细节，专注在业务逻辑和 Schema 设计本身。

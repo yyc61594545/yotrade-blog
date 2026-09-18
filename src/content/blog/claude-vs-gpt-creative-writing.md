@@ -140,5 +140,3 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 - [LLM 中文理解能力测试](/blog/llm-chinese-comprehension/)
 - [LLM 排行榜与中文开发者选型建议](/blog/llm-leaderboard-cn-developer/)
 - [AI 营销文案生成工作流](/blog/ai-marketing-copywriting-workflow/)
-
-如果你想同时测试 Claude 和 GPT-4o 的创作效果，[YoTradeApi](https://yotradeapi.com) 用一个账号即可调用两者，按量计费、国内直连，方便横向对比。

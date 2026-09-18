@@ -108,5 +108,3 @@ tokenizer 效率只是成本方程的一个变量，不是唯一变量。选模�
 - [LLM Token 计算完整指南：tiktoken / Anthropic / 中文](/blog/token-counting-cn-guide/)
 - [各家 LLM token 计数库对比与选型](/blog/llm-token-counting-libraries/)
 - [国产大模型 vs 海外大模型成本对比：中国开发者怎么选](/blog/cn-llm-cn-vs-overseas-cost/)
-
-如果你需要同时调用多家模型做中文成本对比测试，[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转入口，省去分别注册和管理多个账号的麻烦。

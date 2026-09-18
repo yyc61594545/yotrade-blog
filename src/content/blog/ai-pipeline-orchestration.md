@@ -362,5 +362,3 @@ class TrackedPipeline:
 - [LangChain 国内中文教程](/blog/langchain-cn-tutorial/)
 - [Claude Agent SDK 国内使用指南](/blog/claude-agent-sdk-cn/)
 - [个人开发者用 AI 编程：月度成本实录与优化经验](/blog/ai-coding-monthly-cost-real/)
-
-在国内稳定运行 AI Pipeline，需要可靠的 API 接入层，[YoTradeApi](https://yotradeapi.com) 支持多模型统一接口，适合多步骤 Pipeline 中按任务选择最合适的模型。

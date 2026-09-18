@@ -151,5 +151,3 @@ vLLM/TGI 起服务时，`model` 字段通常要求填服务端实际加载的模
 - [Cline 国内 API 配置详解](/blog/cline-cn-api-setup/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [LLM API 限速（Rate Limit）处理完整指南](/blog/llm-rate-limit-handling/)
-
-如果你的自建网关调试太麻烦、只是想先跑通一个标准可靠的 OpenAI 兼容端点做参照，[YoTradeApi](https://yotradeapi.com) 提供开箱即用的中转服务，配置方式和本文的 `provider: openai` 完全一致，可以先拿它验证 Continue.dev 侧的配置没问题，再回头排查自建端点。

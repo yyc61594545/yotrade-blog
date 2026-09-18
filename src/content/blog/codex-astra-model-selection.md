@@ -105,5 +105,3 @@ def should_escalate(run):
 - [AI 编程 Agent 内部基准设计](/blog/ai-coding-agent-benchmark-design/)
 - [用 Codex 建立可重复的代码审查流程](/blog/codex-code-review-workflow/)
 - [Codex 多 Agent 任务拆分边界](/blog/codex-multi-agent-boundaries/)
-
-如果你要把不同模型接入同一套评测与路由流程，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入入口，便于集中管理调用配置与结果记录。

@@ -213,5 +213,3 @@ doc_vec = get_embedding(document_text, mode="batch")
 - [向量数据库选型对比 2026](/blog/vector-db-comparison-2026/)
 - [RAG 国内最佳实践：从分块到召回](/blog/rag-cn-best-practices/)
 - [LLM 批量 API 真实省钱效果测算](/blog/llm-batch-api-real-savings/)
-
-想低成本调用 OpenAI Embedding API？[YoTradeApi](https://yotradeapi.com) 支持 text-embedding-3-small/large，人民币按量充值，国内直连无需翻墙。

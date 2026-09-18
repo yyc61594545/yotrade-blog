@@ -106,5 +106,3 @@ print(status.status)  # "running" -> "succeeded"
 - [OpenAI Batch API 节省 50% 成本实战](/blog/openai-batch-api-cn-guide/)
 - [OpenAI SDK Base URL 国内配置指南](/blog/openai-sdk-base-url-cn/)
 - [大模型价格全面对比（2026）](/blog/llm-pricing-comparison-2026/)
-
-不确定中转服务是否支持 Fine-Tuning 接口，[YoTradeApi](https://yotradeapi.com) 全量代理 OpenAI 官方接口，训练任务和普通对话调用用同一个 Key，人民币付费更省心。

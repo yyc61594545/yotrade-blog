@@ -117,5 +117,3 @@ Stop token 分训练时和推理时两层，前者是模型自带的默认行为
 - [结构化输出：JSON Mode 与 Function Calling 对比](/blog/structured-output-llm-guide/)
 - [LLM 流式响应的背压处理](/blog/llm-streaming-backpressure/)
 - [AI 功能 A/B 测试设计：Prompt、模型与体验的三层实验框架](/blog/ai-feature-ab-testing/)
-
-如果你需要跨模型对比不同厂商的停止符行为和输出格式差异，用 [YoTradeApi](https://yotradeapi.com) 中转可以用统一的接口调用多家模型，方便快速验证。

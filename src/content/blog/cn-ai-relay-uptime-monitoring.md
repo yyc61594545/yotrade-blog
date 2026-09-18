@@ -293,5 +293,3 @@ GitHub Actions 免费层有 2000 分钟/月，每 5 分钟跑一次约消耗 288
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 - [AI Agent 成本监控实战：从 Token 到账单的全链路追踪](/blog/ai-agent-cost-monitoring/)
 - [AI API 预算上限设计：防止账单爆炸的实用方案](/blog/ai-api-budget-cap-design/)
-
-需要稳定、低延迟的国内 AI API 中转服务，[YoTradeApi](https://yotradeapi.com) 支持 GPT、Claude、Gemini 全系模型，按量计费无最低消费。

@@ -94,5 +94,3 @@ LLM 应用和传统 Web 服务的上线检查清单有明显差异——除了�
 - [LLM 限流处理实践](/blog/llm-rate-limit-handling/)
 - [用 Langfuse 做 LLM 可观测性](/blog/llm-observability-langfuse/)
 - [AI Agent Human-in-Loop 模式实战](/blog/ai-agent-human-in-loop/)
-
-如果这份 checklist 里有多项还没做到，先从供应商依赖这一环入手往往性价比最高——用一个稳定、支持多模型切换的 API 中转服务，可以了解 [YoTradeApi](https://yotradeapi.com)，能同时缓解限流、供应商单点故障和账单管理的多重压力。

@@ -237,5 +237,3 @@ Background Agent 长任务的 token 消耗比日常对话高一个量级，控�
 - [AI 编程代理成本控制](/blog/ai-coding-agent-cost-control/)
 - [Claude Code 真实任务实录](/blog/claude-code-real-world-tasks/)
 - [LLM 成本优化实战 Checklist](/blog/llm-cost-optimization-checklist/)
-
-如果你在使用 Background Agent 过程中遇到 API 连通性问题，[YoTradeApi](https://yotradeapi.com) 提供全模型覆盖的稳定中转，按量计费无月费门槛。

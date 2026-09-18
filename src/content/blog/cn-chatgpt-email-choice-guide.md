@@ -89,4 +89,4 @@ OpenAI 当前的[邮箱修改说明](https://help.openai.com/en/articles/4936827
 - [ChatGPT 账号注册完整教程 2026（含各种验证方式）](/blog/cn-chatgpt-account-register-full/)
 - [支付宝微信能付哪些 AI 服务：2026 现状](/blog/cn-alipay-wechat-ai-subscribe/)
 
-账号准备完成后，如果你的目标是通过 API 构建应用，[YoTradeApi](https://yotradeapi.com) 可提供统一的模型 API 接入方式，便于把个人订阅与开发调用分开管理。
+邮箱之外，如果注册或之后创建 API key 时被要求验证手机号，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-email-choice-guide)：¥29.90 一次，支付宝微信付款，收不到自动换号，换号仍失败全额退款，能否通过验证由 OpenAI 的风控决定。

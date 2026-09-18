@@ -230,5 +230,3 @@ print(result["content"][0]["text"])
 - [AWS Bedrock 与直接调用 Anthropic API 对比](/blog/anthropic-bedrock-vs-direct/)
 - [API Key 泄露应急响应指南](/blog/api-key-leak-emergency-response/)
 - [AI Agent 工具集合的设计原则](/blog/ai-agent-tool-design/)
-
-如果你正在寻找稳定可靠的国内 Claude API 中转方案，[YoTradeApi](https://yotradeapi.com) 支持人民币支付宝充值，提供 Claude 全系列模型接入，无需代理即可直连使用。

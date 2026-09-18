@@ -232,5 +232,3 @@ models:
 - [Continue.dev 国内 API 配置](/blog/continue-dev-cn-setup/)
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 - [2026 LLM 价格对比与选型决策](/blog/llm-pricing-comparison-2026/)
-
-需要"本地补全 + 云端旗舰"混搭？[YoTradeApi](https://yotradeapi.com) 一把 Key 接所有云端模型，本地跑 Ollama，按 Continue.dev 配置组合即可。

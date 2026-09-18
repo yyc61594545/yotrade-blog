@@ -90,5 +90,3 @@ AI 应用常把竞争理解为模型效果比较，实际采购还会考虑部�
 - [AI Agent 商业化的最后一公里](/blog/ai-agent-commercialization-gap/)
 - [Agent 成本归因：一次任务到底花在哪里](/blog/ai-agent-cost-attribution/)
 - [2026 编程 Agent 格局观察：四种形态怎么分化](/blog/coding-agent-landscape-2026/)
-
-如果你正在把多模型能力接入真实业务，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入方式，便于在同一应用中进行模型路由与工程化管理。
