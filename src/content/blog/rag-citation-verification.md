@@ -111,5 +111,3 @@ def verify_claim(claim, evidence, judge):
 - [LLM 评测 Golden Set 构建方法](/blog/llm-eval-golden-set/)
 - [RAG 文档版本与索引一致性](/blog/rag-document-versioning/)
 - [RAG 效果差的排查路径](/blog/rag-quality-debugging-path/)
-
-如果你要为生成与引用判定配置不同模型，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入入口，便于集中管理调用与校验日志。

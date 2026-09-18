@@ -185,5 +185,3 @@ JetBrains 用户不必羡慕 VS Code 用户，生态已经足够成熟，关键�
 - [通义灵码深度评测](/blog/cn-tongyi-lingma-deep-review/)
 - [AI 编程工具成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [Claude Code 国内网络配置](/blog/claude-code-on-cn-network/)
-
-想在 JetBrains 里接入 Claude、GPT-4o 等境外旗舰模型而不折腾代理，[YoTradeApi](https://yotradeapi.com) 提供稳定的 OpenAI 兼容中转，注册即可试用。

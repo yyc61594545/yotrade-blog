@@ -216,5 +216,3 @@ Claude Sonnet 的重构建议通常会同时指出：
 - [AI 编程工具 2026 全景概览](/blog/ai-coding-tools-2026-overview/)
 - [Claude 4.7 vs GPT-5.1 编程能力对比](/blog/claude-4-7-vs-gpt-5-1-coding/)
 - [智谱 GLM 系列开发者视角评测](/blog/cn-zhipu-glm-developer-review/)
-
-在中文场景下频繁切换和测试不同模型，[YoTradeApi](https://yotradeapi.com) 支持用同一个 API Key 调用 Claude、GPT-4o、DeepSeek 等主流模型，人民币计费，方便横向对比和成本控制。

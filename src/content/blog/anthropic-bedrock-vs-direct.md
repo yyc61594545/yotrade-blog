@@ -208,5 +208,3 @@ model_list:
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 - [API Key 泄露应急响应](/blog/api-key-leak-emergency-response/)
 - [OpenAI 兼容协议 vs Anthropic 原生协议](/blog/openai-compatible-vs-anthropic-protocol/)
-
-国内场景，[YoTradeApi](https://yotradeapi.com) 一把 Key + Anthropic 原生协议 = 国内可用的最简路径。

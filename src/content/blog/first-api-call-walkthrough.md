@@ -151,5 +151,3 @@ print(data["choices"][0]["message"]["content"])
 - [Token 到底是什么？给完全没接触过的人讲清楚](/blog/what-is-token-for-beginners/)
 - [从零开始用 Claude 聊天的 5 分钟教程](/blog/cn-claude-zero-to-chat-tutorial/)
 - [国内开发者付款方式对比：该选哪一种](/blog/cn-payment-methods-comparison/)
-
-如果你在国内调用境外 API 时经常遇到连接超时，[YoTradeApi](https://yotradeapi.com) 提供国内可直连的统一接口，密钥申请和调用方式与官方 API 基本一致，不用改代码就能跑通。

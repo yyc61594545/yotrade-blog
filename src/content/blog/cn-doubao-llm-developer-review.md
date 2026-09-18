@@ -191,5 +191,3 @@ for chunk in stream:
 - [DeepSeek V3 与 Claude Sonnet 对比](/blog/deepseek-v3-vs-claude-sonnet/)
 - [Claude 与 GPT 与 Gemini 中文开发者横评](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
 - [通义灵码深度评测](/blog/cn-tongyi-lingma-deep-review/)
-
-如果你需要同时调用豆包、Claude、GPT-4o 等多种模型进行效果对比，[YoTradeApi](https://yotradeapi.com) 提供统一的 API 入口，支持切换多家模型，无需分别注册账号。

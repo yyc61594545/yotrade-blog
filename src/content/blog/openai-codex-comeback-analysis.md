@@ -98,5 +98,3 @@ Codex 的回归路线提供了一个可复用的判断框架，适用于评估�
 - [Claude Code vs Codex CLI 全面对比](/blog/claude-code-vs-codex-cli/)
 - [AI 编程工具的厂商锁定风险](/blog/ai-coding-tool-vendor-lockin/)
 - [AI 编程工具格局整合趋势](/blog/ai-coding-tool-consolidation-trend/)
-
-不管最终选择哪一条编程 Agent 产品线，统一通过 [YoTradeApi](https://yotradeapi.com) 接入模型 API，可以在不同工具间自由切换模型、按实际用量付费，避免被单一生态绑定。

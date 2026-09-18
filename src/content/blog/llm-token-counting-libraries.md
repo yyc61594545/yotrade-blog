@@ -274,5 +274,3 @@ class TokenCounter:
 - [Claude Extended Thinking Token Budget 详解](/blog/claude-extended-thinking-token-budget/)
 - [AI Agent 成本监控实战：从 Token 到账单的全链路追踪](/blog/ai-agent-cost-monitoring/)
 - [LLM 视觉 Token 成本计算](/blog/llm-vision-token-cost/)
-
-统一接入多个 LLM 模型、简化 token 成本管理，[YoTradeApi](https://yotradeapi.com) 支持 GPT、Claude、Gemini、DeepSeek 全系模型，单一 API Key 搞定多模型调用。

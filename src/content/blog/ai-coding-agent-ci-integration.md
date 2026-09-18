@@ -85,5 +85,3 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 - [AI 编程代理权限模式对比](/blog/ai-coding-agent-permission-models/)
 - [AI 编码 Agent 成本控制](/blog/ai-coding-agent-cost-control/)
 - [AI Pipeline 错误追踪](/blog/ai-pipeline-error-tracing/)
-
-如果你的团队在 CI 里跑多个 Agent 调用需要独立预算和调用日志审计,[YoTradeApi](https://yotradeapi.com) 支持按项目拆分 Key 和用量追踪,方便把边界落到可执行的配置上。

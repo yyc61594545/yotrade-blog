@@ -212,5 +212,3 @@ print(messages.data[0].content[0].text.value)
 - [LlamaIndex 中文 RAG 完整教程](/blog/llamaindex-cn-rag-tutorial/)
 - [向量数据库横向对比 2026](/blog/vector-db-comparison-2026/)
 - [Embeddings API 国内对比选型](/blog/embeddings-api-cn-comparison/)
-
-在国内访问 OpenAI Assistants API 或自建 RAG 时，[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转，兼容 OpenAI SDK，修改 `base_url` 即可使用，无需其他改动。

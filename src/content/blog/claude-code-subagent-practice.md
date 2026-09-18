@@ -230,5 +230,3 @@ esac
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [Cursor Background Agent 国内配置与使用](/blog/cursor-background-agent-config/)
-
-用一把支持 Claude 全系列的 Key 把 Subagent 全跑起来？在 [YoTradeApi 注册](https://yotradeapi.com) 创建 Key，然后 `export ANTHROPIC_BASE_URL=https://yotradeapi.com` 即可。

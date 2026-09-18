@@ -251,5 +251,3 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
 - [Claude Tool Use 最佳实践](/blog/claude-tool-use-best-practices/)
 - [Python 异步 LLM 客户端实战](/blog/python-async-llm-client/)
 - [LLM 延迟优化指南](/blog/llm-latency-optimization/)
-
-需要稳定调用 Anthropic Batch API 或其他 Claude 接口，[YoTradeApi](https://yotradeapi.com) 提供原生 Anthropic 协议中转，批量推理同样享受半价优惠。

@@ -236,5 +236,3 @@ AI 辅助数据库设计的价值在于**把 schema 草稿的质量上限拉高*
 - [AI 编程避坑指南：那些真实踩过的雷](/blog/ai-coding-mistakes-to-avoid/)
 - [AI 辅助构建内部工具的完整流程](/blog/ai-coding-build-internal-tool/)
 - [AI 编程成本到底多少钱？真实数据披露](/blog/ai-coding-monthly-cost-real/)
-
-想用更稳定、更低成本的 Claude / GPT-4 辅助数据库设计？[YoTradeApi](https://yotradeapi.com) 提供多模型统一接入，按量计费，无需翻墙。

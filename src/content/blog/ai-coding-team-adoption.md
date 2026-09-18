@@ -138,5 +138,3 @@ AI 生成的代码同样需要完整 Code Review，甚至某些维度需要更�
 - [AI 结对编程实战指南：让 AI 真正成为你的副驾驶](/blog/ai-coding-pair-programming/)
 - [AI 生成单测的工程化落地](/blog/ai-test-generation-workflow/)
 - [API Key 泄露应急响应手册](/blog/api-key-leak-emergency-response/)
-
-团队统一接入 AI 编程工具时，[YoTradeApi](https://yotradeapi.com) 支持子账户管理和用量限额，可以解决团队 Key 管理混乱和费用失控的问题。

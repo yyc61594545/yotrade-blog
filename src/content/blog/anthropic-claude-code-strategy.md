@@ -85,5 +85,3 @@ Claude Code 的战略价值，不在于它作为单一产品能带来多少直�
 - [Claude Code vs Codex CLI](/blog/claude-code-vs-codex-cli/)
 - [Claude Code Subagent 实战](/blog/claude-code-subagent-practice/)
 - [Claude Code 国内网络使用](/blog/claude-code-on-cn-network/)
-
-如果你正在国内使用 Claude Code 或基于 Agent SDK 开发自己的工具，[YoTradeApi](https://yotradeapi.com) 提供稳定的国内 API 中转服务，帮助解决直连不稳定、延迟高的问题。

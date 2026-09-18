@@ -177,4 +177,4 @@ vim: true
 - [Claude Code Hooks 配置实战](/blog/claude-code-hooks-config/)
 - [AI 编程 Agent 接入 CI 流水线](/blog/ai-coding-agent-ci-integration/)
 
-把工作流配置固化成文件而不是记在脑子里，是 AI 结对编程从"个人耍花活"走向"团队标准流程"的第一步。如果你的团队用的是多个模型供应商拼起来的技术栈，稳定的 API 中转是这套工作流能跑起来的前提，[YoTradeApi](https://yotradeapi.com) 提供统一的国内可用中转，配置一次即可在 Aider、Claude Code 等工具间共用。
+把工作流配置固化成文件而不是记在脑子里，是 AI 结对编程从"个人耍花活"走向"团队标准流程"的第一步。

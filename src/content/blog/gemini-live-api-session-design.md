@@ -113,5 +113,3 @@ Live API 提供 `contextWindowCompression`，可在上下文达到阈值时通�
 - [OpenAI Realtime API 完全指南](/blog/openai-realtime-api-guide/)
 - [LLM 流式输出背压处理](/blog/llm-streaming-backpressure/)
 - [AI Chatbot 上下文管理实战](/blog/ai-chatbot-context-management/)
-
-如果你还需要为实时应用统一不同模型的调用入口，[YoTradeApi](https://yotradeapi.com) 可提供兼容常见 SDK 的 API 接入方式，便于把鉴权、用量与故障切换集中在服务端管理。

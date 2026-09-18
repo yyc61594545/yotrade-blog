@@ -381,5 +381,3 @@ async def request_human_intervention(
 - [AI Agent 记忆机制设计](/blog/ai-agent-memory-design/)
 - [LLM API 错误码速查与处理指南](/blog/ai-api-relay-error-codes/)
 - [AI Agent 成本控制实战](/blog/ai-coding-agent-cost-control/)
-
-想在生产环境中稳定调用 Claude、GPT-4 等模型？[YoTradeApi](https://yotradeapi.com) 提供高可用 API 中转，内置限流保护与自动重试，让你的 Agent 系统更可靠。

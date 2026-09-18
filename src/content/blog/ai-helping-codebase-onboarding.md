@@ -188,5 +188,3 @@ AI 在猜测「这个函数干什么」时可能犯错，特别是遇到非标�
 - [AI 代码 Review 工作流：从检查风格到发现逻辑漏洞](/blog/ai-code-review-workflow/)
 - [AI 编程常见错误避坑指南](/blog/ai-coding-mistakes-to-avoid/)
 - [用 AI 帮新人开发者上手项目的最佳实践](/blog/ai-coding-onboarding-junior-dev/)
-
-在实际项目中，Claude API 的长上下文能力和代码理解质量在开发者中口碑较好，[YoTradeApi](https://yotradeapi.com) 提供 Claude、GPT-4o 等主流模型的国内直连接入，适合把 AI 能力集成到自己开发工具链的团队。

@@ -112,5 +112,3 @@ Inline Assist 是 Zed AI 助手里日常用得最频繁的功能，默认快捷�
 - [Cursor Rules 最佳实践](/blog/cursor-rules-best-practices/)
 - [Cursor vs Claude Code 全面对比](/blog/cursor-vs-claude-code-comparison/)
 - [Cursor 团队配置指南](/blog/cursor-team-config-guide/)
-
-如果 Zed 里配置的 API Key 走的是国内中转，[YoTradeApi](https://yotradeapi.com) 支持 Claude、GPT 等主流模型的中转调用，接口路径兼容官方格式，`api_url` 换成中转地址就能直接用，不用改代码逻辑。

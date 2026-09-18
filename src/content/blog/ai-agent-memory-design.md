@@ -255,5 +255,3 @@ Agent 在回复用户时，不应该等待记忆写入完成。把写入放到�
 - [Claude Agent SDK 中文指南](/blog/claude-agent-sdk-cn/)
 - [LLM Context 工程实践](/blog/llm-context-engineering/)
 - [LLM 成本优化清单](/blog/llm-cost-optimization-checklist/)
-
-需要稳定、低延迟地调用 Claude、GPT-4o 等模型来构建 Agent 记忆系统，[YoTradeApi](https://yotradeapi.com) 提供全系模型 API 中转，按量计费，无需海外信用卡。

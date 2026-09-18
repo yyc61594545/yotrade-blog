@@ -140,5 +140,3 @@ AI 编程最先压缩的，是那些边界清楚、答案模式稳定、主要�
 - [团队引入 AI 编程的踩坑：12 个工程管理教训](/blog/ai-coding-team-adoption/)
 - [AI 结对编程实战指南：让 AI 真正成为你的副驾驶](/blog/ai-coding-pair-programming/)
 - [国内 AI 编程厂商的崛起观察](/blog/cn-ai-coding-vendor-rise/)
-
-如果你在给团队搭建稳定的多模型开发环境，[YoTradeApi](https://yotradeapi.com) 提供统一 API 接入方式，方便把 Claude、GPT、DeepSeek 等模型接进同一套工程工作流里。

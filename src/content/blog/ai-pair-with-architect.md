@@ -189,5 +189,3 @@ AI 的训练数据有截止日期，对 2025 年之后发布的新技术的判�
 - [AI 编程：后端开发的实战接入指南](/blog/ai-coding-for-backend-dev/)
 - [AI 编程常见错误与避坑指南](/blog/ai-coding-mistakes-to-avoid/)
 - [团队级 System Prompt 库的组织方式](/blog/ai-system-prompt-library/)
-
-如果你在架构调研或方案评审中需要调用 Claude、GPT-4o 等模型，[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转，支持全系主流模型，按量付费，无最低消费。

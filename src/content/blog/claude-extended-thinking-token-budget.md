@@ -236,5 +236,3 @@ with client.messages.stream(
 - [Token 计数国内开发者指南](/blog/token-counting-cn-guide/)
 - [Prompt Caching 成本优化实战](/blog/prompt-caching-cost-optimization/)
 - [AI API 预算上限设计方案](/blog/ai-api-budget-cap-design/)
-
-如果你需要在生产环境中规模化调用 Claude Extended Thinking，[YoTradeApi](https://yotradeapi.com) 提供 Claude 全系模型的 API 接入，支持 OpenAI 兼容格式，并提供详细的 token 用量统计，方便追踪思考 token 的实际消耗。

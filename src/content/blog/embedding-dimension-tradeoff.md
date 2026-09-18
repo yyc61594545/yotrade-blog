@@ -89,5 +89,3 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 - [中文 RAG 工程实战：从分块到 Rerank 完整流程](/blog/rag-cn-best-practices/)
 - [RAG 系统评测框架搭建实战](/blog/ai-rag-evaluation-framework/)
 - [2026 向量数据库对比：Chroma/Qdrant/Milvus/pgvector](/blog/vector-db-comparison-2026/)
-
-选定维度之后，稳定的 Embedding API 调用同样重要，[YoTradeApi](https://yotradeapi.com) 提供国内直连的 OpenAI/Voyage 等模型中转，帮你的向量化流水线减少超时和重试带来的额外延迟。

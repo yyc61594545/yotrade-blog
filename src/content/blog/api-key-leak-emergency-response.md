@@ -257,5 +257,3 @@ def check():
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
-
-[YoTradeApi](https://yotradeapi.com) 支持一键吊销 + 用量明细 + 日预算上限，应急响应 1 分钟内可完成止血。

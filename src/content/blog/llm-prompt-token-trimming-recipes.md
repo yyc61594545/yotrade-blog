@@ -235,5 +235,3 @@ def select_prompt(user_input: str) -> str:
 - [Token 计数国内开发者指南](/blog/token-counting-cn-guide/)
 - [AI 编程工具月度真实费用拆解](/blog/ai-coding-monthly-cost-real/)
 - [AI API 预算上限设计方案](/blog/ai-api-budget-cap-design/)
-
-想在多个模型之间对比 token 消耗和成本，[YoTradeApi](https://yotradeapi.com) 提供统一的 API 接口和用量统计面板，帮助你精准追踪每个模型的 token 使用情况。

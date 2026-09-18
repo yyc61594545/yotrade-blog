@@ -113,5 +113,3 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 - [Claude 1M 上下文使用指南](/blog/claude-1m-context-guide/)
 - [向量数据库对比 2026](/blog/vector-db-comparison-2026/)
 - [RAG 国内最佳实践](/blog/rag-cn-best-practices/)
-
-想横向测试不同模型在长上下文场景下的真实表现，[YoTradeApi](https://yotradeapi.com) 提供 Claude、GPT、Gemini 等主流模型的统一 API 中转，一套 key 即可快速搭建自己的横评脚本。

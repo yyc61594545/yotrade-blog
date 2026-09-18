@@ -191,5 +191,3 @@ OpenAI 的 Tier 机制本质上是一套基于支付历史和使用时长的信�
 - [OpenAI Batch API 国内使用指南](/blog/openai-batch-api-cn-guide/)
 - [OpenAI SDK base_url 中转配置详解](/blog/openai-sdk-base-url-cn/)
 - [中文开发者视角的 LLM 排行榜解读指南](/blog/llm-leaderboard-cn-developer/)
-
-如果你希望跳过 Tier 限制、使用统一接口调用多家模型，[YoTradeApi](https://yotradeapi.com) 提供与 OpenAI SDK 完全兼容的 API 中转，无需等待账号升级即可享受更高并发。

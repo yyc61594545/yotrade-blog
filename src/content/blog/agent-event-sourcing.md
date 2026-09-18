@@ -127,5 +127,3 @@ Event Sourcing 不一定意味着上复杂中间件。很多团队一开始用 P
 - [AI Agent 可观测性设计](/blog/ai-agent-observability-design/)
 - [AI 流水线的错误追踪方案：从日志到根因定位](/blog/ai-pipeline-error-tracing/)
 - [AI Agent 写操作回滚策略：让 Agent 的错误可以被撤销](/blog/ai-agent-rollback-strategy/)
-
-如果你的团队需要先把多模型与多工具调用统一接入，再在上层建设自己的轨迹、审计和回放系统，[YoTradeApi](https://yotradeapi.com) 可以作为统一 API 入口，减少底层协议差异带来的接入负担。

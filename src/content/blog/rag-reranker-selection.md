@@ -94,5 +94,3 @@ API 型按"query + document 数量"计费，Top N 候选越多、费用越高；
 - [RAG 系统评测框架搭建实战](/blog/ai-rag-evaluation-framework/)
 - [Embedding 模型成本对比：API 调用 vs 自托管全算](/blog/embedding-model-cost-comparison/)
 - [国内 Embedding API 对比：价格、维度与检索效果](/blog/embeddings-api-cn-comparison/)
-
-如果你的 RAG 系统需要同时调用 Embedding、Reranker 和生成模型，[YoTradeApi](https://yotradeapi.com) 支持一个 API Key 统一接入多家模型，省去分别对接、分别付费的麻烦。

@@ -120,5 +120,3 @@ def estimate_cache_savings(cache_hit_tokens: int, cache_miss_tokens: int,
 - [Anthropic cache_control 五分钟入门到精通](/blog/anthropic-cache-control-tutorial/)
 - [LLM 应用缓存层设计：从语义缓存到 Prompt 缓存的完整方案](/blog/llm-cache-layer-design/)
 - [AI Agent 成本监控体系搭建](/blog/ai-agent-cost-monitoring/)
-
-命中率监控能不能跑起来,前提是中转层能如实透传 `cache_read_input_tokens` 这类原始 usage 字段,而不是做了归一化处理导致细粒度数据丢失,[YoTradeApi](https://yotradeapi.com) 保留完整的 usage 字段透传,方便接入本文这套监控方案。

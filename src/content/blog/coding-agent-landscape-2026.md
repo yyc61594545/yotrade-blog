@@ -74,5 +74,3 @@ category: 行业观察
 - [Cline 在 VS Code 的配置](/blog/cline-vscode-config-guide/)
 - [编程 Agent 重构任务横评](/blog/coding-agent-refactor-bench/)
 - [Cursor Background Agent 实战案例](/blog/cursor-background-agent-cases/)
-
-不管选哪种形态的编程 Agent，背后调用 Claude 或 GPT 的稳定性都值得单独规划，国内直连不稳定时可以用 [YoTradeApi](https://yotradeapi.com) 这类中转服务，接口兼容官方格式，换 base_url 就能接入。

@@ -222,5 +222,3 @@ Cursor 官方文档标注了"合理使用政策（Fair Use Policy）"，即虽�
 - [Cursor vs Claude Code：两大 AI 编程工具深度对比](/blog/cursor-vs-claude-code-comparison/)
 - [AI 编程工具成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [LLM 定价横向对比 2026](/blog/llm-pricing-comparison-2026/)
-
-如果你正在为 Cursor 订阅方案纠结，或者想用 API 中转把成本压到最低，[YoTradeApi](https://yotradeapi.com) 提供兼容 OpenAI 协议的高稳定中转服务，按量计费、无月费门槛，非常适合搭配 Cursor BYOK 使用。

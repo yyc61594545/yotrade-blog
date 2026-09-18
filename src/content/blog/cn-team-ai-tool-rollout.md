@@ -87,4 +87,4 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 - [AI API 中转与自建 VPN 的成本对比](/blog/ai-api-relay-vs-self-vpn/)
 - [LLM 团队预算分配的实践](/blog/llm-team-budget-allocation/)
 
-如果你正卡在"第一关"——账号、访问、国内可结算的支付方式，[YoTradeApi](https://yotradeapi.com) 可以直接跳过境外注册和境外信用卡的门槛，用国内方式开通并稳定访问主流 AI 模型 API。
+如果团队用的是 Claude、正卡在“第一关”的付款环节，我们的[官方订阅代充](https://yotradeapi.com)可以按席位开通 Claude Team，由我们建组织并管理，报价微信咨询。

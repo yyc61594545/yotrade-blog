@@ -223,5 +223,3 @@ OPENAI_BASE_URL=https://中转域名/v1
 - [AI API 中转 vs 自建 VPN 方案](/blog/ai-api-relay-vs-self-vpn/)
 - [国内 LLM 中转服务市场概览](/blog/cn-llm-relay-market-overview/)
 - [AI API 中转稳定性测试](/blog/ai-api-relay-stability-test/)
-
-[YoTradeApi](https://yotradeapi.com) 支持 OpenAI、Anthropic Claude、Gemini 等主流模型，统一 API 格式、国内节点直连、支持支付宝充值，适合不想折腾多账号的开发者。

@@ -95,5 +95,3 @@ API Key 是一把不需要二次验证就能直接花钱的钥匙，新手最该
 - [AI API Key 泄露应急响应手册](/blog/api-key-leak-emergency-response/)
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 - [国内业务的数据出境边界：哪些情况必须申报、哪些可以豁免](/blog/cn-data-boundary-compliance/)
-
-准备好安全习惯之后，可以去 [YoTradeApi](https://yotradeapi.com) 申请一把属于自己的 API Key，后台自带用量明细和预算上限设置，新手也能放心上手。

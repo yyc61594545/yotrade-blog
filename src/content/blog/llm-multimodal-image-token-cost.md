@@ -94,5 +94,3 @@ def estimate_image(rule, width, height):
 - [LLM Vision API 国内调用对比：Claude / GPT-5 / Gemini](/blog/llm-vision-api-comparison/)
 - [LLM Token 计算完整指南：tiktoken / Anthropic / 中文](/blog/token-counting-cn-guide/)
 - [LLM Token 成本台账怎么设计](/blog/llm-token-cost-ledger/)
-
-如果你需要在一个成本台账里统一观察不同模型的输入与输出用量，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入方式，便于集中记录 usage 并执行模型路由。

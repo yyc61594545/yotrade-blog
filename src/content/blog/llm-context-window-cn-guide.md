@@ -217,5 +217,3 @@ def trim_messages(messages, max_tokens=50000):
 - [Claude 1M 上下文实战：何时开启与最佳实践](/blog/claude-1m-context-guide/)
 - [Token 计数与费用估算：国内开发者实用指南](/blog/token-counting-cn-guide/)
 - [RAG 国内最佳实践：从入门到生产](/blog/rag-cn-best-practices/)
-
-想在国内稳定调用支持长上下文的主流模型，[YoTradeApi](https://yotradeapi.com) 支持 Claude / Gemini / GPT / Grok 全系列，统一接口，按量计费。

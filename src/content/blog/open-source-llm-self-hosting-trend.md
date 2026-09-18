@@ -136,5 +136,3 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 - [自部署 Ollama vs 走 API 中转：怎么选](/blog/ollama-vs-api-decision/)
 - [LiteLLM 自部署 LLM 网关完整指南](/blog/litellm-cn-gateway-self-host/)
 - [LLM 多提供商 fallback 路由设计](/blog/llm-fallback-multi-provider/)
-
-如果你要同时接入自托管模型与云端旗舰模型，[YoTradeApi](https://yotradeapi.com) 提供统一 API 接入入口，方便把路由、回退和成本治理放到一层里管理。

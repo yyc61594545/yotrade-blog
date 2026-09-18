@@ -75,5 +75,3 @@ Model Context Protocol（MCP）从 Anthropic 发布至今，采纳速度在 AI �
 - [AI Agent 工具集合的设计原则](/blog/ai-agent-tool-design/)
 - [AI Agent 权限设计](/blog/ai-agent-permission-design/)
 - [Agentic OS 的未来形态推演](/blog/agentic-os-future-prediction/)
-
-无论是自己搭建 MCP Server 还是在 Agent 里调用多个 MCP 工具，背后都离不开稳定的模型 API 调用，[YoTradeApi](https://yotradeapi.com) 提供 Claude、OpenAI 等主流模型的国内直连中转，方便在开发和调试 MCP 集成时保持稳定的调用体验。

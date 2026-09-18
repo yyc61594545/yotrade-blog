@@ -142,5 +142,3 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 - [Trae vs Cursor 国内开发者怎么选](/blog/cn-trae-vs-cursor/)
 - [通义灵码深度体验报告](/blog/cn-tongyi-lingma-deep-review/)
 - [AI 编程工具的厂商锁定问题](/blog/ai-coding-tool-vendor-lockin/)
-
-如果你希望把不同模型和编程工具的 API 接入统一起来，[YoTradeApi](https://yotradeapi.com) 可以作为统一接入层，方便在团队侧继续做 BYOK、路由和成本治理。

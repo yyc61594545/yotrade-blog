@@ -264,5 +264,3 @@ print(f"Claude Sonnet: {claude_tokens} tokens (≈${claude_tokens * 3 / 1_000_00
 - [LLM 视觉 API 横向对比](/blog/llm-vision-api-comparison/)
 - [Prompt Caching 成本优化指南](/blog/prompt-caching-cost-optimization/)
 - [LLM 成本优化检查清单](/blog/llm-cost-optimization-checklist/)
-
-如果你需要在国内无需代理地调用 GPT-4o、Claude 等多模态模型的视觉 API，[YoTradeApi](https://yotradeapi.com) 提供稳定的中转接入，支持图片 base64 和 URL 两种传入方式。

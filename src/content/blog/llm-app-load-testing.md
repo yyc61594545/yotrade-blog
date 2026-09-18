@@ -129,5 +129,3 @@ class LLMUser(HttpUser):
 - [LLM 输出验证：schema + 业务规则双层防护](/blog/llm-output-validation/)
 - [LLM Agent 评估方法论](/blog/llm-agent-evaluation-methods/)
 - [Claude Message Batches 成本节省实践](/blog/claude-message-batches-savings/)
-
-压测阶段需要在多个模型间快速切换对比延迟和成本？[YoTradeApi](https://yotradeapi.com) 一个 Key 接入全系模型，方便同一套压测脚本跑不同模型的对比数据。

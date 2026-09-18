@@ -311,5 +311,3 @@ def log_inference_with_probs(response, query: str, metadata: dict):
 - [Token 计数实用指南：精确控制上下文长度](/blog/token-counting-cn-guide/)
 - [LLM 可观测性：Langfuse 完整接入教程](/blog/llm-observability-langfuse/)
 - [LLM 上下文工程：超长对话的实战管理策略](/blog/llm-context-engineering/)
-
-想在生产环境稳定使用 logprobs 功能，[YoTradeApi](https://yotradeapi.com) 提供兼容 OpenAI 格式的 API 中转服务，完整支持 logprobs 参数，无需修改现有代码即可切换。

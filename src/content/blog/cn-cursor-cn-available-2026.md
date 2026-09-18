@@ -154,5 +154,3 @@ A：降速模式（Slow Request）——免费版用完 Fast 额度后并不断�
 - [2026 年 Cursor API 中转推荐](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 - [Cursor vs Claude Code 深度比较](/blog/cursor-vs-claude-code-comparison/)
 - [国内虚拟信用卡付款指南](/blog/cn-virtual-card-for-chatgpt-2026/)
-
-想在国内流畅使用 Cursor 而不折腾代理，[YoTradeApi](https://yotradeapi.com) 提供 OpenAI / Anthropic 兼容的 API 中转，直接填入 Cursor 的自定义端点即可使用。

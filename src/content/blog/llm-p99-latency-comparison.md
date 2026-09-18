@@ -89,5 +89,3 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 - [国内访问延迟优化实测](/blog/cn-latency-optimization-practice/)
 - [OpenAI service_tier 延迟与成本取舍：flex、priority 怎么选](/blog/openai-service-tier-latency/)
 - [把模型评测接进 CI 流水线](/blog/llm-eval-in-ci-pipeline/)
-
-如果排查下来发现瓶颈主要在网络路径而不是模型本身，[YoTradeApi](https://yotradeapi.com) 提供国内直连的主流模型 API 中转，能有效压低访问延迟和尾延迟的波动幅度。

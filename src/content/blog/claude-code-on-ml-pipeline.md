@@ -111,5 +111,3 @@ done
 - [AI 代码审查工作流实践](/blog/ai-code-review-workflow/)
 - [AI Agent 工具权限粒度设计](/blog/ai-agent-permission-design/)
 - [LLM 成本优化 30 条 checklist](/blog/llm-cost-optimization-checklist/)
-
-在 ML 流水线里频繁调用 Claude Code 处理数据脚本和实验分析，实际消耗的模型调用量不小，通过 [YoTradeApi](https://yotradeapi.com) 中转接入可以按实际用量付费，避免为不确定的调用量预付固定套餐。

@@ -87,5 +87,3 @@ AI 开发者工具赛道的投资热度会有周期性起伏，这是任何新�
 - [Cursor 与 Windsurf 并购传闻观察：AI 编程工具的整合逻辑](/blog/cursor-vs-windsurf-acquisition/)
 - [AI API 预算上限自动化设计：防止账单爆炸的工程实践](/blog/ai-api-budget-cap-design/)
 - [2026 AI 创业公司全景观察：哪些方向真的在跑通](/blog/ai-startup-2026-landscape/)
-
-无论你是在做 AI 工具创业还是评估内部工具采购，控制好底层模型 API 的调用成本都是绕不开的一环，[YoTradeApi](https://yotradeapi.com) 提供统一的多模型中转和用量管理，可以帮你在早期就把这块基础打好。

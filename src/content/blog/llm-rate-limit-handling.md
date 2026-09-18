@@ -248,5 +248,3 @@ except RateLimitError:
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
 - [LiteLLM 自部署 LLM 网关](/blog/litellm-cn-gateway-self-host/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
-
-需要 RPM/TPM 可配置 + 限速友好（带 Retry-After）的中转？[YoTradeApi](https://yotradeapi.com) 后台每个 Key 独立设限速 + 实时显示当前用量。

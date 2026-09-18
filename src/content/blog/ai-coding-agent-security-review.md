@@ -97,5 +97,3 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 - [AI 编程代理权限模式对比：Claude Code、Codex CLI、Cursor 怎么选](/blog/ai-coding-agent-permission-models/)
 - [AI 编程 Agent 沙箱设计：怎么让模型放心跑代码](/blog/agent-sandbox-design/)
 - [Agent 工具密钥隔离与最小权限](/blog/agent-secret-isolation/)
-
-评审过程中如果需要给不同风险等级的 Agent 场景配置独立的 API Key 和用量上限，[YoTradeApi](https://yotradeapi.com) 支持按项目拆分密钥、设置预算上限，方便团队落地本文提到的分级权限策略。

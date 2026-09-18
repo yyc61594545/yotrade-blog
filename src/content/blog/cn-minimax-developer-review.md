@@ -245,5 +245,3 @@ MiniMax 提供 Python SDK（`minimax-python`），同时也兼容通用的 HTTP 
 - [DeepSeek V3 与 Claude Sonnet 横向对比](/blog/deepseek-v3-vs-claude-sonnet/)
 - [AI API 中转服务入门：境内开发者怎么稳定调用 Claude 和 GPT](/blog/what-is-api-relay-explained/)
 - [国内 AI 编程工具全景图](/blog/cn-ai-coding-tools-overview/)
-
-如果你正在为项目寻找合适的大模型 API，[YoTradeApi](https://yotradeapi.com) 提供包括 Claude、GPT-4、Gemini 等主流境外模型的中转接入，一个 key 统一管理，国内直连稳定可靠。

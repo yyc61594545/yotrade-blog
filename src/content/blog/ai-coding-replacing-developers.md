@@ -137,5 +137,3 @@ AI 编程工具的本质是效率放大器：它让好的开发者更好，让�
 - [国内 AI 编程工具全景概览](/blog/cn-ai-coding-tools-overview/)
 - [AI 编程常见踩坑与经验教训](/blog/ai-coding-mistakes-to-avoid/)
 - [通义灵码深度体验报告：国内开发者的 AI 编程助手选择](/blog/cn-tongyi-lingma-deep-review/)
-
-如果你正在寻找稳定、低延迟地访问 Claude、GPT-4o 等顶尖 AI 编程模型的方式，[YoTradeApi](https://yotradeapi.com) 提供国内直连的 API 中转服务，让你的 AI 编程工作流不受网络限制。

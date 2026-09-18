@@ -90,5 +90,3 @@ query -> 权限/metadata 过滤 -> 向量或关键词召回 -> Top K 候选
 - [RAG Metadata Filter 设计：从字段选型到多租户隔离](/blog/rag-metadata-filter-design/)
 - [RAG Reranker 选型与评测：什么时候值得加一层重排](/blog/rag-reranker-selection/)
 - [RAG 文档版本与索引一致性](/blog/rag-document-versioning/)
-
-如果排查中需要对比不同模型在生成阶段的表现，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入方式，便于固定测试输入并进行多模型验证。

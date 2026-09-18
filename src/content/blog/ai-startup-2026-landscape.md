@@ -150,5 +150,3 @@ AI 编程工具是过去两年最热的赛道之一，也是第一个进入明�
 - [国内 LLM 中转市场概览](/blog/cn-llm-relay-market-overview/)
 - [AI 编程 Agent 成本控制实践](/blog/ai-coding-agent-cost-control/)
 - [向量数据库选型对比 2026](/blog/vector-db-comparison-2026/)
-
-关注 AI 创业方向的开发者，在技术选型时往往需要稳定调用多家模型进行对比评估——[YoTradeApi](https://yotradeapi.com) 提供 Claude、GPT-4、Gemini 等主流模型的统一接入，按量计费，适合探索阶段的低成本验证。

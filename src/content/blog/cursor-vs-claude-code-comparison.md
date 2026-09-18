@@ -165,5 +165,3 @@ Cursor 在 CI 里很难用。
 - [Claude Code Subagent 实战](/blog/claude-code-subagent-practice/)
 - [Claude Code Hooks 工作流](/blog/claude-code-hooks-workflow/)
 - [2026 AI 编程工具全景图](/blog/ai-coding-tools-2026-overview/)
-
-在 [YoTradeApi](https://yotradeapi.com) 创建一把 Key 同时接 Cursor 和 Claude Code，按工作流切。

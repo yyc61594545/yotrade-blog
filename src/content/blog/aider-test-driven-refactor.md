@@ -353,5 +353,3 @@ Aider 自动运行 `pytest`，确认全部测试通过后才结束。
 - [用 Aider 重构 5 年遗留 Python 项目的完整记录](/blog/legacy-python-refactor-with-aider/)
 - [AI 辅助测试自动化：真实案例与避坑总结](/blog/ai-test-automation-real-cases/)
 - [AI 代码重构的常见错误与防坑指南](/blog/ai-coding-mistakes-to-avoid/)
-
-想在国内稳定使用 Aider + Claude？[YoTradeApi](https://yotradeapi.com) 提供 Claude API 中转，支持 Aider 直接配置，人民币充值，告别访问限制。

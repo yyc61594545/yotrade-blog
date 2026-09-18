@@ -131,5 +131,3 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 - [Claude 系统提示词工程实战](/blog/claude-system-prompt-engineering/)
 - [AI 系统提示词库搭建指南](/blog/ai-system-prompt-library/)
 - [上下文压缩策略详解](/blog/context-compression-strategies/)
-
-想低成本对比不同模型在预热策略下的表现差异，可以通过 [YoTradeApi](https://yotradeapi.com) 一个接口调用 Claude、GPT、Gemini 等主流模型，方便做 A/B 测试。

@@ -312,5 +312,3 @@ OpenAI 和 Anthropic 都提供了批量 API，两者定位类似但细节有差�
 - [Prompt Caching 降低 API 成本实战](/blog/prompt-caching-cost-optimization/)
 - [AI Coding Agent 成本控制策略](/blog/ai-coding-agent-cost-control/)
 - [LLM 限流与重试最佳实践](/blog/llm-rate-limit-handling/)
-
-需要在中国大陆稳定访问 OpenAI Batch API？[YoTradeApi](https://yotradeapi.com) 提供全协议兼容的中转服务，支持 Files 和 Batches 端点，无需修改代码即可接入。

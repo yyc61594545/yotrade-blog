@@ -126,5 +126,3 @@ AI API 预算告警与自动熔断，看起来像财务控制，实质上更接�
 - [AI Agent 单会话成本监控实现：从零构建 Token 追踪系统](/blog/ai-agent-cost-monitoring/)
 - [AI Agent 降级与容错策略：生产级可靠性设计](/blog/ai-agent-fallback-design/)
 - [LLM Token 成本账本设计](/blog/llm-token-cost-ledger/)
-
-如果你要先把多家模型调用统一接到一个入口，再在上层挂预算、告警和熔断逻辑，[YoTradeApi](https://yotradeapi.com) 可以帮助你减少多供应商接入和计费口径不一致带来的工程复杂度。

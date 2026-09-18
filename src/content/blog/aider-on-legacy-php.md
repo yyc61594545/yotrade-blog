@@ -206,5 +206,3 @@ Aider 分析出：5 处是纯粹的隐式转换依赖（加个 `(int)` 强转即
 - [Aider Test-Driven 重构工作流](/blog/aider-test-driven-refactor/)
 - [Claude Code vs Aider 该怎么选](/blog/claude-code-vs-aider-comparison/)
 - [AI 重构遗留单体项目的模式总结](/blog/ai-refactor-legacy-monolith/)
-
-遗留项目重构往往需要跑大量长上下文的 diff 分析和多轮修复，[YoTradeApi](https://yotradeapi.com) 提供 Claude 全系模型稳定中转，按这篇文章的 yaml 配置直接接入即可开始。

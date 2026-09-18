@@ -151,5 +151,3 @@ for block in response.content:
 - [Claude 并行工具调用实践](/blog/parallel-tool-use-claude/)
 - [Prompt Caching 成本优化实战](/blog/prompt-caching-cost-optimization/)
 - [Function Calling vs Tool Use：概念辨析](/blog/function-calling-vs-tool-use/)
-
-高频工具调用的 Agent 应用对 API 稳定性和 beta 特性透传要求更高，[YoTradeApi](https://yotradeapi.com) 完整支持 Claude 的 beta header 透传，方便你直接验证这类优化特性的实际收益。

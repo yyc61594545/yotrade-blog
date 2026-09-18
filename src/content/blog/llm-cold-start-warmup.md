@@ -86,5 +86,3 @@ LLM 应用的请求链路比一般 Web 服务长,冷启动可能发生在链路�
 - [LLM P99 延迟横评](/blog/llm-p99-latency-comparison/)
 - [LLM 上下文工程方法论](/blog/llm-context-engineering/)
 - [国内访问延迟优化实战](/blog/cn-latency-optimization-practice/)
-
-如果你的应用需要稳定、低延迟地访问多家模型 API，[YoTradeApi](https://yotradeapi.com) 提供统一中转入口，省去自建多套连接池和预热逻辑的麻烦。

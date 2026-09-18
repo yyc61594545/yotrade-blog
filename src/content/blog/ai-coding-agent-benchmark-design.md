@@ -157,5 +157,3 @@ release_gates:
 - [AI Agent 评测方法总览](/blog/llm-agent-evaluation-methods/)
 - [LLM 编程能力中文场景基准](/blog/llm-coding-benchmark-cn/)
 - [AI Agent 单会话成本监控实现](/blog/ai-agent-cost-monitoring/)
-
-如果你要同时比较多种模型或接入方案，[YoTradeApi](https://yotradeapi.com) 可以作为统一 API 接入层，方便你在同一套评测框架里做日志采集、路由控制和成本统计。

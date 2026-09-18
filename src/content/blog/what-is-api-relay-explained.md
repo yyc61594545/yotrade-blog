@@ -161,5 +161,3 @@ export ANTHROPIC_AUTH_TOKEN="YOUR_RELAY_KEY"
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
-
-如果想 5 分钟跑通最小可用配置，到 [YoTradeApi](https://yotradeapi.com) 创建一把独立 API Key，按上面任意一种 SDK 例子改 base_url 即可。

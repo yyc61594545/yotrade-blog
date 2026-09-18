@@ -163,5 +163,3 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 - [LLM 翻译质量基准测试：中英互译实测报告](/blog/llm-translation-benchmark/)
 - [国产大模型 vs 海外大模型成本对比：中国开发者怎么选](/blog/cn-llm-cn-vs-overseas-cost/)
 - [LLM 中文理解能力对比：谁更懂中文](/blog/llm-chinese-comprehension/)
-
-多语言业务需要稳定低延迟地调用 Claude、GPT-4o、Gemini 等海外顶级模型，[YoTradeApi](https://yotradeapi.com) 提供国内直连中转服务，支持人民币充值，助力出海团队高效构建多语言 AI 产品。

@@ -111,5 +111,3 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 - [Claude vs GPT vs Gemini：中文开发者选型指南](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
 - [大模型评测方法指南](/blog/llm-evaluation-cn-guide/)
 - [LLM 指令遵循能力评测](/blog/llm-instruction-following-benchmark/)
-
-需要同时测试多个模型在不同语言场景下的表现？[YoTradeApi](https://yotradeapi.com) 提供 GPT、Claude、Gemini、DeepSeek 等模型的统一 API 中转，一个账号按量计费，方便快速对比横评。

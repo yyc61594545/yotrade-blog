@@ -181,5 +181,3 @@ create table pricing_snapshots (
 - [团队 LLM 预算分配实战](/blog/llm-team-budget-allocation/)
 - [AI API 预算上限自动化设计](/blog/ai-api-budget-cap-design/)
 - [LLM API 错误重试策略设计](/blog/llm-error-retry-strategy/)
-
-如果你要先把多模型调用统一接入再做自建账本，[YoTradeApi](https://yotradeapi.com) 可以作为统一 API 入口，便于在同一层挂接日志、预算和成本核算流程。

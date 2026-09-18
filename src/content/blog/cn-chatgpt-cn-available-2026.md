@@ -175,4 +175,4 @@ curl https://api.yotradeapi.com/v1/chat/completions \
 - [国内虚拟信用卡订阅 ChatGPT 指南](/blog/cn-virtual-card-for-chatgpt-2026/)
 - [百川大模型 API 开发者评测](/blog/cn-baichuan-developer-review/)
 
-国内开发者需要稳定接入 GPT-4o、Claude 或其他主流 AI 模型，[YoTradeApi](https://yotradeapi.com) 提供人民币结算的统一 API 中转，免去境外账单烦恼。
+如果你是离不开 ChatGPT 的重度用户、打算直接用官方 ChatGPT Pro，付款可以交给我们的[官方订阅代充](https://yotradeapi.com)，报价微信咨询。

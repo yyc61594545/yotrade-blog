@@ -144,5 +144,3 @@ OpenAI 官方之所以支持从根目录一路走到当前目录加载规则，�
 - [Claude Code vs Codex CLI 全面对比](/blog/claude-code-vs-codex-cli/)
 - [自定义 MCP Server 开发实战（Python + TypeScript）](/blog/mcp-custom-server-development/)
 - [Prompt 版本管理实战：从混乱到可追溯的工程化之路](/blog/ai-prompt-versioning/)
-
-如果你希望把 Codex、Claude Code、Cursor 等多种开发工具接到同一套模型入口里统一管理，[YoTradeApi](https://yotradeapi.com) 可以帮你减少不同协议和供应商切换时的接入成本。

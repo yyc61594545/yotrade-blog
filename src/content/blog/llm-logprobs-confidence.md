@@ -105,5 +105,3 @@ logprobs 只是众多不确定性信号之一，单独使用有局限，生产�
 - [LLM 评估方法完全指南：从指标到框架](/blog/llm-evaluation-cn-guide/)
 - [LLM 可观测性：Langfuse 完整接入教程](/blog/llm-observability-langfuse/)
 - [AI Agent 错误恢复机制设计](/blog/ai-agent-error-recovery/)
-
-想在生产环境稳定拿到 logprobs 数据做置信度校准，[YoTradeApi](https://yotradeapi.com) 提供兼容 OpenAI 格式的 API 中转服务，完整支持 logprobs 参数。

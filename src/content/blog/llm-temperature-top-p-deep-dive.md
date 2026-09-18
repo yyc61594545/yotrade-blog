@@ -238,5 +238,3 @@ SQL 通常有标准答案，直接用贪心解码（T=0），最稳定。
 - [LLM 响应格式控制指南](/blog/llm-response-format-cn-guide/)
 - [Claude Extended Thinking 使用指南](/blog/claude-extended-thinking-guide/)
 - [LLM 延迟优化实战](/blog/llm-latency-optimization/)
-
-想在自己的项目中稳定调用 Claude、GPT-4、Gemini 并灵活控制采样参数？[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容接口，支持所有主流模型的完整参数透传，开箱即用。

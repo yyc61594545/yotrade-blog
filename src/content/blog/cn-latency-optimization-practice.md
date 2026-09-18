@@ -93,5 +93,3 @@ curl -o /dev/null -s -w "dns:%{time_namelookup} tcp:%{time_connect} tls:%{time_a
 - [Claude Code 在国内网络的实战配置](/blog/claude-code-on-cn-network/)
 - [降低 LLM 延迟的 10 种实战方法](/blog/llm-latency-optimization/)
 - [什么是 AI API 中转？为什么国内开发者需要它](/blog/what-is-api-relay-explained/)
-
-如果诊断下来延迟大头确实在国际出口链路上，与其自己折腾 BGP 线路和证书链，不如直接测一下 [YoTradeApi](https://yotradeapi.com) 的国内多线接入节点，通常几分钟就能看到实测数据是否符合预期。

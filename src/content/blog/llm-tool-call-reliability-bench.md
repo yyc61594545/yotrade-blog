@@ -134,5 +134,3 @@ def score_tool_call(response, expected_schema):
 - [LLM Agent 评估方法论](/blog/llm-agent-evaluation-methods/)
 - [Agent 执行轨迹评分实践](/blog/agent-eval-trajectory-scoring/)
 - [AI Agent 容错与降级设计](/blog/ai-agent-fallback-design/)
-
-如果你需要稳定调用 Claude、GPT-5、Gemini 做这类跨模型对比评测，[YoTradeApi](https://yotradeapi.com) 提供统一中转接口，一个 API Key 即可切换测试不同模型，省去多头开户配置的麻烦。

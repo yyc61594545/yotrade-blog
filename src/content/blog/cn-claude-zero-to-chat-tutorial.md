@@ -116,5 +116,3 @@ print(response.choices[0].message.content)
 - [OpenAI 兼容协议 vs Anthropic 原生协议](/blog/openai-compatible-vs-anthropic-protocol/)
 - [每月 150 元预算怎么用好 AI 工具](/blog/cn-ai-tool-budget-150-rmb/)
 - [Claude Code 入门指南](/blog/claude-code-getting-started/)
-
-不想折腾海外手机号和信用卡，[YoTradeApi](https://yotradeapi.com) 支持人民币充值，5 分钟拿到 Key 直接开始和 Claude 聊天。

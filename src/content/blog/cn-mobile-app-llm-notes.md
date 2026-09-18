@@ -110,5 +110,3 @@ AI 功能上线建议走灰度:先对小比例用户开放,观察真实流量下
 - [API 中转安全合规要点](/blog/api-relay-security-compliance/)
 - [LLM 应用部署检查清单](/blog/llm-app-deployment-checklist/)
 - [LLM 应用负载测试实践](/blog/llm-app-load-testing/)
-
-把密钥和网络可达性这两个最容易踩坑的环节交给可靠的中转层,团队才能把精力放在产品体验和审核合规上,[YoTradeApi](https://yotradeapi.com) 提供国内可直连的 API 中转,免去自建海外转发节点的运维负担。

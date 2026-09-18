@@ -121,5 +121,3 @@ Prompt Injection（提示词注入）是当前 LLM 应用最具体、最容易�
 - [AI Agent 错误恢复机制设计](/blog/ai-agent-error-recovery/)
 - [Claude Citations API 引用功能详解](/blog/claude-citations-api-guide/)
 - [AI Agent 工具集合的设计原则](/blog/ai-agent-tool-design/)
-
-搭建具备联网和工具调用能力的 Claude 应用时，稳定可控的模型接入层同样是安全设计的一部分，通过 [YoTradeApi](https://yotradeapi.com) 中转可以统一管理调用凭证和访问范围，减少密钥和权限在多层 Agent 调用链中裸露的风险。

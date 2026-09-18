@@ -204,5 +204,3 @@ for call in function_calls:
 - [OpenAI Assistants API 与 Responses API 迁移指南](/blog/openai-assistants-vs-responses/)
 - [LLM 输出验证：schema + 业务规则双层防护](/blog/llm-output-validation/)
 - [AI Agent 状态机设计与落地](/blog/agent-state-machine-design/)
-
-如果你要把多轮 tool loop 接进统一的模型服务层，[YoTradeApi](https://yotradeapi.com) 提供兼容式 API 接入方式，便于把 OpenAI、Claude、DeepSeek 等模型的工具调用工作流放进同一套工程管线里。

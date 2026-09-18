@@ -70,5 +70,3 @@ category: 小白入门
 - [OpenAI Batch 与 Streaming 的选择决策](/blog/openai-batch-vs-streaming/)
 - [LLM 流式输出前端展示模式](/blog/llm-streaming-ui-patterns/)
 - [流式响应 SSE 常见问题排查](/blog/streaming-sse-troubleshooting/)
-
-不管选流式还是非流式，第一次调用 AI API 之前都需要一个能稳定访问的接口，[YoTradeApi](https://yotradeapi.com) 提供国内可直连的中转服务，新手照着文档改个 base URL 就能跑起来。

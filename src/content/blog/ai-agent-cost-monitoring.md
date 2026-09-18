@@ -385,5 +385,3 @@ print(f"工具 Schema 占用约 {tools_token_cost} tokens/次调用")
 - [LLM 输出截断省钱实战：max_tokens 精细化控制指南](/blog/llm-output-truncation-savings/)
 - [LLM 成本优化完整检查清单](/blog/llm-cost-optimization-checklist/)
 - [AI 编程 Agent 月均成本真实测算](/blog/ai-coding-monthly-cost-real/)
-
-想统一管理多个 Agent 的 API 账单并自动获得用量折扣，[YoTradeApi](https://yotradeapi.com) 提供完善的用量统计面板，支持 Claude、GPT、混元等主流模型，一个平台搞定所有账单。

@@ -107,5 +107,3 @@ def flush_batch(queue, embed_batch_fn, batch_size=100):
 - [Embedding 维度、速度与成本取舍](/blog/embedding-dimension-tradeoff/)
 - [向量数据库对比 2026](/blog/vector-db-comparison-2026/)
 - [LLM 成本优化 30 条 checklist](/blog/llm-cost-optimization-checklist/)
-
-批量调用多家 Embedding 模型做效果对比时，用 [YoTradeApi](https://yotradeapi.com) 一个中转账号统一接入，不用为每个供应商单独开户和管理密钥。

@@ -183,5 +183,3 @@ class GeminiClient:
 - [国内 LLM 中转市场概览](/blog/cn-llm-relay-market-overview/)
 - [API 中转安全合规指南](/blog/api-relay-security-compliance/)
 - [Claude vs GPT vs Gemini：中文开发者选型指南](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
-
-如果你需要快速接入 Gemini API，[YoTradeApi](https://yotradeapi.com) 支持 Gemini 全系列模型，支付宝/微信即可开通，无需信用卡和 GCP 账号。

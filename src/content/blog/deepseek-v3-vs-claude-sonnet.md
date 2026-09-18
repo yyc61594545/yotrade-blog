@@ -198,5 +198,3 @@ DeepSeek 的输出速度略快，首 token 延迟也更低，适合对速度敏�
 - [LLM 成本优化实战 Checklist](/blog/llm-cost-optimization-checklist/)
 - [Claude Haiku 4.5 评测：轻量模型的边界](/blog/claude-haiku-4-5-evaluation/)
 - [LLM 评测黄金集构建方法](/blog/llm-eval-golden-set/)
-
-如果你想同时接入 DeepSeek 和 Claude 实现按任务类型混用，[YoTradeApi](https://yotradeapi.com) 提供两个模型的统一中转入口，支持 OpenAI 兼容格式，一行代码切换。

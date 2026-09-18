@@ -147,5 +147,3 @@ Cherry Studio 内置 MCP 支持。设置 → MCP 服务器 → 添加：
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [Cline 国内 API 配置详解](/blog/cline-cn-api-setup/)
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
-
-需要支持 Claude / GPT / Gemini / Grok 全家桶的中转？在 [YoTradeApi 注册](https://yotradeapi.com) 用一把 Key 接所有模型，按上面 base_url 直接接入 Cherry Studio。

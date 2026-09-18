@@ -101,5 +101,3 @@ Cursor 的权限设计整体偏"人工在环"(human-in-the-loop),即使是自动
 - [Claude Code Hooks 工作流:8 种钩子的实战用法](/blog/claude-code-hooks-workflow/)
 - [Claude Code vs Codex CLI 全面对比](/blog/claude-code-vs-codex-cli/)
 - [Cursor Background Agent 配置实录](/blog/cursor-background-agent-config/)
-
-不管选哪套权限模式,底层模型 API 的稳定接入都是前提,通过 [YoTradeApi](https://yotradeapi.com) 中转可以统一管理多模型调用凭证,减少密钥在不同工具、不同权限层之间裸传的风险。

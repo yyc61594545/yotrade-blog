@@ -116,5 +116,3 @@ Batch vs Streaming 不是"哪个更好"的问题，而是"这个具体任务的�
 - [AI API 流式输出（SSE）故障排查与最佳实践](/blog/streaming-sse-troubleshooting/)
 - [Claude Message Batches 50% 折扣实战](/blog/claude-message-batches-savings/)
 - [Python 异步并发调用 LLM API 实战](/blog/python-async-llm-client/)
-
-如果你的产品需要同时接入 OpenAI、Claude 等多家模型并灵活切换 Batch/Streaming 模式，用 [YoTradeApi](https://yotradeapi.com) 中转可以统一账单、避免为每家单独处理限流和重试逻辑。

@@ -243,5 +243,3 @@ Gemini 3 Pro 在一次完整分析中发现了两处跨服务的竞态条件，�
 - [Gemini 3 Pro 多模态能力评测：图像、视频、音频综合实测](/blog/gemini-3-pro-multimodal/)
 - [LLM 编程 Benchmark 解读：国内开发者视角](/blog/llm-coding-benchmark-cn/)
 - [AI 编程工具选型：后端开发者视角](/blog/ai-coding-for-backend-dev/)
-
-需要一个 Key 同时接入 GPT-5 和 Gemini 3 Pro 做横向对比？[YoTradeApi](https://yotradeapi.com) 支持多家模型统一接入，人民币充值，免去注册多个海外账号的麻烦。

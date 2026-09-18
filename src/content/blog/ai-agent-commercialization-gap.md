@@ -141,5 +141,3 @@ Agent 的另一个商业化障碍是**可解释性缺失**带来的信任赤字�
 - [Agent Prompt 工程：从任务拆解到错误处理的完整框架](/blog/agent-prompt-engineering-cn/)
 - [AI 编码 Agent 成本控制：Token 预算与效率优化](/blog/ai-coding-agent-cost-control/)
 - [LLM Agent 评估方法：如何量化 Agent 的任务完成质量](/blog/llm-agent-evaluation-methods/)
-
-构建 AI Agent 需要稳定的 API 基础设施，[YoTradeApi](https://yotradeapi.com) 提供支持 Claude、GPT-4、Gemini 等多家模型的中转服务，国内网络稳定访问，适合 Agent 的高频 API 调用场景。

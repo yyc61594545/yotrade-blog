@@ -264,5 +264,3 @@ Schema:
 - [AI Agent 降级与容错策略](/blog/ai-agent-fallback-design/)
 - [AI 辅助重构遗留系统](/blog/ai-refactor-legacy-monolith/)
 - [AI Coding Agent 成本控制实战](/blog/ai-coding-agent-cost-control/)
-
-想要批量调用 Claude 生成测试文件，[YoTradeApi](https://yotradeapi.com) 提供国内可直连的 Claude API 中转，支持 Batch API 大批量处理，适合团队规模化测试自动化项目。

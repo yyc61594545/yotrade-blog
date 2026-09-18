@@ -104,5 +104,3 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 - [多模型供应商故障演练](/blog/llm-provider-outage-drill/)
 - [AI Agent 降级与容错策略：生产级可靠性设计](/blog/ai-agent-fallback-design/)
 - [OpenAI、Anthropic、Gemini 工具 Schema 兼容层设计](/blog/llm-tool-schema-portability/)
-
-如果你不想自己维护跨厂商的会话格式转换和健康检查这套基础设施，[YoTradeApi](https://yotradeapi.com) 提供统一网关和内置故障切换能力，可以把这部分落地成本直接省掉。

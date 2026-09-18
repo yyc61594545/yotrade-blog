@@ -170,5 +170,3 @@ Realtime API 按音频输入/输出时长和文本 token 双重计费，通常�
 - [LLM 批处理 vs 实时推理成本对比](/blog/llm-batch-vs-realtime-cost/)
 - [AI API 中转 vs 自建 VPN：成本与稳定性对比](/blog/ai-api-relay-vs-self-vpn/)
 - [AI API 中转稳定性实测报告](/blog/ai-api-relay-stability-test/)
-
-想在国内稳定接入 Realtime API？[YoTradeApi](https://yotradeapi.com) 支持 WebSocket 长连接中转，为语音交互场景做了专门的连接稳定性优化，支付宝充值即可使用。

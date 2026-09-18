@@ -222,5 +222,3 @@ URL 传输比 base64 高效，前提是图片公网可访问。
 - [Gemini API 国内调用指南](/blog/gemini-api-cn-guide/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [Python 异步并发调用 LLM API 实战](/blog/python-async-llm-client/)
-
-需要一把 Key 调三家视觉模型？[YoTradeApi](https://yotradeapi.com) 兼容 OpenAI 协议同时支持 Gemini 原生 generateContent。

@@ -202,5 +202,3 @@ API 中转服务代替你向 Anthropic 付款，你只需要用人民币（支�
 - [国内 AI 工具付款完整指南](/blog/cn-ai-tools-payment-guide/)
 - [国内 LLM 中转服务市场全景](/blog/cn-llm-relay-market-overview/)
 - [Anthropic Console 直连 vs 中转 API 全面对比](/blog/anthropic-console-key-vs-relay/)
-
-如果你不想折腾信用卡，[YoTradeApi](https://yotradeapi.com) 支持支付宝充值、人民币计费，拿到 Key 后直接兼容 Anthropic SDK 格式，一分钟跑通第一个 Claude 调用。

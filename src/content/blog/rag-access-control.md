@@ -120,5 +120,3 @@ Agent 还能调用“读取完整文件”“搜索工单”等工具。每个�
 - [RAG 文档版本与索引一致性](/blog/rag-document-versioning/)
 - [RAG 系统评测框架搭建实战](/blog/ai-rag-evaluation-framework/)
 - [AI Agent 权限设计](/blog/ai-agent-permission-design/)
-
-如果你的 RAG 需要为检索、重排和生成分别配置模型，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入入口，便于集中维护调用配置与审计记录。

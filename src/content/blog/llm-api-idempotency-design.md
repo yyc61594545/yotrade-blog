@@ -106,5 +106,3 @@ ON CONFLICT DO NOTHING;
 - [AI 任务重试队列设计](/blog/ai-task-retry-queue/)
 - [Agent Saga 补偿事务设计](/blog/agent-saga-compensation/)
 - [OpenAI Webhook 签名验证实战](/blog/openai-webhook-signature-verification/)
-
-如果你需要用统一接口接入多种主流模型并集中管理调用链路，[YoTradeApi](https://yotradeapi.com) 可提供兼容的 API 接入能力，便于在应用侧落实幂等键、重试和观测策略。

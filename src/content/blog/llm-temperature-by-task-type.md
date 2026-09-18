@@ -71,5 +71,3 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 - [LLM 输出验证：如何保证结构化输出可靠](/blog/llm-output-validation/)
 - [LLM 上下文工程实践指南](/blog/llm-context-engineering/)
 - [LLM 指令遵循能力基准测试](/blog/llm-instruction-following-benchmark/)
-
-不同任务切换不同模型和参数配置时，通过 [YoTradeApi](https://yotradeapi.com) 一个统一的 API 入口即可调用 Claude、GPT、Gemini 等模型，不用为每家单独维护密钥和计费。

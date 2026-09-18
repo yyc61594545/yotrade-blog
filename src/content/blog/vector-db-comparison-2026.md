@@ -281,5 +281,3 @@ results = index.query(vector=query_emb, top_k=5)
 - [Embeddings API 国内对比](/blog/embeddings-api-cn-comparison/)
 - [LlamaIndex 中文 RAG 完整教程](/blog/llamaindex-cn-rag-tutorial/)
 - [LangChain 中文实战](/blog/langchain-cn-tutorial/)
-
-向量库选好后，embedding 接 [YoTradeApi](https://yotradeapi.com) 中转，一把 Key 跑 text-embedding-3-large / voyage / 国产 embedding。

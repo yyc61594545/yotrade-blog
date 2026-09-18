@@ -270,5 +270,3 @@ print(f"关键点: {result.key_points}")
 - [LLM 函数调用并行执行实战](/blog/llm-function-calling-parallel/)
 - [结构化输出 LLM 完全指南](/blog/structured-output-llm-guide/)
 - [LLM 摘要质量横评：六大模型实测](/blog/llm-summarization-quality/)
-
-调用 OpenAI API 时若遇到网络问题，[YoTradeApi](https://yotradeapi.com) 提供稳定的中转接入，完整支持 Structured Outputs 与 Function Calling，OpenAI SDK 无缝切换。

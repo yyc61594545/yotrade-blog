@@ -189,5 +189,3 @@ for chunk in response:
 - [DeepSeek V3 vs Claude Sonnet 4.6 深度实测](/blog/deepseek-v3-vs-claude-sonnet/)
 - [DeepSeek vs Claude 综合能力对比](/blog/deepseek-vs-claude-comparison/)
 - [国内 DeepSeek Coder 深度评测](/blog/cn-deepseek-coder-deep-review/)
-
-需要同时接入 DeepSeek R1 和 Claude Thinking 两个推理模型，[YoTradeApi](https://yotradeapi.com) 支持统一 Endpoint 调用，省去多账号管理的麻烦。

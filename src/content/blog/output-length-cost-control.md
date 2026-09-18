@@ -94,5 +94,3 @@ def measure_output_savings(client, model, tasks, variant_prompts):
 - [LLM stop token 设计完全指南](/blog/llm-stop-token-cn-guide/)
 - [模型分级成本策略](/blog/model-tiering-cost-strategy/)
 - [Prompt Caching 成本优化实战](/blog/prompt-caching-cost-optimization/)
-
-输出长度控制能省下的是"用量层面"的钱，选对中转通道能再省"单价层面"的钱，[YoTradeApi](https://yotradeapi.com) 提供透明的按量计费和用量看板，两层优化叠加效果更明显。

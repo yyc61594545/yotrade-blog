@@ -256,5 +256,3 @@ client.chat.completions.create(
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
-
-需要一把 Key 同时调 Gemini、Claude、GPT、Grok？在 [YoTradeApi 注册](https://yotradeapi.com) 创建 API Key 即可。

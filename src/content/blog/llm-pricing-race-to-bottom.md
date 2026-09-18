@@ -84,5 +84,3 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 - [多模型成本路由实践](/blog/multi-model-cost-routing/)
 - [LLM 成本优化清单](/blog/llm-cost-optimization-checklist/)
 - [国内外 LLM 调用成本对比](/blog/cn-llm-cn-vs-overseas-cost/)
-
-如果需要在多个模型厂商之间灵活比价、按场景路由调用，通过 [YoTradeApi](https://yotradeapi.com) 可以用统一接口接入主流模型，价格变化时无需改代码即可切换。

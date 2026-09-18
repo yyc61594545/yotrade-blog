@@ -183,5 +183,3 @@ LLM 的中文能力不是一个单一指标，而是多个维度的综合表现�
 - [DeepSeek V3 与 Claude Sonnet 横向对比](/blog/deepseek-v3-vs-claude-sonnet/)
 - [LLM 翻译能力横向测评：中英互译哪家强](/blog/llm-translation-benchmark/)
 - [大模型排行榜怎么看：国内开发者指南](/blog/llm-leaderboard-cn-developer/)
-
-如果你需要在项目中同时调用 Claude、Qwen、DeepSeek 等不同来源的模型做 A/B 测试，[YoTradeApi](https://yotradeapi.com) 提供统一格式的多模型接入，一套代码切换不同模型，非常适合做选型对比实验。

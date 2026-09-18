@@ -96,4 +96,4 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 - [没有海外手机号怎么注册 ChatGPT（2026 实测方案）](/blog/cn-chatgpt-register-without-foreign-phone/)
 - [ChatGPT 国内第一次使用完整教程（2026 最新）](/blog/cn-chatgpt-first-time-cn-guide/)
 
-如果你的核心需求是把 ChatGPT/Claude 等模型能力接入自己的产品或工作流，而不是单纯要一个能登录的网页账号，[YoTradeApi](https://yotradeapi.com) 提供按官方规则透明计费的 API 中转服务，省去代充和账号被回收的反复折腾。
+需要说明的是，我们的[官方订阅代充](https://yotradeapi.com)不做 ChatGPT Plus，只做 ChatGPT Pro、Claude Max 5x / 20x、Claude Pro 年付和 Claude Team 席位这类重度套餐，报价微信咨询。

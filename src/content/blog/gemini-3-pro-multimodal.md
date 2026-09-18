@@ -210,5 +210,3 @@ response = model.generate_content(
 - [Whisper 中文语音识别：国内部署与 API 调用指南](/blog/whisper-cn-stt-guide/)
 - [GPT-5 vs Claude Opus 4.7 编程能力对比实测](/blog/gpt-5-vs-claude-opus-4-7-coding/)
 - [LLM Vision Token 成本计算：图像输入定价详解](/blog/llm-vision-token-cost/)
-
-需要在国内访问 Claude 或 Gemini API？[YoTradeApi](https://yotradeapi.com) 同时支持 Claude 和 Gemini 系列模型的中转，统一 API Key 管理多家模型，按量付费。

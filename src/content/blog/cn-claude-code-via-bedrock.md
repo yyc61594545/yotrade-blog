@@ -241,5 +241,3 @@ Bedrock 按实际 token 消耗计费，与 Anthropic 直连价格基本持平，
 - [Claude Code 真实生产任务实践：10 个场景复盘](/blog/claude-code-real-world-tasks/)
 - [Claude Code Hooks 工作流：自定义自动化场景](/blog/claude-code-hooks-workflow/)
 - [Claude Code 子 Agent 实践：复杂任务分解策略](/blog/claude-code-subagent-practice/)
-
-如果 AWS 注册或付款存在障碍，[YoTradeApi](https://yotradeapi.com) 提供开箱即用的 Claude API 中转，支持国内支付，可作为快速上手 Claude Code 的替代方案。

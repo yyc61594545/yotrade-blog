@@ -174,5 +174,3 @@ def handle(resp):
 - [LLM JSON 模式横向对比](/blog/llm-json-mode-comparison/)
 - [LLM 输出校验实践](/blog/llm-output-validation/)
 - [finish_reason 的正确处理方式](/blog/llm-finish-reason-handling/)
-
-不同厂商对 strict 模式的支持程度和 Schema 限制各不相同，做横向验证时换一家就要重配一次环境，[YoTradeApi](https://yotradeapi.com) 用同一套接口接入多家模型，方便你在一份代码里把边界测清楚，套餐报价微信咨询。

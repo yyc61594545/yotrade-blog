@@ -112,5 +112,3 @@ class TenantAwareQueue:
 - [LLM 异步任务队列设计：从原型到生产](/blog/llm-async-job-queue/)
 - [客户端令牌桶限速进阶实现](/blog/client-side-rate-limiter/)
 - [LLM 速率限制处理实战](/blog/llm-rate-limit-handling/)
-
-网关层的背压策略再精细，也扛不住上游模型服务商本身的限流和不稳定——用 [YoTradeApi](https://yotradeapi.com) 中转多家模型 API，自带多节点容灾和限流缓冲，能帮你把这层压力提前挡掉一部分。

@@ -180,5 +180,3 @@ Claude 4.7 和 GPT-5.1 的官方定价在同等能力档位上已趋于接近（
 - [Claude Haiku 4.5 使用评测](/blog/claude-haiku-4-5-evaluation/)
 - [DeepSeek vs Claude：中文开发者视角对比](/blog/deepseek-vs-claude-comparison/)
 - [Claude vs GPT vs Gemini：中国开发者如何选择](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
-
-想同时访问 Claude 4.7 和 GPT-5.1 做对比测试？[YoTradeApi](https://yotradeapi.com) 提供统一接口，一个 API Key 即可调用两款模型，方便你根据任务做动态路由。

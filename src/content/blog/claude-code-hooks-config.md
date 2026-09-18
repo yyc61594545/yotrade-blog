@@ -138,5 +138,3 @@ exit 0
 - [Claude Code 镜像国内配置完整指南](/blog/claude-code-mirror-cn-setup/)
 - [Claude Code Subagent 实战](/blog/claude-code-subagent-practice/)
 - [AI API 支出的发票与报销：国内团队怎么把账做平](/blog/cn-invoice-reimbursement/)
-
-给团队里每个人的 Claude Code 配一个独立 API Key，方便按 hook 场景拆分调用统计和成本归因，[YoTradeApi](https://yotradeapi.com) 后台可以一键生成独立子账号 Key。

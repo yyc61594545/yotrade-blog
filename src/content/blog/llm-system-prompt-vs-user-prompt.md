@@ -264,5 +264,3 @@ System prompt 的内容本身是可以被模型在回复中泄露的（如果你
 - [Prompt Caching 降本实战：Claude API 费用减半指南](/blog/prompt-caching-cost-optimization/)
 - [LLM Context Engineering 全攻略](/blog/llm-context-engineering/)
 - [Claude Tool Use 最佳实践](/blog/claude-tool-use-best-practices/)
-
-想在自己的应用里稳定调用 Claude、GPT-4o 等模型而不担心网络波动？[YoTradeApi](https://yotradeapi.com) 提供高可用的 API 中转服务，让你专注于 prompt 设计而非基础设施维护。

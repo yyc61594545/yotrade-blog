@@ -373,5 +373,3 @@ def get_or_upload(client, file_path: str) -> str:
 - [LLM 速率限制处理实战](/blog/llm-rate-limit-handling/)
 - [OpenAI File Search vs RAG：如何选型](/blog/openai-file-search-vs-rag/)
 - [Anthropic Console Key 与 API 中转对比](/blog/anthropic-console-key-vs-relay/)
-
-如果你在国内使用 Files API 遇到连接问题，[YoTradeApi](https://yotradeapi.com) 提供稳定的 Anthropic 原生协议中转，支持 Files API 全部端点，无需修改业务代码。

@@ -188,5 +188,3 @@ Business 版最实用但常被忽略的功能是**团队 .cursorrules 共享**�
 - [Cursor 各档位性价比深度对比：Free/Pro/Business 怎么选](/blog/cursor-tier-comparison/)
 - [Claude Code vs Cursor：成本与使用场景深度对比](/blog/claude-code-vs-cursor-cost/)
 - [国内开发者 AI API 中转服务选型指南](/blog/ai-api-relay-vs-self-vpn/)
-
-国内团队要把 Cursor Business 真正用顺，付款、网络、席位管理三关都得过，[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转端点，可配合 Cursor 自定义模型设置使用，帮助团队绕开网络限制、灵活控制模型选择。

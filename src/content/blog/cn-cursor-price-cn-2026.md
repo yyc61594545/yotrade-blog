@@ -97,5 +97,3 @@ Model: 按需要选择接入的模型名称
 - [用 Aider 重构遗留 PHP 项目的实战记录](/blog/aider-on-legacy-php/)
 - [Claude Code vs Cursor 成本对比](/blog/claude-code-vs-cursor-cost/)
 - [Cursor Business 企业账号怎么开通](/blog/cn-cursor-business-account/)
-
-如果你已经在多个 AI 编程工具间来回切换、不想为每个工具单独订阅，[YoTradeApi](https://yotradeapi.com) 提供统一的模型中转接入，一个 Key 按上面步骤配置即可接入 Cursor 自定义模型。

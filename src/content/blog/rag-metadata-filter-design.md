@@ -131,4 +131,4 @@ LIMIT 10;
 - [RAG Reranker 选型与评测](/blog/rag-reranker-selection/)
 - [2026 向量数据库对比：Chroma/Qdrant/Milvus/pgvector](/blog/vector-db-comparison-2026/)
 
-Metadata Filter 设计好了,检索的正确性边界才算真正立住,后续调 Hybrid Search 权重或加 Reranker 才有意义。如果你的 RAG 系统需要稳定调用 OpenAI/Claude 做 embedding 或生成,可以试试 [YoTradeApi](https://yotradeapi.com),按量计费,国内直连不用处理网络问题。
+Metadata Filter 设计好了,检索的正确性边界才算真正立住,后续调 Hybrid Search 权重或加 Reranker 才有意义。

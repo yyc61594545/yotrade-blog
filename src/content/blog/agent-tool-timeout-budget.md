@@ -103,5 +103,3 @@ def run_agent_task(user_query, tools, total_budget_seconds=60):
 - [Anthropic Messages 流式中断恢复实战](/blog/anthropic-message-stream-recovery/)
 - [Claude Tool Use 与流式响应结合实践](/blog/claude-tool-use-with-streaming/)
 - [AI API 预算封顶设计](/blog/ai-api-budget-cap-design/)
-
-如果你的 Agent 应用在国内网络下经常因为链路延迟触发超时，先排查是不是中转环节的问题——[YoTradeApi](https://yotradeapi.com) 提供低延迟稳定连接，减少因网络本身导致的超时误判。

@@ -251,5 +251,3 @@ def send_email(
 - [并行工具调用：Claude 多工具协同实战](/blog/parallel-tool-use-claude/)
 - [MCP 自定义 Server 开发指南](/blog/mcp-custom-server-development/)
 - [OpenAI Batch API 节省 50% 成本实战](/blog/openai-batch-api-cn-guide/)
-
-构建 Agent 应用需要稳定的 API 调用环境，[YoTradeApi](https://yotradeapi.com) 提供高可用的 Claude 和 GPT 中转服务，支持 Tool Use 和 Function Calling 全部特性。

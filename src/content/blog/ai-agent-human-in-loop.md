@@ -143,5 +143,3 @@ HITL 不是免费的——每一次人工介入都是延迟和认知负担。滥
 - [AI Agent 权限设计实践](/blog/ai-agent-permission-design/)
 - [AI Agent 回滚策略](/blog/ai-agent-rollback-strategy/)
 - [AI Agent 可观测性设计](/blog/ai-agent-observability-design/)
-
-搭建 HITL 系统离不开稳定的模型调用能力，无论是审批网关里的置信度评分，还是暂停恢复时的重新推理，都需要低延迟、高可用的 API 支持，可以了解 [YoTradeApi](https://yotradeapi.com)，为开发者提供稳定的 AI API 中转服务。

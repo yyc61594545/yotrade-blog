@@ -181,5 +181,3 @@ Background Agent 默认会自适应重试，但持续 429 会让任务卡住。�
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
-
-需要给 Background Agent 配置一个稳定的 base_url？在 [YoTradeApi 注册](https://yotradeapi.com) 创建独立 API Key，单独设日预算上限，按上面配置接入。

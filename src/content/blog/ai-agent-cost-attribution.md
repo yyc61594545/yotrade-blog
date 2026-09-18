@@ -199,5 +199,3 @@ order by day desc, total_cost_usd desc;
 - [团队 LLM 预算分配实战](/blog/llm-team-budget-allocation/)
 - [AI API 预算上限自动化设计](/blog/ai-api-budget-cap-design/)
 - [多模型成本智能路由方案](/blog/multi-model-cost-routing/)
-
-如果你想先把多模型接入层统一起来，[YoTradeApi](https://yotradeapi.com) 可以作为 API 接入入口，方便你在自己的系统里继续做成本归因、限额和日志治理。

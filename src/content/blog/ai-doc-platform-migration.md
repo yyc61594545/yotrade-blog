@@ -272,5 +272,3 @@ markdownify 处理复杂表格时，有时会把表头行重复输出两次。�
 - [百川大模型 API 开发者评测](/blog/cn-baichuan-developer-review/)
 - [AI 编码工具成本管理](/blog/ai-coding-monthly-cost-real/)
 - [LLM 在 SEO 内容工作流中的应用](/blog/ai-content-seo-workflow/)
-
-批量调用 AI API 做文档处理时，[YoTradeApi](https://yotradeapi.com) 支持多模型统一接入，按需切换 GPT-4o-mini 与 Claude Haiku，人民币账单，适合国内团队的批量自动化任务。

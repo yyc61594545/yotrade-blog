@@ -327,5 +327,3 @@ console.log('stop_reason:', message.stop_reason);    // Anthropic
 - [LLM 响应格式控制：JSON Mode、结构化输出与解析](/blog/llm-response-format-cn-guide/)
 - [AI API 中转错误码速查：常见错误原因与修复](/blog/ai-api-relay-error-codes/)
 - [LLM 异步任务队列设计：从原型到生产](/blog/llm-async-job-queue/)
-
-使用中转服务时，各家的 `finish_reason` 会被中转层统一暴露，[YoTradeApi](https://yotradeapi.com) 完整透传原始字段，不会丢失排查问题所需的元数据。

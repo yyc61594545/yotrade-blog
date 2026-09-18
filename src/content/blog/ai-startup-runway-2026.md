@@ -90,5 +90,3 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 - [AI 编程创业公司 MVP 一周冲刺](/blog/ai-coding-startup-mvp-week/)
 - [AI Agent 成本监控实践](/blog/ai-agent-cost-monitoring/)
 - [AI 编码 Agent 成本控制](/blog/ai-coding-agent-cost-control/)
-
-对于正在精打细算算力成本的创业团队，选择一个支持多模型、按量计费透明的 API 中转服务是延长跑道的低成本手段之一，可以了解 [YoTradeApi](https://yotradeapi.com)，帮助团队更灵活地控制模型调用支出。

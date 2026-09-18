@@ -149,5 +149,3 @@ def rewrite_with_fallback(q, history, timeout=1.5):
 - [RAG 质量问题排查路径](/blog/rag-quality-debugging-path/)
 - [LLM 评测黄金集建设](/blog/llm-eval-golden-set/)
 - [混合检索调参实践](/blog/rag-hybrid-search-tuning/)
-
-跑对照评测要反复调用模型，稳定低价的接入能让实验成本不成为阻力，[YoTradeApi](https://yotradeapi.com) 统一入口支持多家模型切换，方便你在同一套评测脚本里横向比较，套餐报价微信咨询。

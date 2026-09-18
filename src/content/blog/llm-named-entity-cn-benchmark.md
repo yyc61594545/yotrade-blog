@@ -205,5 +205,3 @@ NER 只是 LLM 中文能力评测的一个切面。如果你对 LLM 在其他中
 - [LLM 中文综合理解能力对比](/blog/llm-chinese-comprehension/)
 - [LLM 评估方法论：从 Golden Set 到自动评测](/blog/llm-evaluation-cn-guide/)
 - [LLM Eval Golden Set 建设指南](/blog/llm-eval-golden-set/)
-
-需要低成本调用 GPT-4o、Claude、Qwen 等模型进行 NER 任务评测？[YoTradeApi](https://yotradeapi.com) 提供全模型按量中转，单价与官方一致，无需境外支付。
