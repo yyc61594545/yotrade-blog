@@ -35,11 +35,18 @@ adaptations:
 ## Topic pool
 
 `scripts/pick-next-topic.py` is the source of truth for selection and
-deduplication. If fewer than 30 unpublished topics remain, add at least 60
-new candidates to `scripts/topic-pool.md` before publishing. New candidates
-must use unique slugs, existing categories, and topics that fit YoTradeApi's
-developer/API audience. Research unstable product, pricing, policy, or model
-claims from primary sources before writing.
+deduplication. It only picks `cn-` slugs, and sections whose heading contains
+【优先】 go first. If fewer than 30 unpublished `cn-` topics remain, add at least
+60 new `cn-` candidates to `scripts/topic-pool.md` before publishing.
+
+New candidates must use unique `cn-` slugs and existing categories, and target
+ordinary Chinese users stuck on getting access to AI services: registration,
+phone verification, payment, subscriptions, availability in China, price
+comparisons, account bans and recovery. Do not add English developer or deep
+technical topics (RAG, evals, agent engineering, model benchmarks): as of
+2026-09 the 80 `cn-` posts brought 88% of blog traffic and the 412 technical
+posts 12%. Research unstable product, pricing, policy, or model claims from
+primary sources before writing.
 
 ## Content and safety
 
@@ -48,5 +55,10 @@ claims from primary sources before writing.
   dates, funding figures, or product capabilities.
 - Link only to existing internal slugs.
 - Keep the YoTradeApi CTA factual and avoid guarantees.
+- The API relay product was shut down on 2026-08-25. Never describe
+  yotradeapi.com as an API relay, API key vendor or multi-model API gateway.
+- Posts about phone verification (接码, 手机号, 验证码) link the SMS service at
+  `https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=<slug>`;
+  see the 【优先】 section of `scripts/topic-pool.md` for the facts to use.
 - Do not expose tokens, credentials, customer data, or private operational
   details in posts, logs, commits, or PR bodies.

@@ -3,11 +3,35 @@
 > Picker（`scripts/pick-next-topic.py`）解析规则：
 > 1. 只解析 `- <slug> | <title> | <category>` 这种行
 > 2. 已发布的 slug（`src/content/blog/<slug>.md` 已存在）自动跳过
-> 3. 按"最近 7 篇分类最少出现 → 池内顺序"优先级挑下一个
+> 3. **只选 `cn-` 开头的选题**（2026-09-18 起）。RUM 实测 80 篇 cn- 文章贡献全站 88% 流量，
+>    412 篇英文技术向只有 12%，非 cn- 条目保留在池里但不再出稿
+> 4. 标题带「【优先】」的小节按池内顺序最先出稿；其余 cn- 条目按
+>    "最近 7 篇分类最少出现 → 池内顺序"挑选
 >
-> 维护：手工补充新候选时只要追加到对应分类下、保持格式即可。
-> 当池子剩余可用候选 < 30 时，`/daily-post` 会在结束语里提醒。
-> 按每天 3 篇计算：200 + 候选约够 2 个月。
+> 维护：新候选一律用 `cn-` 前缀、面向国内普通用户的获取/注册/付款/可用性问题。
+> 当池子剩余可用 cn- 候选 < 30 时，按 AGENTS.md 先补题再出稿。
+
+## 【优先】2026-09 手机验证簇（对接 yotradeapi.com/sms）
+
+> 依据：`cn-chatgpt-register-without-foreign-phone` 一篇占 blog 44% 流量（2026-08-19~09-18 RUM），
+> 这批读者卡在"收不到验证码"，对口产品是 https://yotradeapi.com/sms 美国号验证码代收
+> （¥29.90 一次，收不到自动换号，换号仍失败全额退款）。
+> 写作要求：
+> - 相关阅读必须包含 `/blog/cn-chatgpt-register-without-foreign-phone/`，并至少再内链本簇或
+>   注册环节长尾另 1 篇
+> - 正文在"怎么拿到一个美国号"的位置，客观对比接码平台 / 代收 / eSIM，代收写成
+>   `[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=<slug>)`
+> - 事实口径以 /sms 页面为准：多数情况下普通注册已不强制手机验证，手机验证主要出现在创建
+>   API key、Codex 登录、风控重新验证、部分地区网络下的新注册；不承诺注册一定成功或账号不被风控
+
+- cn-openai-api-key-phone-verification | 创建 OpenAI API Key 提示验证手机号怎么办 | 国内场景
+- cn-codex-login-phone-verification | Codex 登录要求验证手机号：国内用户怎么过 | 国内场景
+- cn-chatgpt-verification-code-not-received | ChatGPT 收不到短信验证码的逐项排查 | 小白入门
+- cn-chatgpt-phone-number-not-supported | ChatGPT 提示手机号无效或不支持的原因与解决 | 小白入门
+- cn-chatgpt-reverify-phone-risk | ChatGPT 换设备换网络后要求重新验证手机怎么办 | 小白入门
+- cn-phone-verification-cost-compare | 手机验证要花多少钱：接码平台、代收、eSIM、实体卡对比 | 国内场景
+- cn-us-virtual-number-openai-guide | 美国虚拟号码验证 OpenAI：号段类型与成功率边界 | 国内场景
+- cn-openai-platform-register-guide | 国内注册 OpenAI 开发者平台账号完整流程 | 小白入门
 
 ## 优先出稿（Bing 实证高展示量缺口）
 
