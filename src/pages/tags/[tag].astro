@@ -34,6 +34,7 @@ const canonical = `https://blog.yotradeapi.com/tags/${Astro.params.tag}/`;
 <html lang="zh-CN">
 	<head>
 		<BaseHead
+			noindex
 			title={`${tag} - YoTradeApi Blog`}
 			description={`标签「${tag}」下的全部文章，共 ${posts.length} 篇。`}
 			canonical={canonical}

@@ -29,6 +29,9 @@ export default defineConfig({
 		// Bing 是本站主要流量来源，靠 <lastmod> 决定存量页面的重爬优先级。
 		// 默认的 sitemap() 不输出 lastmod，1019 个 URL 对爬虫一视同仁。
 		sitemap({
+			// 657 个标签页全是文章列表，占 sitemap 一半多，会稀释站点质量信号；
+			// 标签页本身已 noindex, follow，这里一并剔除。
+			filter: (page) => !new URL(page).pathname.startsWith('/tags/'),
 			serialize(item) {
 				const d = lastmodBySlug.get(new URL(item.url).pathname);
 				if (d) item.lastmod = d;
