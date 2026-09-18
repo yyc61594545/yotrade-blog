@@ -335,7 +335,21 @@ const articleSchema = {
 				</div>
 			</article>
 
-			{isPost && (
+			{isPost && smsIntent && (
+				<aside class="tile cta cta--bottom">
+					<h3>还卡在手机验证？用美国号收验证码</h3>
+					<p>
+						美国 +1 本地号代收 OpenAI 验证码，适用 ChatGPT 注册、API key 创建、Codex 登录。¥29.90 一次，支付宝微信付款后自动确认，验证码直接显示在页面上。
+					</p>
+					<p class="cta-plans">收不到码自动换号，换号仍失败全额退款。</p>
+					<div class="actions">
+						<a class="btn btn-primary" href={ctaSmsHref}>获取美国号验证码 →</a>
+						<a class="btn btn-secondary" href={ctaHref}>ChatGPT Pro / Claude Max 代充</a>
+					</div>
+				</aside>
+			)}
+
+			{isPost && !smsIntent && (
 				<aside class="tile cta cta--bottom">
 					<h3>ChatGPT Pro / Claude Max / Claude Team 官方订阅代充</h3>
 					<p>
@@ -343,12 +357,11 @@ const articleSchema = {
 						操作期间不查看你的任何使用记录，5–10 分钟回执。
 					</p>
 					<p class="cta-plans">
-						只服务重度用户：ChatGPT Pro · Claude Max 5x / 20x · Claude Pro 年付 · Claude Team（按席位，我们建组织并管理）· 报价微信咨询
+						只服务重度用户：ChatGPT Pro · Claude Max 5x / 20x · Claude Pro · Claude Team Premium 席位（6.25x Pro 用量）
 					</p>
 					<div class="actions">
 						<a class="btn btn-primary" href={ctaHref}>查看套餐与下单 →</a>
 						<a class="btn btn-secondary" href={ctaWechatHref}>微信咨询</a>
-						{smsIntent && <a class="btn btn-secondary" href={ctaSmsHref}>只要一个美国号验证码</a>}
 					</div>
 				</aside>
 			)}
