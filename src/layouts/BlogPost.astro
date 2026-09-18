@@ -5,6 +5,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import { isSmsIntent, smsHref } from '../lib/sms-cta';
 
 type Props = CollectionEntry<'blog'>['data'] & {
 	currentSlug?: string;
@@ -41,6 +42,8 @@ const tagSlug = (t: string) => t.toLowerCase().replace(/[\s/]+/g, '-');
 
 const ctaHref = `https://yotradeapi.com/?utm_source=blog&utm_medium=cta&utm_content=${currentSlug ?? 'unknown'}#sub`;
 const ctaWechatHref = `https://yotradeapi.com/?utm_source=blog&utm_medium=cta_wechat&utm_content=${currentSlug ?? 'unknown'}#contact`;
+const smsIntent = isSmsIntent(currentSlug, tags, keywords);
+const ctaSmsHref = smsHref(currentSlug);
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const related = allPosts
@@ -301,7 +304,20 @@ const articleSchema = {
 					)}
 				</header>
 
-				{isPost && (
+				{isPost && smsIntent && (
+					<aside class="tile cta cta--top">
+						<h3>卡在手机验证这一步？</h3>
+						<p>
+							美国 +1 本地号代收 OpenAI 验证码，适用 ChatGPT 注册、API key 创建、Codex 登录。¥29.90 一次，支付宝微信付款，不用注册、不用充值，验证码自动显示在页面上。
+						</p>
+						<p class="cta-plans">收不到码自动换号，换号仍失败全额退款。</p>
+						<div class="actions">
+							<a class="btn btn-primary" href={ctaSmsHref}>获取美国号验证码 →</a>
+						</div>
+					</aside>
+				)}
+
+				{isPost && !smsIntent && (
 					<aside class="tile cta cta--top">
 						<h3>不想折腾接码和虚拟卡？</h3>
 						<p>
@@ -332,6 +348,7 @@ const articleSchema = {
 					<div class="actions">
 						<a class="btn btn-primary" href={ctaHref}>查看套餐与下单 →</a>
 						<a class="btn btn-secondary" href={ctaWechatHref}>微信咨询</a>
+						{smsIntent && <a class="btn btn-secondary" href={ctaSmsHref}>只要一个美国号验证码</a>}
 					</div>
 				</aside>
 			)}

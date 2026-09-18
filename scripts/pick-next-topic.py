@@ -5,6 +5,8 @@ Pick the next blog topic from scripts/topic-pool.md.
 Rules
 - Parse lines of form `- slug | title | category` from topic-pool.md.
 - Skip slugs already published (file exists under src/content/blog/<slug>.md).
+- Only `cn-` slugs are eligible (2026-09-18): they bring 88% of blog traffic.
+- Entries under a heading containing 【优先】 go first, in pool order.
 - Rotate categories: prefer a category that did NOT appear in the most
   recent 7 published posts (sorted by mtime). Tie-break by pool order.
 - Output a JSON object: {"slug", "title", "category", "remaining": N}
@@ -24,16 +26,23 @@ POOL = ROOT / "scripts" / "topic-pool.md"
 BLOG = ROOT / "src" / "content" / "blog"
 
 LINE_RE = re.compile(r"^- ([a-z0-9][a-z0-9-]*)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*$")
+PRIORITY_MARK = "【优先】"
+SLUG_PREFIX = "cn-"
 
 
-def parse_pool() -> list[tuple[str, str, str]]:
+def parse_pool() -> list[tuple[str, str, str, bool]]:
+    """Return (slug, title, category, is_priority) for every pool line."""
     if not POOL.exists():
         sys.exit(f"error: topic pool missing at {POOL}")
-    items: list[tuple[str, str, str]] = []
+    items: list[tuple[str, str, str, bool]] = []
+    priority = False
     for raw in POOL.read_text(encoding="utf-8").splitlines():
+        if raw.startswith("#"):
+            priority = PRIORITY_MARK in raw
+            continue
         m = LINE_RE.match(raw)
         if m:
-            items.append((m.group(1), m.group(2), m.group(3)))
+            items.append((m.group(1), m.group(2), m.group(3), priority))
     return items
 
 
@@ -58,15 +67,19 @@ def main() -> int:
         sys.exit("error: no parsable entries in topic-pool.md")
 
     published = published_slugs()
-    available = [(s, t, c) for s, t, c in items if s not in published]
+    available = [
+        (s, t, c, p) for s, t, c, p in items if s.startswith(SLUG_PREFIX) and s not in published
+    ]
     if not available:
-        sys.exit("error: all pool topics already published; extend topic-pool.md")
+        sys.exit(f"error: no unpublished {SLUG_PREFIX} topics left; extend topic-pool.md")
 
-    recent = recent_categories()
-    recent_set = set(recent)
-
-    # Prefer a candidate whose category is NOT in the last 7 posts; keep pool order.
-    pick = next(((s, t, c) for s, t, c in available if c not in recent_set), available[0])
+    priority = [x for x in available if x[3]]
+    if priority:
+        pick = priority[0]
+    else:
+        recent_set = set(recent_categories())
+        # Prefer a candidate whose category is NOT in the last 7 posts; keep pool order.
+        pick = next((x for x in available if x[2] not in recent_set), available[0])
 
     out = {
         "slug": pick[0],

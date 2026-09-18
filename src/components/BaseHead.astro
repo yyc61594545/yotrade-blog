@@ -13,6 +13,8 @@ interface Props {
 	canonical?: string;
 	keywords?: string[];
 	type?: 'website' | 'article';
+	/** 标签页这类薄内容页：不进索引，但让爬虫顺链接走到文章 */
+	noindex?: boolean;
 }
 
 const {
@@ -22,6 +24,7 @@ const {
 	canonical,
 	keywords = [],
 	type = 'website',
+	noindex = false,
 } = Astro.props;
 const canonicalURL = new URL(canonical ?? Astro.url.pathname, Astro.site).toString();
 const socialImage = new URL(image.src, Astro.site).toString();
@@ -64,7 +67,7 @@ const structuredData = {
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
-<meta name="robots" content="index, follow" />
+<meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={type} />
