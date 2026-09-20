@@ -197,5 +197,3 @@ E. 全 SaaS、不想配置
 - [Roo Code 国内配置](/blog/roo-code-cn-setup/)
 - [Cherry Studio 国内 API 中转配置指南](/blog/cherry-studio-cn-config/)
 - [Codex CLI 国内配置](/blog/codex-cli-cn-setup/)
-
-12 个工具用 1 把 Key？[YoTradeApi](https://yotradeapi.com) 兼容 OpenAI / Anthropic 协议，一次创建 key 全工具通用。

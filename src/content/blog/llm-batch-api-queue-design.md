@@ -161,5 +161,3 @@ CREATE TABLE batch_jobs (
 - [LLM Batch JSONL 格式规范与陷阱](/blog/llm-jsonl-batch-format/)
 - [AI 任务重试队列设计](/blog/ai-task-retry-queue/)
 - [LLM 异步任务队列设计：从原型到生产](/blog/llm-async-job-queue/)
-
-批处理任务的中转稳定性同样重要——[YoTradeApi](https://yotradeapi.com) 支持 Anthropic 与 OpenAI Batch API 的国内直连，提交与轮询都不用额外绕网络。

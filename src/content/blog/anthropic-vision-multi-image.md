@@ -137,5 +137,3 @@ def summarize_multi_page_doc(page_images: list[str]) -> str:
 - [多模态 LLM 图片 token 计费详解：省钱的关键参数](/blog/llm-vision-token-cost/)
 - [OpenAI Completions 与 Chat API 选型与差异](/blog/openai-completion-vs-chat-api/)
 - [LLM 中文命名实体识别基准](/blog/llm-named-entity-cn-benchmark/)
-
-如果你需要在国内稳定调用 Claude Vision API 处理多图任务，[YoTradeApi](https://yotradeapi.com) 提供完整支持多模态请求的国内中转服务，免去直连不稳定带来的超时问题。

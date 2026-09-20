@@ -126,5 +126,3 @@ Gemini 可以在一个回合返回多个函数调用，也能组合成先后依�
 - [LLM 并行函数调用设计](/blog/llm-function-calling-parallel/)
 - [AI Agent 工具设计方法](/blog/ai-agent-tool-design/)
 - [Agent 工具超时预算设计](/blog/agent-tool-timeout-budget/)
-
-如果你的应用需要用统一方式接入多家模型的工具调用能力，[YoTradeApi](https://yotradeapi.com) 可提供兼容常见 SDK 的 API 接入方式，便于集中管理鉴权与用量。

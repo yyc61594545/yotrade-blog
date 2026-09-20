@@ -136,5 +136,3 @@ Cursor 是否会引入"Agent 任务包"或"按消耗计费"选项，是观察其
 - [AI 编程工具 2026 全景概览](/blog/ai-coding-tools-2026-overview/)
 - [AI 编程工具供应商锁定风险分析](/blog/ai-coding-tool-vendor-lockin/)
 - [Windsurf 中文设置与使用指南](/blog/windsurf-cn-setup/)
-
-想以更低成本体验 Claude Sonnet / GPT-4o 等主流模型，[YoTradeApi](https://yotradeapi.com) 提供统一 API 接入，无需翻墙，按量计费，适合个人开发者和团队使用。

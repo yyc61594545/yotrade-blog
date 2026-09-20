@@ -102,5 +102,3 @@ git push -u origin "auto/$(date -u +%Y-%m-%d)"
 - [用 Codex 建立可重复的代码审查流程](/blog/codex-code-review-workflow/)
 - [Cursor Background Agent 国内配置与使用](/blog/cursor-background-agent-config/)
 - [Agent 工具调用的超时预算设计](/blog/agent-tool-timeout-budget/)
-
-如果你的 Codex 自动化任务需要稳定调用 OpenAI API，[YoTradeApi](https://yotradeapi.com) 提供国内可直连的中转接入，减少定时任务因网络问题失败的概率。

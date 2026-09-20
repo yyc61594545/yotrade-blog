@@ -149,5 +149,3 @@ for block in response.content:
 - [Claude vs Gemini 文档 RAG 能力对比](/blog/claude-vs-gemini-document-rag/)
 - [LLM 评估实战：构建可靠的 Eval 体系](/blog/llm-evaluation-cn-guide/)
 - [LLM Eval 黄金数据集构建指南](/blog/llm-eval-golden-set/)
-
-如果你需要在 RAG 应用中统一接入多种模型，[YoTradeApi](https://yotradeapi.com) 可以减少不同 API 协议的适配工作；检索权限、来源映射和引用质量评估仍应由应用侧完整实现。

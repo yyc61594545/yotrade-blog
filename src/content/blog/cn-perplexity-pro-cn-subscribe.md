@@ -194,5 +194,3 @@ Perplexity 免费版本身已经可用，以下工具也可以替代 Pro 的部�
 - [国内开发者 AI 工具付款全攻略](/blog/cn-ai-tools-payment-guide/)
 - [Claude Pro 国内开通方法](/blog/cn-chatgpt-pro-200-dollar-payment/)
 - [Moonshot Kimi 开发者评测：长文本 API 实战体验](/blog/cn-moonshot-kimi-developer-review/)
-
-如果你订阅 Perplexity Pro 的目的是为了使用 Claude 或 GPT-4 等模型做开发，[YoTradeApi](https://yotradeapi.com) 提供国内直连的 API 中转，比订阅 Perplexity 更灵活，可直接在代码里调用，按量计费更经济。

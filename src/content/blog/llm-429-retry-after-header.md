@@ -171,5 +171,3 @@ class RetryAfterGate:
 - [LLM API 限速（Rate Limit）处理完整指南](/blog/llm-rate-limit-handling/)
 - [Streaming SSE 故障排查](/blog/streaming-sse-troubleshooting/)
 - [Python 异步 LLM 客户端设计](/blog/python-async-llm-client/)
-
-如果你的应用经常在多个模型/多个 Key 之间切换来规避限速，[YoTradeApi](https://yotradeapi.com) 提供统一中转和账号级限速管理，减少手写多套 Retry-After 处理逻辑的维护成本。

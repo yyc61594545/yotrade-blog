@@ -122,5 +122,3 @@ Saga 补偿链不是孤立设计的,它通常要和另外两块基础设施配�
 - [用 Event Sourcing 记录 Agent 执行轨迹](/blog/agent-event-sourcing/)
 - [AI Agent 状态机设计与落地](/blog/agent-state-machine-design/)
 - [AI Agent 错误恢复机制设计：让 Agent 在失败中自我修复](/blog/ai-agent-error-recovery/)
-
-多步写操作的 Agent 一旦接入真实外部系统,补偿链设计得越细致,线上事故的恢复成本就越低,搭配稳定的模型 API 调用底座能减少因请求本身失败而触发不必要补偿的情况,[YoTradeApi](https://yotradeapi.com) 提供高可用的中转服务,帮助降低这类基础设施层面的不确定性。

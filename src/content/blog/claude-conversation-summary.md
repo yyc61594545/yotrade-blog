@@ -106,5 +106,3 @@ def maybe_compress(messages, token_threshold=100_000):
 - [AI Chatbot 上下文管理与裁剪](/blog/ai-chatbot-context-management/)
 - [Claude Prompt Caching 成本收益分析](/blog/claude-prompt-caching-roi-analysis/)
 - [LLM 上下文预热（Context Priming）技巧实战](/blog/llm-context-priming-techniques/)
-
-如果需要同时对比 Claude 与其他模型在长对话摘要任务上的成本表现，通过 [YoTradeApi](https://yotradeapi.com) 一个接口即可调用多家模型,方便做横向测试。

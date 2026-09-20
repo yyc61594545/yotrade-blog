@@ -130,5 +130,3 @@ class Provider(Protocol):
 - [Claude Skill、Tool 与 MCP 的区别](/blog/claude-skill-vs-tool-vs-mcp/)
 - [LLM 工具 Schema 的可移植性](/blog/llm-tool-schema-portability/)
 - [AI Agent 平台之争](/blog/ai-agent-platform-war/)
-
-如果你正在做多模型抽象层，稳定的上游接入是前提，[YoTradeApi](https://yotradeapi.com) 提供统一入口接入 Claude、GPT、Gemini 等主流模型，省掉各家账号与网络的重复折腾，套餐报价微信咨询。

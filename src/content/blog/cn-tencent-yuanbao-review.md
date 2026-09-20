@@ -248,5 +248,3 @@ for model in ["hunyuan-turbo", "doubao-pro", "glm-4-plus"]:
 - [国内 AI 编程工具横向对比：Cursor、Copilot 与本土替代方案](/blog/cn-ai-coding-tools-overview/)
 - [Qwen3 对比 Claude：国内开发者如何选择](/blog/qwen3-vs-claude-cn-tasks/)
 - [国内 AI 工具付款与订阅完整指南](/blog/cn-ai-tools-payment-guide/)
-
-如果你需要同时接入混元与其他主流大模型，[YoTradeApi](https://yotradeapi.com) 提供统一中转接口，支持人民币充值，一个 Key 调用所有主流模型。

@@ -313,5 +313,3 @@ curl https://yotradeapi.com/v1/messages \
 - [OpenAI Agents SDK 国内接入](/blog/openai-agents-sdk-cn/)
 - [Claude Code CI/CD 接入](/blog/claude-code-ci-integration/)
 - [Claude Code 镜像国内配置完整指南](/blog/claude-code-mirror-cn-setup/)
-
-需要 Claude Agent SDK 完整透传的中转？[YoTradeApi](https://yotradeapi.com) 完整支持 Anthropic Messages 协议 + beta headers，按上面 SDK 直接接入。

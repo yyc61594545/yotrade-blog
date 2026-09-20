@@ -132,5 +132,3 @@ grep -rn "timeout" your_project/ | grep -i http
 - [国内访问延迟优化实测](/blog/cn-latency-optimization-practice/)
 - [Claude Code 在国内网络的实战配置](/blog/claude-code-on-cn-network/)
 - [Agent 工具调用超时预算设计](/blog/agent-tool-timeout-budget/)
-
-如果反复排查后确认是国内网络环境的连通性问题，[YoTradeApi](https://yotradeapi.com) 提供稳定直连的中转节点，免去自己维护代理链路的麻烦。

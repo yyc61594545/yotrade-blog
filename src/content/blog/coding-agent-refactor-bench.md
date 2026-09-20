@@ -83,5 +83,3 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 - [Claude Code vs Codex CLI 全面对比](/blog/claude-code-vs-codex-cli/)
 - [用 Aider 做 TDD 重构的实战：测试先行让 AI 重构更可靠](/blog/aider-test-driven-refactor/)
 - [AI 重构遗留单体应用实录：6 周从 40 万行代码到可维护架构](/blog/ai-refactor-legacy-monolith/)
-
-如果你需要在多款编程 Agent 之间切换测试重构效果，[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转，方便快速对比不同模型的实际表现。

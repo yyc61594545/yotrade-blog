@@ -154,5 +154,3 @@ OpenAI / Anthropic 的模型名 `claude-sonnet-4-6` 指向的实际后端可能�
 - [LLM 评估实战](/blog/llm-evaluation-cn-guide/)
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
-
-用稳定的中转 + 固定版本号能减少很多变量。[YoTradeApi](https://yotradeapi.com) 后台可以查每条请求的实际模型版本，便于排查。

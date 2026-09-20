@@ -289,5 +289,3 @@ def batch_generate(topics, template, style_examples):
 - [用 AI 做高质量翻译的工程化流程](/blog/ai-translation-workflow/)
 - [Claude vs GPT vs Gemini 国内开发者怎么选](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
-
-[YoTradeApi](https://yotradeapi.com) 一把 Key 切换 Sonnet / Opus / Haiku，按平台和重要程度分模型。

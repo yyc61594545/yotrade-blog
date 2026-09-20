@@ -136,4 +136,4 @@ API 访问在国内同样面临网络障碍，但可以通过 API 中转服务�
 - [什么是 AI API 中转，为什么要用](/blog/what-is-api-relay-explained/)
 - [GPT-5 vs Claude Opus 4.7 编程能力对比](/blog/gpt-5-vs-claude-opus-4-7-coding/)
 
-如果 $200 月卡的投入太高，[YoTradeApi](https://yotradeapi.com) 提供 ChatGPT、Claude 等顶级模型的按量 API 中转，国内直连，无需代理，按实际用量计费，适合对模型能力有需求但用量不稳定的开发者和个人用户。
+如果你已经决定开 ChatGPT Pro、只是卡在付款这一步，可以了解我们的[官方订阅代充](https://yotradeapi.com)，ChatGPT Pro 之外也做 Claude Max 5x / 20x、Claude Pro 年付和 Claude Team 席位，报价微信咨询。

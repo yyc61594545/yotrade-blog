@@ -121,5 +121,3 @@ reviewed_at: 2026-09-15
 - [AI 生成代码的来源与追溯](/blog/ai-generated-code-provenance/)
 - [国产大模型 vs 海外大模型成本对比](/blog/cn-llm-cn-vs-overseas-cost/)
 - [多模型成本智能路由方案](/blog/multi-model-cost-routing/)
-
-如果你想在不自行托管权重的情况下统一测试多种模型，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入入口，便于集中维护模型配置与调用记录。

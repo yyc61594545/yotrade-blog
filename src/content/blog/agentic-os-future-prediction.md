@@ -87,5 +87,3 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 - [AI Agent 工具权限粒度设计](/blog/ai-agent-permission-design/)
 - [AI Agent 写操作回滚策略](/blog/ai-agent-rollback-strategy/)
 - [AI Agent 可观测性设计](/blog/ai-agent-observability-design/)
-
-不管 Agentic OS 最终长成什么样，稳定的模型调用能力都是底层刚需，[YoTradeApi](https://yotradeapi.com) 提供多模型统一接入的中转服务，帮你在快速演进的 Agent 生态里少踩兼容性的坑。

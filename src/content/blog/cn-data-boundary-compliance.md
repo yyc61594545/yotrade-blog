@@ -108,4 +108,4 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 - [国内 LLM 中转服务市场概览](/blog/cn-llm-relay-market-overview/)
 - [中国开发者 Claude 账号与计费指南](/blog/cn-developer-claude-billing/)
 
-判断清楚数据出境边界之后，选择部署在合规架构内、能说清楚数据流转路径的 API 接入方式同样重要。[YoTradeApi](https://yotradeapi.com) 提供 Claude、GPT-4o 等主流模型的中转接入，支持按量计费，方便国内团队在明确合规边界的前提下快速验证产品。
+判断清楚数据出境边界之后，选择部署在合规架构内、能说清楚数据流转路径的 API 接入方式同样重要。

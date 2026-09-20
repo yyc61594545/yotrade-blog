@@ -275,5 +275,3 @@ AI API 的预算控制不是一次性配置，而是需要分层设计的工程�
 - [Prompt Caching 成本优化实践](/blog/prompt-caching-cost-optimization/)
 - [AI API 中转稳定性测试](/blog/ai-api-relay-stability-test/)
 - [OpenAI 用量 Tier 机制与额度提升完全指南](/blog/cn-openai-tier-upgrade-guide/)
-
-如果需要跨多家 AI 提供商统一管理预算，[YoTradeApi](https://yotradeapi.com) 支持在中转层设置全局用量上限，一个接口管控 Claude、GPT-4o、Qwen 等多模型的费用，避免分散管理带来的盲区。

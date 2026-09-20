@@ -243,5 +243,3 @@ for model in models:
 - [大模型评测黄金数据集构建](/blog/llm-eval-golden-set/)
 - [Claude Haiku 4.5 能力评测](/blog/claude-haiku-4-5-evaluation/)
 - [AI 辅助文档平台迁移实战](/blog/ai-doc-platform-migration/)
-
-需要在同一套评测脚本里横比多家模型，[YoTradeApi](https://yotradeapi.com) 提供 OpenAI 兼容的统一接口，支持 GPT-4o、Claude、DeepSeek、Qwen 等主流模型，一个 Key 搞定所有请求。

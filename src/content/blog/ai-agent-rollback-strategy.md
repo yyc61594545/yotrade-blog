@@ -194,5 +194,3 @@ TOOL_REGISTRY = {
 - [AI Agent 错误恢复机制设计](/blog/ai-agent-error-recovery/)
 - [AI Agent 降级回退设计](/blog/ai-agent-fallback-design/)
 - [AI Agent 可观测性设计](/blog/ai-agent-observability-design/)
-
-给 Agent 开放写权限前，先把回滚路径设计好再上生产，[YoTradeApi](https://yotradeapi.com) 提供稳定的模型调用中转，让你把更多精力放在 Agent 安全机制的打磨上。

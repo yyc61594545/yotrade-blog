@@ -156,5 +156,3 @@ LLM（Claude / Gemini）
 - [OpenAI File Search vs 自建 RAG](/blog/openai-file-search-vs-rag/)
 - [Embeddings API 国内对比测评](/blog/embeddings-api-cn-comparison/)
 - [Claude vs GPT vs Gemini 国内开发者选择](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
-
-需要同时接入 Claude 和 Gemini 做 A/B 测试或 fallback，[YoTradeApi](https://yotradeapi.com) 支持多模型统一 API，一个密钥切换两家提供商。

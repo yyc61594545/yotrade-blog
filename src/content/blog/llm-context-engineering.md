@@ -261,5 +261,3 @@ def build_agent_context(
 - [Prompt Caching 成本优化实战](/blog/prompt-caching-cost-optimization/)
 - [Claude 1M 超长上下文使用指南](/blog/claude-1m-context-guide/)
 - [LLM 延迟优化指南](/blog/llm-latency-optimization/)
-
-上下文工程做好了，每次调用都能用更少的 Token 获得更好的结果，[YoTradeApi](https://yotradeapi.com) 提供稳定的 Claude 中转接口，让你专注于工程而非网络问题。

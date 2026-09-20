@@ -100,5 +100,3 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 - [LLM 成本优化清单](/blog/llm-cost-optimization-checklist/)
 - [Prompt Caching 成本优化实战](/blog/prompt-caching-cost-optimization/)
 - [LLM Token 成本账本管理](/blog/llm-token-cost-ledger/)
-
-算清楚这笔账之后，如果想快速验证不同模型在压缩策略下的实际成本表现，[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转接口，一套代码即可横向对比 GPT-4o、Claude、Gemini 等模型的真实账单差异。

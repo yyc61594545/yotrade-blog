@@ -73,5 +73,3 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 - [AI 编程工具的经济账](/blog/ai-coding-tool-economics/)
 - [AI 编程 Agent 成本控制实践](/blog/ai-coding-agent-cost-control/)
 - [LLM 团队预算分配方法](/blog/llm-team-budget-allocation/)
-
-不管定价模型怎么变，把调用切换到按量计费、人民币直接结算的中转服务，是控制不确定性最直接的方式之一，[YoTradeApi](https://yotradeapi.com) 支持多模型统一计费，方便团队做精细化的成本核算。

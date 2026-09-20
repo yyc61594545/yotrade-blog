@@ -199,5 +199,3 @@ done
 - [Cline 国内 API 配置详解](/blog/cline-cn-api-setup/)
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
-
-[YoTradeApi](https://yotradeapi.com) 后台展示每条请求的 `cache_read_input_tokens` 与 `cache_creation_input_tokens`，方便量化缓存命中率与节省额。

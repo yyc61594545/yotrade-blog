@@ -171,5 +171,3 @@ Cursor 的 Tab 补全介于两者之间，用习惯后接受率可以很高。
 - [Cursor 各档位性价比深度对比：Free/Pro/Business 怎么选](/blog/cursor-tier-comparison/)
 - [给 Rails 项目写 Cursor Rules：从约定到自动化](/blog/cursor-rules-for-rails-project/)
 - [AI API 中转 vs 自建 VPN：稳定性与成本全面对比](/blog/ai-api-relay-vs-self-vpn/)
-
-如果你在 Cursor 中配置了自定义模型端点，[YoTradeApi](https://yotradeapi.com) 提供低延迟的 Claude / GPT-4o / Gemini API 中转，可以在不同补全模型之间灵活切换，优化你的代码补全体验。

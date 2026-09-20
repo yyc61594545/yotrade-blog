@@ -205,5 +205,3 @@ result = response.choices[0].message.content
 - [OpenAI SDK base_url 中转配置指南](/blog/openai-sdk-base-url-cn/)
 - [LLM Batch API 实际节省分析](/blog/llm-batch-api-real-savings/)
 - [OpenAI Compatible 与 Anthropic 原生协议对比](/blog/openai-compatible-vs-anthropic-protocol/)
-
-如果你需要低延迟、低成本地调用 OpenAI 全系列模型（包括 Chat 和 Completions 接口），[YoTradeApi](https://yotradeapi.com) 提供稳定中转，按量计费，无需信用卡即可开始。

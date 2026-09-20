@@ -224,5 +224,3 @@ git commit -m "docs: 更新 Cline Memory Bank - 添加批量处理架构说明"
 - [Cline 自动审批最佳实践](/blog/cline-auto-approve-best-practices/)
 - [AI 编程工具成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [LLM 上下文工程实践](/blog/llm-context-engineering/)
-
-在大型项目里稳定调用 Claude Sonnet 需要可靠的 API 中转，[YoTradeApi](https://yotradeapi.com) 提供与 OpenAI 兼容的接口，Cline 可直接配置使用。

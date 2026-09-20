@@ -111,5 +111,3 @@ CI 门禁不是简单的"分数低于阈值就 fail"，实践中更实用的是�
 - [Prompt 改动后的回归检测](/blog/llm-prompt-regression-detection/)
 - [Claude Code 接入 CI/CD：自动 PR 评审与 bug 修复](/blog/claude-code-ci-integration/)
 - [AI 编程 Agent 接入 CI 的边界：哪些环节能自动化，哪些不能](/blog/ai-coding-agent-ci-integration/)
-
-把评测流水线搭起来之后，你会需要一个稳定、低延迟的模型访问入口来支撑高频的 CI 调用，[YoTradeApi](https://yotradeapi.com) 提供国内直连的 Claude/OpenAI API 中转，帮你的评测流水线少踩一层网络稳定性的坑。

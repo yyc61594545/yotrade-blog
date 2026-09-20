@@ -108,5 +108,3 @@ AI 生成的代码不应该被当作"信任担保过的代码"直接合并，也
 - [AI 编程代理权限模式对比：Claude Code、Codex CLI、Cursor 怎么选](/blog/ai-coding-agent-permission-models/)
 - [AI 编程 Agent 安全评审清单：上生产前该检查什么](/blog/ai-coding-agent-security-review/)
 - [团队 LLM 预算分配实战](/blog/llm-team-budget-allocation/)
-
-团队规模化使用 AI 编程 Agent 时，统一、可监控的 API 访问入口也是治理的一部分，[YoTradeApi](https://yotradeapi.com) 提供国内直连的主流模型中转服务，方便按团队或项目拆分 key 和用量监控。

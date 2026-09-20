@@ -249,4 +249,4 @@ data = next(b.input for b in resp.content if b.type == "tool_use")
 - [Claude Agent SDK 中文上手](/blog/claude-agent-sdk-cn/)
 - [Claude Code Subagent 实战经验](/blog/claude-code-subagent-practice/)
 
-Tool Use 是 Agent 应用的核心机制，调通这一层后多数复杂 workflow 都能跑。需要一把支持完整 Anthropic 协议的 Key？[YoTradeApi](https://yotradeapi.com) 在国内网络下稳定透传 tool use 与 streaming，方便从开发直接平滑到生产。
+Tool Use 是 Agent 应用的核心机制，调通这一层后多数复杂 workflow 都能跑。

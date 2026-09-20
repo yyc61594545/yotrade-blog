@@ -236,5 +236,3 @@ AI 编程工具采购 ROI 分析
 - [AI 编程工具的经济账：谁在赚钱，谁在省钱](/blog/ai-coding-tool-economics/)
 - [AI 编程工具团队落地：三个月踩坑与经验](/blog/ai-coding-team-adoption/)
 - [国产大模型 vs 海外大模型成本对比：中国开发者怎么选](/blog/cn-llm-cn-vs-overseas-cost/)
-
-量化了 ROI 之后，接下来是选对工具和 API——[YoTradeApi](https://yotradeapi.com) 提供 Claude、GPT-4o 等顶级模型的国内中转，按 Token 计费，适合控制 AI 开发预算的个人和团队。

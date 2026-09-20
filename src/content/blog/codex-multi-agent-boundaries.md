@@ -113,5 +113,3 @@ subagent 返回“完成”不是验收证据。主 Agent需要读取关键 diff
 - [Claude Code Subagent 实战](/blog/claude-code-subagent-practice/)
 - [AI Agent 权限模型设计](/blog/ai-coding-agent-permission-models/)
 - [Agent 状态机设计](/blog/agent-state-machine-design/)
-
-需要在多 Agent 工作流中统一调用不同模型时，[YoTradeApi](https://yotradeapi.com) 可提供兼容常见 SDK 的 API 接入方式，便于集中管理鉴权与用量。

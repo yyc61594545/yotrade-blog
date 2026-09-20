@@ -105,5 +105,3 @@ Worktree 隔离的是**工作目录**，不是**分支管理策略**，两者要
 - [Codex 后台自动化](/blog/codex-background-automation/)
 - [Codex CLI 国内环境搭建](/blog/codex-cli-cn-setup/)
 - [Claude Code vs Codex CLI 对比](/blog/claude-code-vs-codex-cli/)
-
-多任务并行调用 AI 编程工具时，API 稳定性和并发限速容易成为瓶颈，[YoTradeApi](https://yotradeapi.com) 提供国内可直连的中转服务，支撑多个 Codex 会话同时稳定运行。

@@ -99,5 +99,3 @@ client.chat.completions.create(
 - [降低 LLM 延迟的 10 种实战方法](/blog/llm-latency-optimization/)
 - [reasoning_effort 参数的任务分级方法](/blog/openai-reasoning-effort-guide/)
 - [LLM Batch API 真实省钱效果实测](/blog/llm-batch-api-real-savings/)
-
-`service_tier` 分流能不能真正生效,取决于中转层是否老实透传这个参数并在账单里如实区分,[YoTradeApi](https://yotradeapi.com) 完整支持 `service_tier` 参数透传，方便按本文思路做延迟与成本的精细化取舍。

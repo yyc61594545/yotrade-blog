@@ -144,5 +144,3 @@ Agent 系统里抢占要谨慎，原因是打断一个正在执行的 LLM 调用
 - [Agent 死信队列设计](/blog/agent-dead-letter-queue/)
 - [Agent 速率限制协调](/blog/agent-rate-limit-coordination/)
 - [Agent 并行工具调用的正确姿势](/blog/agent-parallel-tool-execution/)
-
-调度器只是 Agent 系统的地基之一，真正跑起来还要打通模型调用的稳定中转层，[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转服务，帮你省去多家模型接口适配和限速处理的重复劳动。

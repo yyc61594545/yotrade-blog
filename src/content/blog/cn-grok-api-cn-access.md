@@ -214,5 +214,3 @@ A: Grok-4 是旗舰推理模型，单次推理本身较慢（特别是长思考�
 - [AI API 中转 vs 自建 VPN：国内开发者如何选择](/blog/ai-api-relay-vs-self-vpn/)
 - [Gemini API 国内调用：中转 vs 直连对比](/blog/cn-gemini-api-direct-vs-relay/)
 - [国内 AI 中转服务市场全览](/blog/cn-llm-relay-market-overview/)
-
-想稳定使用 Grok API 而不折腾代理，[YoTradeApi](https://yotradeapi.com) 支持 Grok-3/4 全系列模型，按量计费、开箱即用。

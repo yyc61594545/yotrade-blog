@@ -255,5 +255,3 @@ Assistants API 目前还没有给出确切下线日期，但官方文档已经�
 - [OpenAI File Search 与自建 RAG 该怎么选](/blog/openai-file-search-vs-rag/)
 - [OpenAI 兼容协议 vs Anthropic 原生协议](/blog/openai-compatible-vs-anthropic-protocol/)
 - [OpenAI Agents SDK 国内接入指南](/blog/openai-agents-sdk-cn/)
-
-迁移到 Responses API 前先确认中转是否完整支持新端点，[YoTradeApi](https://yotradeapi.com) 同时支持 Chat Completions 与 Responses API，可以在过渡期让新老代码路径都正常工作。

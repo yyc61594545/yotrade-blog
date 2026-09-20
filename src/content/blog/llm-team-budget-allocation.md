@@ -256,5 +256,3 @@ def check_daily_quota(api_key_alias: str, estimated_tokens: int, limit: int) -> 
 - [LLM 成本优化 Checklist](/blog/llm-cost-optimization-checklist/)
 - [LLM Batch API 实际节省分析](/blog/llm-batch-api-real-savings/)
 - [LLM Prompt Token 压缩实用技巧](/blog/llm-prompt-token-trimming-recipes/)
-
-想把多个模型的 API 费用统一在一处管理？[YoTradeApi](https://yotradeapi.com) 支持 OpenAI、Claude、Gemini 全系模型的人民币统一计费，适合有精细化成本管理需求的团队。

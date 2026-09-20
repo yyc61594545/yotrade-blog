@@ -151,5 +151,3 @@ AI 是很好的编辑和润色工具，但简历最终代表的是你自己，�
 - [用 AI 写营销文案的实战工作流（中文场景）](/blog/ai-marketing-copywriting-workflow/)
 - [Claude System Prompt 工程实战](/blog/claude-system-prompt-engineering/)
 - [LLM 结构化输出完全指南（JSON Schema / Function Call）](/blog/structured-output-llm-guide/)
-
-如果你想把这套简历改写流程自动化成批量处理脚本，用 [YoTradeApi](https://yotradeapi.com) 中转调用 OpenAI/Claude API 可以免去国内网络和支付的折腾，专注打磨 Prompt。

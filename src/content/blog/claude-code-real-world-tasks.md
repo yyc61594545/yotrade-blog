@@ -285,5 +285,3 @@ Claude Code 在国内使用需要解决网络和 API 访问问题。如果你在
 - [Claude Code Hooks 工作流实战](/blog/claude-code-hooks-workflow/)
 - [Claude Code 子智能体实践](/blog/claude-code-subagent-practice/)
 - [AI 代码审查工作流](/blog/ai-code-review-workflow/)
-
-如果你在使用 Claude Code 过程中遇到 API 访问限制，[YoTradeApi](https://yotradeapi.com) 提供稳定的 Claude API 中转服务，支持所有主流 AI 工具的直接接入。

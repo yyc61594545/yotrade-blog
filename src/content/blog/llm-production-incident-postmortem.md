@@ -118,5 +118,3 @@ Trace 对比显示，新版本把历史对话和本轮待摘要文本一起放�
 - [AI Agent 可观测性设计](/blog/ai-agent-observability-design/)
 - [LLM 应用上线 checklist](/blog/llm-app-deployment-checklist/)
 - [多模型供应商故障演练](/blog/llm-provider-outage-drill/)
-
-如果你希望把不同模型接口收敛到统一调用入口，[YoTradeApi](https://yotradeapi.com) 可用于集中接入与管理多模型 API，便于在应用层统一记录调用结果并实施故障切换。

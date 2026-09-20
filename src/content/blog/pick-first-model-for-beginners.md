@@ -84,5 +84,3 @@ category: 小白入门
 - [要不要用流式返回](/blog/streaming-or-not-for-beginners/)
 - [Temperature 和 Top P 新手指南](/blog/temperature-top-p-for-beginners/)
 - [Claude vs GPT vs Gemini:国内开发者怎么选](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
-
-选定模型只是第一步,国内开发者接下来最容易卡住的是网络访问问题,[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转,一套账号即可调用 Claude、GPT、Gemini 等主流模型,省去分别注册和解决网络问题的麻烦。

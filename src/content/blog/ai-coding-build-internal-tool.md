@@ -219,5 +219,3 @@ Vercel 函数的文件系统是只读的（除了 /tmp），SQLite 文件放在�
 - [用 AI 从零到上线 SaaS 全流程](/blog/ai-coding-saas-zero-to-launch/)
 - [AI 编程适合后端开发者吗](/blog/ai-coding-for-backend-dev/)
 - [Claude Tool Use 最佳实践](/blog/claude-tool-use-best-practices/)
-
-想在内部工具里集成 Claude 或 GPT 能力，[YoTradeApi](https://yotradeapi.com) 提供国内直连的 AI API 中转，省去海外账号和网络配置的麻烦。

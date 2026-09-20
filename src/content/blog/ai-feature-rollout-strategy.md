@@ -318,5 +318,3 @@ class AIBudgetGuard:
 - [AI API 中转稳定性测试报告](/blog/ai-api-relay-stability-test/)
 - [AI Agent 的 Fallback 设计模式](/blog/ai-agent-fallback-design/)
 - [AI 编程从零做 SaaS 到上线](/blog/ai-coding-saas-zero-to-launch/)
-
-如果你在灰度测试阶段需要同时测试多个模型（如 Claude vs GPT-4o），[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容接口，切换模型只需改一个参数，方便在灰度实验中对比不同模型的效果。

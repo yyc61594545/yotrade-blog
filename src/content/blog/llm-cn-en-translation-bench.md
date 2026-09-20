@@ -118,5 +118,3 @@ def run_benchmark(client, candidate_models, judge_model, samples):
 - [LLM 评测 Golden Set 构建方法](/blog/llm-eval-golden-set/)
 - [把模型评测接进 CI 流水线](/blog/llm-eval-in-ci-pipeline/)
 - [用 AI API 做高质量翻译的工程化流程](/blog/ai-translation-workflow/)
-
-自建评测流程离不开稳定、低延迟的模型调用通道，用 [YoTradeApi](https://yotradeapi.com) 中转 Claude / GPT / Gemini 等主流模型 API，同一套代码切换被测模型和裁判模型都不用改认证逻辑。

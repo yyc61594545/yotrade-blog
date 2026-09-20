@@ -401,5 +401,3 @@ AI 应用的错误处理设计可进一步参考 [AI Agent 错误恢复策略](/
 - [AI API 中转服务的错误码解析](/blog/ai-api-relay-error-codes/)
 - [AI Agent 工具设计最佳实践](/blog/ai-agent-tool-design/)
 - [LLM 数学推理能力横评](/blog/llm-math-reasoning-benchmark/)
-
-构建生产级 AI 流水线时，[YoTradeApi](https://yotradeapi.com) 提供统一 API 中转，支持透传 OpenAI 标准错误码，方便与上述追踪方案集成，实现多模型的统一可观测性。

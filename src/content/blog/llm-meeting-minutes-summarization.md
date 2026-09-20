@@ -230,5 +230,3 @@ Whisper 转录 1 小时录音费用约 $0.36（按官方定价估算），加上
 - [大模型中文理解能力横评](/blog/llm-chinese-comprehension/)
 - [AI Agent 评测方法论与常见误区](/blog/llm-agent-evaluation-methods/)
 - [AI 辅助数据库 schema 设计实战](/blog/ai-coding-database-schema-design/)
-
-想低成本批量调用 GPT-4o 和 Claude 处理会议转录任务？[YoTradeApi](https://yotradeapi.com) 支持按量计费、多模型统一接口，适合构建企业内部会议纪要自动化工具。

@@ -296,5 +296,3 @@ for model, r in results.items():
 - [Python 异步并发调用 LLM API](/blog/python-async-llm-client/)
 - [GPT-5 与 Claude Opus 4.7 编程能力对比](/blog/gpt-5-vs-claude-opus-4-7-coding/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
-
-需要一把 Key 同时调多家模型做 A/B 评估？[YoTradeApi](https://yotradeapi.com) 创建独立 Key 后按上面 promptfoo 配置跑即可。

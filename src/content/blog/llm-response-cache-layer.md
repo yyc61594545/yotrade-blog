@@ -110,5 +110,3 @@ def find_cached_response(query: str, threshold: float = 0.92):
 - [Prompt Cache 命中率监控：从盲目省钱到有数据支撑](/blog/llm-cache-hit-observability/)
 - [Prompt Caching 成本优化实战](/blog/prompt-caching-cost-optimization/)
 - [LLM 成本异常检测怎么做](/blog/llm-cost-anomaly-detection/)
-
-响应缓存能省掉的是"命中"部分的调用成本，没命中的请求还是要走真实 API——[YoTradeApi](https://yotradeapi.com) 的按量计费和多模型切换，能让缓存没覆盖到的长尾请求也保持较低成本。

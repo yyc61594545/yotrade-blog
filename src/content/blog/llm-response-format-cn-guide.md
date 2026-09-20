@@ -240,5 +240,3 @@ Structured Outputs 的 `strict` 模式不支持所有 JSON Schema 关键字，`a
 - [LLM JSON 模式横向对比：各模型稳定性测试](/blog/llm-json-mode-comparison/)
 - [function calling 与 tool use 核心区别详解](/blog/function-calling-vs-tool-use/)
 - [Claude tool use 使用最佳实践与常见坑](/blog/claude-tool-use-best-practices/)
-
-如果你需要稳定调用 GPT-4o、Claude、DeepSeek 等模型的结构化输出能力，[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容接口，支持多模型切换与自动重试。

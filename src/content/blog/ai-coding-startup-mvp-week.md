@@ -288,5 +288,3 @@ vercel --prod
 - [AI 结对编程实战故事](/blog/ai-pair-programming-stories/)
 - [AI 编码对前端开发的实际影响](/blog/ai-coding-for-frontend-dev/)
 - [用 AI 工具做 SaaS 的经济账](/blog/saas-with-ai-coding-tools/)
-
-如果你在国内使用 Claude Code 或 Cursor 遇到 API 访问不稳定的问题，[YoTradeApi](https://yotradeapi.com) 提供高稳定性的 API 中转，让你的 AI 工具在开发过程中不掉线。

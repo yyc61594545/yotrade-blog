@@ -87,5 +87,3 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 - [AI 编程工具的经济学](/blog/ai-coding-tool-economics/)
 - [Cursor Rules 最佳实践](/blog/cursor-rules-best-practices/)
 - [AI 编程工具的供应商锁定问题](/blog/ai-coding-tool-vendor-lockin/)
-
-如果你的团队需要在多个 AI 编程工具之间灵活切换底层模型而不被单一厂商锁定，用 [YoTradeApi](https://yotradeapi.com) 中转可以统一管理多个模型的调用和账单，降低切换成本。

@@ -288,5 +288,3 @@ AI 在这个模式中的角色：
 - [Claude Code 真实任务实战：我用它做了哪些事](/blog/claude-code-real-world-tasks/)
 - [Cursor Background Agent 实战案例](/blog/cursor-background-agent-cases/)
 - [AI 编程工具成本控制：如何不让 Token 费用失控](/blog/ai-coding-agent-cost-control/)
-
-大规模重构项目需要稳定的 AI API 调用，[YoTradeApi](https://yotradeapi.com) 提供高可用的 Claude 和 GPT 中转服务，支持长上下文调用，是遗留代码重构项目的可靠后端。

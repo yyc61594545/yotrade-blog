@@ -98,4 +98,4 @@ OpenAI 的停用说明列出了政策或条款问题、安全风险，以及验�
 - [注册 ChatGPT 的邮箱选择与归属安全](/blog/cn-chatgpt-email-choice-guide/)
 - [API Key 泄露后的应急响应](/blog/api-key-leak-emergency-response/)
 
-如果你的实际需求是应用中的模型 API 接入，可在 [YoTradeApi](https://yotradeapi.com) 了解接入服务，按应用需求核对支持范围与配置方式。
+如果排查下来账号并没有被封、只是被要求重新验证手机号，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-account-banned-recovery)：¥29.90 一次，支付宝微信付款，收不到自动换号，换号仍失败全额退款；已经被封禁的账号换号验证帮不上忙，仍要走官方申诉。

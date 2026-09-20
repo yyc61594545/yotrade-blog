@@ -260,5 +260,3 @@ $ claude
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
-
-想用一把 Key 接所有工具？[YoTradeApi](https://yotradeapi.com) 创建 API Key 后按各工具教程配置 base_url 即可。

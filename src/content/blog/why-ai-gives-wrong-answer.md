@@ -76,5 +76,3 @@ AI 不是一个"知道所有正确答案的数据库"，而是一个"根据规�
 - [上下文窗口新手指南](/blog/context-window-for-beginners/)
 - [Temperature 与 Top P 新手指南](/blog/temperature-top-p-for-beginners/)
 - [新手常见错误代码大全](/blog/common-error-codes-for-beginners/)
-
-如果你已经打算认真用 API 而不只是网页聊天，[YoTradeApi](https://yotradeapi.com) 可以帮你用一个 Key 稳定接入 ChatGPT、Claude 等主流模型，方便对比不同模型在同一个问题上的表现，交叉验证答案。

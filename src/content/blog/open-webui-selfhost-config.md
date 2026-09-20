@@ -130,5 +130,3 @@ docker run -d \
 - [LiteLLM 国内网关自托管](/blog/litellm-cn-gateway-self-host/)
 - [开源 LLM 自托管趋势](/blog/open-source-llm-self-hosting-trend/)
 - [中文 RAG 工程实战](/blog/rag-cn-best-practices/)
-
-无论是单机部署还是多副本生产集群，模型调用这一层都建议走统一的中转,[YoTradeApi](https://yotradeapi.com) 提供的 Key 可以直接接入 Open WebUI 的多 Provider 配置，方便按团队或环境拆分独立的调用配额。

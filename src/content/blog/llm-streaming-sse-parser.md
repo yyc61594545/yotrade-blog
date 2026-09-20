@@ -101,5 +101,3 @@ HTTP 连接关闭不等于模型正常完成。只有收到协议定义的完成
 - [Claude 流式响应事件类型完全指南](/blog/claude-streaming-event-types/)
 - [OpenAI Responses API 流式事件处理指南](/blog/openai-responses-api-streaming-guide/)
 - [Anthropic 流式消息中断恢复实战](/blog/anthropic-message-stream-recovery/)
-
-如果你希望通过一套接入方式调用多种模型并保留流式输出能力，[YoTradeApi](https://yotradeapi.com) 可提供兼容 API，便于在应用侧复用统一的 SSE 解析与聚合管线。

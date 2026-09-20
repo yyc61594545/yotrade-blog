@@ -136,5 +136,3 @@ def maybe_compact(history):
 - [预算护栏该放在调用链的哪一层](/blog/budget-guardrail-design/)
 - [Agent 上下文预算分配](/blog/agent-context-budget-allocation/)
 - [AI Agent 单会话成本监控实现](/blog/ai-agent-cost-monitoring/)
-
-循环型 Agent 的成本控制最终还要落到可观测的调用数据上，[YoTradeApi](https://yotradeapi.com) 的请求级用量统计能按会话拆分每一轮的 token 消耗，方便验证上面这些预算规则是否设对了阈值。

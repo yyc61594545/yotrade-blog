@@ -112,5 +112,3 @@ print(run_instruction_test("gpt-4o-mini", TEST_CASES))
 - [LLM 数学推理能力基准](/blog/llm-math-reasoning-benchmark/)
 - [LLM 中文命名实体识别基准](/blog/llm-named-entity-cn-benchmark/)
 - [团队级 System Prompt 库的组织方式](/blog/ai-system-prompt-library/)
-
-如果你需要横向对比不同模型在自己业务场景下的指令遵循表现，[YoTradeApi](https://yotradeapi.com) 提供统一账号下的多模型 API 中转，方便快速切换模型做实测。

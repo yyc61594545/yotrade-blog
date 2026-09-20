@@ -101,5 +101,3 @@ category: 技术深度
 - [Agent 工具调用的超时预算设计](/blog/agent-tool-timeout-budget/)
 - [AI Agent 工具集合的设计原则](/blog/ai-agent-tool-design/)
 - [Claude Tool Use 最佳实践与陷阱](/blog/claude-tool-use-best-practices/)
-
-工具 Schema 迭代得越频繁,越需要一个稳定、低延迟的多模型调用中转层来做灰度和监控,[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转,方便同时对接新旧模型版本做对比测试。

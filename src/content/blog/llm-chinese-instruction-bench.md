@@ -101,5 +101,3 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 - [LLM 中文理解能力实测：6 大模型横向对比](/blog/llm-chinese-comprehension/)
 - [LLM 指令遵循能力横评](/blog/llm-instruction-following-benchmark/)
 - [LLM 评测 Golden Set 构建方法](/blog/llm-eval-golden-set/)
-
-需要横向调用多家模型跑同一套中文测试集做对比，用 [YoTradeApi](https://yotradeapi.com) 一个接口即可切换调用，不必分别申请和维护各家账号。

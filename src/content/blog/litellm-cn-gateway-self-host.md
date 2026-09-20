@@ -307,5 +307,3 @@ env:
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
-
-LiteLLM 上游配 [YoTradeApi](https://yotradeapi.com)，一把 Key 给整个 LiteLLM 用，团队 Key 在 LiteLLM 后台单独发。

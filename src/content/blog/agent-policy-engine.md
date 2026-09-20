@@ -133,5 +133,3 @@ def can_execute(tool_name, tool_input, context):
 - [AI Agent 密钥隔离与最小权限](/blog/agent-secret-isolation/)
 - [AI Agent 沙箱设计实践](/blog/agent-sandbox-design/)
 - [AI Agent 人工审批队列设计](/blog/agent-human-approval-queue/)
-
-策略引擎判定的是"能不能调用"，调用本身消耗的 token 和 API 成本还是需要单独监控——[YoTradeApi](https://yotradeapi.com) 的调用记录可以按 Key 拆分到具体 Agent 或团队，方便和策略审计日志对照排查。

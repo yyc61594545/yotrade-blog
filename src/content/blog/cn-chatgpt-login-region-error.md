@@ -139,4 +139,4 @@ OpenAI 按你的出口 IP 判断所在地。如果 IP 被识别为不支持地�
 - [注册 ChatGPT 用哪种邮箱不容易被封](/blog/cn-chatgpt-email-choice-guide/)
 - [ChatGPT 注册接码平台横评 2026](/blog/cn-sms-verification-platform-review/)
 
-如果你只是想在自己的程序或工具里用上 GPT、Claude 这些模型，不必和登录风控较劲，[YoTradeApi](https://yotradeapi.com) 提供国内可直连的统一 API 入口，换掉 base_url 就能跑，套餐报价微信咨询。
+如果地区问题解决后 ChatGPT 又要求重新验证手机号，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-login-region-error)：¥29.90 一次，支付宝微信付款，收不到自动换号，换号仍失败全额退款，能否通过验证由 OpenAI 的风控决定。

@@ -200,5 +200,3 @@ Aider 自动用 weak-model 处理简单任务。
 - [Claude vs GPT vs Gemini 国内开发者怎么选](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [2026 LLM 价格对比与选型决策](/blog/llm-pricing-comparison-2026/)
-
-需要 Claude 全系列同 Key 调用？[YoTradeApi](https://yotradeapi.com) 一把 Key 同时支持 Haiku 4.5 / Sonnet 4.6 / Opus 4.7。

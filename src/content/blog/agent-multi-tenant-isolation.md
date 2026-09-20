@@ -89,5 +89,3 @@ Agent 的记忆系统（短期对话历史、长期用户画像、跨会话摘�
 - [Agent 工具密钥隔离与最小权限](/blog/agent-secret-isolation/)
 - [AI 编程 Agent 沙箱设计：怎么让模型放心跑代码](/blog/agent-sandbox-design/)
 - [AI 编程 Agent 安全评审清单：上生产前该检查什么](/blog/ai-coding-agent-security-review/)
-
-多租户 Agent 系统对模型调用的稳定性和延迟要求都更高，[YoTradeApi](https://yotradeapi.com) 提供国内直连的主流模型 API 中转，配合独立 key 管理，方便按租户或按业务线拆分调用配额和监控。

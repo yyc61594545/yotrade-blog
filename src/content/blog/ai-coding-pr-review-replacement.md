@@ -211,5 +211,3 @@ AI 是放大器，不是替代品。放大的是评审覆盖率，不是判断�
 - [AI 编程工具团队落地：三个月踩坑与经验](/blog/ai-coding-team-adoption/)
 - [AI 编程常见错误与避坑指南](/blog/ai-coding-mistakes-to-avoid/)
 - [Claude Code 真实世界任务实战](/blog/claude-code-real-world-tasks/)
-
-想在 CI/CD 中集成 Claude 做自动化代码评审，[YoTradeApi](https://yotradeapi.com) 提供稳定的国内 Claude API 中转，低延迟、支持人民币充值，适合工程团队在流水线中调用。

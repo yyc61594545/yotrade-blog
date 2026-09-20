@@ -308,5 +308,3 @@ async def monitored_produce(queue, message):
 - [Python 异步 LLM 客户端：asyncio 最佳实践](/blog/python-async-llm-client/)
 - [LLM 延迟优化实战：从首 token 到流式完成](/blog/llm-latency-optimization/)
 - [LLM 错误重试策略：指数退避与熔断实践](/blog/llm-error-retry-strategy/)
-
-流式 API 的稳定性离不开可靠的基础设施，[YoTradeApi](https://yotradeapi.com) 提供低延迟、高稳定的 Claude API 中转，国内网络环境下流式响应的首 token 延迟可低至 1 秒内。

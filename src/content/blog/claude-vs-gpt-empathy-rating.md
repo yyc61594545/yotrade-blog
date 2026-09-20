@@ -93,5 +93,3 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 - [Claude vs GPT vs Gemini 国内开发者选型](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
 - [LLM Agent 评估方法论](/blog/llm-agent-evaluation-methods/)
 - [LLM 输出验证：schema + 业务规则双层防护](/blog/llm-output-validation/)
-
-想在自己的客服或陪伴类产品里同时测试 Claude 和 GPT 的真实共情表现？[YoTradeApi](https://yotradeapi.com) 一个 Key 接入全系模型，方便跑并行对比不用来回切账号。

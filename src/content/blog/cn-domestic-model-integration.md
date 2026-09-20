@@ -150,5 +150,3 @@ for model in FALLBACK_CHAIN:
 - [DeepSeek R1 与 Claude Thinking 对比](/blog/deepseek-r1-vs-claude-thinking/)
 - [智谱 GLM 开发者评测](/blog/cn-zhipu-glm-developer-review/)
 - [国内网络下的 AI API 中转 vs 自建 VPN](/blog/ai-api-relay-vs-self-vpn/)
-
-如果不想为每家国产模型单独管一套 Key 和账单，[YoTradeApi](https://yotradeapi.com) 支持国产与国际主流模型统一接入，一个 Key 按上面的代码直接切换。

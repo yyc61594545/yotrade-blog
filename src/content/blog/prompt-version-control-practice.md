@@ -123,5 +123,3 @@ def select_prompt_version(user_id, rollout_percentage):
 - [OpenAI Prompt Object 版本管理实战](/blog/openai-prompt-object-versioning/)
 - [结构化输出稳定性横评：如何量化 LLM 的 JSON 出错率](/blog/llm-json-stability-bench/)
 - [Claude 系统提示词工程实战](/blog/claude-system-prompt-engineering/)
-
-灰度发布和回归测试都需要对多个模型版本做并行调用对比，用 [YoTradeApi](https://yotradeapi.com) 一个中转账号同时调度多家模型，省去分别管理密钥和额度的麻烦。

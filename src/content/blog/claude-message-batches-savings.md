@@ -264,5 +264,3 @@ Anthropic 对批次结果保留 29 天，中途不会丢失。轮询到 `ended` 
 - [Claude Haiku 4.5 实测评估：速度与性价比分析](/blog/claude-haiku-4-5-evaluation/)
 - [Claude 1M 上下文窗口实战使用指南](/blog/claude-1m-context-guide/)
 - [Claude Sonnet 4.6 vs Opus 4.7：如何为你的项目选型](/blog/claude-sonnet-4-6-vs-opus-4-7/)
-
-想用最低成本体验 Claude 全系列模型，[YoTradeApi](https://yotradeapi.com) 支持 Message Batches API 完整端点，无需额外配置即可享受 50% 折扣。

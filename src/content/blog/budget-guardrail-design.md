@@ -72,5 +72,3 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 - [AI API 预算上限自动化设计：防止账单爆炸的工程实践](/blog/ai-api-budget-cap-design/)
 - [AI Agent 单会话成本监控实现：从零构建 Token 追踪系统](/blog/ai-agent-cost-monitoring/)
 - [团队 LLM 预算分配实战](/blog/llm-team-budget-allocation/)
-
-如果你需要给多个模型厂商的调用统一设置预算护栏，[YoTradeApi](https://yotradeapi.com) 的中转层能提供统一的额度控制入口，避免每个厂商账户各自为战。

@@ -355,5 +355,3 @@ fi
 - [Claude Code 上手入门指南](/blog/claude-code-getting-started/)
 - [Claude Code Hooks 工作流自动化](/blog/claude-code-hooks-workflow/)
 - [AI 流水线的错误追踪方案](/blog/ai-pipeline-error-tracing/)
-
-在 monorepo 中使用 Claude Code 时，如果需要切换不同的模型供应商（比如对复杂任务用 Claude Opus 4.8，日常任务用 Claude Sonnet），[YoTradeApi](https://yotradeapi.com) 提供统一 API 中转，支持一个 Key 在不同场景下灵活切换模型，账单人民币结算。

@@ -360,5 +360,3 @@ async def health():
 - [Python 异步 LLM 客户端最佳实践](/blog/python-async-llm-client/)
 - [各家 LLM JSON 模式横向对比](/blog/llm-json-mode-comparison/)
 - [Token 计算中文指南](/blog/token-counting-cn-guide/)
-
-想快速接入 GPT、Claude、Gemini 等多个模型而不用管理多套 Key？[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容接口，一个 Key 即可在 Chatbot 里随时切换底层模型。

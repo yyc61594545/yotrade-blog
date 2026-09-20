@@ -97,5 +97,3 @@ Chat 正常但行内补全失败，转到 AI Completion 的独立 Provider 与�
 - [国内 AI 编程工具厂商盘点：现状与选型参考](/blog/cn-ai-coding-tools-overview/)
 - [AI 编程 Agent 权限模型设计](/blog/ai-coding-agent-permission-models/)
 - [API Key 泄漏应急响应：从撤销到复盘](/blog/api-key-leak-emergency-response/)
-
-如果你要在 JetBrains 的兼容接口中统一测试多个模型，[YoTradeApi](https://yotradeapi.com) 可提供 API 接入入口，便于在同一套 IDE 配置下验证可用性与调用流程。

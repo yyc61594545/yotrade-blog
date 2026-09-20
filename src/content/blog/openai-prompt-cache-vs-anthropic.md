@@ -123,5 +123,3 @@ OpenAI 和 Anthropic 的缓存机制在计费细节和开启方式上的差异�
 - [LLM 缓存层设计](/blog/llm-cache-layer-design/)
 - [LLM 多厂商 Fallback 设计](/blog/llm-fallback-multi-provider/)
 - [多模型成本路由实践](/blog/multi-model-cost-routing/)
-
-如果你的架构需要在多个模型厂商之间做统一的缓存监控和成本核算，用 [YoTradeApi](https://yotradeapi.com) 中转可以在同一个账单和后台里查看各家模型的缓存命中数据，省去分别对接多个厂商控制台的麻烦。

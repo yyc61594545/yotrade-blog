@@ -213,5 +213,3 @@ for await (const event of stream) {
 - [LLM 流式响应背压处理：防止服务端被打爆的实战指南](/blog/llm-streaming-backpressure/)
 - [Claude 流式响应事件类型完全指南](/blog/claude-streaming-event-types/)
 - [OpenAI Realtime API 国内使用指南](/blog/openai-realtime-api-guide/)
-
-如果你要把 OpenAI 的流式能力接进统一的多模型服务层，[YoTradeApi](https://yotradeapi.com) 提供兼容式 API 接入方式，便于把流式输出、工具调用和模型切换放进同一套工程管线里。

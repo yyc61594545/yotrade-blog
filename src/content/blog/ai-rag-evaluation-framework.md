@@ -128,5 +128,3 @@ jobs:
 - [LlamaIndex 中文 RAG 教程](/blog/llamaindex-cn-rag-tutorial/)
 - [LLM 输出验证：如何保证结构化输出可靠](/blog/llm-output-validation/)
 - [Claude vs Gemini 文档 RAG 对比](/blog/claude-vs-gemini-document-rag/)
-
-搭建评测框架过程中经常需要用不同模型分别做生成和裁判，避免自评偏差，通过 [YoTradeApi](https://yotradeapi.com) 一个接口即可切换调用多家模型，方便快速搭建这类交叉评测流程。

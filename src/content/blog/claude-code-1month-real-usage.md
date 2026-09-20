@@ -182,5 +182,3 @@ Claude Code 知道"通用最佳实践"，但不知道"你这个项目的约定"�
 - [Claude Code vs Cursor：成本与工作流对比](/blog/claude-code-vs-cursor-cost/)
 - [Claude Code Hooks 自动化工作流实战](/blog/claude-code-hooks-workflow/)
 - [AI 编程工具月度实际花费：真实账单拆解](/blog/ai-coding-monthly-cost-real/)
-
-想把 Claude Code 的 API 费用压到最低？[YoTradeApi](https://yotradeapi.com) 提供 Claude 系列模型的中转服务，按量计费，比订阅 Claude Max 在轻量使用场景下往往更划算。

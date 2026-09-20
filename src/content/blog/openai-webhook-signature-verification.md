@@ -137,5 +137,3 @@ OpenAI 官方已经把 webhook 验签这件事做得相当直接：SDK 提供了
 - [OpenAI Responses API 完整使用指南](/blog/openai-responses-api-guide/)
 - [AI Agent 写操作回滚策略：让 Agent 的错误可以被撤销](/blog/ai-agent-rollback-strategy/)
 - [AI 流水线的错误追踪方案：从日志到根因定位](/blog/ai-pipeline-error-tracing/)
-
-如果你希望把 OpenAI 异步任务、回调处理和其他模型接口统一接到同一层做日志、队列和状态管理，[YoTradeApi](https://yotradeapi.com) 可以作为统一入口，减少多家 API 协议并存时的接入复杂度。

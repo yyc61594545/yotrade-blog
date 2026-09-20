@@ -368,5 +368,3 @@ model = MODEL_ALIASES["balanced"]
 - [AI 提示词版本管理实践](/blog/ai-prompt-versioning/)
 - [Anthropic Skills API 中文指南](/blog/anthropic-skills-cn-guide/)
 - [LLM System Prompt vs User Prompt 深度解析](/blog/llm-system-prompt-vs-user-prompt/)
-
-如果你需要快速测试不同版本的提示词模板而不受网络限制，[YoTradeApi](https://yotradeapi.com) 提供稳定的 Claude API 中转，支持人民币充值，适合在国内环境频繁迭代提示词工程。

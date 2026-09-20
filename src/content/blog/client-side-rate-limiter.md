@@ -209,5 +209,3 @@ async def test_token_dimension_blocks_before_request_dimension():
 - [Python 异步并发调用 LLM API](/blog/python-async-llm-client/)
 - [AI API 网关请求签名与防重放实现](/blog/llm-api-request-signing-proxy/)
 - [自建 LLM 网关的路由实现：从零设计转发逻辑](/blog/llm-gateway-routing-implementation/)
-
-如果不想自己维护这套多维度限流和分布式令牌桶，[YoTradeApi](https://yotradeapi.com) 的中转层已经内置了限速与排队策略，接入后可以直接把这部分复杂度交出去。

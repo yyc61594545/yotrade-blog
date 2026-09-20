@@ -187,5 +187,3 @@ async def route_with_fallback(request, primary, fallback):
 - [LLM API 幂等性设计](/blog/llm-api-idempotency-design/)
 - [什么是 API 中转，一篇讲清楚](/blog/what-is-api-relay-explained/)
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
-
-如果不想自己维护路由层和健康检查逻辑，[YoTradeApi](https://yotradeapi.com) 已经内置了多上游负载均衡与故障转移，一个 API 直接接入即可省去这部分工程投入。

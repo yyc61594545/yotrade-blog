@@ -235,5 +235,3 @@ for case in TEST_CASES:
 - [Prompt Caching 成本优化实战](/blog/prompt-caching-cost-optimization/)
 - [并行工具调用：Claude 多工具并发实战](/blog/parallel-tool-use-claude/)
 - [Claude Code 入门指南](/blog/claude-code-getting-started/)
-
-想低成本、稳定地调用 Claude API？[YoTradeApi](https://yotradeapi.com) 提供 Claude 全系列模型的中转接入，兼容 OpenAI SDK 格式，支持 Prompt Caching，按量计费无月费。

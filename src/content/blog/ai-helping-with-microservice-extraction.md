@@ -255,5 +255,3 @@ AI 通常会建议用 Saga 模式处理分布式事务，但 Saga 的实现复�
 - [用 Aider 重构 Legacy Python 项目实录](/blog/legacy-python-refactor-with-aider/)
 - [AI 编程工具团队落地经验](/blog/ai-coding-team-adoption/)
 - [AI 辅助微服务拆分后，接口调用成本可能上升——合理使用](/blog/llm-cost-optimization-checklist/)
-
-大规模重构中需要频繁调用 Claude 或 GPT-4o 分析代码，[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转和人民币计费，让你专注于架构决策而不是网络和账单问题。

@@ -98,5 +98,3 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 - [企业团队 AI 工具采购流程怎么走](/blog/cn-ai-tools-corporate-procurement/)
 - [AI API 预算上限设计:怎么防止一夜刷爆](/blog/ai-api-budget-cap-design/)
 - [LLM 账单对账:怎么核对每一分钱花在哪](/blog/llm-billing-reconciliation/)
-
-把发票和报销流程理顺之后,团队用 AI API 的心理负担会小很多——不用再担心"这笔钱说不清楚",[YoTradeApi](https://yotradeapi.com) 支持人民币付款和对公开票,是把这件事简化到最省心的路径之一。

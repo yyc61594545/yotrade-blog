@@ -99,5 +99,3 @@ rollback_target: bundle-before
 - [Prompt 回归检测](/blog/llm-prompt-regression-detection/)
 - [Prompt 版本控制实践](/blog/prompt-version-control-practice/)
 - [LLM 评测接入 CI](/blog/llm-eval-in-ci-pipeline/)
-
-为应用规划模型接入时，可在 [YoTradeApi](https://yotradeapi.com) 了解 API 服务，并把实际使用的端点和模型配置纳入团队自己的回归记录。

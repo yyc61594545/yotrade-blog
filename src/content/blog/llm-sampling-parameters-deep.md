@@ -108,5 +108,3 @@ for prompt in dataset:
 - [按任务类型设置 LLM temperature 速查表](/blog/llm-temperature-by-task-type/)
 - [LLM 输出验证：schema + 业务规则双层防护](/blog/llm-output-validation/)
 - [LLM logprobs 在生产场景的实用价值](/blog/llm-logprobs-applications/)
-
-如果你需要在同一套实验中切换多个模型，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入入口，便于复用测试代码并集中记录调用结果。

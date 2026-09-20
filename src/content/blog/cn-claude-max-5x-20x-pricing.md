@@ -154,4 +154,4 @@ Claude Max 的定价逻辑很清晰：$100 的 5x 和 $200 的 20x，本质上�
 - [Claude Code 镜像国内加速配置](/blog/claude-code-mirror-cn-setup/)
 - [国内 ChatGPT Plus 订阅付款指南（2026）](/blog/cn-chatgpt-plus-payment-2026/)
 
-如果你在国内想稳定调用 Claude API 或需要按量计费的灵活方案，[YoTradeApi](https://yotradeapi.com) 支持支付宝/微信支付，无需信用卡即可开始使用。
+如果你已经选定 Max 5x 或 20x、只差付款这一步，可以了解我们的[官方订阅代充](https://yotradeapi.com)，服务范围是 Claude Max 5x / 20x、Claude Pro 年付、Claude Team 席位和 ChatGPT Pro，报价微信咨询。

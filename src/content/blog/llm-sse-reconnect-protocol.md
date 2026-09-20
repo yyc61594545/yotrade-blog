@@ -116,5 +116,3 @@ data: {"ts": 1757000000}
 - [Anthropic Messages 流式中断恢复实战](/blog/anthropic-message-stream-recovery/)
 - [LLM API 错误重试策略设计](/blog/llm-error-retry-strategy/)
 - [AI API 流式输出（SSE）故障排查与最佳实践](/blog/streaming-sse-troubleshooting/)
-
-断线重连协议设计好之后，实际调用 OpenAI/Claude 的稳定性还要看链路本身，如果国内直连经常遇到断流，可以试试 [YoTradeApi](https://yotradeapi.com) 的中转节点，减少断连频率能从源头上少踩很多重连的坑。

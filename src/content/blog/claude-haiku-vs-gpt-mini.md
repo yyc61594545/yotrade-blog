@@ -192,5 +192,3 @@ Claude Haiku 4.5 和 GPT-5 mini 都是优秀的轻量模型，差距不像旗舰
 - [LLM 定价横评 2026：哪个模型最划算](/blog/llm-pricing-comparison-2026/)
 - [LLM JSON 模式对比：哪个模型更稳定](/blog/llm-json-mode-comparison/)
 - [LLM Agent 评估方法论](/blog/llm-agent-evaluation-methods/)
-
-如果需要在国内稳定调用 Claude Haiku 4.5 或 GPT-5 mini，[YoTradeApi](https://yotradeapi.com) 提供统一中转接口，同时支持两家模型，支付宝/微信即可开通。

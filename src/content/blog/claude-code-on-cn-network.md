@@ -262,5 +262,3 @@ env:
 - [什么是 API 中转？一文讲清楚](/blog/what-is-api-relay-explained/)
 - [Cline 国内 API 配置教程](/blog/cline-cn-api-setup/)
 - [LLM API 错误重试策略设计](/blog/llm-error-retry-strategy/)
-
-在国内稳定使用 Claude Code，[YoTradeApi](https://yotradeapi.com) 提供低延迟的 Anthropic API 中转，无需配置代理，直接设置 `ANTHROPIC_BASE_URL` 即可开始使用。

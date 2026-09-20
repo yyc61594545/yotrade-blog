@@ -171,5 +171,3 @@ def test_regular_user_discount():
 - [AI 编程学习路线图](/blog/ai-coding-learning-roadmap/)
 - [AI 编程工具的供应商锁定风险](/blog/ai-coding-tool-vendor-lockin/)
 - [Cursor 商业模式分析：订阅定价背后的增长逻辑](/blog/cursor-business-model-analysis/)
-
-想在调试中使用更强的模型能力（如 Claude Opus 或 GPT-4o），[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转，无需翻墙，按量计费，支持 Cursor、Cline 等主流 AI 编辑器接入。

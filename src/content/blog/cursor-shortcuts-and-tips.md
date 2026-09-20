@@ -278,5 +278,3 @@ Cursor 偶尔卡：Cmd+Shift+P → "Restart Window"。比关掉重开快。
 - [Cursor Background Agent 国内配置](/blog/cursor-background-agent-config/)
 - [.cursorrules 最佳实践](/blog/cursor-rules-best-practices/)
 - [Cursor vs Claude Code](/blog/cursor-vs-claude-code-comparison/)
-
-把这些技巧 + [YoTradeApi](https://yotradeapi.com) 中转配合，Cursor 体感会比"刚装时"快 3 倍。

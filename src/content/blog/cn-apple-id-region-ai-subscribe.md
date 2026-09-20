@@ -100,4 +100,4 @@ App Store 订阅是持续关系，不是首月支付成功就结束。应在日�
 - [虚拟卡支付 ChatGPT 被拒的排查清单](/blog/cn-virtual-card-declined-fix/)
 - [国内开发者 AI 工具付款全攻略](/blog/cn-ai-tools-payment-guide/)
 
-如果完成订阅后还需要为开发项目接入模型，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入入口，便于集中管理不同模型的调用配置。
+如果切区订阅对你来说太折腾，而你要开的是 ChatGPT Pro、Claude Max 这类重度套餐，可以了解我们的[官方订阅代充](https://yotradeapi.com)，只做 ChatGPT Pro、Claude Max 5x / 20x、Claude Pro 年付和 Claude Team 席位，报价微信咨询。

@@ -142,5 +142,3 @@ def enforce_l3_limit(l3_messages: list, l3_budget: int, count_tokens_fn) -> list
 - [AI Chatbot 上下文管理策略](/blog/ai-chatbot-context-management/)
 - [Agent 工具调用超时预算设计](/blog/agent-tool-timeout-budget/)
 - [Agent 记忆保留策略](/blog/agent-memory-retention-policy/)
-
-如果你的 Agent 需要频繁切换模型对比不同上下文窗口大小下的表现，[YoTradeApi](https://yotradeapi.com) 提供统一接口调用 Claude、GPT-5、Gemini 等多种长上下文模型，方便做这类预算分配算法的横向验证。

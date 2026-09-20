@@ -96,5 +96,3 @@ def verify_claim(claim, source_text):
 - [长上下文召回率评测](/blog/llm-long-context-recall-bench/)
 - [LLM 会议纪要摘要实践](/blog/llm-meeting-minutes-summarization/)
 - [Claude 长对话摘要实践](/blog/claude-conversation-summary/)
-
-长文档忠实度测试需要反复调用大模型跑逐句核对,调用量不小,通过 [YoTradeApi](https://yotradeapi.com) 中转可以用更低成本跑完整套测试流程，多个模型账号统一管理也更省心。

@@ -117,4 +117,4 @@ AI 生成文字，不是从一个固定答案库里"查找"最佳答案，而是
 - [Token 到底是什么？给完全没接触过的人讲清楚](/blog/what-is-token-for-beginners/)
 - [API Key 安全入门：新手必须知道的几件事](/blog/api-key-safety-for-beginners/)
 
-参数这东西，光看文档很难有感觉，真正跑几次对比实验才会有手感。想更方便地测试不同模型和参数组合，可以试试 [YoTradeApi](https://yotradeapi.com)，一个 Key 中转多家主流 AI 模型，省去分别注册和管理多个账号的麻烦。
+参数这东西，光看文档很难有感觉，真正跑几次对比实验才会有手感。

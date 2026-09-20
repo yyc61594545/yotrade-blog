@@ -181,5 +181,3 @@ for cid, result in results.items():
 - [OpenAI Batch 与 Streaming 的选择决策](/blog/openai-batch-vs-streaming/)
 - [Token 计数国内开发者指南](/blog/token-counting-cn-guide/)
 - [LLM 结构化输出完全指南（JSON Schema / Function Call）](/blog/structured-output-llm-guide/)
-
-批量任务调试阶段经常需要小规模反复测试格式是否正确，[YoTradeApi](https://yotradeapi.com) 提供 OpenAI 和 Anthropic 兼容的 API 接入，方便在正式提交大批量任务前用少量请求快速验证 Prompt 和格式。

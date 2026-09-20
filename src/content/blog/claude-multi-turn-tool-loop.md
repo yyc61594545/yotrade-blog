@@ -170,5 +170,3 @@ async def run_tool_loop(session_id, cancel_event):
 - [AI Agent 错误恢复机制设计](/blog/ai-agent-error-recovery/)
 - [LLM 多厂商 Fallback 设计](/blog/llm-fallback-multi-provider/)
 - [LLM stop token 设计完全指南](/blog/llm-stop-token-cn-guide/)
-
-如果你的 Agent 需要在多轮工具调用循环里做上游故障的自动降级切换，用 [YoTradeApi](https://yotradeapi.com) 中转可以统一管理多个模型的调用，配合断点续跑机制减少长任务因单次请求失败而全部作废的情况。

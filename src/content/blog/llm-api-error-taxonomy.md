@@ -155,5 +155,3 @@ def call_with_retry(fn, max_retries=3):
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 - [AI Agent 错误恢复机制设计：让 Agent 在失败中自我修复](/blog/ai-agent-error-recovery/)
 - [AI Agent 降级与容错策略：生产级可靠性设计](/blog/ai-agent-fallback-design/)
-
-如果你的多模型调用走的是中转服务，错误码归一化这一层其实可以直接交给中转层做——[YoTradeApi](https://yotradeapi.com) 对上游错误做了统一格式封装，省去业务代码里维护多套 provider 分支的麻烦。

@@ -157,5 +157,3 @@ Claude Opus 4.7 的定价（参考公开价格，仅作估算）：
 - [GPT-5 vs Claude Opus 4.7 编程能力对比](/blog/gpt-5-vs-claude-opus-4-7-coding/)
 - [Cline 在大型代码库的实战经验](/blog/cline-on-large-codebase/)
 - [LLM 上下文工程实践](/blog/llm-context-engineering/)
-
-通过 API 中转访问 Claude Opus 4.7 的 1M 上下文无需境外支付账户，[YoTradeApi](https://yotradeapi.com) 支持 Anthropic 最新模型，按量计费无最低消费。

@@ -162,5 +162,3 @@ SWE-Bench 本身也在迭代。社区对现有设计的主要批评：
 - [LLM Agent 评估方法](/blog/llm-agent-evaluation-methods/)
 - [LLM 评估国内使用指南](/blog/llm-evaluation-cn-guide/)
 - [AI 编程工具 2026 全景概览](/blog/ai-coding-tools-2026-overview/)
-
-想在国内直接测试各主流模型的真实编程能力，[YoTradeApi](https://yotradeapi.com) 提供 Claude、GPT、DeepSeek 等模型的统一 API 中转，一套 key 调通所有模型，方便做横向对比测试。

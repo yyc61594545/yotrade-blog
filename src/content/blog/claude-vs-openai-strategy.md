@@ -115,4 +115,4 @@ MCP 的开放性思路和 OpenAI Assistants API 的平台封闭思路是两种�
 - [MCP Server 国内开发指南](/blog/mcp-server-cn-guide/)
 - [AI API 中转市场概览](/blog/cn-llm-relay-market-overview/)
 
-理解两家公司的战略差异，有助于在模型选型时做出更理性的判断。如果你需要同时接入 Claude 和 OpenAI，[YoTradeApi](https://yotradeapi.com) 提供两家的统一中转入口，一个 API Key 即可切换。
+理解两家公司的战略差异，有助于在模型选型时做出更理性的判断。

@@ -107,5 +107,3 @@ HANDOFF 里的"已完成"条目最好附上对应的 commit hash 或简述改动
 - [Codex 后台自动化任务设计](/blog/codex-background-automation/)
 - [Codex Worktree 隔离开发实战：多任务并行不冲突](/blog/codex-worktree-isolation/)
 - [上下文压缩 5 种策略对比：Token 节省与质量权衡](/blog/context-compression-strategies/)
-
-如果长任务里包含大量 API 调用，交接过程中也值得把当前的调用配额和账单状态记进 HANDOFF，避免新会话对成本情况一无所知——用 [YoTradeApi](https://yotradeapi.com) 的话，控制台里的用量统计可以直接截图或摘要贴进交接文档。

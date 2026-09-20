@@ -146,5 +146,3 @@ aider --architect \
 - [Claude Code 镜像国内配置完整指南](/blog/claude-code-mirror-cn-setup/)
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
-
-在 [YoTradeApi](https://yotradeapi.com) 用同一个 Key 同时调用 GPT-5 和 Claude Opus 4.7，按场景自由切换。

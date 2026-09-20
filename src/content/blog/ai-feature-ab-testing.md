@@ -150,5 +150,3 @@ AI 功能的 A/B 测试比传统实验多了一层不确定性——模型输出
 - [Prompt 版本管理系统设计](/blog/ai-prompt-versioning/)
 - [AI Agent 成本监控体系设计](/blog/ai-agent-cost-monitoring/)
 - [LLM 温度参数与 Top-P 深度解析](/blog/llm-temperature-top-p-deep-dive/)
-
-如果你的 AI 功能实验需要同时对比多个模型的效果和成本，用 [YoTradeApi](https://yotradeapi.com) 中转可以在同一套账单里灵活切换模型做对照实验，省去多平台分别开户的麻烦。

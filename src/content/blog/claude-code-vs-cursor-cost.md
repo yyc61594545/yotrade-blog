@@ -186,5 +186,3 @@ Claude Code 的其他所有功能（子 Agent、文件读写、命令执行）�
 - [Claude Code 与 Codex CLI 对比](/blog/claude-code-vs-codex-cli/)
 - [AI 编程 Agent 成本控制实践](/blog/ai-coding-agent-cost-control/)
 - [Cursor API 中转推荐 2026](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
-
-想用 API 中转降低 Claude Code 或 Cursor 的实际费用，[YoTradeApi](https://yotradeapi.com) 支持标准 Anthropic 协议，国内直连无需代理，按量计费无月租。

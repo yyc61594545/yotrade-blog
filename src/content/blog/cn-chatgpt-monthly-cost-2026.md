@@ -143,4 +143,4 @@ Copilot（Bing）提供免费 GPT-4 访问（国内可用性不稳定）；Poe �
 - [AI 编程一个月真实成本披露](/blog/ai-coding-monthly-cost-real/)
 - [国内使用虚拟信用卡订阅 ChatGPT 的完整指南](/blog/cn-virtual-card-for-chatgpt-2026/)
 
-想用更低成本调用 GPT-4o / Claude 等主流模型？[YoTradeApi](https://yotradeapi.com) 支持人民币按量充值，兼容 OpenAI 接口，国内直连无需翻墙。
+如果算下来你需要的是 ChatGPT Pro 这一档，可以了解我们的[官方订阅代充](https://yotradeapi.com)，只做 ChatGPT Pro、Claude Max 5x / 20x、Claude Pro 年付和 Claude Team 席位这类重度套餐，报价微信咨询。

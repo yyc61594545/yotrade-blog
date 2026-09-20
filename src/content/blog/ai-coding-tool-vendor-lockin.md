@@ -167,5 +167,3 @@ AI 工具的核心价值来自底层模型。如果工具供应商因商业原�
 - [Claude Code vs Aider：功能与工作流全面比较](/blog/claude-code-vs-aider-comparison/)
 - [为什么 AI 编程越用越难用？](/blog/why-ai-coding-getting-worse/)
 - [用 AI 工具独立开发 SaaS 的真实经验](/blog/saas-with-ai-coding-tools/)
-
-如果你在寻找一种不依赖单一厂商的 AI API 使用方式，[YoTradeApi](https://yotradeapi.com) 提供多模型统一接口，支持 Claude、GPT-4o、Gemini 等主流模型，方便在工具切换时保持模型访问的连续性。

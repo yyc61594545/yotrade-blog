@@ -93,5 +93,3 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 - [什么是 API 中转，一篇讲清楚](/blog/what-is-api-relay-explained/)
 - [AI 编程工具月度真实成本](/blog/ai-coding-monthly-cost-real/)
 - [LLM 成本优化 30 条 checklist](/blog/llm-cost-optimization-checklist/)
-
-如果你还在纠结该订阅哪个套餐，不妨先用 [YoTradeApi](https://yotradeapi.com) 的按量付费模式把主流模型都试一遍，用真实消耗数据倒推最适合自己的预算方案，而不是凭感觉先订阅再说。

@@ -362,5 +362,3 @@ BullMQ 可以配合 [Bull Board](https://github.com/felixmosh/bull-board) 做可
 - [AI Agent 错误降级设计：构建健壮的 AI 工作流](/blog/ai-agent-fallback-design/)
 - [Claude Code 一个月深度使用复盘](/blog/claude-code-1month-real-usage/)
 - [API 中转稳定性测试：真实压力下的表现](/blog/ai-api-relay-stability-test/)
-
-需要支持高并发 LLM 任务处理的稳定 API 中转？[YoTradeApi](https://yotradeapi.com) 支持按量计费、自动重试，是构建 LLM 任务队列后端的可靠选择。

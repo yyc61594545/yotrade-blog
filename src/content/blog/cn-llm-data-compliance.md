@@ -169,4 +169,4 @@ LLM 应用不一定要永久保存全量对话记录。明确数据保留周期�
 - [中国开发者 Claude 账号与计费指南](/blog/cn-developer-claude-billing/)
 - [国内 AI 工具付款指南](/blog/cn-ai-tools-payment-guide/)
 
-在合规框架下构建 LLM 应用，选择可信赖的 API 接入方式同样重要。[YoTradeApi](https://yotradeapi.com) 提供 Claude、GPT-4o 等主流模型的 API 中转，支持按量计费，适合国内开发者快速接入与验证。
+在合规框架下构建 LLM 应用，选择可信赖的 API 接入方式同样重要。

@@ -292,5 +292,3 @@ client = anthropic.Anthropic(
 - [Claude Code 国内网络配置指南](/blog/claude-code-on-cn-network/)
 - [AI API 中转 vs 自搭 VPN：国内开发者怎么选](/blog/ai-api-relay-vs-self-vpn/)
 - [AI API 中转服务稳定性测试报告](/blog/ai-api-relay-stability-test/)
-
-处理 PDF 文档需要稳定的 API 访问，[YoTradeApi](https://yotradeapi.com) 提供国内直连的 Claude API 中转，支持 PDF 输入、prompt caching 等全部功能，人民币付款开箱即用。

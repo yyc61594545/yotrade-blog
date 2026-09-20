@@ -149,5 +149,3 @@ Responses API 里多轮工具调用的完整循环写法（包括工具结果如
 - [Function Calling vs Tool Use 差异辨析](/blog/function-calling-vs-tool-use/)
 - [LLM 并行函数调用实战](/blog/llm-function-calling-parallel/)
 - [OpenAI Responses API 完整使用指南](/blog/openai-responses-api-guide/)
-
-如果你的项目需要在国内稳定调用这些内置工具，[YoTradeApi](https://yotradeapi.com) 提供兼容 OpenAI SDK 的 API 中转，改一行 `base_url` 即可接入，无需额外改造。

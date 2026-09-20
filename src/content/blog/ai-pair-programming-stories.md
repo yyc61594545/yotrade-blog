@@ -154,5 +154,3 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 - [Claude Code 真实场景任务实践](/blog/claude-code-real-world-tasks/)
 - [AI 编程工具的经济账](/blog/ai-coding-tool-economics/)
 - [AI 编程常见错误与避坑指南](/blog/ai-coding-mistakes-to-avoid/)
-
-如果你也在寻找稳定的 Claude API 接入方式，[YoTradeApi](https://yotradeapi.com) 提供国内可用的 Claude 全系列中转，让你专注于写代码而不是折腾网络。
