@@ -586,3 +586,76 @@
 - cn-codex-account-pool-risk | 号池共享 Codex 账号的真实风险与合规边界 | 国内场景
 - codex-thinking-level-tradeoff | Codex 思考等级与实际表现的权衡（medium 未必输 high） | 模型评测
 - codex-astra-model-selection | Codex 各代模型选型：什么任务该用哪一档 | 模型评测
+
+## 2026-09 国内普通用户获取 AI 服务补充池
+
+> 面向注册、登录、付款、订阅、国内可用性与账号恢复等明确搜索意图。
+> 产品名称、地区支持、价格与政策如有变化，写作时以官方一手资料为准。
+
+### 注册与登录（15）
+- cn-chatgpt-signup-button-disabled | ChatGPT 注册按钮点不了：常见原因与排查顺序 | 小白入门
+- cn-chatgpt-email-verification-missing | ChatGPT 注册收不到邮箱验证信怎么办 | 小白入门
+- cn-chatgpt-google-apple-login-choice | ChatGPT 用邮箱、Google 还是 Apple 登录更稳 | 小白入门
+- cn-chatgpt-age-verification-guide | ChatGPT 要求年龄验证怎么办：材料与隐私注意事项 | 小白入门
+- cn-claude-email-code-not-received | Claude 登录收不到邮箱验证码的解决清单 | 小白入门
+- cn-claude-supported-region-error | Claude 提示所在地区不支持：原因与合规替代方案 | 国内场景
+- cn-claude-login-loop-fix | Claude 登录后反复跳回登录页怎么解决 | 小白入门
+- cn-gemini-age-country-restriction | Gemini 注册遇到年龄或国家限制怎么判断 | 小白入门
+- cn-gemini-workspace-account-unavailable | Gemini 提示工作或学校账号不可用怎么办 | 小白入门
+- cn-perplexity-register-cn-guide | 国内注册 Perplexity 账号完整流程 | 小白入门
+- cn-grok-register-cn-guide | 国内注册 Grok 账号：X 登录与独立账号怎么选 | 小白入门
+- cn-midjourney-register-discord-guide | Midjourney 注册与 Discord 登录完整流程 | 小白入门
+- cn-suno-register-cn-guide | 国内注册 Suno 账号完整流程与常见报错 | 小白入门
+- cn-cursor-register-cn-guide | 国内注册 Cursor 账号与首次登录教程 | 小白入门
+- cn-notion-ai-register-guide | Notion AI 注册、登录与开通前准备 | 小白入门
+
+### 付款与订阅（15）
+- cn-chatgpt-card-declined-fix | ChatGPT 订阅银行卡被拒：逐项排查账单地址与风控 | 国内场景
+- cn-chatgpt-duplicate-charge-fix | ChatGPT 重复扣费怎么办：查账与申诉步骤 | 国内场景
+- cn-chatgpt-cancel-renewal-guide | ChatGPT 取消自动续费后还能用多久 | 小白入门
+- cn-chatgpt-invoice-receipt-download | ChatGPT 订阅发票和付款收据怎么下载 | 小白入门
+- cn-claude-card-declined-fix | Claude Pro 付款被拒的原因与处理顺序 | 国内场景
+- cn-claude-cancel-renewal-guide | Claude Pro 或 Max 怎么取消自动续费 | 小白入门
+- cn-gemini-google-play-payment | Gemini 通过 Google Play 订阅的付款与续费问题 | 国内场景
+- cn-cursor-payment-failed-fix | Cursor Pro 支付失败：银行卡、地区与重试排查 | 国内场景
+- cn-perplexity-payment-failed-fix | Perplexity Pro 付款失败与自动续费排查 | 国内场景
+- cn-midjourney-cancel-subscription | Midjourney 怎么取消订阅并确认不再扣费 | 小白入门
+- cn-suno-cancel-subscription | Suno 怎么取消订阅与查看剩余额度 | 小白入门
+- cn-apple-ai-subscription-receipt | 通过 Apple 订阅 AI 服务后如何查收据和退款 | 小白入门
+- cn-overseas-card-billing-address | 海外卡订阅 AI 服务时账单地址怎么填 | 国内场景
+- cn-ai-subscription-3ds-verification | AI 订阅付款卡在 3D Secure 验证怎么办 | 国内场景
+- cn-ai-subscription-fx-fee-guide | AI 订阅的汇率、外币转换费和隐形成本怎么算 | 国内场景
+
+### 国内可用性与选择（15）
+- cn-chatgpt-ios-download-region | 国内 iPhone 下载 ChatGPT：Apple ID 地区与更新问题 | 小白入门
+- cn-chatgpt-android-install-guide | 国内安卓安装 ChatGPT 官方 App 的识别与更新 | 小白入门
+- cn-claude-mobile-app-download | Claude 手机 App 国内下载与登录注意事项 | 小白入门
+- cn-gemini-mobile-app-region | Gemini 手机 App 提示地区不可用怎么办 | 国内场景
+- cn-ai-website-blank-page-fix | AI 官网打开白屏或一直转圈的通用排查 | 小白入门
+- cn-ai-login-loop-browser-fix | AI 服务反复登录失败：Cookie、浏览器与网络排查 | 小白入门
+- cn-ai-service-status-check | ChatGPT、Claude、Gemini 出故障时怎么查官方状态 | 小白入门
+- cn-ai-interface-language-setting | ChatGPT、Claude、Gemini 怎么切换中文界面 | 小白入门
+- cn-ai-browser-extension-account-risk | AI 浏览器插件代登录的账号与隐私风险 | 国内场景
+- cn-ai-free-vs-paid-plan-choice | ChatGPT、Claude、Gemini 免费版够不够用 | 小白入门
+- cn-ai-family-sharing-limit | AI 订阅能不能家庭共享：账号与平台规则说明 | 小白入门
+- cn-ai-student-plan-verification | AI 学生优惠怎么验证：学校邮箱与资格常见问题 | 小白入门
+- cn-ai-business-vs-personal-plan | AI 团队版和个人版怎么选：多人使用决策表 | 国内场景
+- cn-ai-official-vs-mirror-identify | 怎么识别 AI 官方网站、镜像站和套壳站 | 小白入门
+- cn-ai-app-update-region-account | AI App 更新提示账号地区不一致怎么解决 | 小白入门
+
+### 账号安全与恢复（15）
+- cn-chatgpt-email-lost-recovery | ChatGPT 登录邮箱丢失后还能找回账号吗 | 小白入门
+- cn-chatgpt-password-reset-missing | ChatGPT 收不到密码重置邮件怎么办 | 小白入门
+- cn-chatgpt-account-deactivated-appeal | ChatGPT 账号被停用后的申诉材料与步骤 | 小白入门
+- cn-chatgpt-account-hacked-recovery | ChatGPT 账号被盗后的止损与找回清单 | 小白入门
+- cn-chatgpt-charged-cannot-login | ChatGPT 无法登录却仍在扣费怎么停止订阅 | 国内场景
+- cn-claude-disabled-account-appeal | Claude 账号被停用怎么申诉与保存证据 | 小白入门
+- cn-gemini-access-denied-recovery | Gemini 提示无法访问服务的账号排查 | 小白入门
+- cn-cursor-account-suspended-appeal | Cursor 账号被暂停后的排查与申诉 | 小白入门
+- cn-ai-2fa-phone-lost-recovery | AI 账号开了 2FA 但手机丢了怎么恢复 | 小白入门
+- cn-ai-account-change-email | ChatGPT、Claude 等 AI 账号能不能更换邮箱 | 小白入门
+- cn-ai-account-change-phone-number | AI 账号更换手机号前要做哪些准备 | 小白入门
+- cn-ai-payment-dispute-evidence | AI 订阅扣费争议要准备哪些付款证据 | 国内场景
+- cn-ai-account-device-cleanup | AI 账号如何退出旧设备并检查异常登录 | 小白入门
+- cn-ai-public-computer-login-safety | 在公共电脑登录 AI 账号后的安全清理清单 | 小白入门
+- cn-ai-data-export-before-cancel | 取消 AI 订阅前如何导出对话和个人数据 | 小白入门
