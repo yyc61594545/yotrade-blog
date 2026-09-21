@@ -24,9 +24,13 @@ const {
 	category,
 	currentSlug,
 	variant = 'post',
+	lang = 'zh-CN',
 } = Astro.props;
 
 const isPost = variant === 'post';
+// 英文文章：面向海外读者，CTA 挂 China AI Pass（即梦代付），不挂中文代充/接码
+const isEn = lang === 'en';
+const ctaCnaiHref = `https://yotradeapi.com/china-ai?utm_source=blog&utm_medium=cta&utm_content=${currentSlug ?? 'unknown'}`;
 
 const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
 // 文章页不再放占位图；社交预览与结构化数据统一用站点级品牌卡片
@@ -95,7 +99,7 @@ const articleSchema = {
 };
 ---
 
-<html lang="zh-CN">
+<html lang={lang}>
 	<head>
 		<BaseHead
 			title={title}
@@ -289,10 +293,10 @@ const articleSchema = {
 					<p class="meta">
 						<FormattedDate date={published} />
 						{showUpdated && (
-							<span class="updated">更新于 <FormattedDate date={modified} /></span>
+							<span class="updated">{isEn ? 'Updated ' : '更新于 '}<FormattedDate date={modified} /></span>
 						)}
 						{isPost && (
-							<span class="byline">作者 <a href="/author/" rel="author">YoTrade</a></span>
+							<span class="byline">{isEn ? 'By ' : '作者 '}<a href="/author/" rel="author">YoTrade</a></span>
 						)}
 					</p>
 					{tags.length > 0 && (
@@ -304,7 +308,19 @@ const articleSchema = {
 					)}
 				</header>
 
-				{isPost && smsIntent && (
+				{isPost && isEn && (
+					<aside class="tile cta cta--top">
+						<h3>No +86 number, no WeChat Pay? We pay Jimeng for you.</h3>
+						<p>
+							China AI Pass pays Jimeng (即梦) memberships and credit packs on your own account. You pay by Zelle or Binance Pay, we scan your checkout QR with WeChat Pay. Usually done within an hour, no password needed.
+						</p>
+						<div class="actions">
+							<a class="btn btn-primary" href={ctaCnaiHref}>See plans & order →</a>
+						</div>
+					</aside>
+				)}
+
+				{isPost && !isEn && smsIntent && (
 					<aside class="tile cta cta--top">
 						<h3>卡在手机验证这一步？</h3>
 						<p>
@@ -317,7 +333,7 @@ const articleSchema = {
 					</aside>
 				)}
 
-				{isPost && !smsIntent && (
+				{isPost && !isEn && !smsIntent && (
 					<aside class="tile cta cta--top">
 						<h3>不想折腾接码和虚拟卡？</h3>
 						<p>
@@ -335,7 +351,19 @@ const articleSchema = {
 				</div>
 			</article>
 
-			{isPost && smsIntent && (
+			{isPost && isEn && (
+				<aside class="tile cta cta--bottom">
+					<h3>Ready to get Seedance 2.0 on Jimeng?</h3>
+					<p>
+						Jimeng Basic $19 · Standard $49 · Premium $119 per month on your own account, or any other checkout amount (credit packs included). Zelle or Binance Pay, full refund if we can't complete within 24 hours.
+					</p>
+					<div class="actions">
+						<a class="btn btn-primary" href={ctaCnaiHref}>Order on China AI Pass →</a>
+					</div>
+				</aside>
+			)}
+
+			{isPost && !isEn && smsIntent && (
 				<aside class="tile cta cta--bottom">
 					<h3>还卡在手机验证？用美国号收验证码</h3>
 					<p>
@@ -349,7 +377,7 @@ const articleSchema = {
 				</aside>
 			)}
 
-			{isPost && !smsIntent && (
+			{isPost && !isEn && !smsIntent && (
 				<aside class="tile cta cta--bottom">
 					<h3>ChatGPT Pro / Claude Max / Claude Team 官方订阅代充</h3>
 					<p>
@@ -368,7 +396,7 @@ const articleSchema = {
 
 			{related.length > 0 && (
 				<section class="related">
-					<h3>相关阅读</h3>
+					<h3>{isEn ? 'Related' : '相关阅读'}</h3>
 					<ul>
 						{related.map((p) => (
 							<li class="tile tile-link">

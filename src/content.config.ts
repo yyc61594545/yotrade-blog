@@ -19,6 +19,8 @@ const blog = defineCollection({
 			category: z.optional(z.string()),
 			featured: z.optional(z.boolean()).default(false),
 			draft: z.optional(z.boolean()).default(false),
+			// 'en' 的文章切英文 html lang 与 China AI Pass 的英文 CTA（2026-09-22 起）
+			lang: z.optional(z.enum(['zh-CN', 'en'])).default('zh-CN'),
 		}),
 });
 
