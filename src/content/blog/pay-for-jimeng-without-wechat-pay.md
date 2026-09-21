@@ -115,6 +115,7 @@ Whatever you pick, buy **single month** the first time. Once you know your month
 
 - **You picked an auto-renew tab.** The popup will look identical, but the QR code is a subscription agreement. Proxy services and friends will (and should) refuse it. Use 单月购买.
 - **The QR code expired.** Jimeng's WeChat Pay codes are short-lived. Do not generate the code until you have paid the proxy and are ready to upload.
+- **Cropped or blurry screenshot.** The whole QR code has to be visible and sharp; a phone photo of a monitor usually scans, a cropped corner never does.
 - **Amount mismatch.** If you ordered Standard but the popup shows ¥649, you clicked the wrong plan. Close it and reopen; do not upload.
 - **Refunds after activation.** Once the membership is active, the money is with ByteDance, not with the proxy. Jimeng's own refund policy applies (the plan page advertises 无忧退款, "worry-free refunds", for unused memberships; go through Jimeng's in-app support).
 - **Account bans.** Paying by proxy does not touch your login and does not violate the payment terms, but the account itself must be one you obtained legitimately. Shared or purchased accounts are your own risk.
