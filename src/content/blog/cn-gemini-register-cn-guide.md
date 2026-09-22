@@ -84,6 +84,8 @@ Gemini 本身使用 Google 账号登录，是否要求手机号通常来自 Goog
 
 不要把一次性号码作为 Google 账号唯一的恢复方式。即使当天收码成功，之后换设备或触发安全检查时，你未必还能拿回同一个号码。已经绑定临时号码的，应尽快补上恢复邮箱、两步验证器和恢复码，并检查近期安全活动。
 
+如果确认是 Google 官方安全流程在要求短信验证，而你手上没有能收到码的海外号码，可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-gemini-register-cn-guide)；验证码会显示在你自己的订单页面上，不经过任何第三方登录你的账号。
+
 ## 六、移动 App 与订阅要分开判断
 
 网页版能用，不代表手机商店一定能搜到 Gemini App。移动 App 的支持国家、系统版本和设备条件与网页版不同；某些 Android 能力还依赖 Google App 和系统组件。正确顺序是先查官方移动版可用地区和设备要求，再从 App Store 或 Google Play 的官方开发者页面安装。

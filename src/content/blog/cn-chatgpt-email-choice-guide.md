@@ -66,6 +66,8 @@ OpenAI 当前的[邮箱修改说明](https://help.openai.com/en/articles/4936827
 
 最后一项不能靠换邮箱解决。OpenAI 的[支持国家与地区列表](https://help.openai.com/en/articles/7947663)明确提示，从未列出的地区访问或向这些地区提供访问可能导致账号被封锁或暂停。应在注册和使用前核对当日列表，不要把邮箱教程当成绕过地区规则的方法。
 
+邮箱这一关过了，下一道坎通常是手机验证。只需要过这一次、不想为此办卡或买 eSIM 的，可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-email-choice-guide)。
+
 ## 五、注册后立刻补齐账号安全
 
 验证邮件完成后，到安全设置开启可用的多因素认证。OpenAI 的[MFA 说明](https://help.openai.com/en/articles/7967234)列出 authenticator、push、短信/WhatsApp 与 passkey 等方式，实际选项会因设备、国家、方案和账号创建方式而异。优先使用自己能长期控制且有备份的方式。

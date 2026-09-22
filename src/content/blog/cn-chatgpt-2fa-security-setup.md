@@ -20,6 +20,8 @@ category: 小白入门
 
 国内用户的 ChatGPT 账号有一个普遍的隐患：注册时用的手机号往往是一次性的，邮箱可能是临时申请的，密码是随手设的。账号能用的时候没人在意，一旦被盗、被异地登录、或者换了手机，才发现**没有任何一条找回路径真正握在自己手里**。
 
+开启短信 2FA 需要一个能长期收码的号码；如果只是想先完成注册阶段的一次性验证，用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-2fa-security-setup)就够了，长期 2FA 建议绑自己能持有的号码。
+
 这篇讲的是注册之后的那一步：把账号的安全设置一次做完。注册流程本身见《[没有海外手机号怎么注册 ChatGPT](/blog/cn-chatgpt-register-without-foreign-phone/)》，本文不重复。
 
 ## 一、先认清：你的找回路径有多脆弱

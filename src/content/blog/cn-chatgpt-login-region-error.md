@@ -109,6 +109,8 @@ OpenAI 按你的出口 IP 判断所在地。如果 IP 被识别为不支持地�
 
 如果要重新注册，手机验证这一关是最卡人的环节，完整的替代方案见 [国内注册 ChatGPT 免国外手机号完整指南](/blog/cn-chatgpt-register-without-foreign-phone/)；邮箱选择也会影响后续稳定性，可以先看 [注册 ChatGPT 用哪种邮箱不容易被封](/blog/cn-chatgpt-email-choice-guide/) 再动手。
 
+注册新账号时最常卡住的仍然是手机验证这一步。没有能收到短信的海外号码，可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-login-region-error)，一次 ¥29.90，付款后现取号。
+
 ## 八、一张排查顺序表
 
 遇到问题时按这个顺序走，每步都能排除一大类：

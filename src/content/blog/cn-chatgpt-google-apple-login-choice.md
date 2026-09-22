@@ -20,6 +20,8 @@ category: 小白入门
 
 注册页上那三个按钮——用邮箱继续、用 Google 继续、用 Apple 继续——看起来只是三条通往同一个地方的路。真正的差别不在注册那三十秒，而在半年后：你换了手机、忘了密码、想开订阅、或者想把账号从公司 Google 账号迁到个人账号的时候。
 
+用邮箱注册的路径绕不开手机验证这一步。没有海外号码的话，[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-google-apple-login-choice)可以只解决这一次验证，不用长期持有号码。
+
 这三种方式在国内用户身上还会额外放大两个差异：SSO 登录依赖的第三方服务是否随时可达，以及 Apple 的隐藏邮件地址会不会让你以后找不回账号。这篇只讲选型判断，不讲具体注册步骤——完整流程见 [ChatGPT 账号注册完整教程 2026（含各种验证方式）](/blog/cn-chatgpt-account-register-full/)。
 
 ## 一、先看结论

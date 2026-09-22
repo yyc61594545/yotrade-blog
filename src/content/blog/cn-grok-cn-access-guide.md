@@ -46,6 +46,8 @@ grok.x.ai 和 x.com 对大陆 IP 有访问限制，直连基本无法打开。�
 - 虚拟手机号服务（如 SMS-Activate 等境外平台）
 - 已有的 X 账号直接登录
 
+X 账号在注册或风控触发时常要求短信验证，国内号码经常不被接受。需要美国号收码可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-grok-cn-access-guide)。
+
 **障碍三：SuperGrok 付款**
 
 SuperGrok 月费约 30 美元（估算，以官网实际价格为准），只接受境外信用卡（Visa/Mastercard）或境外 PayPal。国内双币卡成功率因发卡行而异，Depay 等虚拟卡平台国内用户使用较多，但需自行评估合规风险。

@@ -33,6 +33,33 @@
 - cn-us-virtual-number-openai-guide | 美国虚拟号码验证 OpenAI：号段类型与成功率边界 | 国内场景
 - cn-openai-platform-register-guide | 国内注册 OpenAI 开发者平台账号完整流程 | 小白入门
 
+## 【优先】2026-09-22 买家意图簇（手机验证长尾 → /sms）
+
+> 依据：2026-09-22 实测漏斗，/sms 落地页→下单 17%、下单→付款 75%，转化没有问题，
+> 瓶颈是 /sms 每天只有约 120 真人访问；且 /sms 的 referer 257 次来自本博客、仅 23 次来自主站，
+> 博客是唯一流量引擎。上一个【优先】手机验证簇 8 条已全部发完，需要开新长尾。
+> 写作要求同上簇：正文自然位置内链
+> `https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=<slug>`，
+> 相关阅读带 `/blog/cn-chatgpt-register-without-foreign-phone/`（该文占全站 44% 流量）。
+> 只写真实可查的信息，不承诺能过风控。
+
+- cn-chatgpt-phone-already-used | 提示手机号已被使用或已关联其他账号怎么办 | 小白入门
+- cn-google-voice-openai-verify | Google Voice 能不能验证 OpenAI：2026 实测与边界 | 国内场景
+- cn-openai-phone-verify-country-list | OpenAI 手机验证支持哪些国家号码：怎么自查 | 国内场景
+- cn-chatgpt-verify-timeout-retry | 验证码过期或重发次数用完了怎么办 | 小白入门
+- cn-chatgpt-second-account-phone | 一个手机号能注册几个 ChatGPT 账号 | 小白入门
+- cn-sms-receive-safe-or-not | 用接码收验证码安全吗：账号会不会被别人找回 | 小白入门
+- cn-virtual-number-vs-real-sim-openai | 虚拟号与实体卡注册 OpenAI 的封号风险差别 | 国内场景
+- cn-esim-vs-sms-for-openai | eSIM 和接码代收给 OpenAI 验证：成本与适用场景对比 | 国内场景
+- cn-discord-phone-verify-cn | Discord 手机验证国内怎么过（Midjourney 前置步骤） | 小白入门
+- cn-claude-register-phone-verify | 注册 Claude 要不要手机验证：国内情况说明 | 小白入门
+- cn-phone-verify-failed-refund-rules | 接码没收到码能退款吗：各类方式的退款规则对比 | 国内场景
+- cn-chatgpt-api-vs-web-phone-verify | ChatGPT 网页版和 API 平台的手机验证要求有什么不同 | 国内场景
+- cn-grok-register-cn-guide | 国内注册 Grok 账号：X 登录与独立账号怎么选 | 小白入门
+- cn-midjourney-register-discord-guide | Midjourney 注册与 Discord 登录完整流程 | 小白入门
+- cn-ai-2fa-phone-lost-recovery | AI 账号开了 2FA 但手机丢了怎么恢复 | 小白入门
+- cn-ai-account-change-phone-number | AI 账号更换手机号前要做哪些准备 | 小白入门
+
 ## 优先出稿（Bing 实证高展示量缺口）
 
 > picker 规则是"最近 7 篇没出现过的分类优先，否则取池内第一条"，
@@ -603,8 +630,6 @@
 - cn-gemini-age-country-restriction | Gemini 注册遇到年龄或国家限制怎么判断 | 小白入门
 - cn-gemini-workspace-account-unavailable | Gemini 提示工作或学校账号不可用怎么办 | 小白入门
 - cn-perplexity-register-cn-guide | 国内注册 Perplexity 账号完整流程 | 小白入门
-- cn-grok-register-cn-guide | 国内注册 Grok 账号：X 登录与独立账号怎么选 | 小白入门
-- cn-midjourney-register-discord-guide | Midjourney 注册与 Discord 登录完整流程 | 小白入门
 - cn-suno-register-cn-guide | 国内注册 Suno 账号完整流程与常见报错 | 小白入门
 - cn-cursor-register-cn-guide | 国内注册 Cursor 账号与首次登录教程 | 小白入门
 - cn-notion-ai-register-guide | Notion AI 注册、登录与开通前准备 | 小白入门
@@ -652,9 +677,7 @@
 - cn-claude-disabled-account-appeal | Claude 账号被停用怎么申诉与保存证据 | 小白入门
 - cn-gemini-access-denied-recovery | Gemini 提示无法访问服务的账号排查 | 小白入门
 - cn-cursor-account-suspended-appeal | Cursor 账号被暂停后的排查与申诉 | 小白入门
-- cn-ai-2fa-phone-lost-recovery | AI 账号开了 2FA 但手机丢了怎么恢复 | 小白入门
 - cn-ai-account-change-email | ChatGPT、Claude 等 AI 账号能不能更换邮箱 | 小白入门
-- cn-ai-account-change-phone-number | AI 账号更换手机号前要做哪些准备 | 小白入门
 - cn-ai-payment-dispute-evidence | AI 订阅扣费争议要准备哪些付款证据 | 国内场景
 - cn-ai-account-device-cleanup | AI 账号如何退出旧设备并检查异常登录 | 小白入门
 - cn-ai-public-computer-login-safety | 在公共电脑登录 AI 账号后的安全清理清单 | 小白入门
