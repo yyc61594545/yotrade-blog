@@ -1,6 +1,6 @@
 ---
 title: 图片输入的 token 计费机制
-description: 图片输入并不是按 JPEG 或 PNG 文件字节直接计费。本文拆解视觉模型如何缩放图片、切成 tile 或 patch、应用模型倍率并换算 billable token，比较 OpenAI、Anthropic 与 Gemini 当前机制差异，并给出规则版本化、usage 回填、批量请求监控、成本预估和账单核对的工程方法。
+description: 图片输入并不是按 JPEG 或 PNG 文件字节直接计费。本文拆解视觉模型如何缩放图片、切成 tile 或 patch、应用模型倍率并换算 billable token，比较 OpenAI、Anthropic 与 Gemini 当前机制差异，给出规则版本化、usage 回填、批量请求监控、成本预估和账单核对的工程方法。
 keywords:
   - 图片输入 token 计费
   - Vision API 成本

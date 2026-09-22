@@ -60,6 +60,11 @@ def check_file(path: Path) -> None:
     desc = fm.get("description", "").strip("'\"")
     if desc and len(desc) > 180:
         errors.append(f"{path.name}: description too long ({len(desc)} > 180)")
+    # Bing 的 URL Inspection 把超过 160 字符的 description 报成 SEO error
+    # （2026-09-22 pay-for-jimeng 那篇 176 字符被报过）。这里只警告不报错，
+    # schema 仍是 180，免得日更 agent 写长一点就卡住上线。
+    elif desc and len(desc) > 160:
+        warnings.append(f"{path.name}: description over Bing's 160-char limit ({len(desc)})")
 
     canonical = fm.get("canonical", "").strip("'\"")
     if canonical:

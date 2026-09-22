@@ -1,6 +1,6 @@
 ---
 title: How to Pay for Jimeng (即梦) Without WeChat Pay or a Chinese Bank Card
-description: Jimeng's checkout only takes WeChat Pay and Alipay. What a Jimeng membership costs in USD, why foreign cards fail, and four ways to get Seedance 2.0 credits from outside China.
+description: Jimeng only takes WeChat Pay and Alipay. What a membership costs in USD, why foreign cards fail, and four ways to pay for Seedance 2.0 from abroad.
 keywords:
   - pay for Jimeng without WeChat Pay
   - Jimeng membership price USD
