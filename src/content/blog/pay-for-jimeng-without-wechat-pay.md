@@ -80,7 +80,7 @@ Install WeChat, go to Me → Services → Wallet → Add a card, and bind a Visa
 
 ### 3. Ask someone in China to scan the QR code
 
-If you have a friend, colleague or client in mainland China, this works exactly the way the proxy service below works: you open the checkout, choose WeChat Pay, screenshot the QR code and send it to them; they scan, pay ¥79 or whatever the amount is, and you settle with them however you like. Two things to tell them: only scan **single-month** or **credit pack** QR codes, never the auto-renew ones, and the QR code is only good for a couple of hours.
+If you have a friend, colleague or client in mainland China, this works exactly the way the proxy service below works: you open the checkout, choose WeChat Pay — which you can do without having WeChat yourself, it just renders a QR code — screenshot it and send it to them; they scan, pay ¥79 or whatever the amount is, and you settle with them however you like. Two things to tell them: only scan **single-month** or **credit pack** QR codes, never the auto-renew ones, and the QR code is only good for a couple of hours.
 
 ### 4. Use a payment proxy (this is what we run)
 
@@ -99,7 +99,7 @@ Prices including our fee, September 2026:
 
 1. **Place the order.** On [the China AI Pass page](https://yotradeapi.com/china-ai?utm_source=blog&utm_medium=inline&utm_content=pay-for-jimeng-without-wechat-pay) pick the plan (or "other checkout amount" and type the RMB figure from your Jimeng popup), pick Zelle or Binance Pay, leave an email. You get a private order page.
 2. **Pay us.** Zelle: send the USD amount shown to the email on the order page, with the order number in the memo. Binance Pay: scan the QR on the order page or open the link in the Binance app, pay the USDT amount, put the order number in the note. Then type the name on your Zelle account (or your Binance nickname) and click "I've sent the payment".
-3. **Open the Jimeng checkout.** Log in to jimeng.jianying.com, open 订阅 (subscription), click the **单月购买** tab, click 购买 under the plan you ordered, and choose **微信支付** in the popup. A QR code appears.
+3. **Open the Jimeng checkout.** Log in to jimeng.jianying.com, open 订阅 (subscription), click the **单月购买** tab, click 购买 under the plan you ordered, and choose **微信支付** in the popup. A QR code appears. You do not need a WeChat account for this — picking that option only tells Jimeng to display the code for your order. Do it on a computer if you can: the desktop site draws the QR code on screen, while the mobile site may try to hand off to a WeChat app you do not have.
 4. **Upload a screenshot.** Take a screenshot that shows the QR code and the amount, and drop it on your order page. Keep the popup open until the order shows "Activated".
 5. **Wait for the scan.** We confirm your payment, scan your QR code and pay. Your order page flips to "Activated" and you get an email. Refresh Jimeng and the membership is there. Typical time is under an hour between 9:00 and 24:00 Beijing time; overnight orders are done in the morning.
 
@@ -124,6 +124,9 @@ Whatever you pick, buy **single month** the first time. Once you know your month
 
 **Can China AI Pass also get me a Jimeng account?**
 Not yet. Today we only pay checkouts on accounts you already have. An account-plus-membership bundle for creators with no +86 number is on the waitlist on the order page; if enough people sign up we will build it.
+
+**I don't have WeChat. How can step 3 ask me to choose WeChat Pay?**
+Because that click does not open WeChat — it just makes Jimeng draw a QR code for your order on the page. Anyone's WeChat can then pay that code, and ours is the one that does. You never install WeChat, never sign in and never link a card.
 
 **Do you need my Jimeng password?**
 No. The only thing we ever receive is a screenshot of the WeChat Pay QR code from your checkout popup.
