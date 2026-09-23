@@ -619,6 +619,48 @@
 > 面向注册、登录、付款、订阅、国内可用性与账号恢复等明确搜索意图。
 > 产品名称、地区支持、价格与政策如有变化，写作时以官方一手资料为准。
 
+### 2026-09-23 社区真实提问（backlink-scout「内容空白」）
+
+> 来源：`~/Program/backlink-scout/out/` 2026-09-07～09-22 共 13 份报告里标为「匹配文章：无」的 68 条，
+> 剔除时效性故障贴（「OpenAI 又抽风了」）、产品自荐、离题、灰产（号池、拼车、无限续杯、凭证重放）
+> 以及已有文章覆盖的，剩下这 16 条——都是反复有人问、搜索会长期存在的问题。
+> 写稿前先读对应原帖，用真人的原话理解卡点；产品、价格、限额类信息一律以官方一手来源为准，
+> 原帖只用来定位问题，不当事实来源。
+>
+> - `cn-google-account-disabled-after-signup` ← https://www.v2ex.com/t/1240161
+> - `cn-chatgpt-chat-paused-caution` ← https://linux.do/t/topic/2871159
+> - `cn-chatgpt-android-app-request-error` ← https://www.v2ex.com/t/1240796
+> - `cn-chatgpt-app-missing-pro-plan` ← https://www.v2ex.com/t/1240820
+> - `cn-chatgpt-google-play-subscribe` ← https://www.v2ex.com/t/1241577
+> - `cn-chatgpt-pro-5x-vs-20x-usage` ← https://www.v2ex.com/t/1241680
+> - `cn-chatgpt-upgrade-payment-failed-status` ← https://www.v2ex.com/t/1241794
+> - `cn-chatgpt-app-store-renewal-balance` ← https://www.v2ex.com/t/1244051
+> - `cn-chatgpt-reasoning-quality-drop` ← https://www.v2ex.com/t/1241973
+> - `cn-chatgpt-renewal-price-change` ← https://www.v2ex.com/t/1243470
+> - `cn-chatgpt-windows-app-not-opening` ← https://www.v2ex.com/t/1243439
+> - `cn-ai-model-at-capacity-error` ← https://www.v2ex.com/t/1243758
+> - `cn-chatgpt-usage-limit-reset-rules` ← https://www.v2ex.com/t/1243597
+> - `cn-chatgpt-low-price-region-risk` ← https://www.v2ex.com/t/1244058
+> - `cn-chatgpt-daichong-methods-risk` ← https://www.v2ex.com/t/1243758
+> - `cn-company-ai-procurement-guide` ← https://www.v2ex.com/t/1241317
+
+- cn-google-account-disabled-after-signup | 新注册的 Google 账号第二天就被停用：常见原因与稳妥用法 | 小白入门
+- cn-chatgpt-chat-paused-caution | ChatGPT 提示「为谨慎起见，聊天已暂停」是什么意思 | 小白入门
+- cn-chatgpt-android-app-request-error | 安卓 ChatGPT App 登录报 There is a problem with your request 但网页能登 | 小白入门
+- cn-chatgpt-app-missing-pro-plan | ChatGPT App 里看不到 Pro 套餐、只有 Plus 选项怎么办 | 国内场景
+- cn-chatgpt-google-play-subscribe | 用 Google Play 订阅 ChatGPT：设备、账号地区与绑卡条件 | 国内场景
+- cn-chatgpt-pro-5x-vs-20x-usage | ChatGPT Pro 5x 和 20x 实际用量差多少、怎么选 | 成本优化
+- cn-chatgpt-upgrade-payment-failed-status | 升级 ChatGPT 套餐付款失败，页面却显示已升级怎么办 | 国内场景
+- cn-chatgpt-app-store-renewal-balance | App Store 订阅 ChatGPT：余额续费规则与扣款失败排查 | 国内场景
+- cn-chatgpt-reasoning-quality-drop | ChatGPT 突然不思考、回答变差：先排查这几项 | 小白入门
+- cn-chatgpt-renewal-price-change | ChatGPT 续费价格和上次不一样：汇率、税费与渠道差价 | 成本优化
+- cn-chatgpt-windows-app-not-opening | ChatGPT Windows 桌面版打不开或消息发不出去的排查 | 小白入门
+- cn-ai-model-at-capacity-error | ChatGPT / Codex 提示模型满载（at capacity）怎么办 | 小白入门
+- cn-chatgpt-usage-limit-reset-rules | ChatGPT 各套餐的 5 小时与每周限额怎么计算 | 成本优化
+- cn-chatgpt-low-price-region-risk | 土耳其区等低价区订阅 ChatGPT：额度、封号与退款风险 | 国内场景
+- cn-chatgpt-daichong-methods-risk | 代充的 ChatGPT 账号为什么会被标记：几种代充方式的风险差别 | 国内场景
+- cn-company-ai-procurement-guide | 公司统一采购 ChatGPT / Claude 给员工用：怎么买、怎么管、怎么报销 | 国内场景
+
 ### 注册与登录（15）
 - cn-chatgpt-signup-button-disabled | ChatGPT 注册按钮点不了：常见原因与排查顺序 | 小白入门
 - cn-chatgpt-email-verification-missing | ChatGPT 注册收不到邮箱验证信怎么办 | 小白入门
