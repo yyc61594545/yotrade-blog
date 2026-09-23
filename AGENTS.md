@@ -39,6 +39,15 @@ deduplication. It only picks `cn-` slugs, and sections whose heading contains
 【优先】 go first. If fewer than 30 unpublished `cn-` topics remain, add at least
 60 new `cn-` candidates to `scripts/topic-pool.md` before publishing.
 
+Prefer real questions over invented ones: first mine the last 14 days of
+`~/Program/backlink-scout/out/*.md` for entries marked「匹配文章：无」(questions
+real users asked on V2EX / linux.do that no post here answers). Drop
+time-sensitive outage threads, self-promotion, off-topic threads, grey-market
+asks (account pools, carpooling, "unlimited refills", credential replay) and
+anything an existing post already covers; list the ones you use as
+`slug ← thread URL` in a quote block at the top of the new section. Then fill
+the rest by extending the existing clusters.
+
 New candidates must use unique `cn-` slugs and existing categories, and target
 ordinary Chinese users stuck on getting access to AI services: registration,
 phone verification, payment, subscriptions, availability in China, price

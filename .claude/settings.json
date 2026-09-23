@@ -22,7 +22,8 @@
       "Write(~/.claude/work-logs/**)",
       "Bash(cat >> ~/.claude/work-logs/:*)",
       "Bash(cat >> /Users/ethan/.claude/work-logs/:*)",
-      "Bash(tail:*)"
+      "Bash(tail:*)",
+      "Read(~/Program/backlink-scout/out/**)"
     ],
     "deny": [
       "Bash(git push --force:*)",
