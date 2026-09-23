@@ -70,7 +70,7 @@ jobs:
           # 固定的发现页 + 这次 push 新增/改动的文章 URL。文章 URL 也要清：
           # Cloudflare 会把部署前有人访问过的新文章 404 缓存住（2026-09-22 踩过，缓存的 404 存了 3 分钟以上），
           # 不清的话新文章上线后一段时间内仍然 404。单次 purge 最多 30 个 URL。
-          files='"https://blog.yotradeapi.com/","https://blog.yotradeapi.com/blog/","https://blog.yotradeapi.com/categories/","https://blog.yotradeapi.com/tags/","https://blog.yotradeapi.com/sitemap-index.xml","https://blog.yotradeapi.com/sitemap-0.xml","https://blog.yotradeapi.com/rss.xml"'
+          files='"https://blog.yotradeapi.com/","https://blog.yotradeapi.com/blog/","https://blog.yotradeapi.com/categories/","https://blog.yotradeapi.com/tags/","https://blog.yotradeapi.com/sitemap-index.xml","https://blog.yotradeapi.com/sitemap-0.xml","https://blog.yotradeapi.com/rss.xml","https://blog.yotradeapi.com/llms.txt","https://blog.yotradeapi.com/robots.txt"'
           for s in $(echo "$SLUGS" | tr ',' ' '); do
             files="$files,\"https://blog.yotradeapi.com/blog/$s/\""
           done
