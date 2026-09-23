@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://blog.yotradeapi.com/sitemap-index.xml
+
+# AI 检索/问答引擎的站点索引（构建期生成，随每日发文自动更新）
+# LLM-Index: https://blog.yotradeapi.com/llms.txt
