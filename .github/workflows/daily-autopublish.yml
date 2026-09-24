@@ -136,6 +136,27 @@ jobs:
           echo "::error::rsync 三次均失败，本次内容已合并到 main 但未部署"
           exit 1
 
+      # 与 deploy.yml 同名步骤一致。这里不清的话，首页 / 列表页 / sitemap / RSS 会停在
+      # 上一次 deploy.yml 清缓存时的版本，最长 24h 看不到当天日更（2026-09-24 踩过）。
+      - name: Purge discovery surfaces + new posts from Cloudflare cache
+        if: steps.merge.outputs.merged == 'true'
+        continue-on-error: true   # 清缓存失败不应阻断发布；失败会在此步显示为红叉
+        env:
+          SLUGS: ${{ steps.slugs.outputs.list }}
+        run: |
+          set -o pipefail
+          files='"https://blog.yotradeapi.com/","https://blog.yotradeapi.com/blog/","https://blog.yotradeapi.com/categories/","https://blog.yotradeapi.com/tags/","https://blog.yotradeapi.com/sitemap-index.xml","https://blog.yotradeapi.com/sitemap-0.xml","https://blog.yotradeapi.com/rss.xml","https://blog.yotradeapi.com/llms.txt","https://blog.yotradeapi.com/robots.txt"'
+          # 单次 purge 最多 30 个 URL：固定 9 个 + 最多 21 篇文章
+          for s in $(echo "$SLUGS" | tr ',' '\n' | head -21); do
+            files="$files,\"https://blog.yotradeapi.com/blog/$s/\""
+          done
+          echo "purging: $files"
+          curl -sS -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data "{\"files\":[$files]}" | tee /dev/stderr | grep -q '"success":true'
+
       # 非阻塞：失败了 Bing 也会自己从 sitemap 抓
       - name: Notify IndexNow
         if: steps.merge.outputs.merged == 'true'
