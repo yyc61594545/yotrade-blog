@@ -25,6 +25,25 @@
 
 - cn-claude-register-phone-verify | 注册 Claude 要不要手机验证：国内情况说明 | 小白入门
 
+## 【优先】2026-09-25 Codex 手机验证簇（对接 yotradeapi.com/sms）
+
+> 依据：必应关键字研究（中国，2026-06-23~09-20）里，ChatGPT 手机验证类搜索约 1.5 万/3 个月，其中
+>   **Codex 相关占一半以上**：codex登录要验证手机号 2,914、codex手机号验证 2,337、codex账号 2,175、
+>   codex电话验证 931、codex接码 901、codex接码平台 768、codex手机号验证怎么办 600；
+>   「电话号码是必填项」系列约 1,500。本站在所有 codex 词上展示为 0（只有 9/18 一篇
+>   cn-codex-login-phone-verification）。
+> 写作要求：标题/首段用上面的原词；正文自然位置内链
+>   `https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=<slug>`；
+>   相关阅读带 `/blog/cn-codex-login-phone-verification/` 和
+>   `/blog/cn-chatgpt-register-without-foreign-phone/`；与 cn-codex-login-phone-verification 分工，
+>   不重复讲它已讲的「为什么多一道验证、两种登录方式」。只写可查证的信息，不承诺能过风控。
+
+- cn-chatgpt-phone-required-field | 「电话号码是必填项」怎么办：ChatGPT / Codex 验证弹窗逐句解释 | 小白入门
+- cn-codex-sms-platform-choice | Codex 接码平台怎么选：哪些号码能收到 OpenAI 验证码 | 国内场景
+- cn-codex-phone-verify-what-to-do | Codex 手机号验证怎么办：国内三种办法的成本与成功率对比 | 国内场景
+- cn-codex-account-cn-guide | Codex 账号怎么开：国内从注册到命令行登录一次走通 | 小白入门
+- cn-codex-phone-verify-failed | Codex 电话验证失败的逐项排查：号码无效、收不到码、次数过多 | 小白入门
+
 ## 【优先】2026-09 手机验证簇（对接 yotradeapi.com/sms）
 
 > 依据：`cn-chatgpt-register-without-foreign-phone` 一篇占 blog 44% 流量（2026-08-19~09-18 RUM），
