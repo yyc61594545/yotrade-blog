@@ -11,6 +11,20 @@
 > 维护：新候选一律用 `cn-` 前缀、面向国内普通用户的获取/注册/付款/可用性问题。
 > 当池子剩余可用 cn- 候选 < 30 时，按 AGENTS.md 先补题再出稿。
 
+## 【优先】2026-09-25 Claude 手机验证需求测试（单篇）
+
+> 目的：测「Claude 注册要手机号」有没有搜索需求，两周后看必应展示量决定是否做 Claude 接码。
+> 事实口径（写前再核一遍）：官方帮助页 support.claude.com/en/articles/8287232 写「所有新用户都要
+>   验证手机号、不能跳过」，且不收 VoIP / Google Voice / App 生成的号；2026-05 起社区（linux.do）反映
+>   企业邮箱或 Google 登录常能跳过，属于部分情况、无官方说明。两边都写清楚，不下绝对结论。
+> 与 `cn-claude-register-cn-guide`（完整注册流程）分工：本篇只讲「会不会被要求验证、哪些情况会跳过、
+>   被要求了怎么办」，相关阅读互链。
+> **不要链接 /sms**（那是美国号 OpenAI 专用，Claude 收不到）；付费入口只放 Claude Team 席位
+>   `https://yotradeapi.com/team.html?utm_source=blog&utm_medium=inline&utm_content=cn-claude-register-phone-verify`，
+>   写成「不想自己折腾注册」的备选，不承诺注册成功或不被封。
+
+- cn-claude-register-phone-verify | 注册 Claude 要不要手机验证：国内情况说明 | 小白入门
+
 ## 【优先】2026-09 手机验证簇（对接 yotradeapi.com/sms）
 
 > 依据：`cn-chatgpt-register-without-foreign-phone` 一篇占 blog 44% 流量（2026-08-19~09-18 RUM），
@@ -52,7 +66,6 @@
 - cn-virtual-number-vs-real-sim-openai | 虚拟号与实体卡注册 OpenAI 的封号风险差别 | 国内场景
 - cn-esim-vs-sms-for-openai | eSIM 和接码代收给 OpenAI 验证：成本与适用场景对比 | 国内场景
 - cn-discord-phone-verify-cn | Discord 手机验证国内怎么过（Midjourney 前置步骤） | 小白入门
-- cn-claude-register-phone-verify | 注册 Claude 要不要手机验证：国内情况说明 | 小白入门
 - cn-phone-verify-failed-refund-rules | 接码没收到码能退款吗：各类方式的退款规则对比 | 国内场景
 - cn-chatgpt-api-vs-web-phone-verify | ChatGPT 网页版和 API 平台的手机验证要求有什么不同 | 国内场景
 - cn-grok-register-cn-guide | 国内注册 Grok 账号：X 登录与独立账号怎么选 | 小白入门
