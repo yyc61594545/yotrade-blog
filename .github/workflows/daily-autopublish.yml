@@ -87,6 +87,11 @@ jobs:
           echo "list=$SLUGS" >> "$GITHUB_OUTPUT"
           echo "count=$COUNT" >> "$GITHUB_OUTPUT"
           echo "本次新增 $COUNT 篇：$SLUGS"
+          # 改过的老文章也要清 CF 缓存（边缘缓存 24h，否则改动一天后才可见）；只清缓存，不推 IndexNow
+          CHANGED=$(git diff --name-only --diff-filter=AM origin/main...HEAD -- src/content/blog/ \
+                  | sed 's|^src/content/blog/||; s|\.md$||' | paste -sd, -)
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+          echo "本次新增或修改：$CHANGED"
 
       - name: Squash merge into main
         id: merge
@@ -138,11 +143,11 @@ jobs:
 
       # 与 deploy.yml 同名步骤一致。这里不清的话，首页 / 列表页 / sitemap / RSS 会停在
       # 上一次 deploy.yml 清缓存时的版本，最长 24h 看不到当天日更（2026-09-24 踩过）。
-      - name: Purge discovery surfaces + new posts from Cloudflare cache
+      - name: Purge discovery surfaces + new/changed posts from Cloudflare cache
         if: steps.merge.outputs.merged == 'true'
         continue-on-error: true   # 清缓存失败不应阻断发布；失败会在此步显示为红叉
         env:
-          SLUGS: ${{ steps.slugs.outputs.list }}
+          SLUGS: ${{ steps.slugs.outputs.changed }}
         run: |
           set -o pipefail
           files='"https://blog.yotradeapi.com/","https://blog.yotradeapi.com/blog/","https://blog.yotradeapi.com/categories/","https://blog.yotradeapi.com/tags/","https://blog.yotradeapi.com/sitemap-index.xml","https://blog.yotradeapi.com/sitemap-0.xml","https://blog.yotradeapi.com/rss.xml","https://blog.yotradeapi.com/llms.txt","https://blog.yotradeapi.com/robots.txt"'
