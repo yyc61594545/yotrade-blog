@@ -11,20 +11,6 @@
 > 维护：新候选一律用 `cn-` 前缀、面向国内普通用户的获取/注册/付款/可用性问题。
 > 当池子剩余可用 cn- 候选 < 30 时，按 AGENTS.md 先补题再出稿。
 
-## 【优先】2026-09-25 Claude 手机验证需求测试（单篇）
-
-> 目的：测「Claude 注册要手机号」有没有搜索需求，两周后看必应展示量决定是否做 Claude 接码。
-> 事实口径（写前再核一遍）：官方帮助页 support.claude.com/en/articles/8287232 写「所有新用户都要
->   验证手机号、不能跳过」，且不收 VoIP / Google Voice / App 生成的号；2026-05 起社区（linux.do）反映
->   企业邮箱或 Google 登录常能跳过，属于部分情况、无官方说明。两边都写清楚，不下绝对结论。
-> 与 `cn-claude-register-cn-guide`（完整注册流程）分工：本篇只讲「会不会被要求验证、哪些情况会跳过、
->   被要求了怎么办」，相关阅读互链。
-> **不要链接 /sms**（那是美国号 OpenAI 专用，Claude 收不到）；付费入口只放 Claude Team 席位
->   `https://yotradeapi.com/team.html?utm_source=blog&utm_medium=inline&utm_content=cn-claude-register-phone-verify`，
->   写成「不想自己折腾注册」的备选，不承诺注册成功或不被封。
-
-- cn-claude-register-phone-verify | 注册 Claude 要不要手机验证：国内情况说明 | 小白入门
-
 ## 【优先】2026-09-25 Codex 手机验证簇（对接 yotradeapi.com/sms）
 
 > 依据：必应关键字研究（中国，2026-06-23~09-20）里，ChatGPT 手机验证类搜索约 1.5 万/3 个月，其中
@@ -43,6 +29,20 @@
 - cn-codex-phone-verify-what-to-do | Codex 手机号验证怎么办：国内三种办法的成本与成功率对比 | 国内场景
 - cn-codex-account-cn-guide | Codex 账号怎么开：国内从注册到命令行登录一次走通 | 小白入门
 - cn-codex-phone-verify-failed | Codex 电话验证失败的逐项排查：号码无效、收不到码、次数过多 | 小白入门
+
+## 【优先】2026-09-25 Claude 手机验证需求测试（单篇）
+
+> 目的：测「Claude 注册要手机号」有没有搜索需求，两周后看必应展示量决定是否做 Claude 接码。
+> 事实口径（写前再核一遍）：官方帮助页 support.claude.com/en/articles/8287232 写「所有新用户都要
+>   验证手机号、不能跳过」，且不收 VoIP / Google Voice / App 生成的号；2026-05 起社区（linux.do）反映
+>   企业邮箱或 Google 登录常能跳过，属于部分情况、无官方说明。两边都写清楚，不下绝对结论。
+> 与 `cn-claude-register-cn-guide`（完整注册流程）分工：本篇只讲「会不会被要求验证、哪些情况会跳过、
+>   被要求了怎么办」，相关阅读互链。
+> **不要链接 /sms**（那是美国号 OpenAI 专用，Claude 收不到）；付费入口只放 Claude Team 席位
+>   `https://yotradeapi.com/team.html?utm_source=blog&utm_medium=inline&utm_content=cn-claude-register-phone-verify`，
+>   写成「不想自己折腾注册」的备选，不承诺注册成功或不被封。
+
+- cn-claude-register-phone-verify | 注册 Claude 要不要手机验证：国内情况说明 | 小白入门
 
 ## 【优先】2026-09 手机验证簇（对接 yotradeapi.com/sms）
 
