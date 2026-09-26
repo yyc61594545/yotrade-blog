@@ -54,7 +54,7 @@ log "===== 日更开始 $DATE ====="
 # ---------- 前置同步 ----------
 if ! git fetch origin --prune --quiet; then
   log "FATAL: git fetch 失败，网络或代理有问题"
-  notify "❌ yotrade-blog 日更 $DATE：git fetch 失败，没开跑"
+  notify "❌ yotrade-blog 日更 ${DATE}：git fetch 失败，没开跑"
   exit 1
 fi
 
@@ -76,7 +76,7 @@ fi
 
 git checkout --quiet main && git pull --quiet --ff-only || {
   log "FATAL: 切回 main / pull 失败"
-  notify "❌ yotrade-blog 日更 $DATE：本地 main 同步失败"
+  notify "❌ yotrade-blog 日更 ${DATE}：本地 main 同步失败"
   exit 1
 }
 
@@ -125,7 +125,7 @@ run_codex() {
   timeout "$AGENT_TIMEOUT" codex exec \
     --cd "$REPO" \
     --approve-for-me \
-    "按 AGENTS.md 和 .claude/commands/daily-post.md 跑今天（$DATE）的日更，产出 $POSTS 篇。推送分支后即结束，不要开 PR、不要合并、不要部署。" 2>&1 | tail -40
+    "按 AGENTS.md 和 .claude/commands/daily-post.md 跑今天（${DATE}）的日更，产出 $POSTS 篇。推送分支后即结束，不要开 PR、不要合并、不要部署。" 2>&1 | tail -40
   return "${PIPESTATUS[0]}"
 }
 
@@ -140,13 +140,13 @@ for agent in claude codex; do
     0)
       n=$(git rev-list --count origin/main..HEAD)
       log "===== 完成：$agent 写了 $n 篇，已推送，等 Actions 发布 ====="
-      notify "✅ yotrade-blog 日更 $DATE：$agent 写了 $n 篇并推送，Actions 接管发布"
+      notify "✅ yotrade-blog 日更 ${DATE}：$agent 写了 $n 篇并推送，Actions 接管发布"
       exit 0
       ;;
     2)
       # 稿子在本地但推不上去。保留现场，不要换 agent 重写一遍。
       log "===== 中止：稿子已写好但推送失败，现场保留在本地分支 ====="
-      notify "⚠️ yotrade-blog 日更 $DATE：$agent 写完了但 push 失败，稿子留在本地，需人工处理。日志 $LOG"
+      notify "⚠️ yotrade-blog 日更 ${DATE}：$agent 写完了但 push 失败，稿子留在本地，需人工处理。日志 $LOG"
       exit 1
       ;;
     *)
@@ -159,5 +159,5 @@ for agent in claude codex; do
 done
 
 log "===== 失败：Claude 和 Codex 都没产出 ====="
-notify "❌ yotrade-blog 日更 $DATE：Claude 和 Codex 都失败，0 篇。日志 $LOG"
+notify "❌ yotrade-blog 日更 ${DATE}：Claude 和 Codex 都失败，0 篇。日志 $LOG"
 exit 1
