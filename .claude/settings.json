@@ -19,11 +19,13 @@
       "Bash(ls:*)",
       "Read(~/.claude/work-logs/**)",
       "Edit(~/.claude/work-logs/**)",
-      "Write(~/.claude/work-logs/**)",
       "Bash(cat >> ~/.claude/work-logs/:*)",
       "Bash(cat >> /Users/ethan/.claude/work-logs/:*)",
       "Bash(tail:*)",
-      "Read(~/Program/backlink-scout/out/**)"
+      "Read(~/Program/backlink-scout/out/**)",
+      "WebSearch",
+      "WebFetch",
+      "Edit(/Users/ethan/.claude/work-logs/**)"
     ],
     "deny": [
       "Bash(git push --force:*)",
