@@ -1,0 +1,119 @@
+name: Daily write
+
+# 日更写稿主通道（2026-09-26 起）：在 GitHub 上跑 Claude Code 写稿，不再依赖本机 Mac。
+# 本机 launchd 在 Mac 深睡时不触发、唤醒后也不补跑（9/25、9/26 两天漏发），所以搬上来。
+#
+# 这里只负责写稿并推 claude/daily-YYYY-MM-DD 分支；门禁、合并、部署、清缓存、IndexNow
+# 仍由 daily-autopublish.yml 完成。GITHUB_TOKEN 推的分支不会触发它的 push 事件，
+# 所以最后用 workflow_dispatch 显式调它。
+#
+# 本机 scripts/daily-run.sh 保留为兜底（北京 11:00 之后、有幂等检查、还能降级 Codex）。
+#
+# 需要仓库 secret：CLAUDE_CODE_OAUTH_TOKEN（本机 `claude setup-token` 生成，走订阅额度）。
+
+on:
+  schedule:
+    - cron: '50 0 * * *'   # UTC 00:50 = 北京 08:50；GitHub 定时常晚几分钟到半小时
+  workflow_dispatch:
+    inputs:
+      posts:
+        description: '篇数'
+        default: '5'
+      force:
+        description: '跳过「今天已发」检查（只在实测时用）'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: daily-write
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Shanghai          # 文章日期、分支名都按北京日期
+  POSTS: ${{ github.event.inputs.posts || '5' }}
+
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Skip if today is already done
+        id: check
+        run: |
+          DATE=$(date +%F)
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            echo "force，跳过检查"; echo "skip=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if git ls-remote --heads origin | grep -q "daily-$DATE\$"; then
+            echo "origin 上已有 daily-$DATE 分支，跳过"; echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          n=$(git grep -l "pubDate: '$DATE'" origin/main -- src/content/blog/ | wc -l | tr -d ' ')
+          if [ "$n" -ge "$POSTS" ]; then
+            echo "main 上今天已有 $n 篇，跳过"; echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-node@v4
+        if: steps.check.outputs.skip == 'false'
+        with:
+          node-version: 22.12
+          cache: npm
+
+      - name: Install
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          npm ci
+          npm install -g @anthropic-ai/claude-code
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      # 权限沿用仓库 .claude/settings.json 的白名单（与本机 launchd 跑法相同）
+      - name: Write posts with Claude Code
+        if: steps.check.outputs.skip == 'false'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            echo "::error::缺少 secret CLAUDE_CODE_OAUTH_TOKEN"; exit 1
+          fi
+          set +e
+          timeout 3600 claude -p "/daily-post $POSTS" --permission-mode acceptEdits 2>&1 | tail -60
+          echo "claude 退出码 ${PIPESTATUS[0]}"
+          exit 0   # 以下一步有没有可推的 commit 为准，agent 半途死了也要抢救已写好的稿
+
+      # 与 daily-run.sh 的 ensure_pushed 同一逻辑：只要领先 main 就推出去
+      - name: Push branch
+        id: push
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          DATE="${{ steps.check.outputs.date }}"
+          git fetch --quiet origin main
+          ahead=$(git rev-list --count origin/main..HEAD)
+          if [ "$ahead" -eq 0 ]; then
+            echo "::error::Claude 没产出可推送的 commit，今天 0 篇（本机兜底会在北京 11:00 后再试）"
+            exit 1
+          fi
+          branch=$(git branch --show-current)
+          if [ "$branch" = "main" ]; then
+            branch="claude/daily-$DATE"
+            git checkout --quiet -b "$branch"
+          fi
+          git push --quiet -u origin "HEAD:refs/heads/$branch"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          echo "推送 $branch（领先 main $ahead 个 commit）"
+
+      - name: Hand off to Daily auto-publish
+        if: steps.push.outputs.branch != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run daily-autopublish.yml --ref main -f branch="${{ steps.push.outputs.branch }}"
