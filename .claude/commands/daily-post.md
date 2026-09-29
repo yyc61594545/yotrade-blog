@@ -1,5 +1,5 @@
 ---
-description: 自动产出今日 N 篇博客（默认 3）：循环 N 次选题→写稿→校验→提交，最后推一条当天分支（合并/部署由 Actions 接管）
+description: 自动产出今日 N 篇博客（默认 2）并刷新 1 篇头部文章：循环 N 次选题→写稿→校验→提交，最后推一条当天分支（合并/部署由 Actions 接管）
 ---
 
 # /daily-post — 每日 N 篇
@@ -11,7 +11,7 @@ description: 自动产出今日 N 篇博客（默认 3）：循环 N 次选题�
 `$ARGUMENTS` = 本次要产出的文章数。
 
 - 如果 `$ARGUMENTS` 是 1–10 之间的整数，则 `N = $ARGUMENTS`
-- 否则 `N = 3`（默认）
+- 否则 `N = 2`（默认）
 
 ## 0.5 选题池余量检查与补题
 
@@ -29,6 +29,24 @@ description: 自动产出今日 N 篇博客（默认 3）：循环 N 次选题�
   1. `~/Program/backlink-scout/out/` 最近 14 天报告里标为「匹配文章：无」的条目——V2EX / linux.do 上真人正在问、而本站答不了的问题。剔除时效性故障贴（「今天是不是挂了」「XX 又抽风了」）、产品自荐、离题内容、灰产（号池、拼车、无限续杯、凭证重放），以及已有文章已覆盖的。用上的条目在小节开头的引用块里列出 `slug ← 原帖链接`，方便写稿时回看原话
   2. 已有选题簇的自然延伸（参考池内【优先】小节的说明）
 - 补完跑一次 picker 确认能正常解析；补题单独一个 commit：`topics: 补充 N 条选题（来源：…）`
+
+## 0.8 刷新 1 篇头部文章（2026-09-30 起，每次必做，先于写新文）
+
+背景：2026-09-23–29 的 Cloudflare RUM 显示，7 月前的老文章贡献 82% 的访问，8、9 月新发的约 220 篇合计一周只有约 600 次，而且集中在两篇。多写新文的边际收益很低，头部文章的准确度和导流更值钱。
+
+1. 读 `scripts/head-pages.txt`（每行 `slug 导流产品`，`#` 开头是注释）。对每个 slug 读 `src/content/blog/<slug>.md` 的 `updatedDate`，挑**最早**的一篇。如果最早的也在 6 天以内，本步跳过，直接进第 1 步。
+2. 只做**小范围、有依据**的修改，不重写：
+   - 用 WebSearch / WebFetch 核对文中有时效的事实（官方价格、地区政策、注册与验证流程、产品名称），以官方或一手来源为准；过时的改掉，改不准的删掉，不要编
+   - 补 1–2 条内链到近期已发布、确实相关的文章（`ls src/content/blog/` 核对 slug 存在）
+   - 导流：按表里的产品，正文最相关的位置至多 1 处、文末 1 处，都带 `utm_source=blog&utm_medium=inline&utm_content=<slug>`
+     - `sms` → `https://yotradeapi.com/sms?…`（事实口径同第 1.2 步「手机验证类文章」）
+     - `team` → `https://yotradeapi.com/team.html?…`（Claude Team 席位：账号由我们提供、已加入官方组织、含 Claude Code）
+     - `sub` → `https://yotradeapi.com/?…#sub`（订阅代充）
+     - 已经有同产品、带 utm 的链接就不再加；导流段不写我方价格（见第 1.2 步）
+   - 如果文中把 yotradeapi.com 写成 API 中转 / 发 Key，按第 1.2 步的规则改掉
+   - **不改** slug、`title`、`canonical`、`pubDate` 和 H2 结构；改动行数不超过全文的三成
+   - `updatedDate` 改成今天
+3. 跑 `python3 scripts/validate-blog.py`，通过后单独一个 commit：`refresh: <slug>（<一句话说改了什么>）`。不要 push，和新文一起在第 2 步推。
 
 ## 1. 循环：N 次选题 + 写稿 + 校验 + 提交
 
@@ -166,7 +184,7 @@ i++，回到 1.1。
 
 ## 2. 推送当天分支（本地职责到此为止）
 
-N 篇全部 commit 完成后，把它们推到一条当天的分支上。
+刷新的那篇和 N 篇新文全部 commit 完成后，把它们推到一条当天的分支上。
 
 ```bash
 DATE=$(date +%F)
@@ -193,7 +211,7 @@ git push -u origin "$BRANCH"
 
 回复用户**一段话内**说清楚：
 
-1. 今天实际写完并推送的文章数（如果池子中途空了，按实际数）
+1. 今天实际写完并推送的文章数（如果池子中途空了，按实际数），以及第 0.8 步刷新了哪篇、改了什么（跳过就写跳过）
 2. 每篇的标题 + 目标 URL `https://blog.yotradeapi.com/blog/<slug>/`（注明"待 Actions 发布"）
 3. 选题池剩余数量
 4. 推送的分支名 + 最后一个 commit SHA

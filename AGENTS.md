@@ -9,7 +9,10 @@ tries Claude Code first and falls back to Codex, so both agents run the same
 instructions: `.claude/commands/daily-post.md`, with these Codex-specific
 adaptations:
 
-1. Produce 5 posts unless the task explicitly requests another count.
+1. Produce 2 new posts unless the task explicitly requests another count,
+   and first do step 0.8 of `daily-post.md`: refresh one head page listed in
+   `scripts/head-pages.txt` (small, sourced edits; never change slug, title,
+   canonical or pubDate).
 2. Start from an up-to-date `main` and create a unique
    `codex/daily-YYYY-MM-DD` branch. Never commit daily content directly to
    `main`.

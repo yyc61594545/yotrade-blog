@@ -21,7 +21,7 @@ if [ -z "${CAFFEINATED:-}" ]; then
 fi
 
 REPO="/Users/ethan/Program/yotrade-blog"
-POSTS="${POSTS:-5}"                # 可用环境变量覆盖，便于实测
+POSTS="${POSTS:-2}"                # 可用环境变量覆盖；2026-09-30 起 2 篇新文 + 刷新 1 篇头部文章（daily-post 第 0.8 步）
 AGENT_TIMEOUT=3600          # 单个 agent 最多跑 1 小时
 NOTIFY="/Users/ethan/wuyun-shenghuo/happy-hellman-f65c59/scripts/notify-telegram.py"
 
@@ -125,7 +125,7 @@ run_codex() {
   timeout "$AGENT_TIMEOUT" codex exec \
     --cd "$REPO" \
     --approve-for-me \
-    "按 AGENTS.md 和 .claude/commands/daily-post.md 跑今天（${DATE}）的日更，产出 $POSTS 篇。推送分支后即结束，不要开 PR、不要合并、不要部署。" 2>&1 | tail -40
+    "按 AGENTS.md 和 .claude/commands/daily-post.md 跑今天（${DATE}）的日更：先按第 0.8 步刷新 1 篇头部文章，再产出 $POSTS 篇新文。推送分支后即结束，不要开 PR、不要合并、不要部署。" 2>&1 | tail -40
   return "${PIPESTATUS[0]}"
 }
 
