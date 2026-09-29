@@ -1,0 +1,17 @@
+# 头部文章刷新轮换表 —— /daily-post 第 0.8 步读这个文件（2026-09-30 起）
+#
+# 依据：Cloudflare RUM 9/23–9/29 一周访问，这几篇之外的文章流量都很小。
+# 每行：slug  导流产品（sms = 验证码代收，team = Claude Team 席位，sub = 订阅代充）
+# 顺序无意义，每次挑 updatedDate 最早的那篇。
+#
+# 爆款文 cn-chatgpt-register-without-foreign-phone（全站约 4 成流量、必应排名前 3）
+# 故意不放进来：它只由人工改，免得自动改动把排名改掉。
+# 要增删文章请走 PR（本文件不在日更自动通道的白名单里）。
+
+cn-chatgpt-first-time-cn-guide      sms
+cn-claude-cn-direct-access-2026     team
+cn-sms-verification-platform-review sms
+cn-virtual-card-for-chatgpt-2026    sub
+cn-chatgpt-plus-daichong-guide      sub
+cn-cursor-cn-available-2026         sub
+cn-openai-api-recharge-with-rmb     sub
