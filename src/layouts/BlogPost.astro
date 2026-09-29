@@ -45,6 +45,7 @@ const showUpdated = modified.valueOf() > published.valueOf();
 const tagSlug = (t: string) => t.toLowerCase().replace(/[\s/]+/g, '-');
 
 const ctaHref = `https://yotradeapi.com/?utm_source=blog&utm_medium=cta&utm_content=${currentSlug ?? 'unknown'}#sub`;
+const ctaBizHref = `https://yotradeapi.com/chatgpt-business.html?utm_source=blog&utm_medium=cta&utm_content=${currentSlug ?? 'unknown'}`;
 const ctaWechatHref = `https://yotradeapi.com/?utm_source=blog&utm_medium=cta_wechat&utm_content=${currentSlug ?? 'unknown'}#contact`;
 const smsIntent = isSmsIntent(currentSlug, tags, keywords);
 const ctaSmsHref = smsHref(currentSlug);
@@ -337,11 +338,12 @@ const articleSchema = {
 					<aside class="tile cta cta--top">
 						<h3>不想折腾接码和虚拟卡？</h3>
 						<p>
-							ChatGPT Pro / Claude Max / Claude Team 官方订阅代充。美卡直冲美区官方，5–10 分钟到账，被砍单全额退。
-							只接重度套餐，报价微信咨询。
+							ChatGPT Business 席位：只要邮箱、不交密码，Plus 同级、含 Codex，页面直接下单。
+							要 ChatGPT Pro 的，美卡直冲美区官方，5–10 分钟到账，被砍单全额退，报价微信咨询。
 						</p>
 						<div class="actions">
-							<a class="btn btn-primary" href={ctaHref}>查看套餐 →</a>
+							<a class="btn btn-primary" href={ctaBizHref}>开通 ChatGPT Business 席位 →</a>
+							<a class="btn btn-secondary" href={ctaHref}>ChatGPT Pro 代充</a>
 						</div>
 					</aside>
 				)}
@@ -372,23 +374,24 @@ const articleSchema = {
 					<p class="cta-plans">收不到码自动换号，换号仍失败全额退款。</p>
 					<div class="actions">
 						<a class="btn btn-primary" href={ctaSmsHref}>获取美国号验证码 →</a>
-						<a class="btn btn-secondary" href={ctaHref}>ChatGPT Pro / Claude Max 代充</a>
+						<a class="btn btn-secondary" href={ctaBizHref}>ChatGPT Business 席位</a>
 					</div>
 				</aside>
 			)}
 
 			{isPost && !isEn && !smsIntent && (
 				<aside class="tile cta cta--bottom">
-					<h3>ChatGPT Pro / Claude Max / Claude Team 官方订阅代充</h3>
+					<h3>ChatGPT Business 席位 · ChatGPT Pro 官方代充</h3>
 					<p>
 						接码、虚拟卡、支付被拒、账号被砍——这些环节我们替你走完。美区官方直冲，
 						操作期间不查看你的任何使用记录，5–10 分钟回执。
 					</p>
 					<p class="cta-plans">
-						只服务重度用户：ChatGPT Pro · Claude Max 5x / 20x · Claude Pro · Claude Team Premium 席位（6.25x Pro 用量）
+						ChatGPT Business 席位：只要邮箱、不交密码，Plus 同级、含 Codex · ChatGPT Pro：美区官方直冲，报价微信咨询
 					</p>
 					<div class="actions">
-						<a class="btn btn-primary" href={ctaHref}>查看套餐与下单 →</a>
+						<a class="btn btn-primary" href={ctaBizHref}>开通 Business 席位 →</a>
+						<a class="btn btn-secondary" href={ctaHref}>ChatGPT Pro 代充</a>
 						<a class="btn btn-secondary" href={ctaWechatHref}>微信咨询</a>
 					</div>
 				</aside>
