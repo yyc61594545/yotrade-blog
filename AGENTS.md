@@ -69,6 +69,8 @@ primary sources before writing.
 - Keep the YoTradeApi CTA factual and avoid guarantees.
 - The API relay product was shut down on 2026-08-25. Never describe
   yotradeapi.com as an API relay, API key vendor or multi-model API gateway.
+- Claude products (Claude Max, Claude Pro, Claude Team) are paused since
+  2026-09-29: do not promote them or link `team.html` in posts.
 - Posts about phone verification (接码, 手机号, 验证码) link the SMS service at
   `https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=<slug>`;
   see the 【优先】 section of `scripts/topic-pool.md` for the facts to use.

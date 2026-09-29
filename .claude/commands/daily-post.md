@@ -40,7 +40,7 @@ description: 自动产出今日 N 篇博客（默认 2）并刷新 1 篇头部�
    - 补 1–2 条内链到近期已发布、确实相关的文章（`ls src/content/blog/` 核对 slug 存在）
    - 导流：按表里的产品，正文最相关的位置至多 1 处、文末 1 处，都带 `utm_source=blog&utm_medium=inline&utm_content=<slug>`
      - `sms` → `https://yotradeapi.com/sms?…`（事实口径同第 1.2 步「手机验证类文章」）
-     - `team` → `https://yotradeapi.com/team.html?…`（Claude Team 席位：账号由我们提供、已加入官方组织、含 Claude Code）
+     - `none` → 不加我方导流（产品暂停中，比如 Claude 相关）；已有指向暂停产品的导流要删掉
      - `sub` → `https://yotradeapi.com/?…#sub`（订阅代充）
      - 已经有同产品、带 utm 的链接就不再加；导流段不写我方价格（见第 1.2 步）
    - 如果文中把 yotradeapi.com 写成 API 中转 / 发 Key，按第 1.2 步的规则改掉
@@ -160,7 +160,7 @@ category: <picker 给的 category>
 
 **手机验证类文章（2026-09-18 起）**：选题涉及接码、手机号、短信验证码、API key 或 Codex 登录要求验证手机时，导流改指 `https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=<slug>`（美国号验证码代收）。在正文"怎么拿到一个美国号"的位置客观对比接码平台 / 代收 / eSIM 三种方式，代收只写这些事实：¥29.90 一次、支付宝微信付款、不用注册和充值、收不到自动换号、换号仍失败全额退款；**不承诺**注册一定成功或账号不被风控。文章 tags 或 keywords 里含"接码 / 手机验证 / 手机号 / 验证码"时，模板会自动把顶部 CTA 换成验证码代收，不用手写 CTA 框。
 
-**导流段不写价格（2026-09-11 起）**：落地页已改为「咨询报价」，正文和导流段一律**不写我方套餐的价格、汇率或「≥$100/月」之类门槛**，提到套餐时写「报价微信咨询」。可提的套餐：ChatGPT Pro、Claude Max 5x / 20x、Claude Pro 年付、Claude Team（按席位，我们建组织并管理）。第三方的官方价（如 Cursor 席位价、ChatGPT Plus 官方 $20）属于正文信息，照常写。
+**导流段不写价格（2026-09-11 起）**：落地页已改为「咨询报价」，正文和导流段一律**不写我方套餐的价格、汇率或「≥$100/月」之类门槛**，提到套餐时写「报价微信咨询」。可提的套餐：ChatGPT Pro 代充、ChatGPT Business 席位（`https://yotradeapi.com/chatgpt-business.html?utm_source=blog&utm_medium=inline&utm_content=<slug>`）。**Claude 相关（Claude Max / Claude Pro / Claude Team）自 2026-09-29 起全部暂停接单，正文和导流段都不要推，也不要链 team.html**；Claude 话题的文章不加我方导流，或只在确实相关时导向验证码代收。第三方的官方价（如 Cursor 席位价、ChatGPT Plus 官方 $20）属于正文信息，照常写。
 
 ### 1.3 校验
 
