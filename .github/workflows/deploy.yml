@@ -24,19 +24,21 @@ jobs:
       - run: npm run build
 
       # Cloudflare Pages 在真实多节点并发下有不明原因的间歇性 504（2026-08 排查未果），
-      # 已迁移为直接从 VPS (69.5.53.68) 用 nginx 提供静态文件，不再依赖 Pages。
+      # 已迁移为直接从 VPS 用 nginx 提供静态文件，不再依赖 Pages。
+      # 2026-10-02 起 VPS 是 yotrade-main（149.28.68.101:52822）。部署钥匙在服务器上被 rrsync 限制为
+      # 只能写 /srv/yotradeapi/data/blog，所以目标路径写 /（就是博客目录本身），不能开 shell、不能读。
       - name: Deploy to VPS via rsync
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          echo "${{ secrets.VPS2_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          echo "${{ secrets.VPS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          echo "${{ secrets.VPS2_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
           # VPS 偶发不可达（2026-09-02 就因一次 Connection timed out 丢了当天部署，
           # 连带把 IndexNow 一起跳过）。重试三次，间隔递增。
           for attempt in 1 2 3; do
             if rsync -avz --delete --timeout=60 \
-                 -e "ssh -p 19789 -i ~/.ssh/deploy_key -o ConnectTimeout=30" \
-                 dist/ root@69.5.53.68:/opt/ai-relay/blog-dist/; then
+                 -e "ssh -p 52822 -i ~/.ssh/deploy_key -o ConnectTimeout=30" \
+                 dist/ root@149.28.68.101:/; then
               echo "rsync 成功（第 $attempt 次）"
               exit 0
             fi
