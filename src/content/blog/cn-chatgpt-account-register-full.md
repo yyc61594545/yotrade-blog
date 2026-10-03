@@ -8,7 +8,7 @@ keywords:
   - ChatGPT 注册报错
   - ChatGPT 新手注册
 pubDate: '2026-09-03'
-updatedDate: '2026-09-03'
+updatedDate: '2026-10-03'
 canonical: https://blog.yotradeapi.com/blog/cn-chatgpt-account-register-full/
 tags:
   - ChatGPT
@@ -41,7 +41,7 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 3. 如果选邮箱注册：输入邮箱地址，设置密码（建议 12 位以上，包含大小写字母和数字），点击继续。
 4. 查收邮箱验证邮件，点击邮件里的确认链接完成邮箱验证。
 5. 填写姓名、出生日期等基础信息。
-6. 进入手机号验证环节（见下一节）。
+6. 进入手机号验证环节（见下一节；没有海外手机号的，下一节有三种做法对比）。
 7. 验证通过后，账号创建完成，自动跳转到对话界面。
 
 **关于第三方授权登录的取舍**：用 Google/Microsoft 账号登录能跳过设置新密码这一步，操作更快；但如果你的 Google 账号本身也是境外注册、状态特殊，授权失败率会更高。如果 Google 账号本身能稳定登录，优先选它；如果不确定，邮箱+密码的方式更可控、报错也更容易排查。
@@ -52,6 +52,16 @@ OpenAI 的注册流程会强制要求手机号验证，且明确不接受中国�
 
 - 收验证码时如果长时间没收到，先检查是否选错了国家区号，而不是急着重新发送——重复点击"重新发送"过于频繁，部分号段会触发官方的临时限流。
 - 用一次性接码号码的话，建议在拿到号码后**立即**完成这一步验证，接码平台的号码通常只在短时间窗口内有效，拖延容易导致收不到码。
+
+三种常见做法放在一起比较：
+
+| 方式 | 要准备什么 | 适合谁 |
+| --- | --- | --- |
+| 自己或亲友的海外手机号 | 一张能收短信的海外移动号码 | 长期使用、以后还要靠它找回账号的人 |
+| 接码平台自助取号 | 注册平台账号、先充值，自己选国家和服务、自己判断退号 | 经常需要不同号码、愿意自己折腾的人 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-account-register-full) | 无，¥29.90 一次，支付宝微信付款 | 只需要过这一次验证的人 |
+
+如果你只差这一步，可以直接用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-account-register-full)：付款后等你走到输手机号那一步再取号，验证码自动显示在页面上，收不到自动换号，换号仍失败全额退款。能否通过 OpenAI 的风控由对方决定，这一点任何接码方式都一样。
 
 ## 四、注册过程中常见报错
 
@@ -80,6 +90,8 @@ OpenAI 的注册流程会强制要求手机号验证，且明确不接受中国�
 ## 七、相关阅读
 
 - [没有海外手机号怎么注册 ChatGPT（2026 实测方案）](/blog/cn-chatgpt-register-without-foreign-phone/)
+- [「电话号码是必填项」怎么办：弹窗逐句解释](/blog/cn-chatgpt-phone-required-field/)
+- [Codex 登录要求验证手机号：国内用户怎么过](/blog/cn-codex-login-phone-verification/)
 - [ChatGPT 国内第一次使用完整教程（2026 最新）](/blog/cn-chatgpt-first-time-cn-guide/)
 - [ChatGPT Plus 2026 最新充值方法（国内亲测可用）](/blog/cn-chatgpt-plus-payment-2026/)
 - [ChatGPT Plus 代充完全指南：流程、价格与避坑](/blog/cn-chatgpt-plus-daichong-guide/)

@@ -8,7 +8,7 @@ keywords:
   - ChatGPT 订阅登录 Codex
   - Codex 验证码收不到
 pubDate: '2026-09-18'
-updatedDate: '2026-09-18'
+updatedDate: '2026-10-03'
 canonical: https://blog.yotradeapi.com/blog/cn-codex-login-phone-verification/
 tags:
   - Codex
@@ -21,6 +21,8 @@ category: 国内场景
 装好 Codex CLI，敲下 `codex login`，浏览器自动弹出授权页，正准备点确认——页面要求先验证手机号。填大陆号码提示不支持，终端那边还在转圈等回调，最后超时退出。
 
 这是 2026 年国内用户用 Codex 最常见的第一道坎，而且很容易误判成"网络问题"或"CLI 装错了"。本文只解决这一步。
+
+先说最快的办法：如果确认就是卡在 Verify your phone number、手头没有能收短信的海外号，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-login-phone-verification)：¥29.90 一次，支付宝微信付款，验证码自动显示在页面上，收不到自动换号，换号仍失败全额退款。下面讲清楚为什么会要验证、怎么排查。
 
 ## 一、先分清是哪一种"登录失败"
 

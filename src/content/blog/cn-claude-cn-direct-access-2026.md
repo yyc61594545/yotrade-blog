@@ -8,7 +8,7 @@ keywords:
   - Claude 镜像站
   - Claude 国内方法
 pubDate: '2026-06-20'
-updatedDate: '2026-09-30'
+updatedDate: '2026-10-03'
 canonical: https://blog.yotradeapi.com/blog/cn-claude-cn-direct-access-2026/
 tags:
   - 小白入门
@@ -204,6 +204,10 @@ A：Anthropic 官网注册后有免费额度试用 API；部分 API 中转服务
 **Q：Claude 和 ChatGPT 相比哪个更好用？**
 
 A：两者各有擅长，简单对比见 [Claude vs GPT vs Gemini 国内开发者对比](/blog/claude-vs-gpt-vs-gemini-cn-developer/)。
+
+**Q：我也想用 ChatGPT，注册和网络怎么解决？**
+
+A：注册时卡在手机验证的，看 [没有海外手机号怎么注册 ChatGPT](/blog/cn-chatgpt-register-without-foreign-phone/)，只差这一次验证的可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-claude-cn-direct-access-2026)（¥29.90 一次，支付宝微信付款）。主要在电脑网页上用 ChatGPT、又不想自己折腾网络的，可以看看我们特别定制的 [SeeWorld · ChatGPT 专用浏览器](https://yotradeapi.com/api/order/go-seeworld?from=yt-blog-claude-direct)：自带线路，打开就是 ChatGPT，配官方 Business 会员席位，¥299/月。
 
 ## 九、相关阅读
 

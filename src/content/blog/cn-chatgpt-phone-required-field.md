@@ -8,7 +8,7 @@ keywords:
   - Phone number is required
   - ChatGPT 验证弹窗
 pubDate: '2026-09-25'
-updatedDate: '2026-09-25'
+updatedDate: '2026-10-03'
 canonical: https://blog.yotradeapi.com/blog/cn-chatgpt-phone-required-field/
 tags:
   - ChatGPT
@@ -21,6 +21,8 @@ category: 小白入门
 填到最后一步，页面弹出一行红字：**「电话号码是必填项」**（英文界面是 `Phone number is required`）。输入框下面还可能跟着一两句别的提示。很多人第一反应是「这个框能不能跳过」，然后开始试各种填法——填公司座机、填 +86、填一串随机数字，全部被拒。
 
 这篇不讲怎么弄号码（那是另一篇的事），只做一件事：**把这个弹窗里可能出现的每一句话拆开，告诉你它具体在说什么、对应该做什么动作**。因为这几句提示看着都像「号码有问题」，但背后是四种完全不同的情况，走错方向会白花钱。
+
+已经确定就是差一个能收码的号、只需要过这一次的，可以直接用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-phone-required-field)：¥29.90 一次，支付宝微信付款，收不到自动换号，换号仍失败全额退款。没确定的，先往下对一遍弹窗。
 
 ## 一、先确认是哪一个流程在要号码
 
