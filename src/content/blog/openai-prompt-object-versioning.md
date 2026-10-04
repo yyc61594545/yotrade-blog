@@ -78,7 +78,7 @@ response = client.responses.create(
         "id": "pmpt_abc123",
         "version": "3",
         "variables": {
-            "brand_name": "YoTradeApi",
+            "brand_name": "Acme",
             "refund_policy": "7 天无理由退款，需保留订单号",
             "user_question": "我的订单可以退款吗？",
         },
@@ -121,4 +121,3 @@ Prompt Object 的版本号是自增的，没有语义化版本（semver）的概
 - [LLM Prompt 回归检测：如何在改动后不破坏已有效果](/blog/llm-prompt-regression-detection/)
 - [OpenAI API 中转如何用人民币充值](/blog/cn-openai-api-recharge-with-rmb/)
 
-想在中转环境下稳定调用最新的 Responses API 和 Prompt Object 特性，可以试试 [YoTradeApi](https://yotradeapi.com)，协议紧跟官方更新，省去自己排查兼容性问题的时间。

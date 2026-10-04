@@ -89,8 +89,8 @@ model = "qwen-max"
 
 ```python
 client = OpenAI(
-    base_url="https://yotradeapi.com/v1",
-    api_key="sk-yo-xxx",
+    base_url="https://your-relay.example.com/v1",
+    api_key="sk-xxx",
 )
 
 # 同一份代码，model 传哪个厂商的都行
@@ -151,4 +151,3 @@ for model in FALLBACK_CHAIN:
 - [智谱 GLM 开发者评测](/blog/cn-zhipu-glm-developer-review/)
 - [国内网络下的 AI API 中转 vs 自建 VPN](/blog/ai-api-relay-vs-self-vpn/)
 
-如果不想为每家国产模型单独管一套 Key 和账单，[YoTradeApi](https://yotradeapi.com) 支持国产与国际主流模型统一接入，一个 Key 按上面的代码直接切换。

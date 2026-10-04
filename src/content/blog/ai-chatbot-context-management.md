@@ -158,7 +158,6 @@ def summarize_old_messages(
     
     return response.content[0].text
 
-
 def chat_with_summary_compression(
     messages: list[dict],
     user_input: str,
@@ -367,4 +366,3 @@ def compress_image_messages(messages: list[dict]) -> list[dict]:
 - [AI Agent 记忆系统设计：短期与长期记忆的工程选择](/blog/ai-agent-memory-design/)
 - [从零构建 AI 聊天机器人](/blog/ai-chatbot-from-scratch/)
 
-需要在自己的 Chatbot 产品中稳定接入 Claude 或 GPT-4o？[YoTradeApi](https://yotradeapi.com) 提供国内直连的 API 中转，支持流式输出和高并发，适合 Chatbot 类产品的生产环境部署。

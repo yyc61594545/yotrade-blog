@@ -27,7 +27,7 @@ Whisper 是当前最主流的开源语音识别模型，OpenAI 提供托管 API�
 ```python
 from openai import OpenAI
 
-client = OpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = OpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 with open("speech.mp3", "rb") as f:
     transcript = client.audio.transcriptions.create(
@@ -92,7 +92,7 @@ full_text = "\n".join(results)
 import asyncio
 from openai import AsyncOpenAI
 
-aclient = AsyncOpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+aclient = AsyncOpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 sem = asyncio.Semaphore(5)
 
 async def transcribe(path):
@@ -262,4 +262,3 @@ async function transcribe(file: File) {
 - [用 AI API 做高质量翻译的工程化流程](/blog/ai-translation-workflow/)
 - [LLM Vision API 国内对比](/blog/llm-vision-api-comparison/)
 
-需要 Whisper + Chat 一把 Key 通用的中转？[YoTradeApi](https://yotradeapi.com) 同时支持 `audio/transcriptions` 与 `chat/completions` 端点。

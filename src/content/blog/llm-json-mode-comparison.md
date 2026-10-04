@@ -296,7 +296,7 @@ from openai import OpenAI
 # 只换 base_url，其余代码不变
 client = OpenAI(
     api_key="YOUR_RELAY_KEY",
-    base_url="https://api.yotradeapi.com/v1"
+    base_url="https://your-relay.example.com/v1"
 )
 
 # 支持 OpenAI、Claude、Gemini 等统一调用
@@ -312,4 +312,3 @@ client = OpenAI(
 - [OpenAI SDK base_url 切换中文教程](/blog/openai-sdk-base-url-cn/)
 - [函数调用 vs Tool Use：核心差异解析](/blog/function-calling-vs-tool-use/)
 
-如果你正在生产中接入多家 LLM 的 JSON 模式，[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容中转，一个 Key 覆盖 Claude、GPT、Gemini、DeepSeek，省去多平台鉴权管理的烦恼。

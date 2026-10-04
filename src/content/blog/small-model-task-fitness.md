@@ -88,4 +88,3 @@ category: 模型评测
 - [模型分级的成本策略](/blog/model-tiering-cost-strategy/)
 - [多模型成本智能路由方案](/blog/multi-model-cost-routing/)
 
-判断清楚任务适配性之后，不管是大模型还是小模型的调用，都可以通过 [YoTradeApi](https://yotradeapi.com) 统一走中转接口，按量计费，混合架构下多模型调用也不用分别对接多家账单。

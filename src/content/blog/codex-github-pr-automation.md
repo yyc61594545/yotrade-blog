@@ -102,4 +102,3 @@ Codex 可在本地用 `/review` 审查 base diff，也可在 PR 评论中请求 
 - [Claude Code CI/CD 集成指南](/blog/claude-code-ci-integration/)
 - [AI 编程代理权限模式对比](/blog/ai-coding-agent-permission-models/)
 
-如果你的 Codex 工作流需要统一调用多种模型并集中管理接入配置，[YoTradeApi](https://yotradeapi.com) 可提供兼容 API，便于把模型接入与 GitHub 分支、PR 和 CI 权限分开治理。

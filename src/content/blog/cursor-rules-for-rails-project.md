@@ -277,4 +277,4 @@ git add .cursor/rules/
 - [Cursor 团队推广三个月复盘：落地痛点与真实收益](/blog/cursor-team-rollout-3months/)
 - [AI 代码审查工作流：提升团队代码质量的实践方案](/blog/ai-code-review-workflow/)
 
-在 Rails 项目里配好 Cursor Rules 后，AI 生成的代码质量会有明显提升。如果你的团队同时使用多种 AI 模型（如 Claude、GPT-4o），[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转端点，可直接在 Cursor 自定义模型配置中使用，按需切换模型而不改动代码。
+在 Rails 项目里配好 Cursor Rules 后，AI 生成的代码质量会有明显提升。

@@ -67,14 +67,12 @@ API 中转的原理是：服务商在海外部署转发节点，你把 `base_url
 
 ### 接入示例
 
-以 [YoTradeApi](https://yotradeapi.com) 为例，只需两行配置变更：
-
 ```python
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="your_yotrade_api_key",      # 换成中转 key
-    base_url="https://yotradeapi.com/v1", # 换成中转地址
+    api_key="your_api_key",      # 换成中转 key
+    base_url="https://your-relay.example.com/v1", # 换成中转地址
 )
 
 resp = client.chat.completions.create(
@@ -167,7 +165,7 @@ print(json.loads(resp["body"].read())["content"][0]["text"])
 ```python
 client = OpenAI(
     api_key="your_key",
-    base_url="https://yotradeapi.com/v1",
+    base_url="https://your-relay.example.com/v1",
     timeout=30.0,  # 非流式建议 30s，流式建议 120s
 )
 ```
@@ -188,8 +186,8 @@ except Exception as e:
 
 ```bash
 # .env
-GROK_API_KEY=your_yotrade_key
-GROK_BASE_URL=https://yotradeapi.com/v1
+GROK_API_KEY=your_api_key
+GROK_BASE_URL=https://your-relay.example.com/v1
 ```
 
 不要把 API Key 硬编码在代码里，也不要提交到 Git 仓库。
@@ -200,7 +198,7 @@ GROK_BASE_URL=https://yotradeapi.com/v1
 A: 检查 API Key 是否正确，中转服务商的 Key 格式通常与官方不同，不能混用。
 
 **Q: 流式输出中途断开**
-A: 可能是网络抖动或中转节点限速。先检查本地到中转节点的延迟（`ping yotradeapi.com`），再查服务商状态页。
+A: 可能是网络抖动或中转节点限速。
 
 **Q: 模型返回 `model not found`**
 A: 调用 `/v1/models` 接口确认该中转服务支持的模型列表，名称区分大小写。
@@ -215,4 +213,3 @@ A: Grok-4 是旗舰推理模型，单次推理本身较慢（特别是长思考�
 - [Gemini API 国内调用：中转 vs 直连对比](/blog/cn-gemini-api-direct-vs-relay/)
 - [国内 AI 中转服务市场全览](/blog/cn-llm-relay-market-overview/)
 
-想稳定使用 Grok API 而不折腾代理，[YoTradeApi](https://yotradeapi.com) 支持 Grok-3/4 全系列模型，按量计费、开箱即用。

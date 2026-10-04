@@ -62,7 +62,7 @@ Zed 的所有设置都在一个 JSON 文件里，不像 VS Code 那样分全局/
 几个关键点：
 
 - **API Key 不写进 settings.json**：Zed 会在首次使用某个 Provider 时弹出输入框，让你粘贴 API Key，存到系统密钥链（macOS Keychain / Linux Secret Service），不会以明文存在配置文件里，这一点比某些工具直接把 key 写进 JSON 更安全。
-- **`api_url` 是接入中转服务的关键字段**：如果你的 Anthropic/OpenAI Key 是走中转服务（比如国内直连不稳定，用 [YoTradeApi](https://yotradeapi.com) 这类中转网关），把默认的官方 endpoint 换成中转地址即可，鉴权方式通常保持不变（Bearer Token）。
+- **`api_url` 是接入中转服务的关键字段**：如果你的 Anthropic/OpenAI Key 是走中转服务（比如国内直连不稳定，用中转服务商这类中转网关），把默认的官方 endpoint 换成中转地址即可，鉴权方式通常保持不变（Bearer Token）。
 - **多 Provider 并存**：`provider` 字段下可以同时配置 `anthropic`、`openai`、`google` 等多个条目，`default_model` 只决定默认用哪个，实际对话时可以在助手面板顶部临时切换模型，不用改配置文件。
 
 ## 四、Inline Assist 快捷键与常见用法
@@ -113,4 +113,3 @@ Inline Assist 是 Zed AI 助手里日常用得最频繁的功能，默认快捷�
 - [Cursor vs Claude Code 全面对比](/blog/cursor-vs-claude-code-comparison/)
 - [Cursor 团队配置指南](/blog/cursor-team-config-guide/)
 
-如果 Zed 里配置的 API Key 走的是国内中转，[YoTradeApi](https://yotradeapi.com) 支持 Claude、GPT 等主流模型的中转调用，接口路径兼容官方格式，`api_url` 换成中转地址就能直接用，不用改代码逻辑。

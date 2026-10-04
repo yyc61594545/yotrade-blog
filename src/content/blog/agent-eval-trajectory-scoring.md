@@ -131,4 +131,3 @@ def trajectory_edit_distance(actual_tools, reference_tools):
 - [Prompt 改动后的回归检测](/blog/llm-prompt-regression-detection/)
 - [AI 编程 Agent 内部基准设计](/blog/ai-coding-agent-benchmark-design/)
 
-如果你的 Agent 需要同时调用多家模型做轨迹级 A/B 对比，用 [YoTradeApi](https://yotradeapi.com) 统一接入可以省去分别对接各家 API 的评测基础设施改造成本。

@@ -159,4 +159,3 @@ DeepSeek R1 的发布是里程碑事件——在数学推理基准上，其表�
 - [DeepSeek Coder 深度测评：中国开发者的代码助手新选择](/blog/cn-deepseek-coder-deep-review/)
 - [多模型成本路由：按任务类型动态分发 LLM 请求](/blog/multi-model-cost-routing/)
 
-想低成本接入 Claude、GPT-4o、Gemini 等海外顶级模型，同时享受国内网络直连，[YoTradeApi](https://yotradeapi.com) 提供稳定中转 + 人民币充值，帮助中国开发者无门槛使用全球最强 AI API。

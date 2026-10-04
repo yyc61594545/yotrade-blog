@@ -101,12 +101,12 @@ os.environ["LANGFUSE_SECRET_KEY"] = "sk-..."
 os.environ["LANGFUSE_HOST"] = "http://localhost:3000"
 
 langfuse = Langfuse()
-client = OpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = OpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 # 用装饰器自动追踪
 from langfuse.openai import openai as lf_openai
 
-client = lf_openai.OpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = lf_openai.OpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 resp = client.chat.completions.create(
     model="claude-sonnet-4-6",
@@ -165,7 +165,7 @@ import { observeOpenAI } from "langfuse";
 
 const langfuse = new Langfuse();
 const openai = observeOpenAI(
-  new OpenAI({ apiKey: "sk-yo-...", baseURL: "https://yotradeapi.com/v1" }),
+  new OpenAI({ apiKey: "sk-...", baseURL: "https://your-relay.example.com/v1" }),
 );
 
 const resp = await openai.chat.completions.create({ ... });
@@ -273,4 +273,4 @@ Langfuse 自己只是观察平台，不影响 LLM 调用。中转处理实际 AP
 - [LangChain 中文实战](/blog/langchain-cn-tutorial/)
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 
-Langfuse + [YoTradeApi](https://yotradeapi.com) 组合：中转管 API 路由，Langfuse 管观察。两侧用量数据可交叉校对。
+两侧用量数据可交叉校对。

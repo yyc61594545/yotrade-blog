@@ -40,7 +40,7 @@ AI 翻译比传统机翻准确度高一个量级，但要做到"上线级别"还
 ```python
 from openai import OpenAI
 
-client = OpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = OpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 def translate(text, source="en", target="zh"):
     resp = client.chat.completions.create(
@@ -150,7 +150,7 @@ def back_translate_check(source_en, translation_zh):
 import asyncio
 from openai import AsyncOpenAI
 
-aclient = AsyncOpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+aclient = AsyncOpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 async def translate_async(text, glossary):
     glossary_str = "\n".join(f"- {k} → {v}" for k, v in glossary.items())
@@ -284,4 +284,3 @@ def translate_srt(srt_text, glossary):
 - [Python 异步并发调用 LLM API](/blog/python-async-llm-client/)
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 
-需要批量翻译稳定的中转 + 同 Key 调多家模型？[YoTradeApi](https://yotradeapi.com) 一把 Key 调 Claude / GPT / Gemini 全家，按场景切。

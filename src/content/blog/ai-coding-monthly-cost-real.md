@@ -170,7 +170,6 @@ AI_MOCK_ENABLED=false
 主要用两个场景：①长文档分析（合同、文档、大段代码审查）；②深度架构讨论（Claude 在这类发散性思考上还是比较强）。
 
 **API 中转（按量）**：
-项目集成的 AI 功能通过 YoTradeApi 调用，统一管理多个模型的密钥，Token 用量有看板，账单清晰。
 
 关于各 IDE AI 工具的详细对比，可以参考[AI 编程工具 2026 年全景](/blog/ai-coding-tools-2026-overview/)；订阅 vs API 的经济账在[AI 编程工具经济学分析](/blog/ai-coding-tool-economics/)里有更系统的分析。
 
@@ -214,4 +213,3 @@ AI_MOCK_ENABLED=false
 - [Prompt Cache 成本优化实战](/blog/prompt-caching-cost-optimization/)
 - [LLM 上下文窗口实用指南：选型与成本控制](/blog/llm-context-window-cn-guide/)
 
-统一管理多模型 API 调用、查看 Token 用量明细，[YoTradeApi](https://yotradeapi.com) 提供多模型统一账单，适合想控制 AI 开发成本的独立开发者。

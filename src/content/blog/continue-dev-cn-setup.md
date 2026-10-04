@@ -47,15 +47,15 @@ models:
   - name: Sonnet 4.6
     provider: openai
     model: claude-sonnet-4-6
-    apiBase: https://yotradeapi.com/v1
-    apiKey: sk-yo-...
+    apiBase: https://your-relay.example.com/v1
+    apiKey: sk-...
     roles: [chat, edit, apply]
 
   - name: Haiku 4.5
     provider: openai
     model: claude-haiku-4-5
-    apiBase: https://yotradeapi.com/v1
-    apiKey: sk-yo-...
+    apiBase: https://your-relay.example.com/v1
+    apiKey: sk-...
     roles: [autocomplete, summarize]
 
 context:
@@ -126,8 +126,8 @@ models:
   - name: Cloud Chat
     provider: openai
     model: claude-sonnet-4-6
-    apiBase: https://yotradeapi.com/v1
-    apiKey: sk-yo-...
+    apiBase: https://your-relay.example.com/v1
+    apiKey: sk-...
     roles: [chat, edit]    # 云端跑复杂任务
 ```
 
@@ -203,4 +203,3 @@ quickActions:
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 
-用一把 Key 同时配置 Continue.dev 的 chat / edit / autocomplete / embed？[YoTradeApi](https://yotradeapi.com) 创建 API Key 后按上面 yaml 模板填即可。

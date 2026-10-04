@@ -90,10 +90,10 @@ Settings → Tongyi Lingma → Advanced → Custom Model Endpoint
 {
   "models": [
     {
-      "title": "Claude via YoTradeApi",
+      "title": "Claude via 中转",
       "provider": "openai",
       "model": "claude-sonnet-4-5",
-      "apiBase": "https://api.yotradeapi.com/v1",
+      "apiBase": "https://your-relay.example.com/v1",
       "apiKey": "sk-YOUR_KEY_HERE"
     }
   ],
@@ -101,7 +101,7 @@ Settings → Tongyi Lingma → Advanced → Custom Model Endpoint
     "title": "DeepSeek Coder",
     "provider": "openai",
     "model": "deepseek-coder",
-    "apiBase": "https://api.yotradeapi.com/v1",
+    "apiBase": "https://your-relay.example.com/v1",
     "apiKey": "sk-YOUR_KEY_HERE"
   }
 }
@@ -135,7 +135,7 @@ Host: 127.0.0.1  Port: 7890（改成你的实际代理端口）
 
 ### 方案 B：API 中转（推荐给没有稳定代理的用户）
 
-将 AI 插件的 API Endpoint 替换为 API 中转服务的地址，例如 `https://api.yotradeapi.com/v1`。这样 IDE 本身不需要任何代理设置，API 请求从国内直接打到中转节点，中转节点再转发给上游模型。
+将 AI 插件的 API Endpoint 替换为 API 中转服务的地址，例如 `https://your-relay.example.com/v1`。这样 IDE 本身不需要任何代理设置，API 请求从国内直接打到中转节点，中转节点再转发给上游模型。
 
 适用插件：Continue.dev、任何支持自定义 Base URL 的插件（如 Bito 的高级设置）。
 
@@ -172,7 +172,7 @@ Host: 127.0.0.1  Port: 7890（改成你的实际代理端口）
 ## 七、总结：如何选插件
 
 1. **全免费 + 国内直连**：通义灵码（Java/Python 最强）或 CodeGeeX（多语言均衡）
-2. **想用 Claude / GPT-4o + 不想维护代理**：Continue.dev + API 中转（[YoTradeApi](https://yotradeapi.com) 等）
+2. **想用 Claude / GPT-4o + 不想维护代理**：Continue.dev + API 中转
 3. **已有稳定梯子 + 不差钱**：GitHub Copilot 官方插件，功能最完整
 4. **企业合规场景**：通义灵码企业版（私有化）或 Continue.dev 对接内网模型
 
@@ -186,4 +186,3 @@ JetBrains 用户不必羡慕 VS Code 用户，生态已经足够成熟，关键�
 - [AI 编程工具成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [Claude Code 国内网络配置](/blog/claude-code-on-cn-network/)
 
-想在 JetBrains 里接入 Claude、GPT-4o 等境外旗舰模型而不折腾代理，[YoTradeApi](https://yotradeapi.com) 提供稳定的 OpenAI 兼容中转，注册即可试用。

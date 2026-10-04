@@ -50,15 +50,13 @@ OpenAI API 本身并非面向个人消费者的服务，它面向全球开发者
 - 用人民币充值，免去美元支付麻烦
 - 获得稳定的国内接入点，无需担心网络波动
 
-[YoTradeApi](https://yotradeapi.com) 就是这类服务之一，OpenAI 兼容接口，改两行代码即可接入。
-
 ```python
 from openai import OpenAI
 
 # 只需要改这两行，其他代码完全不变
 client = OpenAI(
     api_key="your_relay_api_key",
-    base_url="https://api.yotradeapi.com/v1",
+    base_url="https://your-relay.example.com/v1",
 )
 
 response = client.chat.completions.create(
@@ -151,7 +149,7 @@ API 和网页版是不同的产品线。网页版的"深度研究"、"代码执�
 
 如果你是开发者，想在国内快速接入 GPT-4o 能力，最低成本的路径是：
 
-1. 在 [YoTradeApi](https://yotradeapi.com) 注册账号
+1. 在中转服务商注册账号
 2. 充值人民币（支付宝/微信）
 3. 获取 API Key
 4. 修改两行代码（base_url + api_key）
@@ -161,7 +159,7 @@ API 和网页版是不同的产品线。网页版的"深度研究"、"代码执�
 
 ```bash
 # 快速验证你的接入是否正常
-curl https://api.yotradeapi.com/v1/chat/completions \
+curl https://your-relay.example.com/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
@@ -180,4 +178,3 @@ curl https://api.yotradeapi.com/v1/chat/completions \
 - [国内虚拟信用卡订阅 ChatGPT 指南](/blog/cn-virtual-card-for-chatgpt-2026/)
 - [百川大模型 API 开发者评测](/blog/cn-baichuan-developer-review/)
 
-国内开发者需要稳定接入 GPT-4o、Claude 或其他主流 AI 模型，[YoTradeApi](https://yotradeapi.com) 提供人民币结算的统一 API 中转，免去境外账单烦恼。

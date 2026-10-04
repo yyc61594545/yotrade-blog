@@ -132,7 +132,6 @@ Because that click does not open WeChat — it just makes Jimeng draw a QR code 
 No. The only thing we ever receive is a screenshot of the WeChat Pay QR code from your checkout popup.
 
 **Is this affiliated with ByteDance?**
-No. China AI Pass is an independent service run by YoTradeApi. Jimeng, Dreamina, CapCut and Seedance are ByteDance products and trademarks.
 
 **Why not just use Dreamina?**
 If Dreamina has what you need, use it. People come to Jimeng for the newest model versions, lower credit prices and China-only tools; if none of that applies to you, the international app is simpler.

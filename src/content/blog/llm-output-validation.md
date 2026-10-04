@@ -175,4 +175,3 @@ def process_llm_extraction(raw_json: dict) -> RefundRequest:
 - [LLM Agent 评估方法论](/blog/llm-agent-evaluation-methods/)
 - [Claude vs GPT 工具调用准确率对比](/blog/claude-vs-gpt-tool-use-accuracy/)
 
-需要同时对比多个模型在结构化抽取任务上的表现，找到幻觉率最低的那个？[YoTradeApi](https://yotradeapi.com) 一个 Key 接入全系模型，方便跑离线批量验证对比。

@@ -120,4 +120,3 @@ Requested resolution: Please review this charge for refund eligibility.
 - [支付宝微信能付哪些 AI 服务：2026 现状](/blog/cn-alipay-wechat-ai-subscribe/)
 - [2026 国内如何用虚拟信用卡订阅 ChatGPT](/blog/cn-virtual-card-for-chatgpt-2026/)
 
-如果你实际需要的是模型 API 调用而非网页订阅，[YoTradeApi](https://yotradeapi.com) 可提供统一的 API 接入入口，避免把订阅产品与开发接口混在同一套账单流程中。

@@ -37,11 +37,9 @@ Claude Code（命令行版本）本质上是一个调用 Anthropic Messages API 
 
 ## 二、最小可用配置（推荐起步方式）
 
-以 YoTradeApi 为例，最小配置三行：
-
 ```bash
-export ANTHROPIC_BASE_URL="https://yotradeapi.com"
-export ANTHROPIC_AUTH_TOKEN="sk-your-yotrade-key"
+export ANTHROPIC_BASE_URL="https://your-relay.example.com"
+export ANTHROPIC_AUTH_TOKEN="sk-your-key"
 export ANTHROPIC_MODEL="claude-sonnet-4-6"
 ```
 
@@ -55,7 +53,7 @@ claude
 
 1. **`ANTHROPIC_BASE_URL` 不要带 `/v1`**。Claude Code 会自己拼路径，加了反而 404。
 2. **`AUTH_TOKEN` 与 `API_KEY` 只设一个**。大部分中转用 `AUTH_TOKEN`，官方用 `API_KEY`。两个都设有些 CLI 版本会优先选官方。
-3. **模型名要用网关支持的写法**。YoTradeApi 当前支持 `claude-sonnet-4-6`、`claude-opus-4-7` 等，写错会直接 404。
+3. **模型名要用网关支持的写法**。中转服务 当前支持 `claude-sonnet-4-6`、`claude-opus-4-7` 等，写错会直接 404。
 
 ## 三、按操作系统的持久化配置
 
@@ -64,9 +62,9 @@ claude
 在 `~/.zshrc` 或 `~/.bashrc` 追加：
 
 ```bash
-# Claude Code via YoTradeApi
-export ANTHROPIC_BASE_URL="https://yotradeapi.com"
-export ANTHROPIC_AUTH_TOKEN="sk-your-yotrade-key"
+# Claude Code via 中转
+export ANTHROPIC_BASE_URL="https://your-relay.example.com"
+export ANTHROPIC_AUTH_TOKEN="sk-your-key"
 export ANTHROPIC_MODEL="claude-sonnet-4-6"
 ```
 
@@ -75,8 +73,8 @@ export ANTHROPIC_MODEL="claude-sonnet-4-6"
 ### Windows PowerShell
 
 ```powershell
-[Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://yotradeapi.com", "User")
-[Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "sk-your-yotrade-key", "User")
+[Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://your-relay.example.com", "User")
+[Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "sk-your-key", "User")
 [Environment]::SetEnvironmentVariable("ANTHROPIC_MODEL", "claude-sonnet-4-6", "User")
 ```
 
@@ -93,7 +91,7 @@ Claude Code 支持把项目相关的设置写进 `.claude/settings.json`，团�
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://yotradeapi.com",
+    "ANTHROPIC_BASE_URL": "https://your-relay.example.com",
     "ANTHROPIC_MODEL": "claude-sonnet-4-6"
   },
   "permissions": {
@@ -164,4 +162,3 @@ curl -sS -X POST "$ANTHROPIC_BASE_URL/v1/messages" \
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 
-如果想先用最小流量验证 Claude Code 在国内的可用性，可以在 [YoTradeApi 注册](https://yotradeapi.com) 创建独立 API Key，按上面的 5 行环境变量直接接入，跑通后再决定要不要扩量。

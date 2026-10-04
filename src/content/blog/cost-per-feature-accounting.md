@@ -96,4 +96,3 @@ category: 成本优化
 - [Prompt Caching 成本优化](/blog/prompt-caching-cost-optimization/)
 - [LLM 成本异常检测](/blog/llm-cost-anomaly-detection/)
 
-想省去搭建多模型账单核算基础设施的麻烦，[YoTradeApi](https://yotradeapi.com) 提供统一计费口径的 API 中转，方便按调用直接对齐功能级成本数据。

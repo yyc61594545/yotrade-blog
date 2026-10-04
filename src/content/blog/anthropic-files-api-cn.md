@@ -74,7 +74,7 @@ https://api.anthropic.com/v1/files
 在境外服务器搭建 Nginx 反向代理，将 `api.anthropic.com` 转发到本地可访问的域名。维护成本高，且 IP 随时可能被封。
 
 **方案 B：使用 API 中转服务**
-选择兼容 Anthropic 原生协议的 API 中转平台（如 YoTradeApi），将 `base_url` 替换为中转地址。这是大多数国内开发者的首选——无需自建基础设施，只需改一行配置。
+这是大多数国内开发者的首选——无需自建基础设施，只需改一行配置。
 
 本文后续示例均以**方案 B（API 中转）**为前提，但代码结构与直连完全一致，切换只需改 `base_url`。
 
@@ -88,7 +88,7 @@ pip install anthropic>=0.40.0
 
 ```bash
 # 如使用 API 中转
-export ANTHROPIC_BASE_URL="https://api.yotradeapi.com"
+export ANTHROPIC_BASE_URL="https://your-relay.example.com"
 export ANTHROPIC_API_KEY="your-relay-key"
 ```
 
@@ -374,4 +374,3 @@ def get_or_upload(client, file_path: str) -> str:
 - [OpenAI File Search vs RAG：如何选型](/blog/openai-file-search-vs-rag/)
 - [Anthropic Console Key 与 API 中转对比](/blog/anthropic-console-key-vs-relay/)
 
-如果你在国内使用 Files API 遇到连接问题，[YoTradeApi](https://yotradeapi.com) 提供稳定的 Anthropic 原生协议中转，支持 Files API 全部端点，无需修改业务代码。

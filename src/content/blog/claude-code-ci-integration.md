@@ -42,8 +42,8 @@ jobs:
           node-version: 22
       - run: npm install -g @anthropic-ai/claude-code
       - env:
-          ANTHROPIC_BASE_URL: https://yotradeapi.com
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.YOTRADE_KEY }}
+          ANTHROPIC_BASE_URL: https://your-relay.example.com
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.RELAY_API_KEY }}
           ANTHROPIC_MODEL: claude-sonnet-4-6
         run: |
           claude --headless --max-turns 10 --task "$(cat <<EOF
@@ -93,8 +93,8 @@ jobs:
       - run: npm install -g @anthropic-ai/claude-code
       - run: npm ci
       - env:
-          ANTHROPIC_BASE_URL: https://yotradeapi.com
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.YOTRADE_KEY }}
+          ANTHROPIC_BASE_URL: https://your-relay.example.com
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.RELAY_API_KEY }}
           ANTHROPIC_MODEL: claude-opus-4-7
         run: |
           claude --headless --max-turns 20 --task "$(cat <<EOF
@@ -131,8 +131,8 @@ jobs:
       - uses: actions/checkout@v4
       - run: npm install -g @anthropic-ai/claude-code
       - env:
-          ANTHROPIC_BASE_URL: https://yotradeapi.com
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.YOTRADE_KEY }}
+          ANTHROPIC_BASE_URL: https://your-relay.example.com
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.RELAY_API_KEY }}
           ANTHROPIC_MODEL: claude-opus-4-7
         run: |
           claude --headless --max-turns 30 --task "$(cat <<EOF
@@ -206,8 +206,8 @@ review-pr:
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
   variables:
-    ANTHROPIC_BASE_URL: https://yotradeapi.com
-    ANTHROPIC_AUTH_TOKEN: $YOTRADE_KEY
+    ANTHROPIC_BASE_URL: https://your-relay.example.com
+    ANTHROPIC_AUTH_TOKEN: $RELAY_API_KEY
     ANTHROPIC_MODEL: claude-sonnet-4-6
   before_script:
     - npm install -g @anthropic-ai/claude-code
@@ -275,4 +275,3 @@ claude --headless --task "扫描 src/ 下潜在的 SQL 注入、XSS、Path Trave
 - [Claude Code Hooks 工作流](/blog/claude-code-hooks-workflow/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 
-需要 CI 友好的中转（独立 Key + 预算上限 + 日志可追溯）？[YoTradeApi](https://yotradeapi.com) 后台直接配置。

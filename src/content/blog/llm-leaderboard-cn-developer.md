@@ -150,7 +150,7 @@ MODELS = [
     "qwen-max",
 ]
 
-BASE_URL = "https://api.yotradeapi.com/v1"
+BASE_URL = "https://your-relay.example.com/v1"
 
 async def eval_model(model: str, prompt: str, api_key: str) -> str:
     async with httpx.AsyncClient() as client:
@@ -196,4 +196,3 @@ LLM 排行榜是入门选模时有用的信号来源，但对工程决策而言�
 - [构建 LLM 评测黄金集实战](/blog/llm-eval-golden-set/)
 - [为什么 AI 编程工具越用越差](/blog/why-ai-coding-getting-worse/)
 
-如果你需要同时调用多个模型做横向评测，[YoTradeApi](https://yotradeapi.com) 提供统一 API 接口，一个密钥接入 Claude、GPT-4o、Qwen 等主流模型，免去多账号管理的麻烦。

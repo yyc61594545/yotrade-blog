@@ -158,4 +158,3 @@ def is_key_revoked(key_id: str) -> bool:
 - [LiteLLM 自部署网关中国区实践](/blog/litellm-cn-gateway-self-host/)
 - [工具调用可靠性实测：Claude / GPT-5 / Gemini 谁更稳](/blog/llm-tool-call-reliability-bench/)
 
-如果你不想自己维护这套签名与防重放体系，[YoTradeApi](https://yotradeapi.com) 已经把密钥管理、请求鉴权和多模型转发都做好了，直接接入即可，省去自建网关安全层的精力。

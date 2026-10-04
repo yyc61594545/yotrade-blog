@@ -157,4 +157,3 @@ def full_conversation_turn(messages: list, tools: list) -> list:
 - [Claude 并行 Tool Use 实战：一次调用多个工具](/blog/parallel-tool-use-claude/)
 - [LLM 流式响应 UI 交互模式](/blog/llm-streaming-ui-patterns/)
 
-如果你的应用需要稳定调用 Claude 的流式和工具调用能力，[YoTradeApi](https://yotradeapi.com) 提供国内可直连的 API 中转服务，完整支持 SSE 流式转发，避免自建代理导致的连接不稳定问题。

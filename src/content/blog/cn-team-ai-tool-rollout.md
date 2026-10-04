@@ -31,7 +31,7 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 
 **账号注册与支付**。官方账号注册通常要求境外手机号或境外邮箱验证，付费环节大多只接受境外发行的信用卡，国内团队常见的对公账户、支付宝、微信支付一般不在支持范围内。
 
-这两个问题叠加起来，会让"技术负责人想试用一下"这件事，卡在第一步就推进不下去。常见解法是通过 API 中转服务解决访问和支付问题——用国内可结算的方式获取 API Key，同时改善访问的稳定性，比如 [YoTradeApi](https://yotradeapi.com) 这类中转平台，就是把这一步的门槛降到"注册即用"。境外 VPN 直连 vs API 中转两种方案的详细对比，可以看 [AI API 中转与自建 VPN 的成本对比](/blog/ai-api-relay-vs-self-vpn/)。
+这两个问题叠加起来，会让"技术负责人想试用一下"这件事，卡在第一步就推进不下去。境外 VPN 直连 vs API 中转两种方案的详细对比，可以看 [AI API 中转与自建 VPN 的成本对比](/blog/ai-api-relay-vs-self-vpn/)。
 
 ## 二、第二关：采购报销的现实约束
 
@@ -87,4 +87,3 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 - [AI API 中转与自建 VPN 的成本对比](/blog/ai-api-relay-vs-self-vpn/)
 - [LLM 团队预算分配的实践](/blog/llm-team-budget-allocation/)
 
-如果你正卡在"第一关"——账号、访问、国内可结算的支付方式，[YoTradeApi](https://yotradeapi.com) 可以直接跳过境外注册和境外信用卡的门槛，用国内方式开通并稳定访问主流 AI 模型 API。

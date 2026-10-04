@@ -125,7 +125,7 @@ GPT-4o 和 o1/o3 系列中，`developer` 角色（即原来的 system）的权�
 ### 3.4 知识注入（RAG 检索结果以外的静态知识）
 
 ```
-公司背景：YoTradeApi 是一家提供 AI API 中转服务的平台，成立于 2023 年，
+公司背景：Acme 是一家提供 AI API 中转服务的平台，成立于 2023 年，
 支持 Claude、GPT、Gemini 等主流模型，采用按量计费模式。
 ```
 
@@ -265,4 +265,3 @@ System prompt 的内容本身是可以被模型在回复中泄露的（如果你
 - [LLM Context Engineering 全攻略](/blog/llm-context-engineering/)
 - [Claude Tool Use 最佳实践](/blog/claude-tool-use-best-practices/)
 
-想在自己的应用里稳定调用 Claude、GPT-4o 等模型而不担心网络波动？[YoTradeApi](https://yotradeapi.com) 提供高可用的 API 中转服务，让你专注于 prompt 设计而非基础设施维护。

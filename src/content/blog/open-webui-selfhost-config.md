@@ -34,8 +34,8 @@ docker run -d \
   --name open-webui \
   -p 3000:8080 \
   -e DATABASE_URL=postgresql://openwebui:PASSWORD@postgres-host:5432/openwebui \
-  -e OPENAI_API_BASE_URL=https://yotradeapi.com/v1 \
-  -e OPENAI_API_KEY=sk-yo-... \
+  -e OPENAI_API_BASE_URL=https://your-relay.example.com/v1 \
+  -e OPENAI_API_KEY=sk-... \
   --restart always \
   ghcr.io/open-webui/open-webui:main
 ```
@@ -54,8 +54,8 @@ docker run -d \
   -e DATABASE_URL=postgresql://openwebui:PASSWORD@postgres-host:5432/openwebui \
   -e REDIS_URL=redis://redis-host:6379/0 \
   -e WEBSOCKET_MANAGER=redis \
-  -e OPENAI_API_BASE_URL=https://yotradeapi.com/v1 \
-  -e OPENAI_API_KEY=sk-yo-... \
+  -e OPENAI_API_BASE_URL=https://your-relay.example.com/v1 \
+  -e OPENAI_API_KEY=sk-... \
   --restart always \
   ghcr.io/open-webui/open-webui:main
 ```
@@ -131,4 +131,3 @@ docker run -d \
 - [开源 LLM 自托管趋势](/blog/open-source-llm-self-hosting-trend/)
 - [中文 RAG 工程实战](/blog/rag-cn-best-practices/)
 
-无论是单机部署还是多副本生产集群，模型调用这一层都建议走统一的中转,[YoTradeApi](https://yotradeapi.com) 提供的 Key 可以直接接入 Open WebUI 的多 Provider 配置，方便按团队或环境拆分独立的调用配额。

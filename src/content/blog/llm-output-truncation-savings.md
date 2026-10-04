@@ -266,4 +266,3 @@ result, tokens_used = stream_until_done(
 - [LLM 成本优化完整检查清单](/blog/llm-cost-optimization-checklist/)
 - [腾讯元宝大模型 API 评测：混元能力、接入体验与定价分析](/blog/cn-tencent-yuanbao-review/)
 
-想要一个 Key 管理多家模型、统一账单并享受折扣价，可以试试 [YoTradeApi](https://yotradeapi.com)，支持 Claude、GPT、混元、豆包等主流模型，人民币充值即用。

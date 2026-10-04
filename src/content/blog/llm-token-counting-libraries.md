@@ -102,7 +102,7 @@ Anthropic 提供了专用的 token 计数 API，不触发实际推理，成本�
 from anthropic import Anthropic
 
 client = Anthropic(
-    base_url="https://api.yotradeapi.com/v1",  # 通过中转访问
+    base_url="https://your-relay.example.com/v1",  # 通过中转访问
     api_key="your-key"
 )
 
@@ -275,4 +275,3 @@ class TokenCounter:
 - [AI Agent 成本监控实战：从 Token 到账单的全链路追踪](/blog/ai-agent-cost-monitoring/)
 - [LLM 视觉 Token 成本计算](/blog/llm-vision-token-cost/)
 
-统一接入多个 LLM 模型、简化 token 成本管理，[YoTradeApi](https://yotradeapi.com) 支持 GPT、Claude、Gemini、DeepSeek 全系模型，单一 API Key 搞定多模型调用。

@@ -114,7 +114,7 @@ OpenAI 的风控系统会对支付请求的 IP 地址进行验证。如果你上
 
 **方案 A：使用 ChatGPT API 而非 Plus 订阅**
 
-如果你主要是为了用 GPT-4 的能力，可以直接通过 API 调用，按需付费，不需要订阅。这样没有每月自动扣款的问题。通过 [YoTradeApi](https://yotradeapi.com) 可以用人民币充值使用 OpenAI 的 API 接口，完全免去国际支付的麻烦。
+如果你主要是为了用 GPT-4 的能力，可以直接通过 API 调用，按需付费，不需要订阅。这样没有每月自动扣款的问题。
 
 **方案 B：购买官方礼品卡**
 
@@ -151,4 +151,3 @@ OpenAI 在部分渠道提供礼品卡（Gift Card），可以通过礼品卡余�
 - [ChatGPT Pro 200 美元订阅国内支付方法](/blog/cn-chatgpt-pro-200-dollar-payment/)
 - [AI API 中转服务稳定性测试](/blog/ai-api-relay-stability-test/)
 
-如果你想彻底摆脱订阅管理的烦恼，[YoTradeApi](https://yotradeapi.com) 提供 GPT-4o 等主流模型的 API 接入，人民币充值按量计费，无需处理国际信用卡。

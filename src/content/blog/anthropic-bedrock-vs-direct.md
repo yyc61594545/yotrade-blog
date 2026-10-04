@@ -195,8 +195,8 @@ model_list:
   - model_name: claude-sonnet
     litellm_params:
       model: openai/claude-sonnet-4-6
-      api_base: https://yotradeapi.com/v1
-      api_key: os.environ/YOTRADE_KEY
+      api_base: https://your-relay.example.com/v1
+      api_key: os.environ/RELAY_API_KEY
 ```
 
 三个上游同名，LiteLLM 自动负载均衡 + fallback。
@@ -209,4 +209,3 @@ model_list:
 - [API Key 泄露应急响应](/blog/api-key-leak-emergency-response/)
 - [OpenAI 兼容协议 vs Anthropic 原生协议](/blog/openai-compatible-vs-anthropic-protocol/)
 
-国内场景，[YoTradeApi](https://yotradeapi.com) 一把 Key + Anthropic 原生协议 = 国内可用的最简路径。

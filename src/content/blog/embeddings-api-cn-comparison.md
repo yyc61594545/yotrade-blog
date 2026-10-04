@@ -86,8 +86,8 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="YOUR_YOTRADE_KEY",
-    base_url="https://yotradeapi.com/v1",
+    api_key="YOUR_RELAY_API_KEY",
+    base_url="https://your-relay.example.com/v1",
 )
 
 resp = client.embeddings.create(
@@ -191,4 +191,3 @@ resp = client.embeddings.create(
 - [Gemini API 国内调用指南](/blog/gemini-api-cn-guide/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-需要一把 Key 同时调 embedding + chat + rerank？[YoTradeApi](https://yotradeapi.com) 支持 OpenAI / Voyage 兼容端点，按上面 SDK 例子直接接入。

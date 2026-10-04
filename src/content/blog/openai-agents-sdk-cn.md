@@ -48,8 +48,8 @@ from agents import set_default_openai_client
 
 # 走中转
 client = AsyncOpenAI(
-    api_key="sk-yo-...",
-    base_url="https://yotradeapi.com/v1",
+    api_key="sk-...",
+    base_url="https://your-relay.example.com/v1",
 )
 set_default_openai_client(client)
 
@@ -241,7 +241,7 @@ Agents SDK 调用底层用 Responses API。中转必须支持：
 测试：
 
 ```bash
-curl https://yotradeapi.com/v1/responses \
+curl https://your-relay.example.com/v1/responses \
   -H "Authorization: Bearer $KEY" \
   -d '{"model":"gpt-5","input":"hi"}'
 ```
@@ -309,4 +309,3 @@ result = await Runner.run(triage, "我想退订单 #12345 的款")
 - [LLM 结构化输出完全指南](/blog/structured-output-llm-guide/)
 - [AI Agent 评估方法](/blog/llm-agent-evaluation-methods/)
 
-需要 Responses API + tool_call + handoff 完整透传的中转？[YoTradeApi](https://yotradeapi.com) 完整支持 Agents SDK 所有特性。

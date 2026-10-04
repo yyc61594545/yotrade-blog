@@ -132,4 +132,3 @@ Agent 系统的告警不能只靠"错误率超过阈值"这一种规则，几个
 - [AI API 预算上限设计](/blog/ai-api-budget-cap-design/)
 - [国内大模型数据合规指南](/blog/cn-llm-data-compliance/)
 
-搭建 Agent 可观测性系统离不开稳定、可追踪调用记录的模型接口，[YoTradeApi](https://yotradeapi.com) 提供完整的调用日志和用量明细，方便和自建的 Trace 系统对账。

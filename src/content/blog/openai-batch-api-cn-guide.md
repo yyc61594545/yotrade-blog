@@ -249,7 +249,7 @@ print(f"失败 {len(failed_requests)} 条，可提取后单独重试")
 ```python
 client = OpenAI(
     api_key="your-relay-api-key",
-    base_url="https://api.yotradeapi.com/v1"  # 中转地址
+    base_url="https://your-relay.example.com/v1"  # 中转地址
 )
 
 # 以下代码完全不变，batch 创建、文件上传逻辑一致
@@ -313,4 +313,3 @@ OpenAI 和 Anthropic 都提供了批量 API，两者定位类似但细节有差�
 - [AI Coding Agent 成本控制策略](/blog/ai-coding-agent-cost-control/)
 - [LLM 限流与重试最佳实践](/blog/llm-rate-limit-handling/)
 
-需要在中国大陆稳定访问 OpenAI Batch API？[YoTradeApi](https://yotradeapi.com) 提供全协议兼容的中转服务，支持 Files 和 Batches 端点，无需修改代码即可接入。

@@ -145,7 +145,7 @@ Claude 4.7 和 GPT-5.1 的官方定价在同等能力档位上已趋于接近（
 - 是否使用 Prompt Caching（Claude 支持）
 - 是否有批量处理需求（Batch API）
 
-通过 API 中转服务（如 [YoTradeApi](https://yotradeapi.com)）调用这两款模型，可以在一个统一接口下灵活切换，根据任务类型动态路由到最合适的模型，同时享受聚合定价优势。
+通过 API 中转服务调用这两款模型，可以在一个统一接口下灵活切换，根据任务类型动态路由到最合适的模型，同时享受聚合定价优势。
 
 ---
 
@@ -181,4 +181,3 @@ Claude 4.7 和 GPT-5.1 的官方定价在同等能力档位上已趋于接近（
 - [DeepSeek vs Claude：中文开发者视角对比](/blog/deepseek-vs-claude-comparison/)
 - [Claude vs GPT vs Gemini：中国开发者如何选择](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
 
-想同时访问 Claude 4.7 和 GPT-5.1 做对比测试？[YoTradeApi](https://yotradeapi.com) 提供统一接口，一个 API Key 即可调用两款模型，方便你根据任务做动态路由。

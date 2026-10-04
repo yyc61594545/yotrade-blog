@@ -238,4 +238,3 @@ def route_request(prompt, context):
 - [Token 计量与计费完整指南](/blog/token-counting-cn-guide/)
 - [Anthropic Batch API 中文使用指南](/blog/anthropic-batch-api-cn-guide/)
 
-系统性降低 AI API 成本，[YoTradeApi](https://yotradeapi.com) 提供多模型统一接口和灵活的计费方式，支持按量付费，方便你在不同模型间做成本测试和路由优化。

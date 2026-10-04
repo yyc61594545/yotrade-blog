@@ -41,7 +41,7 @@ JSON mode 是最简单的约束方式，只保证输出是**合法的 JSON 字�
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://api.yotradeapi.com/v1",
+    base_url="https://your-relay.example.com/v1",
     api_key="your-api-key"
 )
 
@@ -141,7 +141,7 @@ class ProductInfo(BaseModel):
     discount: Optional[float] = None
 
 client = OpenAI(
-    base_url="https://api.yotradeapi.com/v1",
+    base_url="https://your-relay.example.com/v1",
     api_key="your-api-key"
 )
 
@@ -169,7 +169,7 @@ import { zodResponseFormat } from "openai/helpers/zod";
 import { z } from "zod";
 
 const client = new OpenAI({
-  baseURL: "https://api.yotradeapi.com/v1",
+  baseURL: "https://your-relay.example.com/v1",
   apiKey: process.env.API_KEY,
 });
 
@@ -241,4 +241,3 @@ Structured Outputs 的 `strict` 模式不支持所有 JSON Schema 关键字，`a
 - [function calling 与 tool use 核心区别详解](/blog/function-calling-vs-tool-use/)
 - [Claude tool use 使用最佳实践与常见坑](/blog/claude-tool-use-best-practices/)
 
-如果你需要稳定调用 GPT-4o、Claude、DeepSeek 等模型的结构化输出能力，[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容接口，支持多模型切换与自动重试。

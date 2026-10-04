@@ -42,7 +42,7 @@ Cline（前身 Claude Dev）在 VSCode 里跑编程代理，特点是「能编�
 2. 点击侧栏 Cline 图标 → 右上齿轮。
 3. API Provider 选 **OpenAI Compatible**。
 4. 填两个字段：
-   - **Base URL**: `https://yotradeapi.com/v1`
+   - **Base URL**: `https://your-relay.example.com/v1`
    - **API Key**: 你在网关后台创建的 Key
 5. **Model ID** 填你要用的模型名，例如 `claude-sonnet-4-6`。如果勾选 "Allow custom model ID"，可以输入网关支持的任意模型。
 
@@ -91,7 +91,7 @@ Cline 的上下文随项目大小膨胀。一个 1k 文件的中等项目，跑�
 
 1. **`@/folder` 显式指定上下文**，不要让 Cline 自由探索整个仓库。
 2. **`Auto Compact at` 设为 80%**，让它在上下文快满时自动压缩。
-3. **网关侧开启 prompt caching**：YoTradeApi 这类中转支持 Anthropic prompt caching，长 system prompt 二次命中能省 90% 输入费用。
+3. **网关侧开启 prompt caching**：这类中转支持 Anthropic prompt caching，长 system prompt 二次命中能省 90% 输入费用。
 
 ## 六、MCP 服务器接入
 
@@ -145,4 +145,3 @@ Cline 支持 MCP（Model Context Protocol）。如果你接入了 GitHub MCP、S
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 
-需要一个支持 Cline 全部模型的中转？在 [YoTradeApi 注册](https://yotradeapi.com) 创建独立 API Key，按上面的 base_url 直接接入。

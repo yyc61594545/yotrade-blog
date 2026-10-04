@@ -96,4 +96,3 @@ category: 国内场景
 - [中转服务可用性自助监控方案](/blog/cn-ai-relay-uptime-monitoring/)
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 
-按照本文的清单跑一遍就会发现，稳定性、延迟、模型覆盖、计费透明这几项，正是 [YoTradeApi](https://yotradeapi.com) 一直在打磨的基本功，欢迎实际测试对比。

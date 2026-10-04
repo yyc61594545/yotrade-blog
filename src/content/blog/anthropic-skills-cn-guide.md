@@ -233,7 +233,7 @@ Skill 本身是 markdown + 文件，**不直接走中转**。但 Skill 流程里
 
 ```bash
 # Skill 脚本里
-curl https://yotradeapi.com/v1/messages \
+curl https://your-relay.example.com/v1/messages \
   -H "x-api-key: $ANTHROPIC_AUTH_TOKEN" \
   ...
 ```
@@ -256,4 +256,3 @@ curl https://yotradeapi.com/v1/messages \
 - [自定义 MCP Server 开发实战](/blog/mcp-custom-server-development/)
 - [Claude Code Hooks 工作流](/blog/claude-code-hooks-workflow/)
 
-Skills + Subagent + MCP 三件套配 [YoTradeApi](https://yotradeapi.com) 中转，能搭出强大的私有 Agent 系统。

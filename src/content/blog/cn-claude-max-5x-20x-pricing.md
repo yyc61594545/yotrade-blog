@@ -75,7 +75,7 @@ Claude Max 是**订阅制**，面向的是通过 claude.ai 网页和 Claude Code
 |------|----------|
 | 自己用 claude.ai 聊天、写代码 | Claude Max 订阅 |
 | 程序里调用 Claude API 构建产品 | Anthropic API（按 token 计费）|
-| 国内访问 API 不稳定 | API 中转服务（如 YoTradeApi）|
+| 国内访问 API 不稳定 | API 中转服务|
 
 ## 五、国内用户如何付款开通 Claude Max
 
@@ -103,8 +103,6 @@ Claude Max 是**订阅制**，面向的是通过 claude.ai 网页和 Claude Code
 ### 方案四：使用 API 中转替代订阅
 
 如果你的主要需求是**在 Claude Code 或自建工具中调用 Claude**，而不是通过 claude.ai 网页使用，那还有另一条路：直接使用 **API 中转服务**。
-
-以 [YoTradeApi](https://yotradeapi.com) 为例，你只需：
 
 1. 注册账号，支持支付宝/微信支付
 2. 获取 API Key
@@ -154,4 +152,3 @@ Claude Max 的定价逻辑很清晰：$100 的 5x 和 $200 的 20x，本质上�
 - [Claude Code 镜像国内加速配置](/blog/claude-code-mirror-cn-setup/)
 - [国内 ChatGPT Plus 订阅付款指南（2026）](/blog/cn-chatgpt-plus-payment-2026/)
 
-如果你在国内想稳定调用 Claude API 或需要按量计费的灵活方案，[YoTradeApi](https://yotradeapi.com) 支持支付宝/微信支付，无需信用卡即可开始使用。

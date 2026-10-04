@@ -61,7 +61,7 @@ Anthropic 默认开。在 prompt 里加一句强化：
 ```python
 import anthropic
 
-client = anthropic.Anthropic(base_url="https://yotradeapi.com", api_key="sk-yo-...")
+client = anthropic.Anthropic(base_url="https://your-relay.example.com", api_key="sk-...")
 
 resp = client.messages.create(
     model="claude-sonnet-4-6",
@@ -287,4 +287,3 @@ Gemini 通过 OpenAI 兼容协议也支持，**但部分版本 bug 较多**。�
 - [LLM 结构化输出完全指南](/blog/structured-output-llm-guide/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 
-需要 Claude / GPT 并行 tool use 完整透传的中转？[YoTradeApi](https://yotradeapi.com) 完整支持并行 tool_use 协议。

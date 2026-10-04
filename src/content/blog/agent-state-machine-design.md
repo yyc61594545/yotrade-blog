@@ -188,4 +188,3 @@ function transition(state: AgentState, event: string): AgentState {
 - [AI Agent 可观测性设计](/blog/ai-agent-observability-design/)
 - [AI Agent 任务分解模式](/blog/ai-agent-task-decomposition/)
 
-如果你要把多模型、多工具的 Agent 流程接进统一服务层，[YoTradeApi](https://yotradeapi.com) 提供兼容式 API 接入方式，便于把状态流转、模型切换和调用治理放到同一套工程体系里。

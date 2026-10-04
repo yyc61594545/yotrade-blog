@@ -218,4 +218,3 @@ def call_step_with_retry(prompt: str, max_retries: int = 3) -> str:
 - [智谱 GLM 开发者评测](/blog/cn-zhipu-glm-developer-review/)
 - [豆包 LLM 开发者评测](/blog/cn-doubao-llm-developer-review/)
 
-如果你需要同时接入多个国内大模型，[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容接口，一个 API Key 切换 Step、DeepSeek、Kimi 等主流模型，省去多账号管理烦恼。

@@ -148,4 +148,4 @@ C. 完全没影响 → 可能是包装而非真实需求
 - [AI 编程工具的厂商锁定风险](/blog/ai-coding-tool-vendor-lockin/)
 - [LLM 成本优化 30 条 checklist](/blog/llm-cost-optimization-checklist/)
 
-对于开发者而言，最务实的做法是用 API 按量测试真实需求，而不是先订阅再找场景。[YoTradeApi](https://yotradeapi.com) 提供国内直连的 API 中转，支持所有主流模型，按实际用量付费，适合快速验证场景价值。
+对于开发者而言，最务实的做法是用 API 按量测试真实需求，而不是先订阅再找场景。

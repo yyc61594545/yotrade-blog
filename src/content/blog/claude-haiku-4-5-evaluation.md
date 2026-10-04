@@ -174,8 +174,8 @@ Aider 自动用 weak-model 处理简单任务。
 - name: Haiku 4.5
   provider: openai
   model: claude-haiku-4-5
-  apiBase: https://yotradeapi.com/v1
-  apiKey: sk-yo-...
+  apiBase: https://your-relay.example.com/v1
+  apiKey: sk-...
   roles: [autocomplete, summarize]
 ```
 
@@ -201,4 +201,3 @@ Aider 自动用 weak-model 处理简单任务。
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [2026 LLM 价格对比与选型决策](/blog/llm-pricing-comparison-2026/)
 
-需要 Claude 全系列同 Key 调用？[YoTradeApi](https://yotradeapi.com) 一把 Key 同时支持 Haiku 4.5 / Sonnet 4.6 / Opus 4.7。

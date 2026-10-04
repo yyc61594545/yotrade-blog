@@ -220,7 +220,7 @@ def run_summarization_eval(
 # 使用 API 中转，统一调用不同厂商模型
 client = OpenAI(
     api_key="your_relay_api_key",
-    base_url="https://api.yotradeapi.com/v1",
+    base_url="https://your-relay.example.com/v1",
 )
 
 models = ["gpt-4o", "claude-3-5-sonnet-20241022", "deepseek-chat"]
@@ -244,4 +244,3 @@ for model in models:
 - [Claude Haiku 4.5 能力评测](/blog/claude-haiku-4-5-evaluation/)
 - [AI 辅助文档平台迁移实战](/blog/ai-doc-platform-migration/)
 
-需要在同一套评测脚本里横比多家模型，[YoTradeApi](https://yotradeapi.com) 提供 OpenAI 兼容的统一接口，支持 GPT-4o、Claude、DeepSeek、Qwen 等主流模型，一个 Key 搞定所有请求。

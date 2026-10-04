@@ -152,7 +152,7 @@ BGE-M3、BCE-embedding 等模型在中文理解上明显强于通用多语言模
 - **自建 RAG（使用 OpenAI Embedding）**：同样需要访问 OpenAI API
 - **自建 RAG（使用开源 Embedding）**：可以完全在本地运行，不依赖 OpenAI
 
-如果使用 OpenAI API，通过中转服务（如 [YoTradeApi](https://yotradeapi.com)）可以在国内稳定访问，配置 `OPENAI_BASE_URL` 即可，不需要修改其他代码。
+如果使用 OpenAI API，通过中转服务可以在国内稳定访问，配置 `OPENAI_BASE_URL` 即可，不需要修改其他代码。
 
 ## 八、代码示例：File Search 快速上手
 
@@ -160,7 +160,7 @@ BGE-M3、BCE-embedding 等模型在中文理解上明显强于通用多语言模
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://api.yotradeapi.com/v1",  # 中转地址
+    base_url="https://your-relay.example.com/v1",  # 中转地址
     api_key="your_api_key"
 )
 
@@ -213,4 +213,3 @@ print(messages.data[0].content[0].text.value)
 - [向量数据库横向对比 2026](/blog/vector-db-comparison-2026/)
 - [Embeddings API 国内对比选型](/blog/embeddings-api-cn-comparison/)
 
-在国内访问 OpenAI Assistants API 或自建 RAG 时，[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转，兼容 OpenAI SDK，修改 `base_url` 即可使用，无需其他改动。

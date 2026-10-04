@@ -114,7 +114,7 @@ API 中转服务的原理：由服务商持有 OpenAI 账号，对外提供兼�
 | 偶尔问问题、写作辅助 | ChatGPT Free（够用则不用付费） | $0 |
 | 日常高频使用网页版 | ChatGPT Plus（需解决付款渠道） | 约 $20 + 手续费 |
 | 开发者 / 程序集成 | OpenAI API 按量计费 or API 中转 | $1–20，看用量 |
-| 不想折腾付款渠道 | 国内 API 中转（如 YoTradeApi） | 按量，可控 |
+| 不想折腾付款渠道 | 国内 API 中转 | 按量，可控 |
 | 高强度研究/写作 | ChatGPT Pro | ~$200/月（成本高，谨慎） |
 | 团队协作 | ChatGPT Team | ~$30/人/月 |
 
@@ -143,4 +143,3 @@ Copilot（Bing）提供免费 GPT-4 访问（国内可用性不稳定）；Poe �
 - [AI 编程一个月真实成本披露](/blog/ai-coding-monthly-cost-real/)
 - [国内使用虚拟信用卡订阅 ChatGPT 的完整指南](/blog/cn-virtual-card-for-chatgpt-2026/)
 
-想用更低成本调用 GPT-4o / Claude 等主流模型？[YoTradeApi](https://yotradeapi.com) 支持人民币按量充值，兼容 OpenAI 接口，国内直连无需翻墙。

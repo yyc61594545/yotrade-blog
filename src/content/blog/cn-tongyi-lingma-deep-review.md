@@ -185,7 +185,7 @@ for num in test_numbers:
 - 80% 的代码补全场景（变量命名、样板代码、简单函数）通义灵码完全胜任
 - 20% 的高难度任务（架构设计、复杂 bug 排查、技术选型讨论）值得用更强的模型
 
-通过 YoTradeApi 这类 API 中转服务，国内开发者可以无需科学上网直接调用 Claude Sonnet、GPT-4o 等顶尖模型，配合 Cursor 或直接在代码里集成，形成完整的 AI 辅助开发闭环。关于如何配置 Claude 和 Cursor，可参考 [Claude Code 国内网络访问配置指南](/blog/claude-code-on-cn-network/)。
+关于如何配置 Claude 和 Cursor，可参考 [Claude Code 国内网络访问配置指南](/blog/claude-code-on-cn-network/)。
 
 ## 八、相关阅读
 
@@ -194,4 +194,3 @@ for num in test_numbers:
 - [Cline 国内 API 配置指南](/blog/cline-cn-api-setup/)
 - [国内开发者使用 Claude 付费全指南](/blog/cn-developer-claude-billing/)
 
-如果你希望在通义灵码之外，也能流畅调用 Claude、GPT-4o 等顶尖模型，[YoTradeApi](https://yotradeapi.com) 提供稳定的国内直连 API 中转，无需代理即可使用主流 AI 接口。

@@ -27,8 +27,8 @@ Grok 4 是 xAI 2025 末发布的旗舰，主打"实时搜索 + 数学/物理推�
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="YOUR_YOTRADE_KEY",
-    base_url="https://yotradeapi.com/v1",
+    api_key="YOUR_RELAY_API_KEY",
+    base_url="https://your-relay.example.com/v1",
 )
 
 resp = client.chat.completions.create(
@@ -134,7 +134,7 @@ tools = [{
 
 跟其它 OpenAI 兼容模型一样：
 
-- Endpoint: `https://yotradeapi.com/v1`
+- Endpoint: `https://your-relay.example.com/v1`
 - Model: `grok-4`、`grok-4-fast`、`grok-code-fast` 等
 - API Key: 中转 key
 
@@ -185,4 +185,3 @@ resp = client.chat.completions.create(
 - [Gemini API 国内调用指南](/blog/gemini-api-cn-guide/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 
-需要一把 Key 同时调 Grok、Claude、GPT、Gemini？在 [YoTradeApi 注册](https://yotradeapi.com) 创建 API Key 即可。

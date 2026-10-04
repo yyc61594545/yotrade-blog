@@ -130,7 +130,7 @@ Qwen 中端模型（32B）性价比极高，比 Haiku 还便宜。
 ```python
 from openai import OpenAI
 
-client = OpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = OpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 resp = client.chat.completions.create(
     model="qwen3-max",
@@ -170,4 +170,3 @@ L3 长任务 agent → Claude Opus 4.7
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 - [2026 LLM 价格对比与选型决策](/blog/llm-pricing-comparison-2026/)
 
-[YoTradeApi](https://yotradeapi.com) 同时支持 Qwen / DeepSeek / Claude / GPT 全家，一把 Key 跨模型对比。

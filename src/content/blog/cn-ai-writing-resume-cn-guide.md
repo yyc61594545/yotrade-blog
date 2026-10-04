@@ -133,7 +133,7 @@ def tailor_resume_bullet(raw_experience, jd_text):
     return response.choices[0].message.content
 ```
 
-这类小工具国内直接调用 OpenAI/Claude 官方 API 经常遇到网络不通或者 Key 无法直接支付的问题，用 [YoTradeApi](https://yotradeapi.com) 这样的 API 中转可以省去这部分折腾，专注在 Prompt 逻辑本身。关于国内开发者接入这类 AI 工具的付款和网络问题，也可以参考 [国内开发者 AI 工具付款全攻略](/blog/cn-ai-tools-payment-guide/)。
+关于国内开发者接入这类 AI 工具的付款和网络问题，也可以参考 [国内开发者 AI 工具付款全攻略](/blog/cn-ai-tools-payment-guide/)。
 
 ## 六、最后一步：人工通读，找回"你的声音"
 
@@ -152,4 +152,3 @@ AI 是很好的编辑和润色工具，但简历最终代表的是你自己，�
 - [Claude System Prompt 工程实战](/blog/claude-system-prompt-engineering/)
 - [LLM 结构化输出完全指南（JSON Schema / Function Call）](/blog/structured-output-llm-guide/)
 
-如果你想把这套简历改写流程自动化成批量处理脚本，用 [YoTradeApi](https://yotradeapi.com) 中转调用 OpenAI/Claude API 可以免去国内网络和支付的折腾，专注打磨 Prompt。

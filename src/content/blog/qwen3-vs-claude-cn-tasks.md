@@ -35,8 +35,6 @@ Qwen3 系列（阿里云通义千问）自发布以来持续刷新中文榜单�
 | Anthropic | Claude Opus 4.8 | 未公开 | 约 $15.0 |
 | Anthropic | Claude Haiku 4.5 | 未公开 | 约 $0.8 |
 
-中国开发者访问 Claude 通常通过 API 中转服务（如 YoTradeApi），价格与官方接近，免去直连障碍。
-
 ## 二、中文理解与生成
 
 这是 Qwen3 最大的优势维度。作为以中文语料为核心训练的模型，Qwen3 在以下任务上表现出明显优势：
@@ -174,4 +172,3 @@ Claude Opus 4 系列（尤其是开启 Extended Thinking 的版本）在数学�
 - [2026 年 AI 编码工具全景综述](/blog/ai-coding-tools-2026-overview/)
 - [Prompt 版本管理实战：从混乱到可追溯的工程化之路](/blog/ai-prompt-versioning/)
 
-需要在中国网络环境下同时调用 Claude 和其他主流模型做横向对比测试？[YoTradeApi](https://yotradeapi.com) 提供统一接入，支持 Claude 全系列，按量付费，适合多模型评估场景。

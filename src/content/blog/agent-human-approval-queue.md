@@ -123,4 +123,3 @@ NEW_REQUEST（需要重新评估时）
 - [Agent Saga 补偿事务设计](/blog/agent-saga-compensation/)
 - [AI 任务重试队列设计](/blog/ai-task-retry-queue/)
 
-如果审批后的 Agent 任务需要统一调用不同模型，[YoTradeApi](https://yotradeapi.com) 可提供兼容常见 SDK 的 API 接入方式，方便集中管理鉴权与用量。

@@ -222,4 +222,3 @@ Claude Code 本身是免费工具，费用来自 API 调用。没有免费额度
 - [国内开发者通过 AWS Bedrock 使用 Claude](/blog/cn-claude-code-via-bedrock/)
 - [Claude Code vs Cursor：两款 AI 编程工具深度对比](/blog/cursor-vs-claude-code-comparison/)
 
-国内使用 Claude Code 最省心的方式是选一家稳定的 API 中转服务，[YoTradeApi](https://yotradeapi.com) 支持 Claude 全系列模型、国内直连低延迟，支持支付宝充值，开箱即用。

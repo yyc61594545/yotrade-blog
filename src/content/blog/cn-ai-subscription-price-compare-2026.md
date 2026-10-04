@@ -109,4 +109,3 @@ Claude Pro 年付比月付每月省约 $3，一年约 $36，折合人民币两�
 - [Claude 和 ChatGPT 价格对比（2026）](/blog/cn-claude-vs-chatgpt-price-2026/)
 - [Cursor 国内订阅价格与成本拆解](/blog/cn-cursor-price-cn-2026/)
 
-如果你的用量已经大到需要反复权衡订阅档位，不妨同时评估一下按量调用的成本，[YoTradeApi](https://yotradeapi.com) 提供主流模型的 API 接入，用多少算多少，适合用量波动大或需要程序化调用的场景，套餐报价可微信咨询。

@@ -96,4 +96,3 @@ OpenAI 的注册流程会强制要求手机号验证，且明确不接受中国�
 - [ChatGPT Plus 2026 最新充值方法（国内亲测可用）](/blog/cn-chatgpt-plus-payment-2026/)
 - [ChatGPT Plus 代充完全指南：流程、价格与避坑](/blog/cn-chatgpt-plus-daichong-guide/)
 
-注册只是第一步，如果你后续需要把 ChatGPT 等模型能力接入自己的项目而不只是网页对话，[YoTradeApi](https://yotradeapi.com) 提供国内可直连的 API 中转服务，免去反复折腾网络和支付的麻烦。

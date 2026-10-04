@@ -134,7 +134,7 @@ model = GenerativeModel("gemini-2.5-flash-001")
 
 ### 看运营时间和用户口碑
 
-新成立、无历史记录的服务商，即使价格诱人也要谨慎。优先选择运营超过一年、在开发者社区有持续正面反馈的服务商，如 [YoTradeApi](https://yotradeapi.com)。
+新成立、无历史记录的服务商，即使价格诱人也要谨慎。
 
 ## 六、Gemini 模型的选型提示
 
@@ -163,7 +163,7 @@ class GeminiClient:
         if mode == "relay":
             # 使用中转服务（兼容 OpenAI 格式）
             self.client = openai.OpenAI(
-                base_url="https://api.yotradeapi.com/v1",
+                base_url="https://your-relay.example.com/v1",
                 api_key="your-relay-key"
             )
         else:
@@ -184,4 +184,3 @@ class GeminiClient:
 - [API 中转安全合规指南](/blog/api-relay-security-compliance/)
 - [Claude vs GPT vs Gemini：中文开发者选型指南](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
 
-如果你需要快速接入 Gemini API，[YoTradeApi](https://yotradeapi.com) 支持 Gemini 全系列模型，支付宝/微信即可开通，无需信用卡和 GCP 账号。

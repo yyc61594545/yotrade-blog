@@ -114,8 +114,6 @@ print(response.choices[0].message.content)
 
 注意 `temperature` 对代码任务建议设置为 0.1–0.3，过高的温度会引入不必要的变体，降低代码一致性。
 
-如果你同时需要调用 Claude、GPT-4 等其他模型做对比或多模型路由，使用 [YoTradeApi](https://yotradeapi.com) 可以用统一的 OpenAI 兼容接口一次接入所有主流模型，省去多套 key 管理的麻烦。
-
 ## 六、稳定性与延迟：生产环境实测
 
 在直连 DeepSeek 官方 API 的情况下，实测数据（均值，非峰值）：
@@ -165,4 +163,3 @@ print(response.choices[0].message.content)
 - [AI 编程工具 2026 全景概览](/blog/ai-coding-tools-2026-overview/)
 - [AI 编程月度真实费用拆解](/blog/ai-coding-monthly-cost-real/)
 
-如果你想同时接入 DeepSeek Coder 和其他主流代码模型做对比测试，[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容接口，一个 key 覆盖所有主流模型，按量计费无月费。

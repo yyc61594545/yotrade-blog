@@ -97,7 +97,7 @@ import json
 
 client = OpenAI(
     api_key="your_api_key",
-    base_url="https://api.yotradeapi.com/v1",  # API 中转，支持多模型
+    base_url="https://your-relay.example.com/v1",  # API 中转，支持多模型
 )
 
 CLEAN_PROMPT = """你是一个 Markdown 格式修复工具。对输入的 Markdown 文本做以下修复：
@@ -273,4 +273,3 @@ markdownify 处理复杂表格时，有时会把表头行重复输出两次。�
 - [AI 编码工具成本管理](/blog/ai-coding-monthly-cost-real/)
 - [LLM 在 SEO 内容工作流中的应用](/blog/ai-content-seo-workflow/)
 
-批量调用 AI API 做文档处理时，[YoTradeApi](https://yotradeapi.com) 支持多模型统一接入，按需切换 GPT-4o-mini 与 Claude Haiku，人民币账单，适合国内团队的批量自动化任务。

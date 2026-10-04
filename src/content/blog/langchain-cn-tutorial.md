@@ -35,8 +35,8 @@ from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(
     model="claude-sonnet-4-6",
-    api_key="sk-yo-...",
-    base_url="https://yotradeapi.com/v1",
+    api_key="sk-...",
+    base_url="https://your-relay.example.com/v1",
     temperature=0.2,
 )
 
@@ -58,8 +58,8 @@ from langchain_anthropic import ChatAnthropic
 
 llm = ChatAnthropic(
     model="claude-sonnet-4-6",
-    api_key="sk-yo-...",
-    base_url="https://yotradeapi.com",   # 注意不带 /v1
+    api_key="sk-...",
+    base_url="https://your-relay.example.com",   # 注意不带 /v1
     max_tokens=2000,
 )
 ```
@@ -73,7 +73,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-llm = ChatOpenAI(model="claude-sonnet-4-6", base_url="https://yotradeapi.com/v1", api_key="sk-yo-...")
+llm = ChatOpenAI(model="claude-sonnet-4-6", base_url="https://your-relay.example.com/v1", api_key="sk-...")
 
 prompt = ChatPromptTemplate.from_messages([
     ("system", "你是 {role}。"),
@@ -132,7 +132,7 @@ pip install langgraph
 from langgraph.prebuilt import create_react_agent
 from langchain_openai import ChatOpenAI
 
-llm = ChatOpenAI(model="claude-sonnet-4-6", base_url="https://yotradeapi.com/v1", api_key="sk-yo-...")
+llm = ChatOpenAI(model="claude-sonnet-4-6", base_url="https://your-relay.example.com/v1", api_key="sk-...")
 tools = [get_weather, calculator]
 agent = create_react_agent(llm, tools)
 
@@ -174,8 +174,8 @@ from langchain_anthropic import ChatAnthropic
 
 llm = ChatAnthropic(
     model="claude-sonnet-4-6",
-    base_url="https://yotradeapi.com",
-    api_key="sk-yo-...",
+    base_url="https://your-relay.example.com",
+    api_key="sk-...",
     extra_headers={"anthropic-beta": "prompt-caching-2024-07-31"},
 )
 
@@ -203,8 +203,8 @@ from langchain_community.vectorstores import Chroma
 
 embedding = OpenAIEmbeddings(
     model="text-embedding-3-large",
-    base_url="https://yotradeapi.com/v1",
-    api_key="sk-yo-...",
+    base_url="https://your-relay.example.com/v1",
+    api_key="sk-...",
 )
 
 vectorstore = Chroma.from_texts(
@@ -257,4 +257,3 @@ docs = retriever.invoke("关键词查询")
 - [Embeddings API 国内对比](/blog/embeddings-api-cn-comparison/)
 - [LiteLLM 自部署 LLM 网关](/blog/litellm-cn-gateway-self-host/)
 
-LangChain `base_url` 指向 [YoTradeApi](https://yotradeapi.com) 即可在国内稳定调用 Claude / GPT / Gemini 全家。

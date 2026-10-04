@@ -135,7 +135,7 @@ def semantic_chunk(text, threshold=0.7):
 ```python
 from openai import OpenAI
 
-client = OpenAI(base_url="https://yotradeapi.com/v1", api_key="sk-yo-...")
+client = OpenAI(base_url="https://your-relay.example.com/v1", api_key="sk-...")
 resp = client.embeddings.create(model="text-embedding-3-large", input=chunks)
 embs = [d.embedding for d in resp.data]
 ```
@@ -292,4 +292,3 @@ for case in test_set:
 - [Gemini API 国内调用指南](/blog/gemini-api-cn-guide/)
 - [Python 异步并发调用 LLM API 实战](/blog/python-async-llm-client/)
 
-构建 RAG 需要 embedding + chat + rerank 三种接口？[YoTradeApi](https://yotradeapi.com) 一把 Key 全覆盖，按上面流程接入。

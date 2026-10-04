@@ -159,7 +159,7 @@ R1 的官方 API 在国内访问有障碍（需要代理），Claude API 同样�
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://api.yotradeapi.com/v1",
+    base_url="https://your-relay.example.com/v1",
     api_key="your-key"
 )
 
@@ -190,4 +190,3 @@ for chunk in response:
 - [DeepSeek vs Claude 综合能力对比](/blog/deepseek-vs-claude-comparison/)
 - [国内 DeepSeek Coder 深度评测](/blog/cn-deepseek-coder-deep-review/)
 
-需要同时接入 DeepSeek R1 和 Claude Thinking 两个推理模型，[YoTradeApi](https://yotradeapi.com) 支持统一 Endpoint 调用，省去多账号管理的麻烦。

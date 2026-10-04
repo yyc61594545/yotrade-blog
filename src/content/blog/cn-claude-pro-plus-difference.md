@@ -152,4 +152,3 @@ Claude Pro 包含一定量的 Claude Code 使用额度。Claude Code 是命令�
 - [Claude Code 国内网络接入配置](/blog/claude-code-mirror-cn-setup/)
 - [AI API 中转 vs 自建 VPN：成本与稳定性对比](/blog/ai-api-relay-vs-self-vpn/)
 
-不想折腾订阅和网络问题，[YoTradeApi](https://yotradeapi.com) 提供 Claude 全系列 API 中转，支付宝充值、按量计费，国内直连可用。

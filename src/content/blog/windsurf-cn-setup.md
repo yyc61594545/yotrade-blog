@@ -56,8 +56,8 @@ Windsurf 的 Custom Model 功能在不同版本支持度不同。最新版（202
 设置 → AI → Models → Custom Endpoint：
 
 ```
-Endpoint: https://yotradeapi.com/v1
-API Key: sk-yo-...
+Endpoint: https://your-relay.example.com/v1
+API Key: sk-...
 Model: claude-sonnet-4-6
 Protocol: OpenAI Compatible
 ```
@@ -170,4 +170,3 @@ Windsurf 默认让 Memory 和 Rules 内容稳定，**这部分高度复用，开
 - [Claude Code 镜像国内配置完整指南](/blog/claude-code-mirror-cn-setup/)
 - [2026 AI 编程工具全景图](/blog/ai-coding-tools-2026-overview/)
 
-需要 Windsurf Custom Model + Claude Code 共享 Key？[YoTradeApi](https://yotradeapi.com) 一把 Key 通调，按上面配置接入。

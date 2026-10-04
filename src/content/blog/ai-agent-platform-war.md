@@ -76,4 +76,4 @@ Cursor、Devin 这类聚焦单一场景的产品，护城河并不是底层用�
 - [OpenAI Agents SDK 中文指南](/blog/openai-agents-sdk-cn/)
 - [LLM Agent 评测方法](/blog/llm-agent-evaluation-methods/)
 
-不管最终选哪条技术路线，跨模型调用是大概率会遇到的需求。[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转入口，方便在不同 Agent 框架之间灵活切换底层模型，不用为每家单独维护账号和计费。
+不管最终选哪条技术路线，跨模型调用是大概率会遇到的需求。

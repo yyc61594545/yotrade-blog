@@ -69,10 +69,10 @@ jobs:
       - name: AI review
         if: steps.diff.outputs.size < 100000   # 跳过过大 PR
         env:
-          ANTHROPIC_BASE_URL: https://yotradeapi.com
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.YOTRADE_KEY }}
+          ANTHROPIC_BASE_URL: https://your-relay.example.com
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.RELAY_API_KEY }}
         run: |
-          curl https://yotradeapi.com/v1/messages \
+          curl https://your-relay.example.com/v1/messages \
             -H "x-api-key: $ANTHROPIC_AUTH_TOKEN" \
             -H "anthropic-version: 2023-06-01" \
             -H "content-type: application/json" \
@@ -223,8 +223,8 @@ PR 大就贵：
 ```yaml
 - run: npm install -g @anthropic-ai/claude-code
 - env:
-    ANTHROPIC_BASE_URL: https://yotradeapi.com
-    ANTHROPIC_AUTH_TOKEN: ${{ secrets.YOTRADE_KEY }}
+    ANTHROPIC_BASE_URL: https://your-relay.example.com
+    ANTHROPIC_AUTH_TOKEN: ${{ secrets.RELAY_API_KEY }}
   run: |
     claude --headless --max-turns 5 --task "评审 git diff origin/main..HEAD" > review.md
 ```
@@ -267,4 +267,3 @@ PR 大就贵：
 - [.cursorrules 最佳实践](/blog/cursor-rules-best-practices/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 
-AI review 配 [YoTradeApi](https://yotradeapi.com) 中转 + 独立 CI key + 日预算上限，最大可控。

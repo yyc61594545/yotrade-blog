@@ -52,25 +52,25 @@ model_list:
   - model_name: claude-sonnet-4-6
     litellm_params:
       model: openai/claude-sonnet-4-6
-      api_base: https://yotradeapi.com/v1
+      api_base: https://your-relay.example.com/v1
       api_key: os.environ/UPSTREAM_KEY
 
   - model_name: claude-opus-4-7
     litellm_params:
       model: openai/claude-opus-4-7
-      api_base: https://yotradeapi.com/v1
+      api_base: https://your-relay.example.com/v1
       api_key: os.environ/UPSTREAM_KEY
 
   - model_name: gpt-5
     litellm_params:
       model: openai/gpt-5
-      api_base: https://yotradeapi.com/v1
+      api_base: https://your-relay.example.com/v1
       api_key: os.environ/UPSTREAM_KEY
 
   - model_name: gemini-2.5-pro
     litellm_params:
       model: openai/gemini-2.5-pro
-      api_base: https://yotradeapi.com/v1
+      api_base: https://your-relay.example.com/v1
       api_key: os.environ/UPSTREAM_KEY
 
 general_settings:
@@ -85,7 +85,7 @@ docker run -d \
   --name litellm \
   -p 4000:4000 \
   -v $(pwd)/config.yaml:/app/config.yaml \
-  -e UPSTREAM_KEY=sk-yo-... \
+  -e UPSTREAM_KEY=sk-... \
   -e LITELLM_MASTER_KEY=sk-master-... \
   -e DATABASE_URL=postgresql://litellm:pass@host/litellm \
   ghcr.io/berriai/litellm:main-stable \
@@ -162,7 +162,7 @@ model_list:
   - model_name: best-model
     litellm_params:
       model: openai/claude-opus-4-7
-      api_base: https://yotradeapi.com/v1
+      api_base: https://your-relay.example.com/v1
       api_key: os.environ/UPSTREAM_1_KEY
     model_info:
       tpm: 100000   # 这个上游的 TPM
@@ -294,7 +294,7 @@ env:
    ↓
    ├── 内部 LiteLLM Proxy (HA × 3)
    │       ↓
-   │       ├── 中转 A（YoTradeApi，主）
+   │       ├── 中转 A（主）
    │       ├── 中转 B（backup）
    │       └── 官方 API（fallback）
    └── 监控（Prometheus + Grafana + 告警）
@@ -308,4 +308,3 @@ env:
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-LiteLLM 上游配 [YoTradeApi](https://yotradeapi.com)，一把 Key 给整个 LiteLLM 用，团队 Key 在 LiteLLM 后台单独发。
