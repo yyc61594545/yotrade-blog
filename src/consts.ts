@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'YoTradeApi Blog';
 export const SITE_DESCRIPTION =
-	'面向中文开发者的 AI API 中转、Cursor、Claude Code、Cline 与订阅配置实用指南。';
+	'ChatGPT、Claude 国内注册、手机号验证、订阅付款，以及 Codex、Claude Code、Cursor 等工具配置的实测指南。';
