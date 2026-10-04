@@ -175,8 +175,8 @@ model_list:
   - model_name: claude-sonnet
     litellm_params:
       model: openai/claude-sonnet-4-6
-      api_base: https://yotradeapi.com/v1
-      api_key: os.environ/YOTRADE_KEY
+      api_base: https://your-relay.example.com/v1
+      api_key: os.environ/RELAY_API_KEY
 
   - model_name: claude-sonnet
     litellm_params:
@@ -196,4 +196,3 @@ router_settings:
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 - [LiteLLM 自部署 LLM 网关](/blog/litellm-cn-gateway-self-host/)
 
-如果你确定走中转路径，[YoTradeApi](https://yotradeapi.com) 5 分钟拿独立 Key 即可开始。

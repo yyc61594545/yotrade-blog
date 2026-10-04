@@ -116,4 +116,4 @@ def acquire_token(bucket_key="global_rpm", capacity=500, refill_per_sec=8.3):
 - [LLM 用户级配额管理实现](/blog/llm-quota-management-design/)
 - [Codex 多 Agent 任务拆分边界](/blog/codex-multi-agent-boundaries/)
 
-多 Agent 场景下配额协调得再好，也绕不开一个前提——账号本身的限额是否够用。如果多个 Agent 长期在同一个账号下抢配额，也可以考虑通过 [YoTradeApi](https://yotradeapi.com) 申请更高的限额或拆分多个 Key 分摊压力，从源头减少协调层的调度压力。
+多 Agent 场景下配额协调得再好，也绕不开一个前提——账号本身的限额是否够用。

@@ -133,7 +133,7 @@ client.messages.create(
 中转必须**透传 `anthropic-beta` 头**才能开 1M：
 
 ```bash
-curl -i https://yotradeapi.com/v1/messages \
+curl -i https://your-relay.example.com/v1/messages \
   -H "x-api-key: $KEY" \
   -H "anthropic-version: 2023-06-01" \
   -H "anthropic-beta: context-1m-2025-08-07" \
@@ -164,7 +164,7 @@ def collect_repo(root, max_chars=2_000_000):
 repo = collect_repo("./my-project")
 print(f"chars: {len(repo)}")
 
-client = OpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = OpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 resp = client.chat.completions.create(
     model="claude-sonnet-4-6",
@@ -205,4 +205,3 @@ print(resp.choices[0].message.content)
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [中文 RAG 工程实战](/blog/rag-cn-best-practices/)
 
-需要透传 anthropic-beta 头、支持 1M 上下文的中转？[YoTradeApi](https://yotradeapi.com) 完整透传 beta headers，按上面代码直接发请求即可。

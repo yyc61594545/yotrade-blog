@@ -44,8 +44,8 @@ Gemini 2.5 系列的杀手锏是**超长上下文**——2M tokens 的输入窗�
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="YOUR_YOTRADE_KEY",
-    base_url="https://yotradeapi.com/v1",
+    api_key="YOUR_RELAY_API_KEY",
+    base_url="https://your-relay.example.com/v1",
 )
 
 resp = client.chat.completions.create(
@@ -179,8 +179,8 @@ Gemini Flash 系列的 tool call 速度极快（< 1s），适合做 agent 路由
 ```
 Name: gemini-2.5-pro
 ID: gemini-2.5-pro
-Endpoint: https://yotradeapi.com/v1
-API Key: sk-yo-...
+Endpoint: https://your-relay.example.com/v1
+API Key: sk-...
 ```
 
 ### Cline
@@ -204,8 +204,8 @@ aider --model openai/gemini-2.5-pro
 import requests
 
 r = requests.post(
-    "https://yotradeapi.com/v1beta/models/gemini-2.5-pro:generateContent",
-    headers={"x-goog-api-key": "sk-yo-..."},
+    "https://your-relay.example.com/v1beta/models/gemini-2.5-pro:generateContent",
+    headers={"x-goog-api-key": "sk-..."},
     json={
         "contents": [{"parts": [{"text": "解释 LRU 缓存"}]}],
         "generationConfig": {"maxOutputTokens": 256},
@@ -257,4 +257,3 @@ client.chat.completions.create(
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
 
-需要一把 Key 同时调 Gemini、Claude、GPT、Grok？在 [YoTradeApi 注册](https://yotradeapi.com) 创建 API Key 即可。

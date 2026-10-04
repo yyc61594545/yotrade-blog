@@ -110,4 +110,3 @@ Computer Use 通常以循环运行：模型看截图、请求动作、执行器�
 - [AI Agent Human-in-the-loop 设计](/blog/ai-agent-human-in-loop/)
 - [API Key 泄露应急响应指南](/blog/api-key-leak-emergency-response/)
 
-如果你的应用还需要统一接入多种模型 API，[YoTradeApi](https://yotradeapi.com) 可以减少协议适配工作，但 Computer Use 的桌面隔离、权限审批与动作审计仍应由应用侧独立落实。

@@ -73,7 +73,7 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 | `dev-team-b` | 开发环境 B 团队 | ¥200/月 |
 | `eval-pipeline` | 自动评测流水线 | ¥300/月 |
 
-这样做之后，OpenAI / Anthropic 后台的 Usage 页面就能按 Key 看费用分布。如果用 YoTradeApi 这类中转服务，还能在中转层加一层更细粒度的用量统计。
+这样做之后，OpenAI / Anthropic 后台的 Usage 页面就能按 Key 看费用分布。
 
 ## 四、实时监控仪表盘搭建
 
@@ -243,8 +243,6 @@ def check_daily_quota(api_key_alias: str, estimated_tokens: int, limit: int) -> 
 
 ## 八、中转 API 的预算优势
 
-如果团队使用中转 API（如 YoTradeApi），有一些额外的预算管理便利：
-
 1. **统一账单**：不同供应商（OpenAI + Anthropic + Gemini）的费用在一个后台看，不用在多个平台之间切换
 2. **人民币计费**：对国内团队友好，避免汇率波动影响预算估算
 3. **按量充值**：不需要绑定信用卡，预充值模式天然防超支
@@ -257,4 +255,3 @@ def check_daily_quota(api_key_alias: str, estimated_tokens: int, limit: int) -> 
 - [LLM Batch API 实际节省分析](/blog/llm-batch-api-real-savings/)
 - [LLM Prompt Token 压缩实用技巧](/blog/llm-prompt-token-trimming-recipes/)
 
-想把多个模型的 API 费用统一在一处管理？[YoTradeApi](https://yotradeapi.com) 支持 OpenAI、Claude、Gemini 全系模型的人民币统一计费，适合有精细化成本管理需求的团队。

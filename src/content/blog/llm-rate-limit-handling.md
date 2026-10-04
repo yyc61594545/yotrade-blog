@@ -137,7 +137,7 @@ async def call(prompt):
 class KeyPool:
     def __init__(self, keys):
         self.clients = [
-            OpenAI(api_key=k, base_url="https://yotradeapi.com/v1")
+            OpenAI(api_key=k, base_url="https://your-relay.example.com/v1")
             for k in keys
         ]
         self.idx = 0
@@ -249,4 +249,3 @@ except RateLimitError:
 - [LiteLLM 自部署 LLM 网关](/blog/litellm-cn-gateway-self-host/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-需要 RPM/TPM 可配置 + 限速友好（带 Retry-After）的中转？[YoTradeApi](https://yotradeapi.com) 后台每个 Key 独立设限速 + 实时显示当前用量。

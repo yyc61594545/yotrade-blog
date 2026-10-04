@@ -97,8 +97,8 @@ Composer 会同时改多个文件，给你完整 diff 一次性 review。
 设置（Cmd+,）→ 搜 "Custom Endpoint" → AI → Models：
 
 ```
-OpenAI API Key: sk-yo-...
-Override OpenAI Base URL: https://yotradeapi.com/v1
+OpenAI API Key: sk-...
+Override OpenAI Base URL: https://your-relay.example.com/v1
 ```
 
 勾选 "Enable Override"。
@@ -220,4 +220,3 @@ cursor .
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 
-需要给 Cursor 配一个稳定的 base_url？[YoTradeApi](https://yotradeapi.com) 注册即可拿独立 API Key，按本教程第 4 节配置接入。

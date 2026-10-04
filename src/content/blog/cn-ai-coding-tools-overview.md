@@ -135,4 +135,3 @@ CodeGeex 是智谱 AI 旗下的代码大模型及配套工具，有独立的开�
 - [Cline 国内使用：API 配置与中转设置](/blog/cline-cn-api-setup/)
 - [Claude Code 入门：安装、配置与第一个任务](/blog/claude-code-getting-started/)
 
-如果你在国内使用 Cursor、Claude Code 等工具时遇到访问问题，[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转服务，兼容 OpenAI 协议，支持 Claude、GPT-4o、DeepSeek 等主流模型。

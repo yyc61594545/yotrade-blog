@@ -30,7 +30,7 @@ LLM 视觉能力在 2026 年已经成熟：OCR、UI 理解、图表分析、多�
 from openai import OpenAI
 import base64
 
-client = OpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = OpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 def vision(model, image_path, question):
     b64 = base64.b64encode(open(image_path, "rb").read()).decode()
@@ -141,8 +141,8 @@ with open("clip.mp4", "rb") as f:
     video_b64 = base64.b64encode(f.read()).decode()
 
 r = requests.post(
-    "https://yotradeapi.com/v1beta/models/gemini-2.5-pro:generateContent",
-    headers={"x-goog-api-key": "sk-yo-..."},
+    "https://your-relay.example.com/v1beta/models/gemini-2.5-pro:generateContent",
+    headers={"x-goog-api-key": "sk-..."},
     json={
         "contents": [{
             "parts": [
@@ -223,4 +223,3 @@ URL 传输比 base64 高效，前提是图片公网可访问。
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [Python 异步并发调用 LLM API 实战](/blog/python-async-llm-client/)
 
-需要一把 Key 调三家视觉模型？[YoTradeApi](https://yotradeapi.com) 兼容 OpenAI 协议同时支持 Gemini 原生 generateContent。

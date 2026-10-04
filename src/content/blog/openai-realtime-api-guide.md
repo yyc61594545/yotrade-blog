@@ -142,7 +142,7 @@ async def reconnect_with_context(ws, conversation_history):
 2. **中转的连接稳定性是否针对长连接优化**——普通 HTTP 中转和长连接中转在底层网络处理上不同，选择中转前建议先做一次几分钟的连接稳定性测试
 
 ```python
-client_url = "wss://api.yotradeapi.com/v1/realtime?model=gpt-realtime"
+client_url = "wss://your-relay.example.com/v1/realtime?model=gpt-realtime"
 # 其余事件收发逻辑与直连完全一致
 ```
 
@@ -171,4 +171,3 @@ Realtime API 按音频输入/输出时长和文本 token 双重计费，通常�
 - [AI API 中转 vs 自建 VPN：成本与稳定性对比](/blog/ai-api-relay-vs-self-vpn/)
 - [AI API 中转稳定性实测报告](/blog/ai-api-relay-stability-test/)
 
-想在国内稳定接入 Realtime API？[YoTradeApi](https://yotradeapi.com) 支持 WebSocket 长连接中转，为语音交互场景做了专门的连接稳定性优化，支付宝充值即可使用。

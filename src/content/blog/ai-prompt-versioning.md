@@ -340,4 +340,3 @@ else:
 - [AI 编码 Agent 成本控制实战](/blog/ai-coding-agent-cost-control/)
 - [Claude Agent SDK 中文实战指南](/blog/claude-agent-sdk-cn/)
 
-在中国网络环境下稳定迭代 Prompt、按量付费调用 Claude 全系列模型？[YoTradeApi](https://yotradeapi.com) 支持完整 API 参数传递，让你的 Prompt 工程实践落地更顺畅。

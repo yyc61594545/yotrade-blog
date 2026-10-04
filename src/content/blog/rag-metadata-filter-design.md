@@ -96,8 +96,6 @@ LIMIT 10;
 - **pgvector** 本质是 Postgres 扩展，metadata 过滤就是普通 SQL WHERE，只要给过滤字段建好索引（尤其是 tenant_id 这种高选择性字段），性能可预测,运维团队也更熟悉。
 - **Milvus** 的标量字段过滤需要显式建索引，容易被忽略——新加一个 metadata 字段忘了建索引，过滤就会静默退化成全量扫描，延迟会突然上升但不会报错，排查起来比较隐蔽。
 
-如果检索请求本身走的是中转 API（比如通过 [YoTradeApi](https://yotradeapi.com) 调用 OpenAI/Claude 做 embedding 生成），metadata 过滤这一层完全在你自己的向量库里完成，和 API 中转没有关系，但要注意 embedding 模型切换时（比如从 text-embedding-3-small 换成其他模型）历史 metadata 不需要重新生成，只有向量本身要重新计算，这一点常被误解为要整体重建索引。
-
 ## 五、多租户隔离：metadata 过滤之外还要加一层保险
 
 只靠 metadata 过滤做租户隔离，有个隐患：一旦查询代码里漏写了 tenant_id 条件（比如新写的一个后台批处理任务忘了加过滤），就会直接读到跨租户数据，而且这种 bug 很难在测试环境暴露，因为测试环境往往只有一个租户的数据。
@@ -131,4 +129,4 @@ LIMIT 10;
 - [RAG Reranker 选型与评测](/blog/rag-reranker-selection/)
 - [2026 向量数据库对比：Chroma/Qdrant/Milvus/pgvector](/blog/vector-db-comparison-2026/)
 
-Metadata Filter 设计好了,检索的正确性边界才算真正立住,后续调 Hybrid Search 权重或加 Reranker 才有意义。如果你的 RAG 系统需要稳定调用 OpenAI/Claude 做 embedding 或生成,可以试试 [YoTradeApi](https://yotradeapi.com),按量计费,国内直连不用处理网络问题。
+Metadata Filter 设计好了,检索的正确性边界才算真正立住,后续调 Hybrid Search 权重或加 Reranker 才有意义。

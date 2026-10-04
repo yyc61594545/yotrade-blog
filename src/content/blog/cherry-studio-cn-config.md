@@ -35,9 +35,9 @@ Cherry Studio 是国内开发者最常用的 LLM 桌面客户端之一，特点�
 | 字段 | 填什么 |
 | --- | --- |
 | 提供商类型 | OpenAI |
-| 名称 | YoTradeApi（随便取） |
+| 名称 | 中转服务（随便取） |
 | API 密钥 | 你的中转 Key |
-| API 地址 | `https://yotradeapi.com/v1` |
+| API 地址 | `https://your-relay.example.com/v1` |
 | 模型 | 手动添加 `claude-sonnet-4-6`、`claude-opus-4-7`、`gpt-5`、`gemini-2.5-pro` 等 |
 
 保存后点 "检查"，绿色对勾代表通了。
@@ -148,4 +148,3 @@ Cherry Studio 内置 MCP 支持。设置 → MCP 服务器 → 添加：
 - [Cline 国内 API 配置详解](/blog/cline-cn-api-setup/)
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 
-需要支持 Claude / GPT / Gemini / Grok 全家桶的中转？在 [YoTradeApi 注册](https://yotradeapi.com) 用一把 Key 接所有模型，按上面 base_url 直接接入 Cherry Studio。

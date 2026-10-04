@@ -98,4 +98,3 @@ OpenAI 的停用说明列出了政策或条款问题、安全风险，以及验�
 - [注册 ChatGPT 的邮箱选择与归属安全](/blog/cn-chatgpt-email-choice-guide/)
 - [API Key 泄露后的应急响应](/blog/api-key-leak-emergency-response/)
 
-如果你的实际需求是应用中的模型 API 接入，可在 [YoTradeApi](https://yotradeapi.com) 了解接入服务，按应用需求核对支持范围与配置方式。

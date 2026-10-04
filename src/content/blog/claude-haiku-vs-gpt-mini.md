@@ -153,8 +153,8 @@ Haiku 4.5 的 200K 上下文在轻量模型中属于领先水平，适合需要�
 
 两个模型的 API 在国内都无法直连。主要方案：
 
-1. **Anthropic API 中转**：使用 [YoTradeApi](https://yotradeapi.com) 等中转服务，支持 Haiku 4.5，支持支付宝/微信付款
-2. **OpenAI API 中转**：YoTradeApi 同时支持 GPT-5 mini，可以用同一个账号切换
+1. **Anthropic API 中转**：使用中转服务，支持 Haiku 4.5，支持支付宝/微信付款
+2. **OpenAI API 中转**：中转服务同时支持 GPT-5 mini，可以用同一个账号切换
 3. **统一接口**：通过中转服务，用相同的 SDK 格式调用两个模型，方便 A/B 测试
 
 使用中转服务调用 Haiku 4.5 的示例：
@@ -164,7 +164,7 @@ import anthropic
 
 client = anthropic.Anthropic(
     api_key="your-api-key",
-    base_url="https://api.yotradeapi.com"  # 中转地址
+    base_url="https://your-relay.example.com"  # 中转地址
 )
 
 message = client.messages.create(
@@ -193,4 +193,3 @@ Claude Haiku 4.5 和 GPT-5 mini 都是优秀的轻量模型，差距不像旗舰
 - [LLM JSON 模式对比：哪个模型更稳定](/blog/llm-json-mode-comparison/)
 - [LLM Agent 评估方法论](/blog/llm-agent-evaluation-methods/)
 
-如果需要在国内稳定调用 Claude Haiku 4.5 或 GPT-5 mini，[YoTradeApi](https://yotradeapi.com) 提供统一中转接口，同时支持两家模型，支付宝/微信即可开通。

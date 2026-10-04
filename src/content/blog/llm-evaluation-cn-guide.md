@@ -143,12 +143,12 @@ def score(output, expected):
 providers:
   - id: openai:gpt-5
     config:
-      apiKey: ${YOTRADE_KEY}
-      apiBaseUrl: https://yotradeapi.com/v1
+      apiKey: ${RELAY_API_KEY}
+      apiBaseUrl: https://your-relay.example.com/v1
   - id: openai:claude-sonnet-4-6
     config:
-      apiKey: ${YOTRADE_KEY}
-      apiBaseUrl: https://yotradeapi.com/v1
+      apiKey: ${RELAY_API_KEY}
+      apiBaseUrl: https://your-relay.example.com/v1
 
 prompts:
   - "用 Python 写 {{task}}"
@@ -266,7 +266,7 @@ from openai import OpenAI
 MODELS = ["claude-sonnet-4-6", "gpt-5", "gemini-2.5-pro"]
 TESTS = [...]   # 50+ case
 
-client = OpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = OpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 results = {}
 for model in MODELS:
@@ -297,4 +297,3 @@ for model, r in results.items():
 - [GPT-5 与 Claude Opus 4.7 编程能力对比](/blog/gpt-5-vs-claude-opus-4-7-coding/)
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 
-需要一把 Key 同时调多家模型做 A/B 评估？[YoTradeApi](https://yotradeapi.com) 创建独立 Key 后按上面 promptfoo 配置跑即可。

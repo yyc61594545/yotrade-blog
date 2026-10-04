@@ -55,7 +55,7 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 
 1. **数据是否出境**
    - 如果用 OpenAI/Anthropic 直连 API，数据肯定出境，需走数据出境安全评估（对于敏感数据）
-   - 国内中转服务（如 YoTradeApi）的数据流向需要服务商提供书面说明
+   - 国内中转服务的数据流向需要服务商提供书面说明
    
 2. **服务商是否有合规资质**
    - 大陆展业的 AI 服务商需要具备《互联网信息服务算法备案》
@@ -152,4 +152,3 @@ AI API 按量计费的模式在国内财务体系里有点"另类"，建议从�
 - [AI API 中转安全与合规说明](/blog/api-relay-security-compliance/)
 - [国内 ChatGPT Plus 订阅付款指南](/blog/cn-chatgpt-plus-payment-2026/)
 
-企业采购 AI API 最头疼的往往是付款和合规问题，[YoTradeApi](https://yotradeapi.com) 提供人民币结算、正规发票，支持企业对公转账，帮助团队快速绕过境外付款障碍。

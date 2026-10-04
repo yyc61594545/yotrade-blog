@@ -37,7 +37,7 @@ API 中转 = 在你的应用和官方 API 之间加一层网关。
 
 ```
 没有中转：你的应用 → api.anthropic.com → 回复
-有中转：  你的应用 → yotradeapi.com → api.anthropic.com → 回复
+有中转：  你的应用 → 中转服务 → api.anthropic.com → 回复
 ```
 
 中转网关接到你的请求，转发到上游模型，然后把响应转回给你。
@@ -91,14 +91,14 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="YOUR_RELAY_KEY",
-    base_url="https://yotradeapi.com/v1",  # ← 这一行
+    base_url="https://your-relay.example.com/v1",  # ← 这一行
 )
 ```
 
 ### Claude Code
 
 ```bash
-export ANTHROPIC_BASE_URL="https://yotradeapi.com"
+export ANTHROPIC_BASE_URL="https://your-relay.example.com"
 export ANTHROPIC_AUTH_TOKEN="YOUR_RELAY_KEY"
 ```
 
@@ -162,4 +162,3 @@ export ANTHROPIC_AUTH_TOKEN="YOUR_RELAY_KEY"
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
 
-如果想 5 分钟跑通最小可用配置，到 [YoTradeApi](https://yotradeapi.com) 创建一把独立 API Key，按上面任意一种 SDK 例子改 base_url 即可。

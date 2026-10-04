@@ -108,7 +108,7 @@ Windows 用户在系统代理设置中配置，或在 Cursor 的 Settings → Ex
 Cursor 支持配置 **自定义 AI 端点**（OpenAI Compatible API）：
 
 1. Cursor → Settings → Models → Add Model / OpenAI API Key
-2. 填入中转服务地址（如 `https://api.yotradeapi.com/v1`）和 API Key
+2. 填入中转服务地址（如 `https://your-relay.example.com/v1`）和 API Key
 3. 添加需要使用的模型名称（如 `claude-sonnet-4-5`、`gpt-4o`）
 
 这个方案的好处：
@@ -116,7 +116,7 @@ Cursor 支持配置 **自定义 AI 端点**（OpenAI Compatible API）：
 - **可以用本账单控制各人用量**，而不是各自 Business 席位平摊
 - **可以测试非官方提供的模型**，如最新发布但 Cursor 官方还未上线的模型
 
-> 如果你需要稳定的 Claude/GPT/Gemini 中转端点，[YoTradeApi](https://yotradeapi.com) 支持 OpenAI 格式接入，可直接在 Cursor 自定义模型设置中使用。
+> 如果你需要稳定的 Claude/GPT/Gemini 中转端点，中转服务商 支持 OpenAI 格式接入，可直接在 Cursor 自定义模型设置中使用。
 
 ## 五、团队统一配置：用 .cursorrules 规范 AI 行为
 
@@ -189,4 +189,4 @@ Business 版最实用但常被忽略的功能是**团队 .cursorrules 共享**�
 - [Claude Code vs Cursor：成本与使用场景深度对比](/blog/claude-code-vs-cursor-cost/)
 - [国内开发者 AI API 中转服务选型指南](/blog/ai-api-relay-vs-self-vpn/)
 
-国内团队要把 Cursor Business 真正用顺，付款、网络、席位管理三关都得过，[YoTradeApi](https://yotradeapi.com) 提供稳定的 API 中转端点，可配合 Cursor 自定义模型设置使用，帮助团队绕开网络限制、灵活控制模型选择。
+国内团队要把 Cursor Business 真正用顺，付款、网络、席位管理三关都得过。

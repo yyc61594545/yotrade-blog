@@ -87,7 +87,7 @@ import json
 # 使用国内中转时替换 base_url
 client = anthropic.Anthropic(
     api_key="your-relay-api-key",
-    base_url="https://api.yotradeapi.com",  # 国内中转地址
+    base_url="https://your-relay.example.com",  # 国内中转地址
 )
 
 # 准备批量请求
@@ -152,7 +152,7 @@ for i, text in enumerate(texts):
 
 Anthropic 官方 API 对中国大陆网络不友好，稳定调用需要借助 API 中转服务。好消息是，**支持 Anthropic 协议的中转服务** 对 Batch API 的支持路径与标准接口完全一致，只需：
 
-1. 将 `client = anthropic.Anthropic(base_url="https://api.yotradeapi.com")` 中的 `base_url` 指向中转地址
+1. 将 `client = anthropic.Anthropic(base_url="https://your-relay.example.com")` 中的 `base_url` 指向中转地址
 2. 使用中转提供的 API Key 替换原有 Key
 3. 其余代码完全不变
 
@@ -252,4 +252,3 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
 - [Python 异步 LLM 客户端实战](/blog/python-async-llm-client/)
 - [LLM 延迟优化指南](/blog/llm-latency-optimization/)
 
-需要稳定调用 Anthropic Batch API 或其他 Claude 接口，[YoTradeApi](https://yotradeapi.com) 提供原生 Anthropic 协议中转，批量推理同样享受半价优惠。

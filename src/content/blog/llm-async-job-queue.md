@@ -136,8 +136,8 @@ import { Worker, Job } from 'bullmq';
 import { OpenAI } from 'openai';
 
 const client = new OpenAI({
-  apiKey: process.env.YOTRADE_API_KEY!,
-  baseURL: 'https://yotradeapi.com/v1',
+  apiKey: process.env.RELAY_API_KEY!,
+  baseURL: 'https://your-relay.example.com/v1',
   timeout: 120_000,
 });
 
@@ -222,8 +222,8 @@ from openai import OpenAI
 import time
 
 client = OpenAI(
-    api_key=os.environ['YOTRADE_API_KEY'],
-    base_url='https://yotradeapi.com/v1',
+    api_key=os.environ['RELAY_API_KEY'],
+    base_url='https://your-relay.example.com/v1',
     timeout=120,
 )
 
@@ -252,7 +252,6 @@ def quick_summary(self, text: str, user_id: str) -> dict:
         if 'content_filter' in str(exc).lower():
             raise exc
         raise self.retry(exc=exc)
-
 
 @app.task(
     bind=True,
@@ -363,4 +362,3 @@ BullMQ 可以配合 [Bull Board](https://github.com/felixmosh/bull-board) 做可
 - [Claude Code 一个月深度使用复盘](/blog/claude-code-1month-real-usage/)
 - [API 中转稳定性测试：真实压力下的表现](/blog/ai-api-relay-stability-test/)
 
-需要支持高并发 LLM 任务处理的稳定 API 中转？[YoTradeApi](https://yotradeapi.com) 支持按量计费、自动重试，是构建 LLM 任务队列后端的可靠选择。

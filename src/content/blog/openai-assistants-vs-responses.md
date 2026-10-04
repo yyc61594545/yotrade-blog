@@ -107,8 +107,8 @@ print(messages.data[0].content[0].text.value)
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="YOUR_YOTRADE_KEY",
-    base_url="https://yotradeapi.com/v1",
+    api_key="YOUR_RELAY_API_KEY",
+    base_url="https://your-relay.example.com/v1",
 )
 
 resp = client.responses.create(
@@ -231,7 +231,7 @@ vector store 本身的创建、上传 API 基本不变，改动集中在"怎么�
 用这条命令快速验证中转是否支持 Responses API：
 
 ```bash
-curl -i https://yotradeapi.com/v1/responses \
+curl -i https://your-relay.example.com/v1/responses \
   -H "Authorization: Bearer $KEY" \
   -d '{"model":"gpt-5","input":"hi"}'
 ```
@@ -256,4 +256,3 @@ Assistants API 目前还没有给出确切下线日期，但官方文档已经�
 - [OpenAI 兼容协议 vs Anthropic 原生协议](/blog/openai-compatible-vs-anthropic-protocol/)
 - [OpenAI Agents SDK 国内接入指南](/blog/openai-agents-sdk-cn/)
 
-迁移到 Responses API 前先确认中转是否完整支持新端点，[YoTradeApi](https://yotradeapi.com) 同时支持 Chat Completions 与 Responses API，可以在过渡期让新老代码路径都正常工作。

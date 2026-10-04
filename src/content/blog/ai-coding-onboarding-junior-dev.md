@@ -163,8 +163,6 @@ git diff main...HEAD | python3 scripts/ai_code_review.py
 | 初审 Diff | 轻量模型（Haiku 等） | Diff 通常较短，无需旗舰 |
 | IDE 实时补全 | Cursor 或 GitHub Copilot | 实时补全需要专用工具 |
 
-如果你需要统一管理多个模型的调用，[YoTradeApi](https://yotradeapi.com) 提供 OpenAI 兼容的统一接口，可以在同一套代码里按场景路由到不同模型。
-
 ## 七、效果量化
 
 我们对比了引入 AI 辅助前后各 10 位新人的数据（均为应届生，入职时间相近）：
@@ -196,4 +194,3 @@ Senior 反馈的主观感受：新人提问质量明显提升——问的都是"
 - [AI 代码审查工作流实践](/blog/ai-code-review-workflow/)
 - [AI 编程常见错误避坑指南](/blog/ai-coding-mistakes-to-avoid/)
 
-如果你正在为团队搭建统一的 AI 辅助开发平台，[YoTradeApi](https://yotradeapi.com) 提供多模型统一接口和用量管理，适合团队规模化使用场景。

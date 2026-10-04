@@ -89,4 +89,3 @@ category: 成本优化
 - [月预算 ¥150 用什么 AI 工具最值：新手选型指南](/blog/cn-ai-tool-budget-150-rmb/)
 - [LLM 成本优化 30 条 checklist](/blog/llm-cost-optimization-checklist/)
 
-如果免费额度已经不够用、又不想被国内支付方式和网络问题卡住，[YoTradeApi](https://yotradeapi.com) 提供稳定直连的 API 中转服务，按量付费，随用随充，切换成本很低。

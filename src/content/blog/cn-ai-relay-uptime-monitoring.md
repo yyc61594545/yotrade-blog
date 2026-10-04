@@ -52,7 +52,7 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 import os, time, json, logging, requests
 from datetime import datetime, timezone
 
-RELAY_BASE   = os.environ["RELAY_BASE_URL"]   # 例如 https://api.yotradeapi.com/v1
+RELAY_BASE   = os.environ["RELAY_BASE_URL"]   # 例如 https://your-relay.example.com/v1
 RELAY_KEY    = os.environ["RELAY_API_KEY"]
 MODEL        = os.environ.get("PROBE_MODEL", "gpt-4o-mini")
 BARK_URL     = os.environ.get("BARK_URL", "")         # iOS Bark push
@@ -126,7 +126,7 @@ if __name__ == "__main__":
 **运行方式**：
 
 ```bash
-export RELAY_BASE_URL="https://api.yotradeapi.com/v1"
+export RELAY_BASE_URL="https://your-relay.example.com/v1"
 export RELAY_API_KEY="sk-xxx"
 export BARK_URL="https://api.day.app/your-device-key"
 python3 minimal_monitor.py
@@ -140,9 +140,9 @@ python3 minimal_monitor.py
 
 ```python
 PROBES = [
-    {"label": "YoTrade-GPT4o",     "base": "https://api.yotradeapi.com/v1",  "model": "gpt-4o"},
-    {"label": "YoTrade-Claude",    "base": "https://api.yotradeapi.com/v1",  "model": "claude-3-5-sonnet-20241022"},
-    {"label": "YoTrade-Gemini",    "base": "https://api.yotradeapi.com/v1",  "model": "gemini-2.0-flash"},
+    {"label": "Relay-GPT4o",     "base": "https://your-relay.example.com/v1",  "model": "gpt-4o"},
+    {"label": "Relay-Claude",    "base": "https://your-relay.example.com/v1",  "model": "claude-3-5-sonnet-20241022"},
+    {"label": "Relay-Gemini",    "base": "https://your-relay.example.com/v1",  "model": "gemini-2.0-flash"},
 ]
 ```
 
@@ -294,4 +294,3 @@ GitHub Actions 免费层有 2000 分钟/月，每 5 分钟跑一次约消耗 288
 - [AI Agent 成本监控实战：从 Token 到账单的全链路追踪](/blog/ai-agent-cost-monitoring/)
 - [AI API 预算上限设计：防止账单爆炸的实用方案](/blog/ai-api-budget-cap-design/)
 
-需要稳定、低延迟的国内 AI API 中转服务，[YoTradeApi](https://yotradeapi.com) 支持 GPT、Claude、Gemini 全系模型，按量计费无最低消费。

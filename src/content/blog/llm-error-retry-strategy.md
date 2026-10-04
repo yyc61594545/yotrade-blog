@@ -124,7 +124,6 @@ def with_retry(
         return wrapper
     return decorator
 
-
 # 使用示例
 client = anthropic.Anthropic()
 
@@ -318,4 +317,3 @@ log.warning(
 - [Streaming SSE 常见问题排查](/blog/streaming-sse-troubleshooting/)
 - [Claude System Prompt 工程实战](/blog/claude-system-prompt-engineering/)
 
-想要更稳定的 LLM API 体验？[YoTradeApi](https://yotradeapi.com) 在中转层内置了自动重试与负载均衡，帮你屏蔽上游抖动，让应用层只需处理真正的业务错误。

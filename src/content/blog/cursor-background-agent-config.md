@@ -46,8 +46,8 @@ Cursor 2025 推出的 Background Agent 把"AI 写代码"从本地编辑器搬到
 打开 Cursor → Cursor Settings → Models → Custom Model Endpoint，配置一个支持 OpenAI 兼容协议的中转：
 
 ```
-Endpoint: https://yotradeapi.com/v1
-API Key: sk-yo-...
+Endpoint: https://your-relay.example.com/v1
+API Key: sk-...
 Model: claude-sonnet-4-6
 ```
 
@@ -182,4 +182,3 @@ Background Agent 默认会自适应重试，但持续 429 会让任务卡住。�
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-需要给 Background Agent 配置一个稳定的 base_url？在 [YoTradeApi 注册](https://yotradeapi.com) 创建独立 API Key，单独设日预算上限，按上面配置接入。

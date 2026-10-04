@@ -73,4 +73,3 @@ AI 模型也是类似的原理。它不像人一样有真正意义上的"长期�
 - [如何选择第一个大模型：新手指南](/blog/pick-first-model-for-beginners/)
 - [系统提示词是什么：新手指南](/blog/system-prompt-for-beginners/)
 
-如果你经常需要在不同 AI 产品之间切换、对比谁的长对话表现更靠谱，可以通过 [YoTradeApi](https://yotradeapi.com) 用同一个入口调用多家模型，方便直接体验差异。

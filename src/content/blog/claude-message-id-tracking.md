@@ -265,8 +265,6 @@ with tracer.start_as_current_span("claude_api_call") as span:
 
 ## 七、使用 API 中转时的注意事项
 
-通过 API 中转服务（如 YoTradeApi）调用 Claude 时，中转服务对 message_id 的处理方式有所不同：
-
 - **透传型**：中转服务原样返回 Anthropic 的 message_id，你记录到的 ID 可以直接用于向 Anthropic 反馈问题；
 - **替换型**：中转服务生成自己的请求 ID，如果你要联系 Anthropic 支持，需要先找中转服务商拿到原始 ID。
 
@@ -280,4 +278,3 @@ with tracer.start_as_current_span("claude_api_call") as span:
 - [Cline 在大型代码库的实战经验](/blog/cline-on-large-codebase/)
 - [Anthropic Batch API 国内使用指南](/blog/anthropic-batch-api-cn-guide/)
 
-在生产环境中稳定追踪 Claude API 调用，需要可靠的中转接入点，[YoTradeApi](https://yotradeapi.com) 提供详细的请求日志和用量统计，帮助你掌握每一次 API 调用的完整信息。

@@ -107,7 +107,7 @@ Claude Code 知道"通用最佳实践"，但不知道"你这个项目的约定"�
 
 ## 四、费用实际花了多少
 
-这是大家最关心的话题。我把前四周的 API 账单整理了一下（使用的是 Claude API 中转，价格参考 yotradeapi.com）：
+这是大家最关心的话题。
 
 | 周次 | 主要任务类型 | Token 消耗（估算） | 大致费用 |
 |------|------------|-------------------|---------|
@@ -183,4 +183,3 @@ Claude Code 知道"通用最佳实践"，但不知道"你这个项目的约定"�
 - [Claude Code Hooks 自动化工作流实战](/blog/claude-code-hooks-workflow/)
 - [AI 编程工具月度实际花费：真实账单拆解](/blog/ai-coding-monthly-cost-real/)
 
-想把 Claude Code 的 API 费用压到最低？[YoTradeApi](https://yotradeapi.com) 提供 Claude 系列模型的中转服务，按量计费，比订阅 Claude Max 在轻量使用场景下往往更划算。

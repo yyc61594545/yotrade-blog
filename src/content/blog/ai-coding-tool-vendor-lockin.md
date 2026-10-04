@@ -123,7 +123,7 @@ AI 工具的核心价值来自底层模型。如果工具供应商因商业原�
 
 **3. 通过 API 中转降低模型绑定**
 
-很多 AI 编程工具支持自定义 base URL，接入 OpenAI 兼容的 API。通过 [YoTradeApi](https://yotradeapi.com) 这样的中转服务，你可以在不换工具的前提下灵活切换底层模型（Claude、GPT-4o、Gemini 等），同时避免直接被某家模型厂商锁定。
+很多 AI 编程工具支持自定义 base URL，接入 OpenAI 兼容的 API。
 
 **4. 优先选择开放配置格式的工具**
 
@@ -168,4 +168,3 @@ AI 工具的核心价值来自底层模型。如果工具供应商因商业原�
 - [为什么 AI 编程越用越难用？](/blog/why-ai-coding-getting-worse/)
 - [用 AI 工具独立开发 SaaS 的真实经验](/blog/saas-with-ai-coding-tools/)
 
-如果你在寻找一种不依赖单一厂商的 AI API 使用方式，[YoTradeApi](https://yotradeapi.com) 提供多模型统一接口，支持 Claude、GPT-4o、Gemini 等主流模型，方便在工具切换时保持模型访问的连续性。

@@ -165,4 +165,3 @@ IDE 类 AI 工具（Cursor、GitHub Copilot、Windsurf 等）的订阅也需要�
 - [国内 LLM 中转市场全景：主流服务商对比](/blog/cn-llm-relay-market-overview/)
 - [Anthropic 官方 Key 与中转 Key 的区别与选择](/blog/anthropic-console-key-vs-relay/)
 
-如果你只需要 API 调用能力，[YoTradeApi](https://yotradeapi.com) 支持人民币直接充值，兼容 OpenAI/Anthropic 接口格式，省去境外支付的所有麻烦。

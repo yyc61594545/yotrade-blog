@@ -138,7 +138,7 @@ Claude Code 支持自定义 API endpoint，这意味着可以接入 API 中转�
 在 Claude Code 中配置中转只需修改环境变量：
 
 ```bash
-export ANTHROPIC_BASE_URL=https://api.yotradeapi.com
+export ANTHROPIC_BASE_URL=https://your-relay.example.com
 export ANTHROPIC_API_KEY=your_relay_key
 ```
 
@@ -187,4 +187,3 @@ Claude Code 的其他所有功能（子 Agent、文件读写、命令执行）�
 - [AI 编程 Agent 成本控制实践](/blog/ai-coding-agent-cost-control/)
 - [Cursor API 中转推荐 2026](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 
-想用 API 中转降低 Claude Code 或 Cursor 的实际费用，[YoTradeApi](https://yotradeapi.com) 支持标准 Anthropic 协议，国内直连无需代理，按量计费无月租。

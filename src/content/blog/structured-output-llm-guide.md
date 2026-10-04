@@ -68,7 +68,7 @@ Claude 没有 response_format，但 tool_use 等价：
 ```python
 import anthropic, json
 
-client = anthropic.Anthropic(base_url="https://yotradeapi.com", api_key="sk-yo-...")
+client = anthropic.Anthropic(base_url="https://your-relay.example.com", api_key="sk-...")
 
 schema = {
     "type": "object",
@@ -259,7 +259,7 @@ const completion = await client.chat.completions.parse({
 `response_format` 在 OpenAI 兼容路径下需要中转**完整透传**。测试：
 
 ```bash
-curl https://yotradeapi.com/v1/chat/completions \
+curl https://your-relay.example.com/v1/chat/completions \
   -H "Authorization: Bearer $KEY" \
   -d '{
     "model": "gpt-5",
@@ -287,4 +287,3 @@ curl https://yotradeapi.com/v1/chat/completions \
 - [Python 异步并发调用 LLM API](/blog/python-async-llm-client/)
 - [LangChain 中文实战](/blog/langchain-cn-tutorial/)
 
-需要支持 response_format 与 tool_use 完整透传的中转？[YoTradeApi](https://yotradeapi.com) 同时支持两种结构化机制。

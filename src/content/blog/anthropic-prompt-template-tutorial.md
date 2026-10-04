@@ -115,7 +115,6 @@ from dataclasses import dataclass
 from string import Template
 from typing import Any
 
-
 @dataclass
 class PromptTemplate:
     system: str
@@ -136,7 +135,6 @@ class PromptTemplate:
             ],
         }
 
-
 # 定义模板
 code_review_template = PromptTemplate(
     system="你是一个专业的 {lang} 代码审查专家，关注安全性、性能和可读性。",
@@ -156,7 +154,6 @@ response = client.messages.create(**params)
 
 ```python
 from typing import Literal
-
 
 class ConversationTemplate:
     def __init__(self, system: str):
@@ -183,7 +180,6 @@ class ConversationTemplate:
             "system": self.system,
             "messages": self.messages,
         }
-
 
 # 使用示例
 params = (
@@ -219,7 +215,6 @@ def build_multimodal_message(text: str, image_base64: str) -> dict:
             },
         ],
     }
-
 
 def build_document_analysis_prompt(doc_text: str, question: str) -> list[dict]:
     """分析长文档的标准模板"""
@@ -268,7 +263,6 @@ def build_analysis_prompt(
 
 请根据以上信息完成任务，并以 JSON 格式输出结果。"""
 
-
 # 使用
 prompt = build_analysis_prompt(
     context="我们是一家 B2B SaaS 公司，主要服务制造业客户",
@@ -296,12 +290,10 @@ XML 标签的好处：
 ```python
 from typing import NamedTuple
 
-
 class PromptVersion(NamedTuple):
     version: str
     template: str
     changelog: str
-
 
 PROMPTS = {
     "code_review": [
@@ -317,7 +309,6 @@ PROMPTS = {
         ),
     ]
 }
-
 
 def get_prompt(name: str, version: str = "latest") -> PromptVersion:
     versions = PROMPTS[name]
@@ -369,4 +360,3 @@ model = MODEL_ALIASES["balanced"]
 - [Anthropic Skills API 中文指南](/blog/anthropic-skills-cn-guide/)
 - [LLM System Prompt vs User Prompt 深度解析](/blog/llm-system-prompt-vs-user-prompt/)
 
-如果你需要快速测试不同版本的提示词模板而不受网络限制，[YoTradeApi](https://yotradeapi.com) 提供稳定的 Claude API 中转，支持人民币充值，适合在国内环境频繁迭代提示词工程。

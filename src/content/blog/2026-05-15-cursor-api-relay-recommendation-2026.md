@@ -31,7 +31,7 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 | 稳定性 | 首 token 延迟、断流率、失败重试 | 编程代理任务最怕中途断掉 |
 | 风险边界 | 是否说明数据处理、退款、订阅方式 | 避免把账号共享和 API Key 混在一起 |
 
-YoTradeApi 的定位是 API token relay 与订阅代理并行，但开发者优先场景建议先从 API Key 开始：密钥独立、用量可查、配置可回滚。订阅相关内容需要单独确认服务条款；如涉及代充，说明必须写清楚“美卡直冲, 非账号共享”。
+开发者场景建议先从 API Key 开始：密钥独立、用量可查、配置可回滚。
 
 ## Python 最小调用示例
 
@@ -39,8 +39,8 @@ YoTradeApi 的定位是 API token relay 与订阅代理并行，但开发者优�
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="YOUR_YOTRADE_API_KEY",
-    base_url="https://yotradeapi.com/v1",
+    api_key="YOUR_RELAY_API_KEY",
+    base_url="https://your-relay.example.com/v1",
 )
 
 response = client.chat.completions.create(
@@ -66,8 +66,8 @@ for chunk in response:
 import OpenAI from "openai";
 
 const client = new OpenAI({
-  apiKey: process.env.YOTRADE_API_KEY,
-  baseURL: "https://yotradeapi.com/v1",
+  apiKey: process.env.RELAY_API_KEY,
+  baseURL: "https://your-relay.example.com/v1",
 });
 
 const stream = await client.chat.completions.create({
@@ -89,7 +89,7 @@ for await (const part of stream) {
 ## Cursor 里怎么配
 
 1. 新建或编辑 OpenAI Compatible Provider。
-2. `base_url` 填 `https://yotradeapi.com/v1`。
+2. `base_url` 填 `https://your-relay.example.com/v1`。
 3. API Key 使用独立密钥，不要把主账号密码交给任何插件。
 4. 模型名先用 `claude-sonnet-4-6` 做代码任务，再按成本切到便宜模型做摘要、分类、草稿。
 5. 跑一个 200 行以内的重构任务，检查是否有断流、乱码、上下文丢失。
@@ -100,7 +100,7 @@ for await (const part of stream) {
 
 ```bash
 python smoke_openai_compatible.py \
-  --base-url https://yotradeapi.com/v1 \
+  --base-url https://your-relay.example.com/v1 \
   --model claude-sonnet-4-6 \
   --runs 3 \
   --stream
@@ -121,4 +121,4 @@ python smoke_openai_compatible.py \
 - [OpenAI SDK base_url 国内配置](/blog/openai-sdk-base-url-cn/)
 - [AI API 中转稳定性测试](/blog/ai-api-relay-stability-test/)
 
-如果你要先用一把真实代码任务做小流量测试，可以在 [YoTradeApi 注册](https://yotradeapi.com) 后创建独立 API Key，再把 Cursor、Cline 或 Aider 的 base_url 指向 `https://yotradeapi.com/v1`。建议从低风险脚本开始，不要一上来接生产任务。
+建议从低风险脚本开始，不要一上来接生产任务。

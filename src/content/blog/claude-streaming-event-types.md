@@ -416,4 +416,3 @@ SSE 是有序的 TCP 流，理论上不会乱序。如果出现，检查中间�
 - [LLM 流式响应背压处理实战指南](/blog/llm-streaming-backpressure/)
 - [LLM 会议纪要生成能力评测](/blog/llm-meeting-minutes-summarization/)
 
-需要在国内稳定调用 Claude API？[YoTradeApi](https://yotradeapi.com) 支持 Anthropic 原生接口和 OpenAI 兼容接口，按量计费，无需海外信用卡。

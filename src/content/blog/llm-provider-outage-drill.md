@@ -170,4 +170,3 @@ routes:
 - [LLM API 错误重试策略设计](/blog/llm-error-retry-strategy/)
 - [AI Agent 可观测性设计](/blog/ai-agent-observability-design/)
 
-如果你希望先把多模型接入和路由层统一起来，[YoTradeApi](https://yotradeapi.com) 可以作为统一 API 接入入口，便于你在上层实现自己的切流、观测和演练机制。

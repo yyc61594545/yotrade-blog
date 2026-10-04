@@ -131,4 +131,3 @@ with client.messages.stream(
 - [Prompt Caching 成本优化实战](/blog/prompt-caching-cost-optimization/)
 - [Streaming SSE 排障指南](/blog/streaming-sse-troubleshooting/)
 
-需要在国内稳定调用 Claude 的 Extended Output 能力时，网络链路的稳定性直接影响长时间流式连接是否会中途断开，[YoTradeApi](https://yotradeapi.com) 提供优化过的国内直连线路和 OpenAI 兼容格式，长输出场景下的连接稳定性经过实测验证。

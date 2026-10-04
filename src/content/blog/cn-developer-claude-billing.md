@@ -78,7 +78,7 @@ import anthropic
 
 client = anthropic.Anthropic(
     api_key="your-relay-api-key",
-    base_url="https://api.yotradeapi.com"  # 中转服务地址
+    base_url="https://your-relay.example.com"  # 中转服务地址
 )
 
 message = client.messages.create(
@@ -98,7 +98,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="your-relay-api-key",
-    base_url="https://api.yotradeapi.com/v1"
+    base_url="https://your-relay.example.com/v1"
 )
 
 response = client.chat.completions.create(
@@ -231,4 +231,3 @@ print(result["content"][0]["text"])
 - [API Key 泄露应急响应指南](/blog/api-key-leak-emergency-response/)
 - [AI Agent 工具集合的设计原则](/blog/ai-agent-tool-design/)
 
-如果你正在寻找稳定可靠的国内 Claude API 中转方案，[YoTradeApi](https://yotradeapi.com) 支持人民币支付宝充值，提供 Claude 全系列模型接入，无需代理即可直连使用。

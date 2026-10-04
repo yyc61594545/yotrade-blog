@@ -84,4 +84,3 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 - [什么是 AI API 中转？为什么国内开发者需要它](/blog/what-is-api-relay-explained/)
 - [国内开发者使用 Claude 的付款方案](/blog/cn-developer-claude-billing/)
 
-如果你的场景是"高频调用、看重稳定性、不想自己盯风控"，[YoTradeApi](https://yotradeapi.com) 提供人民币充值、对公结算支持和多供应商容灾，省去自建付款链路的折腾。

@@ -137,8 +137,8 @@ L3（架构 / 重构 / 复杂 agent）→ Opus 4.7
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-yo-...",
-    base_url="https://yotradeapi.com/v1",
+    api_key="sk-...",
+    base_url="https://your-relay.example.com/v1",
 )
 
 resp = client.chat.completions.create(
@@ -181,4 +181,3 @@ DeepSeek 是开源的（权重可下载）。如果数据不能出局：
 - [2026 LLM 价格对比与选型决策](/blog/llm-pricing-comparison-2026/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-[YoTradeApi](https://yotradeapi.com) 同时支持 DeepSeek 与 Claude 全家，一把 Key 按场景切换。

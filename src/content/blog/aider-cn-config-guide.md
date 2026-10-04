@@ -44,8 +44,8 @@ pip install -U aider-chat
 Aider 通过环境变量或 `.aider.conf.yml` 读配置。最小用例：
 
 ```bash
-export OPENAI_API_BASE="https://yotradeapi.com/v1"
-export OPENAI_API_KEY="sk-your-yotrade-key"
+export OPENAI_API_BASE="https://your-relay.example.com/v1"
+export OPENAI_API_KEY="sk-your-key"
 
 cd your-project
 aider --model openai/claude-sonnet-4-6
@@ -85,8 +85,8 @@ prompt-prefix: "请用中文回复。"
 把 API Key 放 `.aider.conf.yml` 同目录的 `.env`：
 
 ```
-OPENAI_API_BASE=https://yotradeapi.com/v1
-OPENAI_API_KEY=sk-your-yotrade-key
+OPENAI_API_BASE=https://your-relay.example.com/v1
+OPENAI_API_KEY=sk-your-key
 ```
 
 并加进 `.gitignore`。
@@ -220,4 +220,3 @@ aider --auto-test --test-cmd "npm test" --auto-lint --lint-cmd "npm run lint"
 - [Cline 国内 API 配置详解](/blog/cline-cn-api-setup/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 
-需要支持 Aider Architect 模式（双模型）的中转？[YoTradeApi](https://yotradeapi.com) 提供 Claude Sonnet 4.6 + Opus 4.7 + Haiku 4.5 同 Key 调用，配置 base_url 直接接入。

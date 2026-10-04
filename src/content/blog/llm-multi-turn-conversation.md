@@ -134,7 +134,6 @@ async def summarize_old_turns(client, messages: list, keep_recent: int = 10) -> 
     )
     return resp.content[0].text, recent
 
-
 async def build_messages_with_summary(client, full_history: list) -> tuple:
     summary, recent = await summarize_old_turns(client, full_history)
     system_addon = f"\n\n[早期对话摘要]\n{summary}" if summary else ""
@@ -287,4 +286,3 @@ def log_conversation_state(user_id: str, messages_count: int,
 - [Claude Message Batches 50% 折扣实战](/blog/claude-message-batches-savings/)
 - [Claude Agent SDK 中文入门指南](/blog/claude-agent-sdk-cn/)
 
-构建多轮对话应用时，[YoTradeApi](https://yotradeapi.com) 提供稳定的 Claude API 中转，支持完整的多轮 messages 格式与 prompt caching，助你低成本实现高质量对话体验。

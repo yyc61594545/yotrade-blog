@@ -79,8 +79,8 @@ API 中转服务提供一个国内可访问的 API 端点，你的请求发到�
 配置方式是设置 `ANTHROPIC_BASE_URL` 环境变量：
 
 ```bash
-# 设置中转地址（以 YoTradeApi 为例）
-export ANTHROPIC_BASE_URL=https://api.yotradeapi.com
+# 设置中转地址
+export ANTHROPIC_BASE_URL=https://your-relay.example.com
 export ANTHROPIC_API_KEY=your_relay_key
 
 # 启动 Claude Code
@@ -91,7 +91,7 @@ claude
 
 ```bash
 # ~/.bashrc 或 ~/.zshrc
-export ANTHROPIC_BASE_URL=https://api.yotradeapi.com
+export ANTHROPIC_BASE_URL=https://your-relay.example.com
 export ANTHROPIC_API_KEY=your_relay_key
 ```
 
@@ -99,7 +99,7 @@ export ANTHROPIC_API_KEY=your_relay_key
 
 ```bash
 # 用中转地址测试连通性
-curl https://api.yotradeapi.com/v1/models \
+curl https://your-relay.example.com/v1/models \
   -H "x-api-key: your_relay_key" \
   -H "anthropic-version: 2023-06-01"
 ```
@@ -118,7 +118,7 @@ curl https://api.yotradeapi.com/v1/models \
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://api.yotradeapi.com",
+    "ANTHROPIC_BASE_URL": "https://your-relay.example.com",
     "ANTHROPIC_API_KEY": "your_relay_key"
   },
   "model": "claude-sonnet-4-6",
@@ -251,7 +251,7 @@ export NODE_TLS_REJECT_UNAUTHORIZED=0
 ```yaml
 # GitHub Actions 示例
 env:
-  ANTHROPIC_BASE_URL: https://api.yotradeapi.com
+  ANTHROPIC_BASE_URL: https://your-relay.example.com
   ANTHROPIC_API_KEY: ${{ secrets.RELAY_API_KEY }}
 ```
 
@@ -263,4 +263,3 @@ env:
 - [Cline 国内 API 配置教程](/blog/cline-cn-api-setup/)
 - [LLM API 错误重试策略设计](/blog/llm-error-retry-strategy/)
 
-在国内稳定使用 Claude Code，[YoTradeApi](https://yotradeapi.com) 提供低延迟的 Anthropic API 中转，无需配置代理，直接设置 `ANTHROPIC_BASE_URL` 即可开始使用。

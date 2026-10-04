@@ -281,4 +281,3 @@ Prompt Caching 不是万能的，它应该和其他成本优化手段结合使�
 - [Claude API 定价与使用成本的完整分析](/blog/llm-pricing-comparison-2026/)
 - [Claude Message Batches 真实节省数据拆解](/blog/claude-message-batches-savings/)
 
-如果你正在寻找成本合理的 Claude API 接入方案，[YoTradeApi](https://yotradeapi.com) 提供国内直连的 Claude API 中转服务，支持 Prompt Caching，按量计费，适合各规模的生产应用。

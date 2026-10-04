@@ -91,8 +91,6 @@ Poe（poe.com）是一个多模型 AI 对话聚合平台，内置 Claude、GPT-4
 | Claude API 直连 | 需自行接入 | 有 | 需海外卡 | 按量，灵活 |
 | API 中转服务 | 与直连接近 | 有，国内直连 | 支持国内支付 | 接近官方价 |
 
-从开发者视角看，**API 中转服务**（如 YoTradeApi）是性价比最高的选项：支持国内支付、无需海外账号、API 格式与 Anthropic 官方一致，且通常有比较好的网络连接质量。
-
 相关配置方式可以参考[国内开发者 Claude 网络访问解决方案](/blog/claude-code-on-cn-network/)。
 
 ## 七、Poe 适合谁
@@ -130,4 +128,3 @@ Cherry Studio 等桌面工具的配置方式详见[Cherry Studio 国内配置指
 - [Claude vs GPT vs Gemini 国内开发者选择](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
 - [Anthropic Console Key vs 中转服务对比](/blog/anthropic-console-key-vs-relay/)
 
-需要国内直连、支持人民币支付的 Claude API 访问，[YoTradeApi](https://yotradeapi.com) 提供与官方 API 格式一致的中转服务，开通即用。

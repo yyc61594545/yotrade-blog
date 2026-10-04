@@ -45,7 +45,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="your_key",
-    base_url="https://yotradeapi.com/v1",
+    base_url="https://your-relay.example.com/v1",
 )
 
 def call_llm(prompt: str, model: str = "claude-sonnet-4-6") -> str:
@@ -96,7 +96,7 @@ import asyncio
 async def call_llm_async(prompt: str, model: str = "claude-sonnet-4-6") -> str:
     # 使用异步客户端
     from openai import AsyncOpenAI
-    aclient = AsyncOpenAI(api_key="your_key", base_url="https://yotradeapi.com/v1")
+    aclient = AsyncOpenAI(api_key="your_key", base_url="https://your-relay.example.com/v1")
     resp = await aclient.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
@@ -363,4 +363,3 @@ class TrackedPipeline:
 - [Claude Agent SDK 国内使用指南](/blog/claude-agent-sdk-cn/)
 - [个人开发者用 AI 编程：月度成本实录与优化经验](/blog/ai-coding-monthly-cost-real/)
 
-在国内稳定运行 AI Pipeline，需要可靠的 API 接入层，[YoTradeApi](https://yotradeapi.com) 支持多模型统一接口，适合多步骤 Pipeline 中按任务选择最合适的模型。

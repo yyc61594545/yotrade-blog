@@ -72,7 +72,6 @@ MODEL_PRICING = {
     "hunyuan-turbo": {"input": 0.002, "output": 0.007},
 }
 
-
 @dataclass
 class CallRecord:
     """单次 LLM 调用记录"""
@@ -85,7 +84,6 @@ class CallRecord:
     timestamp: datetime = field(default_factory=datetime.utcnow)
     purpose: str = ""            # 此次调用的用途标注，如 "route", "analyze", "summarize"
     duration_ms: int = 0
-
 
 @dataclass
 class SessionCostTracker:
@@ -147,7 +145,6 @@ import time
 from openai import OpenAI
 from contextlib import contextmanager
 
-
 def calculate_cost(model: str, input_tokens: int, output_tokens: int,
                    cache_read_tokens: int = 0) -> float:
     pricing = MODEL_PRICING.get(model, {"input": 0.003, "output": 0.015})
@@ -157,7 +154,6 @@ def calculate_cost(model: str, input_tokens: int, output_tokens: int,
     cache_cost = cache_read_tokens * pricing["input"] * cache_discount / 1000
     output_cost = output_tokens * pricing["output"] / 1000
     return input_cost + cache_cost + output_cost
-
 
 class TrackedLLMClient:
     """带成本追踪的 LLM 客户端"""
@@ -213,7 +209,6 @@ class TrackedLLMClient:
 
         return response
 
-
 class BudgetExceededError(Exception):
     pass
 ```
@@ -242,10 +237,9 @@ TOOLS = [
     }
 ]
 
-
 def run_agent_with_cost_tracking(user_query: str, budget_usd: float = 0.05) -> dict:
     tracker = SessionCostTracker(budget_usd=budget_usd)
-    client_raw = OpenAI(api_key="YOUR_KEY", base_url="https://api.yotradeapi.com/v1")
+    client_raw = OpenAI(api_key="YOUR_KEY", base_url="https://your-relay.example.com/v1")
     llm = TrackedLLMClient(client_raw, tracker)
 
     messages = [
@@ -297,7 +291,6 @@ def run_agent_with_cost_tracking(user_query: str, budget_usd: float = 0.05) -> d
         "status": "max_iterations_reached",
         "cost_summary": tracker.summary()
     }
-
 
 def execute_tool(name: str, args: dict) -> dict:
     # 实际项目中替换为真实工具调用
@@ -386,4 +379,3 @@ print(f"工具 Schema 占用约 {tools_token_cost} tokens/次调用")
 - [LLM 成本优化完整检查清单](/blog/llm-cost-optimization-checklist/)
 - [AI 编程 Agent 月均成本真实测算](/blog/ai-coding-monthly-cost-real/)
 
-想统一管理多个 Agent 的 API 账单并自动获得用量折扣，[YoTradeApi](https://yotradeapi.com) 提供完善的用量统计面板，支持 Claude、GPT、混元等主流模型，一个平台搞定所有账单。

@@ -37,17 +37,17 @@ Roo Code 的「API Profile」比 Cline 更灵活：可以同时存多个 profile
 
 | 字段 | 填什么 |
 | --- | --- |
-| Profile Name | `yotrade-sonnet` |
+| Profile Name | `relay-sonnet` |
 | API Provider | OpenAI Compatible |
-| Base URL | `https://yotradeapi.com/v1` |
-| API Key | `sk-yo-...` |
+| Base URL | `https://your-relay.example.com/v1` |
+| API Key | `sk-...` |
 | Model | `claude-sonnet-4-6` |
 
 按这个模板再建几个：
 
-- `yotrade-opus` → claude-opus-4-7
-- `yotrade-haiku` → claude-haiku-4-5
-- `yotrade-gpt5` → gpt-5
+- `relay-opus` → claude-opus-4-7
+- `relay-haiku` → claude-haiku-4-5
+- `relay-gpt5` → gpt-5
 
 ## 三、Mode 系统：每个 Mode 用不同模型
 
@@ -55,11 +55,11 @@ Roo Code 内置几个 mode：
 
 | Mode | 用途 | 推荐 Profile |
 | --- | --- | --- |
-| Code | 写代码 | yotrade-sonnet |
-| Architect | 架构规划 | yotrade-opus |
-| Ask | 问答 | yotrade-haiku |
-| Debug | 调试 | yotrade-opus |
-| Orchestrator (Boomerang) | 子任务调度 | yotrade-sonnet |
+| Code | 写代码 | relay-sonnet |
+| Architect | 架构规划 | relay-opus |
+| Ask | 问答 | relay-haiku |
+| Debug | 调试 | relay-opus |
+| Orchestrator (Boomerang) | 子任务调度 | relay-sonnet |
 
 设置 → Modes → 每个 mode 指定默认 API Profile。
 
@@ -162,7 +162,7 @@ modes:
       3. 建议修改（nice-to-have）
       4. 学习点（可选）
     groups: [read, command]
-    apiProfile: yotrade-opus
+    apiProfile: relay-opus
 ```
 
 这种 mode 可以 commit 进 repo，团队成员共享。
@@ -187,4 +187,3 @@ modes:
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 - [AI 编程代理成本控制实战](/blog/ai-coding-agent-cost-control/)
 
-需要支持 Roo Code 多 Profile 的中转？[YoTradeApi](https://yotradeapi.com) 一把 Key 接所有模型，按上面模板配置即可。

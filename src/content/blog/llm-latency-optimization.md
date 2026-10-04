@@ -160,7 +160,7 @@ client = OpenAI(base_url=region_endpoint("cn-east"), ...)
 
 ```bash
 for region in cn-east cn-north cn-south; do
-    time curl -s https://"$region".yotradeapi.com/v1/chat/completions \
+    time curl -s https://"$region".your-relay.example.com/v1/chat/completions \
       -d '{"model":"claude-sonnet-4-6","messages":[{"role":"user","content":"hi"}]}'
 done
 ```
@@ -276,4 +276,4 @@ p50 / p95 / p99 跟踪起来，异常立刻发现。
 - [LLM 流式 UI 实战模式](/blog/llm-streaming-ui-patterns/)
 - [LLM API 限速处理](/blog/llm-rate-limit-handling/)
 
-延迟优化 + 稳定中转 = 用户能感受到的"快"。[YoTradeApi](https://yotradeapi.com) 支持多区域接入 + caching 透传，按上面方法配置即可。
+延迟优化 + 稳定中转 = 用户能感受到的"快"。

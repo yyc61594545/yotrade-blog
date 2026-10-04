@@ -85,8 +85,8 @@ docs/_build/
 中转配置：
 
 ```bash
-export OPENAI_API_BASE="https://yotradeapi.com/v1"
-export OPENAI_API_KEY="sk-yo-..."
+export OPENAI_API_BASE="https://your-relay.example.com/v1"
+export OPENAI_API_KEY="sk-..."
 ```
 
 ## 三、Step 1：先建保护网
@@ -281,4 +281,3 @@ Aider 默认每次成功就 commit。在长重构中关掉它，自己按"语义
 - [AI Agent Prompt Engineering 中文实战](/blog/agent-prompt-engineering-cn/)
 - [用 AI 编程工具一周写一个 SaaS](/blog/saas-with-ai-coding-tools/)
 
-需要 Architect + Editor 双模型同 Key 调用？[YoTradeApi](https://yotradeapi.com) 支持 Opus 4.7 + Sonnet 4.6 同一把 key，按上面 yaml 配置直接接入。

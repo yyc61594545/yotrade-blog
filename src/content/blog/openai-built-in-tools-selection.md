@@ -69,7 +69,7 @@ Responses API 上线后，OpenAI 把过去分散在 Assistants API、ChatGPT 网
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://api.yotradeapi.com/v1",  # 国内中转地址
+    base_url="https://your-relay.example.com/v1",  # 国内中转地址
     api_key="your_api_key"
 )
 
@@ -140,7 +140,7 @@ Responses API 里多轮工具调用的完整循环写法（包括工具结果如
 
 ## 九、国内访问建议
 
-这些内置工具都跑在 OpenAI 官方服务端(沙箱、搜索索引都是 OpenAI 托管),意味着无论走哪个工具,底层请求依然要打到 `api.openai.com`。国内直连不稳定时,通过中转服务(如 [YoTradeApi](https://yotradeapi.com))把 `base_url` 换成中转地址即可,`tools` 参数和工具调用逻辑不需要做任何改动,SDK 层完全兼容。
+这些内置工具都跑在 OpenAI 官方服务端(沙箱、搜索索引都是 OpenAI 托管),意味着无论走哪个工具,底层请求依然要打到 `api.openai.com`。国内直连不稳定时,通过中转服务把 `base_url` 换成中转地址即可,`tools` 参数和工具调用逻辑不需要做任何改动,SDK 层完全兼容。
 
 ## 十、相关阅读
 
@@ -150,4 +150,3 @@ Responses API 里多轮工具调用的完整循环写法（包括工具结果如
 - [LLM 并行函数调用实战](/blog/llm-function-calling-parallel/)
 - [OpenAI Responses API 完整使用指南](/blog/openai-responses-api-guide/)
 
-如果你的项目需要在国内稳定调用这些内置工具，[YoTradeApi](https://yotradeapi.com) 提供兼容 OpenAI SDK 的 API 中转，改一行 `base_url` 即可接入，无需额外改造。

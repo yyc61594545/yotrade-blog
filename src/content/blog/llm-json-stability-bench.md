@@ -136,4 +136,3 @@ def run_case(client, prompt, schema, repeats=5):
 - [OpenAI Structured Outputs vs tool_choice 选型指南](/blog/openai-structured-outputs-vs-tool/)
 - [LLM Function Calling 并行调用实战](/blog/llm-function-calling-parallel/)
 
-如果你的评测已经跑出了模型选型结论，需要频繁切换 API 供应商或做多模型对比测试，用 [YoTradeApi](https://yotradeapi.com) 一个中转账号访问所有主流模型，省去多头开票和分别管理密钥的麻烦。

@@ -63,9 +63,9 @@ test-cmd: pytest --tb=short -q
 auto-commits: false    # TDD 流程中手动 commit，确保每步可回溯
 ```
 
-> 如果在国内访问 Claude API 有困难，可以通过 [YoTradeApi](https://yotradeapi.com) 配置中转：
+> 如果在国内访问 Claude API 有困难，可以通过中转服务商配置中转：
 > ```yaml
-> openai-api-base: https://api.yotradeapi.com/v1
+> openai-api-base: https://your-relay.example.com/v1
 > openai-api-key: YOUR_KEY
 > model: claude-sonnet-4-5
 > ```
@@ -245,22 +245,18 @@ USER_DISCOUNTS = {
 
 FREE_SHIPPING_THRESHOLD = 99.0
 
-
 @dataclass
 class OrderItem:
     price: float
     qty: int
 
-
 @dataclass
 class ShippingAddress:
     city: str
 
-
 def calculate_item_price(items: list[OrderItem], user_type: str) -> float:
     discount = USER_DISCOUNTS.get(user_type, 1.0)
     return sum(item.price * item.qty * discount for item in items)
-
 
 def apply_coupon(total: float, coupon: Optional[str]) -> float:
     if not coupon:
@@ -273,12 +269,10 @@ def apply_coupon(total: float, coupon: Optional[str]) -> float:
         return total * (1 - pct)
     return total
 
-
 def calculate_shipping(total: float, addr: Optional[ShippingAddress]) -> float:
     if not addr or total >= FREE_SHIPPING_THRESHOLD:
         return 0.0
     return 8.0 if addr.city in TIER1_CITIES else 15.0
-
 
 def calc(items, user_type, coupon=None, shipping_addr=None):
     # 保持原始接口兼容，内部使用新结构
@@ -354,4 +348,3 @@ Aider 自动运行 `pytest`，确认全部测试通过后才结束。
 - [AI 辅助测试自动化：真实案例与避坑总结](/blog/ai-test-automation-real-cases/)
 - [AI 代码重构的常见错误与防坑指南](/blog/ai-coding-mistakes-to-avoid/)
 
-想在国内稳定使用 Aider + Claude？[YoTradeApi](https://yotradeapi.com) 提供 Claude API 中转，支持 Aider 直接配置，人民币充值，告别访问限制。

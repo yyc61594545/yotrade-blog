@@ -138,7 +138,7 @@ aider --cache-prompts
 ```bash
 # 同一个 prompt 发两次
 for i in 1 2; do
-  curl -s https://yotradeapi.com/v1/messages \
+  curl -s https://your-relay.example.com/v1/messages \
     -H "x-api-key: $KEY" -H "anthropic-version: 2023-06-01" \
     -H "content-type: application/json" \
     -d "$(cat payload.json)" \
@@ -200,4 +200,3 @@ done
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 - [Claude Sonnet 4.6 与 Opus 4.7 怎么选](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 
-[YoTradeApi](https://yotradeapi.com) 后台展示每条请求的 `cache_read_input_tokens` 与 `cache_creation_input_tokens`，方便量化缓存命中率与节省额。

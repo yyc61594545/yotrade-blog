@@ -38,8 +38,8 @@ brew install codex   # macOS
 ## 二、最小配置：环境变量
 
 ```bash
-export OPENAI_API_KEY="sk-your-yotrade-key"
-export OPENAI_BASE_URL="https://yotradeapi.com/v1"
+export OPENAI_API_KEY="sk-your-key"
+export OPENAI_BASE_URL="https://your-relay.example.com/v1"
 ```
 
 然后在项目目录跑：
@@ -64,24 +64,24 @@ approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 disable_response_storage = true
 
-[model_providers.yotrade]
-name = "YoTradeApi"
-base_url = "https://yotradeapi.com/v1"
+[model_providers.relay]
+name = "Relay"
+base_url = "https://your-relay.example.com/v1"
 wire_api = "responses"
-env_key = "YOTRADE_API_KEY"
+env_key = "RELAY_API_KEY"
 
 [profiles.daily]
-model_provider = "yotrade"
+model_provider = "relay"
 model = "gpt-5"
 approval_policy = "on-request"
 
 [profiles.opus]
-model_provider = "yotrade"
+model_provider = "relay"
 model = "claude-opus-4-7"
 approval_policy = "on-request"
 
 [profiles.fast]
-model_provider = "yotrade"
+model_provider = "relay"
 model = "claude-haiku-4-5"
 approval_policy = "on-request"
 ```
@@ -94,10 +94,10 @@ codex --profile opus           # 复杂任务
 codex --profile fast           # 快查
 ```
 
-把 `YOTRADE_API_KEY` 放进 shell 配置：
+把 `RELAY_API_KEY` 放进 shell 配置：
 
 ```bash
-export YOTRADE_API_KEY="sk-..."
+export RELAY_API_KEY="sk-..."
 ```
 
 ## 四、Approval Policy（批准策略）
@@ -208,4 +208,3 @@ Codex CLI 本身设计是 OpenAI 模型优先，但因为协议兼容，通过�
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 - [Cherry Studio 国内 API 中转配置指南](/blog/cherry-studio-cn-config/)
 
-需要同时支持 OpenAI Responses API 与 Anthropic Messages 的中转？[YoTradeApi](https://yotradeapi.com) 同 Key 跑两种协议，按上面 toml 配置直接接入。

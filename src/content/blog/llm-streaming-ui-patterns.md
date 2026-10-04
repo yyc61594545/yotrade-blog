@@ -39,8 +39,8 @@ ChatGPT 风格的流式输出 UI 看起来简单，写好其实坑很多：abort
 import { OpenAI } from "openai";
 
 const client = new OpenAI({
-  apiKey: process.env.YOTRADE_KEY,
-  baseURL: "https://yotradeapi.com/v1",
+  apiKey: process.env.RELAY_API_KEY,
+  baseURL: "https://your-relay.example.com/v1",
 });
 
 export async function POST(req: Request) {
@@ -180,8 +180,8 @@ import { streamText } from "ai";
 import { createOpenAI } from "@ai-sdk/openai";
 
 const openai = createOpenAI({
-  apiKey: process.env.YOTRADE_KEY,
-  baseURL: "https://yotradeapi.com/v1",
+  apiKey: process.env.RELAY_API_KEY,
+  baseURL: "https://your-relay.example.com/v1",
 });
 
 export async function POST(req: Request) {
@@ -273,7 +273,7 @@ async function send(input) {
 // +server.ts
 export async function POST({ request }) {
   const { messages } = await request.json();
-  const upstream = await fetch("https://yotradeapi.com/v1/chat/completions", { ... });
+  const upstream = await fetch("https://your-relay.example.com/v1/chat/completions", { ... });
   return new Response(upstream.body, {
     headers: { "content-type": "text/event-stream" },
   });
@@ -381,4 +381,3 @@ export async function POST(req: Request) {
 - [LLM API 限速处理](/blog/llm-rate-limit-handling/)
 - [前端开发者用 AI 编程的实战工作流](/blog/ai-coding-for-frontend-dev/)
 
-UI 接 [YoTradeApi](https://yotradeapi.com) 中转，按上面的模板服务端代理即可。

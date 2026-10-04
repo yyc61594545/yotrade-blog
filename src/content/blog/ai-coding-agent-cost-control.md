@@ -142,8 +142,6 @@ Cursor、Cline 失败时默认重试 3 次。如果你的中转 429 频繁，每
 
 ### 中转后台层
 
-YoTradeApi 这类网关一般支持：
-
 - 单 key 日预算上限
 - 单 key 月预算上限
 - 触发告警邮件 / webhook
@@ -159,8 +157,8 @@ import os, requests, time
 
 def check_budget():
     r = requests.get(
-        "https://yotradeapi.com/v1/usage",  # 假设接口
-        headers={"Authorization": f"Bearer {os.environ['YOTRADE_KEY']}"},
+        "https://your-relay.example.com/v1/usage",  # 假设接口
+        headers={"Authorization": f"Bearer {os.environ['RELAY_API_KEY']}"},
     )
     today = r.json().get("today_usd", 0)
     if today > 5:
@@ -213,4 +211,3 @@ while True:
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [Cursor Background Agent 国内配置与使用](/blog/cursor-background-agent-config/)
 
-需要带预算上限、用量看板、告警通知的中转？[YoTradeApi](https://yotradeapi.com) 后台直接配置，每天看一眼就够。

@@ -113,4 +113,3 @@ OpenAI 的公开规则要求购买发生在其支持的国家或地区，卡片�
 - [2026 给 ChatGPT 充值的虚拟信用卡推荐与避坑指南](/blog/cn-virtual-card-for-chatgpt-2026/)
 - [ChatGPT Plus 2026 最新充值方法（国内亲测可用）](/blog/cn-chatgpt-plus-payment-2026/)
 
-如果你的真实需求是通过统一接口调用模型，而不是处理网页订阅付款，[YoTradeApi](https://yotradeapi.com) 可提供多模型 API 接入与集中管理，具体方案可通过微信咨询报价。

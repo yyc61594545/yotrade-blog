@@ -229,7 +229,7 @@ except APIError as e:
 
 ### 使用 API 中转降低成本
 
-如果你同时接入多个国内外大模型，通过 API 中转服务统一管理密钥和账单会更高效。[YoTradeApi](https://yotradeapi.com) 支持将百川、GLM、豆包、Claude、GPT 等模型统一在一个接入点，省去多平台充值的麻烦。
+如果你同时接入多个国内外大模型，通过 API 中转服务统一管理密钥和账单会更高效。
 
 ---
 
@@ -241,4 +241,3 @@ except APIError as e:
 - [DeepSeek Coder 深度评测](/blog/cn-deepseek-coder-deep-review/)
 - [国内 AI 中转市场全景概览](/blog/cn-llm-relay-market-overview/)
 
-如果你需要同时对接多个国内外大模型，[YoTradeApi](https://yotradeapi.com) 提供统一 OpenAI 兼容接口，一个 Key 访问百川、GLM、Claude、GPT-4o 等主流模型，账单人民币结算。

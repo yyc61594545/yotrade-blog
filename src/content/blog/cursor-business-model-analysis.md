@@ -128,7 +128,7 @@ Cursor 是否会引入"Agent 任务包"或"按消耗计费"选项，是观察其
 - **选套餐**：轻度用户 Free 够用，日常写代码 Pro 值回票价，企业场景考虑 Business 的隐私模式
 - **理解限速**：慢响应多半是成本路由，不是 Bug
 - **自建方案的边界**：如果你有 API Key，通过 Continue.dev 或 Claude Code CLI 自建成本可能更低，但失去 Cursor 的工作流集成
-- **使用第三方 API 中转**：如果你已购买 Pro 但仍想在其他工具里用同款模型，[YoTradeApi](https://yotradeapi.com) 提供 Claude/GPT-4o 等模型的统一 API 中转，按量计费灵活。
+- **使用第三方 API 中转**：如果你已购买 Pro 但仍想在其他工具里用同款模型，中转服务商 提供 Claude/GPT-4o 等模型的统一 API 中转，按量计费灵活。
 
 ## 九、相关阅读
 
@@ -137,4 +137,3 @@ Cursor 是否会引入"Agent 任务包"或"按消耗计费"选项，是观察其
 - [AI 编程工具供应商锁定风险分析](/blog/ai-coding-tool-vendor-lockin/)
 - [Windsurf 中文设置与使用指南](/blog/windsurf-cn-setup/)
 
-想以更低成本体验 Claude Sonnet / GPT-4o 等主流模型，[YoTradeApi](https://yotradeapi.com) 提供统一 API 接入，无需翻墙，按量计费，适合个人开发者和团队使用。

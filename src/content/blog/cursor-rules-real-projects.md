@@ -229,8 +229,6 @@ payment 模块正在重构，本周不要修改 src/payment/ 下的任何文件
 
 **定期 Rules 回顾**：每个 Sprint 结束或每月，团队集中讨论一次 Rules 是否需要更新。把 Rules 维护变成团队习惯，而不是某个人的负担。
 
-如果你在用 Cursor 进行 API 开发并需要稳定的 AI 接入，[YoTradeApi](https://yotradeapi.com) 提供国内可用的 Claude/GPT 中转，支持按量付费，适合团队共享使用。
-
 ## 九、相关阅读
 
 - [.cursorrules 最佳实践：让 Cursor 真正懂你的项目](/blog/cursor-rules-best-practices/)

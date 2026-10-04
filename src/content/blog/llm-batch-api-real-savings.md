@@ -187,7 +187,7 @@ Batch API 的处理顺序不保证，如果任务有 SLA（如必须在 1 小时
 
 **结果延迟对业务的影响**：如果任务延迟导致后续流程等待，要算上等待的机会成本。
 
-**中转服务兼容性**：国内通过中转服务访问时，需确认中转商是否支持 Batch API 端点。[YoTradeApi](https://yotradeapi.com) 完整支持 OpenAI 和 Anthropic 的 Batch API，可直接替换 `base_url` 使用，无需修改批处理逻辑。
+**中转服务兼容性**：国内通过中转服务访问时，需确认中转商是否支持 Batch API 端点。
 
 **错误重试策略**：批次整体失败率通常低于实时 API（服务端排队更稳定），但单个请求失败时排查更慢，需要做好日志记录。
 
@@ -213,4 +213,3 @@ Batch API 的处理顺序不保证，如果任务有 SLA（如必须在 1 小时
 - [Prompt Caching 实战：成本优化的另一把钥匙](/blog/prompt-caching-cost-optimization/)
 - [LLM 定价横向对比 2026](/blog/llm-pricing-comparison-2026/)
 
-想直接开始用 Batch API 降本，[YoTradeApi](https://yotradeapi.com) 兼容 OpenAI 和 Anthropic 的完整批处理端点，国内直连无需代理，注册即可按量计费。

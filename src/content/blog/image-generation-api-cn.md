@@ -41,7 +41,7 @@ heroImage: ../../assets/blog-placeholder-2.jpg
 from openai import OpenAI
 import base64
 
-client = OpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = OpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 resp = client.images.generate(
     model="gpt-image-1",
@@ -85,9 +85,9 @@ resp = client.images.edit(
 import google.generativeai as genai
 
 genai.configure(
-    api_key="sk-yo-...",
+    api_key="sk-...",
     transport="rest",
-    client_options={"api_endpoint": "https://yotradeapi.com"},
+    client_options={"api_endpoint": "https://your-relay.example.com"},
 )
 
 model = genai.ImageGenerationModel("imagen-3.0-generate-002")
@@ -246,4 +246,3 @@ except OpenAIError as e:
 - [LLM Vision API 国内对比](/blog/llm-vision-api-comparison/)
 - [Python 异步并发调用 LLM API](/blog/python-async-llm-client/)
 
-需要支持 GPT Image / Imagen / Flux 多家的中转？[YoTradeApi](https://yotradeapi.com) 一把 Key 通调，按上面 SDK 代码接入。

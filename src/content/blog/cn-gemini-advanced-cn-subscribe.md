@@ -124,8 +124,8 @@ Google 的支付系统会做地区校验，国内用户常见的失败原因：
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="your_yotrade_key",
-    base_url="https://yotradeapi.com/v1",
+    api_key="your_api_key",
+    base_url="https://your-relay.example.com/v1",
 )
 
 resp = client.chat.completions.create(
@@ -160,4 +160,3 @@ print(resp.choices[0].message.content)
 - [Claude Pro / Plus 订阅国内开通指南](/blog/cn-claude-pro-plus-difference/)
 - [Grok API 国内访问全方案对比](/blog/cn-grok-api-cn-access/)
 
-国内付款订阅海外 AI 服务有门槛，如果只是想用 Gemini 的 API 能力，[YoTradeApi](https://yotradeapi.com) 支持 Gemini 全系列模型，按量付费无需海外信用卡。

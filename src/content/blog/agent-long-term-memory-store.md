@@ -105,4 +105,3 @@ Agent 要不要有长期记忆，业界已经没有争议了——单会话上�
 - [2026 向量数据库对比：Chroma/Qdrant/Milvus/pgvector](/blog/vector-db-comparison-2026/)
 - [Agent 上下文预算分配算法](/blog/agent-context-budget-allocation/)
 
-如果你的 Agent 记忆系统需要同时调用多家模型做 embedding 和摘要生成，[YoTradeApi](https://yotradeapi.com) 提供统一的 API 中转，降低多模型对接的工程成本。

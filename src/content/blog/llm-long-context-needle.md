@@ -92,4 +92,3 @@ def run_test(model_call, haystack_text, needle, question, depths, lengths):
 - [Claude 1M 上下文使用指南](/blog/claude-1m-context-guide/)
 - [上下文压缩策略详解](/blog/context-compression-strategies/)
 
-想用多个模型跑同一份 NIAH 测试脚本做横向对比？通过 [YoTradeApi](https://yotradeapi.com) 一个 Key 就能调用 Claude、GPT、Gemini 等主流模型，不用为每家单独开账号配置。

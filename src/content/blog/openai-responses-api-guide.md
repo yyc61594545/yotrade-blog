@@ -39,8 +39,8 @@ OpenAI 在 2024 年末推出了 Responses API，作为 Chat Completions 的下�
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="YOUR_YOTRADE_KEY",
-    base_url="https://yotradeapi.com/v1",
+    api_key="YOUR_RELAY_API_KEY",
+    base_url="https://your-relay.example.com/v1",
 )
 
 resp = client.responses.create(
@@ -184,7 +184,7 @@ while True:
 ## 九、Codex CLI 用的就是 Responses API
 
 ```toml
-[model_providers.yotrade]
+[model_providers.relay]
 wire_api = "responses"
 ```
 
@@ -208,12 +208,12 @@ wire_api = "responses"
 | 中转 | Chat Completions | Responses API |
 | --- | --- | --- |
 | 多数中转 | ✓ | 看支持情况 |
-| YoTradeApi 类完整中转 | ✓ | ✓ |
+| 中转服务类完整中转 | ✓ | ✓ |
 
 接入前用 curl 测一下：
 
 ```bash
-curl -i https://yotradeapi.com/v1/responses \
+curl -i https://your-relay.example.com/v1/responses \
   -H "Authorization: Bearer $KEY" \
   -d '{"model":"gpt-5","input":"hi"}'
 ```
@@ -227,4 +227,3 @@ curl -i https://yotradeapi.com/v1/responses \
 - [OpenAI 兼容协议 vs Anthropic 原生协议](/blog/openai-compatible-vs-anthropic-protocol/)
 - [GPT-5 与 Claude Opus 4.7 编程能力对比](/blog/gpt-5-vs-claude-opus-4-7-coding/)
 
-需要 Responses API 兼容的中转？[YoTradeApi](https://yotradeapi.com) 支持 `/v1/responses` 端点，Codex CLI 等工具可以直接接入。

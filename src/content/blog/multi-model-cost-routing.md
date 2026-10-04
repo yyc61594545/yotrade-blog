@@ -257,7 +257,6 @@ class SemanticCache:
         key = self._make_key(request, model)
         self.redis.setex(key, self.ttl, response)
 
-
 async def cached_smart_route(user_request: str, cache: SemanticCache) -> str:
     model = heuristic_route(user_request)
 
@@ -401,4 +400,3 @@ async def call_with_fallback(model: str, messages: list, **kwargs) -> str:
 - [AI 编码工具月度成本实测](/blog/ai-coding-monthly-cost-real/)
 - [LLM 价格对比 2026](/blog/llm-pricing-comparison-2026/)
 
-想要一个现成的多模型路由方案？[YoTradeApi](https://yotradeapi.com) 提供统一入口访问 Claude、GPT-4、DeepSeek 等主流模型，支持按需切换，让你专注业务逻辑而非模型管理。

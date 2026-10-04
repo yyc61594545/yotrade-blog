@@ -24,7 +24,7 @@ GPT-5 和 Claude Opus 4.7 是 2026 年最常被拿来对比的两个旗舰。市
 
 ## 一、测试方法
 
-所有测试通过同一个中转网关（YoTradeApi）发出，避免网络差异。模型版本：
+模型版本：
 
 - GPT-5（OpenAI Responses API，gpt-5）
 - Claude Opus 4.7（Anthropic Messages API，claude-opus-4-7）
@@ -147,4 +147,3 @@ aider --architect \
 - [Aider 中文配置与最佳实践](/blog/aider-cn-config-guide/)
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 
-在 [YoTradeApi](https://yotradeapi.com) 用同一个 Key 同时调用 GPT-5 和 Claude Opus 4.7，按场景自由切换。

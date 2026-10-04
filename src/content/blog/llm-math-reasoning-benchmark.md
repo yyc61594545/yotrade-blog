@@ -267,4 +267,3 @@ def batch_math_eval(problems: list[dict], model: str = "gpt-4o") -> dict:
 - [零一万物 Yi-Large API 开发者评测](/blog/cn-yi-large-developer-review/)
 - [智谱 GLM 系列开发者视角评测](/blog/cn-zhipu-glm-developer-review/)
 
-如果你在构建数学辅导或科学计算类应用，[YoTradeApi](https://yotradeapi.com) 提供统一 API 中转，支持一键切换 o3-mini、DeepSeek-R1、GPT-4o 等推理模型，方便 A/B 测试找到最适合你场景的模型配置。

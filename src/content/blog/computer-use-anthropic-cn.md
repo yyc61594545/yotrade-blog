@@ -65,8 +65,8 @@ docker pull ghcr.io/anthropics/anthropic-quickstarts:computer-use-demo-latest
 
 # 跑（含 noVNC）
 docker run \
-    -e ANTHROPIC_API_KEY=sk-yo-... \
-    -e ANTHROPIC_BASE_URL=https://yotradeapi.com \
+    -e ANTHROPIC_API_KEY=sk-... \
+    -e ANTHROPIC_BASE_URL=https://your-relay.example.com \
     -v $HOME/.anthropic:/home/computeruse/.anthropic \
     -p 5900:5900 \
     -p 8501:8501 \
@@ -81,7 +81,7 @@ docker run \
 
 ## 四、走中转
 
-`ANTHROPIC_BASE_URL=https://yotradeapi.com` 即可。中转需要支持：
+`ANTHROPIC_BASE_URL=https://your-relay.example.com` 即可。中转需要支持：
 
 - `/v1/messages` 端点
 - `computer-use-*` beta 头透传
@@ -90,7 +90,7 @@ docker run \
 测试：
 
 ```bash
-curl https://yotradeapi.com/v1/messages \
+curl https://your-relay.example.com/v1/messages \
   -H "x-api-key: $KEY" \
   -H "anthropic-version: 2023-06-01" \
   -H "anthropic-beta: computer-use-2024-10-22" \
@@ -112,8 +112,8 @@ from anthropic.types.beta import BetaToolComputerUse20241022Param
 import base64, subprocess
 
 client = anthropic.Anthropic(
-    base_url="https://yotradeapi.com",
-    api_key="sk-yo-...",
+    base_url="https://your-relay.example.com",
+    api_key="sk-...",
 )
 
 def screenshot():
@@ -267,4 +267,3 @@ while True:
 - [AI API 中转的安全与合规边界](/blog/api-relay-security-compliance/)
 - [API Key 泄露应急响应](/blog/api-key-leak-emergency-response/)
 
-需要透传 computer-use beta 头的中转？[YoTradeApi](https://yotradeapi.com) 完整透传 Anthropic beta headers，按上面 Docker 命令直接接入。

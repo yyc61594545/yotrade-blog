@@ -154,7 +154,7 @@ Batch API 的结果是**逐条返回状态**，不是全有全无。一批 1,000
 ```python
 import anthropic
 
-client = anthropic.Anthropic(api_key="YOUR_KEY", base_url="https://api.yotradeapi.com")
+client = anthropic.Anthropic(api_key="YOUR_KEY", base_url="https://your-relay.example.com")
 
 # 拉取批次结果
 batch_result = client.messages.batches.results(batch_id)
@@ -211,7 +211,7 @@ Batch 折扣在各模型上都适用。对于准确率要求高的任务，在 B
 
 ## 六、中转接入注意事项
 
-通过 API 中转服务（如 [YoTradeApi](https://yotradeapi.com)）使用 Batch API 时，需确认中转商是否原生支持 Batch 端点：
+通过 API 中转服务使用 Batch API 时，需确认中转商是否原生支持 Batch 端点：
 
 - `/v1/messages/batches` - 提交批次
 - `/v1/messages/batches/{id}` - 查询状态
@@ -224,7 +224,7 @@ import anthropic
 
 client = anthropic.Anthropic(
     api_key="your-relay-key",
-    base_url="https://api.yotradeapi.com"  # 中转地址
+    base_url="https://your-relay.example.com"  # 中转地址
 )
 
 # 提交一个单条批次做连通性测试
@@ -265,4 +265,3 @@ Anthropic 对批次结果保留 29 天，中途不会丢失。轮询到 `ended` 
 - [Claude 1M 上下文窗口实战使用指南](/blog/claude-1m-context-guide/)
 - [Claude Sonnet 4.6 vs Opus 4.7：如何为你的项目选型](/blog/claude-sonnet-4-6-vs-opus-4-7/)
 
-想用最低成本体验 Claude 全系列模型，[YoTradeApi](https://yotradeapi.com) 支持 Message Batches API 完整端点，无需额外配置即可享受 50% 折扣。

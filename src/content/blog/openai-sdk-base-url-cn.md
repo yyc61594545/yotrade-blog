@@ -31,7 +31,7 @@ OpenAI Compatible 网关的设计前提是：客户端不知道也不关心后�
 2. SDK 调用的是 OpenAI 协议的端点，不是各厂商自家 endpoint。
 3. 模型名是网关认识的（不要直接传 `gpt-4o`，多半要写成网关定义的别名）。
 
-下文示例统一用 `https://yotradeapi.com/v1` 作为 base_url。
+下文示例统一用 `https://your-relay.example.com/v1` 作为 base_url。
 
 ## 二、Python：openai-python SDK
 
@@ -41,8 +41,8 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    api_key=os.environ["YOTRADE_API_KEY"],
-    base_url="https://yotradeapi.com/v1",
+    api_key=os.environ["RELAY_API_KEY"],
+    base_url="https://your-relay.example.com/v1",
     timeout=60.0,
     max_retries=2,
 )
@@ -129,8 +129,8 @@ data_url = f"data:image/png;base64,{b64}"
 import OpenAI from "openai";
 
 const client = new OpenAI({
-  apiKey: process.env.YOTRADE_API_KEY,
-  baseURL: "https://yotradeapi.com/v1",
+  apiKey: process.env.RELAY_API_KEY,
+  baseURL: "https://your-relay.example.com/v1",
   timeout: 60_000,
   maxRetries: 2,
 });
@@ -197,8 +197,8 @@ import (
 )
 
 func main() {
-    cfg := openai.DefaultConfig(os.Getenv("YOTRADE_API_KEY"))
-    cfg.BaseURL = "https://yotradeapi.com/v1"
+    cfg := openai.DefaultConfig(os.Getenv("RELAY_API_KEY"))
+    cfg.BaseURL = "https://your-relay.example.com/v1"
     client := openai.NewClientWithConfig(cfg)
 
     stream, err := client.CreateChatCompletionStream(context.Background(), openai.ChatCompletionRequest{
@@ -237,8 +237,8 @@ use futures::StreamExt;
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let cfg = OpenAIConfig::new()
-        .with_api_key(std::env::var("YOTRADE_API_KEY")?)
-        .with_api_base("https://yotradeapi.com/v1");
+        .with_api_key(std::env::var("RELAY_API_KEY")?)
+        .with_api_base("https://your-relay.example.com/v1");
     let client = Client::with_config(cfg);
 
     let req = CreateChatCompletionRequestArgs::default()
@@ -267,7 +267,7 @@ async fn main() -> anyhow::Result<()> {
 ## 六、常见误区
 
 1. **base_url 多写或少写 `/v1`**：OpenAI Python/Node SDK 期望完整路径含 `/v1`；Anthropic CLI 则不需要。两者搞混会出 404。
-2. **混用环境变量名**：SDK 默认读 `OPENAI_API_KEY`。如果你设置的是 `YOTRADE_API_KEY`，必须手动传 `api_key=`，否则 SDK 静默 fallback 到空字符串再 401。
+2. **混用环境变量名**：SDK 默认读 `OPENAI_API_KEY`。如果你设置的是 `RELAY_API_KEY`，必须手动传 `api_key=`，否则 SDK 静默 fallback 到空字符串再 401。
 3. **embeddings 与 chat 走不同模型**：很多人改完 base_url 之后 chat 能用，但 embeddings 报 404，这是因为网关没接 embeddings 模型，需要单独配置或换模型名。
 4. **流式调用的 chunk 解析**：部分网关只在 chunk 末尾发 `[DONE]`，部分网关在中间发心跳行。SDK 一般能处理，但自己用裸 fetch 写的需要注意。
 
@@ -315,7 +315,7 @@ print(f"total p50={statistics.median(total):.2f}s")
 
 ```bash
 python smoke_openai_compatible.py \
-  --base-url https://yotradeapi.com/v1 \
+  --base-url https://your-relay.example.com/v1 \
   --api-key sk-... \
   --model claude-sonnet-4-6 \
   --runs 5 --stream
@@ -330,4 +330,3 @@ python smoke_openai_compatible.py \
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
 - [Cline 国内 API 配置详解](/blog/cline-cn-api-setup/)
 
-需要一个独立 API Key 做小流量测试？在 [YoTradeApi 注册](https://yotradeapi.com) 创建 key，把上面的 `base_url` 直接接进现有 SDK 即可。

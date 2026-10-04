@@ -93,4 +93,3 @@ RAG 质量评测还应固定测试集所依赖的索引代次，否则同一份�
 - [RAG Metadata Filter 设计：从字段选型到多租户隔离](/blog/rag-metadata-filter-design/)
 - [RAG 系统评测框架搭建实战](/blog/ai-rag-evaluation-framework/)
 
-如果你需要在文档更新评测中统一调用不同模型，[YoTradeApi](https://yotradeapi.com) 可提供兼容的 API 接入入口，方便复用索引验证与回归测试流程。

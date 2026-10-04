@@ -29,8 +29,8 @@ import asyncio
 from openai import AsyncOpenAI
 
 client = AsyncOpenAI(
-    api_key="sk-yo-...",
-    base_url="https://yotradeapi.com/v1",
+    api_key="sk-...",
+    base_url="https://your-relay.example.com/v1",
     timeout=60.0,
     max_retries=2,
 )
@@ -60,7 +60,7 @@ asyncio.run(main())
 import asyncio
 from openai import AsyncOpenAI
 
-client = AsyncOpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = AsyncOpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 sem = asyncio.Semaphore(10)   # 同时最多 10 个
 
 async def one(text):
@@ -168,8 +168,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
 log = logging.getLogger("batch")
 
 client = AsyncOpenAI(
-    api_key="sk-yo-...",
-    base_url="https://yotradeapi.com/v1",
+    api_key="sk-...",
+    base_url="https://your-relay.example.com/v1",
     timeout=60.0,
     max_retries=0,   # 自己实现重试
 )
@@ -291,4 +291,3 @@ start_http_server(9090)
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 - [流式 SSE 故障排查](/blog/streaming-sse-troubleshooting/)
 
-需要带 RPM/TPM 监控、独立 Key 限频的中转？[YoTradeApi](https://yotradeapi.com) 后台可见每个 Key 的实时用量与限频状态。

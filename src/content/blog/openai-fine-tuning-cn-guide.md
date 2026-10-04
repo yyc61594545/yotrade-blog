@@ -42,7 +42,7 @@ OpenAI 的微调流程本质是"在基础模型上用你的数据做增量训练
 
 ```python
 from openai import OpenAI
-client = OpenAI(api_key="你的Key", base_url="https://api.yotradeapi.com/v1")
+client = OpenAI(api_key="你的Key", base_url="https://your-relay.example.com/v1")
 
 # 第一步：上传训练数据
 file = client.files.create(
@@ -107,4 +107,3 @@ print(status.status)  # "running" -> "succeeded"
 - [OpenAI SDK Base URL 国内配置指南](/blog/openai-sdk-base-url-cn/)
 - [大模型价格全面对比（2026）](/blog/llm-pricing-comparison-2026/)
 
-不确定中转服务是否支持 Fine-Tuning 接口，[YoTradeApi](https://yotradeapi.com) 全量代理 OpenAI 官方接口，训练任务和普通对话调用用同一个 Key，人民币付费更省心。

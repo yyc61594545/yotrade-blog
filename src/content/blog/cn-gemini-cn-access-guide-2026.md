@@ -75,7 +75,7 @@ Gemini 是 Google 推出的多模态大模型系列，截至 2026 年中，Gemin
 
 ### 4.1 获取 API Key
 
-1. 登录中转服务商控制台（如 [YoTradeApi](https://yotradeapi.com)）
+1. 登录中转服务商控制台
 2. 创建新的 API Key
 3. 充值账户余额
 
@@ -87,7 +87,7 @@ Gemini 是 Google 推出的多模态大模型系列，截至 2026 年中，Gemin
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://api.yotradeapi.com/v1",
+    base_url="https://your-relay.example.com/v1",
     api_key="your-relay-api-key"
 )
 
@@ -226,4 +226,3 @@ A：大多数中转服务商支持支付宝、微信支付，无需境外支付�
 - [LLM Token 计算完整指南：tiktoken / Anthropic / 中文](/blog/token-counting-cn-guide/)
 - [GPT vs Gemini：国内开发者选型对比](/blog/claude-vs-gpt-vs-gemini-cn-developer/)
 
-国内稳定调用 Gemini 2.5 Pro / Flash 全系模型，[YoTradeApi](https://yotradeapi.com) 提供 OpenAI 兼容接口，支付宝充值，按量计费，立即可用。

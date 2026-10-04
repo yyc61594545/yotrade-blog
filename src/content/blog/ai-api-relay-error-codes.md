@@ -35,7 +35,7 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 最小 curl 模板（OpenAI Compatible）：
 
 ```bash
-curl -i https://yotradeapi.com/v1/chat/completions \
+curl -i https://your-relay.example.com/v1/chat/completions \
   -H "Authorization: Bearer $KEY" \
   -H "Content-Type: application/json" \
   -d '{
@@ -49,7 +49,7 @@ curl -i https://yotradeapi.com/v1/chat/completions \
 Anthropic 协议：
 
 ```bash
-curl -i https://yotradeapi.com/v1/messages \
+curl -i https://your-relay.example.com/v1/messages \
   -H "x-api-key: $KEY" \
   -H "anthropic-version: 2023-06-01" \
   -H "Content-Type: application/json" \
@@ -218,9 +218,9 @@ OpenAI 协议下的 429 还可能是模型层面限流（rate_limit_exceeded vs 
 排查：
 
 ```bash
-nslookup yotradeapi.com
-traceroute yotradeapi.com   # macOS/Linux
-tracert yotradeapi.com      # Windows
+nslookup your-relay.example.com
+traceroute your-relay.example.com   # macOS/Linux
+tracert your-relay.example.com      # Windows
 ```
 
 如果 DNS 解析失败，换 DNS（8.8.8.8 / 1.1.1.1）。
@@ -275,7 +275,7 @@ Cline 错误显示在 VSCode 侧栏底部。完整 trace 在 **Output → Cline*
 import time, requests
 
 PROBES = [
-    ("yotrade", "https://yotradeapi.com/v1/chat/completions", "sk-yo-..."),
+    ("relay", "https://your-relay.example.com/v1/chat/completions", "sk-..."),
     ("backup",  "https://other-relay.example.com/v1/chat/completions", "sk-bk-..."),
 ]
 
@@ -306,4 +306,3 @@ for name, url, key in PROBES:
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [AI API 中转稳定性测试方法](/blog/ai-api-relay-stability-test/)
 
-需要带完整用量日志、错误码可查的中转？[YoTradeApi](https://yotradeapi.com) 在后台展示每条请求的状态码、耗时与原因，方便排查。

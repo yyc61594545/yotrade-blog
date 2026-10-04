@@ -103,4 +103,3 @@ category: 技术深度
 - [Agent 上下文预算分配](/blog/agent-context-budget-allocation/)
 - [LLM 上下文工程实践](/blog/llm-context-engineering/)
 
-超长会话的淘汰策略调优离不开真实数据驱动的反复测试,而这类测试往往意味着大量的 API 调用成本,通过 [YoTradeApi](https://yotradeapi.com) 中转能明显降低多轮迭代验证淘汰阈值和分层规则的试错成本。

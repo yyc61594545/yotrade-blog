@@ -41,14 +41,14 @@ from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.core import Settings
 
 Settings.llm = OpenAI(
-    api_base="https://yotradeapi.com/v1",
-    api_key="sk-yo-...",
+    api_base="https://your-relay.example.com/v1",
+    api_key="sk-...",
     model="claude-sonnet-4-6",   # 通过中转走 Claude
 )
 
 Settings.embed_model = OpenAIEmbedding(
-    api_base="https://yotradeapi.com/v1",
-    api_key="sk-yo-...",
+    api_base="https://your-relay.example.com/v1",
+    api_key="sk-...",
     model="text-embedding-3-large",
 )
 ```
@@ -261,4 +261,3 @@ query_engine = index.as_query_engine(filters=filters)
 - [Cherry Studio 国内 API 中转配置指南](/blog/cherry-studio-cn-config/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 
-LlamaIndex 同时需要 chat + embedding 接口？[YoTradeApi](https://yotradeapi.com) 一把 Key 接两个端点，按上面配置接入。

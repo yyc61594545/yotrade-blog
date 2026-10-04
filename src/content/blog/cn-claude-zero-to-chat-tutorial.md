@@ -40,7 +40,7 @@ Claude 是 Anthropic 开发的大语言模型系列，目前主力版本是 Clau
 
 | 时间点 | 要做的事 |
 | --- | --- |
-| 0–1 分钟 | 打开 [YoTradeApi](https://yotradeapi.com) 官网，用邮箱注册 |
+| 0–1 分钟 | 打开中转服务商官网，用邮箱注册 |
 | 1–2 分钟 | 人民币充值（支持支付宝/微信），拿到 API Key |
 | 2–3 分钟 | 打开一个免费的网页聊天界面，填入 Key 和中转地址 |
 | 3–5 分钟 | 发送第一条消息，看到 Claude 回复 |
@@ -49,7 +49,7 @@ Claude 是 Anthropic 开发的大语言模型系列，目前主力版本是 Clau
 
 ## 四、第一步：注册拿 Key（1 分钟）
 
-打开 [YoTradeApi](https://yotradeapi.com)，邮箱注册后进入控制台，点"创建 API Key"，复制生成的 Key（通常以 `sk-` 开头）。这一步和注册普通网站账号没有区别，不需要手机号验证、不需要信用卡。
+这一步和注册普通网站账号没有区别，不需要手机号验证、不需要信用卡。
 
 充值走支付宝或微信，到账后余额按调用量（token 数）实时扣减，用多少扣多少，不是固定月费订阅——这也是它比官方 Pro 订阅更适合"先试试看"的原因之一。
 
@@ -74,7 +74,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="你的Key",
-    base_url="https://api.yotradeapi.com/v1",  # 中转地址，控制台可查
+    base_url="https://your-relay.example.com/v1",  # 中转地址，控制台可查
 )
 
 response = client.chat.completions.create(
@@ -117,4 +117,3 @@ print(response.choices[0].message.content)
 - [每月 150 元预算怎么用好 AI 工具](/blog/cn-ai-tool-budget-150-rmb/)
 - [Claude Code 入门指南](/blog/claude-code-getting-started/)
 
-不想折腾海外手机号和信用卡，[YoTradeApi](https://yotradeapi.com) 支持人民币充值，5 分钟拿到 Key 直接开始和 Claude 聊天。

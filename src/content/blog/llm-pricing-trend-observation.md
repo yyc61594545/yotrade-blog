@@ -107,4 +107,3 @@ OpenAI、Anthropic 和 Google 的公开文档都把 Prompt / Context Caching 放
 - [按功能核算 AI 成本：把总账单拆到每个产品功能上](/blog/cost-per-feature-accounting/)
 - [OpenAI 与 Anthropic 缓存机制对比](/blog/openai-prompt-cache-vs-anthropic/)
 
-如果你希望用统一接口接入多个模型并集中观察调用量，[YoTradeApi](https://yotradeapi.com) 可提供多模型 API 接入与管理能力，具体方案可通过微信咨询报价。

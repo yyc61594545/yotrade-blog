@@ -53,8 +53,8 @@ npm install @anthropic-ai/claude-agent-sdk
 环境变量：
 
 ```bash
-export ANTHROPIC_BASE_URL="https://yotradeapi.com"
-export ANTHROPIC_AUTH_TOKEN="sk-yo-..."
+export ANTHROPIC_BASE_URL="https://your-relay.example.com"
+export ANTHROPIC_AUTH_TOKEN="sk-..."
 ```
 
 SDK 自动读这些。
@@ -294,7 +294,7 @@ API 风格类似 Python 版。
 通过中转走 Anthropic Messages 协议。完整性确认：
 
 ```bash
-curl https://yotradeapi.com/v1/messages \
+curl https://your-relay.example.com/v1/messages \
   -H "x-api-key: $KEY" \
   -H "anthropic-version: 2023-06-01" \
   -d '{
@@ -314,4 +314,3 @@ curl https://yotradeapi.com/v1/messages \
 - [Claude Code CI/CD 接入](/blog/claude-code-ci-integration/)
 - [Claude Code 镜像国内配置完整指南](/blog/claude-code-mirror-cn-setup/)
 
-需要 Claude Agent SDK 完整透传的中转？[YoTradeApi](https://yotradeapi.com) 完整支持 Anthropic Messages 协议 + beta headers，按上面 SDK 直接接入。

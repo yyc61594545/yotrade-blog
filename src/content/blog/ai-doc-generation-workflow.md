@@ -42,7 +42,7 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 import subprocess
 from openai import OpenAI
 
-client = OpenAI(api_key="sk-yo-...", base_url="https://yotradeapi.com/v1")
+client = OpenAI(api_key="sk-...", base_url="https://your-relay.example.com/v1")
 
 # 收集材料
 package = open("package.json").read()
@@ -274,4 +274,3 @@ def translate_doc(zh_text):
 - [AI 生成单元测试的工程化方法](/blog/ai-test-generation-workflow/)
 - [Claude Code CI/CD 接入](/blog/claude-code-ci-integration/)
 
-文档生成大量调用，配 [YoTradeApi](https://yotradeapi.com) 中转 + caching + Haiku 4.5，每月成本可控。

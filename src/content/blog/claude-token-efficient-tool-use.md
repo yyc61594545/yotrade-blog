@@ -42,8 +42,8 @@ Claude 调用工具时，一次完整的交互链路大致是这样的 token 消
 import anthropic
 
 client = anthropic.Anthropic(
-    api_key="YOUR_YOTRADE_KEY",
-    base_url="https://yotradeapi.com",
+    api_key="YOUR_RELAY_API_KEY",
+    base_url="https://your-relay.example.com",
 )
 
 response = client.beta.messages.create(
@@ -85,7 +85,7 @@ const response = await client.beta.messages.create({
 Beta header 属于容易被中转"吃掉"的一类参数——部分中转只透传标准请求体字段，对 `anthropic-beta` 这类 header 处理不一致。接入前建议用最小请求验证：
 
 ```bash
-curl -i https://yotradeapi.com/v1/messages \
+curl -i https://your-relay.example.com/v1/messages \
   -H "x-api-key: $KEY" \
   -H "anthropic-version: 2023-06-01" \
   -H "anthropic-beta: token-efficient-tools-2025-02-19" \
@@ -152,4 +152,3 @@ for block in response.content:
 - [Prompt Caching 成本优化实战](/blog/prompt-caching-cost-optimization/)
 - [Function Calling vs Tool Use：概念辨析](/blog/function-calling-vs-tool-use/)
 
-高频工具调用的 Agent 应用对 API 稳定性和 beta 特性透传要求更高，[YoTradeApi](https://yotradeapi.com) 完整支持 Claude 的 beta header 透传，方便你直接验证这类优化特性的实际收益。

@@ -211,12 +211,12 @@ client.chat.completions.create(
 
 ```bash
 # OpenAI 兼容
-curl https://yotradeapi.com/v1/chat/completions \
+curl https://your-relay.example.com/v1/chat/completions \
   -H "Authorization: Bearer $KEY" \
   -d '{"model":"claude-sonnet-4-6","messages":[{"role":"user","content":"hi"}]}'
 
 # Anthropic 原生
-curl https://yotradeapi.com/v1/messages \
+curl https://your-relay.example.com/v1/messages \
   -H "x-api-key: $KEY" -H "anthropic-version: 2023-06-01" \
   -d '{"model":"claude-sonnet-4-6","max_tokens":64,"messages":[{"role":"user","content":"hi"}]}'
 ```
@@ -231,4 +231,3 @@ curl https://yotradeapi.com/v1/messages \
 - [prompt caching 在国内中转下省成本指南](/blog/prompt-caching-cost-optimization/)
 - [流式 SSE 故障排查](/blog/streaming-sse-troubleshooting/)
 
-[YoTradeApi](https://yotradeapi.com) 同时支持 OpenAI 兼容协议（`/v1/chat/completions`）与 Anthropic 原生协议（`/v1/messages`），一把 Key 跑两个协议。

@@ -174,10 +174,10 @@ git secrets --add 'sk-proj-[A-Za-z0-9_-]+'
 每个 key 加 prefix 标识用途：
 
 ```
-yotrade-prod-backend-***
-yotrade-dev-cursor-***
-yotrade-ci-deploy-***
-yotrade-personal-***
+myapp-prod-backend-***
+myapp-dev-cursor-***
+myapp-ci-deploy-***
+myapp-personal-***
 ```
 
 泄露时一眼能看出影响范围，且可以单独吊销。
@@ -258,4 +258,3 @@ def check():
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 
-[YoTradeApi](https://yotradeapi.com) 支持一键吊销 + 用量明细 + 日预算上限，应急响应 1 分钟内可完成止血。

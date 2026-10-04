@@ -289,4 +289,3 @@ FALLBACK_COUNTER.labels(
 - [AI API 中转 vs 自建 VPN 方案](/blog/ai-api-relay-vs-self-vpn/)
 - [AI API 中转稳定性测试](/blog/ai-api-relay-stability-test/)
 
-需要开箱即用的多提供商路由能力，[YoTradeApi](https://yotradeapi.com) 已内置主备切换和熔断逻辑，无需自行维护路由基础设施。

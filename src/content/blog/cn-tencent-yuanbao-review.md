@@ -217,16 +217,16 @@ def call_with_retry(client, messages, model="hunyuan-turbo", max_retries=3):
 
 ---
 
-## 七、与 YoTradeApi 配合使用
+## 七、通过 OpenAI 兼容接口统一调用
 
-YoTradeApi 提供统一的 API 中转接口，支持混元、豆包、GLM、Claude、GPT 等多家模型。对于需要灵活切换模型或做 A/B 测试的场景，通过中转层只需修改 `model` 参数，无需更改鉴权逻辑：
+对于需要灵活切换模型或做 A/B 测试的场景，通过中转层只需修改 `model` 参数，无需更改鉴权逻辑：
 
 ```python
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="YOUR_YOTRADEAPI_KEY",
-    base_url="https://api.yotradeapi.com/v1"
+    api_key="YOUR_API_KEY",
+    base_url="https://your-relay.example.com/v1"
 )
 
 # 切换模型只需改这一行
@@ -249,4 +249,3 @@ for model in ["hunyuan-turbo", "doubao-pro", "glm-4-plus"]:
 - [Qwen3 对比 Claude：国内开发者如何选择](/blog/qwen3-vs-claude-cn-tasks/)
 - [国内 AI 工具付款与订阅完整指南](/blog/cn-ai-tools-payment-guide/)
 
-如果你需要同时接入混元与其他主流大模型，[YoTradeApi](https://yotradeapi.com) 提供统一中转接口，支持人民币充值，一个 Key 调用所有主流模型。

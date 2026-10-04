@@ -86,7 +86,7 @@ def read_pdf_base64(file_path: str) -> str:
 
 client = anthropic.Anthropic(
     api_key="YOUR_API_KEY",
-    base_url="https://api.yotradeapi.com"  # 国内中转
+    base_url="https://your-relay.example.com"  # 国内中转
 )
 
 pdf_data = read_pdf_base64("report.pdf")
@@ -128,7 +128,7 @@ import base64
 
 client = anthropic.Anthropic(
     api_key="YOUR_API_KEY",
-    base_url="https://api.yotradeapi.com"
+    base_url="https://your-relay.example.com"
 )
 
 pdf_data = read_pdf_base64("annual_report.pdf")
@@ -173,7 +173,7 @@ import fs from "fs";
 
 const client = new Anthropic({
   apiKey: process.env.CLAUDE_API_KEY,
-  baseURL: "https://api.yotradeapi.com", // 国内中转
+  baseURL: "https://your-relay.example.com", // 国内中转
 });
 
 async function analyzePdf(filePath: string, question: string) {
@@ -248,7 +248,7 @@ client = anthropic.Anthropic(
 ```python
 client = anthropic.Anthropic(
     api_key="YOUR_RELAY_API_KEY",
-    base_url="https://api.yotradeapi.com",  # 只需改这一行
+    base_url="https://your-relay.example.com",  # 只需改这一行
 )
 ```
 
@@ -293,4 +293,3 @@ client = anthropic.Anthropic(
 - [AI API 中转 vs 自搭 VPN：国内开发者怎么选](/blog/ai-api-relay-vs-self-vpn/)
 - [AI API 中转服务稳定性测试报告](/blog/ai-api-relay-stability-test/)
 
-处理 PDF 文档需要稳定的 API 访问，[YoTradeApi](https://yotradeapi.com) 提供国内直连的 Claude API 中转，支持 PDF 输入、prompt caching 等全部功能，人民币付款开箱即用。

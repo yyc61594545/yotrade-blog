@@ -117,4 +117,3 @@ pids.max = 256              # 防止 fork 炸弹
 - [Agent 工具超时预算设计](/blog/agent-tool-timeout-budget/)
 - [AI Agent 可观测性设计](/blog/ai-agent-observability-design/)
 
-搭建自己的编程 Agent 时，除了沙箱这层执行安全，模型调用本身的稳定性和成本同样关键，[YoTradeApi](https://yotradeapi.com) 提供国内可直连的主流大模型 API 中转，方便在沙箱之外把调用链路一并跑通。

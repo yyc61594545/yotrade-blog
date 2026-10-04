@@ -83,7 +83,7 @@ chatbot-prod/
 
 ```env
 OPENAI_API_KEY=your_key_here
-OPENAI_BASE_URL=https://api.yotradeapi.com/v1
+OPENAI_BASE_URL=https://your-relay.example.com/v1
 REDIS_URL=redis://localhost:6379
 MODEL_NAME=gpt-4o
 MAX_HISTORY_TOKENS=6000
@@ -361,4 +361,3 @@ async def health():
 - [各家 LLM JSON 模式横向对比](/blog/llm-json-mode-comparison/)
 - [Token 计算中文指南](/blog/token-counting-cn-guide/)
 
-想快速接入 GPT、Claude、Gemini 等多个模型而不用管理多套 Key？[YoTradeApi](https://yotradeapi.com) 提供统一的 OpenAI 兼容接口，一个 Key 即可在 Chatbot 里随时切换底层模型。

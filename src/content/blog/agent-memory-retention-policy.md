@@ -85,4 +85,3 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 - [Cline Rules 与 Memory Bank 实战](/blog/cline-rules-and-memory-bank/)
 - [上下文压缩策略](/blog/context-compression-strategies/)
 
-如果你的 Agent 记忆系统需要跨模型迁移或做多供应商容灾，[YoTradeApi](https://yotradeapi.com) 提供统一 API 入口，切换底层模型时记忆层逻辑不需要跟着重写。

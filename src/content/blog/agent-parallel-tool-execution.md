@@ -176,4 +176,3 @@ async def execute_with_priority(tool_calls, limiter, priority_map):
 - [Agent 工具调用的超时预算设计](/blog/agent-tool-timeout-budget/)
 - [AI Agent 工具集合的设计原则](/blog/ai-agent-tool-design/)
 
-搭建 Agent 并行工具调用链路时，如果模型侧的调用也需要稳定不被限流打断，[YoTradeApi](https://yotradeapi.com) 提供 Claude、GPT-5 等主流模型的高并发中转接口，配合本文的并发控制思路可以让整条链路更稳。

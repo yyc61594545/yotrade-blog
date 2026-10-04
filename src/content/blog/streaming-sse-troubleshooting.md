@@ -40,7 +40,7 @@ data: [DONE]
 
 ```bash
 curl -N -H "Authorization: Bearer $KEY" \
-  https://yotradeapi.com/v1/chat/completions \
+  https://your-relay.example.com/v1/chat/completions \
   -d '{
     "model":"claude-sonnet-4-6",
     "messages":[{"role":"user","content":"数到 10"}],
@@ -151,7 +151,7 @@ def debug_stream(url, key, model):
         else:
             print(f"[unknown] {line[:100]}")
 
-debug_stream("https://yotradeapi.com/v1/chat/completions", "sk-yo-...", "claude-sonnet-4-6")
+debug_stream("https://your-relay.example.com/v1/chat/completions", "sk-...", "claude-sonnet-4-6")
 ```
 
 裸调试能帮你看到：
@@ -165,7 +165,7 @@ debug_stream("https://yotradeapi.com/v1/chat/completions", "sk-yo-...", "claude-
 ## 四、Node 调试模板
 
 ```ts
-const res = await fetch("https://yotradeapi.com/v1/chat/completions", {
+const res = await fetch("https://your-relay.example.com/v1/chat/completions", {
   method: "POST",
   headers: {
     Authorization: `Bearer ${KEY}`,
@@ -254,4 +254,3 @@ print(resp.choices[0].message.content)
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 - [Cursor API 中转怎么选](/blog/2026-05-15-cursor-api-relay-recommendation-2026/)
 
-需要一个 SSE 透传稳定的中转？[YoTradeApi](https://yotradeapi.com) 后台展示每条 stream 请求的 TTFB、chunk 数、是否完整结束，问题可追溯。

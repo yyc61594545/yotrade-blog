@@ -109,4 +109,3 @@ def get_weights(query: str) -> tuple[float, float]:
 - [向量数据库选型对比 2026](/blog/vector-db-comparison-2026/)
 - [Embedding 维度取舍](/blog/embedding-dimension-tradeoff/)
 
-如果你的 RAG 系统需要同时调用多家 Embedding 和重排序模型做实验对比，[YoTradeApi](https://yotradeapi.com) 的统一 API 中转能省去分别对接各家账号和计费的麻烦。

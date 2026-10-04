@@ -157,7 +157,7 @@ chat_round("def add(a,b): return a+b")
 
 - 新项目一律用 Chat Completions API，不要纠结
 - 只有当你的场景是**极低延迟的简单文本补全**且**不需要推理**，才考虑 `gpt-3.5-turbo-instruct`
-- 用国内中转 API（如 YoTradeApi）时，两套接口都完整支持，接入成本一样低
+- 用国内中转 API时，两套接口都完整支持，接入成本一样低
 
 ## 七、与其他 LLM 接口的兼容性
 
@@ -206,4 +206,3 @@ result = response.choices[0].message.content
 - [LLM Batch API 实际节省分析](/blog/llm-batch-api-real-savings/)
 - [OpenAI Compatible 与 Anthropic 原生协议对比](/blog/openai-compatible-vs-anthropic-protocol/)
 
-如果你需要低延迟、低成本地调用 OpenAI 全系列模型（包括 Chat 和 Completions 接口），[YoTradeApi](https://yotradeapi.com) 提供稳定中转，按量计费，无需信用卡即可开始。

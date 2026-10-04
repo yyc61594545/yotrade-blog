@@ -223,7 +223,7 @@ Background Agent 长任务的 token 消耗比日常对话高一个量级，控�
 
 1. **选对模型**：90% 的迁移/测试类任务用 Sonnet 而非 Opus，质量够用，成本低 4–5 倍
 2. **分批派单**：大任务（>5万行）拆成模块分批跑，单次失败损失小
-3. **用 API 中转**：通过 [YoTradeApi](https://yotradeapi.com) 等中转接入，相比官方定价节省 40–60%
+3. **用 API 中转**：通过中转服务商等中转接入，相比官方定价节省 40–60%
 4. **设 context 边界**：prompt 里明确告知 Agent "只读 src/services/ 下的文件"，避免 Agent 自行扩展 context 消耗 token
 
 关于成本计算的详细方法，可参考 [LLM 成本优化实战 Checklist](/blog/llm-cost-optimization-checklist/)。
@@ -238,4 +238,3 @@ Background Agent 长任务的 token 消耗比日常对话高一个量级，控�
 - [Claude Code 真实任务实录](/blog/claude-code-real-world-tasks/)
 - [LLM 成本优化实战 Checklist](/blog/llm-cost-optimization-checklist/)
 
-如果你在使用 Background Agent 过程中遇到 API 连通性问题，[YoTradeApi](https://yotradeapi.com) 提供全模型覆盖的稳定中转，按量计费无月费门槛。

@@ -134,7 +134,7 @@ def load_prompt(path: str, variables: dict) -> str:
 system_prompt = load_prompt(
     "prompts/roles/customer-support.md",
     variables={
-        "company_name": "YoTradeApi",
+        "company_name": "Acme",
         "product_name": "API 中转服务",
         "language": "中文"
     }
@@ -310,4 +310,3 @@ messages = [
 - [LLM System Prompt 与 User Prompt 的本质区别](/blog/llm-system-prompt-vs-user-prompt/)
 - [OpenAI Completions 与 Chat API 选型与差异](/blog/openai-completion-vs-chat-api/)
 
-想在项目里快速接入高质量 LLM 能力，[YoTradeApi](https://yotradeapi.com) 提供 OpenAI、Claude、Gemini 全系模型的稳定中转，无需境外信用卡。

@@ -55,7 +55,7 @@ heroImage: ../../assets/blog-placeholder-4.jpg
 ```python
 """
 用法：
-  python stability_probe.py --base-url https://yotradeapi.com/v1 \
+  python stability_probe.py --base-url https://your-relay.example.com/v1 \
       --api-key sk-xxx --model claude-sonnet-4-6 --runs 30
 输出：
   CSV：ts, scenario, ttfb, total, tokens, status, error
@@ -167,8 +167,8 @@ if __name__ == "__main__":
 
 ```bash
 python stability_probe.py \
-  --base-url https://yotradeapi.com/v1 \
-  --api-key $YOTRADE_API_KEY \
+  --base-url https://your-relay.example.com/v1 \
+  --api-key $RELAY_API_KEY \
   --model claude-sonnet-4-6 \
   --runs 30 --concurrent 4 \
   --scenarios short_qa,code_gen
@@ -207,7 +207,7 @@ python stability_probe.py --runs 5 --concurrent 1 --scenarios long_context ...
 
 ```bash
 for base in \
-  "https://yotradeapi.com/v1|sk-yo-xx" \
+  "https://your-relay.example.com/v1|sk-xx" \
   "https://other-relay.example.com/v1|sk-ot-xx"; do
   url="${base%|*}"; key="${base#*|}"
   python stability_probe.py --base-url "$url" --api-key "$key" \
@@ -236,10 +236,10 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install openai
       - env:
-          KEY: ${{ secrets.YOTRADE_API_KEY }}
+          KEY: ${{ secrets.RELAY_API_KEY }}
         run: |
           python stability_probe.py \
-            --base-url https://yotradeapi.com/v1 \
+            --base-url https://your-relay.example.com/v1 \
             --api-key "$KEY" --model claude-sonnet-4-6 \
             --runs 20 --concurrent 2 --out today.csv
       - uses: actions/upload-artifact@v4
@@ -265,4 +265,3 @@ jobs:
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [AI API 中转常见错误码排查手册](/blog/ai-api-relay-error-codes/)
 
-如果你需要一个稳定的基线来对比其它中转，[YoTradeApi](https://yotradeapi.com) 提供独立 API Key 与用量日志，方便直接接入上面这套脚本做基线测试。

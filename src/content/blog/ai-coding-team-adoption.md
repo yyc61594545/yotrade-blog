@@ -42,7 +42,7 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 
 在国内办公网络下，直连 OpenAI/Anthropic 的 API 延迟普遍在 2–5 秒，补全变成等待，工程师用着用着就放弃了。
 
-**解法**：统一接入 API 中转服务（如 [YoTradeApi](https://yotradeapi.com)），在团队的工具配置文件里集中配好 `base_url`，而不是让每个人自己解决网络问题。这一步不做，其他推广都是浪费。
+**解法**：统一接入 API 中转服务，在团队的工具配置文件里集中配好 `base_url`，而不是让每个人自己解决网络问题。这一步不做，其他推广都是浪费。
 
 ### 坑 3：同时引入 3 个以上工具
 
@@ -139,4 +139,3 @@ AI 生成的代码同样需要完整 Code Review，甚至某些维度需要更�
 - [AI 生成单测的工程化落地](/blog/ai-test-generation-workflow/)
 - [API Key 泄露应急响应手册](/blog/api-key-leak-emergency-response/)
 
-团队统一接入 AI 编程工具时，[YoTradeApi](https://yotradeapi.com) 支持子账户管理和用量限额，可以解决团队 Key 管理混乱和费用失控的问题。
