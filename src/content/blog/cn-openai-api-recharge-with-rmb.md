@@ -8,7 +8,7 @@ keywords:
   - 国内使用 OpenAI API
   - OpenAI API 替代方案
 pubDate: '2026-06-13'
-updatedDate: '2026-09-30'
+updatedDate: '2026-10-07'
 canonical: https://blog.yotradeapi.com/blog/cn-openai-api-recharge-with-rmb/
 tags:
   - OpenAI
@@ -86,9 +86,9 @@ OpenAI 的 API 付款页面接受 Visa、Mastercard、American Express 的信用
 3. 用虚拟卡在 platform.openai.com → Billing → Add payment method 完成绑定
 4. 充值 API 预算（最低一次 $5，页面默认填 $10，先按最低额度测试）
 
-充值页面默认会打开 **Auto-reload（自动续充）**，余额低于阈值时自动再刷一笔。虚拟卡场景下建议进去关掉：卡里余额不足时自动扣款会失败，反复失败的付款记录本身就是风控信号。
+充值页面默认会打开 **Auto-recharge（自动续充）**，余额低于你设定的阈值时自动再刷一笔（单次续充同样有 $5 下限，可以额外设一个月度上限）。虚拟卡场景下建议进去关掉：卡里余额不足时自动扣款会失败，反复失败的付款记录本身就是风控信号。
 
-另外记住 OpenAI 的**预付余额一年后过期**，且过期不退、不能延期。别为了"一次充够省事"打进去几百美元，按一两个月的实际消耗充。
+另外记住 OpenAI 的**预付余额自购买起一年后过期**，过期不退、官方也不给延期，充值本身默认不可退款。别为了"一次充够省事"打进去几百美元，按一两个月的实际消耗充。
 
 **充值时注意**：
 
@@ -127,7 +127,7 @@ OpenAI 的新账户有"试用期限制"，即使充值了也会有初始使用�
 
 **API 费用记账**
 
-如果是公司项目，OpenAI 在 Billing 页面支持下载发票（PDF 格式），但发票只能开英文，且无法配合国内增值税发票报销流程。有硬性报销需求的话，能开中文发票的国内渠道（第三方中转、云厂商代理）才走得通——这是它们相对官方账户唯一站得住的优势。
+如果是公司项目，OpenAI 在 Billing 页面支持下载发票（PDF 格式），但发票只能开英文，且无法配合国内增值税发票报销流程。有硬性报销需求的话，能开中文发票的国内渠道（第三方中转、云厂商代理）才走得通——这是它们相对官方账户唯一站得住的优势。公司口径下怎么选渠道、合同和发票怎么过，见 [公司统一采购 ChatGPT / Claude 给员工用：怎么买、怎么管、怎么报销](/blog/cn-company-ai-procurement-guide/)。
 
 **创建 API Key 时被要求验证手机号**
 
@@ -164,5 +164,6 @@ OpenAI 的新账户有"试用期限制"，即使充值了也会有初始使用�
 - [创建 OpenAI API Key 提示验证手机号怎么办](/blog/cn-openai-api-key-phone-verification/)
 - [OpenAI SDK base_url 国内配置实战](/blog/openai-sdk-base-url-cn/)
 - [ChatGPT Pro $200 月卡国内开通教程](/blog/cn-chatgpt-pro-200-dollar-payment/)
+- [代充的 ChatGPT 账号为什么会被标记：几种代充方式的风险差别](/blog/cn-chatgpt-daichong-methods-risk/)
 
 看完发现自己其实不需要 API、只想稳定用上 ChatGPT 的话，[YoTradeApi](https://yotradeapi.com/?utm_source=blog&utm_medium=inline&utm_content=cn-openai-api-recharge-with-rmb#sub) 支持支付宝微信付款开通 ChatGPT Pro 订阅，省掉境外卡这一整套麻烦，报价微信咨询。
