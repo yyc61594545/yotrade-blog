@@ -8,7 +8,7 @@ keywords:
   - Cursor国内替代方案
   - Cursor配置教程
 pubDate: '2026-06-21'
-updatedDate: '2026-10-02'
+updatedDate: '2026-10-08'
 canonical: https://blog.yotradeapi.com/blog/cn-cursor-cn-available-2026/
 tags:
   - Cursor
@@ -89,7 +89,7 @@ Cursor 的个人付费档（Pro）官网价 $20/月，按年付有折扣，具�
 
 **推荐方案**：使用虚拟信用卡。这类服务用国内方式充值，生成一张境外 VISA 虚拟卡，可以用于订阅各类境外 SaaS。具体申请流程可参考[国内虚拟信用卡购买 ChatGPT 等境外服务完整指南](/blog/cn-virtual-card-for-chatgpt-2026/)，这里不重复展开。
 
-不想自己办卡、也不想为了一次付款去充值虚拟卡的，可以走[代充](https://yotradeapi.com/?utm_source=blog&utm_medium=inline&utm_content=cn-cursor-cn-available-2026#sub)——把账号交给人代付，报价微信咨询。各种订阅付款路径的横向对比，姊妹站有一篇整理得更全：[AI 订阅付款路径总览](https://www.yotradellc.com/blog/ai-subscription-payment-paths)。
+不想自己办卡、也不想为了一次付款去充值虚拟卡的，可以走[代充](https://yotradeapi.com/?utm_source=blog&utm_medium=inline&utm_content=cn-cursor-cn-available-2026#sub)——把账号交给人代付，报价微信咨询。走代充前先搞清楚哪些做法有风控代价，见[国内代充的几种做法与风险](/blog/cn-chatgpt-daichong-methods-risk/)。各种订阅付款路径的横向对比，姊妹站有一篇整理得更全：[AI 订阅付款路径总览](https://www.yotradellc.com/blog/ai-subscription-payment-paths)。
 
 ## 五、Cursor 国内替代方案
 
@@ -112,11 +112,11 @@ A：是的，Cursor 的 AI 请求发给 Anthropic/OpenAI 的模型，代码上�
 
 **Q：团队使用 Cursor，需要每人订阅吗？**
 
-A：是。团队档现在叫 **Teams**（原来的 Business 已并入这个名字），标准席位官网价 $40/人/月，还有一档面向重度 Agent 用户的 Premium 席位 $120/人/月；更上面是定制报价的 Enterprise。Teams 的价值主要在集中账单、SSO、团队级 Privacy Mode（代码不用于训练）和用量分析，几个人的小团队先各自用个人档也完全够。国内团队的账号与协作细节见[Cursor 团队版国内协作与账号管理](/blog/cn-cursor-business-account/)。
+A：是。团队档现在叫 **Teams**（原来的 Business 已并入这个名字），标准席位官网价 $40/人/月，还有一档面向重度 Agent 用户的 Premium 席位 $120/人/月；更上面是定制报价的 Enterprise。Teams 的价值主要在集中账单、SSO、团队级 Privacy Mode（代码不用于训练）和用量分析，几个人的小团队先各自用个人档也完全够。国内团队的账号与协作细节见[Cursor 团队版国内协作与账号管理](/blog/cn-cursor-business-account/)；公司走正式流程采购的，开票与付款方式的坑另有一篇[企业采购 AI 工具的流程指南](/blog/cn-company-ai-procurement-guide/)。
 
 **Q：Cursor 和 Claude Code 哪个更适合国内用户？**
 
-A：两者定位不同——Cursor 是 IDE（基于 VS Code 改造），Claude Code 是命令行工具。在国内网络条件下，两者都需要解决代理或 API 中转问题。具体对比可参考[Cursor vs Claude Code 深度比较](/blog/cursor-vs-claude-code-comparison/)。
+A：两者定位不同——Cursor 是 IDE（基于 VS Code 改造），Claude Code 是命令行工具。在国内网络条件下，两者都需要先把代理环境弄稳定。具体对比可参考[Cursor vs Claude Code 深度比较](/blog/cursor-vs-claude-code-comparison/)。
 
 **Q：免费额度用完了怎么办？**
 
