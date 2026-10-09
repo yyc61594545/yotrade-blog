@@ -8,7 +8,7 @@ keywords:
   - ChatGPT 第一次使用
   - 国内使用 ChatGPT 完整流程
 pubDate: '2026-07-06'
-updatedDate: '2026-10-03'
+updatedDate: '2026-10-09'
 canonical: https://blog.yotradeapi.com/blog/cn-chatgpt-first-time-cn-guide/
 tags:
   - ChatGPT
@@ -49,16 +49,16 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 | --- | --- | --- |
 | Go | 8 | 只是嫌免费版额度不够；代价是回答下方会出现广告，且不开放推理模型 |
 | Plus | 20 | 日常高频使用的默认选择，模型能力和额度都有明显提升 |
-| Pro（5x） | 100 | 常撞 Plus 限额、或主要在用 Codex 的人 |
-| Pro（20x） | 200 | 重度专业用户，额度和独占功能最充分 |
+| Pro（5x，官方也叫 Pro Codex） | 100 | 常撞 Plus 限额、或主要在用 Codex 的人 |
+| Pro（20x，官方也叫 Pro Max） | 200 | 重度专业用户，额度和独占功能最充分 |
 
-两个「Pro」是两个独立套餐，不是同一套餐的两种付法；差别主要在额度倍数而不是功能清单，取舍看 [ChatGPT Pro 的 5x 和 20x 差在哪](/blog/cn-chatgpt-pro-5x-vs-20x-usage/)。长期成本和到手价对比参考 [ChatGPT 每月花费到底是多少（2026）](/blog/cn-chatgpt-monthly-cost-2026/) 与 [2026 主流 AI 订阅国内到手价横评](/blog/cn-ai-subscription-price-compare-2026/)。
+两个「Pro」是两个独立套餐，不是同一套餐的两种付法；官方自 2026 年 4 月起把它们拆成两个入口，结账页上会写明是哪一档。差别主要在额度倍数而不是功能清单，取舍看 [ChatGPT Pro 的 5x 和 20x 差在哪](/blog/cn-chatgpt-pro-5x-vs-20x-usage/)。长期成本和到手价对比参考 [ChatGPT 每月花费到底是多少（2026）](/blog/cn-chatgpt-monthly-cost-2026/) 与 [2026 主流 AI 订阅国内到手价横评](/blog/cn-ai-subscription-price-compare-2026/)。
 
 ## 四、第四步：付费怎么解决——国内信用卡大概率被拒
 
 决定付费之后，下一道坎是支付。国内发行的信用卡直接绑定 OpenAI 支付页面，很大概率会被风控拦截或直接拒绝，这是国内用户升级 Plus 最常见的卡点。
 
-常见解法是使用**虚拟信用卡**（Visa/Mastercard 虚拟卡产品），这部分不同平台的手续费、稳定性、注销便利性差异很大，详细方案和踩坑记录看 [国内怎么用虚拟信用卡开通 ChatGPT Plus](/blog/cn-virtual-card-for-chatgpt-2026/) 和 [ChatGPT Plus 国内支付完整指南](/blog/cn-chatgpt-plus-payment-2026/)。
+常见解法是使用**虚拟信用卡**（Visa/Mastercard 虚拟卡产品），这部分不同平台的手续费、稳定性、注销便利性差异很大，详细方案和踩坑记录看 [国内怎么用虚拟信用卡开通 ChatGPT Plus](/blog/cn-virtual-card-for-chatgpt-2026/) 和 [ChatGPT Plus 国内支付完整指南](/blog/cn-chatgpt-plus-payment-2026/)。如果打算找人代充，先看清不同代充方式各自的风险点：[代充的 ChatGPT 账号为什么会被标记](/blog/cn-chatgpt-daichong-methods-risk/)。
 
 ## 五、第五步：用了一阵子之后最常见的两个问题
 
