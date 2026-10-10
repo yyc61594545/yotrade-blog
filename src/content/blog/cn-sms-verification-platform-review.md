@@ -40,6 +40,9 @@ category: 小白入门
 
 如果页面已经明确要你验证手机号（常见于首次创建 API Key、Codex 登录或风控重新验证），手头又没有能收短信的海外移动号，而且只需要过这一次，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-sms-verification-platform-review)：¥29.90 一次，微信付款，不用注册平台、不用先充值；付款后等你走到输手机号那一步再取号，验证码自动显示在页面上，收不到自动换号，换号仍失败全额退款。它只适合过这一次验证，别把它当成账号以后找回用的号码——长期要用的号码，仍按下文的原则选。
 
+<div class="sms-stats" data-sms-stats hidden></div>
+
+
 ## 二、四类号码横评：重点不是价格
 
 这里按号码控制权、官方兼容性和恢复能力比较，而不按平台广告中的“成功率”排序。

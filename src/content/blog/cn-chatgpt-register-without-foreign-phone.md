@@ -57,6 +57,9 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 
 自己去接码平台的麻烦主要在前面几步：要先注册平台账号、通常要先充三十几块才能下单，界面多为英文或俄文，还得自己找国家和服务、自己判断超时和退号。如果你只需要一个码，也可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-register-without-foreign-phone)：¥29.90 一次，微信付款，付款后等你走到输手机号那一步再取号，验证码自动显示在页面上；收不到自动换号，换号仍失败全额退款。能否通过 OpenAI 的风控由对方决定，这一点任何接码方式都一样。
 
+<div class="sms-stats" data-sms-stats hidden></div>
+
+
 ## 四、常见失败原因排查
 
 - **提示"该号码已被使用"**：说明这个号码已经被别人拿去验证过（OpenAI 对同一号码的验证次数有上限，用满就不再接受），换一个号码重试，详见《[提示手机号已被使用或已关联其他账号怎么办](/blog/cn-chatgpt-phone-already-used/)》
