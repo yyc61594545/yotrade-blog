@@ -1,14 +1,15 @@
 ---
-title: Codex 登录要求验证手机号：国内用户怎么过
+title: Codex 登录要验证手机号怎么办：国内用户怎么过
 description: codex login 跳转浏览器后卡在 Verify your phone number？本文讲清 Codex 为什么比网页版多这一道验证、两种登录方式的差别、失败排查和只验一次的做法。
 keywords:
+  - Codex 登录要验证手机号
   - Codex 登录手机验证
   - codex login 验证手机号
   - Codex CLI 国内登录
   - ChatGPT 订阅登录 Codex
   - Codex 验证码收不到
 pubDate: '2026-09-18'
-updatedDate: '2026-10-03'
+updatedDate: '2026-10-10'
 canonical: https://blog.yotradeapi.com/blog/cn-codex-login-phone-verification/
 tags:
   - Codex

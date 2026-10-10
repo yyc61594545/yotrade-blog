@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import os
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -116,6 +117,45 @@ def check_internal_links() -> None:
                 warnings.append(f"{path.name}: link to nonexistent /blog/{target}/")
 
 
+# 改旧文时最容易悄悄丢掉的元素（2026-10-10 起）：AI 改写会删表格、图片、导流链接，
+# 不报错也没提示。这里拿工作区版本和 HEAD 比，数量变少就警告，由 daily-post 写进 commit 信息。
+LOSS_PATTERNS = {
+    "表格": r"^\|[\s:|-]*-[\s:|-]*\|?\s*$",
+    "图片": r"!\[[^\]]*\]\(",
+    "代码块": r"^```",
+    "站内链接": r"\]\(/blog/",
+    "导流链接": r"\]\(https://yotradeapi\.com",
+    "外部链接": r"\]\(https?://(?!yotradeapi\.com)",
+    "H2": r"^## ",
+    "H3": r"^### ",
+}
+
+
+def count_elements(text: str) -> dict[str, int]:
+    return {k: len(re.findall(p, text, re.MULTILINE)) for k, p in LOSS_PATTERNS.items()}
+
+
+def check_losses() -> list[str]:
+    try:
+        out = subprocess.run(
+            ["git", "diff", "--name-only", "--diff-filter=M", "HEAD", "--", str(BLOG_DIR)],
+            cwd=ROOT, capture_output=True, text=True, check=True,
+        ).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return []
+    losses: list[str] = []
+    for rel in out.split():
+        path = ROOT / rel
+        old = subprocess.run(
+            ["git", "show", f"HEAD:{rel}"], cwd=ROOT, capture_output=True, text=True
+        ).stdout
+        before, after = count_elements(old), count_elements(path.read_text(encoding="utf-8"))
+        lost = [f"{k} {before[k]}→{after[k]}" for k in LOSS_PATTERNS if after[k] < before[k]]
+        if lost:
+            losses.append(f"{path.name}: " + "，".join(lost))
+    return losses
+
+
 def main() -> int:
     for path in sorted(BLOG_DIR.glob("*.md")):
         check_file(path)
@@ -128,6 +168,11 @@ def main() -> int:
         print(f"\n{len(warnings)} warnings:")
         for w in warnings:
             print(f"  warn: {w}")
+    losses = check_losses()
+    if losses:
+        print(f"\nLOSS: {len(losses)} 篇改动后元素变少（和 HEAD 比），确认是有意删的：")
+        for item in losses:
+            print(f"  loss: {item}")
     if errors:
         print(f"\n{len(errors)} errors:")
         for e in errors:

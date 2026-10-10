@@ -16,3 +16,5 @@ cn-virtual-card-for-chatgpt-2026    sub
 cn-chatgpt-plus-daichong-guide      sub
 cn-cursor-cn-available-2026         sub
 cn-openai-api-recharge-with-rmb     sub
+cn-chatgpt-plus-payment-2026        sub
+cn-chatgpt-monthly-cost-2026        sub

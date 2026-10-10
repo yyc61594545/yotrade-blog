@@ -1,15 +1,16 @@
 ---
 title: ChatGPT 登录提示地区不支持怎么解决：六类原因逐条排查
-description: 登录 ChatGPT 弹出地区不支持、Unsupported country 或直接跳回首页？本文按出现频率拆成六类原因，给出每一类的自查方法和对应处理动作，以及哪些情况无法自行解决。
+description: ChatGPT 提示地区不支持、Unsupported country，或 API 返回 unsupported_country_region_territory？按出现频率拆成几类原因，逐条给自查方法和处理动作。
 keywords:
   - ChatGPT 地区不支持
+  - unsupported_country_region_territory
   - unsupported country region
   - ChatGPT 登录失败
   - ChatGPT 无法登录解决
   - ChatGPT 提示地区限制
   - ChatGPT 登录跳回首页
 pubDate: '2026-09-17'
-updatedDate: '2026-09-17'
+updatedDate: '2026-10-10'
 canonical: https://blog.yotradeapi.com/blog/cn-chatgpt-login-region-error/
 tags:
   - ChatGPT
@@ -19,7 +20,7 @@ tags:
 category: 小白入门
 ---
 
-"ChatGPT 登录提示地区不支持"是个笼统的说法，实际上对应好几种完全不同的报错。有的三十秒能解决，有的说明账号已经出了问题。先分清你遇到的是哪一种，再动手，能省掉大量无用折腾。
+"ChatGPT 登录提示地区不支持"是个笼统的说法，实际上对应好几种完全不同的报错。有的三十秒能解决，有的说明账号已经出了问题。先分清你遇到的是哪一种，再动手，能省掉大量无用折腾。如果你看到的是一段 JSON：`{"error":{"code":"unsupported_country_region_territory","message":"country, region, or territory not supported",...}}`，那是 API 请求被拒，直接看第一节末尾的「API 返回 unsupported_country_region_territory」。
 
 本文按实际出现频率排序，每一类给自查方法和处理动作。所有操作都不需要改账号密码，也不建议在没搞清原因前反复重试——重试次数过多本身会触发额外风控。
 
@@ -36,6 +37,22 @@ category: 小白入门
 | 页面一直转圈最终超时 | 任意环节 | 网络链路问题，与地区判定无关 |
 
 **关键判断**：只有前两条是真正的地区判定。后面三条经常被误当成"地区不支持"，按地区问题去折腾只会白费时间。
+
+### API 返回 unsupported_country_region_territory
+
+完整报错通常是这样：
+
+```
+{"error":{"code":"unsupported_country_region_territory","message":"country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+```
+
+这不是网页版的报错，而是 OpenAI **API** 的 403 返回。常见出处：自己写的程序或 SDK、Codex CLI、在 Cursor / Cline 这类工具里填了 OpenAI 官方 Key 的请求。含义和网页版一样——发出请求的那台机器，出口 IP 在 OpenAI 不支持的地区（中国大陆和香港都不在[官方支持列表](https://platform.openai.com/docs/supported-countries)里）。不同的是，API 只看出口 IP，清 Cookie、换浏览器都没用。
+
+按这个顺序查：
+
+1. **请求从哪台机器发出**。程序跑在国内云服务器上（包括香港节点），换到支持地区的服务器才行。
+2. **本机终端有没有走代理**。浏览器能打开 ChatGPT，不代表命令行也走了代理。多数 SDK 和命令行工具读 `HTTPS_PROXY` 环境变量，在同一个终端里设好再运行。
+3. **代理出口在哪个国家**。和第二节一样，查一下出口 IP 的归属地。
 
 ## 二、原因一：出口 IP 落在受限地区（最常见）
 
@@ -131,7 +148,7 @@ OpenAI 按你的出口 IP 判断所在地。如果 IP 被识别为不支持地�
 
 **不要为解决登录问题去买来路不明的现成账号。** 这类账号的环境历史你完全不可控，今天能登明天失效是常态，而且一旦绑定了支付信息风险更大。相关权衡见 [ChatGPT Plus 代充避坑指南](/blog/cn-chatgpt-plus-daichong-guide/)。
 
-如果你的需求其实是**在程序里调用模型**而不是用网页版聊天，那么整条登录链路的问题都可以绕开——API 调用不涉及网页端的地区判定，只需要一个可用的接口地址和密钥。
+如果你的需求其实是**在程序里调用模型**而不是用网页版聊天，网页登录这条链路的问题确实可以绕开，但 API 同样按出口 IP 判定地区，报错就是第一节末尾那串 `unsupported_country_region_territory`。
 
 ## 十、相关阅读
 

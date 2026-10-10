@@ -47,6 +47,7 @@ description: 自动产出今日 N 篇博客（默认 2）并刷新 1 篇头部�
    - **不改** slug、`title`、`canonical`、`pubDate` 和 H2 结构；改动行数不超过全文的三成
    - `updatedDate` 改成今天
 3. 跑 `python3 scripts/validate-blog.py`，通过后单独一个 commit：`refresh: <slug>（<一句话说改了什么>）`。不要 push，和新文一起在第 2 步推。
+   - 如果输出里有 `LOSS:`（表格、图片、链接、标题等比改之前少了），逐项核对：误删的恢复；确实要删的（比如指向暂停产品的导流），commit 信息第一行改成 `refresh(LOSS): <slug>（删了什么、为什么）`，并在最后的汇报里写出来
 
 ## 1. 循环：N 次选题 + 写稿 + 校验 + 提交
 
