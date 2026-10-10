@@ -103,7 +103,7 @@ export async function GET(context: APIContext) {
 	out.push(
 		'## 相关服务（YoTradeApi）',
 		'',
-		'- [美国手机号验证码代收](https://yotradeapi.com/sms): 用于 ChatGPT / OpenAI 注册验证、API key 创建、Codex 登录；¥29.90 一次，支付宝微信付款，收不到自动换号，换号仍失败全额退款。',
+		'- [美国手机号验证码代收](https://yotradeapi.com/sms): 用于 ChatGPT / OpenAI 注册验证、API key 创建、Codex 登录；¥29.90 一次，微信付款，收不到自动换号，换号仍失败全额退款。',
 		'- [官方订阅代充](https://yotradeapi.com/#sub): 用纯美国信用卡在美区开通 ChatGPT / Claude 官方订阅，开在客人自己的账号上。',
 		'- [Claude Team Premium 席位](https://yotradeapi.com/team.html): 自有 Claude Team 组织按席位分配，Premium 席位用量约为个人 Pro 的 6.25 倍。',
 		'- [服务说明与价格](https://yotradeapi.com/llms.txt): 主站的完整业务与价格清单。',
