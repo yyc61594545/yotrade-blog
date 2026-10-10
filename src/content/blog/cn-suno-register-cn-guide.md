@@ -93,7 +93,7 @@ Suno 早期和 Discord 绑得很深，所以不少老教程都推荐 Discord 登
 
 接码平台的逐家实测见[在线接码平台横评](/blog/cn-sms-verification-platform-review/)，安全层面的权衡见[接码收验证码到底安不安全](/blog/cn-sms-receive-safe-or-not/)。
 
-只需要过一次、不想注册接码平台也不想充值的，可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-suno-register-cn-guide)：¥29.90 一次，支付宝微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款。它解决的只是「收到这条短信」——注册能否通过、账号后续是否被风控，取决于你的网络环境和使用方式，这些没有服务能承诺。
+只需要过一次、不想注册接码平台也不想充值的，可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-suno-register-cn-guide)：¥29.90 一次，微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款。它解决的只是「收到这条短信」——注册能否通过、账号后续是否被风控，取决于你的网络环境和使用方式，这些没有服务能承诺。
 
 ## 六、常见报错逐条排查
 
@@ -134,4 +134,4 @@ Suno 的免费额度按天重置，且不同时期政策有调整，具体数字
 - [在线接码平台横评](/blog/cn-sms-verification-platform-review/)
 - [Midjourney 通过 Discord 注册完整流程](/blog/cn-midjourney-register-discord-guide/)
 
-卡在那条收不到的验证短信上、又不想为一次注册去注册接码平台的，[YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-suno-register-cn-guide) 提供美国号验证码代收，一次 ¥29.90，支付宝微信付款，免注册免充值，换号仍收不到全额退款。
+卡在那条收不到的验证短信上、又不想为一次注册去注册接码平台的，[YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-suno-register-cn-guide) 提供美国号验证码代收，一次 ¥29.90，微信付款，免注册免充值，换号仍收不到全额退款。

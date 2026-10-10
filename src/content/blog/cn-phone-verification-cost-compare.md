@@ -62,7 +62,7 @@ category: 国内场景
 **2. 验证码代收**
 
 - 前置成本：无，不用注册和充值
-- 单次成本：以 [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-phone-verification-cost-compare) 为例，¥29.90 一次，支付宝微信付款
+- 单次成本：以 [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-phone-verification-cost-compare) 为例，¥29.90 一次，微信付款
 - 失败成本：收不到自动换号，换号仍失败全额退款
 - 时间成本：付款后拿号、在页面输入、等码，通常十分钟内能判断结果
 - 长期成本：同样是一次性号码，风控重验时不能保证拿回同一个号

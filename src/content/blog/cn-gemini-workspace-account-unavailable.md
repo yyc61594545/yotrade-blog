@@ -137,4 +137,4 @@ IT 每天收的「XX 用不了」工单里，能定位的不到一半。把下�
 - [公司统一采购 ChatGPT / Claude 给员工用](/blog/cn-company-ai-procurement-guide/)
 - [新注册的 Google 账号被停用怎么办](/blog/cn-google-account-disabled-after-signup/)
 
-如果决定走个人账号、但卡在需要一个能收短信的美国号，[YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-gemini-workspace-account-unavailable) 提供美国号验证码代收：¥29.90 一次，支付宝微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款。
+如果决定走个人账号、但卡在需要一个能收短信的美国号，[YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-gemini-workspace-account-unavailable) 提供美国号验证码代收：¥29.90 一次，微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款。

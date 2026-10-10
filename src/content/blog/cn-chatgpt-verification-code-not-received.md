@@ -103,7 +103,7 @@ category: 小白入门
 | 方式 | 前置成本 | 单次代价 | 适合谁 |
 |---|---|---|---|
 | 自己用接码平台 | 注册平台账号 + 先充值（通常三十几元起），界面多为英文或俄文 | 几毛到几元，要自己挑国家挑服务、判断超时退号 | 以后还会反复接码的人 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-verification-code-not-received) | 无，不用注册和充值 | ¥29.90 一次，支付宝微信付款，收不到自动换号，换号仍失败全额退款 | 只需要过这一次验证的人 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-verification-code-not-received) | 无，不用注册和充值 | ¥29.90 一次，微信付款，收不到自动换号，换号仍失败全额退款 | 只需要过这一次验证的人 |
 | eSIM / 实体卡 | 几十到上百元/月 | 号码独享，可长期复用 | 账号要长期用、以后还会频繁收码的人 |
 
 "收不到自动换号"这一条正好对应本文第五节的结论——换号才是有效动作。各家接码平台的可用性变化很快，为什么"今日实测可用"的榜单不值得参考，见《[ChatGPT 注册接码平台横评 2026](/blog/cn-sms-verification-platform-review/)》。

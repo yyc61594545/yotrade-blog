@@ -66,7 +66,7 @@ category: 小白入门
 | 方式 | 适合的情况 |
 |---|---|
 | 接码平台 | 你以后还会反复接码，愿意自己挑号源、承担失败不退 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-second-account-phone) | 只需要再过这一次验证。¥29.90 一次，支付宝微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-second-account-phone) | 只需要再过这一次验证。¥29.90 一次，微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款 |
 | eSIM / 实体卡 | 两个账号都要长期用，以后还可能被要求重新验证 |
 
 **路线三：用团队/组织方案，而不是开第二个个人账号。**

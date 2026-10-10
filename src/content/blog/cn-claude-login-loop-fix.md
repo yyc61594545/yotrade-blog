@@ -126,4 +126,4 @@ Google / 第三方登录
 - [AI 账号多设备登录会被挤掉吗](/blog/cn-ai-account-multi-device-login/)
 - [国内网络环境常见问题排查](/blog/cn-network-troubleshooting/)
 
-如果卡住的其实是注册阶段的手机验证而不是登录，可以看看 [YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-claude-login-loop-fix) 的美国号验证码代收：¥29.90 一次，支付宝微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款。
+如果卡住的其实是注册阶段的手机验证而不是登录，可以看看 [YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-claude-login-loop-fix) 的美国号验证码代收：¥29.90 一次，微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款。

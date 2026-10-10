@@ -105,7 +105,7 @@ category: 国内场景
 |---|---|---|---|
 | 国内手机号 | 只能是中国 | 移动号 | 能不能用取决于当前策略，按第二节的方法试一次即知 |
 | 接码平台 | 国家可选面广 | 多为移动号，但复用度高 | 便宜，但要自己挑国家和号源，撞"已被使用"是常态 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-openai-phone-verify-country-list) | 固定美国号 | 真实运营商号 | ¥29.90 一次，支付宝微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-openai-phone-verify-country-list) | 固定美国号 | 真实运营商号 | ¥29.90 一次，微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款 |
 | 海外 eSIM / 实体卡 | 看你办的是哪国的 | 真实运营商号 | 几十到上百元/月，号码独享，以后重验还能用 |
 
 **如果你只是想尽快过掉这一次验证，优先选美国号**——原因不是美国有什么特权，而是它一直是覆盖最稳的地区，可选的号源也最多，踩空的概率相对低。

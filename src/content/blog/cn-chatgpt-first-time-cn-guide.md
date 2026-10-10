@@ -97,4 +97,4 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 - [ChatGPT 订阅扣款失败怎么解决](/blog/cn-chatgpt-recurring-failed-fix/)
 - [Claude vs ChatGPT 价格全面对比（2026）](/blog/cn-claude-vs-chatgpt-price-2026/)
 
-如果整条路上你只卡在"没有海外号收验证码"这一步，[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-first-time-cn-guide)可以把它变成一次性的事：¥29.90 一次，支付宝微信付款，不用注册也不用充值，收不到自动换号，换号仍失败全额退款。
+如果整条路上你只卡在"没有海外号收验证码"这一步，[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-first-time-cn-guide)可以把它变成一次性的事：¥29.90 一次，微信付款，不用注册也不用充值，收不到自动换号，换号仍失败全额退款。

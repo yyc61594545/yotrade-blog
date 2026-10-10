@@ -128,4 +128,4 @@ requires authentication       → 需要 3DS 验证，但卡未开通
 - [Claude 镜像站到底能不能用](/blog/cn-claude-mirror-sites-guide/)
 - [接码平台横评：哪些还能收到验证码](/blog/cn-sms-verification-platform-review/)
 
-卡在手机验证这一步而不想折腾接码平台的，可以看看 [YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-claude-supported-region-error) 的美国号验证码代收：¥29.90 一次，支付宝微信付款，不用注册和充值，收不到会自动换号，换号仍然失败全额退款。
+卡在手机验证这一步而不想折腾接码平台的，可以看看 [YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-claude-supported-region-error) 的美国号验证码代收：¥29.90 一次，微信付款，不用注册和充值，收不到会自动换号，换号仍然失败全额退款。

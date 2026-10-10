@@ -70,7 +70,7 @@ Anthropic 官方说明要求所有新用户完成手机验证，而且不能跳�
 | 方式 | 适合场景 | 主要边界 |
 |---|---|---|
 | 接码平台 | 愿意自己筛号码、处理充值和失败退款 | 号码可能被重复使用，未必符合官方类型要求 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-claude-register-cn-guide) | 只需一次，想用支付宝或微信完成付款 | ¥29.90 一次；收不到会自动换号，换号仍失败全额退款；不保证注册成功或避开风控 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-claude-register-cn-guide) | 只需一次，想用微信完成付款 | ¥29.90 一次；收不到会自动换号，换号仍失败全额退款；不保证注册成功或避开风控 |
 | 自持 eSIM / 实体卡 | 长期使用，可能需要账号恢复或再次验证 | 前期和保号成本更高，但号码控制权在自己手里 |
 
 这里有一个重要边界：号码只是注册材料之一，不能把不支持的实际所在地变成支持地区。Anthropic 明确要求用户身处支持地区；如果当前所在地不受支持，应等待官方开放，或选择所在地可合法使用的其他产品。

@@ -60,7 +60,7 @@ organization 是计费和成员的单位，project 是 Key 和限额的单位。
 | 方式 | 适合谁 |
 |---|---|
 | 自己用接码平台 | 以后还会反复接码、愿意先充值研究平台的人 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-openai-platform-register-guide) | 只过这一次：¥29.90 一次，支付宝微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-openai-platform-register-guide) | 只过这一次：¥29.90 一次，微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款 |
 | eSIM / 实体卡 | 主力账号、以后可能被风控重新验证的人 |
 
 号码类型的判断（为什么 Google Voice 过不去、MVNO eSIM 为什么能过）见《[美国虚拟号码验证 OpenAI：号段类型与成功率边界](/blog/cn-us-virtual-number-openai-guide/)》。

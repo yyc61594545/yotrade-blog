@@ -21,7 +21,7 @@ heroImage: ../../assets/blog-placeholder-1.jpg
 
 注册一个能正常用的 ChatGPT 账号，看起来只是填几个表单，但国内用户实际操作时容易在网络、邮箱选择、手机验证三个环节反复卡住。本文按实际操作顺序，把整个注册流程完整走一遍。
 
-手机验证这一步卡住的人最多。不想折腾接码平台的，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-account-register-full)：¥29.90 一次，支付宝微信付款，付款后等你走到输手机号那一步再取号，收不到自动换号，换号仍失败全额退款。
+手机验证这一步卡住的人最多。不想折腾接码平台的，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-account-register-full)：¥29.90 一次，微信付款，付款后等你走到输手机号那一步再取号，收不到自动换号，换号仍失败全额退款。
 
 ## 一、注册前要准备什么
 
@@ -59,7 +59,7 @@ OpenAI 的注册流程会强制要求手机号验证，且明确不接受中国�
 | --- | --- | --- |
 | 自己或亲友的海外手机号 | 一张能收短信的海外移动号码 | 长期使用、以后还要靠它找回账号的人 |
 | 接码平台自助取号 | 注册平台账号、先充值，自己选国家和服务、自己判断退号 | 经常需要不同号码、愿意自己折腾的人 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-account-register-full) | 无，¥29.90 一次，支付宝微信付款 | 只需要过这一次验证的人 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-account-register-full) | 无，¥29.90 一次，微信付款 | 只需要过这一次验证的人 |
 
 如果你只差这一步，可以直接用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-account-register-full)：付款后等你走到输手机号那一步再取号，验证码自动显示在页面上，收不到自动换号，换号仍失败全额退款。能否通过 OpenAI 的风控由对方决定，这一点任何接码方式都一样。
 

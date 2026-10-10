@@ -99,7 +99,7 @@ Perplexity 对网络的敏感度分两段：
 
 接码平台的实际成功率和踩坑点，[在线接码平台横评](/blog/cn-sms-verification-platform-review/)里有逐家的实测记录；号码安全层面的考虑见[接码收验证码到底安不安全](/blog/cn-sms-receive-safe-or-not/)。
 
-只需要过一次验证、不想注册接码平台也不想充值的，可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-perplexity-register-cn-guide)：¥29.90 一次，支付宝微信付款，不用注册和充值，收不到会自动换号，换号仍失败全额退款。需要说清楚的是，它只解决「收到这条短信」这一件事——注册能否通过、账号后续会不会被风控，取决于你的网络环境和使用方式，没有任何服务能承诺这些。
+只需要过一次验证、不想注册接码平台也不想充值的，可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-perplexity-register-cn-guide)：¥29.90 一次，微信付款，不用注册和充值，收不到会自动换号，换号仍失败全额退款。需要说清楚的是，它只解决「收到这条短信」这一件事——注册能否通过、账号后续会不会被风控，取决于你的网络环境和使用方式，没有任何服务能承诺这些。
 
 ## 五、注册完成后先做的三件事
 
@@ -147,4 +147,4 @@ Perplexity 的 magic link 有效期很短（分钟级）。重新点一次 Resen
 - [接码收验证码到底安不安全](/blog/cn-sms-receive-safe-or-not/)
 - [ChatGPT 注册报错逐条排查](/blog/cn-chatgpt-register-error-fix/)
 
-卡在那条收不到的验证短信上、又不想为一次注册去注册接码平台的，[YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-perplexity-register-cn-guide) 提供美国号验证码代收，一次 ¥29.90，支付宝微信付款，免注册免充值，换号仍收不到全额退款。
+卡在那条收不到的验证短信上、又不想为一次注册去注册接码平台的，[YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-perplexity-register-cn-guide) 提供美国号验证码代收，一次 ¥29.90，微信付款，免注册免充值，换号仍收不到全额退款。

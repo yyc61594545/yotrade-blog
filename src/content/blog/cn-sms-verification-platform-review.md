@@ -38,7 +38,7 @@ category: 小白入门
 
 换句话说，2026 年真正会弹出短信验证的只有三类场景：在 platform.openai.com 生成第一个 API Key、Codex 登录时的二次验证、以及账号被风控要求重新验证。除此之外页面不要求手机号，就不要主动去买号码。
 
-如果页面已经明确要你验证手机号（常见于首次创建 API Key、Codex 登录或风控重新验证），手头又没有能收短信的海外移动号，而且只需要过这一次，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-sms-verification-platform-review)：¥29.90 一次，支付宝微信付款，不用注册平台、不用先充值；付款后等你走到输手机号那一步再取号，验证码自动显示在页面上，收不到自动换号，换号仍失败全额退款。它只适合过这一次验证，别把它当成账号以后找回用的号码——长期要用的号码，仍按下文的原则选。
+如果页面已经明确要你验证手机号（常见于首次创建 API Key、Codex 登录或风控重新验证），手头又没有能收短信的海外移动号，而且只需要过这一次，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-sms-verification-platform-review)：¥29.90 一次，微信付款，不用注册平台、不用先充值；付款后等你走到输手机号那一步再取号，验证码自动显示在页面上，收不到自动换号，换号仍失败全额退款。它只适合过这一次验证，别把它当成账号以后找回用的号码——长期要用的号码，仍按下文的原则选。
 
 ## 二、四类号码横评：重点不是价格
 
@@ -116,4 +116,4 @@ OpenAI 官方当前说明不支持 landline、Google Voice、其他 VoIP 或 pre
 - [Codex 登录要求验证手机号：国内用户怎么过](/blog/cn-codex-login-phone-verification/)
 - [「电话号码是必填项」怎么办：弹窗逐句解释](/blog/cn-chatgpt-phone-required-field/)
 
-如果你只是这一次需要一个美国号收 OpenAI 验证码（创建 API key、Codex 登录或风控重新验证），不想注册接码平台再先充一笔钱，可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-sms-verification-platform-review)：¥29.90 一次，支付宝微信付款，收不到自动换号，换号仍失败全额退款。
+如果你只是这一次需要一个美国号收 OpenAI 验证码（创建 API key、Codex 登录或风控重新验证），不想注册接码平台再先充一笔钱，可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-sms-verification-platform-review)：¥29.90 一次，微信付款，收不到自动换号，换号仍失败全额退款。

@@ -93,7 +93,7 @@ eSIM 总成本   = 开通费 + E × M
 
 ## 五、按次代收适合什么场景
 
-[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-esim-vs-sms-for-openai)的规则很简单：¥29.90 一次，支付宝微信付款，**不用注册也不用充值**，收不到自动换号，换号仍失败全额退款。
+[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-esim-vs-sms-for-openai)的规则很简单：¥29.90 一次，微信付款，**不用注册也不用充值**，收不到自动换号，换号仍失败全额退款。
 
 它的适用场景由三个特征决定：
 

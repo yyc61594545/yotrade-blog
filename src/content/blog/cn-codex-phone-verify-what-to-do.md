@@ -65,7 +65,7 @@ category: 国内场景
 
 **逻辑**：按次付款，把「试到成功」这件事转移出去。
 
-[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-phone-verify-what-to-do)的规则：¥29.90 一次，支付宝微信付款，**不用注册也不用充值**，收不到自动换号，换号仍失败全额退款。
+[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-phone-verify-what-to-do)的规则：¥29.90 一次，微信付款，**不用注册也不用充值**，收不到自动换号，换号仍失败全额退款。
 
 单价比接码高，但两者的定价逻辑不同：接码便宜是因为失败由你承担，代收贵是因为失败不由你承担。**只验一次的情况下，比较对象应该是「接码的充值门槛 + 预期试错次数」，不是接码的单次标价。**
 

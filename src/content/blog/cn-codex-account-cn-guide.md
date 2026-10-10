@@ -97,7 +97,7 @@ codex --version
 | 方式 | 成本 | 适合 |
 |---|---|---|
 | 接码平台 | 单价几毛到几元，但多数要先充值，失败自己承担 | 愿意研究号段、能接受多试几次 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-account-cn-guide) | ¥29.90 一次，支付宝微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款 | 只验这一次，不想研究号段 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-account-cn-guide) | ¥29.90 一次，微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款 | 只验这一次，不想研究号段 |
 | 海外 eSIM / 实体卡 | 几十到上百元/月，号码独享长期持有 | 长期用，以后还会被要求重新验证 |
 
 需要说清楚：**这三种都只解决「收到这条验证码」，不承诺注册一定成功或账号不被风控**。

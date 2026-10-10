@@ -75,7 +75,7 @@ Discord 的手机验证和 OpenAI 那套有一个重要区别：**它不是注�
 
 **接码平台** — 单价最低，代价是失败成本归你。多数平台要先充值（常见 $5~$10 起），只验一次的话真实支出是充值额而非单次标价。Discord 是被滥用得很厉害的项目，接码平台的号在它上面撞「已被使用」的概率不低。
 
-**按次代收** — [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-discord-phone-verify-cn)是 ¥29.90 一次，支付宝微信付款，不用注册也不用充值，收不到自动换号，换号仍失败全额退款。它解决的是「收到这条验证码」，**不承诺注册一定成功或账号不被风控**。适合只过这一次、不想研究号段的情况。
+**按次代收** — [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-discord-phone-verify-cn)是 ¥29.90 一次，微信付款，不用注册也不用充值，收不到自动换号，换号仍失败全额退款。它解决的是「收到这条验证码」，**不承诺注册一定成功或账号不被风控**。适合只过这一次、不想研究号段的情况。
 
 **eSIM / 实体卡** — 号码独享且长期持有，适合打算长期用 Discord 的人。代价是月费，且要先确认设备支持——具体条件见《[eSIM 和接码代收给 OpenAI 验证：成本与适用场景对比](/blog/cn-esim-vs-sms-for-openai/)》，那篇讲的三个前置条件在这里同样适用。
 

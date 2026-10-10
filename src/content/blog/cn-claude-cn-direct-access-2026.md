@@ -207,7 +207,7 @@ A：两者各有擅长，简单对比见 [Claude vs GPT vs Gemini 国内开发�
 
 **Q：我也想用 ChatGPT，注册和网络怎么解决？**
 
-A：注册时卡在手机验证的，看 [没有海外手机号怎么注册 ChatGPT](/blog/cn-chatgpt-register-without-foreign-phone/)，只差这一次验证的可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-claude-cn-direct-access-2026)（¥29.90 一次，支付宝微信付款）。主要在电脑网页上用 ChatGPT、又不想自己折腾网络的，可以看看我们特别定制的 [SeeWorld · ChatGPT 专用浏览器](https://yotradeapi.com/api/order/go-seeworld?from=yt-blog-claude-direct)：自带线路，打开就是 ChatGPT，配官方 Business 会员席位，¥299/月。
+A：注册时卡在手机验证的，看 [没有海外手机号怎么注册 ChatGPT](/blog/cn-chatgpt-register-without-foreign-phone/)，只差这一次验证的可以用[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-claude-cn-direct-access-2026)（¥29.90 一次，微信付款）。主要在电脑网页上用 ChatGPT、又不想自己折腾网络的，可以看看我们特别定制的 [SeeWorld · ChatGPT 专用浏览器](https://yotradeapi.com/api/order/go-seeworld?from=yt-blog-claude-direct)：自带线路，打开就是 ChatGPT，配官方 Business 会员席位，¥299/月。
 
 ## 九、相关阅读
 

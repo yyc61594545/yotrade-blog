@@ -22,7 +22,7 @@ category: 国内场景
 
 这是 2026 年国内用户用 Codex 最常见的第一道坎，而且很容易误判成"网络问题"或"CLI 装错了"。本文只解决这一步。
 
-先说最快的办法：如果确认就是卡在 Verify your phone number、手头没有能收短信的海外号，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-login-phone-verification)：¥29.90 一次，支付宝微信付款，验证码自动显示在页面上，收不到自动换号，换号仍失败全额退款。下面讲清楚为什么会要验证、怎么排查。
+先说最快的办法：如果确认就是卡在 Verify your phone number、手头没有能收短信的海外号，可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-login-phone-verification)：¥29.90 一次，微信付款，验证码自动显示在页面上，收不到自动换号，换号仍失败全额退款。下面讲清楚为什么会要验证、怎么排查。
 
 ## 一、先分清是哪一种"登录失败"
 
@@ -88,7 +88,7 @@ codex login status
 | 方式 | 前置成本 | 单次代价 | 适合谁 |
 |---|---|---|---|
 | 自己用接码平台 | 注册平台账号 + 先充值（通常三十几元起），界面多为英文或俄文 | 几毛到几元，需自己挑国家挑服务、判断超时退号 | 以后还会反复接码的人 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-login-phone-verification) | 无，不用注册和充值 | ¥29.90 一次，支付宝微信付款，收不到自动换号，换号仍失败全额退款 | 只需要过这一次验证的人 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-login-phone-verification) | 无，不用注册和充值 | ¥29.90 一次，微信付款，收不到自动换号，换号仍失败全额退款 | 只需要过这一次验证的人 |
 | eSIM / 实体卡 | 几十到上百元/月 | 号码独享，可长期复用 | 账号要长期用、以后还会频繁收码的人 |
 
 因为这道验证一个账号只需要过一次，**按次解决在这个场景下性价比最高**——为一条短信包月养号，第二个月就是纯浪费。只有在你同时要管多个账号、或者预期会频繁触发风控重验时，自己持号才划算。

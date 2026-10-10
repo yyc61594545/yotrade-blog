@@ -141,4 +141,4 @@ Gemini 打不开 / 报错
 - [新注册的 Google 账号被停用怎么办](/blog/cn-google-account-disabled-after-signup/)
 - [ChatGPT 年龄验证怎么过](/blog/cn-chatgpt-age-verification-guide/)
 
-如果卡住的那一步其实是注册时要一个能收短信的美国号，[YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-gemini-age-country-restriction) 提供美国号验证码代收：¥29.90 一次，支付宝微信付款，不用注册也不用充值，收不到会自动换号，换号仍失败全额退款。
+如果卡住的那一步其实是注册时要一个能收短信的美国号，[YoTradeApi](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-gemini-age-country-restriction) 提供美国号验证码代收：¥29.90 一次，微信付款，不用注册也不用充值，收不到会自动换号，换号仍失败全额退款。

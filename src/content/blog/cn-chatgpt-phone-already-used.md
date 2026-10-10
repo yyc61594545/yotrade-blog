@@ -86,7 +86,7 @@ category: 小白入门
 | 方式 | 前置成本 | 单次代价 | 撞"已被使用"后怎么办 |
 |---|---|---|---|
 | 自己用接码平台 | 要注册平台账号并先充值（常见三十几元起），界面多为英文或俄文 | 几毛到几元一次 | 自己再挑一个号重来，钱通常不退，挑号靠经验 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-phone-already-used) | 无，不用注册也不用充值 | ¥29.90 一次，支付宝微信付款 | 收不到自动换号，换号仍失败全额退款 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-phone-already-used) | 无，不用注册也不用充值 | ¥29.90 一次，微信付款 | 收不到自动换号，换号仍失败全额退款 |
 | eSIM / 实体卡 | 几十到上百元/月 | 号码你独享，以后重验还能用同一个 | 号是你的，一般不会撞占用；但月费持续 |
 
 选哪个取决于你还要不要再验证第二次。只过这一次，按次最省事；账号打算长期用、以后可能被要求重新验证，自己持有一个号更划算。更细的成本拆解见《[手机验证要花多少钱：接码平台、代收、eSIM、实体卡对比](/blog/cn-phone-verification-cost-compare/)》。

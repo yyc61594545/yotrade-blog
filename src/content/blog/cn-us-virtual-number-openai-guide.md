@@ -96,7 +96,7 @@ Line type: mobile               ← 关键字段
 | 手上有 Google Voice 号 | 别用它验证 OpenAI | 类型层直接出局 |
 | 团队多人 | 每人各自持号 | 同号验证账号数有限 |
 
-只需要过一次的话，自己挑号源、查类型、处理超时退款都要花时间。一个省事的选择是 [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-us-virtual-number-openai-guide)：¥29.90 一次，支付宝微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款。它能解决的是"拿到号并收到码"这一段，后面账号层面的判断仍由 OpenAI 决定。
+只需要过一次的话，自己挑号源、查类型、处理超时退款都要花时间。一个省事的选择是 [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-us-virtual-number-openai-guide)：¥29.90 一次，微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款。它能解决的是"拿到号并收到码"这一段，后面账号层面的判断仍由 OpenAI 决定。
 
 需要长期持号的，几种方式的花费对比见《[手机验证要花多少钱：接码平台、代收、eSIM、实体卡对比](/blog/cn-phone-verification-cost-compare/)》。
 

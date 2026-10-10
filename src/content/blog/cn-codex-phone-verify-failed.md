@@ -108,7 +108,7 @@ codex --version
 | 方式 | 试错成本谁承担 | 适合 |
 |---|---|---|
 | 接码平台 | 你 | 愿意研究号段、能接受多试几次 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-phone-verify-failed) | 服务方：¥29.90 一次，支付宝微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款 | 只验这一次、已经试烦了 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-codex-phone-verify-failed) | 服务方：¥29.90 一次，微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款 | 只验这一次、已经试烦了 |
 | 海外 eSIM / 实体卡 | —— | 长期用，以后还会被要求重新验证 |
 
 三种都只解决「收到这条验证码」这一步，**不承诺注册一定成功或账号不被风控**。选平台的判断标准见《[Codex 接码平台怎么选](/blog/cn-codex-sms-platform-choice/)》，成本拆解见《[Codex 手机号验证怎么办：三种办法的成本与成功率对比](/blog/cn-codex-phone-verify-what-to-do/)》。

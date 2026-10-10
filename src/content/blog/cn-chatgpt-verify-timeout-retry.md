@@ -94,7 +94,7 @@ category: 小白入门
 
 - **接码平台**：号码通常有租用窗口（常见几分钟到十几分钟）。你在页面上反复重发、超时，可能号码窗口先到期了，得重新买一个号。这部分钱一般不退。
 - **eSIM / 实体卡**：号码是你的，超时不超时都不额外花钱，重来就是了。这是长期持有号码的一个隐性好处。
-- **[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-verify-timeout-retry)**：¥29.90 一次，支付宝微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款。
+- **[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-verify-timeout-retry)**：¥29.90 一次，微信付款，不用注册和充值，收不到自动换号，换号仍失败全额退款。
 
 三者的共同点：**都解决不了"次数被锁"**。被锁是账号和 IP 层面的限制，换号码不会重置它。所以顺序是先等冷却过去，再用号码，别在锁定期里把号码窗口浪费掉。
 

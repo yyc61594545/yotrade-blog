@@ -55,7 +55,7 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 
 **注意**：验证码到账后要尽快操作，多数接码号码有效期只有几分钟，超时该号码会被平台回收给下一个用户使用。
 
-自己去接码平台的麻烦主要在前面几步：要先注册平台账号、通常要先充三十几块才能下单，界面多为英文或俄文，还得自己找国家和服务、自己判断超时和退号。如果你只需要一个码，也可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-register-without-foreign-phone)：¥29.90 一次，支付宝微信付款，付款后等你走到输手机号那一步再取号，验证码自动显示在页面上；收不到自动换号，换号仍失败全额退款。能否通过 OpenAI 的风控由对方决定，这一点任何接码方式都一样。
+自己去接码平台的麻烦主要在前面几步：要先注册平台账号、通常要先充三十几块才能下单，界面多为英文或俄文，还得自己找国家和服务、自己判断超时和退号。如果你只需要一个码，也可以用我们的[美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-register-without-foreign-phone)：¥29.90 一次，微信付款，付款后等你走到输手机号那一步再取号，验证码自动显示在页面上；收不到自动换号，换号仍失败全额退款。能否通过 OpenAI 的风控由对方决定，这一点任何接码方式都一样。
 
 ## 四、常见失败原因排查
 
@@ -78,7 +78,7 @@ heroImage: ../../assets/blog-placeholder-3.jpg
 | 方式 | 需要准备 | 适合谁 |
 |---|---|---|
 | 自己用接码平台 | 平台账号 + 先充值（通常三十几元起） | 以后还会反复接码、愿意自己研究平台的人 |
-| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-register-without-foreign-phone) | 无，¥29.90 一次，支付宝微信付款 | 只需要过这一次验证的人 |
+| [美国号验证码代收](https://yotradeapi.com/sms?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-register-without-foreign-phone) | 无，¥29.90 一次，微信付款 | 只需要过这一次验证的人 |
 | 自己持有 eSIM / 实体卡 | 月租或保号费用 | 账号要长期用、以后还会频繁收验证码的人 |
 
 不管用哪种方式，都不要在 OpenAI 页面上对同一个被拒的号码反复重试，换号比重试有效。
