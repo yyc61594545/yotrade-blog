@@ -269,7 +269,10 @@ const articleSchema = {
 					font-size: 1.9rem;
 				}
 			}
-		</style>
+		
+	:global(.sms-stats) { margin: 1.2em 0; padding: 12px 16px; border-left: 3px solid #22c55e; background: rgba(34,197,94,.08); border-radius: 6px; line-height: 1.7; }
+	:global(.sms-stats small) { display: block; opacity: .65; font-size: .8em; }
+</style>
 	</head>
 
 	<body>
@@ -352,6 +355,19 @@ const articleSchema = {
 					<slot />
 				</div>
 			</article>
+			{/* 验证码真实数据块（2026-10-10）：文章里放 <div data-sms-stats hidden>，这里从 orderbot 取近 30 天汇总填进去；取不到就保持隐藏 */}
+			<script is:inline>
+				(function () {
+					var el = document.querySelector('[data-sms-stats]');
+					if (!el) return;
+					fetch('https://yotradeapi.com/api/sms/stats').then(function (r) { return r.json(); }).then(function (d) {
+						if (!d || !d.ok || !d.orders || d.orders < 30 || d.success_pct == null) return;
+						var t = d.median_min < 1 ? '1 分钟内' : Math.round(d.median_min) + ' 分钟';
+						el.innerHTML = '<b>近 ' + d.days + ' 天真实数据</b>（OpenAI 验证码代收，' + d.orders + ' 单）：<b>' + d.success_pct + '%</b> 的订单拿到了验证码；出码时间中位数 ' + t + '，90% 在 ' + Math.max(1, Math.round(d.p90_min)) + ' 分钟内。<small>每 10 分钟更新 · ' + d.updated + '</small>';
+						el.hidden = false;
+					}).catch(function () {});
+				})();
+			</script>
 
 			{isPost && isEn && (
 				<aside class="tile cta cta--bottom">
