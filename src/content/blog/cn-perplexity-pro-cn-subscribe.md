@@ -1,14 +1,16 @@
 ---
-title: Perplexity Pro 国内订阅完整指南（2026）
-description: 国内用户订阅 Perplexity Pro 的完整流程：支付方式、虚拟信用卡选择、常见失败原因及 Pro 功能详解，附免费替代方案对比。
+title: Perplexity Pro 多少钱、值不值：2026 国内订阅完整指南
+description: Perplexity Pro 官方 $20/月、年付 $200（约合 $16.67/月）。本文先讲值不值得订、和免费版差在哪，再给国内可用的支付方式、订阅步骤与付款失败的排查办法。
 keywords:
+  - Perplexity Pro 多少钱
+  - Perplexity Pro 价格
   - Perplexity Pro 国内订阅
   - Perplexity Pro 购买方法
   - Perplexity 虚拟信用卡
   - Perplexity Pro 付款失败
   - Perplexity AI 中国用户
 pubDate: '2026-06-17'
-updatedDate: '2026-06-17'
+updatedDate: '2026-10-10'
 canonical: https://blog.yotradeapi.com/blog/cn-perplexity-pro-cn-subscribe/
 tags:
   - Perplexity
