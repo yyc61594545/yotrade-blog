@@ -1,6 +1,6 @@
 ---
 title: ChatGPT 一个月多少钱（含国内代充）
-description: 2026 年 ChatGPT 各档位订阅费用详解：Free/Plus/Pro/Team/Enterprise 对比，国内代充渠道估价与 API 中转替代方案成本测算。
+description: 2026 年 ChatGPT 各档位订阅费用详解：Free/Go/Plus/Pro/Business/Enterprise 对比，国内付款渠道的额外成本估算，以及按量调用 API 的成本测算。
 keywords:
   - ChatGPT 月费多少钱
   - ChatGPT Plus 价格
@@ -8,7 +8,7 @@ keywords:
   - ChatGPT 订阅价格对比
   - AI API 中转替代订阅
 pubDate: '2026-06-29'
-updatedDate: '2026-06-29'
+updatedDate: '2026-10-11'
 canonical: https://blog.yotradeapi.com/blog/cn-chatgpt-monthly-cost-2026/
 tags:
   - ChatGPT
@@ -29,16 +29,18 @@ OpenAI 目前提供以下几个档位（以公开定价为近似参考）：
 
 | 套餐 | 月费（美元，近似） | 核心限制 |
 |------|------------|---------|
-| Free | $0 | 限量使用 GPT-4o，无法使用 o3/o4 系列 |
-| Plus | ~$20/月 | GPT-4o/o3/o4 不限量（有软上限），含图像生成 |
-| Pro | ~$200/月 | o1 Pro / o3 高算力版不限量，适合重度研究场景 |
-| Team | ~$30/人/月 | 团队协作，支持工作区隔离，最低 2 人起购 |
+| Free | $0 | 最新模型限次数使用，超额后降级；部分地区带广告 |
+| Go | ~$8/月 | 比 Free 额度高的入门档，部分地区带广告 |
+| Plus | ~$20/月 | 主力模型额度更高（有软上限），含图像生成、Codex 等 |
+| Pro | ~$100/月 或 ~$200/月 | 两档都叫 Pro，权益相近，主要差在用量额度（$100 档 2026 年 4 月推出） |
+| Business（原 Team） | 约 $25/人/月（月付），年付更低 | 团队协作，工作区隔离，最低 2 席起购 |
 | Enterprise | 按需报价 | 企业级 SLA，数据不参与训练，SSO 等 |
 
 **重点提示**：
+- 档位和价格 2026 年变动频繁，以上为公开信息整理，下单前以 OpenAI 官网和账单页显示为准
 - Plus 的"不限量"并非真正无限——短时高频使用会触发软限速，实际体验需看使用强度
-- Pro 每月 $200 的价格，折算约 1400–1600 元人民币（按当时汇率估算），仅适合高强度科研 / 专业写作场景
-- Team 的起购门槛和账单管理稍复杂，个人用户别考虑
+- Pro 的 $100 档折算约 700–750 元、$200 档约 1400–1500 元人民币（按当时汇率估算），两档怎么选见 [ChatGPT Pro 5x 和 20x 实际用量差多少](/blog/cn-chatgpt-pro-5x-vs-20x-usage/)
+- Business 的起购门槛和账单管理稍复杂，个人用户别考虑；团队分摊思路见 [ChatGPT Team 版国内开通与分摊实战](/blog/cn-chatgpt-team-plan-cn-guide/)
 
 ## 二、国内用户实际要花多少
 
@@ -54,7 +56,7 @@ OpenAI 目前提供以下几个档位（以公开定价为近似参考）：
 | 找人代购/代充 | 溢价 20–50%（约 $24–30/月） | 依赖中间商，账号安全有风险 |
 | 海外 Apple/Google 礼品卡 | 礼品卡面值 + 渠道差价，约溢价 10–20% | 操作繁琐，部分渠道已失效 |
 
-关于国内付款的详细操作步骤，参考 [ChatGPT Plus 2026 最新充值方法（国内亲测可用）](/blog/cn-chatgpt-plus-payment-2026/)，这里不重复。
+关于国内付款的详细操作步骤，参考 [ChatGPT Plus 2026 最新充值方法（国内亲测可用）](/blog/cn-chatgpt-plus-payment-2026/)，这里不重复。如果要开的是 Pro 这类高价档，不想自己办卡，也可以找 [YoTradeApi 订阅代充](https://yotradeapi.com/?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-monthly-cost-2026#sub)，报价微信咨询。
 
 ### 网络访问成本
 
@@ -82,6 +84,8 @@ OpenAI 目前提供以下几个档位（以公开定价为近似参考）：
 | GPT-4o | ~$2.5/百万 token | ~$10/百万 token |
 | GPT-4o mini | ~$0.15/百万 token | ~$0.6/百万 token |
 | o4-mini | ~$1.1/百万 token | ~$4.4/百万 token |
+
+上表是几款老模型的官方单价，用来估算量级足够；新一代模型单价不同，实际以 OpenAI API 定价页为准。
 
 **成本换算举例**：
 - 普通对话 1 次约 1000–3000 token（输入+输出）
@@ -114,13 +118,13 @@ API 中转服务的原理：由服务商持有 OpenAI 账号，对外提供兼�
 | 偶尔问问题、写作辅助 | ChatGPT Free（够用则不用付费） | $0 |
 | 日常高频使用网页版 | ChatGPT Plus（需解决付款渠道） | 约 $20 + 手续费 |
 | 开发者 / 程序集成 | OpenAI API 按量计费 or API 中转 | $1–20，看用量 |
-| 不想折腾付款渠道 | 国内 API 中转 | 按量，可控 |
-| 高强度研究/写作 | ChatGPT Pro | ~$200/月（成本高，谨慎） |
-| 团队协作 | ChatGPT Team | ~$30/人/月 |
+| 想要比 Free 多一点额度 | ChatGPT Go | ~$8/月 |
+| 高强度研究/写作/编程 | ChatGPT Pro | ~$100 或 ~$200/月（成本高，谨慎） |
+| 团队协作 | ChatGPT Business | 约 $25/人/月 |
 
 **给大多数国内个人用户的建议**：
 
-先用 Free 版评估需求，如果确实被限速影响效率，再考虑 Plus。如果主要是程序调用而非网页聊天，直接用 API 中转按量计费，避免为用不满的包月浪费钱。
+先用 Free 版评估需求，额度不够再按 Go → Plus 逐级加，别一上来就开高档。如果主要是程序调用而非网页聊天，直接按量调用 API，避免为用不满的包月浪费钱。
 
 ## 六、常见问题
 
@@ -133,8 +137,8 @@ OpenAI 会对异常地区 IP 的账号采取限制措施（非永久封号，但
 **Q：API 中转的数据安全如何？**
 API 中转服务商能看到你发送的请求内容（和使用 ChatGPT 网页版一样）。不要发送敏感数据（密码、个人身份信息、商业机密）到任何 LLM 接口。
 
-**Q：有没有免费的 GPT-4 替代？**
-Copilot（Bing）提供免费 GPT-4 访问（国内可用性不稳定）；Poe 有免费额度；国内的豆包、Kimi、通义千问在部分场景可替代，但与 OpenAI 模型能力有差异。
+**Q：有没有免费的替代？**
+Microsoft Copilot 有免费额度（国内可用性不稳定）；Poe 有免费额度；国内的豆包、Kimi、通义千问在部分场景可替代，但与 OpenAI 模型能力有差异。
 
 ## 七、相关阅读
 
@@ -142,4 +146,6 @@ Copilot（Bing）提供免费 GPT-4 访问（国内可用性不稳定）；Poe �
 - [国内 AI 工具付款指南：虚拟卡、礼品卡与代充对比](/blog/cn-ai-tools-payment-guide/)
 - [AI 编程一个月真实成本披露](/blog/ai-coding-monthly-cost-real/)
 - [国内使用虚拟信用卡订阅 ChatGPT 的完整指南](/blog/cn-virtual-card-for-chatgpt-2026/)
+
+不想自己办卡付款的话，[YoTradeApi 订阅代充](https://yotradeapi.com/?utm_source=blog&utm_medium=inline&utm_content=cn-chatgpt-monthly-cost-2026#sub) 可以代开 ChatGPT Pro，报价微信咨询。
 
