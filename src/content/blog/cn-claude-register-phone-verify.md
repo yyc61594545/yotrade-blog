@@ -8,7 +8,7 @@ keywords:
   - Claude 国内注册
   - Anthropic 验证码
 pubDate: '2026-09-26'
-updatedDate: '2026-09-26'
+updatedDate: '2026-10-11'
 canonical: https://blog.yotradeapi.com/blog/cn-claude-register-phone-verify/
 tags:
   - Claude
@@ -115,6 +115,7 @@ ChatGPT 那边的完整应对，见《[没有海外手机号怎么注册 ChatGPT
 
 - [没有海外手机号怎么注册 ChatGPT（2026 实测方案）](/blog/cn-chatgpt-register-without-foreign-phone/)
 - [Claude 国内注册完整指南](/blog/cn-claude-register-cn-guide/)
+- [Claude 身份验证（KYC）怎么过：流程与被拒排查](/blog/cn-claude-identity-verification-kyc/)
 - [Claude 邮箱验证码收不到怎么办](/blog/cn-claude-email-code-not-received/)
 - [手机验证要花多少钱：接码平台、代收、eSIM、实体卡对比](/blog/cn-phone-verification-cost-compare/)
 - [OpenAI 手机验证支持哪些国家](/blog/cn-openai-phone-verify-country-list/)
