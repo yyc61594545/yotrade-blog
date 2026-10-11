@@ -1,14 +1,16 @@
 ---
-title: Grok 国内访问与订阅指南：2026 最新可用方案
-description: 详解国内用户访问 Grok（xAI）的可行方案，包含免费版与 SuperGrok 订阅区别、支付方式、API 接入方法，手把手教程。
+title: Grok 订阅怎么买：SuperGrok 价格、国内支付与访问方案（2026）
+description: SuperGrok 月费约 30 美元，另有更高的 Heavy 档，具体以 x.ai 当前页面为准。本文讲清免费版与各订阅档的区别、国内能用的支付方式、订阅步骤，以及 Grok API 的接入办法。
 keywords:
+  - Grok 订阅
+  - SuperGrok 多少钱
   - Grok 国内访问
   - Grok 订阅指南
   - SuperGrok 订阅
   - xAI Grok 中国用户
   - Grok API 国内使用
 pubDate: '2026-06-24'
-updatedDate: '2026-06-24'
+updatedDate: '2026-10-10'
 canonical: https://blog.yotradeapi.com/blog/cn-grok-cn-access-guide/
 tags:
   - Grok
@@ -79,9 +81,9 @@ SuperGrok 是 xAI 的付费计划，核心优势：
 
 | 订阅 | 月费（估算） | 核心模型 | 适合场景 |
 |------|----------|---------|---------|
-| SuperGrok | ~$30 | Grok 3 / Grok 3 Mini | 实时资讯、无滤波创意写作 |
-| ChatGPT Plus | $20 | GPT-4o | 综合能力、插件生态 |
-| Claude Pro | $20 | Claude Opus / Sonnet | 长文档、代码、推理 |
+| SuperGrok | ~$30 | Grok 4 系列（以 x.ai 当前为准） | 实时资讯、无滤波创意写作 |
+| ChatGPT Plus | $20 | OpenAI 当前代主力模型 | 综合能力、插件生态 |
+| Claude Pro | $20 | Claude Opus / Sonnet 当前代 | 长文档、代码、推理 |
 
 Grok 的差异化在于它的"实时联网"能力（通过 X 平台）和对敏感话题限制较少的特点，这对部分用户有独特价值。
 
